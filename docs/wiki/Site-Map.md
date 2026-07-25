@@ -75,7 +75,7 @@ English posts are hosted on Substack ([arithmon.substack.com](https://arithmon.s
 ## Project
 | Page | Description |
 |------|-------------|
-| [Lean Formalization](Lean-Formalization.html) | 143 files, 15 axioms, 140 conjuncts, blueprint |
+| [Lean Formalization](Lean-Formalization.html) | 146 files, 15 axioms, 213 conjuncts, blueprint |
 | [Repository Structure](Repository-Structure.html) | Directory layout and navigation |
 | [External Resources](External-Resources.html) | Links to all external resources |
 | [Citation Guide](Citation-Guide.html) | How to cite K₇ (BibTeX, APA, DOIs) |

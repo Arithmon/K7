@@ -16,7 +16,7 @@ layout: default
 | **Predictions** | 95 observables (33 Type I + 19 Type II + 21 Type III + 22 Type IV) |
 | **Mean deviation** | 0.99% on 33 Type I (exact-target) relations (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022) |
 | **Free parameters** | 0 (3 integer primitives: N=3, r₈=8, r₂=2) |
-| **Lean 4 verification** | 143 files, 8391 build jobs, 0 sorry, 15 axioms (4 main-chain + 11 interval-arithmetic) (K7-Lean v3.4.29) |
+| **Lean 4 verification** | 146 files, 8394 build jobs, 0 sorry, 15 classified axioms (A-F taxonomy, of which 4 external data packages) (K7-Lean v3.5) |
 | **Statistical significance** | p < 2×10⁻⁵ (σ > 4.2), unique among 3M+ configurations |
 | **Monte Carlo null model** | P(algebraic) = 10⁻¹³⁸ over 3M+ formulas |
 

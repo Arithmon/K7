@@ -108,7 +108,7 @@ The **[GitHub Wiki](https://github.com/Arithmon/K7/wiki)** provides a navigable 
 ## Version
 
 **Current**: v3.5 (2026-07-10)
-**Relations**: 140 conjuncts certified (K7-Lean v3.4.29, 15 axioms = 4 main-chain + 11 interval-arith certificates), 0 `sorry`, 143 .lean files, 8391 build jobs
+**Relations**: 213 conjuncts certified (K7-Lean v3.5, 15 classified axioms (A-F taxonomy, of which 4 external data packages)), 0 `sorry`, 146 .lean files, 8394 build jobs
 **Predictions**: 95 observables (33 Type I, exact targets, 0.99% mean deviation; PDG 2024 / NuFIT 6.1 / Planck 2018)
 **Validation**: 3M+ configs exhaustive (set-level bound ~10⁻⁶, assumption-free; log₁₀ p_algebraic = −134)
 **Papers**: Framework v3.5 (Zenodo 21296168, concept 16891489) + A (19892350) + B (19893371) + C (19708916) + D (20039066) + E (21209413)

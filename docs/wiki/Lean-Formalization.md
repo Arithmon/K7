@@ -11,12 +11,12 @@ The K₇ framework is formally verified in **Lean 4** with Mathlib. The formaliz
 
 | Metric | Value |
 |--------|-------|
-| **Lean files** | 143 |
-| **Build jobs** | 8391 |
+| **Lean files** | 146 |
+| **Build jobs** | 8394 |
 | **Axioms** | 15 (4 main-chain + 11 K3 interval-arithmetic) |
 | **sorry statements** | 0 |
 | **Warnings** | 0 |
-| **Certificate conjuncts** | 140 (across the Foundations / Predictions / Spectral pillars) |
+| **Certificate conjuncts** | 213 (10 master certificates; the three pillars Foundations/Predictions/Spectral contribute 39+56+45 = 140) |
 
 ## Repository
 

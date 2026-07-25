@@ -101,7 +101,7 @@ publications/
 | Configurations tested | 3,000,000+ |
 | Better alternatives | 0 |
 | Algebraic null model | set-level ~10⁻⁶ (assumption-free); log₁₀ p = −134 |
-| Lean certificate | 140 conjuncts, 15 axioms (4 main-chain + 11 interval-arithmetic), 0 sorry |
+| Lean certificate | 213 conjuncts, 15 classified axioms (A-F taxonomy, of which 4 external data packages), 0 sorry |
 
 See [`validation/`](../validation/) and [`STATISTICAL_EVIDENCE.md`](../references/STATISTICAL_EVIDENCE.md) for methodology. The v3.3 validation pipeline (3,070,396-config exhaustive + 7-component bullet-proof) is archived in [`validation/legacy/v3.3/`](../validation/legacy/v3.3/).
 
@@ -109,9 +109,9 @@ See [`validation/`](../validation/) and [`STATISTICAL_EVIDENCE.md`](../reference
 
 ## Formal Verification
 
-143 Lean 4 files, 140 conjuncts certified, 15 axioms (4 main-chain + 11 interval-arithmetic certificates), 0 sorry, 8391 build jobs.
+146 Lean 4 files, 213 conjuncts certified, 15 classified axioms (A-F taxonomy, of which 4 external data packages), 0 sorry, 8394 build jobs.
 
-See [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) for proofs (v3.4.29).
+See [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) for proofs (v3.5).
 
 ---
 

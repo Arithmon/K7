@@ -17,7 +17,7 @@ layout: default
 
 ## Abstract
 
-Framework proposing that Standard Model dimensionless parameters emerge as topological invariants of a 7D G₂ holonomy manifold K₇ with Betti numbers (b₂=21, b₃=77) coupled to E₈×E₈ gauge structure. v3.5 catalogues 95 observables (33 Type I exact-target relations) with 0.99% mean deviation on Type I from experiment (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022); 140 conjuncts certified in Lean 4 with 15 axioms (4 main-chain + 11 interval-arithmetic). DUNE will test δ_CP = 197° falsification criterion.
+Framework proposing that Standard Model dimensionless parameters emerge as topological invariants of a 7D G₂ holonomy manifold K₇ with Betti numbers (b₂=21, b₃=77) coupled to E₈×E₈ gauge structure. v3.5 catalogues 95 observables (33 Type I exact-target relations) with 0.99% mean deviation on Type I from experiment (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022); 213 conjuncts certified in Lean 4 with 15 classified axioms (A-F taxonomy, of which 4 external data packages). DUNE will test δ_CP = 197° falsification criterion.
 
 ---
 

@@ -17,7 +17,7 @@ layout: default
 
 ## Résumé
 
-Cadre proposant que les paramètres sans dimension du Modèle Standard émergent comme invariants topologiques d'une variété K₇ à holonomie G₂ de dimension 7 avec nombres de Betti (b₂=21, b₃=77) couplée à une structure de jauge E₈×E₈. La v3.5 catalogue 95 observables (33 relations Type I à cible exacte) avec un écart moyen de 0,99 % sur Type I (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022) ; 140 conjonctions certifiées en Lean 4 avec 15 axiomes (4 principaux + 11 d'arithmétique d'intervalle). DUNE testera le critère de falsification δ_CP = 197°.
+Cadre proposant que les paramètres sans dimension du Modèle Standard émergent comme invariants topologiques d'une variété K₇ à holonomie G₂ de dimension 7 avec nombres de Betti (b₂=21, b₃=77) couplée à une structure de jauge E₈×E₈. La v3.5 catalogue 95 observables (33 relations Type I à cible exacte) avec un écart moyen de 0,99 % sur Type I (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022) ; 213 conjonctions certifiées en Lean 4 avec 15 axiomes classés (taxonomie A-F, dont 4 paquets de données externes). DUNE testera le critère de falsification δ_CP = 197°.
 
 ---
 

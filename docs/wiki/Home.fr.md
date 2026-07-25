@@ -16,7 +16,7 @@ layout: default
 | **Prédictions** | 95 observables (33 Type I + 19 Type II + 21 Type III + 22 Type IV) |
 | **Écart moyen** | 0,99 % sur 33 relations Type I (cible exacte, NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022) |
 | **Paramètres libres** | 0 (3 primitives entières : N=3, r₈=8, r₂=2) |
-| **Vérification Lean 4** | 143 fichiers, 8391 jobs de build, 0 sorry, 15 axiomes (4 principaux + 11 d'arithmétique d'intervalle) (core v3.4.29) |
+| **Vérification Lean 4** | 146 fichiers, 8394 jobs de build, 0 sorry, 15 axiomes classés (taxonomie A-F, dont 4 paquets de données externes) (K7-Lean v3.5) |
 | **Significativité statistique** | p < 2×10⁻⁵ (σ > 4,2), unique parmi 3M+ configurations |
 | **Modèle nul Monte Carlo** | P(algébrique) = 10⁻¹³⁸ sur 3M+ formules |
 
@@ -29,7 +29,7 @@ layout: default
 | **Vous découvrez ?** | [Pour commencer](Getting-Started.fr.html) : choisissez votre voie |
 | **Lire les articles** | [Article principal](Paper-Main-Framework.html) ([Métrique G₂ explicite](Paper-Explicit-G2-Metric.html)) [Géométrie spectrale](Paper-Spectral-Geometry.html) |
 | **Parcourir les prédictions** | [Référence des observables](Observable-Reference.html), 95 observables avec formules |
-| **Vérifier les preuves** | [Formalisation Lean](Lean-Formalization.html), certificat à 140 conjonctions |
+| **Vérifier les preuves** | [Formalisation Lean](Lean-Formalization.html), certificat à 213 conjonctions |
 
 ---
 

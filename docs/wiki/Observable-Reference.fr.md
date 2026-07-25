@@ -24,7 +24,7 @@ layout: default
 | Correspondances exactes (< 0,01 %) | 11 |
 | Sous 1 % | 53 |
 | Paramètres libres (continûment ajustables) | 0 |
-| Certificat Lean | 140 conjonctions, 15 axiomes (4 principaux + 11 d'arithmétique d'intervalle), 0 sorry, 143 fichiers .lean |
+| Certificat Lean | 213 conjonctions, 15 axiomes classés (taxonomie A-F, dont 4 paquets de données externes), 0 sorry, 146 fichiers .lean |
 | Tests statistiques nuls | uniforme P=10⁻³⁴⁶, null algébrique (4,2 M formules aléatoires) P=10⁻¹³³, surdétermination 2,13× |
 
 ---

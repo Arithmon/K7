@@ -19,7 +19,7 @@ Formats de citation pour le cadre K₇ v3.5 (anciennement GIFT).
   doi     = {10.5281/zenodo.16891489},
   version = {3.5},
   license = {MIT},
-  note    = {95 observables, 0.99\% mean deviation on 33 Type I relations (PDG 2024 / NuFIT 6.1), 140 conjuncts certified in Lean 4, 15 axioms (4 main-chain + 11 interval-arithmetic), Donaldson certificate pipeline scoped by docs/analytic_status.md}
+  note    = {95 observables, 0.99\% mean deviation on 33 Type I relations (PDG 2024 / NuFIT 6.1), 213 conjuncts certified in Lean 4, 15 classified axioms (A-F taxonomy, of which 4 external data packages), Donaldson certificate pipeline scoped by docs/analytic_status.md}
 }
 ```
 
@@ -46,7 +46,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.5. Zen
   title  = {The K₇ Framework v3.5: Conditional Topological Relations for Standard-Model Parameters},
   author = {de La Fournière, Brieuc},
   year   = {2026},
-  note   = {Mean deviation 0.99\% on 33 Type I relations (PDG 2024 / NuFIT 6.1), zero continuous adjustable parameters, 3 integer primitives (N=3, r₈=8, r₂=2), 140 conjuncts in Lean 4},
+  note   = {Mean deviation 0.99\% on 33 Type I relations (PDG 2024 / NuFIT 6.1), zero continuous adjustable parameters, 3 integer primitives (N=3, r₈=8, r₂=2), 213 conjuncts in Lean 4},
   url    = {https://github.com/Arithmon/K7}
 }
 ```
@@ -203,13 +203,13 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.5. Zen
 ## Vérification formelle (K7-Lean)
 
 ```bibtex
-@software{k7_lean_v3429,
+@software{k7_lean_v35,
   title   = {K7-Lean (formerly GIFT Core): Formal Verification in Lean 4},
   author  = {de La Fournière, Brieuc},
   year    = {2026},
   url     = {https://github.com/Arithmon/K7-Lean},
-  version = {3.4.29},
-  note    = {143 Lean 4 files, 140 conjuncts, 15 axioms (4 main-chain + 11 interval-arithmetic certificates), 0 sorry, 8391 build jobs, Donaldson coassociative fibration formalized}
+  version = {3.5},
+  note    = {146 Lean 4 files, 213 conjuncts, 15 classified axioms (A-F taxonomy, of which 4 external data packages), 0 sorry, 8394 build jobs, Donaldson coassociative fibration formalized}
 }
 ```
 

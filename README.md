@@ -127,7 +127,7 @@ All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 | | |
 |---|---|
 | **Parameters** | Zero adjustable -- all structurally determined (3 integer primitives: N=3, r₈=8, r₂=2) |
-| **Verified** | 15 Lean 4 axioms (4 on the prediction chain + 11 K3 interval-arithmetic certificates), zero `sorry`, 460+ certified relations ([K7-Lean v3.4.29](https://github.com/Arithmon/K7-Lean)) |
+| **Verified** | 15 classified Lean 4 axioms (A-F taxonomy, of which 4 external data packages), zero `sorry`, 213 certificate conjuncts, 460+ certified relations ([K7-Lean v3.5](https://github.com/Arithmon/K7-Lean)) |
 | **Parameter-free core** | 33 exact relations among topological integers (Type I) -- each individually correct-or-wrong, none tunable |
 | **Falsifiable** | δ_CP = 197°, N_gen = 3, θ₂₃ upper octant -- tested by DUNE / FCC-ee |
 | **Observables** | 95 total (33 Type I + 19 Type II + 21 Type III + 22 Type IV); 66 with experimental data |
