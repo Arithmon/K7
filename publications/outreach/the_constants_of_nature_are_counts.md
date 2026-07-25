@@ -69,7 +69,7 @@ The methodology behind the null models is deliberately not bespoke. It is calibr
 
 The inputs are a declared ledger of twenty structural constants, all algebraic functions of six primitive topological integers: b₂, b₃, dim(G₂), dim(E₈), rank(E₈) and dim(K₇). Standard transcendentals enter as well (π, √2, ln 2, ζ values, and the golden ratio φ, whose appearance is traced to the McKay correspondence E₈ ↔ 2I and carries its own caveat).
 
-Some repository summaries compress the same input further, to three deeper integer choices: N_gen = 3, rank(E₈) = 8, rank(G₂) = 2. The two counts describe one structure. Naming the groups fixes dim(E₈), dim(G₂) and dim(K₇), so the three choices determine four of the six integers. What they do not determine is (b₂, b₃) — that selection is the open question of section 8, and no compression hides it.
+Some repository summaries compress the same input further, to three deeper integer choices: N_gen = 3, rank(E₈) = 8, rank(G₂) = 2. The two counts describe one structure. Naming the groups fixes dim(E₈), dim(G₂) and dim(K₇), so the three choices determine four of the six integers. What they do not determine is (b₂, b₃): that selection is the open question of section 8, and no compression hides it.
 
 The ledger, the grammar and the target list were frozen and deposited **before** any relation was searched for. This matters more than any individual result below. Pre-registration is what separates a prediction from a retrofit, and here it rests on a timestamp rather than on the author's assurance.
 
