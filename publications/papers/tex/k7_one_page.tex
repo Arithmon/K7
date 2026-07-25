@@ -1,0 +1,148 @@
+\documentclass[10pt,a4paper]{article}
+\input{gift_preamble}
+% One-pager: everything fits on a single A4 side. Golden 1.618 side margins
+% kept; top/bottom relaxed from 2.618 to 1.618 to honour the one-page promise.
+\geometry{margin=1.618cm, top=1.618cm, bottom=1.618cm}
+\usepackage{etoolbox}
+\AtBeginEnvironment{tabular}{\renewcommand{\arraystretch}{0.92}}
+\setcounter{secnumdepth}{0}
+\emergencystretch=3em
+\pagestyle{empty}
+\setstretch{0.98}
+\setlength{\parskip}{0.25em}
+\hypersetup{pdftitle={The Constants of Nature Are Counts: one page}}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\textbf{The Constants of Nature Are Counts}}\\[0.45em]
+{\normalsize\itshape A geometric hypothesis for the Standard Model
+parameters, and the date it can die}\\[0.55em]
+{\small Brieuc de La Fourni\`ere \quad | \quad Arithmon program \quad
+| \quad \href{https://arithmon.com}{arithmon.com}}
+\end{center}
+
+\vspace{0.1em}
+\noindent\rule{\textwidth}{0.2pt}
+
+{\small
+
+One compact seven-dimensional geometry. Zero adjustable parameters.
+Thirty-three exact algebraic relations among Standard Model constants,
+machine-checked in Lean~4 with no unproven step, from a ledger of inputs
+frozen and publicly deposited before the search began.
+
+And one date. If DUNE measures the neutrino CP phase $\delta_{\CP}$
+outside $[182°, 212°]$ at $3\sigma$, this framework is wrong, nothing in
+it can be tuned to survive, and the prediction on record is $197°$. First
+beam is targeted for 2031.
+
+The second paragraph is what earns the first. A framework with no free
+parameters cannot absorb a bad measurement. That is the cost of the
+claim, and it is the reason the claim is worth checking rather than
+dismissing.
+
+\vspace{0.35em}
+\noindent\textbf{The hypothesis.}\enspace The dimensionless constants of
+the Standard Model are arithmetic and topological invariants of a compact
+manifold with $\Gtwo$ holonomy, not free parameters to be fitted. The
+specific geometry has Betti numbers $(\btwo, \bthree) = (21, 77)$ and an
+$\E_8 \times \E_8$ motivated architecture. One relation shows what that
+means in a single line: the number of chiral fermion generations follows
+from the topological constraint
+$(\rank(\E_8) + N_{\rm gen}) \times \btwo = N_{\rm gen} \times \bthree$,
+that is $(8 + N_{\rm gen}) \times 21 = N_{\rm gen} \times 77$, whose only
+integer solution is $N_{\rm gen} = 3$. Not declared. Derived.
+
+\begin{center}
+\small
+\begin{tabular}{@{}p{0.44\textwidth}p{0.50\textwidth}@{}}
+\toprule
+Continuously adjustable parameters & \textbf{0}, after the input ledger is frozen \\
+Parameter-free algebraic relations & \textbf{33} \\
+Total derived observables & \textbf{95}, of which 66 experimentally comparable \\
+Agreement & \textbf{11} exact to better than 0.01\%, \textbf{53} within 1\% \\
+Formal verification & \textbf{213}-conjunct Lean~4 certificate, 15 classified axioms, \textbf{0} unproven steps \\
+Pre-registration & ledger, formula grammar and target list deposited before any search \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent\textbf{What is not being claimed.}\enspace Only the
+thirty-three parameter-free relations are direct consequences of the
+frozen ledger. The remaining observables are separated into declared
+categories: one-step extractions that use a named experimental anchor,
+multi-step chains conditional on the mechanism invoked, and structural
+diagnostics with no direct comparison. Counting all ninety-five as
+independent predictions would be the easiest available way to oversell
+this work, and the framework's own tables refuse to do it. Numerical
+precision is reported as a secondary figure: sub-percent agreement is
+exactly what a well-tuned fit also produces. The claim is structural, not
+numerical.
+
+\vspace{0.35em}
+\noindent\textbf{Why this is not numerology, as a commitment rather than
+an argument.}\enspace The ledger, the formula grammar and the target list
+were frozen and deposited before any relation was searched for. The
+statistical procedure was fixed in advance too, and it is deliberately
+not bespoke: it is calibrated against historical verdicts, so that
+Eddington's fine-structure argument fails it and the quantum Hall
+relation passes it. A test only its author's framework can pass is not a
+test. Under that pre-registered null battery the honest outcome is modest
+and is reported as modest: one relation, $m_H/m_W$, survives at exact
+rank-one uniqueness, with Koide's $Q = 2/3$ close behind. Earlier
+versions led with joint coincidence probabilities around $10^{-346}$;
+those figures are retained as internal diagnostics and deliberately
+removed from the headline.
+
+\vspace{0.35em}
+\noindent\textbf{What would refute it.}
+
+\begin{center}
+\small
+\begin{tabular}{@{}lp{0.42\textwidth}ll@{}}
+\toprule
+\textbf{Prediction} & \textbf{Value} & \textbf{Experiment} & \textbf{Timeline} \\
+\midrule
+$\delta_{\CP}$ & $197°$, refuted outside $[182°, 212°]$ at $3\sigma$ & DUNE & beam targeted 2031 \\
+$N_{\rm gen}$ & 3, refuted by a fourth generation & any & ongoing \\
+$m_s/m_d$ & 20, current $20.0 \pm 1.0$ & Lattice QCD & 2028--2030 \\
+$\sin^2\theta_W$ & $3/13$ & FCC-ee & 2040s \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent\textbf{What is open.}\enspace Three questions are load-bearing
+and unresolved, stated at the same prominence as the results. Does the
+compact geometry exist? The global-analytic layer remains conditional on
+a declared hypothesis pack. Where does the gauge sector come from? The
+branching chain is compatible with Standard Model matter content but is
+not yet a physical breaking mechanism, and this is the largest gap in the
+work. Why $(21, 77)$? Five routes to deriving the Betti numbers were
+investigated and closed; one explicit residual remains, $\btwo + \bthree
+= 98 = \dim(\Kseven) \cdot \dim(\Gtwo)$.
+
+\vspace{0.35em}
+\noindent\textbf{The question.}\enspace Most proposals that attempt to
+explain the constants of Nature eventually fail. Perhaps this one will
+too. But the question does not go away with them: if the constants are
+not fundamental, they come from somewhere. This is one attempt to answer
+that while making every assumption explicit, every calculation
+reproducible, every prediction public, and every route to refutation
+available in advance. Whether the hypothesis survives is now a matter for
+mathematics and experiment, not for authority.
+
+\vspace{0.3em}
+\noindent\rule{\textwidth}{0.2pt}
+
+{\footnotesize\noindent Full framework paper, formal sources, methodology
+and dated prediction scoreboard at
+\href{https://arithmon.com}{arithmon.com} and
+\href{https://github.com/Arithmon}{github.com/Arithmon}. The underlying
+numerical work on $\Gtwo$ metrics is cited as reference 25 in
+\emph{Physics Letters B} \textbf{878} (2026) 140566. Every claim above is
+built to be checkable without reference to its author.\par}
+
+}
+
+\end{document}
