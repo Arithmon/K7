@@ -1,8 +1,6 @@
 # The Constants of Nature Are Counts
 
-## A testable geometric hypothesis for the Standard Model.
-
-### What is derived. What is assumed. What would refute it.
+### A testable geometric hypothesis for the Standard Model: what is derived, what is assumed, and what would refute it
 
 Brieuc de La Fournière · Arithmon program · [arithmon.com](https://arithmon.com)
 
@@ -12,7 +10,7 @@ Brieuc de La Fournière · Arithmon program · [arithmon.com](https://arithmon.c
 
 ## Why read this
 
-Every successful physical theory eventually explains numbers that once had to be measured. The Standard Model has not yet done so. It predicts thousands of measurements to extraordinary precision. And it leaves one question almost entirely unanswered: why do the fundamental constants have the values they do?
+Some numbers that physics once had to measure were later derived. The Balmer constant is one. Whether the Standard Model parameters belong to that class is an open question, and this framework treats it as one. The Standard Model itself is among the most successful theories ever built, predicting thousands of measurements to extraordinary precision. And it leaves one question almost entirely unanswered: why do the fundamental constants have the values they do?
 
 Why these particle masses. Why these mixing angles. Why exactly three generations. Today those nineteen numbers (twenty-six, once neutrino masses and mixings are counted) are measured and inserted by hand.
 
@@ -69,7 +67,7 @@ The methodology behind the null models is deliberately not bespoke. It is calibr
 
 The inputs are a declared ledger of twenty structural constants, all algebraic functions of six primitive topological integers: b₂, b₃, dim(G₂), dim(E₈), rank(E₈) and dim(K₇). Standard transcendentals enter as well (π, √2, ln 2, ζ values, and the golden ratio φ, whose appearance is traced to the McKay correspondence E₈ ↔ 2I and carries its own caveat).
 
-Some repository summaries compress the same input further, to three deeper integer choices: N_gen = 3, rank(E₈) = 8, rank(G₂) = 2. The two counts describe one structure. Naming the groups fixes dim(E₈), dim(G₂) and dim(K₇), so the three choices determine four of the six integers. What they do not determine is (b₂, b₃): that selection is the open question of section 8, and no compression hides it.
+Some repository summaries compress the input further, and the two compressions should not be merged. Supplement S1 shows the 169 Chebyshev parameters of the certified metric collapsing to one topological integer, b₂(M₁), plus two Lie ranks: rank(E₈) = 8 and rank(G₂) = 2. That is a statement about the metric construction. The ledger's own compression, to the six primitive integers above, is a statement about the observables. Naming the two groups fixes dim(E₈), dim(G₂) and dim(K₇). What no compression supplies is (b₂, b₃), and that selection is the open question of section 8.
 
 The ledger, the grammar and the target list were frozen and deposited **before** any relation was searched for. This matters more than any individual result below. Pre-registration is what separates a prediction from a retrofit, and here it rests on a timestamp rather than on the author's assurance.
 
@@ -91,6 +89,8 @@ A recurring problem with ambitious frameworks is that everything eventually gets
 One bookkeeping point, disclosed rather than discovered: two Type I deviation figures circulate and both are real. The 0.73% above is the mean against the dataset frozen at pre-registration (PDG 2024 + NuFIT 6.0), which is the figure this document quotes because it is the one the pre-registration protects. After a post-freeze audit reconciled six experimental values to primary sources, the same mean reads 0.99%, and that is the figure the repository summaries carry. Supplement S4 documents both.
 
 Only the thirty-three Type I relations are parameter-free consequences of the frozen ledger. The nineteen Type II relations are conditional reconstructions: each multiplies a Type I ratio by a measured anchor, so that m_u is obtained as (m_u/m_d) × m_d measured. They are nineteen traceable extractions of physical scale, not nineteen independent predictions, and counting them as the latter would be the easiest available way to oversell this work. The twenty-one Type III chains are conditional on the mechanism each invokes, enumerated case by case. Type IV are diagnostics.
+
+One Type I relation is worth stating in full, because it shows in one line what "the constants are counts" is supposed to mean. The number of chiral generations follows from the topological constraint (rank(E₈) + N_gen) × b₂ = N_gen × b₃, that is (8 + N_gen) × 21 = N_gen × 77, whose only integer solution is **N_gen = 3**. It is derived, not declared, and a representation-theoretic route through the (27, 3) of E₆ × SU(3) reaches the same answer independently. Nothing in the ledger was chosen to make it come out that way.
 
 Of the sixty-six experimentally comparable observables, eleven agree to better than 0.01% and fifty-three fall within 1%.
 
@@ -155,6 +155,8 @@ These are load-bearing and unresolved. They appear here at full prominence, beca
 | sin²θ_W | 3/13 | FCC-ee | 2040s | precision ~10⁻⁵ |
 
 Every integer in the δ_CP decomposition is a named invariant, because in this framework it has to be: 7 × 14 = dim(K₇) · dim(G₂) = 98, the same product that reappears as b₂ + b₃ = 98 in the residual of section 8, and 99 = H\*, the effective cohomological dimension 1 + b₂ + b₃.
+
+Worth stating before a reader finds it: since 99 = 1 + 98, the prediction reduces to δ_CP = 2(b₂ + b₃) + 1. The framework's most exposed prediction therefore rests on a single input, the Betti sum, which is precisely the quantity section 8 declares underived. That is the actual shape of the exposure, and it is better read here than reconstructed by a skeptic.
 
 No reinterpretation is available. If DUNE returns δ_CP = 250°, this framework is wrong, nothing in it can be tuned to survive, and the correct response will be to say so in public.
 
