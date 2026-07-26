@@ -1,19 +1,19 @@
 # The K₇ Framework
 
-> ### This repository is moving
+> ### This repository has moved
 >
 > **`gift-framework/GIFT` → [`Arithmon/K7`](https://github.com/Arithmon/K7)**
 >
-> The framework is now presented as the **K₇ framework**; *K₇* remains the name of its
+> The framework is now presented as the **K₇ framework**; *GIFT* remains the name of its
 > founding phase. The move consolidates it under the [Arithmon](https://github.com/Arithmon)
-> organisation alongside Atlas, Program, Lean and Sieve.
+> organisation alongside Atlas, Program, Lean and Sieve (moved 2026-07-14).
 >
 > **Nothing you cite will break.** GitHub redirects the old URLs (web *and* `git clone` /
 > `fetch` / `push`), and the published papers cite `github.com/gift-framework/*`: those
 > redirects are load-bearing infrastructure, so the old paths will never be reused.
 >
 > One thing does *not* redirect: the documentation site moves from
-> `gift-framework.github.io/K₇/` to `arithmon.github.io/K7/`.
+> `gift-framework.github.io/GIFT/` to `arithmon.github.io/K7/`.
 >
 > Companion repository: `gift-framework/core` → [`Arithmon/K7-Lean`](https://github.com/Arithmon/K7-Lean) (moved 2026-07-14).
 
