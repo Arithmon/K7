@@ -246,6 +246,26 @@ Statistical validation shows (b₂=21, b₃=77) is the unique optimum among 3,07
 
 ---
 
+## Cited By
+
+- Heyes, Hirst, Sá Earp & Silva, *Neural and numerical methods for G₂-structures on
+  contact Calabi-Yau 7-manifolds*, *Physics Letters B* **878** (2026) 140566
+  (Imperial College London / UNICAMP). Mapped in the
+  [atlas](https://github.com/arithmon/atlas/blob/main/entries/heyes-plb-g2-numerics.md).
+- Zhou & Zhou, *Algebraic Stability and Cosmological Structure* (2026): derives
+  (b₂, b₃) = (21, 77) from self-referential dynamics, citing this work as empirical
+  motivation. Mapped, with the standing caveats, in the
+  [atlas](https://github.com/arithmon/atlas/blob/main/entries/zhou-algebraic-stability.md).
+- Mamun, *The Void Paradox: Towards a Universal Coordinate System for Information
+  Reality* (2026), University of Oxford. Not yet mapped in the atlas.
+- Cabannas & Silva, *The Modal Discipline of Objectivity* (2026), UFBA / UFMA.
+  Not yet mapped in the atlas.
+
+A citation is not an endorsement, and an atlas entry is not one either: the atlas
+records what a neighbouring work claims and where it differs, in both directions.
+
+---
+
 ## Connect
 
 | Platform | |
