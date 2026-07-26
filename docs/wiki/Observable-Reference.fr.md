@@ -161,6 +161,13 @@ Chaque observable reçoit une classification basée sur le nombre d'expressions 
 | 15 | **theta_23^PMNS** | arcsin((b_3-p_2)/H*) = arcsin(25/33) | 49,25° | 49,3° | 0,10 % | 2 | TOPOLOGICAL |
 | 16 | **theta_12^PMNS** | arctan(sqrt(delta/gamma)) | 33,40° | 33,41° | 0,03 % | 2 | DÉRIVÉE |
 
+
+> **Octant de θ₂₃, verdict courant.** La colonne expérimentale ci-dessus est figée sur
+> le jeu de données nommé en tête de cette référence. L'octant lui-même est une question
+> distincte et non tranchée : le cadre prédit l'octant supérieur, le meilleur ajustement
+> NuFIT 6.1 vaut 43,3° dans l'octant inférieur, et l'octant a basculé entre deux
+> ajustements globaux consécutifs. Prédiction consignée **en tension** au [tableau de bord](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
+
 ### 3.6 Secteur cosmologique
 
 | # | Observable | Formule K₇ | Valeur | Exp. | Écart | # Expr. | Statut |

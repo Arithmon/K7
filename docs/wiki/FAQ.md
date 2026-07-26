@@ -185,7 +185,7 @@ Subjectively, several stand out:
 
 While overall agreement is strong, tensions exist:
 
-**θ₂₃ in neutrino sector**: 0.43% deviation is largest in neutrino predictions. Within experimental uncertainty but worth monitoring.
+**θ₂₃ octant**: the framework predicts the upper octant (49.25°). The NuFIT 6.1 best fit sits at 43.3°, in the lower octant, so this prediction is currently **in tension**. The octant is unresolved and has flipped between consecutive global fits; DUNE and Hyper-Kamiokande decide it. Recorded in the [scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
 
 **Some CKM elements**: A few show ~0.3-0.5% deviations, technically within combined errors but worth future scrutiny.
 

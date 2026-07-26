@@ -138,6 +138,13 @@ Each observable receives a classification based on the number of independent alg
 | 15 | **theta_23^PMNS** | arcsin((b_3-p_2)/H*) = arcsin(25/33) | 49.25 deg | 49.3 deg | 0.10% | 2 | TOPOLOGICAL |
 | 16 | **theta_12^PMNS** | arctan(sqrt(delta/gamma)) | 33.40 deg | 33.41 deg | 0.03% | 2 | DERIVED |
 
+
+> **θ₂₃ octant, standing verdict.** The experimental column above is pinned to the
+> dataset named at the top of this reference. The octant itself is a separate,
+> unresolved question: the framework predicts the upper octant, the NuFIT 6.1 best
+> fit is 43.3° in the lower octant, and the octant has flipped between consecutive
+> global fits. This prediction is recorded as **in tension** in the [scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
+
 ### 3.6 Cosmological Sector
 
 | # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |

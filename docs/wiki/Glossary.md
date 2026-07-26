@@ -151,7 +151,7 @@ CP-violating phase in neutrino mixing. K₇ predicts: 197° from formula dim(K�
 Three neutrino mixing angles in PMNS matrix.
 - θ₁₂ ≈ 33.44° (solar mixing)
 - θ₁₃ ≈ 8.61° (reactor mixing)
-- θ₂₃ ≈ 49.2° (atmospheric mixing)
+- θ₂₃ (atmospheric mixing): octant unresolved. The framework predicts the upper octant, 49.25°; the current global best fit is in the lower octant
 
 ### Q_Koide
 Parameter in Koide formula relating charged lepton masses:

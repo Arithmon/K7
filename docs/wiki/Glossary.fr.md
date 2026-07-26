@@ -151,7 +151,7 @@ Phase violant CP dans le mélange des neutrinos. K₇ prédit : 197° à partir 
 Trois angles de mélange des neutrinos dans la matrice PMNS.
 - θ₁₂ ≈ 33,44° (mélange solaire)
 - θ₁₃ ≈ 8,61° (mélange réacteur)
-- θ₂₃ ≈ 49,2° (mélange atmosphérique)
+- θ₂₃ (mélange atmosphérique) : octant non tranché. Le cadre prédit l'octant supérieur, 49,25° ; le meilleur ajustement global actuel est dans l'octant inférieur
 
 ### Q_Koide
 Paramètre de la formule de Koide reliant les masses des leptons chargés :

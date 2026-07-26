@@ -129,7 +129,7 @@ All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 | **Parameters** | Zero adjustable -- all structurally determined (3 integer primitives: N=3, r₈=8, r₂=2) |
 | **Verified** | 15 classified Lean 4 axioms (A-F taxonomy, of which 4 external data packages), zero `sorry`, 213 certificate conjuncts, 460+ certified relations ([K7-Lean v3.5](https://github.com/Arithmon/K7-Lean)) |
 | **Parameter-free core** | 33 exact relations among topological integers (Type I) -- each individually correct-or-wrong, none tunable |
-| **Falsifiable** | δ_CP = 197°, N_gen = 3, θ₂₃ upper octant -- tested by DUNE / FCC-ee |
+| **Falsifiable** | δ_CP = 197°, N_gen = 3, θ₂₃ upper octant (**in tension**, see the [scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md)) -- tested by DUNE / FCC-ee |
 | **Observables** | 95 total (33 Type I + 19 Type II + 21 Type III + 22 Type IV); 66 with experimental data |
 | **Precision** | 0.99% mean deviation on the 33 Type-I core relations (PDG 2024 / NuFIT 6.1 / Planck 2018) |
 | **Uniqueness** | #1 of 3M+ random configurations tested (log₁₀ p_algebraic = −134) |
@@ -216,9 +216,17 @@ Details: [Statistical Evidence](publications/references/STATISTICAL_EVIDENCE.md)
 | Prediction | Experiment | Timeline | Falsification Criterion |
 |------------|------------|----------|------------------------|
 | δ_CP = 197° | DUNE | 2028-2040 | Outside [182°, 212°] at 3σ |
+| θ₂₃ upper octant (49.25°) | DUNE, Hyper-Kamiokande | early to mid 2030s | Lower octant established at 3σ |
 | sin²θ_W = 3/13 | FCC-ee | 2040s | Outside [0.2295, 0.2320] |
 | m_s/m_d = 20 | Lattice QCD | 2030 | Converges outside [19, 21] |
 | N_gen = 3 | LHC | Ongoing | Fourth generation discovery |
+
+**Standing verdicts.** θ₂₃ is currently **in tension**: the NuFIT 6.1 best fit sits at
+43.3°, in the lower octant, and the octant is unresolved, having flipped between
+consecutive global fits. δ_CP returned to within about 1σ after the same release
+without the prediction being touched: the prediction did not move, the data did.
+Every verdict is recorded, favourable or not, in the program
+[scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
 
 ---
 

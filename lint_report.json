@@ -1,0 +1,1584 @@
+{
+  "summary": {
+    "errors": 2,
+    "warnings": 18,
+    "info": 155
+  },
+  "issues": [
+    {
+      "file": "README.md",
+      "line": 36,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "The compact `K_7` torsion-free existence theorem is an active analytic target,"
+    },
+    {
+      "file": "README.md",
+      "line": 175,
+      "column": 30,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "This table is not a compact `K_7` torsion-free metric theorem."
+    },
+    {
+      "file": "README.md",
+      "line": 30,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (267 chars).",
+      "context": "K\u2087 derives Standard Model parameters from the geom..."
+    },
+    {
+      "file": "README.md",
+      "line": 235,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (375 chars).",
+      "context": "The framework contains **no continuous adjustable ..."
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 211,
+      "column": 3,
+      "severity": "error",
+      "category": "marketing",
+      "message": "Promotional term \"next-generation\". Use plain, descriptive language.",
+      "context": "- Next-generation colliders: Fourth generation searches"
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 13,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (340 chars).",
+      "context": "The K\u2087 framework is a theoretical framework that d..."
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 35,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (279 chars).",
+      "context": "K\u2087 is a speculative theoretical framework presenti..."
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 39,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (237 chars).",
+      "context": "- Precision of experimental agreement (v3.4: 95 ob..."
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 48,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (227 chars).",
+      "context": "All quantities derive from fixed topological struc..."
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 134,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (300 chars).",
+      "context": "Mean deviation from experiment (v3.4, 95 observabl..."
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 168,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (275 chars).",
+      "context": "**Overall (v3.4, 95-observable dataset)**: Type I ..."
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 188,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (378 chars).",
+      "context": "**\u03b8\u2082\u2083 octant**: the framework predicts the upper o..."
+    },
+    {
+      "file": "docs\\FAQ.md",
+      "line": 311,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (281 chars).",
+      "context": "These are \"derived\" rather than \"explained\" at the..."
+    },
+    {
+      "file": "docs\\GLOSSARY.md",
+      "line": 387,
+      "column": 22,
+      "severity": "warning",
+      "category": "evolutionary",
+      "message": "Avoid version-relative phrasing (\"in v3.1 ...\"); state current results only.",
+      "context": "Framework introduced in v2.1 connecting non-zero torsion on K\u2087 to RG flow. Key parameters: |T_norm| = 0.0164, |T_costar| = 0.0141."
+    },
+    {
+      "file": "docs\\GLOSSARY.md",
+      "line": 12,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (220 chars).",
+      "context": "**The K\u2087 framework** (formerly Geometric Informati..."
+    },
+    {
+      "file": "docs\\GLOSSARY.md",
+      "line": 393,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (318 chars).",
+      "context": "Theorem prover used for formal verification of K\u2087 ..."
+    },
+    {
+      "file": "docs\\wiki\\FAQ.md",
+      "line": 211,
+      "column": 3,
+      "severity": "error",
+      "category": "marketing",
+      "message": "Promotional term \"next-generation\". Use plain, descriptive language.",
+      "context": "- Next-generation colliders: Fourth generation searches"
+    },
+    {
+      "file": "docs\\wiki\\FAQ.md",
+      "line": 14,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (340 chars).",
+      "context": "The K\u2087 framework is a theoretical framework that d..."
+    },
+    {
+      "file": "docs\\wiki\\FAQ.md",
+      "line": 36,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (279 chars).",
+      "context": "K\u2087 is a speculative theoretical framework presenti..."
+    },
+    {
+      "file": "docs\\wiki\\FAQ.md",
+      "line": 49,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (227 chars).",
+      "context": "All quantities derive from fixed topological struc..."
+    },
+    {
+      "file": "docs\\wiki\\FAQ.md",
+      "line": 188,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (378 chars).",
+      "context": "**\u03b8\u2082\u2083 octant**: the framework predicts the upper o..."
+    },
+    {
+      "file": "docs\\wiki\\FAQ.md",
+      "line": 311,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (281 chars).",
+      "context": "These are \"derived\" rather than \"explained\" at the..."
+    },
+    {
+      "file": "docs\\wiki\\Glossary.md",
+      "line": 388,
+      "column": 22,
+      "severity": "warning",
+      "category": "evolutionary",
+      "message": "Avoid version-relative phrasing (\"in v3.1 ...\"); state current results only.",
+      "context": "Framework introduced in v2.1 connecting non-zero torsion on K\u2087 to RG flow. Key parameters: |T_norm| = 0.0164, |T_costar| = 0.0141."
+    },
+    {
+      "file": "docs\\wiki\\Glossary.md",
+      "line": 13,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (220 chars).",
+      "context": "**The K\u2087 framework** (formerly Geometric Informati..."
+    },
+    {
+      "file": "docs\\wiki\\Glossary.md",
+      "line": 394,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (433 chars).",
+      "context": "Theorem prover used for formal verification of K\u2087 ..."
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 43,
+      "column": 24,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode relation \u2265 instead of >=.",
+      "context": "| Multiply determined (>=3 expr.) | 92% |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 59,
+      "column": 7,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "| dim(K_7) | 7 | Compact manifold dimension | **0** | 7 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 60,
+      "column": 8,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| rank(E_8) | 8 | E_8 Cartan rank | 1 | - |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 60,
+      "column": 19,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| rank(E_8) | 8 | E_8 Cartan rank | 1 | - |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 63,
+      "column": 7,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: G\u2082 instead of G_2.",
+      "context": "| dim(G_2) | 14 | G_2 holonomy dimension | **0** | 2x7 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 63,
+      "column": 19,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: G\u2082 instead of G_2.",
+      "context": "| dim(G_2) | 14 | G_2 holonomy dimension | **0** | 2x7 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 64,
+      "column": 3,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| b_2 | 21 | Second Betti number | **0** | 3x7 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 72,
+      "column": 3,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| b_3 | 77 | Third Betti number | **0** | 11x7 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 74,
+      "column": 31,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| H* | 99 | Total cohomology (b_2+b_3+1) | 1 | 9x11 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 74,
+      "column": 35,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| H* | 99 | Total cohomology (b_2+b_3+1) | 1 | 9x11 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 76,
+      "column": 7,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| dim(E_8) | 248 | E_8 dimension | 3 | - |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 76,
+      "column": 20,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| dim(E_8) | 248 | E_8 dimension | 3 | - |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 103,
+      "column": 19,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode relation \u2265 instead of >=.",
+      "context": "| **CANONICAL** | >=20 expressions | Maximally over-determined; value emerges from algebraic web |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 104,
+      "column": 5,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| **ROBUST** | 10-19 expressions | Highly constrained; multiple independent derivations |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 114,
+      "column": 3,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| ROBUST | VERIFIED | Multiple independent derivations confirm |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 133,
+      "column": 86,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 133,
+      "column": 9,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 133,
+      "column": 27,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 133,
+      "column": 32,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 142,
+      "column": 29,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 6 | **Q_Koide** | dim_G_2/b_2 | 2/3 | 0.666661 | 0.001% | 27 | CANONICAL |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 151,
+      "column": 35,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 10 | **m_c/m_s** | (dim_E8-p_2)/b_2 | 246/21 = 11.71 | 11.7 | 0.12% | 5 | SUPPORTED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 152,
+      "column": 69,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 11 | **m_b/m_t** | 1/(2b\u2082) | 1/42 = 0.0238 | 0.024 | 0.79% | 12 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 160,
+      "column": 31,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 14 | **theta_13^PMNS** | pi/b_2 | 8.57 deg | 8.54 deg | 0.37% | 3 | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 161,
+      "column": 36,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 15 | **theta_23^PMNS** | arcsin((b_3-p_2)/H*) = arcsin(25/33) | 49.25 deg | 49.3 deg | 0.10% | 2 | TOPOLOGICAL |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 175,
+      "column": 30,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 17 | **Omega_DE** | ln(2)x(b_2+b_3)/H* | 0.6861 | 0.6847 | 0.21% | 2 | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 175,
+      "column": 34,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 17 | **Omega_DE** | ln(2)x(b_2+b_3)/H* | 0.6861 | 0.6847 | 0.21% | 2 | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 182,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "### 4.1 PMNS sin^2 Form"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 186,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 19 | **sin^2 theta_12^PMNS** | (1+N_gen)/alpha_sum | 4/13 = 0.308 | 0.307 | 0.23% | 21 | CANONICAL |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 187,
+      "column": 93,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 20 | **sin^2 theta_23^PMNS** | (D_bulk-Weyl)/D_bulk | 6/11 = 0.545 | 0.546 | 0.10% | 13 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 187,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 20 | **sin^2 theta_23^PMNS** | (D_bulk-Weyl)/D_bulk | 6/11 = 0.545 | 0.546 | 0.10% | 13 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 188,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 21 | **sin^2 theta_13^PMNS** | D_bulk/dim_E8^2 | 11/496 = 0.022 | 0.0220 | 0.81% | 5 | SUPPORTED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 194,
+      "column": 90,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 22 | **sin^2 theta_12^CKM** | fund_E7/dim_E8 | 56/248 = 0.2258 | 0.2250 | 0.36% | 16 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 194,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 22 | **sin^2 theta_12^CKM** | fund_E7/dim_E8 | 56/248 = 0.2258 | 0.2250 | 0.36% | 16 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 196,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 24 | **sin^2 theta_23^CKM** | dim_K7/PSL_27 | 7/168 = 0.042 | 0.0412 | 1.13% | 4 | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 202,
+      "column": 74,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 25 | **m_H/m_t** | fund_E7/b_3 | 56/77 = 0.7273 | 0.725 | 0.31% | 16 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 202,
+      "column": 30,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 25 | **m_H/m_t** | fund_E7/b_3 | 56/77 = 0.7273 | 0.725 | 0.31% | 16 | ROBUST |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 212,
+      "column": 26,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 28 | **m_mu/m_tau** | (b_2-D_bulk)/PSL_27 | 10/168 = 0.0595 | 0.0595 | 0.04% | 9 | SUPPORTED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 238,
+      "column": 64,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "$$\\frac{\\Omega_{DM}}{\\Omega_b} = \\frac{b_0 + 2b_2}{\\text{rank}(E_8)} = \\frac{1 + 42}{8} = \\frac{43}{8} = 5.375$$"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 248,
+      "column": 9,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "### 6.1 E_8 Structure"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 252,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 40 | **dim(E_8)** | 248 | E_8 Lie algebra dimension | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 252,
+      "column": 29,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 40 | **dim(E_8)** | 248 | E_8 Lie algebra dimension | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 253,
+      "column": 15,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 41 | **rank(E_8)** | 8 | Cartan subalgebra | 3+ | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 254,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 42 | **dim(E_8 x E_8)** | 496 | Product group | 2 | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 254,
+      "column": 20,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 42 | **dim(E_8 x E_8)** | 496 | Product group | 2 | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 255,
+      "column": 13,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 43 | **|W(E_8)|** | 696,729,600 | Weyl group order | 1 | SINGULAR |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 257,
+      "column": 9,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: G\u2082 instead of G_2.",
+      "context": "### 6.2 G_2 & K_7 Topology"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 257,
+      "column": 15,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "### 6.2 G_2 & K_7 Topology"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 261,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: G\u2082 instead of G_2.",
+      "context": "| 44 | **dim(G_2)** | 14 | Holonomy group | 4+ | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 262,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "| 45 | **dim(K_7)** | 7 | Compact manifold | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 263,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "| 46 | **b_2(K_7)** | 21 | Second Betti (gauge moduli) | 3+ | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 263,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 46 | **b_2(K_7)** | 21 | Second Betti (gauge moduli) | 3+ | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 264,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "| 47 | **b_3(K_7)** | 77 | Third Betti (matter modes) | 3+ | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 264,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 47 | **b_3(K_7)** | 77 | Third Betti (matter modes) | 3+ | DERIVED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 265,
+      "column": 22,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 48 | **H*** | 99 | b_2+b_3+1 (total cohomology) | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 265,
+      "column": 26,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 48 | **H*** | 99 | b_2+b_3+1 (total cohomology) | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 285,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 4/13 | sin^2 theta_12^PMNS | **21** |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 286,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 3/13 | sin^2 theta_W | **19** |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 288,
+      "column": 12,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 56/248 | sin^2 theta_12^CKM | **16** |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 290,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 6/11 | sin^2 theta_23^PMNS | **13** |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 300,
+      "column": 17,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 2 | dim_G_2 / b_2 | 14/21 = 2/3 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 303,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 5 | chi / (b_2 + chi) | 42/63 = 2/3 |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 326,
+      "column": 25,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 0.1-0.5% | 12 | 36% | sin^2 theta_W, m_mu/m_e, m_H/m_t |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 327,
+      "column": 31,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 0.5-1% | 5 | 15% | m_b/m_t, sin^2 theta_13^PMNS |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 328,
+      "column": 19,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| > 1% | 2 | 6% | sin^2 theta_23^CKM |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 335,
+      "column": 22,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| PMNS | 4 | 0.29% | sin^2 theta_23 (0.10%) |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 348,
+      "column": 3,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| ROBUST | 8 | 24% |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 361,
+      "column": 6,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| |W(E_8)| | 696,729,600 | - | Definition |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 434,
+      "column": 5,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| **sin^2 theta_W = 3/13** | +/- 0.00004 | +/- 0.00001 | FCC-ee | 2040s |"
+    },
+    {
+      "file": "docs\\wiki\\Observable-Reference.md",
+      "line": 447,
+      "column": 50,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| Empirical formula | lambda = B x n^2/(n^2-4) | sin^2 theta_W = 3/13 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 20,
+      "column": 24,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode relation \u2265 instead of >=.",
+      "context": "| Multiply determined (>=3 expr.) | 92% |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 36,
+      "column": 7,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "| dim(K_7) | 7 | Compact manifold dimension | **0** | 7 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 37,
+      "column": 8,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| rank(E_8) | 8 | E_8 Cartan rank | 1 | - |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 37,
+      "column": 19,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| rank(E_8) | 8 | E_8 Cartan rank | 1 | - |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 40,
+      "column": 7,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: G\u2082 instead of G_2.",
+      "context": "| dim(G_2) | 14 | G_2 holonomy dimension | **0** | 2x7 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 40,
+      "column": 19,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: G\u2082 instead of G_2.",
+      "context": "| dim(G_2) | 14 | G_2 holonomy dimension | **0** | 2x7 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 41,
+      "column": 3,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| b_2 | 21 | Second Betti number | **0** | 3x7 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 49,
+      "column": 3,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| b_3 | 77 | Third Betti number | **0** | 11x7 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 51,
+      "column": 31,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| H* | 99 | Total cohomology (b_2+b_3+1) | 1 | 9x11 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 51,
+      "column": 35,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| H* | 99 | Total cohomology (b_2+b_3+1) | 1 | 9x11 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 53,
+      "column": 7,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| dim(E_8) | 248 | E_8 dimension | 3 | - |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 53,
+      "column": 20,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| dim(E_8) | 248 | E_8 dimension | 3 | - |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 80,
+      "column": 19,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode relation \u2265 instead of >=.",
+      "context": "| **CANONICAL** | >=20 expressions | Maximally over-determined; value emerges from algebraic web |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 81,
+      "column": 5,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| **ROBUST** | 10-19 expressions | Highly constrained; multiple independent derivations |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 91,
+      "column": 3,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| ROBUST | VERIFIED | Multiple independent derivations confirm |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 110,
+      "column": 86,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 110,
+      "column": 9,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 110,
+      "column": 27,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 110,
+      "column": 32,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 119,
+      "column": 29,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 6 | **Q_Koide** | dim_G_2/b_2 | 2/3 | 0.666661 | 0.001% | 27 | CANONICAL |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 128,
+      "column": 35,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 10 | **m_c/m_s** | (dim_E8-p_2)/b_2 | 246/21 = 11.71 | 11.7 | 0.12% | 5 | SUPPORTED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 129,
+      "column": 69,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 11 | **m_b/m_t** | 1/(2b\u2082) | 1/42 = 0.0238 | 0.024 | 0.79% | 12 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 137,
+      "column": 31,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 14 | **theta_13^PMNS** | pi/b_2 | 8.57 deg | 8.54 deg | 0.37% | 3 | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 138,
+      "column": 36,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 15 | **theta_23^PMNS** | arcsin((b_3-p_2)/H*) = arcsin(25/33) | 49.25 deg | 49.3 deg | 0.10% | 2 | TOPOLOGICAL |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 152,
+      "column": 30,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 17 | **Omega_DE** | ln(2)x(b_2+b_3)/H* | 0.6861 | 0.6847 | 0.21% | 2 | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 152,
+      "column": 34,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 17 | **Omega_DE** | ln(2)x(b_2+b_3)/H* | 0.6861 | 0.6847 | 0.21% | 2 | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 159,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "### 4.1 PMNS sin^2 Form"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 163,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 19 | **sin^2 theta_12^PMNS** | (1+N_gen)/alpha_sum | 4/13 = 0.308 | 0.307 | 0.23% | 21 | CANONICAL |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 164,
+      "column": 93,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 20 | **sin^2 theta_23^PMNS** | (D_bulk-Weyl)/D_bulk | 6/11 = 0.545 | 0.546 | 0.10% | 13 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 164,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 20 | **sin^2 theta_23^PMNS** | (D_bulk-Weyl)/D_bulk | 6/11 = 0.545 | 0.546 | 0.10% | 13 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 165,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 21 | **sin^2 theta_13^PMNS** | D_bulk/dim_E8^2 | 11/496 = 0.022 | 0.0220 | 0.81% | 5 | SUPPORTED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 171,
+      "column": 90,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 22 | **sin^2 theta_12^CKM** | fund_E7/dim_E8 | 56/248 = 0.2258 | 0.2250 | 0.36% | 16 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 171,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 22 | **sin^2 theta_12^CKM** | fund_E7/dim_E8 | 56/248 = 0.2258 | 0.2250 | 0.36% | 16 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 173,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 24 | **sin^2 theta_23^CKM** | dim_K7/PSL_27 | 7/168 = 0.042 | 0.0412 | 1.13% | 4 | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 179,
+      "column": 74,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| 25 | **m_H/m_t** | fund_E7/b_3 | 56/77 = 0.7273 | 0.725 | 0.31% | 16 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 179,
+      "column": 30,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 25 | **m_H/m_t** | fund_E7/b_3 | 56/77 = 0.7273 | 0.725 | 0.31% | 16 | ROBUST |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 189,
+      "column": 26,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 28 | **m_mu/m_tau** | (b_2-D_bulk)/PSL_27 | 10/168 = 0.0595 | 0.0595 | 0.04% | 9 | SUPPORTED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 215,
+      "column": 64,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "$$\\frac{\\Omega_{DM}}{\\Omega_b} = \\frac{b_0 + 2b_2}{\\text{rank}(E_8)} = \\frac{1 + 42}{8} = \\frac{43}{8} = 5.375$$"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 225,
+      "column": 9,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "### 6.1 E_8 Structure"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 229,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 40 | **dim(E_8)** | 248 | E_8 Lie algebra dimension | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 229,
+      "column": 29,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 40 | **dim(E_8)** | 248 | E_8 Lie algebra dimension | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 230,
+      "column": 15,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 41 | **rank(E_8)** | 8 | Cartan subalgebra | 3+ | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 231,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 42 | **dim(E_8 x E_8)** | 496 | Product group | 2 | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 231,
+      "column": 20,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 42 | **dim(E_8 x E_8)** | 496 | Product group | 2 | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 232,
+      "column": 13,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| 43 | **|W(E_8)|** | 696,729,600 | Weyl group order | 1 | SINGULAR |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 234,
+      "column": 9,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: G\u2082 instead of G_2.",
+      "context": "### 6.2 G_2 & K_7 Topology"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 234,
+      "column": 15,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "### 6.2 G_2 & K_7 Topology"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 238,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: G\u2082 instead of G_2.",
+      "context": "| 44 | **dim(G_2)** | 14 | Holonomy group | 4+ | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 239,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "| 45 | **dim(K_7)** | 7 | Compact manifold | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 240,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "| 46 | **b_2(K_7)** | 21 | Second Betti (gauge moduli) | 3+ | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 240,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 46 | **b_2(K_7)** | 21 | Second Betti (gauge moduli) | 3+ | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 241,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: K\u2087 instead of K_7.",
+      "context": "| 47 | **b_3(K_7)** | 77 | Third Betti (matter modes) | 3+ | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 241,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 47 | **b_3(K_7)** | 77 | Third Betti (matter modes) | 3+ | DERIVED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 242,
+      "column": 22,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 48 | **H*** | 99 | b_2+b_3+1 (total cohomology) | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 242,
+      "column": 26,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2083 instead of b_3.",
+      "context": "| 48 | **H*** | 99 | b_2+b_3+1 (total cohomology) | 5+ | SUPPORTED |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 262,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 4/13 | sin^2 theta_12^PMNS | **21** |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 263,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 3/13 | sin^2 theta_W | **19** |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 265,
+      "column": 12,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 56/248 | sin^2 theta_12^CKM | **16** |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 267,
+      "column": 10,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 6/11 | sin^2 theta_23^PMNS | **13** |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 277,
+      "column": 17,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 2 | dim_G_2 / b_2 | 14/21 = 2/3 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 280,
+      "column": 14,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: b\u2082 instead of b_2.",
+      "context": "| 5 | chi / (b_2 + chi) | 42/63 = 2/3 |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 303,
+      "column": 25,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 0.1-0.5% | 12 | 36% | sin^2 theta_W, m_mu/m_e, m_H/m_t |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 304,
+      "column": 31,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| 0.5-1% | 5 | 15% | m_b/m_t, sin^2 theta_13^PMNS |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 305,
+      "column": 19,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| > 1% | 2 | 6% | sin^2 theta_23^CKM |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 312,
+      "column": 22,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| PMNS | 4 | 0.29% | sin^2 theta_23 (0.10%) |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 325,
+      "column": 3,
+      "severity": "warning",
+      "category": "marketing",
+      "message": "Term \"robust\" reads as promotional; consider rephrasing.",
+      "context": "| ROBUST | 8 | 24% |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 338,
+      "column": 6,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode subscript: E\u2088 instead of E_8.",
+      "context": "| |W(E_8)| | 696,729,600 | - | Definition |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 411,
+      "column": 5,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| **sin^2 theta_W = 3/13** | +/- 0.00004 | +/- 0.00001 | FCC-ee | 2040s |"
+    },
+    {
+      "file": "publications\\references\\OBSERVABLE_REFERENCE.md",
+      "line": 424,
+      "column": 50,
+      "severity": "info",
+      "category": "notation",
+      "message": "Prefer the Unicode superscript: sin\u00b2 instead of sin^2.",
+      "context": "| Empirical formula | lambda = B x n^2/(n^2-4) | sin^2 theta_W = 3/13 |"
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 13,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (388 chars).",
+      "context": "K\u2087 est un cadre th\u00e9orique qui d\u00e9rive les param\u00e8tre..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 35,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (315 chars).",
+      "context": "K\u2087 est un cadre th\u00e9orique sp\u00e9culatif qui pr\u00e9sente ..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 39,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (263 chars).",
+      "context": "- La pr\u00e9cision de l'accord exp\u00e9rimental (v3.4 : 95..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 48,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (250 chars).",
+      "context": "Toutes les quantit\u00e9s d\u00e9coulent d'une structure top..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 134,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (327 chars).",
+      "context": "\u00c9cart moyen avec l'exp\u00e9rience (v3.4, 95 observable..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 149,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (215 chars).",
+      "context": "Les pr\u00e9dictions dimensionnelles (statut : THEORETI..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 168,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (285 chars).",
+      "context": "**Globalement (v3.4, dataset \u00e0 95 observables)** :..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 188,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (417 chars).",
+      "context": "**Octant de \u03b8\u2082\u2083** : le cadre pr\u00e9dit l'octant sup\u00e9r..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 302,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (207 chars).",
+      "context": "K\u2087 est compatible avec toutes ces perspectives. Le..."
+    },
+    {
+      "file": "docs\\FAQ.fr.md",
+      "line": 311,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (328 chars).",
+      "context": "Ce sont des param\u00e8tres \u00ab d\u00e9riv\u00e9s \u00bb plut\u00f4t qu'\u00ab exp..."
+    },
+    {
+      "file": "docs\\GLOSSARY.fr.md",
+      "line": 12,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (255 chars).",
+      "context": "**Le cadre K\u2087** (anciennement Geometric Informatio..."
+    },
+    {
+      "file": "docs\\GLOSSARY.fr.md",
+      "line": 393,
+      "column": 200,
+      "severity": "info",
+      "category": "structure",
+      "message": "Very long line (387 chars).",
+      "context": "D\u00e9monstrateur de th\u00e9or\u00e8mes utilis\u00e9 pour la v\u00e9rific..."
+    }
+  ]
+}

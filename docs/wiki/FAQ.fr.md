@@ -185,7 +185,7 @@ Subjectivement, plusieurs se distinguent :
 
 L'accord global est solide mais des tensions existent :
 
-**θ₂₃ dans le secteur neutrino** : 0,43 % d'écart, le plus grand des prédictions neutrino. Dans l'incertitude expérimentale mais à surveiller.
+**Octant de θ₂₃** : le cadre prédit l'octant supérieur (49,25°). Le meilleur ajustement NuFIT 6.1 se situe à 43,3°, dans l'octant inférieur : cette prédiction est donc actuellement **en tension**. L'octant n'est pas tranché et a basculé entre deux ajustements globaux consécutifs ; DUNE et Hyper-Kamiokande le décideront. Consigné au [tableau de bord](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
 
 **Quelques éléments de la CKM** : certains montrent des écarts ~0,3-0,5 %, techniquement dans les erreurs combinées mais à examiner à l'avenir.
 
