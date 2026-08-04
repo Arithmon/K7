@@ -287,45 +287,69 @@ section:last-of-type {
 }
 .card a.card-link:hover { color: inherit; }
 
-/* ---- Blog Cards ---- */
-.blog-cards {
+/* ---- Track Cards (blog entry points) ---- */
+.track-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
-.blog-card {
+.track-card {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 1.35rem 1.35rem 1.15rem;
-  transition: border-color 0.2s ease, transform 0.15s ease;
+  padding: 1.75rem 1.5rem 1.5rem;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease;
 }
 
-.blog-card:hover {
-  border-color: var(--accent-muted);
-  transform: translateY(-2px);
+.track-card:hover {
+  border-color: var(--accent);
+  background: var(--bg-card-hover);
+  transform: translateY(-3px);
+  color: inherit;
 }
 
-.blog-card h3 {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  color: var(--text);
-  margin-bottom: 0.35rem;
-}
-
-.blog-card p {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  line-height: 1.55;
-}
-
-.blog-card .date {
+.track-card .track-count {
+  font-family: var(--font-mono);
   font-size: 0.7rem;
   color: var(--accent-muted);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-top: 0.5rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+}
+
+.track-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--accent);
+  line-height: 1.25;
+  margin-bottom: 0.65rem;
+}
+
+.track-card .track-pitch {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 0.9rem;
+}
+
+.track-card .track-sample {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  font-style: italic;
+  margin-bottom: 1.1rem;
+}
+
+.track-card .track-go {
+  margin-top: auto;
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 /* ---- Results Table ---- */
@@ -667,7 +691,7 @@ footer {
 @media (max-width: 768px) {
   .hero h1 { font-size: 2rem; }
   .footer-grid { grid-template-columns: 1fr; }
-  .cards, .blog-cards { grid-template-columns: 1fr; }
+  .cards, .track-cards { grid-template-columns: 1fr; }
   .audience-grid { grid-template-columns: 1fr 1fr; }
 
   /* Show hamburger, hide nav links by default */

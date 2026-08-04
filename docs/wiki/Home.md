@@ -70,7 +70,7 @@ N_gen    = |PSL(2,7)| / fund(E₇) = 168/56 = 3
 
 ## Outreach
 
-Accessible writing on the ideas behind K₇ lives on the [Substack blog](https://arithmon.substack.com/); see the [Site Map blog index](Site-Map.html#blog-posts) for the full list. Latest: *[The Singing Glass](https://arithmon.substack.com/p/the-singing-glass)*, when a Burgundy wine glass explains the hidden dimensions of the universe.
+Accessible writing on the ideas behind K₇ lives on the [Substack blog](https://arithmon.substack.com/), in three tracks: [The Series](Blog-Index.html#series) (physics through the games you have already played), [The Ideas](Blog-Index.html#ideas) (why the constants might not be arbitrary), and [The Story](Blog-Index.html#story) (an independent researcher, an AI, and a year of unorthodox research). The full list with French translations is in the [Blog Index](Blog-Index.html). Latest: *[The Constants of Nature Are Counts](https://arithmon.substack.com/p/the-constants-of-nature-are-counts)*, the thesis and the date it can die, on one page.
 
 ---
 

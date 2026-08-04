@@ -41,33 +41,17 @@ Index complet de toutes les pages du wiki. Les pages avec une version française
 | 🇫🇷 [Validations indépendantes](Independent-Validations.fr.html) | Recherches externes qui convergent avec K₇ |
 
 ## Articles de blog
-| Page | Description |
-|------|-------------|
-| 🇫🇷 [Épisode 10 : Le jour où Dota t'a appris que tu vivais dans une cosmologie](Blog-Artifact-Cosmology.fr.html) | Artifact et le lore Valve, clôture cosmologique de la série |
-| 🇫🇷 [Épisode 9 : Le jour où Portal t'a appris que l'espace peut avoir des trous](Blog-Portal-Topology.fr.html) | Portal, la topologie et la forme de l'espace |
-| 🇫🇷 [Épisode 8 : Le jour où Counter-Strike t'a appris que tout savoir, c'est tout révéler](Blog-Counter-Strike-Observer-Symmetry.fr.html) | Counter-Strike, l'incertitude et la symétrie observateur/observé |
-| 🇫🇷 [Épisode 7 : Le jour où Factorio t'a appris pourquoi tu es en vie](Blog-Factorio-Dissipative-Structures.fr.html) | Factorio, les structures dissipatives et la thermodynamique du vivant |
-| 🇫🇷 [Épisode 6 : Le jour où Stardew t'a appris pourquoi le temps va dans un seul sens](Blog-Stardew-Arrow-Of-Time.fr.html) | Stardew, la flèche du temps et l'entropie |
-| 🇫🇷 [Épisode 5 : Le jour où Bordeciel ne respirait pas sans toi](Blog-Skyrim-Participatory-Observer.fr.html) | Skyrim, le monde en attente d'observateur |
-| 🇫🇷 [Le verre qui chante](Blog-The-Singing-Glass.fr.html) | Quand un verre de Bourgogne explique les dimensions cachées de l'univers |
-| 🇫🇷 [Épisode 4 : Le jour où Minecraft t'a appris à dessiner une sphère qui n'en est pas une](Blog-Minecraft-Discrete-Sphere.fr.html) | Minecraft, la discrétisation et l'éternel problème du continu |
-| 🇫🇷 [Le sillon](Blog-The-Furrow.fr.html) | Un an de recherche non-orthodoxe : ce qui a changé, ce qui n'a pas changé, et ce que je ne sais toujours pas |
-| 🇫🇷 [Épisode 3 : Le jour où la carapace bleue a su où tu étais](Blog-Mario-Kart-Blue-Shell.fr.html) | Mario Kart, la non-localité et les corrélations à distance |
-| 🇫🇷 [Le mot qui manque](Blog-No-Word-For-This.fr.html) | Trois noms qui ne marchent pas, et une question ouverte sur le rôle dans la collaboration humain-IA |
-| 🇫🇷 [On a publié notre brouillon de notice](Blog-Weve-Released-Our-Draft-Blueprint.fr.html) | Annonce K₇ v3.4 en langage simple |
-| 🇫🇷 [Épisode 2 : Le jour où Tetris t'a appris que l'ordre fait tout](Blog-Tetris-Order-Is-Everything.fr.html) | Tetris et la non-commutativité productive |
-| 🇫🇷 [Épisode 1 : Le jour où Newton a perdu le contrôle](Blog-Fall-Guys-Newton-Lost-Control.fr.html) | Fall Guys et le mythe de la physique prévisible |
-| 🇫🇷 [Épisode 0 : Le jour où Pudge t'a appris la mécanique quantique](Blog-Pudge-Quantum-Mechanics.fr.html) | Le gaming comme école d'intuition quantique (ouverture de série) |
-| 🇫🇷 [Orientation, pas ontologie](Blog-Orientation-Not-Ontology.fr.html) | La posture philosophique derrière K₇ |
-| 🇫🇷 [Et si l'univers était un set Lego ?](Blog-Lego-Set-Universe.fr.html) | Compter les pièces, reconnaître le thème, lire la notice |
-| 🇫🇷 [« Le nom de l'auteur paraît inventé »](Blog-Brieucs-Gift.fr.html) | Apprendre la physique avec une IA : l'origine accidentelle de K₇ |
-| 🇫🇷 [La géométrie de l'impossible](Blog-Roberto-Carlos-Geometry.fr.html) | La géométrie des courbes impossibles |
-| 🇫🇷 [Les poux de l'univers](Blog-Lice-of-the-Universe.fr.html) | Pourquoi les constantes de l'univers ne sont pas arbitraires |
-| 🇫🇷 [L'algèbre qui attendait](Blog-The-Algebra-That-Waited.fr.html) | E₈ et l'algèbre derrière la physique |
-| 🇫🇷 [Gift from Bit](Blog-Gift-from-Bit.fr.html) | Fondations théorico-informationnelles |
-| 🇫🇷 [Ce qui vient avant](Blog-On-What-Comes-First.fr.html) | La géométrie avant la physique |
-| 🇫🇷 [Le théorème de Joyce, désormais en Lean](Blog-Joyce-Theorem-in-Lean.fr.html) | Formaliser l'existence des variétés G₂ en Lean 4 |
-| 🇫🇷 [13 théorèmes, zéro confiance requise](Blog-13-Theorems-Zero-Trust.fr.html) | Ne rien croire, tout vérifier |
+
+Vingt-huit textes, en trois pistes. Les originaux anglais sont sur
+[arithmon.substack.com](https://arithmon.substack.com/) ; les traductions
+françaises sont hébergées dans ce wiki. La seule liste maintenue, avec les dates
+et les deux langues par ligne, est l'**[index du blog](Blog-Index.fr.html)**.
+
+| Piste | Ce que c'est | Textes |
+|-------|--------------|--------|
+| [La série](Blog-Index.fr.html#series) | La physique par les jeux auxquels vous avez déjà joué, de l'épisode 0 à l'épisode 10 | 11 |
+| [Les idées](Blog-Index.fr.html#ideas) | Pourquoi les constantes de la nature ne sont peut-être pas arbitraires : l'hypothèse, ses métaphores, les preuves | 13 |
+| [L'histoire](Blog-Index.fr.html#story) | Un chercheur indépendant, une IA, et un an de recherche non-orthodoxe | 4 |
 
 ## Projet
 | Page | Description |

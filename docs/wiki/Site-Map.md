@@ -42,35 +42,16 @@ Complete index of all wiki pages.
 
 ## Blog Posts
 
-English posts are hosted on Substack ([arithmon.substack.com](https://arithmon.substack.com/)). French translations live in this wiki (see [Site Map FR](Site-Map.fr.html)).
+Twenty-eight posts, in three tracks. English originals are on
+[arithmon.substack.com](https://arithmon.substack.com/); French translations are
+hosted in this wiki. The single maintained list, with dates and both languages
+per row, is the **[Blog Index](Blog-Index.html)**.
 
-| Post | Description |
-|------|-------------|
-| [Episode 10: The day Dota taught you that you were living in a cosmology](https://arithmon.substack.com/p/episode-10-the-day-dota-taught-you) | Artifact and Valve's lore, the cosmological close of the series |
-| [Episode 9: The day Portal taught you that space can have holes](https://arithmon.substack.com/p/episode-9-the-day-portal-taught-you) | Portal, topology and the shape of space |
-| [Episode 8: The day Counter-Strike taught you that to know is to reveal](https://arithmon.substack.com/p/episode-8-the-day-counter-strike) | Counter-Strike, uncertainty and the observer/observed symmetry |
-| [Episode 7: The day Factorio taught you why you're alive](https://arithmon.substack.com/p/episode-7-the-day-factorio-taught) | Factorio, dissipative structures and the thermodynamics of life |
-| [Episode 6: The day Stardew taught you why time moves in one direction](https://arithmon.substack.com/p/episode-6-the-day-stardew-taught) | Stardew, the arrow of time and entropy |
-| [Episode 5: The day Skyrim wasn't breathing without you](https://arithmon.substack.com/p/episode-5-the-day-skyrim-wasnt-breathing) | Skyrim, a world waiting for an observer |
-| [The Singing Glass](https://arithmon.substack.com/p/the-singing-glass) | When a Burgundy wine glass explains the hidden dimensions of the universe |
-| [Episode 4: The day Minecraft taught you to draw a sphere that wasn't one](https://arithmon.substack.com/p/episode-4-the-day-minecraft-taught) | Minecraft, discretization and the eternal problem of the continuum |
-| [The Furrow](https://arithmon.substack.com/p/the-furrow) | One year of unorthodox research: what changed, what didn't, and what I still don't know |
-| [Episode 3: The day the blue shell knew where you were](https://arithmon.substack.com/p/episode-3-the-day-the-blue-shell) | Mario Kart, non-locality and correlations at a distance |
-| [No Word for This](https://arithmon.substack.com/p/no-word-for-this) | Three names that don't work, and an open question about the role in human-AI collaboration |
-| [We've Released Our Draft Blueprint](https://arithmon.substack.com/p/weve-released-our-draft-blueprint) | Announcing K₇ v3.4 in plain language |
-| [Episode 2: The day Tetris taught you that order is everything](https://arithmon.substack.com/p/episode-2-the-day-tetris-taught-you) | Tetris and productive non-commutativity |
-| [Episode 1: The day Newton lost control](https://arithmon.substack.com/p/episode-1-the-day-newton-lost-control) | Fall Guys and the myth of predictable physics |
-| [Episode 0: The day Pudge taught you quantum mechanics](https://arithmon.substack.com/p/episode-0-the-day-pudge-taught-you) | Gaming as a school of quantum intuition (series opener) |
-| [Orientation, not ontology](https://arithmon.substack.com/p/orientation-not-ontology) | The philosophical posture behind K₇ |
-| [What if the universe was a Lego set?](https://arithmon.substack.com/p/what-if-the-universe-was-a-lego-set) | Counting pieces, recognizing themes, reading the manual |
-| ["The author's name appears to be fabricated"](https://arithmon.substack.com/p/brieucs-gift) | Learning physics with AI: the accidental origin of K₇ |
-| [The Geometry of the Impossible](https://arithmon.substack.com/p/the-geometry-of-the-impossible) | What Roberto Carlos knew (without knowing it) |
-| [The Lice of the Universe](https://arithmon.substack.com/p/the-lice-of-the-universe) | Why the universe's constants aren't arbitrary |
-| [The Algebra That Waited](https://arithmon.substack.com/p/the-algebra-that-waited) | E₈ and the algebra behind physics |
-| [13 Theorems, Zero Trust Required](https://arithmon.substack.com/p/13-theorems-zero-trust-required) | Trust nothing, verify everything |
-| [On What Comes First](https://arithmon.substack.com/p/on-what-comes-first) | Geometry before physics |
-| [Joyce's Theorem, Now in Lean](https://arithmon.substack.com/p/joyces-theorem-now-in-lean) | Formalizing G₂ existence in Lean 4 |
-| [Gift from Bit](https://arithmon.substack.com/p/gift-from-bit) | Information-theoretic foundations |
+| Track | What it is | Posts |
+|-------|-----------|-------|
+| [The Series](Blog-Index.html#series) | Physics through the games you have already played, Episode 0 to Episode 10 | 11 |
+| [The Ideas](Blog-Index.html#ideas) | Why the constants of nature might not be arbitrary: the hypothesis, its metaphors, the proofs | 13 |
+| [The Story](Blog-Index.html#story) | An independent researcher, an AI, and a year of unorthodox research | 4 |
 
 ## Project
 | Page | Description |
