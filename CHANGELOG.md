@@ -5,6 +5,25 @@ All notable changes to the GIFT framework are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Erratum to v3.5 — 2026-08-22
+
+Two corrections to the v3.5 release are recorded in
+[`publications/ERRATUM_v3.5.md`](publications/ERRATUM_v3.5.md):
+
+1. the closed-form Calabi–Yau residual bound `Var(log R) ≤ 1309/10⁷` bounds
+   an **auxiliary quantity**, not the Calabi–Yau residual of a Kähler metric
+   — the frozen witness was evaluated with a metric contraction that was
+   retracted on 2026-07-13, and the defect was measured on that witness on
+   2026-07-19 (true residual variance 5.3 × 10⁻¹, ratio 3677; 522 of the 4000
+   points not positive-definite in the correct convention);
+2. the datum-level instantiation at 𝒟₀ of the companion paper [E] is no
+   longer realisable as posed (Stokes-type obstruction, 2026-08-19); the
+   conditional theorems of [E] are unaffected.
+
+The v3.5 deposit stands as published and the sources under
+`publications/papers/` are **left unregenerated**, so that the erratum can be
+read against them. Both corrections are to be integrated into **v3.6**.
+
 ## [3.4.0] - 2026-05-07
 
 ### Major: 95-observable dataset, four-type classification, Joyce-Karigiannis topological route
