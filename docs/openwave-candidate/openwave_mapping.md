@@ -51,6 +51,6 @@ The highest-value first tests are:
 1. **PMNS static half** — reproduce the K7 values, label discovery history honestly, and state exactly what is and is not being tested.
 2. **Charged-lepton spectrum** — distinguish numerical ratios from a physical three-state spectral derivation.
 3. **Running coupling** — only after a public clean-clone RGE package fixes thresholds, scheme and boundary conditions.
-4. **Prospective output (`K7-P1` or successor)** — provide at least one target-blind future-facing value with an immutable observable map.
+4. **K7-P1 Higgs trilinear benchmark** — present the frozen tree-level consequence and explicitly ask whether OpenWave counts it as a genuine prediction or as a prospective consequence of a historical calibration.
 
 A low initial score is acceptable. Inflating a partial map into a validated mechanism is not.

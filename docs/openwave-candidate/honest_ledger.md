@@ -60,7 +60,7 @@ Current conservative language:
 
 ## 5. Prospective layer
 
-A new `K7-Pn` namespace is reserved for outputs frozen **before the relevant future measurement is used**.
+A `K7-Pn` namespace is reserved for outputs frozen **before the relevant future measurement is used**.
 
 For every `K7-Pn` entry the record must include:
 
@@ -73,7 +73,21 @@ For every `K7-Pn` entry the record must include:
 7. a no-revision rule;
 8. the exact layer falsified if the result fails.
 
-See [`prospective_predictions.md`](prospective_predictions.md).
+### K7-P1 accounting
+
+K7-P1 freezes a new Higgs-trilinear consequence of the historical relation `lambda_H = sqrt(17)/32`.
+
+The following must **not** be conflated:
+
+- `lambda_H = sqrt(17)/32`: historical / calibration-sensitive relation;
+- `rho3 = g_hhh/v = 3 sqrt(17)/16`: newly frozen out-of-sample consequence;
+- `C6 = 0` for `(H†H)^3`: discrete minimal-operator choice;
+- `m_H` and `v` used to quote `kappa_lambda`: external conversion anchors;
+- any loop/RG matching prescription: additional physical map, not yet derived by K7.
+
+Therefore K7-P1 is frozen as a **tree-level benchmark**. Whether OpenWave counts it as the required genuine prediction remains a live hostile-review question.
+
+See [`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md).
 
 ## 6. Claims deliberately not made
 
@@ -84,4 +98,5 @@ This dossier does not claim:
 - a completed compact torsion-free K7 metric theorem;
 - that an algebraic match alone derives the corresponding physical mechanism;
 - that a target-centered experimental interval is evidence for an exact K7 match;
-- that a private canonical script satisfies OpenWave clean-clone reproducibility.
+- that a private canonical script satisfies OpenWave clean-clone reproducibility;
+- that K7-P1 already contains a derived UV-to-IR Higgs matching calculation.

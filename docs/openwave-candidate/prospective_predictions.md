@@ -2,16 +2,16 @@
 
 ## Rule for the `K7-Pn` namespace
 
-A `K7-Pn` entry exists only when all of the following are frozen before the future comparison is used:
+A `K7-Pn` entry exists only when all load-bearing choices are frozen before the future comparison is used:
 
 - source commit;
 - structural inputs;
 - physical observable map;
 - operator basis;
 - normalization;
-- scheme and scale;
+- scheme and scale where applicable;
 - branch / sign conventions;
-- dimensional anchor, if any;
+- dimensional anchors, if any;
 - executable assembly;
 - numerical value;
 - experiment / data release that will test it;
@@ -20,83 +20,61 @@ A `K7-Pn` entry exists only when all of the following are frozen before the futu
 
 If any load-bearing item is chosen after seeing the target, the entry is downgraded from **prospective prediction** to **post-fit / revised**.
 
+A later freeze can make a future comparison prospective. It cannot retroactively make the historical discovery target-blind.
+
 ---
 
-# K7-P1 — Higgs trilinear self-coupling candidate
+# K7-P1 — Higgs trilinear self-coupling
 
-**Status:** `CANDIDATE — arithmetic layer frozen; physical experimental map not yet fully frozen`
+**Status:** `FROZEN TREE-LEVEL BENCHMARK — OpenWave genuine-prediction gate unresolved`
 
-This entry intentionally stops one step short of calling itself an OpenWave-ready physical prediction.
+Full preregistration:
+[`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md)
 
-## Frozen source relation
-
-Historical K7 relation:
+Historical K7 input:
 
 `lambda_H = sqrt(17)/32`
 
-Numerically:
+This historical relation is not relabeled as a new prediction.
 
-`lambda_H = 0.1288470508005519...`
+Frozen new consequence under the minimal renormalizable one-doublet Higgs potential:
 
-The relation itself is historical and is **not** relabeled as a prospective discovery.
+`rho3_K7 := g_hhh(tree)/v = 6 lambda_H`
 
-## New out-of-sample consequence
+therefore
 
-Under the minimal renormalizable single-Higgs-doublet potential
+`rho3_K7 = 3 sqrt(17)/16 = 0.7730823048033113...`
 
-`V(H) = -mu^2 H†H + lambda_H (H†H)^2`
+The benchmark also freezes `C6 = 0` for an independent `(H†H)^3` deformation. This is explicitly counted as a discrete physical-identification choice, not claimed as a K7 theorem.
 
-the tree-level cubic coefficient is forced:
+## Why the primary number is `rho3`, not `kappa_lambda`
 
-`g_hhh(tree) = 6 lambda_H v`
+`kappa_lambda` depends on the external reporting anchors used for the SM reference:
 
-so the dimensionless ratio is
+`kappa_lambda = rho3 * v^2 / (3 m_H^2)`.
 
-`rho3_tree := g_hhh(tree)/v`
+The immutable K7 output is therefore `rho3`. Any future experimental release must state the `m_H`, `v`, scheme and benchmark convention used for conversion.
 
-`rho3_tree = 3 sqrt(17)/16`
+## Known-before-freeze baseline
 
-`rho3_tree = 0.7730823048033113...`
+CMS-PAS-HIG-25-008 (2026-08-06) already gave a broad direct interval
 
-Using `v = 246.22 GeV` only as a declared dimensional anchor gives the tree-level benchmark
+`-2.5 < kappa_lambda < 9.4` at 95% CL
 
-`g_hhh(tree) = 190.3483250887 GeV`.
+for the combined result. Compatibility with this pre-freeze interval is **not** prospective evidence.
 
-## Why this is potentially prospective
+## Falsifier
 
-No new K7 integer or arithmetic expression is selected to match a measured Higgs-pair target. The consequence follows from the already-frozen `lambda_H` **if** the minimal Higgs operator basis is adopted.
+A future post-freeze direct extraction that excludes the frozen K7-P1 value at 95% CL under a compatible minimal benchmark falsifies the **minimal K7 Higgs identification**.
 
-## Remaining gate before calling it a physical prediction
+It does not automatically falsify the K7 topology.
 
-A collider extraction is not a direct measurement of a bare tree-level coefficient. Before preregistration we must freeze:
+## OpenWave caveat
 
-1. the renormalization scheme;
-2. the reference scale;
-3. loop matching / running from the K7 `lambda_H` convention;
-4. the precise `kappa_lambda` or other pseudo-observable to be compared;
-5. whether any dimension-six `(H†H)^3` operator is allowed.
+Whether this satisfies OpenWave's “genuine prediction” gate is intentionally left open to hostile review. The strongest objection is that `lambda_H` itself was historically compared with a known Higgs target; K7-P1 is a new consequence of that fixed relation, not a target-blind origin for the relation itself.
 
-Until these are fixed **without using the future target**, `K7-P1` is a prospective **tree-level benchmark**, not yet a complete experimental prediction.
+Reproducer:
 
-## No-revision rule
-
-After the physical map is frozen:
-
-- do not change 17, 32, the sign, or the operator basis to improve agreement;
-- do not add a dimension-six Higgs coefficient after seeing the result;
-- any necessary post-data change creates `K7-P1R1` and the original verdict remains in the record.
-
-## Desired final artifact
-
-A final preregistration should contain:
-
-```text
-K7-P1
-source_sha = <immutable K7 commit>
-observable = <exact collider pseudo-observable>
-scheme = <frozen>
-scale = <frozen>
-operator_basis = <frozen>
-prediction = <number>
-falsifier = <interval / likelihood rule>
+```bash
+python3 docs/openwave-candidate/reproduce_k7_p1.py
 ```

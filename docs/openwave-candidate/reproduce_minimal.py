@@ -4,8 +4,8 @@
 Deliberately contains NO experimental target values.
 
 It reproduces a small set of ledger-to-output relations and the arithmetic
-part of the prospective K7-P1 Higgs-trilinear benchmark.  It does not claim
-that the physical identifications are thereby derived.
+part of K7-P1. It does not claim that the physical identifications are thereby
+derived.
 """
 
 from __future__ import annotations
@@ -31,11 +31,7 @@ def main() -> None:
     delta_cp_deg = dim_k7 * dim_g2 + h_star    # 197
 
     lambda_h = math.sqrt(17.0) / 32.0
-
-    # K7-P1 arithmetic layer: minimal tree-level single-doublet consequence.
     rho3_tree = 6.0 * lambda_h
-    v_anchor_gev = 246.22
-    g_hhh_tree_gev = rho3_tree * v_anchor_gev
 
     out = {
         "ledger": {
@@ -63,19 +59,19 @@ def main() -> None:
             "lambda_H": lambda_h,
         },
         "K7_P1_tree_benchmark": {
-            "status": "arithmetic_frozen_physical_map_pending",
+            "status": "frozen_tree_level_benchmark",
             "rho3_tree_formula": "3*sqrt(17)/16",
             "rho3_tree": rho3_tree,
-            "v_anchor_GeV": v_anchor_gev,
-            "g_hhh_tree_GeV": g_hhh_tree_gev,
+            "experimental_targets_embedded": False,
         },
     }
 
-    # Internal arithmetic guards.  These are not experimental tests.
+    # Internal arithmetic guards. These are not experimental tests.
     assert sin2_theta_w == Fraction(3, 13)
     assert koide_q == Fraction(2, 3)
     assert kappa_t == Fraction(1, 61)
     assert delta_cp_deg == 197
+    assert math.isclose(rho3_tree, 3.0 * math.sqrt(17.0) / 16.0, rel_tol=0.0, abs_tol=1e-15)
 
     print(json.dumps(out, indent=2, sort_keys=True))
 

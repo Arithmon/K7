@@ -36,17 +36,25 @@ A falsifier is attached to the **claim layer it actually tests**. Failure of one
 
 ## F4 — `K7-P1` Higgs trilinear benchmark
 
-**Claim layer:** minimal single-doublet Higgs identification built on the frozen K7 `lambda_H`.
+**Claim layer:** minimal one-doublet Higgs identification built on the historical K7 `lambda_H`.
 
-**Arithmetic benchmark:**
+**Frozen arithmetic:**
 
 `lambda_H = sqrt(17)/32`
 
-`rho3_tree = g_hhh(tree)/v = 6 lambda_H = 3 sqrt(17)/16`
+`rho3 = g_hhh(tree)/v = 6 lambda_H = 3 sqrt(17)/16`
 
-**Refutation rule:** only meaningful after the renormalization scheme, scale, loop matching and experimental pseudo-observable are frozen. A future measurement excluding the resulting frozen physical prediction falsifies this **minimal Higgs identification**.
+`rho3 = 0.7730823048033113...`
 
-**It does not automatically falsify:** the K7 topology. A demonstrated higher-dimensional Higgs operator could instead falsify the minimal operator basis.
+**Operator choice:** `C6 = 0` for an independent `(H†H)^3` deformation. This is a ledgered minimal-benchmark choice, not a claimed topology theorem.
+
+**Refutation rule:** a post-freeze direct Higgs-self-coupling result excludes the corresponding K7-P1 value at **95% CL** under a compatible benchmark and stated conversion convention.
+
+**What it falsifies:** the minimal K7 Higgs identification represented by K7-P1.
+
+**What it does not automatically falsify:** the K7 topology or the entire historical arithmetic ledger.
+
+**No rescue:** introducing a fitted `C6`, changing the potential normalization, or changing the observable map after seeing the result creates a new revision identifier and leaves the K7-P1 verdict intact.
 
 ## F5 — clean-room reproducibility
 

@@ -55,10 +55,6 @@ The cleanest current overlaps with OpenWave are:
 
 We do not claim electron soliton dynamics, baryon bound states, nuclear structure, Maxwell emergence, or atomic quantization.
 
-## Charge
-
-Not yet proposed as an earned OpenWave criterion.
-
 ## Free-choice ledger
 
 Working statement:
@@ -67,29 +63,48 @@ Working statement:
 
 We do not ask OpenWave to accept the historical phrase “zero free parameters” without that qualification.
 
-See `openwave_candidate/honest_ledger.md`.
-
 ## Prediction / calibration ledger
 
 Historical Type-I relations are treated conservatively as retrodictions unless target-blind provenance is demonstrated.
 
 The Sieve supplies an ex-post frozen grammar/null audit and identifies survivors, but it does not retroactively preregister relations discovered earlier.
 
-A new `K7-Pn` namespace is being created for truly prospective outputs. Candidate `K7-P1` derives a Higgs-trilinear tree-level benchmark from the already-frozen `lambda_H`, but we will not call it a complete collider prediction until its renormalization / pseudo-observable map is frozen.
+### Prospective candidate K7-P1
+
+We have now frozen a new consequence of the historical Higgs relation:
+
+`lambda_H = sqrt(17)/32`
+
+under the minimal renormalizable one-doublet potential:
+
+`rho3 = g_hhh(tree)/v = 3 sqrt(17)/16 = 0.7730823048033113...`
+
+The full record is in `K7-P1_higgs_trilinear_preregistration.md`, with a dedicated target-free reproducer and a no-revision rule.
+
+We are **not** claiming that `lambda_H` itself was target-blind. It was historically compared with a known Higgs target.
+
+We are also **not** hiding the remaining choices: `C6=0` is a discrete minimal-operator benchmark, and K7 does not yet provide a derived UV-to-IR Higgs matching calculation.
+
+The question we would like OpenWave reviewers to attack is therefore precise:
+
+> Does committing a previously fixed, calibration-sensitive relation to a genuinely new physical observable before precision data exist satisfy the OpenWave “genuine prediction” gate, or should K7-P1 be classified only as a prospective consequence of a calibration?
+
+Either answer is useful. We prefer a conservative classification over inflating the score.
 
 ## Reproducibility
 
-A deliberately minimal standard-library reproducer is included:
+From a clean clone:
 
 ```bash
-python3 openwave_candidate/reproduce_minimal.py
+python3 docs/openwave-candidate/reproduce_minimal.py
+python3 docs/openwave-candidate/reproduce_k7_p1.py
 ```
 
-It contains no experimental targets. Larger claims will not be requested as OpenWave cells until their public clean-clone paths exist.
+The default K7-P1 run contains no experimental targets.
 
 ## Falsifiers
 
-See `openwave_candidate/falsifiers.md`.
+See `docs/openwave-candidate/falsifiers.md`.
 
 Notably, we distinguish:
 
@@ -104,7 +119,7 @@ K7 has a companion Lean repository (`Arithmon/K7-Lean`) and machine-checked alge
 
 ## Provisional OpenWave coverage
 
-See `openwave_candidate/openwave_mapping.md`.
+See `docs/openwave-candidate/openwave_mapping.md`.
 
 The initial self-map has only two serious partial candidates (PMNS and charged-lepton spectrum), one deferred candidate (running coupling), and otherwise intentionally leaves rows unclaimed.
 
@@ -115,5 +130,5 @@ We would especially value hostile review on:
 1. the parameter count;
 2. whether any claimed step is chosen rather than forced;
 3. the minimum evidence needed for the static half of PMNS / lepton-spectrum rows;
-4. the proper observable map for a genuinely prospective K7 prediction;
+4. whether K7-P1 qualifies as a genuine prediction under section 1.1;
 5. whether the proposed initial static/spectral scope matches OpenWave's intended model class.
