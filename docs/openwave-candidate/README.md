@@ -44,25 +44,33 @@ Likewise, the 33 Type-I relations are not called “33 prospective predictions�
 - [`honest_ledger.md`](honest_ledger.md) — inputs, choices, calibrations/retrodictions, survivors, prospective outputs.
 - [`openwave_mapping.md`](openwave_mapping.md) — all 31 OpenWave criteria, with a deliberately conservative K7 disposition.
 - [`falsifiers.md`](falsifiers.md) — what would refute which layer of K7.
-- [`prospective_predictions.md`](prospective_predictions.md) — prospective freeze rules and candidate `K7-P1`.
-- [`reproduce_minimal.py`](reproduce_minimal.py) — standard-library arithmetic reproducer with **no experimental targets embedded**.
+- [`prospective_predictions.md`](prospective_predictions.md) — prospective freeze rules and registry.
+- [`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md) — frozen K7-P1 record.
+- [`reproduce_minimal.py`](reproduce_minimal.py) — target-free minimal arithmetic reproducer.
+- [`reproduce_k7_p1.py`](reproduce_k7_p1.py) — dedicated target-free K7-P1 reproducer.
 - [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — draft only; do not post until the hostile review is closed.
 
 ## Minimal reproduction
 
+From the repository root:
+
 ```bash
-python3 openwave_candidate/reproduce_minimal.py
+python3 docs/openwave-candidate/reproduce_minimal.py
+python3 docs/openwave-candidate/reproduce_k7_p1.py
 ```
 
-The script prints only quantities assembled from the declared K7 ledger. It does not score agreement with experimental values; comparison data belong in a separate, source-cited validation layer.
+The scripts print quantities assembled from the declared K7 ledger and contain no experimental target in their default execution. Comparison data belong in a separate, source-cited validation layer.
 
 ## Gate before an OpenWave application
 
 Do not post the draft application until all of the following are true:
 
 - [ ] an independent parameter-counter pass has challenged every “forced” step;
-- [ ] the public reproducer is runnable from a clean clone;
-- [ ] historical target leakage is explicitly recorded;
-- [ ] `K7-P1` has a frozen renormalization / observable map, or is downgraded to a tree-level benchmark only;
+- [x] the candidate public reproducer paths are explicit from repository root;
+- [x] historical target leakage is explicitly recorded;
+- [x] K7-P1 has a frozen tree-level observable map and a no-revision rule;
+- [ ] OpenWave reviewers / a second hostile read decide whether K7-P1 is a genuine prediction or only a prospective consequence of a historical calibration;
 - [ ] no status icon in `openwave_mapping.md` is represented as earned in-platform;
 - [ ] a second independent hostile read has tried to refute the dossier.
+
+A low initial score is acceptable. Inflating a partial map into a validated mechanism is not.
