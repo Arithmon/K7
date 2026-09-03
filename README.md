@@ -61,27 +61,6 @@ ledger.
 
 All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 
-| Post | Topic |
-|------|-------|
-| [Episode 4: The day Minecraft taught you to draw a sphere that wasn't one](https://arithmon.substack.com/p/episode-4-the-day-minecraft-taught) | Minecraft, discretization and the eternal problem of the continuum |
-| [The Furrow](https://arithmon.substack.com/p/the-furrow) | One year of unorthodox research: what changed, what didn't, and what I still don't know |
-| [Episode 3: The day the blue shell knew where you were](https://arithmon.substack.com/p/episode-3-the-day-the-blue-shell) | Mario Kart, non-locality and correlations at a distance |
-| [No Word for This](https://arithmon.substack.com/p/no-word-for-this) | Three names that don't work, and an open question about the role in human-AI collaboration |
-| [We've Released Our Draft Blueprint](https://arithmon.substack.com/p/weve-released-our-draft-blueprint) | Announcing K₇ v3.4 in plain language |
-| [Episode 2: The day Tetris taught you that order is everything](https://arithmon.substack.com/p/episode-2-the-day-tetris-taught-you) | Tetris and productive non-commutativity |
-| [Episode 1: The day Newton lost control](https://arithmon.substack.com/p/episode-1-the-day-newton-lost-control) | Fall Guys and the myth of predictable physics |
-| [Episode 0: The day Pudge taught you quantum mechanics](https://arithmon.substack.com/p/episode-0-the-day-pudge-taught-you) | Gaming as a school of quantum intuition (series opener) |
-| [Orientation, not ontology](https://arithmon.substack.com/p/orientation-not-ontology) | The philosophical posture behind K₇ |
-| [What if the universe was a Lego set?](https://arithmon.substack.com/p/what-if-the-universe-was-a-lego-set) | Counting pieces, recognizing themes, reading the manual |
-| ["The author's name appears to be fabricated"](https://arithmon.substack.com/p/brieucs-gift) | Learning Physics with AI: the accidental origin of K₇ |
-| [The Geometry of the Impossible](https://arithmon.substack.com/p/the-geometry-of-the-impossible) | What Roberto Carlos Knew (Without Knowing It) |
-| [The Lice of the Universe](https://arithmon.substack.com/p/the-lice-of-the-universe) | What We Cannot Perceive, and What That Means |
-| [The Algebra That Waited](https://arithmon.substack.com/p/the-algebra-that-waited) | On octonions, patience, and a 43-year puzzle |
-| [Gift from Bit](https://arithmon.substack.com/p/gift-from-bit) | Why geometry might be the language of physics |
-| [13 Theorems, Zero Trust Required](https://arithmon.substack.com/p/13-theorems-zero-trust-required) | Machine-verified proofs in Lean 4 |
-| [Joyce's Theorem, Now in Lean](https://arithmon.substack.com/p/joyces-theorem-now-in-lean) | Formalizing G₂ holonomy existence |
-| [On What Comes First](https://arithmon.substack.com/p/on-what-comes-first) | Philosophy of mathematical primacy |
-
 ---
 
 ## For Specific Audiences
