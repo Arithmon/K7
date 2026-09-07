@@ -43,6 +43,14 @@ For OpenWave purposes these are **historical retrodictions / calibration-sensiti
 
 A later freeze can make future comparisons prospective, but cannot retroactively change the discovery status.
 
+### Historical provenance audit result
+
+A hostile audit of the October-2025 → September-2026 K7 history found **zero pre-existing physical observables** that satisfy the OpenWave genuine-prediction gate under the accounting rules used in this dossier.
+
+This is now the official dossier disposition. Historical archaeology is closed unless a reviewer or new timestamped artifact supplies specific contrary evidence.
+
+See [`historical_prediction_audit_2025_10_to_2026_09.md`](historical_prediction_audit_2025_10_to_2026_09.md).
+
 ## 4. Sieve status
 
 The Sieve adds a valuable search-budget and null-model audit.
@@ -89,6 +97,20 @@ Therefore K7-P1 is frozen as a **tree-level benchmark**. Whether OpenWave counts
 
 See [`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md).
 
+### Candidate K7-P2 accounting
+
+There is currently **no K7-P2 numerical prediction**.
+
+The clean-room workbench prioritizes:
+
+1. absolute neutrino mass / beta-decay effective mass;
+2. low-Q² weak mixing only after independent repair of the current RGE mismatch;
+3. a flavor selection rule only after the generation-to-cycle map is forced rather than optimized against data.
+
+Target central values and preferred intervals are forbidden during derivation. Experiment definitions and projected sensitivity may be used only to decide whether a target is in principle discriminating.
+
+See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
+
 ## 6. Claims deliberately not made
 
 This dossier does not claim:
@@ -99,4 +121,6 @@ This dossier does not claim:
 - that an algebraic match alone derives the corresponding physical mechanism;
 - that a target-centered experimental interval is evidence for an exact K7 match;
 - that a private canonical script satisfies OpenWave clean-clone reproducibility;
-- that K7-P1 already contains a derived UV-to-IR Higgs matching calculation.
+- that K7-P1 already contains a derived UV-to-IR Higgs matching calculation;
+- that any pre-existing K7 physical observable passed the October-2025 → September-2026 genuine-prediction audit;
+- that a K7-P2 prediction exists before the clean-room promotion gate is satisfied.

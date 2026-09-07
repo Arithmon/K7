@@ -39,9 +39,21 @@ The working wording is:
 
 Likewise, the 33 Type-I relations are not called “33 prospective predictions” here. The v3.5 statistical layer already distinguishes conditional algebraic identities, sieve-distinguished survivors, and exploratory identities; this dossier additionally separates those from prospective predictions.
 
+## Historical provenance result
+
+The October-2025 → September-2026 hostile audit is now closed with **zero pre-existing K7 physical observables found to satisfy the OpenWave genuine-prediction gate**. That result is recorded rather than repaired by relabeling old formulas.
+
+See [`historical_prediction_audit_2025_10_to_2026_09.md`](historical_prediction_audit_2025_10_to_2026_09.md).
+
+The forward route is a clean-room candidate-generation workbench. No `K7-P2` prediction exists yet.
+
+See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
+
 ## Files
 
 - [`honest_ledger.md`](honest_ledger.md) — inputs, choices, calibrations/retrodictions, survivors, prospective outputs.
+- [`historical_prediction_audit_2025_10_to_2026_09.md`](historical_prediction_audit_2025_10_to_2026_09.md) — dated hostile provenance audit; historical pass count = 0.
+- [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md) — clean-room workbench for the next genuine prediction; no K7-P2 number yet.
 - [`openwave_mapping.md`](openwave_mapping.md) — all 31 OpenWave criteria, with a deliberately conservative K7 disposition.
 - [`falsifiers.md`](falsifiers.md) — what would refute which layer of K7.
 - [`prospective_predictions.md`](prospective_predictions.md) — prospective freeze rules and registry.
@@ -68,8 +80,11 @@ Do not post the draft application until all of the following are true:
 - [ ] an independent parameter-counter pass has challenged every “forced” step;
 - [x] the candidate public reproducer paths are explicit from repository root;
 - [x] historical target leakage is explicitly recorded;
+- [x] the Oct-2025 → Sep-2026 provenance audit is closed; historical pass count = 0;
+- [x] the next-prediction clean-room workbench is opened with target-use restrictions;
 - [x] K7-P1 has a frozen tree-level observable map and a no-revision rule;
 - [ ] OpenWave reviewers / a second hostile read decide whether K7-P1 is a genuine prediction or only a prospective consequence of a historical calibration;
+- [ ] at least one `K7-Pn` entry is accepted as satisfying the genuine-prediction gate; currently none is counted as such by this dossier;
 - [ ] no status icon in `openwave_mapping.md` is represented as earned in-platform;
 - [ ] a second independent hostile read has tried to refute the dossier.
 

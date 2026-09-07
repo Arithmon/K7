@@ -22,6 +22,14 @@ If any load-bearing item is chosen after seeing the target, the entry is downgra
 
 A later freeze can make a future comparison prospective. It cannot retroactively make the historical discovery target-blind.
 
+## Historical provenance audit
+
+The dedicated October-2025 → September-2026 audit found **zero pre-existing K7 physical observables** that satisfy the OpenWave genuine-prediction gate under the hostile criteria used here.
+
+See [`historical_prediction_audit_2025_10_to_2026_09.md`](historical_prediction_audit_2025_10_to_2026_09.md).
+
+That result closes the historical archaeology unless new dated evidence is identified. The registry will not manufacture a pass from retrodictions.
+
 ---
 
 # K7-P1 — Higgs trilinear self-coupling
@@ -78,3 +86,20 @@ Reproducer:
 ```bash
 python3 docs/openwave-candidate/reproduce_k7_p1.py
 ```
+
+---
+
+# Candidate K7-P2 — not yet instantiated
+
+There is currently **no `K7-P2` prediction** and no numerical value reserved under that name.
+
+The clean-room workbench is:
+[`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md)
+
+Candidate priority:
+
+1. absolute neutrino mass / `m_beta`;
+2. low-`Q^2` weak mixing angle, only after an independent repair of the current RGE mismatch;
+3. a flavor selection rule, only after the generation-to-cycle map is derived rather than calibrated.
+
+The identifier `K7-P2` is promoted only after a target-blind derivation, executable freeze, named experiment, discriminating prediction, falsifier and no-revision rule are committed.
