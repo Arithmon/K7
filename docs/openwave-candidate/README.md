@@ -45,6 +45,8 @@ The October-2025 → September-2026 hostile audit is now closed with **zero pre-
 
 See [`historical_prediction_audit_2025_10_to_2026_09.md`](historical_prediction_audit_2025_10_to_2026_09.md).
 
+OpenWave maintainer review also ruled K7-P1 **not** to be a genuine prediction under §1.1. The frozen preregistration is retained as a failed self-screen / provenance record rather than rewritten after the fact.
+
 The forward route is a clean-room candidate-generation workbench. No `K7-P2` prediction exists yet.
 
 See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
@@ -54,13 +56,14 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`honest_ledger.md`](honest_ledger.md) — inputs, choices, calibrations/retrodictions, survivors, prospective outputs.
 - [`historical_prediction_audit_2025_10_to_2026_09.md`](historical_prediction_audit_2025_10_to_2026_09.md) — dated hostile provenance audit; historical pass count = 0.
 - [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md) — clean-room workbench for the next genuine prediction; no K7-P2 number yet.
+- [`K7_P2_neutrino_operator_inventory.md`](K7_P2_neutrino_operator_inventory.md) — D1 neutrino operator / field-content inventory; Candidate A currently blocked at N0/N1.
 - [`openwave_mapping.md`](openwave_mapping.md) — all 31 OpenWave criteria, with a deliberately conservative K7 disposition.
 - [`falsifiers.md`](falsifiers.md) — what would refute which layer of K7.
-- [`prospective_predictions.md`](prospective_predictions.md) — prospective freeze rules and registry.
-- [`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md) — frozen K7-P1 record.
+- [`prospective_predictions.md`](prospective_predictions.md) — prospective freeze rules and registry, including the post-freeze K7-P1 ruling.
+- [`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md) — frozen K7-P1 record; retained unchanged.
 - [`reproduce_minimal.py`](reproduce_minimal.py) — target-free minimal arithmetic reproducer.
-- [`reproduce_k7_p1.py`](reproduce_k7_p1.py) — dedicated target-free K7-P1 reproducer.
-- [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — draft only; do not post until the hostile review is closed.
+- [`reproduce_k7_p1.py`](reproduce_k7_p1.py) — dedicated K7-P1 reproducer retained for provenance.
+- [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — historical discussion draft; no model PR is opened from K7-P1.
 
 ## Minimal reproduction
 
@@ -75,17 +78,19 @@ The scripts print quantities assembled from the declared K7 ledger and contain n
 
 ## Gate before an OpenWave application
 
-Do not post the draft application until all of the following are true:
+Do not open a model PR until all of the following are true:
 
 - [ ] an independent parameter-counter pass has challenged every “forced” step;
 - [x] the candidate public reproducer paths are explicit from repository root;
 - [x] historical target leakage is explicitly recorded;
 - [x] the Oct-2025 → Sep-2026 provenance audit is closed; historical pass count = 0;
 - [x] the next-prediction clean-room workbench is opened with target-use restrictions;
-- [x] K7-P1 has a frozen tree-level observable map and a no-revision rule;
-- [ ] OpenWave reviewers / a second hostile read decide whether K7-P1 is a genuine prediction or only a prospective consequence of a historical calibration;
+- [x] K7-P1 has a frozen record and no-revision provenance;
+- [x] OpenWave maintainer review classified K7-P1 as **not** a genuine §1.1 prediction;
+- [x] Candidate A has an operator-level inventory separating representation seeds from derived physical field content;
 - [ ] at least one `K7-Pn` entry is accepted as satisfying the genuine-prediction gate; currently none is counted as such by this dossier;
+- [ ] the relevant K7 physical map is derived without target leakage;
 - [ ] no status icon in `openwave_mapping.md` is represented as earned in-platform;
-- [ ] a second independent hostile read has tried to refute the dossier.
+- [ ] a second independent hostile read has tried to refute the eventual promoted candidate.
 
 A low initial score is acceptable. Inflating a partial map into a validated mechanism is not.

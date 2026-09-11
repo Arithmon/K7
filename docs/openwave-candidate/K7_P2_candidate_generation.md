@@ -48,7 +48,7 @@ Before opening target-result literature, commit:
 4. all discrete and continuous choices;
 5. executable reproducer;
 6. one numerical output or sharply delimited distribution fixed by the model;
-7. named experiment and kinematics;
+7. experiment / data release that will test it;
 8. null / comparison model;
 9. falsification threshold;
 10. no-revision rule.
@@ -68,7 +68,7 @@ If the frozen output is already excluded, record the failure. **Do not revise th
 ### Candidate A — absolute neutrino mass
 
 **Priority:** 1  
-**Current state:** `OPEN — mechanism absent`
+**Current state:** `BLOCKED AT N0/N1 — chiral field-content map not yet derived; rank-2 route retained`
 
 Target observables worth deriving:
 
@@ -78,13 +78,13 @@ Target observables worth deriving:
 
 `m_beta^2 = sum_i |U_ei|^2 m_i^2`.
 
-**Experiment-design information allowed at D0:** Project 8 states that its final Phase IV program is designed to reach approximately **40 meV** neutrino-mass sensitivity; as of the 2026-09-07 workbench opening, its official status page says effort is focused on Phase III.
+**Experiment-design information allowed at D0:** Project 8 states that its final Phase IV program is designed to reach approximately **40 meV** neutrino-mass sensitivity; as of the workbench opening, its official status page said effort was focused on Phase III.
 
 Official design source: https://www.project8.org/about
 
 #### Repository status at workbench opening
 
-Targeted searches of `main@0c904...` on 2026-09-07 found no implementation / discussion under the terms:
+Targeted searches of `main@0c904...` found no implementation / discussion under the terms:
 
 - `Majorana`;
 - `seesaw`;
@@ -94,19 +94,33 @@ A search for `Weinberg operator` returned the electroweak Weinberg-angle relatio
 
 Therefore K7 does **not** currently possess a documented absolute-neutrino-mass mechanism suitable for preregistration.
 
-#### Hypothesis seed — not a prediction
+#### Operator-level audit
 
-The current K7 framework contains a numerical fiber-level Wilson-line operator of rank 2, with the third singular value at machine zero. This is **not** presently a neutrino mass matrix and must not be described as one.
+The first D1 inventory is now complete:
 
-It is worth asking one target-blind structural question:
+[`K7_P2_neutrino_operator_inventory.md`](K7_P2_neutrino_operator_inventory.md)
 
-> Does a correctly derived neutrino mass operator inherit a rank constraint from the same K7 fiber / resolution decomposition?
+Its main findings are:
 
-If the answer is no, discard the route. If yes, derive the operator first; do not choose an ordering or mass scale because it happens to sit near Project 8 sensitivity.
+1. the current `E8 -> E6 × SU(3)` arithmetic is a useful representation-theory seed but does not by itself provide a four-dimensional chiral spectrum;
+2. the current Lean step `N_gen_from_SU3` should not be read physically as “dimension of the SU(3) fundamental = number of chiral families”; a compactification index / cohomology / localized-mode calculation is still required;
+3. the `E6 -> SO(10) × U(1)` branch can in principle support neutrino-capable field content, but K7 has not yet derived the surviving matter representation or `N_R` charges;
+4. no K7-specific `B-L` / lepton-number selection rule or `Delta L = 2` operator was found;
+5. the rank-2 fiber/Wilson-line diagnostic remains a potentially useful structural seed, but it is **not** a neutrino mass matrix.
+
+#### Rank-2 hypothesis seed — not a prediction
+
+The target-blind structural question is now sharpened to:
+
+> Can a physically derived neutrino mass operator inherit an **exact** rank-2 constraint from K7, without a target-dependent sector assignment or the calibrated non-adiabatic lifting coefficient?
+
+If yes, one light mass would vanish at the frozen level; K7 would still have to fix the ordering / eigenstate map before a unique `m_beta` follows from separately ledgered oscillation anchors.
+
+If no, discard the route. Do not replace it by arithmetic search for a desired absolute mass.
 
 #### Promotion requirements
 
-Candidate A cannot become K7-P2 until K7 fixes a dimensionful neutrino mass scale or a dimensionless relation that, together with separately ledgered non-target anchors, yields `m_beta` without fitting to direct neutrino-mass data.
+Candidate A cannot become K7-P2 until the N0–N4 gates in the operator inventory close: physical chiral field content, neutrino-capable fields and charges, allowed mass operator, target-blind texture/rank, and dimensionful scale / anchor accounting.
 
 ---
 
@@ -169,7 +183,7 @@ Official source: https://docs.belle2.org/pub_data/publications/4644/
 
 | Candidate | Target-blind opportunity | K7 mechanism maturity | Experimental discrimination | Current decision |
 | --- | --- | --- | --- | --- |
-| A. Absolute neutrino mass | **high** | low | medium/high if scale lands in reach | **WORK FIRST** |
+| A. Absolute neutrino mass | **high** | low; now blocked at chiral field-content map | medium/high if a scale is genuinely fixed | **WORK FIRST: N0/N1** |
 | B. low-Q^2 `sin^2 theta_W` | medium | medium but inconsistent at M_Z | very high | **HOLD until RGE repaired independently** |
 | C. flavor selection rule | high | medium structural / low predictive | potentially very high | **HOLD until map is forced** |
 
@@ -192,14 +206,13 @@ Until then, **there is no K7-P2 prediction**.
 
 ## 5. Next scientific action
 
-Begin Candidate A by constructing an operator-level neutrino-mass inventory from the K7 gauge / representation / Wilson-line / instanton sectors **without consulting direct neutrino-mass target values**.
+Candidate A is now blocked one layer earlier than the original workbench assumed.
 
-The first deliverable is not a number. It is a decision tree answering:
+The immediate target-blind work is:
 
-1. Dirac, Majorana, or neither from the current K7 field content?
-2. Is there a geometric source for a lepton-number-violating operator?
-3. Does K7 force matrix rank, texture zeros, or ordering?
-4. Where, if anywhere, does the dimensionful mass scale come from?
-5. Which steps are topology, which are field-theory identifications, and which remain free choices?
+1. choose one UV / compactification dictionary for the chiral sector;
+2. replace the dimensional `N_gen_from_SU3` reading with an actual multiplicity / index calculation;
+3. derive the surviving matter representations and charges, including whether `N_R` exists;
+4. derive the allowed neutrino operator class and only then test whether the exact rank-2 structure is inherited.
 
-Only after those questions close should any numerical `m_beta` be computed.
+No absolute mass or `m_beta` is to be evaluated before these gates close.

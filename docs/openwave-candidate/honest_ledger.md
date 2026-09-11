@@ -17,10 +17,19 @@ These are **not** counted as experimental predictions merely because they are di
 | `det(g)=65/32` where used as a normalization target | metric normalization | normalization input, not a prediction of the normalized calculation |
 | operator / branch / sign / representation / observable-identification choices | sector-specific maps | free choices unless independently forced |
 | dimensional reference scales used by Types II–III | unit / physical anchors | calibration inputs unless independently predicted |
+| `(27,3)` / `SU(3)` family multiplicity reading | representation-theory seed | **not** yet a physical three-chiral-family derivation; requires compactification index / cohomology / localized-mode map |
 
 **Rule:** the dependency graph decides the count. Calling a number a “primitive”, “topological”, or “derived constant” does not by itself remove it from the OpenWave free-choice ledger.
 
 The exhaustive configuration scan is evidence about model selection; it does not make the selection disappear.
+
+### Chiral-spectrum caveat
+
+The algebraic identity `248 = 78 + 8 + 2×27×3` is retained as a representation-branching check. The factor `3` is the dimension of an `SU(3)` fundamental; it is **not, by itself, a proof of three net four-dimensional chiral generations**.
+
+The current K7 paper already marks the UV bridge to the chiral non-abelian sector as load-bearing open. Candidate K7-P2 therefore cannot use `N_gen_from_SU3` as a physical field-spectrum theorem until a compactification index / cohomology / singular-localized-mode construction supplies that map.
+
+This caveat concerns that derivation route; it does not silently alter every other place where `N_gen=3` appears as a discrete ledger input.
 
 ## 2. Continuously adjustable parameters
 
@@ -81,19 +90,21 @@ For every `K7-Pn` entry the record must include:
 7. a no-revision rule;
 8. the exact layer falsified if the result fails.
 
-### K7-P1 accounting
+### K7-P1 accounting — failed OpenWave admission screen
 
-K7-P1 freezes a new Higgs-trilinear consequence of the historical relation `lambda_H = sqrt(17)/32`.
+K7-P1 froze a Higgs-trilinear consequence of the historical relation `lambda_H = sqrt(17)/32`.
 
-The following must **not** be conflated:
+OpenWave maintainer review has now ruled that K7-P1 is **not a genuine prediction under §1.1**. In the frozen minimal one-doublet basis with `C6=0`, the same quartic determines both the Higgs mass and the tree-level trilinear, so `kappa_lambda=1` is an identity. The previously quoted `~0.9966` arises only by combining the K7 quartic with the measured Higgs mass and therefore measures the existing quartic-vs-mass residual rather than a new independent `hhh` prediction.
+
+The following remain useful as provenance distinctions:
 
 - `lambda_H = sqrt(17)/32`: historical / calibration-sensitive relation;
-- `rho3 = g_hhh/v = 3 sqrt(17)/16`: newly frozen out-of-sample consequence;
+- `rho3 = g_hhh/v = 3 sqrt(17)/16`: algebraic consequence inside the frozen tree-level map;
 - `C6 = 0` for `(H†H)^3`: discrete minimal-operator choice;
 - `m_H` and `v` used to quote `kappa_lambda`: external conversion anchors;
-- any loop/RG matching prescription: additional physical map, not yet derived by K7.
+- any loop/RG matching prescription: additional physical map, not derived by K7.
 
-Therefore K7-P1 is frozen as a **tree-level benchmark**. Whether OpenWave counts it as the required genuine prediction remains a live hostile-review question.
+K7-P1 is kept unchanged as a **failed self-screen / provenance record**. It does not satisfy the OpenWave genuine-prediction gate and no PR is based on it.
 
 See [`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md).
 
@@ -109,7 +120,12 @@ The clean-room workbench prioritizes:
 
 Target central values and preferred intervals are forbidden during derivation. Experiment definitions and projected sensitivity may be used only to decide whether a target is in principle discriminating.
 
-See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
+The first neutrino operator inventory moves Candidate A to **BLOCKED AT N0/N1**: the chiral field-content map, `N_R` content / charges, lepton-number selection rule and mass operator are not yet derived. The rank-2 Wilson / adiabatic Yukawa structure remains a hypothesis seed only.
+
+See:
+
+- [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md)
+- [`K7_P2_neutrino_operator_inventory.md`](K7_P2_neutrino_operator_inventory.md)
 
 ## 6. Claims deliberately not made
 
@@ -121,6 +137,9 @@ This dossier does not claim:
 - that an algebraic match alone derives the corresponding physical mechanism;
 - that a target-centered experimental interval is evidence for an exact K7 match;
 - that a private canonical script satisfies OpenWave clean-clone reproducibility;
-- that K7-P1 already contains a derived UV-to-IR Higgs matching calculation;
+- that K7-P1 is a genuine OpenWave prediction;
 - that any pre-existing K7 physical observable passed the October-2025 → September-2026 genuine-prediction audit;
-- that a K7-P2 prediction exists before the clean-room promotion gate is satisfied.
+- that a K7-P2 prediction exists before the clean-room promotion gate is satisfied;
+- that the factor `3` in `(27,3)` proves three physical chiral generations;
+- that the current rank-2 Wilson-line operator is a neutrino mass matrix;
+- that K7 currently determines a Dirac / Majorana / seesaw neutrino operator.

@@ -34,54 +34,42 @@ That result closes the historical archaeology unless new dated evidence is ident
 
 # K7-P1 — Higgs trilinear self-coupling
 
-**Status:** `FROZEN TREE-LEVEL BENCHMARK — OpenWave genuine-prediction gate unresolved`
+**Status:** `FROZEN FAILED SELF-SCREEN — NOT A GENUINE PREDICTION UNDER OPENWAVE §1.1`
 
-Full preregistration:
+Full frozen preregistration:
 [`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md)
+
+The preregistration is retained unchanged as part of the provenance record.
 
 Historical K7 input:
 
 `lambda_H = sqrt(17)/32`
 
-This historical relation is not relabeled as a new prediction.
-
-Frozen new consequence under the minimal renormalizable one-doublet Higgs potential:
+The frozen minimal one-doublet map used
 
 `rho3_K7 := g_hhh(tree)/v = 6 lambda_H`
 
-therefore
+with `C6=0`.
 
-`rho3_K7 = 3 sqrt(17)/16 = 0.7730823048033113...`
+## OpenWave ruling
 
-The benchmark also freezes `C6 = 0` for an independent `(H†H)^3` deformation. This is explicitly counted as a discrete physical-identification choice, not claimed as a K7 theorem.
+OpenWave maintainer review classified K7-P1 as a **prospective consequence of a calibration, degenerate with the null**, not a genuine prediction.
 
-## Why the primary number is `rho3`, not `kappa_lambda`
+In the frozen minimal one-doublet potential,
 
-`kappa_lambda` depends on the external reporting anchors used for the SM reference:
+`m_h^2 = 2 lambda_H v^2`
 
-`kappa_lambda = rho3 * v^2 / (3 m_H^2)`.
+and therefore
 
-The immutable K7 output is therefore `rho3`. Any future experimental release must state the `m_H`, `v`, scheme and benchmark convention used for conversion.
+`g_hhh = 6 lambda_H v = 3 m_h^2 / v`,
 
-## Known-before-freeze baseline
+so `kappa_lambda = 1` identically when the same frozen potential is used consistently.
 
-CMS-PAS-HIG-25-008 (2026-08-06) already gave a broad direct interval
+The dossier's previously quoted `kappa_lambda ~ 0.9966` came from combining the K7 quartic with an independently measured `m_h`; it is therefore a restatement of the existing K7-quartic / Higgs-mass residual, not a new independent trilinear observable.
 
-`-2.5 < kappa_lambda < 9.4` at 95% CL
+**Admission consequence:** K7-P1 earns no OpenWave §1.1 prediction credit and is not used to open a model PR.
 
-for the combined result. Compatibility with this pre-freeze interval is **not** prospective evidence.
-
-## Falsifier
-
-A future post-freeze direct extraction that excludes the frozen K7-P1 value at 95% CL under a compatible minimal benchmark falsifies the **minimal K7 Higgs identification**.
-
-It does not automatically falsify the K7 topology.
-
-## OpenWave caveat
-
-Whether this satisfies OpenWave's “genuine prediction” gate is intentionally left open to hostile review. The strongest objection is that `lambda_H` itself was historically compared with a known Higgs target; K7-P1 is a new consequence of that fixed relation, not a target-blind origin for the relation itself.
-
-Reproducer:
+Reproducer retained for provenance:
 
 ```bash
 python3 docs/openwave-candidate/reproduce_k7_p1.py
@@ -96,10 +84,15 @@ There is currently **no `K7-P2` prediction** and no numerical value reserved und
 The clean-room workbench is:
 [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md)
 
+The first operator-level Candidate A audit is:
+[`K7_P2_neutrino_operator_inventory.md`](K7_P2_neutrino_operator_inventory.md)
+
 Candidate priority:
 
-1. absolute neutrino mass / `m_beta`;
-2. low-`Q^2` weak mixing angle, only after an independent repair of the current RGE mismatch;
-3. a flavor selection rule, only after the generation-to-cycle map is derived rather than calibrated.
+1. absolute neutrino mass / `m_beta` — **blocked at N0/N1** pending a physical chiral-spectrum map, neutrino-capable field content and charges;
+2. low-`Q^2` weak mixing angle — hold until an independent repair of the current RGE mismatch;
+3. a flavor selection rule — hold until the generation-to-cycle map is derived rather than calibrated.
+
+The surviving neutrino hypothesis seed is an exact-rank route: only if K7 derives a physical neutrino mass operator inheriting a target-blind rank-2 constraint, and independently fixes the eigenstate / ordering map, may measured oscillation quantities be ledgered as non-target anchors to compute a definite `m_beta`.
 
 The identifier `K7-P2` is promoted only after a target-blind derivation, executable freeze, named experiment, discriminating prediction, falsifier and no-revision rule are committed.
