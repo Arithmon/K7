@@ -56,13 +56,19 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`honest_ledger.md`](honest_ledger.md) — inputs, choices, calibrations/retrodictions, survivors, prospective outputs.
 - [`historical_prediction_audit_2025_10_to_2026_09.md`](historical_prediction_audit_2025_10_to_2026_09.md) — dated hostile provenance audit; historical pass count = 0.
 - [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md) — clean-room workbench for the next genuine prediction; no K7-P2 number yet.
-- [`K7_P2_neutrino_operator_inventory.md`](K7_P2_neutrino_operator_inventory.md) — D1 neutrino operator / field-content inventory; Candidate A currently blocked at N0/N1.
-- [`openwave_mapping.md`](openwave_mapping.md) — all 31 OpenWave criteria, with a deliberately conservative K7 disposition.
+- [`K7_P2_neutrino_operator_inventory.md`](K7_P2_neutrino_operator_inventory.md) — D1 neutrino operator / field-content inventory; Candidate A currently blocked before a mass operator.
+- [`K7_P2_neutrino_H0_fiber_lattice_gate.md`](K7_P2_neutrino_H0_fiber_lattice_gate.md) — generic `V4` lattice gate and Picard-rank consistency audit.
+- [`K7_P2_neutrino_H0a3_equivariant_data_contract.md`](K7_P2_neutrino_H0a3_equivariant_data_contract.md) — exact data contract for an equivariant elliptic fiber.
+- [`K7_P2_neutrino_rank15_CM_V4_gate.md`](K7_P2_neutrino_rank15_CM_V4_gate.md) — recovered rank-15 `NS=U+E7(-1)+A1(-1)^6`; geometric Mordell–Weil `V4` and Donaldson reflection preserve the elliptic fiber conditionally; full JK/global matching remains open.
+- [`K7_P2_neutrino_N0_heterotic_dual_route.md`](K7_P2_neutrino_N0_heterotic_dual_route.md) — provisional heterotic-dual route; no global K7 duality claimed yet.
+- [`openwave_mapping.md`](openwave_mapping.md) — OpenWave criterion mapping, with a deliberately conservative K7 disposition.
 - [`falsifiers.md`](falsifiers.md) — what would refute which layer of K7.
 - [`prospective_predictions.md`](prospective_predictions.md) — prospective freeze rules and registry, including the post-freeze K7-P1 ruling.
 - [`K7-P1_higgs_trilinear_preregistration.md`](K7-P1_higgs_trilinear_preregistration.md) — frozen K7-P1 record; retained unchanged.
 - [`reproduce_minimal.py`](reproduce_minimal.py) — target-free minimal arithmetic reproducer.
 - [`reproduce_k7_p1.py`](reproduce_k7_p1.py) — dedicated K7-P1 reproducer retained for provenance.
+- [`check_k3_v4_genus_one_gate.py`](check_k3_v4_genus_one_gate.py) — target-free generic symplectic-`V4` Picard-rank / elliptic-existence arithmetic.
+- [`check_k3_rank15_cm_v4_gate.py`](check_k3_rank15_cm_v4_gate.py) — target-free exact rank-15 NS / fiber / section / degree-8 arithmetic.
 - [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — historical discussion draft; no model PR is opened from K7-P1.
 
 ## Minimal reproduction
@@ -72,9 +78,21 @@ From the repository root:
 ```bash
 python3 docs/openwave-candidate/reproduce_minimal.py
 python3 docs/openwave-candidate/reproduce_k7_p1.py
+python3 docs/openwave-candidate/check_k3_v4_genus_one_gate.py
+python3 docs/openwave-candidate/check_k3_rank15_cm_v4_gate.py
 ```
 
-The scripts print quantities assembled from the declared K7 ledger and contain no experimental target in their default execution. Comparison data belong in a separate, source-cited validation layer.
+The scripts print quantities assembled from the declared K7 ledger / lattice package and contain no experimental target in their default execution. Comparison data belong in a separate, source-cited validation layer.
+
+## Current Candidate-A boundary
+
+The rank-15 recovery closes an important **fiber-level** obstruction:
+
+- the Néron–Severi lattice contains an explicit Jacobian `U` and degree-8 polarization;
+- the recovered geometric symplectic `V4`, interpreted as translations by 2-torsion sections of the Clingher–Malmendier Jacobian fibration, preserves the fiber class;
+- every current Donaldson `alpha_1` candidate lies in the negative orthogonal complement of that `U`, so its Picard–Lefschetz reflection also fixes the fiber class.
+
+This is not yet the desired neutrino mechanism. The remaining load-bearing step is the **full global JK / anti-symplectic / compactification matching**, followed by a controlled heterotic bundle and chiral field-content derivation.
 
 ## Gate before an OpenWave application
 
@@ -88,6 +106,8 @@ Do not open a model PR until all of the following are true:
 - [x] K7-P1 has a frozen record and no-revision provenance;
 - [x] OpenWave maintainer review classified K7-P1 as **not** a genuine §1.1 prediction;
 - [x] Candidate A has an operator-level inventory separating representation seeds from derived physical field content;
+- [x] the rank-15 K3 fiber lattice arithmetic is public and target-free reproducible;
+- [ ] the full global compactification / duality map needed by Candidate A is closed;
 - [ ] at least one `K7-Pn` entry is accepted as satisfying the genuine-prediction gate; currently none is counted as such by this dossier;
 - [ ] the relevant K7 physical map is derived without target leakage;
 - [ ] no status icon in `openwave_mapping.md` is represented as earned in-platform;
