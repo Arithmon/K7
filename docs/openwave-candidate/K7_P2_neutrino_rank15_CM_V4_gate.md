@@ -1,13 +1,14 @@
 # K7-P2 Candidate A — rank-15 Clingher–Malmendier fiber gate
 
-**Status:** `H0a.3a V4-FIBER CONDITIONAL PASS / H0a.3b DONALDSON REFLECTION CONDITIONAL PASS / H0a.3c FULL JK-GLOBAL MATCHING OPEN`  
+**Status:** `H0a.3a V4-FIBER CONDITIONAL PASS / H0a.3b DONALDSON REFLECTION CONDITIONAL PASS / FULL JK AT rho=15 FAIL`  
 **Date:** 2026-09-12  
 **Target-value exposure:** none.  
-**Parent gate:** [`K7_P2_neutrino_H0a3_equivariant_data_contract.md`](K7_P2_neutrino_H0a3_equivariant_data_contract.md)
+**Parent gate:** [`K7_P2_neutrino_H0a3_equivariant_data_contract.md`](K7_P2_neutrino_H0a3_equivariant_data_contract.md)  
+**Character obstruction:** [`K7_P2_neutrino_JK_character_obstruction.md`](K7_P2_neutrino_JK_character_obstruction.md)
 
-This note records the recovery of the rank-15 K3 lattice that had previously appeared in the public K7-Lean changelog only as a private cross-check. It closes substantially more of H0a.3, but it does **not** close the global Joyce–Karigiannis / M-theory-to-heterotic dictionary.
+This note records the recovery of the rank-15 K3 lattice that had previously appeared in the public K7-Lean changelog only as a private cross-check. It closes the `V4`-preserved elliptic-fiber problem for the recovered Clingher–Malmendier model, but a subsequent full-group character audit now proves that the **frozen JK `(Z/2)^3` fixed-locus package cannot coexist at Picard rank 15**.
 
-The recovered canonical research record is from `gift-framework/private@8a8d4a4c05225b97c0165b73f175f1179d593a99`. Because that workspace is not itself a public dependency of this dossier, the arithmetic used below is reproduced here from scratch and every geometric identification remains explicitly conditional until promoted to a public source artifact.
+The recovered canonical research record is from `gift-framework/private`. Because that workspace is not itself a public dependency of this dossier, the arithmetic used below is reproduced here from scratch and every historical geometric identification is treated conservatively.
 
 ---
 
@@ -23,8 +24,6 @@ It has
 - determinant `2^7` in absolute value;
 - signature `(1,14)`;
 - the 2-elementary Nikulin type `(r,a,delta)=(15,7,1)`.
-
-This is the lattice called the rank-15 polarisation lattice in the later Donaldson-monodromy checks.
 
 Let `(e,f)` denote the standard basis of the `U` summand,
 
@@ -48,7 +47,7 @@ They satisfy
 
 `h^2=8`.
 
-Thus the rank-15 lattice contains, in its actual algebraic `NS(X)` rather than only in ambient `H^2`, both a primitive hyperbolic plane and an explicit degree-8 polarization.
+Thus the rank-15 lattice contains, in its algebraic `NS(X)` rather than only in ambient `H^2`, both a primitive hyperbolic plane and an explicit degree-8 polarization.
 
 The dependency-free reproducer is
 
@@ -64,9 +63,7 @@ It verifies the integral Gram matrix, determinant, evenness and the four display
 
 A nomenclature collision in the canonical research history is load-bearing here.
 
-The old phase-D8 lattice exercise used an abstract involution labelled `sigma_A` with a block-sign action on an auxiliary decomposition. Later audit showed that this object is **not** the geometric symplectic involution used by the K3 `V4`: its coinvariant contains roots, whereas a symplectic K3 involution has the standard root-free Nikulin coinvariant.
-
-Therefore the old `phase_d8` sign matrices must not be used to certify H0a.3.
+The old phase-D8 lattice exercise used an abstract involution labelled `sigma_A` with a block-sign action on an auxiliary decomposition. Later audit showed that this object is **not** the geometric symplectic `V4` generator and must not be used for H0a.3.
 
 The geometric object retained by the canonical K3 construction is instead the Jacobian elliptic model of Clingher–Malmendier type, with Weierstrass form
 
@@ -84,21 +81,17 @@ Translations by two independent 2-torsion sections generate the geometric symple
 
 `V4 = <T_A,T_B>`.
 
-This is consistent with the general fact that translation by torsion sections preserves an elliptic fibration and gives symplectic automorphisms on a K3 surface. See A. Garbagnati, *Elliptic K3 surfaces with abelian and dihedral groups of symplectic automorphisms*, arXiv:0904.1519, and A. Clingher–A. Malmendier, *On Néron–Severi lattices of Jacobian elliptic K3 surfaces*, arXiv:2109.01929.
-
-### Consequence
-
-The translations act fiberwise over the same base coordinate `t`. Therefore the fiber divisor class is fixed:
+Such translations act fiberwise over the same base coordinate `t`. Therefore the fiber divisor class is fixed:
 
 `T_A(F)=F`, `T_B(F)=F`.
 
-The zero section itself need not be fixed — torsion translation permutes sections — and H0a.3 never required pointwise fixation of a distinguished section. It requires preservation of the elliptic fibration / fiber class.
+The zero section itself need not be fixed — torsion translation permutes sections — and H0a.3 requires preservation of the elliptic fibration / fiber class, not pointwise fixation of the zero section.
 
 ### H0a.3a ruling
 
-> **Conditional on adopting the recovered rank-15 Clingher–Malmendier Jacobian model as the K7 K3 fiber, the actual symplectic `V4` preserves an elliptic fibration with section. H0a.3a passes.**
+> **Conditional on the recovered rank-15 Clingher–Malmendier Jacobian model, the actual symplectic `V4` preserves an elliptic fibration with section. H0a.3a passes.**
 
-This resolves the earlier minimal-rank obstruction: the relevant specialization has `rho=15`, not `rho=13` and certainly not Picard rank 1.
+This resolves the earlier minimal-`V4` obstruction for the `V4` subgroup alone: the specialization has `rho=15`, not `rho=13`.
 
 ---
 
@@ -108,78 +101,123 @@ The canonical exact NS embedding used for the Donaldson analysis has
 
 `M = U ⊕ D4(-1) ⊕ A1(-1)^5`
 
-as the rank-11 invariant sublattice, with a rank-4 negative-definite orthogonal complement `Mperp` containing the algebraic `(-2)` candidates for the uniform Donaldson vanishing cycle `alpha_1`.
+as a rank-11 sublattice, with a rank-4 negative-definite orthogonal complement `Mperp` containing the algebraic `(-2)` candidates for the uniform Donaldson vanishing cycle `alpha_1`.
 
-The crucial point for the elliptic fiber is independent of which candidate is eventually selected:
+Since the full `U=<e,f>` lies in `M`, every such candidate obeys
 
-`Mperp` is orthogonal to `M`, and the full `U=<e,f>` lies in `M`.
+`F.alpha_1 = 0`.
 
-Hence for every candidate root `alpha in Mperp`,
+For a `(-2)` root,
 
-`F.alpha = e.alpha = 0`.
+`s_alpha(v) = v + (v.alpha) alpha`,
 
-For a `(-2)` root, the Picard–Lefschetz reflection is
+hence
 
-`s_alpha(v) = v + (v.alpha) alpha`.
+`s_alpha(F)=F`.
 
-Therefore
-
-`s_alpha(F)=F`
-
-for **every** current `alpha_1` candidate.
-
-This does not identify the physically correct `alpha_1`; it shows that the unresolved choice cannot spoil the fiber class at lattice level.
+This is independent of which surviving `alpha_1` is ultimately selected.
 
 ### H0a.3b ruling
 
-> **The uniform Donaldson reflection monodromy preserves the rank-15 elliptic fiber class at lattice level, independently of the surviving `alpha_1` candidate. H0a.3b passes conditionally on the recovered NS embedding.**
+> **The uniform Donaldson reflection preserves the rank-15 elliptic fiber class at lattice level, independently of the surviving `alpha_1` candidate. H0a.3b passes conditionally on the recovered embedding.**
 
 ---
 
-## 4. What is still open
+## 4. Full JK package at rank 15 — FAIL
 
-This result does **not** resurrect the historical full `Z2^3` packaging automatically.
+The previous version of this note left the anti-symplectic / JK extension merely `OPEN`. The exact character audit now sharpens that status to a no-go at Picard rank 15.
 
-Later canonical audits separated the true symplectic Mordell–Weil `V4` from old abstract lattice proxies and found obstructions to one attempted realization of the complete target character table on the rank-15 K3. In particular, one must not infer that a desired anti-symplectic `tau` and all historical fixed-locus data coexist with the recovered `V4` merely because their separate lattice invariants exist.
+The frozen JK target asks for
 
-The remaining fiber/global gate is therefore:
+- three non-trivial symplectic `V4` involutions, each with eight fixed points;
+- `tau` of type `(11,7,1)`, hence fixed locus `(g,k)=(2,2)`;
+- the three `tau sigma` elements of type `(11,9,1)`, hence `(g,k)=(1,1)`.
 
-1. give the actual anti-symplectic / JK map used in the selected compact route on the same rank-15 model;
-2. prove it is geometrically realized and compatible with the required fixed-locus data;
-3. show that the global K7 matching / resolution preserves the elliptic datum needed by the proposed M/heterotic dictionary;
-4. only then invoke a controlled heterotic dual compactification and derive bundle / chiral field content.
+Consequently the character on `H^2(K3)` is
 
-The existing TCS `3U` matching certificate remains useful but cannot by itself substitute for this global identification.
+`(22,0,6,6,0,0,6,0)`.
+
+At `rho=15`, `T_X` has rank 7. The symplectic `V4` acts trivially on `T_X`, while `tau` and its three cosets act as `-I`. Subtracting the transcendental character gives
+
+`chi_NS = (15,7,-1,-1,7,7,-1,7)`.
+
+Fourier inversion over `(Z/2)^3` gives multiplicity
+
+`m_tau = -2`
+
+for the character that changes sign only under `tau`. Negative representation multiplicity is impossible.
+
+Therefore:
+
+> **The frozen full JK `(Z/2)^3` package cannot exist on a Picard-rank-15 K3.**
+
+The exact public reproducer is
+
+```bash
+python3 docs/openwave-candidate/check_k3_jk_character_gate.py
+```
+
+and the full derivation is in [`K7_P2_neutrino_JK_character_obstruction.md`](K7_P2_neutrino_JK_character_obstruction.md).
+
+The same calculation yields the sharp necessary condition
+
+`rho >= 17`.
+
+So the rank-15 CM model remains useful evidence for the `V4`-fiber and Donaldson sub-gates, but it is **not** a candidate for the frozen full JK compactification package.
 
 ---
 
-## 5. Picard-rank correction
+## 5. Historical anti-symplectic searches — why they do not evade the obstruction
 
-If the rank-15 Clingher–Malmendier route is retained as the K7 fiber model, the public phrase
+Three historical branches were checked.
 
-`Picard-rank-1, eta^2=8 K3`
+### Direct CM-Weierstrass `tau`
 
-cannot describe the same K3 and should be retired or explicitly scoped to a different model/screen.
+The obvious commuting anti-symplectic involution on the CM family preserves the fibration, but acts as `+I` on all of `NS`, giving fixed rank 15 rather than the target `(11,7,1)`. Its `V4` coset and the natural Möbius base-involution variants were exhausted without recovering the target abelian package.
 
-The consistent rank-15 statement is instead
+### Abstract 15×15 / Torelli package
 
-`NS(X) ≅ U ⊕ E7(-1) ⊕ A1(-1)^6`,
+The old abstract action was assigned the desired fixed-lattice types but later failed the transcendental character test. The new public calculation shows that this was not an accident of one matrix basis: the rank-15 target character itself is impossible.
 
-with a degree-8 class `h=4e+f`.
+### T5-prime / `T5''`
 
-This resolves the previous `Picard-rank-1` versus symplectic-`V4` contradiction at fiber level, but adopting this correction in the framework mainline requires its own source-level reconciliation.
+The later explicit CI(2,2,2) construction repairs the symplectic projective geometry, but records all three `tau sigma` involutions as **free**, giving Enriques quotients. That cannot realize `(11,9,1)`, which requires one elliptic curve plus one rational curve in the fixed locus.
+
+Thus none of the three encoded rank-15 routes realizes the frozen JK package.
 
 ---
 
-## 6. Updated local gate table
+## 6. What survives and what changes
+
+The useful rank-15 facts do survive:
+
+- `NS=U+E7(-1)+A1(-1)^6` is an explicit high-Picard lattice;
+- the CM Mordell–Weil `V4` preserves an elliptic fiber;
+- the recovered Donaldson reflections fix that same fiber.
+
+But they can no longer be promoted to a full JK realization.
+
+The next construction target is **not** “find the missing `tau` on this rank-15 CM K3.” It is:
+
+> **construct or identify a degree-8 K3 with `rho>=17` carrying the complete frozen JK `(Z/2)^3` action.**
+
+For the frozen target character, the full invariant cohomology has rank 5. Because the anti-symplectic generator removes the holomorphic two-form directions, this invariant lattice is algebraic and has one positive direction. At lattice level it is therefore an indefinite rank-5 lattice, so Meyer forces a non-zero invariant isotropic class.
+
+Thus the higher-Picard pivot is not arbitrary: if the correct full group exists, a common invariant genus-one fiber class is structurally expected. Nef/effective and section checks still have to be performed on the actual model.
+
+---
+
+## 7. Updated local gate table
 
 | Gate | Claim | Status |
 | --- | --- | --- |
 | H0a.1 | symplectic `V4` forces enough Picard rank for genus-one fibration | **PASS under V4 assumption** |
-| H0a.2 | an elliptic fibration with section exists | **PASS under V4 assumption** |
-| H0a.3a | actual symplectic `V4` preserves a selected elliptic fiber | **CONDITIONAL PASS on rank-15 CM model** |
-| H0a.3b | uniform Donaldson reflection preserves that fiber class | **CONDITIONAL PASS at lattice level** |
-| H0a.3c | full JK `Z2^3` / anti-symplectic / global matching package preserves the required elliptic datum | **OPEN** |
+| H0a.2 | an elliptic fibration with section exists abstractly | **PASS under V4 assumption** |
+| H0a.3a | rank-15 CM symplectic `V4` preserves a selected elliptic fiber | **CONDITIONAL PASS** |
+| H0a.3b | recovered Donaldson reflection preserves that fiber class | **CONDITIONAL PASS** |
+| H0a.3c-15 | frozen full JK package exists at `rho=15` | **FAIL — character obstruction** |
+| H0a.3c-T5 | historical `T5''` realizes target anti-symplectic cosets | **FAIL — free versus required `(g,k)=(1,1)`** |
+| H0a.3d | full JK package on a higher-Picard degree-8 K3 | **OPEN — `rho>=17` necessary** |
 | H0b | global K7 lies in a controlled M/heterotic duality class | **OPEN** |
 | H1+ | heterotic bundle, chirality, `nu_R`, neutrino mass operator | **NOT REACHED** |
 
