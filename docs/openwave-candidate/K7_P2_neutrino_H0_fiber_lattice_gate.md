@@ -1,6 +1,6 @@
 # K7-P2 Candidate A — H0 fiber-lattice gate
 
-**Status:** `H0a.1 + H0a.2 CONDITIONAL PASS / H0a.3 HOLD / H0b GLOBAL DUALITY OPEN`  
+**Status:** `H0a.1 + H0a.2 CONDITIONAL PASS / V4-ONLY FIBER SUBGATE PARTIAL PASS / FULL JK rho=15 FAIL / rho>=17 CONSTRUCTION OPEN / H0b OPEN`  
 **Opened:** 2026-09-11  
 **Updated:** 2026-09-12  
 **Target-value exposure:** none.  
@@ -12,307 +12,289 @@ The question is split into logically distinct parts:
 
 - **H0a.1 — fiber lattice:** does the projective K3 fiber used by K7 have enough Picard lattice to force a genus-one fibration?
 - **H0a.2 — Jacobian upgrade:** does its Néron–Severi lattice contain a hyperbolic plane `U`, hence an elliptic fibration with section?
-- **H0a.3 — equivariance:** can such a fibration be chosen compatibly with the K7 `V4` / matching / orbifold data?
-- **H0b — global compactification:** is the *global K7 construction* in a class for which the fiberwise M-theory/heterotic duality is actually established or independently derived?
+- **H0a.3 — equivariance:** can a fiber be preserved by the K7 symmetry / matching / orbifold package?
+- **H0b — global compactification:** is the global K7 construction in a class for which the fiberwise M-theory/heterotic duality is established or independently derived?
 
-Under the current K7 Phase-1 symplectic-`V4` assumption, H0a.1 and H0a.2 pass. H0a.3 does not follow; at the minimal Picard rank it is actually obstructed.
+The generic symplectic-`V4` assumptions already force high Picard rank and elliptic structure. The recovered rank-15 Clingher–Malmendier model then gives a concrete `V4`-preserved elliptic fiber. However, the **full frozen JK `(Z/2)^3` fixed-locus package is representation-theoretically impossible at `rho=15` and requires `rho>=17`.**
+
+See [`K7_P2_neutrino_JK_character_obstruction.md`](K7_P2_neutrino_JK_character_obstruction.md).
 
 ---
 
 ## 1. Frozen assumptions used by H0a
 
-H0a uses only the following pre-existing K7 statements.
+H0a starts from the following pre-existing K7 statements.
 
 **A1.** The K3 fiber is a smooth projective degree-8 K3, represented in the analytic program as a `CI(2,2,2) ⊂ P5`.
 
-**A2.** The same K3 carries the Phase-1 symplectic action
+**A2.** The same K3 carries a symplectic
 
 `V4 = (Z/2Z)^2 = <s1,s2>`.
 
-The K7 JK audit records 24 raw fixed points across the three nontrivial involutions, i.e. the expected 8 fixed points per symplectic involution.
+The K7 JK audit assigns eight isolated fixed points to each non-trivial symplectic involution.
 
-If A2 is only a screen on a family and not an automorphism action on the final chosen K3, the conclusions below do not transfer automatically. That distinction remains load-bearing.
+For the **full JK package**, an additional frozen assumption is used:
+
+**A3.** There is a commuting anti-symplectic `tau` with 2-elementary type `(11,7,1)`, while the three elements `tau s1`, `tau s2`, `tau s1 s2` have type `(11,9,1)`.
+
+If these statements refer to different K3 models, the conclusions may not be combined.
 
 ---
 
-## 2. Invariant / coinvariant rank from Lefschetz
+## 2. Invariant / coinvariant rank from symplectic V4
 
-A symplectic involution on a complex K3 has 8 isolated fixed points. The topological Lefschetz formula gives
+A symplectic involution on a complex K3 has eight isolated fixed points. The topological Lefschetz formula gives
 
-`8 = tr(H^0) + tr(H^2) + tr(H^4) = 1 + tr(H^2) + 1`,
+`8 = 1 + tr(g|H^2) + 1`,
 
-so every nontrivial involution in `V4` has
+hence
 
-`tr(g | H^2) = 6`.
+`tr(g|H^2)=6`
 
-For a finite group, the dimension of the invariant subspace is the average of the character:
+for each non-trivial element of `V4`.
 
-`rk H^2(X,Z)^V4 = (1/4) [22 + 6 + 6 + 6] = 10`.
+Therefore
 
-Hence the coinvariant lattice
+`rk H^2(X,Z)^V4 = (22+6+6+6)/4 = 10`,
 
-`Omega_V4 := (H^2(X,Z)^V4)^perp`
+and the coinvariant lattice has rank
 
-has
+`rk Omega_V4 = 12`.
 
-`rk Omega_V4 = 22 - 10 = 12`.
+For a projective K3 with finite symplectic group, `Omega_V4` lies in `NS(X)`. An independent invariant ample class then gives
 
-This agrees with the explicit lattice calculation of Garbagnati–Sarti. For `G=(Z/2Z)^2` they give
-
-- `rk(Omega_G)=12`,
-- `|disc(Omega_G)|=2^10`,
-- `A_Omega ≅ (Z/2Z)^6 ⊕ (Z/4Z)^2`.
+`rho(X)>=13`.
 
 Reference: A. Garbagnati, A. Sarti, *Elliptic fibrations and symplectic automorphisms on K3 surfaces*, Commun. Algebra 37 (2009), arXiv:0801.3992.
 
----
-
-## 3. Picard-rank lower bound
-
-For a projective K3 with a symplectic finite group `G`, the coinvariant lattice `Omega_G` is contained in the Néron–Severi lattice `NS(X)`; equivalently the symplectic action is trivial on the transcendental lattice.
-
-Since `Omega_V4` is negative definite of rank 12 and a projective K3 has an invariant positive ample class independent of it,
-
-`rho(X) = rk NS(X) >= 1 + rk Omega_V4 = 13`.
-
-This is much stronger than the generic degree-8 `CI(2,2,2)` Picard rank.
-
-### Reproducible arithmetic
-
-Run from repository root:
+### Reproducer
 
 ```bash
 python3 docs/openwave-candidate/check_k3_v4_genus_one_gate.py
 ```
 
-The script reproduces the character/rank arithmetic and the numerical inequalities entering the lattice criteria below. The fixed-point, symplectic-action and Nikulin theorems remain cited mathematical inputs.
-
 ---
 
-## 4. H0a.1 — genus-one fibration
+## 3. H0a.1 — genus-one fibration
 
-For a projective K3, `NS(X)` has signature `(1, rho-1)`. With `rho >= 13`, it is an indefinite integral lattice of rank at least 5.
+For a projective K3, `NS(X)` has signature `(1,rho-1)`. Since `rho>=13`, it is indefinite of rank at least five.
 
-By Meyer's theorem such a lattice represents zero: there is a nonzero integral divisor class `F` with
-
-`F^2 = 0`.
-
-For a K3, after the standard effective/Weyl-chamber reduction one obtains a primitive nef isotropic class; its complete linear system defines a genus-one fibration over `P1`.
-
-Equivalent standard formulation: a K3 admits a genus-one fibration iff `NS(X)` contains a nonzero isotropic class; in particular every projective K3 with `rho >= 5` admits one.
-
-Reference: M. Schütt, T. Shioda, *Elliptic Surfaces*, Adv. Stud. Pure Math. 60 (2010), Proposition 12.8 and Corollary 12.9, arXiv:0907.0298.
+By Meyer's theorem it represents zero. After the standard K3 effective / Weyl-chamber reduction, a primitive nef isotropic divisor gives a genus-one fibration.
 
 ### H0a.1 ruling
 
-> **Conditional on A1+A2 referring to the same projective K3 fiber, H0a.1 passes: the K3 must admit a genus-one fibration.**
+> **Conditional on A1+A2 referring to the same projective K3, a genus-one fibration exists.**
+
+Reference: M. Schütt, T. Shioda, *Elliptic Surfaces*, Adv. Stud. Pure Math. 60 (2010), Proposition 12.8 and Corollary 12.9, arXiv:0907.0298.
 
 ---
 
-## 5. H0a.2 — a section is also forced at `rho >= 13`
+## 4. H0a.2 — a section is also forced abstractly
 
-The previous version of this note left a section as an open finite-lattice problem. A stronger general theorem closes it.
+Schütt–Shioda, following Nikulin, state that every complex K3 surface with Picard number at least 13 admits an elliptic fibration with section.
 
-Schütt–Shioda, following Nikulin, state:
+The lattice criterion used is
 
-> Every complex K3 surface of Picard number at least 13 admits an elliptic fibration with section.
+`rk(L) >= length(A_L)+3  =>  U embeds in L`.
 
-The lattice criterion is the following. For an indefinite even integral lattice `L`, if
+For a K3,
 
-`rk(L) >= length(A_L) + 3`,
+`length(A_NS) <= rk(T_X)=22-rho`.
 
-then the hyperbolic plane `U` embeds in `L`.
+At `rho=13`,
 
-For a complex K3,
+`13 >= 9+3`,
 
-`length(A_NS) <= rk(T_X) = 22 - rho(X)`.
-
-At the minimal rank forced by `V4`, `rho=13`, therefore
-
-- `rk(NS)=13`,
-- `rk(T_X)=9`,
-- `length(A_NS) <= 9`,
-- `13 >= 9 + 3`.
-
-Hence
-
-`U -> NS(X)`
-
-and the K3 admits a Jacobian elliptic fibration, i.e. an elliptic fibration with section.
-
-Reference: Schütt–Shioda, Lemma 12.22, citing Nikulin, Corollary 1.13.5.
+so `U` embeds in `NS(X)`.
 
 ### H0a.2 ruling
 
-> **Conditional on A1+A2, H0a.2 passes. The existence of a section does not require choosing among the degree-8 `V4` overlattices.**
+> **Conditional on A1+A2, some Jacobian elliptic fibration exists.**
 
-### Correction to the finite-lattice bookkeeping
-
-The finite classification remains relevant to the detailed geometry, but not to existence of a section. For `G=V4` and a primitive positive class `L` with `L^2=8`, Garbagnati–Sarti Proposition 6.2 allows, subject to the appropriate discriminant element existing:
-
-1. the direct lattice `Z L ⊕ Omega_V4`;
-2. an index-2 overlattice generated by a class of type `(L/2,v/2)`;
-3. an index-4 overlattice generated by a class of type `(L/4,v/4)`.
-
-An earlier working summary that reduced the possibilities to only the direct and index-2 cases was incomplete. This correction does not affect H0a.2 because `rho>=13` already forces `U` abstractly.
+This theorem does not say that the selected fibration is symmetry-invariant.
 
 ---
 
-## 6. H0a.3 — `V4`-compatible elliptic fibration is not automatic
+## 5. V4-only equivariance
 
-The existence theorem above does **not** say that the elliptic fibration can be chosen invariant under the K7 `V4` action.
+Because the symplectic `V4` acts trivially on `T_X`,
 
-A necessary condition for a `V4`-preserved genus-one / elliptic fibration is that its fiber class `F` be fixed by `V4`, hence
+`rk NS(X)^V4 = 10-(22-rho)=rho-12`.
 
-`0 != F in NS(X)^V4`, with `F^2=0`.
+At the generic minimal value `rho=13`, this rank is one. The invariant line is positive because an ample class can be averaged over `V4`, so it contains no non-zero isotropic vector.
 
-The minimal-Picard case is already obstructed.
+Thus no `V4`-preserved genus-one fibration exists at minimal `rho=13`.
 
-A finite symplectic group acts trivially on `T_X`. Therefore, over `Q`,
+For the **V4-only** problem, rank at least 14 is necessary before an invariant isotropic becomes possible.
 
-`H^2(X)^V4 = T_X ⊕ NS(X)^V4`.
+### Recovered rank-15 witness
 
-We already know
+The recovered canonical lattice
 
-`rk H^2(X)^V4 = 10`.
+`NS = U ⊕ E7(-1) ⊕ A1(-1)^6`
 
-Since `rk T_X = 22-rho`,
+has `rho=15` and explicit
 
-`rk NS(X)^V4 = 10 - (22-rho) = rho - 12`.
+`F=e`, `S=f-e`, `h=4e+f`,
 
-At the generic/minimal `V4` Picard number `rho=13`, this gives
+with
 
-`rk NS(X)^V4 = 1`.
+`F^2=0`, `S^2=-2`, `F.S=1`, `h^2=8`.
 
-An invariant ample class exists by averaging an ample class over the finite group, so this rank-one invariant lattice is positive. It therefore contains no nonzero isotropic vector.
+In its Clingher–Malmendier Jacobian realization, the actual geometric `V4` is generated by translations by independent 2-torsion sections, hence preserves `F`.
 
-Thus:
+The recovered Donaldson `(-2)` candidates lie in a negative complement orthogonal to this `U`, so their Picard–Lefschetz reflections also fix `F`.
 
-> **At `rho=13`, no genus-one or elliptic fibration can be preserved by the full symplectic `V4`.**
+See [`K7_P2_neutrino_rank15_CM_V4_gate.md`](K7_P2_neutrino_rank15_CM_V4_gate.md).
 
-This does not contradict H0a.2: the K3 has elliptic fibrations with section, but `V4` permutes them rather than preserving one.
+### V4-only ruling
 
-### Necessary specialization
+> **The rank-15 CM model conditionally closes the `V4`-preserved fiber and Donaldson-reflection sub-gates.**
 
-For a `V4`-compatible fibration one needs at least
-
-`rk NS(X)^V4 >= 2`,
-
-hence necessarily
-
-`rho >= 14`.
-
-This is only a **necessary**, not sufficient, condition. The actual invariant lattice must contain a primitive nef isotropic class, and for a section compatible with the desired group action one must additionally control the section / Mordell–Weil action.
-
-### H0a.3 ruling
-
-> **HOLD. Compatibility is impossible on the minimal `rho=13` `V4` family and requires an explicit higher-Picard specialization plus an invariant isotropic class.**
-
-This is now the next fiber-level construction problem.
+This is no longer sufficient for the full JK problem.
 
 ---
 
-## 7. A useful high-Picard degree-8 benchmark — not yet identified with K7
+## 6. Full JK character obstruction — rho=15 is impossible
 
-There is a mathematically close explicit family that shows the required kind of specialization is plausible.
+Under A3, Nikulin's fixed-locus formula gives
 
-Garbagnati–Sarti study smooth complete intersections of three diagonal quadrics in `P5` on which changing an even number of coordinate signs realizes a symplectic `(Z/2Z)^4` action. The family has dimension 4; for an algebraic K3 with this full symplectic group the minimal Picard number is 16.
+- `(11,7,1) -> (g,k)=(2,2)` for `tau`;
+- `(11,9,1) -> (g,k)=(1,1)` for each `tau V4` coset element.
 
-Reference: A. Garbagnati, A. Sarti, *Kummer surfaces and K3 surfaces with (Z/2Z)^4 symplectic action*, Rocky Mountain J. Math. 46 (2016), arXiv:1305.3514, especially §§7 and 10.
+Both have fixed-locus Euler characteristic `2`, so every anti-symplectic element has
 
-This is highly relevant because K7 already uses a degree-8 `CI(2,2,2)` and a diagonal symplectic `V4` screen. But the current public K7 artifact does **not** establish that its final quadric net lies in this complete diagonal `(Z/2)^4` family.
+`tr(g|H^2)=0`.
 
-Therefore this family is recorded only as a **construction benchmark**:
+Together with the three symplectic traces `6`, the full `G=(Z/2)^3` character on `H^2` is
 
-- it demonstrates explicit degree-8 K3 surfaces with much higher Picard rank and large symplectic 2-group action;
-- when restricted to a chosen `V4`, the larger Picard lattice gives room for `NS(X)^V4` to have rank greater than one;
-- it does not by itself provide the specific `V4`-invariant isotropic class required by K7;
-- it must not be substituted for the actual K7 fiber without an explicit identification of the quadric net / lattice polarization / automorphisms.
+`chi_H2=(22,0,6,6,0,0,6,0)`.
 
-The next constructive target is therefore not merely `rho>13`; it is an explicit degree-8 specialization carrying the K7 action **and** a primitive invariant nef isotropic class.
+If `rho=15`, then `rk T_X=7`. The symplectic `V4` acts by `+I` on `T_X`; the non-symplectic `tau` acts by `-I` there. Hence
 
----
+`chi_NS=(15,7,-1,-1,7,7,-1,7)`.
 
-## 8. Critical inconsistency exposed: `Picard-rank-1` versus symplectic `V4`
+Fourier inversion over `(Z/2)^3` produces a multiplicity `-2` for the character that changes sign only under `tau`. This is impossible.
 
-The current K7 v3.5 foundations simultaneously state:
+More generally that multiplicity equals
 
-1. Phase 1 uses a symplectic `V4` action on the degree-8 `CI(2,2,2)` K3 fiber; and
-2. the deferred explicit polynomial `Z2^3` model is described as living on a **Picard-rank-1, eta^2=8 K3**.
-
-These cannot describe the same projective K3.
-
-From the previous sections,
-
-`symplectic V4  =>  Omega_V4 ⊂ NS(X), rk(Omega_V4)=12  =>  rho(X)>=13`.
+`rho-17`.
 
 Therefore
 
-> **A projective Picard-rank-1 K3 cannot carry the required symplectic `V4` action.**
+> **The frozen full JK fixed-locus package requires `rho>=17`.**
 
-The degree-8 polarization `eta^2=8` is not itself the problem: a special degree-8 K3 may have high Picard rank. The conflicting adjective is `Picard-rank-1`.
+This is an exact necessary condition, not a heuristic.
 
-### Required correction before global promotion
+### Reproducer
 
-The global JK program must choose one consistent statement, for example:
+```bash
+python3 docs/openwave-candidate/check_k3_jk_character_gate.py
+```
 
-- construct a **special degree-8 K3 with `rho>=14` for an equivariant elliptic route** carrying the required `V4` / `Z2^3` lattice action; or
-- abandon the claim that the same K3 carries the symplectic `V4` action.
+### Consequence for historical models
 
-The second option would reopen the Betti / fixed-locus route and therefore cannot be treated as a cosmetic edit.
+- the direct rank-15 CM-Weierstrass anti-symplectic search cannot rescue the package;
+- the historical abstract 15×15 / Torelli action was correctly flagged by its later transcendental-character audit;
+- the later `T5''` CI(2,2,2) construction also fails the frozen target because it records the three `tau sigma` involutions as **free**, while `(11,9,1)` requires one elliptic and one rational fixed curve.
 
-This contradiction is a **critical K7 structural hold**, independent of OpenWave.
-
----
-
-## 9. H0b — global duality is still open
-
-The explicit Braun–Schäfer-Nameki M/heterotic construction is established for appropriate **K3-fibered TCS G2 manifolds**, and their tractable explicit class uses elliptically fibered K3 fibers.
-
-Current K7 v3.5 says instead:
-
-- `(b2,b3)=(21,77)` is absent from the catalogued TCS examples;
-- orthogonal TCS is excluded by the cited parity condition;
-- non-orthogonal / extra-twisted TCS remain open;
-- the **leading global candidate is the Joyce–Karigiannis `T3 × K3 / Z2^3` route**, not an established TCS realization.
-
-Therefore one may not infer
-
-`K7 elliptic K3 fiber -> K7 has the Schoen heterotic dual`.
-
-That implication would be another local-to-global jump.
-
-### H0b pass options
-
-At least one of the following would be needed:
-
-1. **TCS option:** construct an actual K7 non-orthogonal / extra-twisted TCS realization with the required compatible elliptic K3 data, then apply the established fiberwise duality.
-2. **JK option:** derive an M/heterotic dual dictionary directly for the specific JK `T3 × K3 / Z2^3` resolution used by K7 and show how geometry, bundle data and orbifold action map.
-3. **Independent duality option:** provide another controlled compactification dictionary that derives the 4D chiral spectrum without importing the TCS/Schoen result.
-
-Until one closes, the Schoen `X_(19,19)` discussion remains a **conditional benchmark**, not K7 field content.
+Full derivation: [`K7_P2_neutrino_JK_character_obstruction.md`](K7_P2_neutrino_JK_character_obstruction.md).
 
 ---
 
-## 10. Updated gate table
+## 7. Positive consequence of the corrected full-group target
+
+The same full `H^2` character gives
+
+`rk H^2(X)^G = (22+6+6+6)/8 = 5`.
+
+Because `tau` is anti-symplectic, the full-group invariant directions are algebraic rather than holomorphic-two-form directions. An averaged ample class supplies one positive direction; the invariant lattice is therefore expected to have signature `(1,4)`.
+
+An integral indefinite rank-5 lattice represents zero by Meyer.
+
+Thus:
+
+> **If a genuine `rho>=17` K3 realizing the frozen full JK package exists, a full-`G` invariant isotropic class is forced at lattice level.**
+
+This strongly improves the elliptic search. What remains open is nef/effective chamber control and a section for that particular invariant fiber.
+
+---
+
+## 8. High-Picard degree-8 construction benchmark
+
+Garbagnati–Sarti study smooth complete intersections of three diagonal quadrics in `P5` with symplectic `(Z/2)^4` action. Algebraic members of that family already have high Picard rank.
+
+Reference: A. Garbagnati, A. Sarti, *Kummer surfaces and K3 surfaces with (Z/2Z)^4 symplectic action*, Rocky Mountain J. Math. 46 (2016), arXiv:1305.3514.
+
+This remains a useful construction benchmark, but the new full-JK obstruction tightens the target:
+
+- `rho=16` is still insufficient for the frozen JK character;
+- the desired realization must have `rho>=17`;
+- it must also realize the exact anti-symplectic fixed-lattice types, not merely a large symplectic 2-group.
+
+Kummer-type or other high-Picard models may be useful search backends, but none is promoted from rank alone.
+
+---
+
+## 9. Picard-rank-1 statement is incompatible with the symmetry package
+
+A projective Picard-rank-1 K3 cannot carry the required symplectic `V4`, because that already forces `rho>=13`.
+
+The stronger full-JK audit now says that the **frozen complete symmetry package** requires
+
+`rho>=17`.
+
+Therefore any public phrase describing the same K3 simultaneously as
+
+`Picard-rank-1, eta^2=8`
+
+and as the carrier of the JK `V4/tau` package must be retired or explicitly scoped to a different model.
+
+---
+
+## 10. H0b — global duality remains open
+
+Even a successful higher-Picard elliptic K3 does not imply a global K7 heterotic dual.
+
+Current K7 work still distinguishes:
+
+- the leading JK `T3 × K3 / Z2^3` route;
+- non-orthogonal / extra-twisted TCS possibilities;
+- the absence of a proved compact-global dictionary carrying the required bundle / chiral spectrum data.
+
+A valid H0b pass still needs one of:
+
+1. a controlled TCS realization to which the known M/heterotic duality applies;
+2. a direct JK-specific M/heterotic dictionary;
+3. another independently controlled compactification dictionary.
+
+Until then the Schoen discussion remains a conditional benchmark, not K7 field content.
+
+---
+
+## 11. Updated gate table
 
 | Gate | Statement | Status |
 | --- | --- | --- |
-| H0a.1 | K7 projective K3 with genuine symplectic `V4` admits genus-one fibration | **CONDITIONAL PASS** |
-| H0a.2 | `U -> NS(X)` / elliptic fibration with section | **CONDITIONAL PASS** (`rho>=13`) |
-| H0a.3 | elliptic fibration can be chosen `V4`-compatible | **HOLD** — impossible at minimal `rho=13`; requires higher-Picard specialization + invariant isotropic class |
-| H0-struct | Picard-rank-1 description compatible with symplectic `V4` | **FAIL — contradiction** |
+| H0a.1 | genuine symplectic `V4` implies some genus-one fibration | **CONDITIONAL PASS** |
+| H0a.2 | `U -> NS(X)` / some elliptic fibration with section | **CONDITIONAL PASS** (`rho>=13`) |
+| H0a.3-V4 | selected rank-15 CM fiber is `V4`-preserved | **CONDITIONAL PASS** |
+| H0a.3-Donaldson | recovered reflection monodromy preserves that CM fiber | **CONDITIONAL PASS** |
+| H0a.3-JK15 | frozen full JK package at `rho=15` | **FAIL — character obstruction** |
+| H0a.3-JK-high | full JK package on a degree-8 higher-Picard K3 | **OPEN — `rho>=17` necessary** |
+| H0a.3-isotropic | invariant isotropic once the full target group exists | **FORCED at lattice level** (rank-5 invariant lattice + Meyer) |
+| H0-struct | Picard-rank-1 same-fiber description | **FAIL — contradiction** |
 | H0b | global K7 lies in an established M/heterotic duality class | **OPEN** |
 | H1+ | heterotic CY/bundle, chirality, `nu_R`, neutrino operator | **NOT REACHED** |
 
 ---
 
-## 11. Immediate next computation
+## 12. Immediate next computation
 
-The next useful calculation is still **not** a neutrino mass and not yet a Schoen bundle.
+The next useful calculation is still **not** a neutrino mass.
 
-It is now narrower than before:
+It is now much sharper:
 
-> construct or identify the actual higher-Picard degree-8 K3 specialization selected by K7, compute `NS(X)^V4`, and exhibit (or rule out) a primitive `V4`-invariant nef isotropic class `F`.
+> **construct or identify a projective degree-8 K3 with `rho>=17` carrying the exact frozen JK `(Z/2)^3` fixed-locus package, then compute the forced invariant isotropic class, its nef/effective representative and whether that particular fibration has a section.**
 
-A successful result closes H0a.3 at the fiber level. Failure on the actual K7 lattice kills the equivariant heterotic-dual route before any neutrino target is consulted.
+Any proposed `rho<17` model is rejected by the public character reproducer before geometric tuning.
