@@ -1,219 +1,187 @@
 # K7-P2 Candidate A — H0a.3 equivariant elliptic data contract
 
-**Status:** `H0a.3 HOLD — exact NS/action data required`  
+**Status:** `PARTIAL PASS — rank-15 CM V4 + Donaldson fiber preservation closed conditionally; full JK/global matching open`  
 **Date:** 2026-09-12  
 **Target-value exposure:** none.  
-**Parent gate:** [`K7_P2_neutrino_H0_fiber_lattice_gate.md`](K7_P2_neutrino_H0_fiber_lattice_gate.md)
+**Parent gate:** [`K7_P2_neutrino_H0_fiber_lattice_gate.md`](K7_P2_neutrino_H0_fiber_lattice_gate.md)  
+**Rank-15 resolution:** [`K7_P2_neutrino_rank15_CM_V4_gate.md`](K7_P2_neutrino_rank15_CM_V4_gate.md)
 
-This note specifies the exact mathematical data needed to close the remaining fiber-level gate of the provisional heterotic-dual route.
+This file began as the exact data contract for H0a.3. The previously private rank-15 lattice record has now been recovered and distilled into a public target-free reproducer. The contract is therefore no longer wholly open: D1 and the fiber-preservation parts of D2/D3 are conditionally closed.
 
-H0a.1 and H0a.2 are already conditionally closed under the K7 symplectic-`V4` assumption:
+The remaining question is global:
 
-`V4 symplectic -> rho(X)>=13 -> U embeds in NS(X) -> elliptic fibration with section exists`.
+> Does the same rank-15 elliptic K3, with its actual geometric symplectic `V4`, extend through the selected anti-symplectic / Joyce–Karigiannis / matching data in a way that supports a controlled M-theory/heterotic dictionary?
 
-The remaining question is stronger:
-
-> Can an elliptic fibration be chosen compatibly with the actual K7 `V4` / monodromy / global gluing data?
-
-At minimal `rho=13` the answer is no. A higher-Picard specialization and an explicit invariant isotropic class are required.
+No neutrino mass, ordering, or preferred experimental value is used here.
 
 ---
 
-## 1. Existing K7 lattice certificates do not yet close H0a.3
+## 1. Recovered exact lattice package
 
-`Arithmon/K7-Lean:GIFT/Foundations/G2TCSLatticeCertificate.lean` contains an explicit copy of the `3U` block of the ambient K3 lattice
+The canonical K3 work uses
 
-`Lambda_K3 = 3U + 2 E8(-1)`
+`NS(X) = U ⊕ E7(-1) ⊕ A1(-1)^6`,
 
-and the degree-8 vectors
+of Nikulin type `(15,7,1)`, with absolute determinant `2^7` and signature `(1,14)`.
 
-- `vPlus = 4 e1 + f1`,
-- `vMinus = 4 e2 + f2`,
-- `w = 4 e3 + f3`,
+In the `U` basis `(e,f)`, define
 
-with squares 8, pairwise orthogonality in the relevant slots, primitive embedding checks, and a cyclic hyperkähler matching isometry.
+- `F=e`,
+- `S=f-e`,
+- `h=4e+f`.
 
-This is valuable matching data, but it is **ambient cohomology data**. It does not establish that a chosen copy of `U` is contained in the Néron–Severi lattice of the actual K7 fiber.
+Then exactly
 
-The distinction is load-bearing:
+- `F^2=0`,
+- `S^2=-2`,
+- `F.S=1`,
+- `h^2=8`.
 
-`U subset H^2(K3,Z)`
+The public dependency-free check is
 
-does not imply
+```bash
+python3 docs/openwave-candidate/check_k3_rank15_cm_v4_gate.py
+```
 
-`U subset NS(X)`.
+### D1 ruling — Néron–Severi lattice
 
-The latter is a Hodge / algebraic condition and is what an elliptic fibration with section requires.
-
-Likewise, the `Z2^3` sign table in the same Lean module is encoded on a six-dimensional representation used for the determinant parity test. It is not an explicit pair of integral action matrices on `NS(X)`.
-
-Therefore the existing Lean `3U` certificate must **not** be cited as closure of H0a.3.
-
----
-
-## 2. A possible lead that is not yet public evidence
-
-`G2DonaldsonLinkCohomology.lean` and the K7-Lean changelog mention a private exact cross-check on a **rank-15 polarisation lattice**.
-
-That rank is interesting because `rho>=14` is necessary for a `V4`-invariant isotropic class to become possible. However, the public artifact currently exposes neither
-
-- the Gram matrix of that rank-15 lattice,
-- its identification with `NS(X)` for the K7 degree-8 fiber,
-- nor the `V4` action on it.
-
-It is therefore recorded only as a retrieval lead. It earns no H0a.3 credit until those data are explicit and independently checkable.
+**CONDITIONAL PASS.** The rank-15 Gram is now explicit and target-free reproducible. What remains conditional is the framework-level decision that this recovered rank-15 model is the K3 fiber adopted by the final global K7 construction.
 
 ---
 
-## 3. Minimal exact input package
+## 2. D2 — use the geometric `V4`, not the old sign-matrix proxy
 
-To close H0a.3, freeze one concrete K3 fiber `X` and publish the following.
+The historical private workspace used the name `sigma_A` for two distinct objects. Later reconciliation showed that the phase-D8 block-sign involution is **not** the genuine symplectic `V4` generator and must not be used for H0a.3.
 
-### D1 — Néron–Severi lattice
+The retained geometric model is instead a Jacobian elliptic K3 of Clingher–Malmendier type with Weierstrass form
 
-An integral basis of `NS(X)` and its Gram matrix
+`y^2 = x (x-A(t)) (x-B(t))`
 
-`Q in Mat_r(Z)`, `r = rho(X)`.
+and Mordell–Weil 2-torsion
 
-Required checks:
+`MW_tors ≅ (Z/2Z)^2`.
 
-- `Q` even;
-- signature `(1,r-1)`;
-- degree-8 polarization `h` is represented explicitly with `h^T Q h = 8`;
-- the declared lattice embeds primitively in the K3 lattice or is otherwise identified by a theorem-grade construction.
+Translations by two independent 2-torsion sections generate the actual symplectic `V4`. Such translations act fiberwise over the same base and therefore preserve the fiber class `F`.
 
-### D2 — actual `V4` action on `NS(X)`
+The section is allowed to move in its Mordell–Weil orbit; H0a.3 requires the **fibration/fiber class** to be preserved, not pointwise fixation of the zero section.
 
-Integral matrices `S1,S2 in GL(r,Z)` representing the two generators, with
+### D2 ruling — actual `V4`
 
-- `S1^2 = I`, `S2^2 = I`;
-- `S1 S2 = S2 S1`;
-- `Si^T Q Si = Q`;
-- the action agrees with the geometric automorphisms used in the JK fixed-locus screen, rather than merely an abstract isometric copy.
+**CONDITIONAL PASS for fiber preservation.** The geometric mechanism fixes `F` by construction. Full integral matrices on the chosen NS basis would still be useful for a stand-alone machine certificate, but they are no longer logically required to establish that Mordell–Weil translations preserve the fibration.
 
-### D3 — monodromy / matching action
+The old phase-D8 sign matrices are explicitly excluded from this ruling.
 
-Give the action on the same lattice basis of every extra map that the elliptic fiber must survive, in particular the relevant Picard–Lefschetz reflection / hyperkähler matching map used by the selected global route.
+References for the general geometry:
 
-### D4 — effective / nef chamber data
-
-Enough `(-2)`-root / ample-cone information to decide whether a primitive isotropic class can be moved to, or already lies in, the nef cone without destroying the required equivariance.
+- A. Garbagnati, *Elliptic K3 surfaces with abelian and dihedral groups of symplectic automorphisms*, arXiv:0904.1519.
+- A. Clingher, A. Malmendier, *On Néron–Severi lattices of Jacobian elliptic K3 surfaces*, arXiv:2109.01929.
 
 ---
 
-## 4. Exact H0a.3 computation
+## 3. D3 — Donaldson Picard–Lefschetz monodromy
 
-Once `Q,S1,S2` are frozen, the gate is finite and target-free.
+The recovered NS embedding contains
 
-### Step E1 — compute the invariant lattice over `Z`
+`M = U ⊕ D4(-1) ⊕ A1(-1)^5`
 
-Compute
+and a rank-4 negative-definite orthogonal complement `Mperp`. The surviving algebraic `alpha_1` candidates all lie in `Mperp`.
 
-`K = NS(X)^V4 = ker_Z(S1-I) intersect ker_Z(S2-I)`.
+Since the full `U=<e,f>` lies in `M`, every such candidate obeys
 
-This must be an **integral** kernel computation, e.g. via Smith/Hermite normal form, not merely a floating-point eigenspace.
+`F.alpha_1 = 0`.
 
-Record a basis matrix `B` for `K` and the restricted Gram matrix
+For a `(-2)` root,
 
-`Q_K = B^T Q B`.
+`s_alpha(v)=v+(v.alpha)alpha`,
 
-Sanity check against the character result:
+hence
 
-`rk K = rho(X) - 12`
+`s_alpha(F)=F`.
 
-for the symplectic `V4` action used in the current gate.
+This is independent of which surviving `alpha_1` is ultimately selected.
 
-### Step E2 — search for a primitive invariant isotropic class
+### D3 ruling — uniform reflection
 
-Solve exactly
+**CONDITIONAL PASS at lattice level.** The unresolved root selection cannot destroy the elliptic fiber class.
 
-`x^T Q_K x = 0`
-
-for a nonzero primitive integer vector `x`.
-
-Lift
-
-`F = B x in NS(X)`.
-
-Required checks:
-
-- `F != 0`;
-- `gcd(F_i)=1` in the chosen primitive basis;
-- `F^2=0` exactly;
-- `S1 F = F`, `S2 F = F`.
-
-If no such `F` exists, the `V4`-equivariant elliptic route fails for this K3 specialization.
-
-### Step E3 — nef/effective representative
-
-Show that the isotropic class defines a fibration. Either
-
-- prove `F` is nef directly against the effective `(-2)` roots; or
-- give an explicit Weyl reflection sequence to a primitive nef isotropic representative and verify that the required group/matching compatibility survives.
-
-### Step E4 — section for the selected fiber class
-
-H0a.2 proves that *some* Jacobian elliptic fibration exists on `X`; it does not automatically say that the particular invariant `F` found in E2 has a section.
-
-For this `F`, exhibit a class `S` such that, after choosing the effective representative,
-
-- `F . S = 1`;
-- a section representative exists (for a K3 section one expects `S^2=-2`).
-
-Equivalently, exhibit the corresponding primitive `U` associated with this specific fibration.
-
-The section itself need not be pointwise fixed by `V4`; a controlled orbit or torsion-translation action is acceptable if it is compatible with the intended quotient/duality construction. The **fiber class** must be invariant for the fibration to be preserved.
-
-### Step E5 — global matching check
-
-Verify that the selected matching / monodromy data preserve the fiber structure required by the proposed fiberwise duality. This is the bridge from H0a.3 to H0b; it must not be inferred from the existence of `F` alone.
+This does **not** by itself prove the global hyperkähler / JK matching needed by the proposed duality.
 
 ---
 
-## 5. Sharp falsifiers
+## 4. D4 — nef/effective and section data
 
-H0a.3 fails for the selected K3 realization if any of the following occurs:
+For the abstract contract, D4 asked for a primitive nef isotropic class plus a section. In the rank-15 Jacobian model these data are supplied geometrically by the selected elliptic fibration:
 
-1. the published `NS(X)` has `rho=13`; then `rk NS(X)^V4=1` and no invariant isotropic class can exist;
-2. `rho>=14` but the exact invariant lattice `Q_K` represents no nonzero primitive zero;
-3. an invariant isotropic class exists but every such class is incompatible with the required nef chamber / effective geometry;
-4. a suitable elliptic fibration exists but the selected JK / Picard–Lefschetz / matching action does not preserve the required fiber structure;
-5. the `V4` matrices used in the lattice calculation cannot be identified with the geometric `V4` used in the K7 fixed-locus count.
+- `F` is the fiber divisor class;
+- `S` is a section class with `F.S=1` and `S^2=-2`;
+- the public arithmetic reproducer verifies the lattice identities.
 
-A failure is recorded; the lattice or action may not be changed after inspection simply to recover a desired heterotic dictionary under the same candidate identifier.
+### D4 ruling
 
----
+**CONDITIONAL PASS inside the recovered Jacobian model.** A separate root-by-root nef-cone search is unnecessary once the fibration itself is part of the geometric construction.
 
-## 6. High-Picard construction benchmark
-
-Garbagnati–Sarti give an explicit family of smooth complete intersections of three diagonal quadrics in `P5` with a symplectic `(Z/2Z)^4` action generated by even sign changes. For algebraic members the minimal Picard number for the full group is 16.
-
-This is a useful existence benchmark for degree-8 high-symmetry K3 surfaces, and it is geometrically close to the K7 `CI(2,2,2)` setup. It is **not** yet identified with the K7 fiber.
-
-A valid use of this benchmark would be:
-
-1. show the actual K7 quadric net lies in, or is explicitly specialized to, the relevant family;
-2. identify the K7 `V4` subgroup inside the full sign-change group;
-3. compute `NS(X)^V4` and an invariant isotropic fiber class there;
-4. check compatibility with the rest of the K7 gluing data.
-
-Skipping step 1 would merely replace one unproved physical identification by another.
-
-Reference: A. Garbagnati, A. Sarti, *Kummer surfaces and K3 surfaces with (Z/2Z)^4 symplectic action*, arXiv:1305.3514.
+If the final K7 fiber is changed away from this model, D4 reopens.
 
 ---
 
-## 7. Promotion rule
+## 5. What remains open — H0a.3c
 
-H0a.3 becomes `PASS` only when the repository contains, from a clean checkout:
+The following is **not** closed by the rank-15 recovery:
 
-- the exact `NS(X)` Gram matrix;
-- exact `V4` action matrices;
-- an exact primitive invariant nef isotropic class `F`;
-- a section / `U` certificate for that particular fibration;
-- the relevant matching/monodromy compatibility checks;
-- a reproducer that uses no neutrino-mass target data.
+1. an actual anti-symplectic / JK involution on the **same** rank-15 K3, with the fixed-locus data needed by the selected global compact route;
+2. compatibility of that map with the geometric Mordell–Weil `V4`;
+3. compatibility of the full global gluing / resolution with the preserved elliptic fiber;
+4. a theorem-grade bridge from that compact K7 construction to a controlled heterotic dual compactification.
 
-Until then the scientifically correct status is
+Later canonical audits already showed that one attempted historical `Z2^3` character packaging cannot simply be imported onto the smooth rank-15 model. Therefore the existence of the separate `V4` and anti-symplectic lattice ingredients is not counted as proof that the full package coexists geometrically.
 
-> **elliptic-with-section exists abstractly; K7-equivariant elliptic structure remains unproved.**
+This is now the sharp boundary:
+
+> **Fiber-level equivariance has a viable rank-15 realization; full JK/global equivariance remains unproved.**
+
+---
+
+## 6. Superseded requirements from the original contract
+
+The original H0a.3 contract demanded:
+
+- D1: exact `NS(X)` Gram;
+- D2: actual `V4` action;
+- D3: monodromy/matching action;
+- D4: nef/effective section data.
+
+After the rank-15 recovery:
+
+| Item | Status | Evidence |
+| --- | --- | --- |
+| D1 exact `NS` | **conditional pass** | `U+E7(-1)+A1(-1)^6`, determinant `2^7`, public reproducer |
+| D2 symplectic `V4` preserves fiber | **conditional pass** | geometric translations by independent 2-torsion sections |
+| D3 Donaldson reflection preserves `F` | **conditional pass** | `alpha_1 in Mperp`, `U subset M`, hence `F.alpha_1=0` |
+| D4 selected fiber has section | **conditional pass** | Jacobian fibration + exact `F,S` intersection data |
+| Full anti-symplectic / JK / global matching | **OPEN** | must be constructed on the same model |
+
+---
+
+## 7. Sharp falsifiers from here
+
+The rank-15 route fails if any of the following is established:
+
+1. the final K7 K3 fiber is not the recovered `(15,7,1)` Jacobian model or an explicitly equivalent specialization;
+2. the geometric `V4` used in the K7 fixed-locus/global construction is not the Mordell–Weil translation group preserving this fibration;
+3. no compatible anti-symplectic / JK involution exists on the same K3 with the required fixed-locus data;
+4. the required global matching sends the elliptic fiber out of the structure needed for the proposed duality;
+5. the only way to recover the global package is to change the lattice/action after inspecting a desired neutrino result.
+
+A failure is recorded and the candidate is not repaired by target-driven model switching.
+
+---
+
+## 8. Next gate
+
+Do **not** compute a neutrino mass yet.
+
+The next constructive task is now:
+
+> build or recover the anti-symplectic / JK action on the same rank-15 Jacobian K3, reconcile it with the true Mordell–Weil `V4`, and test whether the global K7 matching preserves the elliptic fiber.
+
+Only after that can H0b and the heterotic bundle / chiral spectrum gates be addressed.
