@@ -42,12 +42,30 @@ def integer_kernel(matrix: sp.Matrix) -> sp.Matrix:
 
 
 def inertia_symmetric(matrix: sp.Matrix) -> tuple[int, int, int]:
-    """Exact inertia using signs of numerical eigenvalues only as a final check."""
-    eigenvalues = [complex(ev) for ev in matrix.evalf(80).eigenvals().keys()]
-    positive = sum(1 for ev in eigenvalues if ev.real > 1e-40)
-    negative = sum(1 for ev in eigenvalues if ev.real < -1e-40)
-    zero = matrix.rows - positive - negative
-    return positive, negative, zero
+    """Exact rational congruence reduction, including isotropic 2x2 pivots."""
+    matrix = sp.Matrix(matrix)
+    assert matrix == matrix.T
+    positive = negative = 0
+    while matrix.rows:
+        pivot = next((i for i in range(matrix.rows) if matrix[i, i]), None)
+        if pivot is not None:
+            indices = [pivot] + [i for i in range(matrix.rows) if i != pivot]
+            matrix = matrix.extract(indices, indices)
+            value = matrix[0, 0]
+            positive += 1 if value > 0 else 0
+            negative += 1 if value < 0 else 0
+            matrix = matrix[1:, 1:] - matrix[1:, :1] * matrix[:1, 1:] / value
+        else:
+            pair = next(((i, j) for i in range(matrix.rows)
+                         for j in range(i + 1, matrix.rows) if matrix[i, j]), None)
+            if pair is None:
+                return positive, negative, matrix.rows
+            indices = list(pair) + [i for i in range(matrix.rows) if i not in pair]
+            matrix = matrix.extract(indices, indices)
+            positive += 1
+            negative += 1
+            matrix = matrix[2:, 2:] - matrix[2:, :2] * matrix[:2, :2].inv() * matrix[:2, 2:]
+    return positive, negative, 0
 
 
 def main() -> None:
