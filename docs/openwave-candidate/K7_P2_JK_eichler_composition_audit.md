@@ -69,10 +69,10 @@ not identify it with the intrinsic set of all Eichler parameters or all of
 `O(M)`; those must remain separate scopes.
 
 The first-step collision hunt over two structured bases found `11,616` states
-and `5,664` mod-8 classes. Among the first ten collision classes inspected,
-none contained two distinct exact embedded eigensublattice states. No second
-step was computed there; this is intentionally a state-collision audit, not a
-continuation search.
+and `5,664` mod-8 classes. Among the first one hundred collision classes
+inspected, none contained two distinct exact embedded eigensublattice states.
+No second step was computed there; this is intentionally a state-collision
+audit, not a continuation search.
 
 The modular prefilter was then run on two bases and sixteen first twists per
 base (`180,048` two-step candidates). It reproduced the same phenomenon: no
