@@ -6,6 +6,7 @@ after each step the eigenspaces are recomputed.  It is not an exhaustion.
 """
 from __future__ import annotations
 import argparse, itertools
+from collections import Counter
 import numpy as np
 import sympy as sp
 import check_k3_rho17_tauM_matching as matching
@@ -50,7 +51,7 @@ def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--matches',type=int,default=2); ap.add_argument('--first-limit',type=int,default=32); ap.add_argument('--bound',type=int,default=1); args=ap.parse_args()
     data,gm,p,pinv,matches=matching.matched_actions(verbose=False)
     q=omega.ints(data['gram']); sigmas=[omega.ints(s) for s in (sp.eye(22),data['a'],data['b'],data['a']*data['b'])]
-    tested=0; profiles={}
+    tested=0; profiles=Counter(); transitions=Counter(); first_profiles=Counter()
     for match in matches[:args.matches]:
         PM=sp.Matrix(p[:,:10])
         tau=omega.ints(match['tau'])
@@ -59,6 +60,8 @@ def main():
         for E1,_,_,_ in first:
             t1=E1@tau
             if not np.array_equal(t1@t1,np.eye(22,dtype=np.int64)): continue
+            p1=tuple(reflections.rank2((t1@s)%2-np.eye(22,dtype=np.int64)) for s in sigmas)
+            first_profiles[p1]+=1
             # Recompute eigenspaces of the new involution, then generate step two.
             t1M=PM.gauss_jordan_solve(sp.Matrix(t1)*PM)[0]
             second=eichlers(t1M,gm,PM,args.bound,data['gram'])
@@ -68,13 +71,17 @@ def main():
                 if not np.array_equal(t2.T@q@t2,q) or np.trace(t2)!=0: continue
                 if any(not np.array_equal(t2@s,s@t2) or np.trace(t2@s)!=0 for s in sigmas[1:]): continue
                 prof=tuple(reflections.rank2((t2@s)%2-np.eye(22,dtype=np.int64)) for s in sigmas)
-                profiles[prof]=profiles.get(prof,0)+1; tested+=1
+                profiles[prof]+=1; transitions[(p1,prof)]+=1; tested+=1
                 if sorted(prof)==[7,9,9,9]:
                     selected=sp.Matrix(t2)*sp.Matrix(sigmas[prof.index(7)])
                     exact=[(r['rank'],r['a'],r['delta']) for r in matching.verify_lift(data,selected)]
                     print('EXACT TARGET HIT',match['candidate'],prof,exact); return
     print('Two-step candidates tested:',tested)
-    print('Profiles:',dict(sorted(profiles.items())))
+    print('First-step profiles:',dict(sorted(first_profiles.items())))
+    print('Final profiles:',dict(sorted(profiles.items())))
+    print('Distinct profile transitions:',len(transitions))
+    for (p1,p2),n in sorted(transitions.items(),key=lambda kv:(-kv[1],kv[0]))[:20]:
+        print('  ',p1,'->',p2,':',n)
     print('NO HIT in this bounded recomputed-eigenspace experiment; no global no-go claimed.')
 
 if __name__=='__main__': main()
