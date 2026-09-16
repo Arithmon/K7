@@ -56,7 +56,13 @@ def main():
         PM=sp.Matrix(p[:,:10])
         tau=omega.ints(match['tau'])
         tauM=PM.gauss_jordan_solve(sp.Matrix(tau)*PM)[0]
-        first=eichlers(tauM,gm,PM,args.bound,data['gram'])[:args.first_limit]
+        first_raw=eichlers(tauM,gm,PM,args.bound,data['gram'])
+        first_seen={}
+        for item in first_raw:
+            first_seen.setdefault(bytes((item[0]%2).astype(np.uint8).flat),item)
+        first=list(first_seen.values())[:args.first_limit]
+        if len(first_raw)!=len(first_seen):
+            print('First twists raw/distinct mod2:',len(first_raw),len(first_seen),flush=True)
         for E1,_,_,_ in first:
             t1=E1@tau
             if not np.array_equal(t1@t1,np.eye(22,dtype=np.int64)): continue
@@ -64,7 +70,13 @@ def main():
             first_profiles[p1]+=1
             # Recompute eigenspaces of the new involution, then generate step two.
             t1M=PM.gauss_jordan_solve(sp.Matrix(t1)*PM)[0]
-            second=eichlers(t1M,gm,PM,args.bound,data['gram'],mod2=args.mod2_only)
+            second_raw=eichlers(t1M,gm,PM,args.bound,data['gram'],mod2=args.mod2_only)
+            second_seen={}
+            for item in second_raw:
+                second_seen.setdefault(bytes((item[0]%2).astype(np.uint8).flat),item)
+            second=list(second_seen.values())
+            if len(second_raw)!=len(second_seen):
+                print('Second twists raw/distinct mod2:',len(second_raw),len(second_seen),flush=True)
             for E2,_,_,_ in second:
                 t2mod=(E2 if args.mod2_only else E2%2)@(t1%2)%2
                 prof=tuple(reflections.rank2(t2mod@(s%2)-np.eye(22,dtype=np.int64)) for s in sigmas)

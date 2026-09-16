@@ -29,6 +29,14 @@ prefiltered sample before attempting exact fixed-lattice SNF. A failure would
 be more informative than simply increasing depth: it would identify the first
 construction class escaping the observed constraint.
 
+After deduplication, one base yielded `5808` raw first twists but only `230`
+distinct actions modulo 2. Second-step generation produced `204--233`
+distinct modulo-2 actions from `3388--4840` raw parameter choices. A width
+sample over four bases, two first-step classes per base (`1632` candidates),
+again produced no `(7,9,9,9)` and retained the same one-`11` pattern. This
+supports quotienting by modular actions before any wider search, without being
+an exhaustion or a no-go theorem.
+
 The modular prefilter was then run on two bases and sixteen first twists per
 base (`180,048` two-step candidates). It reproduced the same phenomenon: no
 `(7,9,9,9)`, while profiles with a `7` retained an `11`. This is still a
