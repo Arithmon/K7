@@ -68,21 +68,26 @@ These results concern the bounded LLL-generated parameter box only. They do
 not identify it with the intrinsic set of all Eichler parameters or all of
 `O(M)`; those must remain separate scopes.
 
-The first-step collision hunt was exhausted over two structured bases: `11,616`
-states, `5,664` mod-8 classes, and zero classes containing two distinct exact
-embedded eigensublattice states. No second step was computed there; this is
-intentionally a state-collision audit, not a continuation search. The initial
-straight SymPy loop was stopped after three bases because it scaled poorly;
-the optimized coordinate-level census is recorded below.
+The first-step collision hunt recorded `11,616` states and `5,664` mod-8
+classes over two structured bases. Its original zero-collision line inspected
+only the first 20 repeated classes by default, so exhaustion was **not**
+established. No second step was computed there; this is a state-collision
+audit, not a continuation search. The initial straight SymPy loop was stopped
+after three bases because it scaled poorly; the optimized coordinate-level
+census is recorded below.
 
 The coordinate-level census was subsequently optimized by forming `t₁|_M`
-directly from the Eichler formula and collapsing literal exact actions before
-any HNF. Across all 24 compatible structured bases this produced `139,392`
-raw first-step states, `67,968` distinct mod-8 fingerprints, and zero
-fingerprints containing more than one exact embedded state. No descendants
-were generated. This establishes injectivity of the mod-8 fingerprint on the
-complete bounded first-step sample, not a proved quotient of the intrinsic
-Eichler parameter space.
+directly from the Eichler formula. The recorded 24-base run produced `139,392`
+raw first-step states and `67,968` distinct mod-8 fingerprints. The checker
+at `3f6f01a` inspected only its first 20 repeated-fingerprint classes unless
+given a larger `--collision-limit`; its printed zero therefore did **not**
+establish injectivity across all classes. The checker now compares exact
+involution matrices in every class and asserts the required action gates, but
+the 24-base run has not been repeated with that repaired checker. Injectivity
+of the full bounded first-step sample is **HOLD** pending that run. No
+descendants were generated, and continuation completeness remains open even
+if first-step injectivity is confirmed. See the post-freeze cohomology audit
+for the independent geometry blocker.
 
 The modular prefilter was then run on two bases and sixteen first twists per
 base (`180,048` two-step candidates). It reproduced the same phenomenon: no

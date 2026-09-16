@@ -18,6 +18,12 @@ not a general rho17 no-go theorem.  See
 search notes must cite this freeze and may not revise its target under the same
 identifier.
 
+**Post-freeze consistency blocker:** the frozen `H²(K3)` character forces
+`b₂((T³×K3)/G) >= 5` and `b₃((T³×K3)/G) <= 16` for any diagonal action, while
+the historical JK accounting used `(0,22)`. The claimed `(21,77)` closure from
+that quotient and fixed-locus table is therefore on HOLD. See
+[`K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`](K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md).
+
 ## Purpose
 
 This directory is a hostile-read bridge between the K7 framework and the OpenWave model-onboarding protocol. It is intentionally narrower and more conservative than the public framework presentation.
@@ -93,6 +99,8 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`K7_P2_JK_geometry_role_decomposition.md`](K7_P2_JK_geometry_role_decomposition.md) — selected/derived/certified/open chain.
 - [`check_k3_rho17_jk_eichler_compositions.py`](check_k3_rho17_jk_eichler_compositions.py) — bounded two-step Eichler compositions with eigenspace recomputation.
 - [`K7_P2_JK_eichler_composition_audit.md`](K7_P2_JK_eichler_composition_audit.md) — scoped structural lead from the recomposed profiles.
+- [`K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`](K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md) — independent quotient-cohomology contradiction and mod-8 census gate audit.
+- [`check_k3_jk_quotient_cohomology.py`](check_k3_jk_quotient_cohomology.py) — character/Künneth check for all 512 torus representations.
 - [`check_k3_rho17_eichler_mod2_continuation.py`](check_k3_rho17_eichler_mod2_continuation.py) — continuation-completeness test for repeated exact lifts.
 - [`check_k3_rho17_eichler_mod8_collisions.py`](check_k3_rho17_eichler_mod8_collisions.py) — first-step exact-state versus mod-8 collision hunt.
 - [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — historical discussion draft; no model PR is opened from K7-P1.
