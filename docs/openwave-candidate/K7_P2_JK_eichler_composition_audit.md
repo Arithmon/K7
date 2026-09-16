@@ -71,9 +71,18 @@ not identify it with the intrinsic set of all Eichler parameters or all of
 The first-step collision hunt was exhausted over two structured bases: `11,616`
 states, `5,664` mod-8 classes, and zero classes containing two distinct exact
 embedded eigensublattice states. No second step was computed there; this is
-intentionally a state-collision audit, not a continuation search. The planned
-24-base census awaits a faster coordinate-level implementation; the straight
-SymPy loop was stopped after three bases because it scales poorly.
+intentionally a state-collision audit, not a continuation search. The initial
+straight SymPy loop was stopped after three bases because it scaled poorly;
+the optimized coordinate-level census is recorded below.
+
+The coordinate-level census was subsequently optimized by forming `t₁|_M`
+directly from the Eichler formula and collapsing literal exact actions before
+any HNF. Across all 24 compatible structured bases this produced `139,392`
+raw first-step states, `67,968` distinct mod-8 fingerprints, and zero
+fingerprints containing more than one exact embedded state. No descendants
+were generated. This establishes injectivity of the mod-8 fingerprint on the
+complete bounded first-step sample, not a proved quotient of the intrinsic
+Eichler parameter space.
 
 The modular prefilter was then run on two bases and sixteen first twists per
 base (`180,048` two-step candidates). It reproduced the same phenomenon: no

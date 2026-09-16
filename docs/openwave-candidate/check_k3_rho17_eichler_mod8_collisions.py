@@ -28,18 +28,25 @@ def main():
         tau=sp.Matrix(match['tau']); tauM=PM.gauss_jordan_solve(tau*PM)[0]
         raw=comp.eichlers(tauM,gm,PM,args.bound,data['gram'])
         print('candidate',match['candidate'],'raw first twists',len(raw),flush=True)
-        for E,_,_,_ in raw:
-            t1=sp.Matrix(E)*tau
-            t1M=PM.gauss_jordan_solve(t1*PM)[0]
+        for E,e,a,_ in raw:
+            an=int((a.T*gm*a)[0])
+            EM=sp.eye(10)+a*(e.T*gm)-e*(a.T*gm)-(an//2)*e*(e.T*gm)
+            t1M=EM*tauM
             groups[rkey(t1M,8)].append((t1M,match['candidate']))
     collisions={k:v for k,v in groups.items() if len(v)>1}
     print('First states total:',sum(map(len,groups.values())),'distinct mod8:',len(groups),'collision classes:',len(collisions),flush=True)
     genuine=0
     for i,(k,items) in enumerate(list(collisions.items())[:args.collision_limit]):
-        states={exact_state(t)[0] for t,_ in items}
-        if len(states)>1:
+        # First collapse literal exact t|M actions; only genuinely different
+        # exact actions require the expensive embedded-lattice HNF encoding.
+        exact_actions={bytes(np.array(t.tolist(),dtype=np.int64).astype(np.int64).tobytes()) : t for t,_ in items}
+        if len(exact_actions)==1:
+            nstates=1
+        else:
+            nstates=len({exact_state(t)[0] for t in exact_actions.values()})
+        if nstates>1:
             genuine+=1
-            print('genuine collision',i,'multiplicity',len(items),'exact states',len(states),flush=True)
+            print('genuine collision',i,'multiplicity',len(items),'exact states',nstates,flush=True)
     print('mod8 collision classes with >1 exact embedded state:',genuine)
     print('No continuation sets computed: this is the first-step collision hunt only.')
 
