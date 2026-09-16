@@ -47,6 +47,19 @@ coarse integral invariants, are not continuation-complete. The minimal
 invariant is not identified yet; the mod-8 action/eigensublattice embedding is
 the next candidate to test.
 
+The exact-state audit now canonically encodes the primitive embedded
+`M^+(t),M^-(t)` column lattices (HNF) and their inclusion index in `M`.
+Identical exact states have identical continuation sets in the tested sample.
+However, two distinct exact states in the same mod-2 class had continuation
+sets of sizes `204` and `208`. State reductions had ambiguity counts
+`k=1..5: [1,1,0,0,0]`: mod 2 and mod 4 are insufficient, while mod 8, mod
+16, and mod 32 separate all tested continuation classes. This makes mod 8 a
+strong empirical candidate, not a proved exhaustive reduction.
+
+These results concern the bounded LLL-generated parameter box only. They do
+not identify it with the intrinsic set of all Eichler parameters or all of
+`O(M)`; those must remain separate scopes.
+
 The modular prefilter was then run on two bases and sixteen first twists per
 base (`180,048` two-step candidates). It reproduced the same phenomenon: no
 `(7,9,9,9)`, while profiles with a `7` retained an `11`. This is still a
