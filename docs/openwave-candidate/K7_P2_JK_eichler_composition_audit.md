@@ -37,6 +37,16 @@ again produced no `(7,9,9,9)` and retained the same one-`11` pattern. This
 supports quotienting by modular actions before any wider search, without being
 an exhaustion or a no-go theorem.
 
+The continuation-completeness test found a counterexample to naive mod-2
+quotienting: two exact lifts of one first-step mod-2 class produced second-step
+sets of sizes `204` and `208`, with symmetric difference `152`. Their fixed
+eigensublattices had identical Gram SNF, determinant, and plus/minus index;
+their `t_1|_M` matrices agreed modulo `4` but differed modulo `8` (hashes
+`bf55099b5bc5e2e0` and `617126b26893fb0a`). Thus mod 2, and even the tested
+coarse integral invariants, are not continuation-complete. The minimal
+invariant is not identified yet; the mod-8 action/eigensublattice embedding is
+the next candidate to test.
+
 The modular prefilter was then run on two bases and sixteen first twists per
 base (`180,048` two-step candidates). It reproduced the same phenomenon: no
 `(7,9,9,9)`, while profiles with a `7` retained an `11`. This is still a

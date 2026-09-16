@@ -93,6 +93,7 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`K7_P2_JK_geometry_role_decomposition.md`](K7_P2_JK_geometry_role_decomposition.md) — selected/derived/certified/open chain.
 - [`check_k3_rho17_jk_eichler_compositions.py`](check_k3_rho17_jk_eichler_compositions.py) — bounded two-step Eichler compositions with eigenspace recomputation.
 - [`K7_P2_JK_eichler_composition_audit.md`](K7_P2_JK_eichler_composition_audit.md) — scoped structural lead from the recomposed profiles.
+- [`check_k3_rho17_eichler_mod2_continuation.py`](check_k3_rho17_eichler_mod2_continuation.py) — continuation-completeness test for repeated exact lifts.
 - [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — historical discussion draft; no model PR is opened from K7-P1.
 
 ## Minimal reproduction
