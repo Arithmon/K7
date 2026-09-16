@@ -17,7 +17,7 @@ import check_k3_rho17_v4_discriminant_gluing as discr
 def eigbasis(t, sign):
     return discr.integer_kernel(t-sign*sp.eye(t.rows)).T.lll().T
 
-def eichlers(t, gram, ambient, bound, ambient_gram):
+def eichlers(t, gram, ambient, bound, ambient_gram, mod2=False):
     t = sp.Matrix(t)
     ambient = sp.Matrix(ambient)
     q = omega.ints(ambient_gram); out=[]
@@ -44,7 +44,7 @@ def eichlers(t, gram, ambient, bound, ambient_gram):
                 if np.array_equal(E.T@q@E,q) and np.array_equal(E@E,np.eye(22,dtype=np.int64)):
                     # E itself is not expected involutive; this check is only a guard.
                     pass
-                out.append((E,e,a,sign))
+                out.append(((E%2).astype(np.int64) if mod2 else E,e,a,sign))
     return out
 
 def main():
@@ -64,9 +64,9 @@ def main():
             first_profiles[p1]+=1
             # Recompute eigenspaces of the new involution, then generate step two.
             t1M=PM.gauss_jordan_solve(sp.Matrix(t1)*PM)[0]
-            second=eichlers(t1M,gm,PM,args.bound,data['gram'])
+            second=eichlers(t1M,gm,PM,args.bound,data['gram'],mod2=args.mod2_only)
             for E2,_,_,_ in second:
-                t2mod=(E2%2)@(t1%2)%2
+                t2mod=(E2 if args.mod2_only else E2%2)@(t1%2)%2
                 prof=tuple(reflections.rank2(t2mod@(s%2)-np.eye(22,dtype=np.int64)) for s in sigmas)
                 profiles[prof]+=1; transitions[(p1,prof)]+=1; tested+=1
                 if args.mod2_only:
