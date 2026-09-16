@@ -28,3 +28,9 @@ The next implementation should test this invariant with a larger, modular
 prefiltered sample before attempting exact fixed-lattice SNF. A failure would
 be more informative than simply increasing depth: it would identify the first
 construction class escaping the observed constraint.
+
+The modular prefilter was then run on two bases and sixteen first twists per
+base (`180,048` two-step candidates). It reproduced the same phenomenon: no
+`(7,9,9,9)`, while profiles with a `7` retained an `11`. This is still a
+scoped mod-2 observation; exact primitive fixed-lattice invariants remain the
+acceptance gate for any future hit.

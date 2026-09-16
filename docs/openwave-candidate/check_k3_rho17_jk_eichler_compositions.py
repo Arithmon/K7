@@ -48,7 +48,7 @@ def eichlers(t, gram, ambient, bound, ambient_gram):
     return out
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--matches',type=int,default=2); ap.add_argument('--first-limit',type=int,default=32); ap.add_argument('--bound',type=int,default=1); args=ap.parse_args()
+    ap=argparse.ArgumentParser(); ap.add_argument('--matches',type=int,default=2); ap.add_argument('--first-limit',type=int,default=32); ap.add_argument('--bound',type=int,default=1); ap.add_argument('--mod2-only',action='store_true',help='skip exact integer gates after the mod-2 profile filter'); args=ap.parse_args()
     data,gm,p,pinv,matches=matching.matched_actions(verbose=False)
     q=omega.ints(data['gram']); sigmas=[omega.ints(s) for s in (sp.eye(22),data['a'],data['b'],data['a']*data['b'])]
     tested=0; profiles=Counter(); transitions=Counter(); first_profiles=Counter()
@@ -66,12 +66,15 @@ def main():
             t1M=PM.gauss_jordan_solve(sp.Matrix(t1)*PM)[0]
             second=eichlers(t1M,gm,PM,args.bound,data['gram'])
             for E2,_,_,_ in second:
+                t2mod=(E2%2)@(t1%2)%2
+                prof=tuple(reflections.rank2(t2mod@(s%2)-np.eye(22,dtype=np.int64)) for s in sigmas)
+                profiles[prof]+=1; transitions[(p1,prof)]+=1; tested+=1
+                if args.mod2_only:
+                    continue
                 t2=E2@t1
                 if not np.array_equal(t2@t2,np.eye(22,dtype=np.int64)): continue
                 if not np.array_equal(t2.T@q@t2,q) or np.trace(t2)!=0: continue
                 if any(not np.array_equal(t2@s,s@t2) or np.trace(t2@s)!=0 for s in sigmas[1:]): continue
-                prof=tuple(reflections.rank2((t2@s)%2-np.eye(22,dtype=np.int64)) for s in sigmas)
-                profiles[prof]+=1; transitions[(p1,prof)]+=1; tested+=1
                 if sorted(prof)==[7,9,9,9]:
                     selected=sp.Matrix(t2)*sp.Matrix(sigmas[prof.index(7)])
                     exact=[(r['rank'],r['a'],r['delta']) for r in matching.verify_lift(data,selected)]
