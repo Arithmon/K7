@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+"""Bounded two-step Eichler compositions (post-freeze experiment).
+
+This deliberately samples a small number of compatible bases and first twists;
+after each step the eigenspaces are recomputed.  It is not an exhaustion.
+"""
+from __future__ import annotations
+import argparse, itertools
+import numpy as np
+import sympy as sp
+import check_k3_rho17_tauM_matching as matching
+import check_k3_rho17_tauOmega_discriminant_actions as omega
+import check_k3_rho17_jk_reflection_twists as reflections
+import check_k3_rho17_v4_discriminant_gluing as discr
+
+def eigbasis(t, sign):
+    return discr.integer_kernel(t-sign*sp.eye(t.rows)).T.lll().T
+
+def eichlers(t, gram, ambient, bound, ambient_gram):
+    t = sp.Matrix(t)
+    ambient = sp.Matrix(ambient)
+    q = omega.ints(ambient_gram); out=[]
+    for sign in (1,-1):
+        be, ba = eigbasis(t,sign), eigbasis(t,-sign)
+        cs = list(itertools.product(range(-bound,bound+1), repeat=5))
+        es = []
+        for z in cs:
+            e = be*sp.Matrix(z)
+            if any(e) and int((e.T*gram*e)[0]) == 0:
+                es.append(e)
+        # deterministic, nonzero isotropic representatives only
+        es = {tuple(int(x) for x in e):e for e in es}
+        for key in sorted(es, key=lambda z:(sum(x*x for x in z),z)):
+            e = es[key]
+            ee = omega.ints(ambient*e).reshape(22)
+            for z in cs:
+                a = ba*sp.Matrix(z)
+                if not any(a): continue
+                aa = omega.ints(ambient*a).reshape(22)
+                an = int(aa@q@aa)
+                if int(ee@q@ee) or int(ee@q@aa): continue
+                E = np.eye(22,dtype=np.int64)+np.outer(aa,ee@q)-np.outer(ee,aa@q)-(an//2)*np.outer(ee,ee@q)
+                if np.array_equal(E.T@q@E,q) and np.array_equal(E@E,np.eye(22,dtype=np.int64)):
+                    # E itself is not expected involutive; this check is only a guard.
+                    pass
+                out.append((E,e,a,sign))
+    return out
+
+def main():
+    ap=argparse.ArgumentParser(); ap.add_argument('--matches',type=int,default=2); ap.add_argument('--first-limit',type=int,default=32); ap.add_argument('--bound',type=int,default=1); args=ap.parse_args()
+    data,gm,p,pinv,matches=matching.matched_actions(verbose=False)
+    q=omega.ints(data['gram']); sigmas=[omega.ints(s) for s in (sp.eye(22),data['a'],data['b'],data['a']*data['b'])]
+    tested=0; profiles={}
+    for match in matches[:args.matches]:
+        PM=sp.Matrix(p[:,:10])
+        tau=omega.ints(match['tau'])
+        tauM=PM.gauss_jordan_solve(sp.Matrix(tau)*PM)[0]
+        first=eichlers(tauM,gm,PM,args.bound,data['gram'])[:args.first_limit]
+        for E1,_,_,_ in first:
+            t1=E1@tau
+            if not np.array_equal(t1@t1,np.eye(22,dtype=np.int64)): continue
+            # Recompute eigenspaces of the new involution, then generate step two.
+            t1M=PM.gauss_jordan_solve(sp.Matrix(t1)*PM)[0]
+            second=eichlers(t1M,gm,PM,args.bound,data['gram'])
+            for E2,_,_,_ in second:
+                t2=E2@t1
+                if not np.array_equal(t2@t2,np.eye(22,dtype=np.int64)): continue
+                if not np.array_equal(t2.T@q@t2,q) or np.trace(t2)!=0: continue
+                if any(not np.array_equal(t2@s,s@t2) or np.trace(t2@s)!=0 for s in sigmas[1:]): continue
+                prof=tuple(reflections.rank2((t2@s)%2-np.eye(22,dtype=np.int64)) for s in sigmas)
+                profiles[prof]=profiles.get(prof,0)+1; tested+=1
+                if sorted(prof)==[7,9,9,9]:
+                    selected=sp.Matrix(t2)*sp.Matrix(sigmas[prof.index(7)])
+                    exact=[(r['rank'],r['a'],r['delta']) for r in matching.verify_lift(data,selected)]
+                    print('EXACT TARGET HIT',match['candidate'],prof,exact); return
+    print('Two-step candidates tested:',tested)
+    print('Profiles:',dict(sorted(profiles.items())))
+    print('NO HIT in this bounded recomputed-eigenspace experiment; no global no-go claimed.')
+
+if __name__=='__main__': main()
