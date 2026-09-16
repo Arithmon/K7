@@ -68,11 +68,12 @@ These results concern the bounded LLL-generated parameter box only. They do
 not identify it with the intrinsic set of all Eichler parameters or all of
 `O(M)`; those must remain separate scopes.
 
-The first-step collision hunt over two structured bases found `11,616` states
-and `5,664` mod-8 classes. Among the first one hundred collision classes
-inspected, none contained two distinct exact embedded eigensublattice states.
-No second step was computed there; this is intentionally a state-collision
-audit, not a continuation search.
+The first-step collision hunt was exhausted over two structured bases: `11,616`
+states, `5,664` mod-8 classes, and zero classes containing two distinct exact
+embedded eigensublattice states. No second step was computed there; this is
+intentionally a state-collision audit, not a continuation search. The planned
+24-base census awaits a faster coordinate-level implementation; the straight
+SymPy loop was stopped after three bases because it scales poorly.
 
 The modular prefilter was then run on two bases and sixteen first twists per
 base (`180,048` two-step candidates). It reproduced the same phenomenon: no
