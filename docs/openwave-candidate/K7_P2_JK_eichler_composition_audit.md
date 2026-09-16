@@ -47,6 +47,14 @@ coarse integral invariants, are not continuation-complete. The minimal
 invariant is not identified yet; the mod-8 action/eigensublattice embedding is
 the next candidate to test.
 
+An expanded audit over four repeated first-step classes (two exact lifts each)
+found the same pattern: class 1 remains the only observed continuation split
+(`204` versus `208`), while classes 0, 2, and 3 have equal continuation sets.
+One additional class has an ambiguity at `k=2` despite equal continuation
+sets; all four classes are separated by `k=3` (modulo 8). This strengthens the
+empirical status of mod 8 as a sufficient state descriptor for this bounded
+sample, but does not establish it globally.
+
 The exact-state audit now canonically encodes the primitive embedded
 `M^+(t),M^-(t)` column lattices (HNF) and their inclusion index in `M`.
 Identical exact states have identical continuation sets in the tested sample.
