@@ -170,7 +170,10 @@ def main() -> None:
     print("CONSEQUENCE")
     print("  The tau_Omega search reduces to trace-zero involutions on three")
     print("  D4(-2) character blocks, subject to preservation of the 2^4 glue")
-    print("  defining Omega and trivial action on A_Omega.")
+    print("  defining Omega.")
+    print("  A matched tau_M is accepted only when")
+    print("      phi o tau_Mbar = tau_Omegabar o phi.")
+    print("  Trivial action on A_Omega is only the exploratory seed's special case.")
 
 
 if __name__ == "__main__":

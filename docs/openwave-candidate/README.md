@@ -5,6 +5,13 @@
 **K7 source snapshot:** `Arithmon/K7@0c904242d4131f49cb0d5a476e65f0f54cfc1ba5`  
 **OpenWave protocol snapshot:** `openwave-labs/openwave@3416b53921a144f0d8d4827f377b030b984f0ba7`
 
+**Current rho17 status:** `rho17 full JK integral action: HOLD`.  The
+standard integral symplectic `V4` backend passes, but the finite matched
+families audited so far do not realize the required anti-symplectic fixed
+lattice types `(11,7,1)` and `(11,9,1)^3`.  This is a scoped search result,
+not a general rho17 no-go theorem.  See
+[`K7_P2_neutrino_rho17_JK_integral_action.md`](K7_P2_neutrino_rho17_JK_integral_action.md).
+
 ## Purpose
 
 This directory is a hostile-read bridge between the K7 framework and the OpenWave model-onboarding protocol. It is intentionally narrower and more conservative than the public framework presentation.
@@ -71,6 +78,11 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`check_k3_v4_genus_one_gate.py`](check_k3_v4_genus_one_gate.py) — target-free generic symplectic-`V4` Picard-rank / elliptic-existence arithmetic.
 - [`check_k3_rank15_cm_v4_gate.py`](check_k3_rank15_cm_v4_gate.py) — exact rank-15 NS / fiber / section / degree-8 arithmetic.
 - [`check_k3_jk_character_gate.py`](check_k3_jk_character_gate.py) — exact `(Z/2)^3` character inversion proving the rank-15 full-JK no-go and `rho>=17` necessary bound.
+- [`check_k3_rho17_tauOmega_discriminant_actions.py`](check_k3_rho17_tauOmega_discriminant_actions.py) — exhaustive trace-zero `D4(-2)^3` Omega action table and discriminant-action hash.
+- [`check_k3_rho17_tauM_matching.py`](check_k3_rho17_tauM_matching.py) — explicit finite `M` matching and exact fixed-lattice profiles.
+- [`check_k3_rho17_jk_reflection_twists.py`](check_k3_rho17_jk_reflection_twists.py) — paired-root twists, including the all-height residue screen.
+- [`check_k3_rho17_jk_eichler_twists.py`](check_k3_rho17_jk_eichler_twists.py) — single opposite-eigenspace Eichler twists and scoped no-hit certificate.
+- [`reproduce_rho17_integral_audit.sh`](reproduce_rho17_integral_audit.sh) — ordered target-free audit runner.
 - [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — historical discussion draft; no model PR is opened from K7-P1.
 
 ## Minimal reproduction
@@ -83,6 +95,12 @@ python3 docs/openwave-candidate/reproduce_k7_p1.py
 python3 docs/openwave-candidate/check_k3_v4_genus_one_gate.py
 python3 docs/openwave-candidate/check_k3_rank15_cm_v4_gate.py
 python3 docs/openwave-candidate/check_k3_jk_character_gate.py
+```
+
+The rho17 integral-action audit is reproduced separately, in this order:
+
+```bash
+bash docs/openwave-candidate/reproduce_rho17_integral_audit.sh
 ```
 
 The scripts contain no neutrino-mass target in their default execution. Experimental comparison data belong in a separate, source-cited validation layer.
