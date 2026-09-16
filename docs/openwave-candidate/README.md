@@ -12,6 +12,12 @@ lattice types `(11,7,1)` and `(11,9,1)^3`.  This is a scoped search result,
 not a general rho17 no-go theorem.  See
 [`K7_P2_neutrino_rho17_JK_integral_action.md`](K7_P2_neutrino_rho17_JK_integral_action.md).
 
+**Frozen geometry target:** `K7-GEO-JK-F1` at commit
+`629e87ef968f2b126b7ca4a1fa89a81ccedf2fa4`; see
+[`K7_P2_JK_geometry_freeze.md`](K7_P2_JK_geometry_freeze.md). Subsequent
+search notes must cite this freeze and may not revise its target under the same
+identifier.
+
 ## Purpose
 
 This directory is a hostile-read bridge between the K7 framework and the OpenWave model-onboarding protocol. It is intentionally narrower and more conservative than the public framework presentation.
@@ -83,6 +89,8 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`check_k3_rho17_jk_reflection_twists.py`](check_k3_rho17_jk_reflection_twists.py) — paired-root twists, including the all-height residue screen.
 - [`check_k3_rho17_jk_eichler_twists.py`](check_k3_rho17_jk_eichler_twists.py) — single opposite-eigenspace Eichler twists and scoped no-hit certificate.
 - [`reproduce_rho17_integral_audit.sh`](reproduce_rho17_integral_audit.sh) — ordered target-free audit runner.
+- [`K7_P2_JK_geometry_freeze.md`](K7_P2_JK_geometry_freeze.md) — no-revision freeze of the selected JK topology and fixed-locus package.
+- [`K7_P2_JK_geometry_role_decomposition.md`](K7_P2_JK_geometry_role_decomposition.md) — selected/derived/certified/open chain.
 - [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — historical discussion draft; no model PR is opened from K7-P1.
 
 ## Minimal reproduction
