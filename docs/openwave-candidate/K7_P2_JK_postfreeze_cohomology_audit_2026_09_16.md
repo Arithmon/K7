@@ -113,3 +113,8 @@ parameters.
 3. Run the repaired mod-8 collision gate with `--matches 24 --bound 1` before
    citing its 24-base injectivity claim. Retain the current `HOLD` on integral
    action and on mod-8 continuation completeness.
+
+**Follow-up:** `K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md`
+specifies the forced product-form torus representation and checks the
+full-group singular-stratum bookkeeping. Its ordinary quotient Betti triple
+is exactly `(1,6,16)` under those product-action hypotheses.

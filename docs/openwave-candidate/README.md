@@ -24,6 +24,13 @@ the historical JK accounting used `(0,22)`. The claimed `(21,77)` closure from
 that quotient and fixed-locus table is therefore on HOLD. See
 [`K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`](K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md).
 
+The follow-up product-action audit forces torus characters
+`(1,chi_tau,chi_tau)` and ordinary quotient Betti numbers `(b1,b2,b3)=(1,6,16)`.
+The historical disjoint-`A1` singular-component table also fails the
+full-group orbit and stabilizer checks. This is a scoped failure of the stated
+JK route, not a no-go theorem for every geometry with the selected topology.
+See [`K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md`](K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md).
+
 ## Purpose
 
 This directory is a hostile-read bridge between the K7 framework and the OpenWave model-onboarding protocol. It is intentionally narrower and more conservative than the public framework presentation.
@@ -100,7 +107,9 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`check_k3_rho17_jk_eichler_compositions.py`](check_k3_rho17_jk_eichler_compositions.py) — bounded two-step Eichler compositions with eigenspace recomputation.
 - [`K7_P2_JK_eichler_composition_audit.md`](K7_P2_JK_eichler_composition_audit.md) — scoped structural lead from the recomposed profiles.
 - [`K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`](K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md) — independent quotient-cohomology contradiction and mod-8 census gate audit.
+- [`K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md`](K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md) — forced torus action, exact quotient Betti numbers, and singular-stratum obstruction.
 - [`check_k3_jk_quotient_cohomology.py`](check_k3_jk_quotient_cohomology.py) — character/Künneth check for all 512 torus representations.
+- [`check_k3_jk_torus_affine_gate.py`](check_k3_jk_torus_affine_gate.py) — split affine torus cases and fixed-sector prerequisite census.
 - [`check_k3_rho17_eichler_mod2_continuation.py`](check_k3_rho17_eichler_mod2_continuation.py) — continuation-completeness test for repeated exact lifts.
 - [`check_k3_rho17_eichler_mod8_collisions.py`](check_k3_rho17_eichler_mod8_collisions.py) — first-step exact-state versus mod-8 collision hunt.
 - [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — historical discussion draft; no model PR is opened from K7-P1.

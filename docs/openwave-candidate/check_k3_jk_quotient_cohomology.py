@@ -51,9 +51,16 @@ def main() -> None:
     assert min(b2 for b2, _ in pairs) == 5
     assert max(b3 for _, b3 in pairs) == 16
     assert (0, 22) not in pairs
+    # A common hyperkaehler triple is fixed by symplectic V4 and changed by
+    # tau as (+,-,-).  G2 invariance forces the dual torus characters below.
+    product_torus_characters = (0, 1, 1)
+    assert quotient_betti(product_torus_characters, h2) == (6, 16)
+    b1 = sum(character == 0 for character in product_torus_characters)
+    assert b1 == 1
     print("H^2(K3) character multiplicities:", h2)
     print("All 512 torus-character triples: quotient b2 >=", min(b2 for b2, _ in pairs))
     print("All 512 torus-character triples: quotient b3 <=", max(b3 for _, b3 in pairs))
+    print("Product G2 torus characters (1,tau,tau): quotient (b1,b2,b3) =", (b1, 6, 16))
     print("Claimed quotient Betti pair (0,22): IMPOSSIBLE for this diagonal action")
 
 
