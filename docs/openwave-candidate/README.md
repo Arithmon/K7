@@ -18,6 +18,47 @@ not a general rho17 no-go theorem.  See
 search notes must cite this freeze and may not revise its target under the same
 identifier.
 
+**Post-freeze consistency blocker:** the frozen `H²(K3)` character forces
+`b₂((T³×K3)/G) >= 5` and `b₃((T³×K3)/G) <= 16` for any diagonal action, while
+the historical JK accounting used `(0,22)`. The claimed `(21,77)` closure from
+that quotient and fixed-locus table is therefore on HOLD. See
+[`K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`](K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md).
+
+The follow-up product-action audit forces torus characters
+`(1,chi_tau,chi_tau)` and ordinary quotient Betti numbers `(b1,b2,b3)=(1,6,16)`.
+The historical disjoint-`A1` singular-component table also fails the
+full-group orbit and stabilizer checks. This is a scoped failure of the stated
+JK route, not a no-go theorem for every geometry with the selected topology.
+See [`K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md`](K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md).
+
+An explicit **new candidate**, `K7-GEO-JK-F2`, extends Joyce–Karigiannis
+Example 7.2 by a symplectic K3 involution paired with a free torus
+half-translation. Its independently recomputed quotient Betti triple is
+`(0,0,15)`, and its ordinary `A1` resolution candidate is `(0,4,35)`.
+This changes the K3 action and topology, so it does not repair or reselect
+F1, does not instantiate the rho17 target, and is not a K7-P2 physical
+prediction. See
+[`K7_P2_JK_F2_explicit_candidate_2026_09_16.md`](K7_P2_JK_F2_explicit_candidate_2026_09_16.md).
+
+The independent ratification audit freezes F2 at `f9d92ad` and places its
+ratification on **HOLD**. The fixed loci, local monodromy, fundamental group
+and topological Betti calculation pass; the preregistered plus-sign product
+three-form is split, so the Joyce–Karigiannis `G2` conclusion does not
+follow as written. The frozen maps also preserve the correct minus-sign
+product form, which is recorded as a separate possible correction rather
+than silently substituted. See
+[`K7_P2_JK_F2_ratification_audit_2026_09_17.md`](K7_P2_JK_F2_ratification_audit_2026_09_17.md).
+
+The sign-only successor `K7-GEO-JK-F2R1` was frozen separately at
+`bfc1db0` and then independently ratified. It preserves the F2 maps,
+fixed loci and Betti arithmetic while using Joyce–Karigiannis's
+positive minus-sign product form. The theorem gives a distinct compact
+simply connected full-holonomy `G2` geometry with `(b2,b3)=(4,35)`.
+This is a geometry benchmark, not the selected F1 topology, a K7-P2
+observable, or an earned OpenWave criterion. See the
+[`F2R1 freeze`](K7_GEO_JK_F2R1_sign_erratum_freeze_2026_09_17.md) and
+[`independent ratification`](K7_GEO_JK_F2R1_ratification_audit_2026_09_17.md).
+
 ## Purpose
 
 This directory is a hostile-read bridge between the K7 framework and the OpenWave model-onboarding protocol. It is intentionally narrower and more conservative than the public framework presentation.
@@ -91,6 +132,20 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`reproduce_rho17_integral_audit.sh`](reproduce_rho17_integral_audit.sh) — ordered target-free audit runner.
 - [`K7_P2_JK_geometry_freeze.md`](K7_P2_JK_geometry_freeze.md) — no-revision freeze of the selected JK topology and fixed-locus package.
 - [`K7_P2_JK_geometry_role_decomposition.md`](K7_P2_JK_geometry_role_decomposition.md) — selected/derived/certified/open chain.
+- [`check_k3_rho17_jk_eichler_compositions.py`](check_k3_rho17_jk_eichler_compositions.py) — bounded two-step Eichler compositions with eigenspace recomputation.
+- [`K7_P2_JK_eichler_composition_audit.md`](K7_P2_JK_eichler_composition_audit.md) — scoped structural lead from the recomposed profiles.
+- [`K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`](K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md) — independent quotient-cohomology contradiction and mod-8 census gate audit.
+- [`K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md`](K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md) — forced torus action, exact quotient Betti numbers, and singular-stratum obstruction.
+- [`K7_P2_JK_F2_explicit_candidate_2026_09_16.md`](K7_P2_JK_F2_explicit_candidate_2026_09_16.md) — explicit distinct eight-element product-action candidate, complete strata, and `(4,35)` resolution calculation.
+- [`K7_P2_JK_F2_ratification_audit_2026_09_17.md`](K7_P2_JK_F2_ratification_audit_2026_09_17.md) — independent gates A–E, sign obstruction in frozen product form, and F2 ratification HOLD.
+- [`K7_GEO_JK_F2R1_sign_erratum_freeze_2026_09_17.md`](K7_GEO_JK_F2R1_sign_erratum_freeze_2026_09_17.md) — separately frozen sign-only revision of F2 at `bfc1db0`.
+- [`K7_GEO_JK_F2R1_ratification_audit_2026_09_17.md`](K7_GEO_JK_F2R1_ratification_audit_2026_09_17.md) — independent PASS gates for the positive product form, local gluing, unchanged topology and full holonomy.
+- [`K7_GEO_JK_F2R1_openwave_followup_draft_2026_09_17.md`](K7_GEO_JK_F2R1_openwave_followup_draft_2026_09_17.md) — internal, unsent follow-up draft asking how this benchmark affects the route to a Tier-3 spectral system.
+- [`check_k3_jk_quotient_cohomology.py`](check_k3_jk_quotient_cohomology.py) — character/Künneth check for all 512 torus representations.
+- [`check_k3_jk_torus_affine_gate.py`](check_k3_jk_torus_affine_gate.py) — split affine torus cases and fixed-sector prerequisite census.
+- [`check_k3_jk_f2_explicit_action.py`](check_k3_jk_f2_explicit_action.py) — exact rational torus action, full-group stratum orbits, character inversion, and Betti arithmetic for F2.
+- [`check_k3_rho17_eichler_mod2_continuation.py`](check_k3_rho17_eichler_mod2_continuation.py) — continuation-completeness test for repeated exact lifts.
+- [`check_k3_rho17_eichler_mod8_collisions.py`](check_k3_rho17_eichler_mod8_collisions.py) — first-step exact-state versus mod-8 collision hunt.
 - [`new_model_discussion_draft.md`](new_model_discussion_draft.md) — historical discussion draft; no model PR is opened from K7-P1.
 
 ## Minimal reproduction
