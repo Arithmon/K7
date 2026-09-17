@@ -140,6 +140,7 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`K7_P2_JK_F2_ratification_audit_2026_09_17.md`](K7_P2_JK_F2_ratification_audit_2026_09_17.md) — independent gates A–E, sign obstruction in frozen product form, and F2 ratification HOLD.
 - [`K7_GEO_JK_F2R1_sign_erratum_freeze_2026_09_17.md`](K7_GEO_JK_F2R1_sign_erratum_freeze_2026_09_17.md) — separately frozen sign-only revision of F2 at `bfc1db0`.
 - [`K7_GEO_JK_F2R1_ratification_audit_2026_09_17.md`](K7_GEO_JK_F2R1_ratification_audit_2026_09_17.md) — independent PASS gates for the positive product form, local gluing, unchanged topology and full holonomy.
+- [`K7_GEO_JK_F2R1_openwave_followup_draft_2026_09_17.md`](K7_GEO_JK_F2R1_openwave_followup_draft_2026_09_17.md) — internal, unsent follow-up draft asking how this benchmark affects the route to a Tier-3 spectral system.
 - [`check_k3_jk_quotient_cohomology.py`](check_k3_jk_quotient_cohomology.py) — character/Künneth check for all 512 torus representations.
 - [`check_k3_jk_torus_affine_gate.py`](check_k3_jk_torus_affine_gate.py) — split affine torus cases and fixed-sector prerequisite census.
 - [`check_k3_jk_f2_explicit_action.py`](check_k3_jk_f2_explicit_action.py) — exact rational torus action, full-group stratum orbits, character inversion, and Betti arithmetic for F2.
