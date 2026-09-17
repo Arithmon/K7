@@ -49,6 +49,16 @@ product form, which is recorded as a separate possible correction rather
 than silently substituted. See
 [`K7_P2_JK_F2_ratification_audit_2026_09_17.md`](K7_P2_JK_F2_ratification_audit_2026_09_17.md).
 
+The sign-only successor `K7-GEO-JK-F2R1` was frozen separately at
+`bfc1db0` and then independently ratified. It preserves the F2 maps,
+fixed loci and Betti arithmetic while using Joyce–Karigiannis's
+positive minus-sign product form. The theorem gives a distinct compact
+simply connected full-holonomy `G2` geometry with `(b2,b3)=(4,35)`.
+This is a geometry benchmark, not the selected F1 topology, a K7-P2
+observable, or an earned OpenWave criterion. See the
+[`F2R1 freeze`](K7_GEO_JK_F2R1_sign_erratum_freeze_2026_09_17.md) and
+[`independent ratification`](K7_GEO_JK_F2R1_ratification_audit_2026_09_17.md).
+
 ## Purpose
 
 This directory is a hostile-read bridge between the K7 framework and the OpenWave model-onboarding protocol. It is intentionally narrower and more conservative than the public framework presentation.
@@ -128,6 +138,8 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md`](K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md) — forced torus action, exact quotient Betti numbers, and singular-stratum obstruction.
 - [`K7_P2_JK_F2_explicit_candidate_2026_09_16.md`](K7_P2_JK_F2_explicit_candidate_2026_09_16.md) — explicit distinct eight-element product-action candidate, complete strata, and `(4,35)` resolution calculation.
 - [`K7_P2_JK_F2_ratification_audit_2026_09_17.md`](K7_P2_JK_F2_ratification_audit_2026_09_17.md) — independent gates A–E, sign obstruction in frozen product form, and F2 ratification HOLD.
+- [`K7_GEO_JK_F2R1_sign_erratum_freeze_2026_09_17.md`](K7_GEO_JK_F2R1_sign_erratum_freeze_2026_09_17.md) — separately frozen sign-only revision of F2 at `bfc1db0`.
+- [`K7_GEO_JK_F2R1_ratification_audit_2026_09_17.md`](K7_GEO_JK_F2R1_ratification_audit_2026_09_17.md) — independent PASS gates for the positive product form, local gluing, unchanged topology and full holonomy.
 - [`check_k3_jk_quotient_cohomology.py`](check_k3_jk_quotient_cohomology.py) — character/Künneth check for all 512 torus representations.
 - [`check_k3_jk_torus_affine_gate.py`](check_k3_jk_torus_affine_gate.py) — split affine torus cases and fixed-sector prerequisite census.
 - [`check_k3_jk_f2_explicit_action.py`](check_k3_jk_f2_explicit_action.py) — exact rational torus action, full-group stratum orbits, character inversion, and Betti arithmetic for F2.
