@@ -40,6 +40,15 @@ F1, does not instantiate the rho17 target, and is not a K7-P2 physical
 prediction. See
 [`K7_P2_JK_F2_explicit_candidate_2026_09_16.md`](K7_P2_JK_F2_explicit_candidate_2026_09_16.md).
 
+The independent ratification audit freezes F2 at `f9d92ad` and places its
+ratification on **HOLD**. The fixed loci, local monodromy, fundamental group
+and topological Betti calculation pass; the preregistered plus-sign product
+three-form is split, so the Joyce–Karigiannis `G2` conclusion does not
+follow as written. The frozen maps also preserve the correct minus-sign
+product form, which is recorded as a separate possible correction rather
+than silently substituted. See
+[`K7_P2_JK_F2_ratification_audit_2026_09_17.md`](K7_P2_JK_F2_ratification_audit_2026_09_17.md).
+
 ## Purpose
 
 This directory is a hostile-read bridge between the K7 framework and the OpenWave model-onboarding protocol. It is intentionally narrower and more conservative than the public framework presentation.
@@ -118,6 +127,7 @@ See [`K7_P2_candidate_generation.md`](K7_P2_candidate_generation.md).
 - [`K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`](K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md) — independent quotient-cohomology contradiction and mod-8 census gate audit.
 - [`K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md`](K7_P2_JK_torus_action_and_strata_audit_2026_09_16.md) — forced torus action, exact quotient Betti numbers, and singular-stratum obstruction.
 - [`K7_P2_JK_F2_explicit_candidate_2026_09_16.md`](K7_P2_JK_F2_explicit_candidate_2026_09_16.md) — explicit distinct eight-element product-action candidate, complete strata, and `(4,35)` resolution calculation.
+- [`K7_P2_JK_F2_ratification_audit_2026_09_17.md`](K7_P2_JK_F2_ratification_audit_2026_09_17.md) — independent gates A–E, sign obstruction in frozen product form, and F2 ratification HOLD.
 - [`check_k3_jk_quotient_cohomology.py`](check_k3_jk_quotient_cohomology.py) — character/Künneth check for all 512 torus representations.
 - [`check_k3_jk_torus_affine_gate.py`](check_k3_jk_torus_affine_gate.py) — split affine torus cases and fixed-sector prerequisite census.
 - [`check_k3_jk_f2_explicit_action.py`](check_k3_jk_f2_explicit_action.py) — exact rational torus action, full-group stratum orbits, character inversion, and Betti arithmetic for F2.
