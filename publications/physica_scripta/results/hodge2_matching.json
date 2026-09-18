@@ -1,0 +1,56 @@
+{
+  "action_on_H2_K3": null,
+  "basis": null,
+  "blocked_by": [
+    "Restriction maps from both ends and their identifications on H^2(K3) are absent.",
+    "Counting coordinate index pairs gives dim Lambda^2(R^7), not a Betti number.",
+    "Compact quotient lattice data from other branches does not define this neck boundary problem."
+  ],
+  "boundary_domain": null,
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.4.4",
+    "python": "3.14.4",
+    "scipy": "1.17.1"
+  },
+  "k3_betti": [
+    1,
+    0,
+    22,
+    0,
+    1
+  ],
+  "kernel_dimension": null,
+  "matching_operator": null,
+  "metric_sha256": "5735bc3d721a0731e2770e2e467d1108c15c6ce0e7dfa18d9aaa146239900344",
+  "product_betti": [
+    1,
+    2,
+    23,
+    44,
+    23,
+    2,
+    1
+  ],
+  "provenance": {
+    "SOURCE_FREEZE.json": "4d8b51f26fae339a79267d4d894ebf8963e12e1eb2ae1b7aef46d588c819adbd",
+    "THEOREMS.md": "da5c48ca204b26b6c4859e741da6590588669dd8942c40cbef4f406cc78f8d2e",
+    "inputs/metric.json": "93dbe539690acb4b32eca8299cfcabbd61287f70117bc79ecbf69abb9dafc803",
+    "scripts/common.py": "8c5ed0e5c66ddb7e2141494d4a0b109ae083de3c1430a37c0099b24628c3a669",
+    "scripts/hodge2_matching.py": "7d9390faf2d3a5dcee0542e94b793e2a3a4d022ddfad5a4e779ef6b4aa2345fb"
+  },
+  "rank": null,
+  "schema_version": 1,
+  "scope": "ordinary real cohomology of bare product neck",
+  "source_commit": "ca7fd24f6f0e28c8422f95958c06e8cf8395bcf8",
+  "status": "PENDING",
+  "target": 21,
+  "torus_betti": [
+    1,
+    2,
+    1
+  ],
+  "values": {
+    "product_h_two": 23
+  }
+}

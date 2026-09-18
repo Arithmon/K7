@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/Arithmon/K7",
+  "source_commit": "ca7fd24f6f0e28c8422f95958c06e8cf8395bcf8",
+  "files": [
+    {
+      "path": "publications/papers/markdown/g2_certified_neck.md",
+      "sha256": "7697dae07b74b0dd7001a22491cd8da8d2b6800210d2cdd2d42377a0f1cae1a6",
+      "role": "historical source; not numerical authority"
+    },
+    {
+      "path": "publications/papers/markdown/g2_spectral.md",
+      "sha256": "d52834e366059550afd41dea0e349119cb681c40ba4e751e008c91cc32fc507d",
+      "role": "historical source; not numerical authority"
+    },
+    {
+      "path": "publications/papers/notebooks/g2_certified_neck_companion.ipynb",
+      "sha256": "e53daf2dc57b72f137bb417010c0b9b1a8dd2eb6e3ff22bf062f038b8a7c475c",
+      "role": "legacy snapshots March 2026"
+    },
+    {
+      "path": "publications/papers/notebooks/g2_certified_neck_companion_results.json",
+      "sha256": "d50bbdf9bacb2083c34ac0a06e705f7096da8ac2e42b46c3e520d17262452cf2",
+      "role": "legacy snapshots March 2026"
+    },
+    {
+      "path": "publications/papers/notebooks/g2_spectral_companion.ipynb",
+      "sha256": "3372232d49b254bc2e618089bf07c9a0f4937c716f0c51ac96bf8b9d0633cff9",
+      "role": "legacy snapshots March 2026"
+    },
+    {
+      "path": "publications/papers/notebooks/g2_spectral_companion_results.json",
+      "sha256": "97763a77f1af38758fbb7e9793ca04c0e5dd8d7110bd10d0f25b891afc068112",
+      "role": "legacy snapshots March 2026"
+    },
+    {
+      "path": "publications/papers/pdf/g2_certified_neck.pdf",
+      "sha256": "9294ba395366421eb666e619071101f0505d20a1b8fe97442cbf4c25fd5e148d",
+      "role": "historical source; not numerical authority"
+    },
+    {
+      "path": "publications/papers/pdf/g2_spectral.pdf",
+      "sha256": "e15d1cef14209ec2287be383ebd818cc5c10cbe98a43d5a9e95c62b5b979ead2",
+      "role": "historical source; not numerical authority"
+    },
+    {
+      "path": "publications/papers/tex/g2_certified_neck.bib",
+      "sha256": "476aef3c7ef31da31e2e7233c861102b56514fffde0e07c365d62c2dea3c9bba",
+      "role": "historical source; not numerical authority"
+    },
+    {
+      "path": "publications/papers/tex/g2_certified_neck.tex",
+      "sha256": "4a4fad3af55307d7df91084e7658277a0a0c00d6e07bf8877495fa29a5326b6a",
+      "role": "historical source; not numerical authority"
+    },
+    {
+      "path": "publications/papers/tex/g2_spectral.bib",
+      "sha256": "44749446f7390ff21ae358c7835c762817cc50c243f03bd1b31f49e240015f16",
+      "role": "historical source; not numerical authority"
+    },
+    {
+      "path": "publications/papers/tex/g2_spectral.tex",
+      "sha256": "c040cd436e7d3a71d0687121f58baa9d89ee89dac9e88c5f5662dc44441376c8",
+      "role": "historical source; not numerical authority"
+    },
+    {
+      "path": "audit/claim_scope.md",
+      "sha256": "38e2058eee0ee6aac60e1c8a2501f6bd7b948860e30e08a1e4d5d81d34e32a07",
+      "role": "scope constraint"
+    },
+    {
+      "path": "audit/legacy_quarantine.md",
+      "sha256": "6fb867eb9e8a6eddb72a47574d3ce48dca48fb87eda8230071493cba1685475e",
+      "role": "scope constraint"
+    }
+  ]
+}

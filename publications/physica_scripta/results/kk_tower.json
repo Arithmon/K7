@@ -1,0 +1,45 @@
+{
+  "blocked_by": [
+    "The old six-integer fibre sum treats four K3 directions as periodic flat coordinates.",
+    "A K3 spectrum with multiplicities and a certified tail bound is absent.",
+    "The archived result reports 1744 distinct/4460 with multiplicity, not 22671.",
+    "No justified full metric adiabatic error is available for cutoff bracketing."
+  ],
+  "complete": false,
+  "count": null,
+  "cutoff": 20,
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.4.4",
+    "python": "3.14.4",
+    "scipy": "1.17.1"
+  },
+  "excluded_modes_lower_bound": null,
+  "exhaustion_contract": {
+    "bracket_if_relative_error_delta_proved": "N_reduced(cutoff/(1+delta)) <= N_full(cutoff) <= N_reduced(cutoff/(1-delta))",
+    "criterion": "Every excluded radial or fibre mode must have a certified lower bound > cutoff.",
+    "required_inputs": [
+      "certified K3 eigenvalue enclosures and multiplicities",
+      "torus periods and inverse metric",
+      "radial boundary spectrum and coercivity bounds"
+    ]
+  },
+  "full_metric_count_bracket": null,
+  "historical_json_counts": {
+    "K3_scale": 1.0993865192909236,
+    "T2_scale": 0.924896488749053,
+    "n_distinct": 1744,
+    "n_with_mult": 4460
+  },
+  "metric_sha256": "5735bc3d721a0731e2770e2e467d1108c15c6ce0e7dfa18d9aaa146239900344",
+  "provenance": {
+    "SOURCE_FREEZE.json": "4d8b51f26fae339a79267d4d894ebf8963e12e1eb2ae1b7aef46d588c819adbd",
+    "THEOREMS.md": "da5c48ca204b26b6c4859e741da6590588669dd8942c40cbef4f406cc78f8d2e",
+    "inputs/metric.json": "93dbe539690acb4b32eca8299cfcabbd61287f70117bc79ecbf69abb9dafc803",
+    "scripts/common.py": "8c5ed0e5c66ddb7e2141494d4a0b109ae083de3c1430a37c0099b24628c3a669",
+    "scripts/kk_tower.py": "b4d520a768b4d5159b3db7e302ecb801c9b9cdd469ed149000af076b129023ec"
+  },
+  "schema_version": 1,
+  "source_commit": "ca7fd24f6f0e28c8422f95958c06e8cf8395bcf8",
+  "status": "PENDING"
+}

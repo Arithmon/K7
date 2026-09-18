@@ -1,0 +1,163 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\emergencystretch=\baselineskip
+\newcommand{\Claim}[1]{\csname claim-#1\endcsname}
+\input{claim_values}
+\newtheorem{proposition}{Proposition}
+\title{Validated spectral data for a finite neck metric ansatz}
+\author{Working manuscript}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study a frozen coordinate metric ansatz motivated by special-holonomy
+neck geometry. A deterministic pipeline separates numerical approximations,
+validated scalar eigenvalue bounds, and unresolved geometric hypotheses.
+The scalar interval certificate is relative to the supplied coordinate
+coefficients. Existence of a nearby torsion-free structure, identification
+with a global K3 fibre metric, and the proposed matching multiplicities
+remain open. This provisional abstract will be replaced after the
+submission gates close.
+\end{abstract}
+
+\section{Scope and terminology}
+The historical metric and spectral companions \cite{legacyA,legacyB}
+motivate the model and are retained as historical sources.
+The publication data are recomputed from a single frozen optimized tensor.
+An exact statement is an algebraic identity under its stated inputs;
+a proved statement has explicit hypotheses and a proof; a certified
+quantity has a validated computational bound and a replayable checker.
+Numerical quantities have floating-point diagnostics. Conditional and
+pending claims cannot supply published numeric macros.
+
+\section{Coordinate model}
+The coefficient space is
+$\mathbb R^{\Claim{parameter_count}}$.
+A raw polynomial Cholesky field is passed through diagonal softplus,
+then scaled to impose $\det g=\Claim{determinant}$.
+The diagonal is positive, so the resulting real coordinate metric is
+positive definite. The domain is
+$[\Claim{left_endpoint},\Claim{right_endpoint}]$.
+The polynomial seam is extended by exponential tails matching its
+value and first derivative.
+This construction specifies a matrix field; the global K3 input and
+its relation to a torsion-free $G_{\Claim{two}}$ structure require
+separate evidence.
+
+\section{Metric certificate and adiabatic transfer}
+Only the raw Cholesky field belongs to a finite polynomial space.
+Softplus and determinant normalization make the reconstructed metric
+non-polynomial in general. A finite interpolation calculation therefore
+needs a remainder bound.
+
+The historical derivative from a finite coefficient space into the
+stated space of continuous functions cannot possess the claimed
+two-sided inverse. A replacement Newton--Kantorovich theorem must specify
+a square residual or a compatible right-inverse framework, the gauge,
+the norm, the boundary constraints and the certified neighbourhood.
+The present manuscript does not assert torsion-free existence.
+The adiabatic bound for the full metric remains pending.
+
+\section{Reduced scalar spectrum}
+Define $a(s)=g^{ss}(s)$ and the Neumann operator
+$Au=-(a u')'$ on the frozen interval. The constant determinant makes
+the scalar weight constant. A conservative mass-lumped finite-element
+calculation gives the finite-grid first positive eigenvalue
+$\lambda_{\mathrm{grid}}=\Claim{scalar_gap}$.
+The artifact records grid refinement, the discrete residual, and a
+Richardson estimate; the grid value is not an enclosure.
+
+\begin{proposition}[Reduced scalar enclosure]
+Let $a_-$ and $a_+$ bound the positive coefficient everywhere on an
+interval of length $L$. The first positive Neumann eigenvalue satisfies
+\[
+ a_-\frac{\pi^{\Claim{two}}}{L^{\Claim{two}}}
+ \leq\lambda_{\mathrm{first}}\leq
+ a_+\frac{\pi^{\Claim{two}}}{L^{\Claim{two}}}.
+\]
+\end{proposition}
+\begin{proof}
+On functions of zero mean, the interval Poincare inequality bounds
+the Rayleigh quotient below using $a_-$. The mean-zero cosine test
+function gives the upper bound using $a_+$. The Neumann kernel consists
+of constants, so the variational characterization applies to the first
+positive eigenvalue.
+\end{proof}
+Directed interval reconstruction of the coefficient, with rational
+coverage and endpoint checks, gives
+\[
+ \lambda_{\mathrm{first}}\in
+ [\Claim{lambda_lower},\Claim{lambda_upper}].
+\]
+The certificate concerns the exact dyadic input and this reduced scalar
+operator. It is not an interval for the full Hodge Laplacian of an
+unknown torsion-free metric.
+
+We use only the counting-function convention
+$N(\lambda)\sim C\lambda^\alpha$, with $\alpha=d/\Claim{two}$.
+The one-dimensional reference is $\Claim{weyl_one_dimensional}$,
+whereas the seven-dimensional reference is $\Claim{weyl_seven_dimensional}$.
+The recorded finite-window slope is $\Claim{weyl_alpha}$;
+fit error and window sensitivity are provided separately.
+This diagnostic is not a proof of an asymptotic law.
+The full Kaluza--Klein tower is pending: a K3 spectrum, its multiplicities
+and certified tail bounds must replace the historical integer-momentum
+model for the fibre.
+
+\section{Profiles, matching and pairing}
+For the usual cohomology of the bare product neck, the Kunneth calculation
+gives dimensions $\Claim{product_h_two}$ and $\Claim{product_h_three}$
+in the two degrees under discussion. Proposed alternative multiplicities
+require explicit end-matching maps and a different defined complex.
+
+The scalar interpolation equation $-(p f')'=\Claim{zero}$ is solved
+by Chebyshev collocation with fixed endpoint values. Independent
+quadrature of its exact integral formula gives maximum disagreement
+$\Claim{profile_error}$ at the finest reported degree.
+These are radial interpolation profiles. Global harmonic representatives,
+their independence and completeness have not been established.
+The proposed geometric intersection pairing remains pending because
+the matching-selected lattice basis is missing.
+
+\section{Product sector identity}
+\begin{proposition}
+On an exact product with a constant-radius circle, let $\vartheta$
+be its parallel one-form and let $f$ depend only on the base.
+With corresponding radial boundary conditions,
+\[
+ \Delta_{\Claim{one}}(f\vartheta)
+   =(\Delta_{\Claim{zero}}f)\vartheta .
+\]
+\end{proposition}
+\begin{proof}
+The product Laplacian splits into the factor Laplacians.
+The circle one-form is parallel and harmonic, and the mixed derivatives
+vanish. Restricting to base-dependent scalar functions gives the identity.
+\end{proof}
+This identifies selected sectors and does not equate full spectra with
+multiplicity. The fresh coordinate block projection gives relative gap
+difference $\Claim{democracy_deviation}$.
+No theorem identifying the additional form sector is asserted.
+
+\section{Limitations}
+The following list is generated directly from unreleased claims.
+\input{limitations}
+
+\section{Conclusion}
+The frozen coordinate model supports reproducible reduced numerical
+data and a validated scalar eigenvalue enclosure. The final geometric
+interpretation, abstract and conclusion await the unresolved certificate
+and matching hypotheses.
+
+\appendix
+\section{Claim table}
+\input{../tables/claims}
+\section{Artifact map}
+The accompanying \texttt{ARTIFACT\_MAP.md} links each claim to its
+mathematical contract, script, frozen input, result hash and paper section.
+The scalar convergence, counting-function and profile figure is generated
+as \path{figures/reduced_diagnostics.svg}; it contains no manually copied
+data. The repository records the historical sources by immutable commit.
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

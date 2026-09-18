@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "coordinate": 1,
+      "eigenvalues": [
+        0.12471072619011692,
+        0.49884241635509097,
+        1.1223936453857024,
+        1.995361982194215,
+        3.117744088736898
+      ],
+      "relative_gap_difference": 3.850754237442192e-09
+    },
+    {
+      "coordinate": 6,
+      "eigenvalues": [
+        0.12471072590109661,
+        0.4988424172088124,
+        1.1223936442872395,
+        1.9953619830241291,
+        3.1177440885431054
+      ],
+      "relative_gap_difference": 1.5332285712138318e-09
+    }
+  ],
+  "delta_two_comparison": null,
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.4.4",
+    "python": "3.14.4",
+    "scipy": "1.17.1"
+  },
+  "metric_sha256": "5735bc3d721a0731e2770e2e467d1108c15c6ce0e7dfa18d9aaa146239900344",
+  "numerical_model": "block-diagonal coordinate projection with varying circle radii; not the full Hodge operator",
+  "proof": "Use the tensor-product Laplacian; Delta_circle(theta)=0 and all mixed derivatives vanish. Restrict to f depending on the base only.",
+  "provenance": {
+    "SOURCE_FREEZE.json": "4d8b51f26fae339a79267d4d894ebf8963e12e1eb2ae1b7aef46d588c819adbd",
+    "THEOREMS.md": "da5c48ca204b26b6c4859e741da6590588669dd8942c40cbef4f406cc78f8d2e",
+    "inputs/metric.json": "93dbe539690acb4b32eca8299cfcabbd61287f70117bc79ecbf69abb9dafc803",
+    "results/scalar_spectrum.json": "b0fb33cb52acfcf5b59891348d425ba89f75c18d7529345adbf1055eb7db4834",
+    "scripts/common.py": "8c5ed0e5c66ddb7e2141494d4a0b109ae083de3c1430a37c0099b24628c3a669",
+    "scripts/democracy_check.py": "adfea42c5893be6d1f74e89301b2489a034b3945748e67bd2df1e6b7865e9d27"
+  },
+  "schema_version": 1,
+  "scope": "isomorphism of the selected scalar/radial one-form sectors, not equality of entire spectra or multiplicities",
+  "source_commit": "ca7fd24f6f0e28c8422f95958c06e8cf8395bcf8",
+  "status": "NUMERICAL",
+  "theorem": "For a parallel circle one-form theta on an exact product, Delta_1(f theta)=(Delta_0 f)theta, with corresponding radial boundary conditions.",
+  "three_sector_theorem": false,
+  "values": {
+    "democracy_deviation": 3.850754237442192e-09
+  }
+}

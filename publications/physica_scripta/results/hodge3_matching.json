@@ -1,0 +1,37 @@
+{
+  "blocked_by": [
+    "The 35 are local coordinate components of a 3-form, not 35 global cohomology classes.",
+    "Neither independence nor completeness of the two selected 21-dimensional families is proved.",
+    "No exact sequence or defined boundary complex producing 77 is available."
+  ],
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.4.4",
+    "python": "3.14.4",
+    "scipy": "1.17.1"
+  },
+  "historical_decomposition": {
+    "coordinate_exterior_dimension": 35,
+    "selected_left": 21,
+    "selected_right": 21
+  },
+  "kernel_dimension": null,
+  "matching_operator": null,
+  "metric_sha256": "5735bc3d721a0731e2770e2e467d1108c15c6ce0e7dfa18d9aaa146239900344",
+  "provenance": {
+    "SOURCE_FREEZE.json": "4d8b51f26fae339a79267d4d894ebf8963e12e1eb2ae1b7aef46d588c819adbd",
+    "THEOREMS.md": "da5c48ca204b26b6c4859e741da6590588669dd8942c40cbef4f406cc78f8d2e",
+    "inputs/metric.json": "93dbe539690acb4b32eca8299cfcabbd61287f70117bc79ecbf69abb9dafc803",
+    "results/hodge2_matching.json": "b7a7db7284e59b83371ecd3187b7aa7aeaed949e440eb19366967f344083f8fe",
+    "scripts/common.py": "8c5ed0e5c66ddb7e2141494d4a0b109ae083de3c1430a37c0099b24628c3a669",
+    "scripts/hodge3_matching.py": "d5d966eb04719cc9dbd343bdf4a2f9eac45034b5ad281287e0a02a5343304a0b"
+  },
+  "rank": null,
+  "schema_version": 1,
+  "source_commit": "ca7fd24f6f0e28c8422f95958c06e8cf8395bcf8",
+  "status": "PENDING",
+  "target": 77,
+  "values": {
+    "product_h_three": 44
+  }
+}

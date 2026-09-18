@@ -1,0 +1,64 @@
+{
+  "beta": null,
+  "blocked_by": [
+    "DF: R^168 -> C^0(I, Lambda^4 + Lambda^5) cannot have a two-sided inverse onto the stated infinite-dimensional codomain.",
+    "No square projected residual, gauge fixing, boundary constraints or validated right inverse with compatibility proof is supplied.",
+    "Only raw Cholesky coordinates lie in P_5; softplus and determinant normalization make the reconstructed metric and torsion non-polynomial in general.",
+    "The relative nonlinear metric displacement is not a specified fixed norm on coefficient space.",
+    "A finite DCT bounds an interpolant; a bound for the interpolation remainder and rounding is missing.",
+    "beta is derived from an embedded spectral-gap literal; omega is an embedded finite-difference safety-factor literal.",
+    "With raw residual eta and raw derivative Lipschitz omega, the classical sufficient majorant uses h = beta^2 eta omega. The beta eta omega convention requires a preconditioned quantity.",
+    "A scalar Sturm-Liouville inverse estimate does not establish invertibility of the torsion Jacobian.",
+    "No globally defined fixed K3 metric, atlas or certified fibre bridge is included in the embedded coefficient input."
+  ],
+  "certifies_torsion_free_metric": false,
+  "codomain": "C^0(I; Lambda^4 + Lambda^5), local coordinate model",
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.4.4",
+    "python": "3.14.4",
+    "scipy": "1.17.1"
+  },
+  "eta": null,
+  "h": null,
+  "historical_diagnostic": {
+    "beta_from_literal": 0.029611051065903442,
+    "eta_archived": 3.1518720612176144e-05,
+    "h_recomputed_not_certified": 6.65444643697892e-08,
+    "h_with_raw_lipschitz_convention": 1.97045153260702e-09,
+    "omega_literal": 0.0713
+  },
+  "inverse_object": null,
+  "metric_diagnostic": {
+    "max_sampled_determinant_error": 5.773159728050814e-15,
+    "min_sampled_eigenvalue": 0.8220901235822308
+  },
+  "metric_sha256": "5735bc3d721a0731e2770e2e467d1108c15c6ce0e7dfa18d9aaa146239900344",
+  "neighborhood": null,
+  "norm": null,
+  "omega": null,
+  "parameter_space": "R^168, gamma fixed",
+  "proof": "Positive diagonal softplus gives invertible L; scaling gives det(g)=65/32 exactly in real arithmetic. This proves SPD of this coordinate ansatz, not global K3 geometry.",
+  "provenance": {
+    "SOURCE_FREEZE.json": "4d8b51f26fae339a79267d4d894ebf8963e12e1eb2ae1b7aef46d588c819adbd",
+    "THEOREMS.md": "da5c48ca204b26b6c4859e741da6590588669dd8942c40cbef4f406cc78f8d2e",
+    "inputs/metric.json": "93dbe539690acb4b32eca8299cfcabbd61287f70117bc79ecbf69abb9dafc803",
+    "scripts/common.py": "8c5ed0e5c66ddb7e2141494d4a0b109ae083de3c1430a37c0099b24628c3a669",
+    "scripts/metric_certificate.py": "2090d3d4db64e39de37f321eb777f6a853dc5ecc96ead6f8fc0e4f8cd02e3a52"
+  },
+  "raw_polynomial_space": "P_5(I; R^28)",
+  "reconstruction": "c -> raw polynomial -> softplus Cholesky -> determinant-normalized metric -> continuous torsion; not a polynomial torsion map",
+  "schema_version": 1,
+  "source_commit": "ca7fd24f6f0e28c8422f95958c06e8cf8395bcf8",
+  "status": "PENDING",
+  "values": {
+    "determinant": "65/32",
+    "dimension": 7,
+    "left_endpoint": -2,
+    "one": 1,
+    "parameter_count": 168,
+    "right_endpoint": 3,
+    "two": 2,
+    "zero": 0
+  }
+}
