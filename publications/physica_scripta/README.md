@@ -9,6 +9,7 @@ reduced scalar eigenvalue enclosure is certified for the frozen coordinate
 input. NK torsion-free existence, the matching multiplicities, the full
 adiabatic transfer, KK completeness and the geometric intersection form
 remain open. See [AUDIT.md](AUDIT.md) and [THEOREMS.md](THEOREMS.md).
+Reproduction and mutation-check evidence is in [VALIDATION.md](VALIDATION.md).
 
 ## Run
 
