@@ -44,10 +44,14 @@ def find_markdown_files(repo_root: Path) -> list[Path]:
         repo_root / 'publications' / 'references',
         repo_root / 'publications' / 'outreach',
     ]
+    # docs/openwave-candidate/ is a frozen candidate dossier (merged in #287,
+    # 2026-09-17) kept verbatim as recorded; it is excluded rather than rewritten.
+    excluded = [repo_root / 'docs' / 'openwave-candidate']
     files = []
     for d in dirs:
         if d.exists():
-            files.extend(d.rglob('*.md'))
+            files.extend(f for f in d.rglob('*.md')
+                         if not any(ex in f.parents for ex in excluded))
     # Also check root-level md files
     for f in repo_root.glob('*.md'):
         files.append(f)
