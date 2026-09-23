@@ -56,7 +56,7 @@ per row, is the **[Blog Index](Blog-Index.html)**.
 ## Project
 | Page | Description |
 |------|-------------|
-| [Lean Formalization](Lean-Formalization.html) | 146 files, 14 axioms, 213 conjuncts, blueprint |
+| [Lean Formalization](Lean-Formalization.html) | 146 files, 14 axioms (4 main-chain + 10 interval-arithmetic), 213 conjuncts, blueprint |
 | [Repository Structure](Repository-Structure.html) | Directory layout and navigation |
 | [External Resources](External-Resources.html) | Links to all external resources |
 | [Citation Guide](Citation-Guide.html) | How to cite K₇ (BibTeX, APA, DOIs) |
