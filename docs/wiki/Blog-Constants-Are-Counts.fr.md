@@ -11,7 +11,7 @@ layout: default
 
 ---
 
-Une géométrie compacte à sept dimensions. Zéro paramètre ajustable. Trente-trois relations algébriques exactes entre constantes du Modèle Standard, vérifiées machine en Lean 4 avec zéro `sorry` sur 15 axiomes déclarés (4 sur la chaîne de prédiction, 11 certificats K3 en arithmétique d'intervalles), à partir d'un registre d'entrées gelé et déposé publiquement avant le début de la recherche.
+Une géométrie compacte à sept dimensions. Zéro paramètre ajustable. Trente-trois relations algébriques exactes entre constantes du Modèle Standard, vérifiées machine en Lean 4 avec zéro `sorry` sur 14 axiomes déclarés (4 sur la chaîne de prédiction, 10 certificats K3 en arithmétique d'intervalles), à partir d'un registre d'entrées gelé et déposé publiquement avant le début de la recherche.
 
 Et une date. Si DUNE mesure la phase CP des neutrinos δ_CP hors de [182°, 212°] à 3σ, ce cadre est faux, rien en lui ne peut être ajusté pour survivre, et la prédiction consignée est 197°. Le premier faisceau est visé pour 2031.
 
@@ -31,7 +31,7 @@ Une relation montre en une ligne ce que cela signifie. Le nombre de génération
 | Relations algébriques sans paramètre | **33** |
 | Observables dérivées au total | **95**, dont 66 comparables à l'expérience |
 | Accord | **11** exactes à mieux que 0,01 %, **53** à moins de 1 % |
-| Vérification formelle | vérifiée machine en Lean 4, **0 `sorry`**, **15 axiomes déclarés** (4 chaîne de prédiction + 11 certificats K3) |
+| Vérification formelle | vérifiée machine en Lean 4, **0 `sorry`**, **14 axiomes déclarés** (4 chaîne de prédiction + 10 certificats K3) |
 | Pré-enregistrement | registre, grammaire de formules et liste de cibles déposés avant toute recherche |
 
 ## Ce qui n'est pas affirmé

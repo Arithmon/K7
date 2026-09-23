@@ -97,7 +97,7 @@ All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 | [B: Spectral Geometry (PDF)](publications/papers/pdf/g2_spectral.pdf) | Laplacian spectrum, harmonic forms, λ₁ = 6π²/475 | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
 | [C: Newton-Kantorovich on K3 (PDF)](publications/papers/pdf/K3_NK_Certificate.pdf) | NK diagnostics on a Donaldson K3 metric (CI(2,2,2)) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
 | [D: Donaldson Analytic Note (PDF)](publications/papers/pdf/donaldson_analytic.pdf) | Explicit closed-form G₂ ansatz on a K3-coassociative neck with 5-layer Wirtinger certificate | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
-| [E: Rank-1 Branched Adiabatic (PDF)](publications/papers/pdf/rank_one_branched_adiabatic.pdf) | Neck-level analytic machinery closed at D₀ (open: (J) and H_global) | [10.5281/zenodo.21209413](https://doi.org/10.5281/zenodo.21209413) |
+| [E: Rank-1 Branched Adiabatic (PDF)](publications/papers/pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for the neck; the datum-level instantiation at D₀ is no longer realisable as posed ([erratum](publications/ERRATUM_v3.5.md), section 2) | [10.5281/zenodo.21209413](https://doi.org/10.5281/zenodo.21209413) |
 
 ---
 
@@ -106,7 +106,7 @@ All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 | | |
 |---|---|
 | **Parameters** | Zero adjustable -- all structurally determined (3 integer primitives: N=3, r₈=8, r₂=2) |
-| **Verified** | 15 classified Lean 4 axioms (A-F taxonomy, of which 4 external data packages), zero `sorry`, 213 certificate conjuncts, 460+ certified relations ([K7-Lean v3.5](https://github.com/Arithmon/K7-Lean)) |
+| **Verified** | 14 Lean 4 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), zero `sorry`, 213 certificate conjuncts, 460+ certified relations ([K7-Lean v3.5](https://github.com/Arithmon/K7-Lean)) |
 | **Parameter-free core** | 33 exact relations among topological integers (Type I) -- each individually correct-or-wrong, none tunable |
 | **Falsifiable** | δ_CP = 197°, N_gen = 3, θ₂₃ upper octant (**in tension**, see the [scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md)) -- tested by DUNE / FCC-ee |
 | **Observables** | 95 total (33 Type I + 19 Type II + 21 Type III + 22 Type IV); 66 with experimental data |

@@ -82,7 +82,7 @@ La formule empirique de Koide (m_e + m_μ + m_τ)/(√m_e + √m_μ + √m_τ)²
 
 Le cadre produit 33 relations Type I sans dimension couvrant les couplages de jauge, le mélange des neutrinos, les rapports de masses des leptons, les rapports de masses des quarks et les observables cosmologiques. L'écart moyen par rapport aux valeurs expérimentales est de 0,99 % (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022).
 
-Toutes les 460+ relations certifiées ont été formellement vérifiées dans l'assistant de preuve Lean 4, avec 15 axiomes (4 principaux + 11 d'arithmétique d'intervalle) et 0 sorry.
+Toutes les 460+ relations certifiées ont été formellement vérifiées dans l'assistant de preuve Lean 4, avec 14 axiomes (4 principaux + 10 d'arithmétique d'intervalle) et 0 sorry.
 
 ### 3.4 Ce qui n'est pas revendiqué
 

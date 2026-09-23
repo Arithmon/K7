@@ -13,7 +13,7 @@ Le cadre K₇ est formellement vérifié en **Lean 4** avec Mathlib. La formalis
 |----------|--------|
 | **Fichiers Lean** | 146 |
 | **Jobs de build** | 8394 |
-| **Axiomes** | 15 (4 chaîne principale + 11 certificats d'intervalle K3) |
+| **Axiomes** | 14 (4 chaîne principale + 10 certificats d'intervalle K3) |
 | **Énoncés `sorry`** | 0 |
 | **Avertissements** | 0 |
 | **Conjonctions du certificat** | 213 (10 certificats maîtres ; les trois piliers Foundations/Predictions/Spectral contribuent 39+56+45 = 140) |

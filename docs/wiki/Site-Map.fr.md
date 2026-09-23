@@ -56,7 +56,7 @@ et les deux langues par ligne, est l'**[index du blog](Blog-Index.fr.html)**.
 ## Projet
 | Page | Description |
 |------|-------------|
-| 🇫🇷 [Formalisation Lean](Lean-Formalization.fr.html) | 146 fichiers, 15 axiomes, 213 conjonctions, blueprint |
+| 🇫🇷 [Formalisation Lean](Lean-Formalization.fr.html) | 146 fichiers, 14 axiomes, 213 conjonctions, blueprint |
 | 🇫🇷 [Structure du dépôt](Repository-Structure.fr.html) | Disposition des dossiers et navigation |
 | 🇫🇷 [Ressources externes](External-Resources.fr.html) | Liens vers toutes les ressources externes |
 | 🇫🇷 [Guide de citation](Citation-Guide.fr.html) | Comment citer K₇ (BibTeX, APA, DOIs) |

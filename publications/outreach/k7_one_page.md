@@ -26,7 +26,7 @@ One relation shows what that means in a single line. The number of chiral fermio
 | Parameter-free algebraic relations | **33** |
 | Total derived observables | **95**, of which 66 experimentally comparable |
 | Agreement | **11** exact to better than 0.01%, **53** within 1% |
-| Formal verification | **213**-conjunct Lean 4 certificate, 15 classified axioms, **0** unproven steps |
+| Formal verification | **213**-conjunct Lean 4 certificate, 14 axioms at K7-Lean main, **0** unproven steps |
 | Pre-registration | ledger, formula grammar and target list deposited before any search |
 
 ## What is not being claimed

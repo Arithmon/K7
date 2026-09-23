@@ -24,7 +24,7 @@ layout: default
 | Exact matches (< 0.01%) | 11 |
 | Within 1% | 53 |
 | Free parameters (continuously adjustable) | 0 |
-| Lean certificate | 213 conjuncts, 15 classified axioms (A-F taxonomy, of which 4 external data packages), 0 sorry, 146 .lean files |
+| Lean certificate | 213 conjuncts, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), 0 sorry, 146 .lean files |
 | Statistical null | uniform P=10⁻³⁴⁶, algebraic null (4.2M random formulas) P=10⁻¹³³, overdetermination 2.13× |
 
 ---

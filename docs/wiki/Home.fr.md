@@ -16,7 +16,7 @@ layout: default
 | **Prédictions** | 95 observables (33 Type I + 19 Type II + 21 Type III + 22 Type IV) |
 | **Écart moyen** | 0,99 % sur 33 relations Type I (cible exacte, NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022) |
 | **Paramètres libres** | 0 (3 primitives entières : N=3, r₈=8, r₂=2) |
-| **Vérification Lean 4** | 146 fichiers, 8394 jobs de build, 0 sorry, 15 axiomes classés (taxonomie A-F, dont 4 paquets de données externes) (K7-Lean v3.5) |
+| **Vérification Lean 4** | 146 fichiers, 8394 jobs de build, 0 sorry, 14 axiomes sur K7-Lean main (4 chaîne de prédiction + 10 certificats d'intervalle K3) (K7-Lean v3.5) |
 | **Significativité statistique** | p < 2×10⁻⁵ (σ > 4,2), unique parmi 3M+ configurations |
 | **Modèle nul Monte Carlo** | P(algébrique) = 10⁻¹³⁸ sur 3M+ formules |
 

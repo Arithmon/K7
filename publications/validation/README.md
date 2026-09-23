@@ -16,7 +16,7 @@ These newer scripts and results live in the canonical workspace (private repo). 
 | Mean deviation (Type I) | **0.99%** (PDG 2024 / NuFIT 6.1) |
 | Total observables | 95 (33 I + 19 II + 21 III + 22 IV) |
 | Algebraic null model | set-level ~10⁻⁶ (assumption-free); log₁₀ p = −134 over 3M+ formulas |
-| Lean certificate | 213 conjuncts, 15 classified axioms (A-F taxonomy, of which 4 external data packages), 0 sorry |
+| Lean certificate | 213 conjuncts, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), 0 sorry |
 
 ## v3.3 Legacy Pipeline
 

@@ -15,7 +15,7 @@ Citation formats for The K₇ Framework v3.5 (formerly GIFT).
   doi     = {10.5281/zenodo.16891489},
   version = {3.5},
   license = {MIT},
-  note    = {95 observables, 0.99\% mean deviation on 33 Type I relations (PDG 2024 / NuFIT 6.1), 213 conjuncts certified in Lean 4, 15 classified axioms (A-F taxonomy, of which 4 external data packages), Donaldson certificate pipeline scoped by docs/analytic_status.md}
+  note    = {95 observables, 0.99\% mean deviation on 33 Type I relations (PDG 2024 / NuFIT 6.1), 213 conjuncts certified in Lean 4, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), Donaldson certificate pipeline scoped by docs/analytic_status.md}
 }
 ```
 
@@ -205,7 +205,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.5. Zen
   year    = {2026},
   url     = {https://github.com/Arithmon/K7-Lean},
   version = {3.5},
-  note    = {146 Lean 4 files, 213 conjuncts, 15 classified axioms (A-F taxonomy, of which 4 external data packages), 0 sorry, 8394 build jobs, Donaldson coassociative fibration formalized}
+  note    = {146 Lean 4 files, 213 conjuncts, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), 0 sorry, 8394 build jobs, Donaldson coassociative fibration formalized}
 }
 ```
 

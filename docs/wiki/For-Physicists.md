@@ -83,7 +83,7 @@ The empirical Koide formula (m_e + m_μ + m_τ)/(√m_e + √m_μ + √m_τ)² =
 
 The framework produces 33 Type-I relations (dimensionless) spanning gauge couplings, neutrino mixing, lepton mass ratios, quark mass ratios, and cosmological observables. The mean deviation from experimental values is 0.99% (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022).
 
-All 460+ certified relations have been formally verified in the Lean 4 proof assistant, with 15 axioms (4 main-chain + 11 interval-arithmetic) and 0 sorry.
+All 460+ certified relations have been formally verified in the Lean 4 proof assistant, with 14 axioms (4 main-chain + 10 interval-arithmetic) and 0 sorry.
 
 ### 3.4 What is Not Claimed
 

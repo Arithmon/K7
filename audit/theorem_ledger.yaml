@@ -32,7 +32,7 @@
   acceptance_test: "Fails P0 gate unless ambient_space=compact K7, status=theorem, assumptions=[], torsion_free=proved, global_descent=proved, metric_positive=proved."
 
 - id: k3_closed_form_box_local_witness
-  claim: "The 667-parameter witness has residual variance <= 1321/10^7 on 4000 explicit Krawczyk boxes."
+  claim: "The 667-parameter witness has variance <= 1321/10^7 of an AUXILIARY quantity (code convention V^dagger H V) on 4000 explicit Krawczyk boxes; this is not the Calabi-Yau residual (publications/ERRATUM_v3.5.md, section 1)."
   status: numerical_certificate
   ambient_space: "Explicit union of 4000 Krawczyk boxes on one CI(2,2,2) K3 chart presentation"
   domain_of_validity: "Frozen box-local witness at radius 10^-8."
@@ -48,7 +48,7 @@
     - "private/canonical/papers/rank_one_branched_adiabatic/draft.md"
   certificate_type: "Lean aggregation over rational interval endpoints plus external interval production"
   unformalized_gap: "No whole-K3 coverage, no global positivity theorem, no uniform spectral gap."
-  acceptance_test: "May be cited only as box-local residual control, never as a global Ricci-flat K3 theorem."
+  acceptance_test: "May be cited only as a box-local bound on the auxiliary quantity, never as Calabi-Yau residual control and never as a global Ricci-flat K3 theorem. In the correct pullback convention V^T H conj(V) the residual variance on the same points is 5.3e-1 (erratum, 2026-08-22)."
 
 - id: k3_global_positivity_route
   claim: "Whole-K3 positivity and spectral control for the actual K3 metric."

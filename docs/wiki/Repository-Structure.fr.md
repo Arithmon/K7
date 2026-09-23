@@ -110,7 +110,7 @@ Le **[Wiki GitHub](https://github.com/Arithmon/K7/wiki)** fournit un hub multi-p
 ## Version
 
 **Actuelle** : v3.5 (2026-07-10)
-**Relations** : 213 conjonctions certifiées (K7-Lean v3.5, 15 axiomes classés (taxonomie A-F, dont 4 paquets de données externes))
+**Relations** : 213 conjonctions certifiées (K7-Lean v3.5, 14 axiomes sur K7-Lean main (4 chaîne de prédiction + 10 certificats d'intervalle K3))
 **Prédictions** : 95 observables (33 Type I, cibles exactes, 0,99 % d'écart moyen ; NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022)
 **Validation** : 3 000 000 de jeux de formules aléatoires, aucun ne reproduit le profil joint (borne au niveau ensemble ~10⁻⁶, sans hypothèse d'indépendance)
 **Triptyque** : Articles A (Zenodo 19892350) + B (19893371) + C (19708916) publiés le 2026-04-29

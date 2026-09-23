@@ -29,7 +29,7 @@ What follows is the claim, the assumptions it rests on, the evidence, and the sp
 | Parameter-free algebraic relations (Type I) | **33** |
 | Total derived observables, all types | **95** (66 experimentally comparable) |
 | Agreement | **11** exact to better than 0.01%, **53** within 1% |
-| Formal verification | **213**-conjunct certificate in Lean 4, **15** classified axioms, **0** unproven steps |
+| Formal verification | **213**-conjunct certificate in Lean 4, **14** axioms at K7-Lean main, **0** unproven steps |
 | Pre-registration | ledger, grammar and target list deposited before any search ([DOI](https://doi.org/10.5281/zenodo.20666879)) |
 | **Falsification** | **δ_CP measured outside [182°, 212°] at 3σ and the framework is wrong. DUNE beam targeted 2031.** |
 
@@ -108,7 +108,7 @@ An earlier version of this work led with joint coincidence probabilities of orde
 
 ## 6. Formal verification, and its limits
 
-The framework carries a Lean 4 formal layer. At current head, the master certificate spans ten files with a top-level conjunct count of **213**, resting on **15 classified axioms** in an A to F taxonomy, with **zero** unproven steps. Four of the fifteen axioms are external data packages, named in the source: `K7_analysis_data`, `K7_spectral_data`, `literature_package`, `KK_YM_EFT`. Fifty-five of the ninety-five observables fall inside the verified perimeter.
+The framework carries a Lean 4 formal layer. At the v3.5 release, the master certificate spans ten files with a top-level conjunct count of **213**, with **zero** unproven steps. The v3.5 release counted one more axiom, in an A to F taxonomy; it has since been discharged, and the current K7-Lean main declares **14**: four prediction-chain assumptions (a Cheeger inequality, a literature package, a spectral upper bound and a neck-dominance statement) and ten K3 interval certificates. Fifty-five of the ninety-five observables fall inside the verified perimeter.
 
 What this establishes: the algebraic relations hold as stated, and the internal consistency of the ledger is not a matter of arithmetic trust.
 
