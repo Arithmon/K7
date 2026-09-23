@@ -126,6 +126,6 @@ The relations between topological invariants and physical constants are now mach
 
 The physics remains to be tested. The math is settled.
 
-Repository: https://github.com/gift-framework/core/
+Repository: https://github.com/Arithmon/K7-Lean (formerly gift-framework/core)
 
 Feedback, corrections, and brutal criticism welcome via GitHub issues.

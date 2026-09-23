@@ -163,6 +163,6 @@ The axioms are explicit. The gaps are acknowledged. The numerical evidence is re
 
 Whether this connects to physics is a separate question, one that experiments, not proof assistants, will eventually answer.
 
-Repository: github.com/gift-framework/core
+Repository: github.com/Arithmon/K7-Lean (formerly gift-framework/core)
 
 Notebook: github.com/Arithmon/K7/notebooks
