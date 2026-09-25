@@ -42,7 +42,7 @@ Complete index of all wiki pages.
 
 ## Blog Posts
 
-Twenty-eight posts, in three tracks. English originals are on
+Twenty-nine posts, in three tracks. English originals are on
 [arithmon.substack.com](https://arithmon.substack.com/); French translations are
 hosted in this wiki. The single maintained list, with dates and both languages
 per row, is the **[Blog Index](Blog-Index.html)**.
@@ -50,7 +50,7 @@ per row, is the **[Blog Index](Blog-Index.html)**.
 | Track | What it is | Posts |
 |-------|-----------|-------|
 | [The Series](Blog-Index.html#series) | Physics through the games you have already played, Episode 0 to Episode 10 | 11 |
-| [The Ideas](Blog-Index.html#ideas) | Why the constants of nature might not be arbitrary: the hypothesis, its metaphors, the proofs | 13 |
+| [The Ideas](Blog-Index.html#ideas) | Why the constants of nature might not be arbitrary: the hypothesis, its metaphors, the proofs | 14 |
 | [The Story](Blog-Index.html#story) | An independent researcher, an AI, and a year of unorthodox research | 4 |
 
 ## Project

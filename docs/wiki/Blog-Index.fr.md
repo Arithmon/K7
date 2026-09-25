@@ -5,7 +5,7 @@ layout: default
 
 # Index du blog
 
-Vingt-huit textes, en trois pistes. Les originaux anglais paraissent sur
+Vingt-neuf textes, en trois pistes. Les originaux anglais paraissent sur
 [arithmon.substack.com](https://arithmon.substack.com/) ; le lien du titre ouvre
 la traduction française hébergée dans ce wiki, et le lien 🇬🇧 la version originale.
 
@@ -45,6 +45,7 @@ pour avoir la thèse et sa date de mort sur une page.
 
 | Texte | Ce qu'il dit | Date |
 |-------|--------------|------|
+| [Le jumeau étoilé](Blog-The-Star-Twin.fr.html) · [🇬🇧](https://arithmon.substack.com/p/the-star-twin) | Deux polyèdres que l'arithmétique ne sait pas distinguer, et la seule question qui les sépare | 25 septembre 2026 |
 | [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html) · [🇬🇧](https://arithmon.substack.com/p/the-constants-of-nature-are-counts) | La thèse, la date de réfutation, et les trois questions ouvertes | 1er août 2026 |
 | [Le diabolo de Dieu](Blog-Gods-Diabolo.fr.html) · [🇬🇧](https://arithmon.substack.com/p/gods-diabolo) | Pourquoi la ficelle ne casse pas : la stabilité comme mouvement, pas comme réglage | 24 juillet 2026 |
 | [Le verre qui chante](Blog-The-Singing-Glass.fr.html) · [🇬🇧](https://arithmon.substack.com/p/the-singing-glass) | Quand un verre de Bourgogne explique les dimensions cachées de l'univers | 3 juin 2026 |

@@ -42,7 +42,7 @@ Index complet de toutes les pages du wiki. Les pages avec une version française
 
 ## Articles de blog
 
-Vingt-huit textes, en trois pistes. Les originaux anglais sont sur
+Vingt-neuf textes, en trois pistes. Les originaux anglais sont sur
 [arithmon.substack.com](https://arithmon.substack.com/) ; les traductions
 françaises sont hébergées dans ce wiki. La seule liste maintenue, avec les dates
 et les deux langues par ligne, est l'**[index du blog](Blog-Index.fr.html)**.
@@ -50,7 +50,7 @@ et les deux langues par ligne, est l'**[index du blog](Blog-Index.fr.html)**.
 | Piste | Ce que c'est | Textes |
 |-------|--------------|--------|
 | [La série](Blog-Index.fr.html#series) | La physique par les jeux auxquels vous avez déjà joué, de l'épisode 0 à l'épisode 10 | 11 |
-| [Les idées](Blog-Index.fr.html#ideas) | Pourquoi les constantes de la nature ne sont peut-être pas arbitraires : l'hypothèse, ses métaphores, les preuves | 13 |
+| [Les idées](Blog-Index.fr.html#ideas) | Pourquoi les constantes de la nature ne sont peut-être pas arbitraires : l'hypothèse, ses métaphores, les preuves | 14 |
 | [L'histoire](Blog-Index.fr.html#story) | Un chercheur indépendant, une IA, et un an de recherche non-orthodoxe | 4 |
 
 ## Projet
