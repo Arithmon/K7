@@ -29,7 +29,7 @@ K₇/
 │   │   │   ├── g2_spectral.pdf                # Article B (Zenodo 19893371)
 │   │   │   ├── K3_NK_Certificate.pdf          # Article C (Zenodo 19708916)
 │   │   │   ├── donaldson_analytic.pdf         # Article D (Zenodo 20039066)
-│   │   │   └── rank_one_branched_adiabatic.pdf (+ _supplement)  # Article E (Zenodo 21209413)
+│   │   │   └── rank_one_branched_adiabatic.pdf (+ _supplement)  # Article E (Zenodo 21215956)
 │   │   ├── legacy/v3.4/               # PDFs + markdown + tex du cadre v3.4 (archivés)
 │   │   ├── legacy/v3.3/               # PDFs + markdown du cadre v3.3 (archivés)
 │   │   ├── figures/                   # Figures de publication (PDF + PNG)

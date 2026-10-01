@@ -11,7 +11,7 @@ layout: default
 
 [**PDF (main, 47 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_main.pdf) | [**DOI: 10.5281/zenodo.21296168**](https://doi.org/10.5281/zenodo.21296168) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_5_main.md)
 
-> **Companion papers (Zenodo):** [A: certified G₂](https://doi.org/10.5281/zenodo.19892350) · [B: spectral](https://doi.org/10.5281/zenodo.19893371) · [C: K3 NK](https://doi.org/10.5281/zenodo.19708916) · [D: Donaldson analytic](https://doi.org/10.5281/zenodo.20039066) · [E: rank-1 branched](https://doi.org/10.5281/zenodo.21209413) · [v3.4 archive](https://doi.org/10.5281/zenodo.20070101) · [v3.3 archive](https://doi.org/10.5281/zenodo.18837071)
+> **Companion papers (Zenodo):** [A: certified G₂](https://doi.org/10.5281/zenodo.19892350) · [B: spectral](https://doi.org/10.5281/zenodo.19893371) · [C: K3 NK](https://doi.org/10.5281/zenodo.19708916) · [D: Donaldson analytic](https://doi.org/10.5281/zenodo.20039066) · [E: rank-1 branched](https://doi.org/10.5281/zenodo.21215956) · [v3.4 archive](https://doi.org/10.5281/zenodo.20070101) · [v3.3 archive](https://doi.org/10.5281/zenodo.18837071)
 
 ---
 

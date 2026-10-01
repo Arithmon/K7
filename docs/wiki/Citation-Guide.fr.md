@@ -192,8 +192,8 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.5. Zen
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {July},
-  doi          = {10.5281/zenodo.21209413},
-  url          = {https://doi.org/10.5281/zenodo.21209413},
+  doi          = {10.5281/zenodo.21215956},
+  url          = {https://doi.org/10.5281/zenodo.21215956},
   note         = {Analytic machinery closed at D₀ (K_Sch ≤ 16/3, q_total = 8.2e-3, κ_E ≤ 1.02, R_0 ≤ 4.9e3). Open: (J) anisotropic perturbation theorem and H_global. Main 68 pp. + supplement 25 pp.}
 }
 ```
@@ -227,7 +227,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.5. Zen
 | Zenodo (Article B, spectral) | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
 | Zenodo (Article C, K3 NK) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
 | Zenodo (Article D, note analytique Donaldson) | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
-| Zenodo (Article E, adiabatique branché de rang 1) | [10.5281/zenodo.21209413](https://doi.org/10.5281/zenodo.21209413) |
+| Zenodo (Article E, adiabatique branché de rang 1) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
 | ResearchGate | [Page auteur](https://www.researchgate.net/profile/Brieuc-De-La-Fourniere) |
 
 ---

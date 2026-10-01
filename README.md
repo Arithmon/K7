@@ -97,7 +97,7 @@ All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 | [B: Spectral Geometry (PDF)](publications/papers/pdf/g2_spectral.pdf) | Laplacian spectrum, harmonic forms, λ₁ = 6π²/475 | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
 | [C: Newton-Kantorovich on K3 (PDF)](publications/papers/pdf/K3_NK_Certificate.pdf) | NK diagnostics on a Donaldson K3 metric (CI(2,2,2)) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
 | [D: Donaldson Analytic Note (PDF)](publications/papers/pdf/donaldson_analytic.pdf) | Explicit closed-form G₂ ansatz on a K3-coassociative neck with 5-layer Wirtinger certificate | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
-| [E: Rank-1 Branched Adiabatic (PDF)](publications/papers/pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for the neck; the datum-level instantiation at D₀ is no longer realisable as posed ([erratum](publications/ERRATUM_v3.5.md), section 2) | [10.5281/zenodo.21209413](https://doi.org/10.5281/zenodo.21209413) |
+| [E: Rank-1 Branched Adiabatic (PDF)](publications/papers/pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for the neck; the datum-level instantiation at D₀ is no longer realisable as posed ([erratum](publications/ERRATUM_v3.5.md), section 2) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
 
 ---
 
@@ -259,7 +259,7 @@ records what a neighbouring work claims and where it differs, in both directions
 | Zenodo (framework concept DOI, always latest) | [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) |
 | Zenodo (framework v3.4 archive) | [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101) |
 | Zenodo (framework v3.3 archive) | [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071) |
-| Zenodo (Paper E, rank-1 branched adiabatic) | [10.5281/zenodo.21209413](https://doi.org/10.5281/zenodo.21209413) |
+| Zenodo (Paper E, rank-1 branched adiabatic) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
 | Zenodo (Paper A, certified G₂) | [10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350) |
 | Zenodo (Paper B, spectral) | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
 | Zenodo (Paper C, K3 NK) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |

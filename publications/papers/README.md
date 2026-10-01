@@ -29,7 +29,7 @@ publications/
 │   │   ├── g2_spectral.pdf              # Paper B (Zenodo 19893371)
 │   │   ├── K3_NK_Certificate.pdf        # Paper C (Zenodo 19708916)
 │   │   ├── donaldson_analytic.pdf       # Paper D (Zenodo 20039066)
-│   │   └── rank_one_branched_adiabatic.pdf # Paper E (Zenodo 21209413)
+│   │   └── rank_one_branched_adiabatic.pdf # Paper E (Zenodo 21215956)
 │   ├── tex/                         # LaTeX sources (v3.5)
 │   ├── figures/                     # Publication figures
 │   ├── notebooks/                   # Companion Jupyter notebooks
@@ -71,7 +71,7 @@ publications/
 | [B — Spectral Geometry](pdf/g2_spectral.pdf) | Laplacian spectrum, harmonic forms, λ₁ ≈ 6π²/475 | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
 | [C — K3 Newton-Kantorovich](pdf/K3_NK_Certificate.pdf) | NK diagnostics on Donaldson K3 (CI(2,2,2)) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
 | [D — Donaldson Analytic Note](pdf/donaldson_analytic.pdf) | Closed-form G₂ ansatz on K3-coassociative neck, 5-layer Wirtinger cert | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
-| [E — Rank-1 Branched Adiabatic](pdf/rank_one_branched_adiabatic.pdf) | Neck-level analytic machinery closed at D₀ (open: (J) + H_global) | [10.5281/zenodo.21209413](https://doi.org/10.5281/zenodo.21209413) |
+| [E — Rank-1 Branched Adiabatic](pdf/rank_one_branched_adiabatic.pdf) | Neck-level analytic machinery closed at D₀ (open: (J) + H_global) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
 
 ---
 

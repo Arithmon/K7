@@ -27,7 +27,7 @@ K₇/
 │   │   │   ├── g2_spectral.pdf                # Paper B (Zenodo 19893371)
 │   │   │   ├── K3_NK_Certificate.pdf          # Paper C (Zenodo 19708916)
 │   │   │   ├── donaldson_analytic.pdf         # Paper D (Zenodo 20039066)
-│   │   │   └── rank_one_branched_adiabatic.pdf # Paper E (Zenodo 21209413)
+│   │   │   └── rank_one_branched_adiabatic.pdf # Paper E (Zenodo 21215956)
 │   │   ├── legacy/v3.3/               # v3.3 framework PDFs + markdown + tex (archived)
 │   │   ├── legacy/v3.4/               # v3.4 framework PDFs + markdown + tex (archived, Zenodo 20070101)
 │   │   ├── figures/                   # Publication figures (PDF + PNG)
@@ -111,4 +111,4 @@ The **[GitHub Wiki](https://github.com/Arithmon/K7/wiki)** provides a navigable 
 **Relations**: 213 conjuncts certified (K7-Lean v3.5, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates)), 0 `sorry`, 146 .lean files, 8394 build jobs
 **Predictions**: 95 observables (33 Type I, exact targets, 0.99% mean deviation; PDG 2024 / NuFIT 6.1 / Planck 2018)
 **Validation**: 3M+ configs exhaustive (set-level bound ~10⁻⁶, assumption-free; log₁₀ p_algebraic = −134)
-**Papers**: Framework v3.5 (Zenodo 21296168, concept 16891489) + A (19892350) + B (19893371) + C (19708916) + D (20039066) + E (21209413)
+**Papers**: Framework v3.5 (Zenodo 21296168, concept 16891489) + A (19892350) + B (19893371) + C (19708916) + D (20039066) + E (21215956)
