@@ -113,7 +113,7 @@ it resolves to the latest version. To be corrected in v3.6.
 
 **Where.** Three places in the v3.5 main text: the "Established at the
 datum" item of the claim boundary, the "Companion analytic paper [E]"
-paragraph, and the bibliography entry **[E]** — in
+paragraph, and the bibliography entry **[E]**, in
 `k7_framework_3_5_main.md` and in `k7_framework_3_5_main.tex`, and therefore
 in the deposited PDF.
 

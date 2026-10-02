@@ -2,7 +2,7 @@
 
 This document freezes the current analytic status of the Donaldson/Kovalev-Lefschetz branch and prevents promotion of local or numerical artifacts to compact-global theorems.
 
-## 2026-10-02 — Propagation of the v3.5 erratum
+## 2026-10-02: propagation of the v3.5 erratum
 
 This ledger was last revised on 2026-07-15, before the
 [erratum to v3.5](../publications/ERRATUM_v3.5.md) (2026-08-22). Two of its
