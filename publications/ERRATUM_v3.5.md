@@ -8,8 +8,11 @@ repository under `publications/papers/`.
 **This erratum does not trigger a new deposit.** The v3.5 record stands as
 published; the corrections below are recorded here and will be integrated
 into **v3.6**. Nothing in `publications/papers/` has been regenerated — the
-sources are left exactly as deposited, so that this erratum can be read
-against them.
+sources are left as deposited, so that this erratum can be read against them,
+with two exceptions, both limited to links and identifiers: the live Lean links
+repointed to `Arithmon/K7-Lean` on 2026-07-17 (one line each in the main text
+and supplements S1, S2, markdown only), and the three [E] citations corrected
+on 2026-10-01 (section 4).
 
 ---
 
@@ -106,9 +109,46 @@ it resolves to the latest version. To be corrected in v3.6.
 
 ---
 
+## 4. Paper [E] is cited by the DOI of its dataset, not of the preprint (added 2026-10-02)
+
+**Where.** Three places in the v3.5 main text: the "Established at the
+datum" item of the claim boundary, the "Companion analytic paper [E]"
+paragraph, and the bibliography entry **[E]** — in
+`k7_framework_3_5_main.md` and in `k7_framework_3_5_main.tex`, and therefore
+in the deposited PDF.
+
+**What is written.** "concept DOI 10.5281/zenodo.21209413" for the paper [E].
+
+**What is wrong.** The two Zenodo records of [E] were swapped in our
+citations. According to the Zenodo API (`resource_type`, files):
+
+| record | concept DOI | version DOI | type | content |
+|---|---|---|---|---|
+| **[E], the preprint** | **10.5281/zenodo.21215956** | 10.5281/zenodo.21215957 | Preprint | main paper (68 pp) + supplement (25 pp), PDF |
+| [E], its dataset | 10.5281/zenodo.21209412 | 10.5281/zenodo.21209413 | Dataset | data + verification scripts, tar.gz |
+
+So the number printed in v3.5 resolves to the **dataset**, and it is a
+*version* DOI, not a concept DOI. The paper should be cited as
+**10.5281/zenodo.21215956**. The swap was found on 2026-10-01 by
+cross-checking our DOI registry against the author's ORCID record.
+
+**Already corrected.** On 2026-10-01 (commit `366f69e`), the repository
+surfaces (README, CITATION, STRUCTURE, wiki, `publications/papers/README.md`)
+and the three passages of the distributed copies
+`publications/papers/markdown/k7_framework_3_5_main.md` and
+`publications/papers/tex/k7_framework_3_5_main.tex` were changed to cite
+21215956. Apart from the Lean links of 2026-07-17 (see the header), these
+are the only changes to the copies since the deposit. The deposited PDF and
+the Zenodo record of v3.5 are immutable and keep 21209413.
+
+**What v3.6 must do.** Cite [E] by its preprint concept DOI 21215956. Where
+the dataset is meant, cite it explicitly as such (concept DOI 21209412).
+
+---
+
 ## Provenance
 
-Both corrections were surfaced by an internal audit of the corpus on
+Sections 1–3 were surfaced by an internal audit of the corpus on
 2026-08-22 and verified against the primary measurements before being written
 here. The measurement underlying §1 is dated 2026-07-19 and predates this
 erratum by five weeks; the delay is a process failure of ours, recorded as
