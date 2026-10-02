@@ -82,6 +82,8 @@ Au-delà de cette discipline méthodologique, plusieurs analyses statistiques do
 
 **Test combinatoire** : la configuration (*b*₂, *b*₃) = (21, 77) a été comparée à 3 070 396 alternatives testées dans un espace délimité, incluant trente variétés G₂ connues explicitement dans la littérature mathématique. Elle reste optimale avec *p* < 2 × 10⁻⁵, soit une significance supérieure à 4.2σ. Elle est également optimale au sens de Pareto : aucune autre configuration testée n'améliore simultanément plusieurs critères.
 
+> **Portée de la recherche de configurations (2026-10-02).** Le résultat « n° 1 parmi 3 070 396 configurations » vaut **à formules K₇ fixées**. Quand la recherche de formules est refaite pour chaque paire de Betti, avec la même grammaire et le même budget (balayage aveugle de 242 064 paires), (21, 77) tombe **sous la médiane** : environ 64 % des paires le battent strictement ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18). Les deux tests répondent à des questions différentes ; aucun n'est un principe de sélection.
+
 **Correction pour comparaisons multiples** : la procédure Westfall-Young maxT, qui contrôle le taux d'erreur familial, confirme que 11 des 33 prédictions restent individuellement significatives après correction, avec une significance globale *p* = 0.008.
 
 **Validation par leave-one-out** : dans 28 tests indépendants où une observable est retirée et les autres utilisées pour reconstruire le cadre, la configuration (21, 77) reste l'optimum unique à chaque fois. La prédiction retirée est ensuite comparée à l'observation : l'accord persiste sans exception.

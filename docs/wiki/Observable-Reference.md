@@ -133,7 +133,7 @@ Each observable receives a classification based on the number of independent alg
 | 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |
 | 3 | **alpha_s(M_Z)** | sqrt(2)/(dim_G2 - p_2) | sqrt(2)/12 = 0.1179 | 0.1179 | 0.042% | 9 | TOPOLOGICAL |
 | 4 | **lambda_H** | sqrt(17)/32 | 0.1288 | 0.129 | 0.12% | 4 | DERIVED |
-| 5 | **alpha^-1(M_Z)** | 128+9+corr | 137.033 | 137.036 | 0.002% | 3 | DERIVED |
+| 5 | **alpha^-1(0)** (low energy; see [erratum §5](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md)) | 128+9+corr | 137.033 | 137.036 | 0.002% (−19.7 ppm) | 3 | DERIVED |
 
 ### 3.3 Lepton Sector
 

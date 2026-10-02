@@ -5,6 +5,8 @@ layout: default
 
 # K₇ Statistical Evidence
 
+> **Scope of the configuration search (2026-10-02).** The "#1 among 3,070,396 configurations" result holds **with the K₇ formulas held fixed**. When the formula search is re-run for every Betti pair under the same grammar and budget (blind sweep over 242,064 pairs), (21, 77) falls **below the median**: about 64% of pairs strictly beat it ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18). The two tests answer different questions; neither is a selection principle.
+
 **Version**: 3.4.27
 **Validation Date**: April 2026
 **Scripts**: [`bulletproof_validation_v33.py`](https://github.com/Arithmon/K7/blob/main/publications/validation/legacy/v3.3/bulletproof_validation_v33.py) (7-component, v3.3.24 archive), [`exhaustive_validation_v33.py`](https://github.com/Arithmon/K7/blob/main/publications/validation/legacy/v3.3/exhaustive_validation_v33.py) (3M+ configs)

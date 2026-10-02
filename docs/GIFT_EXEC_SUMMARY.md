@@ -82,6 +82,8 @@ Beyond this methodological discipline, several statistical analyses documented i
 
 **Combinatorial test**: the configuration (*b*₂, *b*₃) = (21, 77) was compared against 3,070,396 alternatives tested within a bounded space, including thirty G₂ manifolds explicitly known in the mathematical literature. It remains optimal with *p* < 2 × 10⁻⁵, corresponding to significance above 4.2σ. It is also Pareto-optimal: no other tested configuration simultaneously improves on multiple criteria.
 
+> **Scope of the configuration search (2026-10-02).** The "#1 among 3,070,396 configurations" result holds **with the K₇ formulas held fixed**. When the formula search is re-run for every Betti pair under the same grammar and budget (blind sweep over 242,064 pairs), (21, 77) falls **below the median**: about 64% of pairs strictly beat it ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18). The two tests answer different questions; neither is a selection principle.
+
 **Multiple comparisons correction**: the Westfall–Young maxT procedure, which controls the family-wise error rate, confirms that 11 of the 33 predictions remain individually significant after correction, with global significance *p* = 0.008.
 
 **Leave-one-out validation**: in 28 independent tests where one observable is withheld and the others used to reconstruct the framework, the (21, 77) configuration remains the unique optimum every time. The withheld prediction is then compared against observation: agreement holds without exception.

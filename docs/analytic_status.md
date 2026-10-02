@@ -2,6 +2,34 @@
 
 This document freezes the current analytic status of the Donaldson/Kovalev-Lefschetz branch and prevents promotion of local or numerical artifacts to compact-global theorems.
 
+## 2026-10-02 — Propagation of the v3.5 erratum
+
+This ledger was last revised on 2026-07-15, before the
+[erratum to v3.5](../publications/ERRATUM_v3.5.md) (2026-08-22). Two of its
+corrections change how the entries below must be read:
+
+- **D0 is not currently instantiated** (erratum §2). On 2026-08-19 a
+  Stokes-type obstruction established that the global single-root datum `D0`
+  of paper [E] is not realisable as posed. The Stage D/E coefficient package
+  and the threshold `R_threshold <= 3664.066` remain valid **as computations
+  at D0**, and the conditional theorems of [E] are unaffected; but the
+  "active Level Q citation path" below no longer discharges anything for
+  `K_7`, because its datum is not available in that form.
+- **The K3 closed-form witness certifies an auxiliary quantity** (erratum
+  §1). The 4000-box interval certificate of `K3ClosedFormWitness.lean` is
+  correct, but the variance bound it certifies was computed with the
+  contraction `V† H V`, which is not the holomorphic pullback of the ambient
+  (1,1) form. In the correct convention (`Vᵀ H V̄`) the 667-parameter ansatz is
+  not close to Ricci-flat. The Krawczyk–Rump certification of the surface
+  points and the Lean arithmetic stand; the reading "Calabi–Yau residual of a
+  metric on the K3" does not.
+
+Paths of the form `private/...` below point to the maintainers' private
+workspace. They are kept for provenance and are not public. Two of them
+have since moved: `private/canonical/papers/rank_one_branched_adiabatic/draft.md`
+is now `main.md` in the same directory, and `private/computation/` is under
+`private/legacy/computation_era3/`.
+
 ## Scope labels
 
 - `local`: model on `R^7`, Eguchi-Hanson, one fibre, or one formal chart.
@@ -14,8 +42,9 @@ This document freezes the current analytic status of the Donaldson/Kovalev-Lefsc
 ## Current headline
 
 The repository currently contains a credible conditional programme for Level E,
-a Stage E certified D0 coefficient package for Level Q, and no finite
-closed-form compact torsion-free metric for Level CF.
+a Stage E certified D0 coefficient package for Level Q (a computation at a
+datum that is not currently realisable as posed; see the 2026-10-02 section
+above), and no finite closed-form compact torsion-free metric for Level CF.
 
 The Level E theorem remains conditional because the anisotropic perturbation
 theorem `(J)`, compact datum/topology closure, and final public theorem wrappers
@@ -90,6 +119,7 @@ anisotropic Joyce theorem `(J)`, and Appendix C compact-topology proof.
   Scope: `box-local`.
   Status: rigorous interval certificate on 4000 frozen Krawczyk boxes for one explicit 667-parameter witness.
   Reason: the header explicitly says the result does not promote to a whole-K3 bound and isolates the remaining positivity/SOS problem.
+  Erratum (2026-08-22, §1): the certified variance bound is a bound on an auxiliary quantity (`V† H V` contraction), not on the Calabi–Yau residual of a Kähler metric on the K3.
 
 - `K7-Lean/GIFT/Foundations/G2DonaldsonLinkCohomology.lean`
   Scope: arithmetic and combinatorial only.

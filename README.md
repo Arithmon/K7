@@ -111,7 +111,7 @@ All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 | **Falsifiable** | δ_CP = 197°, N_gen = 3, θ₂₃ upper octant (**in tension**, see the [scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md)) -- tested by DUNE / FCC-ee |
 | **Observables** | 95 total (33 Type I + 19 Type II + 21 Type III + 22 Type IV); 66 with experimental data |
 | **Precision** | 0.99% mean deviation on the 33 Type-I core relations (PDG 2024 / NuFIT 6.1 / Planck 2018) |
-| **Uniqueness** | #1 of 3M+ random configurations tested (log₁₀ p_algebraic = −134) |
+| **Uniqueness** | #1 of 3M+ configurations *with the formulas held fixed* (log₁₀ p_algebraic = −134); **not** privileged when the formula search is re-run per Betti pair ([Program, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md)); see [Statistical Uniqueness](#statistical-uniqueness) |
 
 **Dimensional reduction:** E₈×E₈ (496D) → AdS₄ × K₇ (11D) → Standard Model (4D)
 
@@ -157,7 +157,14 @@ This table is not a compact `K_7` torsion-free metric theorem.
 
 ## Statistical Uniqueness
 
-### Exhaustive Search
+Two different questions have been asked of the Betti pair (21, 77), and they get different answers.
+
+1. **With the K₇ formulas held fixed**, does any other configuration fit the data better? No: (21, 77) ranks #1 among 3,070,396 configurations (v3.3 exhaustive scan, tables below).
+2. **If every Betti pair gets its own formula search**, under the same grammar and budget, is (21, 77) special? No. In a blind sweep over 242,064 pairs (b₂, b₃ ∈ [0, 491]), with the alphabet held constant and only the Betti values changing, (21, 77) falls **below the median** on every discriminating axis: about 64% of pairs strictly beat it ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18, Sieve methodology).
+
+The first result says that the frozen formulas single out (21, 77) among the configurations scanned; the second says that the pair is not arithmetically privileged at fitting the Standard Model once formulas are allowed to adapt. Neither is a selection principle. The topological rarity of (21, 77) as a G₂ manifold (Q-A in the same document) is a separate question.
+
+### Exhaustive Search (formulas held fixed)
 
 | Metric | Value |
 |--------|-------|
@@ -213,7 +220,7 @@ Every verdict is recorded, favourable or not, in the program
 
 The framework contains **no continuous adjustable parameters** fitted to data. However, it makes **discrete structural choices**: E₈×E₈ as gauge group, K₇ with (b₂=21, b₃=77), TCS building blocks. These are mathematically motivated but constitute model selection. The framework predicts observables *given* these choices: it does not explain *why* nature chose this geometry.
 
-Statistical validation shows (b₂=21, b₃=77) is the unique optimum among 3,070,396 tested configurations. This doesn't explain the choice, but establishes it is not arbitrary.
+With the formulas held fixed, (b₂=21, b₃=77) is the unique optimum among 3,070,396 tested configurations. When the formula search is re-run for each Betti pair, (21, 77) is not privileged: it falls below the median ([Program, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md)). The choice of (21, 77) is therefore not explained by fit quality; see [Statistical Uniqueness](#statistical-uniqueness).
 
 ---
 

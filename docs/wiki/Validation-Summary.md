@@ -5,6 +5,8 @@ layout: default
 
 # K₇ v3.4 Complete Validation Summary
 
+> **Scope of the configuration search (2026-10-02).** The "#1 among 3,070,396 configurations" result holds **with the K₇ formulas held fixed**. When the formula search is re-run for every Betti pair under the same grammar and budget (blind sweep over 242,064 pairs), (21, 77) falls **below the median**: about 64% of pairs strictly beat it ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18). The two tests answer different questions; neither is a selection principle.
+
 **Date**: 2026-06-05 (v3.4.27)
 **Experimental references**: NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022
 **Exhaustive search (v3.4)**: 3,000,000 random formula sets; set-level bound ~10⁻⁶ (assumption-free)

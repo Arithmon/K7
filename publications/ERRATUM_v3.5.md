@@ -146,6 +146,36 @@ the dataset is meant, cite it explicitly as such (concept DOI 21209412).
 
 ---
 
+## 5. The fine-structure relation is labelled at the wrong scale (added 2026-10-02)
+
+**Where.** Supplement S2, §20b (relation #18), whose formula is written
+α⁻¹(M_Z) = (248 + 8)/2 + 99/11 + (65/32)(1/61), in
+`k7_framework_3_5_S2_derivations.md` and `k7_framework_3_5_S2.tex`, and the
+row α⁻¹(M_Z) of the observable reference (wiki, corrected on 2026-10-02).
+
+**What is wrong.** The value is compared with 137.036, which is the inverse
+fine-structure constant **at low energy**, in the Thomson limit, α⁻¹(0). The
+running coupling at M_Z is a different quantity (about 127.93 in the
+five-flavour MS-bar scheme, PDG). The main text is already consistent with
+the low-energy reading: §5.4 calls 137.033 "the topological low-energy value
+α_em⁻¹" and keeps it distinct from the M_Z values of the RGE chain. The label
+in S2 contradicts it.
+
+**What still stands.** The relation itself, 267489/1952 = 137.033299…, and
+its classification (STRUCTURAL: it uses the imposed normalization
+det(g) = 65/32).
+
+**How to read the agreement.** Against α⁻¹(0) = 137.035999177(21) (CODATA
+2022), the deviation is −19.7 ppm (0.002%). That is a numerical proximity,
+not an agreement within experimental uncertainty: the measurement is about
+10⁵ times more precise than the gap. The internal observable record also
+carried an unsourced uncertainty of ±0.0001. It now cites CODATA 2022.
+
+**What v3.6 must do.** Write the relation as α⁻¹(0), and state the
+comparison as above.
+
+---
+
 ## Provenance
 
 Sections 1–3 were surfaced by an internal audit of the corpus on
