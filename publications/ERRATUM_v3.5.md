@@ -176,6 +176,31 @@ comparison as above.
 
 ---
 
+## 6. p₂ = 2 is not a Pontryagin class (added 2026-10-16)
+
+**Where.** `publications/papers/markdown/k7_framework_3_5_main.md` line 458
+("the Pontryagin ratio p₂ = dim(G₂)/dim(K₇)"); `…/k7_framework_3_5_S2_derivations.md`
+line 655 ("Pontryagin class contribution (spin structure correction)"), the
+physical-interpretation paragraph of θ₂₃ that follows (line 659), and line
+1353 (Fibonacci table); the corresponding passages of the `.tex` sources.
+
+**What is wrong.** The constant p₂ = dim(G₂)/dim(K₇) = 14/7 = 2 is called a
+Pontryagin class, ratio or number. For a 7-manifold, the second Pontryagin
+class p₂(TK₇) lies in H⁸(K₇; ℤ), which vanishes for dimensional reasons, and
+there is no second Pontryagin number to integrate. The ratio 14/7 is neither.
+The reading of (b₃ − p₂)/H* in θ₂₃ as "spin-corrected 3-cycles", with "the
+Pontryagin correction accounting for the spin structure", has no basis and is
+withdrawn. The error was pointed out by a referee.
+
+**What still stands.** The value p₂ = 2 and every formula that uses it. The
+symbol is kept for continuity; its definition is the ratio dim(G₂)/dim(K₇),
+which other passages of the paper already call the binary duality factor.
+
+**What v3.6 must do.** Call p₂ the binary ratio dim(G₂)/dim(K₇) wherever it is
+named, with no topological-class reading.
+
+---
+
 ## Provenance
 
 Sections 1–3 were surfaced by an internal audit of the corpus on

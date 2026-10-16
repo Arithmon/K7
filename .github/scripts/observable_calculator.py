@@ -34,7 +34,7 @@ DIM_J3O = 27     # Exceptional Jordan algebra dimension
 DIM_F4 = 52      # F4 dimension
 DIM_E6 = 78      # E6 dimension
 DIM_E8X2 = 496   # E8 x E8 dimension
-P2 = 2           # Pontryagin class contribution
+P2 = 2           # binary ratio dim(G2)/dim(K7) (not a Pontryagin class)
 WEYL = 5         # Weyl factor
 
 # Derived constants
