@@ -34,9 +34,9 @@
       },
       "p2": {
         "value": 2,
-        "name": "Pontryagin class contribution",
+        "name": "Binary ratio",
         "symbol": "p₂",
-        "description": "Second Pontryagin class / spin structure correction"
+        "description": "dim(G₂)/dim(K₇) = 14/7 = 2; not a Pontryagin class (v3.5 erratum, §6)"
       }
     },
 

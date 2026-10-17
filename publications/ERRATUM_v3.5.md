@@ -201,6 +201,99 @@ named, with no topological-class reading.
 
 ---
 
+## 7. Further statements found wrong in a full audit (added 2026-10-17)
+
+A line-by-line audit of the v3.5 sources against the formal core, the DOI
+registry and the sections above found six more statements that are wrong as
+written. None changes a predicted value.
+
+**7.1 Axiom accounting.** `k7_framework_3_5_main.md` lines 13, 25, 72, 703
+and 718 (and supplements S1, S2 and S3, which repeat them) say that the Lean
+core has 15 classified axioms, "of which 4 external data packages":
+`K7_analysis_data`, `K7_spectral_data`, `literature_package` and `KK_YM_EFT`.
+The total of 15 was correct at deposit, but the list was not: three of the four
+named axioms had been eliminated on 2026-04-13 (K7-Lean `7b28895`,
+`3312228`). The 15 axioms at deposit were:
+- the four prediction-chain axioms: `cheeger_inequality`, `literature_package`,
+  `spectral_upper_bound` and `neck_dominates`;
+- ten interval certificates: `det_g_at_half` and `K3_eigenvalue_0…3`, each
+  with its `_bracketed` form;
+- `PSLQ_null_in_TCS_basis`.
+
+The last was discharged on 2026-09-08 (K7-Lean #163). The current core has
+**14 axioms** and 0 sorry.
+
+**7.2 The KK spectral bridge.** Line 720 says that the 4D mass gap is
+"formally conditional on KK_YM_EFT alone". `KK_YM_EFT` is no longer an axiom:
+it is a theorem whose type is arithmetic (`KKSpectralBridge.lean`), and the
+physical content of the bridge is not in that type. The sentence is withdrawn.
+
+**7.3 The methodology paper.** Lines 596 and 1054 of the main text, and line 9
+of S4, cite Zenodo `10.5281/zenodo.20666879` as the methodology paper on
+counting coincidences. That DOI is version 1.0 of the **dataset** "Counting
+Coincidences — frozen inputs" (concept `10.5281/zenodo.20666878`). The paper
+itself is the preprint "A reproducible standard for arithmetic coincidence
+claims in fundamental physics", concept `10.5281/zenodo.20728964`. Line 604
+cites the dataset as the frozen-inputs record, which is correct.
+
+**7.4 Hypothesis (L4).** Lines 825 and 831 list (L4) among the hypotheses
+that are "currently OPEN". For the single-root datum 𝒟₀ of [E], (L4) is
+obstructed, not open: this follows from §2 above. A global statement needs
+(C.1), (J) **and** a realisable datum with its own (L4).
+
+**7.5 Global properties of K₇ stated as facts.**
+- Lines 520–521 of S1 list "G₂ holonomy: Hol(g*) = G₂" and "Ricci-flat:
+  Ric(g) = 0" as properties of the manifold. No global torsion-free G₂
+  structure has been constructed (main text, §9).
+- Lines 506 and 528 of S1 say that (b₂, b₃) = (21, 77) is "certified by the
+  NK metric". The Newton–Kantorovich certificate [A] concerns the neck metric.
+  The Betti numbers come from the topological route (Joyce–Karigiannis); the
+  spectral count of [B] is consistent with them, and does not certify them.
+
+**7.6 κ_T and Joyce's regime.** Line 732 of S1 says that the bound κ_T = 1/61
+"constrains ‖δφ‖, placing the manifold within Joyce's perturbative regime
+where a torsion-free solution exists". No argument connects the number 1/61
+to Joyce's smallness hypothesis. The sentence is withdrawn.
+
+**What v3.6 must do.**
+- State 14 axioms, with the list above.
+- Drop the `KK_YM_EFT` sentence.
+- Cite `10.5281/zenodo.20728964` for the methodology.
+- Write (L4) as obstructed for 𝒟₀.
+- State the global properties of K₇ as open.
+- Remove the κ_T paragraph.
+
+---
+
+## 8. Two internal inconsistencies, and how v3.6 resolves them (added 2026-10-17)
+
+**8.1 The charged-lepton relations are mutually inconsistent.** The paper
+states four relations for two independent mass ratios: m_μ/m_e = 27^φ
+(= 207.0119), m_τ/m_e = 3477, Koide's Q = 2/3, and m_μ/m_τ = 10/168. They
+cannot all hold at the precision quoted. With m_e = 0.51099895 MeV:
+- Q(1, 27^φ, 3477) = 0.666546, so Q − 2/3 = −1.2 × 10⁻⁴;
+- m_τ = 3477 m_e = 1776.743 MeV, which lies 2.1σ below the measured value,
+  1776.93 ± 0.09 MeV;
+- Q = 2/3 taken together with 27^φ would force m_τ = 1778.88 MeV.
+
+**v3.6 takes m_μ/m_e = 27^φ as the primary relation**, and presents the other
+three as approximate, with their deviations stated.
+
+**8.2 The gauge couplings sit at no common scale.**
+- §4.1 (line 243) compares sin²θ_W = 3/13 directly with its measured value at
+  M_Z, but §5.3 takes 3/13 as a boundary condition at M_GUT and runs it down
+  with two-loop MSSM RGEs.
+- The B-test theorem (line 440) labels α_em⁻¹ = 91√2 at M_Z, while line 446
+  speaks of the "B = 7/5 exact scale".
+- Since §5 of this erratum, α⁻¹ is read at q² = 0.
+
+**v3.6 reads sin²θ_W and α_s at M_Z.** It withdraws the reading of 3/13 as a
+GUT boundary condition, together with the RGE chain built on it. It keeps
+α⁻¹ = 137.033… as a low-energy (q² = 0) relation, and it makes no claim that
+the three couplings form a triplet at a common scale.
+
+---
+
 ## Provenance
 
 Sections 1–3 were surfaced by an internal audit of the corpus on
@@ -208,3 +301,10 @@ Sections 1–3 were surfaced by an internal audit of the corpus on
 here. The measurement underlying §1 is dated 2026-07-19 and predates this
 erratum by five weeks; the delay is a process failure of ours, recorded as
 such, and it is what prompted the audit.
+
+Sections 7 and 8 come from a second audit, on 2026-10-17, after a referee
+report on the framework paper. Each item was
+checked against its primary source:
+- the axiom list, by `grep` on K7-Lean main and its history;
+- the DOIs, against the Zenodo API;
+- the lepton numbers, recomputed independently.

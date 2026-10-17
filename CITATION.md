@@ -184,13 +184,13 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.5. Zen
 
 ```bibtex
 @misc{k7_paper_e_rank_one_branched,
-  title        = {Rank-1 Branched Adiabatic Machinery for the Donaldson Programme: Neck-Level Closure at D₀},
+  title        = {A conditional analytic framework for rank-one branched Kovalev--Lefschetz adiabatic limits},
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {July},
   doi          = {10.5281/zenodo.21215956},
   url          = {https://doi.org/10.5281/zenodo.21215956},
-  note         = {Analytic machinery closed at D₀ (K_Sch ≤ 16/3, q_total = 8.2e-3, κ_E ≤ 1.02, R_0 ≤ 4.9e3). Open: (J) anisotropic perturbation theorem and H_global. Main 68 pp. + supplement 25 pp.}
+  note         = {Conditional analytic framework; constants computed at the single-root datum D₀ (K_Sch ≤ 16/3, q_total = 8.2e-3, κ_E ≤ 1.02, R_0 ≤ 4.9e3), which is not realisable as posed (K₇ v3.5 erratum, §2 and §7.4). Open: a realisable datum, (J) and H_global. Main 68 pp. + supplement 25 pp.}
 }
 ```
 

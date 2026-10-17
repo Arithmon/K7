@@ -5,6 +5,36 @@ All notable changes to the GIFT framework are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Erratum to v3.5, §7–§8 (2026-10-17)
+
+- **§7, six statements wrong as written** (no predicted value changes):
+  - the list of "4 external data-package axioms": three of them had been
+    eliminated on 2026-04-13; the core now has 14 axioms, 0 sorry;
+  - the `KK_YM_EFT` mass-gap sentence;
+  - the methodology paper cited by a dataset DOI (20666879 → preprint
+    20728964);
+  - (L4) "OPEN" rather than obstructed for 𝒟₀;
+  - Hol = G₂ and Ric = 0 stated as global facts in S1;
+  - the κ_T / Joyce-regime sentence in S1.
+- **§8, two internal inconsistencies, with their v3.6 resolution:**
+  - the four charged-lepton relations cannot hold together; m_μ/m_e = 27^φ
+    becomes primary;
+  - the gauge couplings sat at no common scale; sin²θ_W and α_s are read at
+    M_Z, the GUT-boundary RGE chain is withdrawn, and α⁻¹ stays at q² = 0.
+- Surfaces aligned: the [E] citation (correct title, datum qualified) in
+  `CITATION.md` and the citation guides, the README "Level Q" line, α⁻¹(0)
+  in `OBSERVABLE_REFERENCE.md`, and p₂ in `GIFT_ATLAS.json`.
+
+## Erratum to v3.5, §3–§5 (2026-10-01 → 10-02, recorded here 2026-10-17)
+
+- **§3**: [B] should be cited by its concept DOI 10.5281/zenodo.18920367, not
+  by the version DOI 19893371 (to be applied in v3.6).
+- **§4**: [E] was cited by its dataset DOI (21209413) instead of the preprint
+  concept DOI 10.5281/zenodo.21215956 (corrected in place on 2026-10-01).
+- **§5**: the fine-structure relation is α⁻¹(0), not α⁻¹(M_Z); against CODATA
+  2022 the gap is −19.7 ppm, a proximity rather than an agreement within
+  uncertainty.
+
 ## Erratum to v3.5, §6 (2026-10-16)
 
 - **p₂ = dim(G₂)/dim(K₇) = 2 is not a Pontryagin class** (p₂(TK₇) ∈ H⁸(K₇) = 0

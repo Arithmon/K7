@@ -39,7 +39,8 @@ not a completed theorem in this repository. Current status is tracked in
 
 - Level E remains conditional on the anisotropic perturbation theorem `(J)` and
   compact datum/topology wrappers.
-- Level Q has a Stage E certified D0 coefficient package.
+- Level Q has a Stage E coefficient package certified at the datum D0, which
+  is not realisable as posed (v3.5 erratum, §2).
 - Level CF, a finite closed-form compact metric, remains a separate open
   programme.
 
