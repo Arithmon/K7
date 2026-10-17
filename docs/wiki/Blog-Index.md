@@ -5,7 +5,7 @@ layout: default
 
 # Blog Index
 
-Twenty-nine posts, in three tracks. English originals are published on
+Thirty posts, in three tracks. English originals are published on
 [arithmon.substack.com](https://arithmon.substack.com/); the 🇫🇷 link on each row
 opens the French translation hosted in this wiki.
 
@@ -44,6 +44,7 @@ if you want the thesis and the date it can die on one page.
 
 | Post | What it says | Date |
 |------|--------------|------|
+| [Can you hear the shape of a balloon?](https://arithmon.substack.com/p/can-you-hear-the-shape-of-a-balloon) · [🇫🇷](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html) | A school formula, what you can hear of it, and symmetry as information saved | Oct 10, 2026 |
 | [The Star Twin](https://arithmon.substack.com/p/the-star-twin) · [🇫🇷](Blog-The-Star-Twin.fr.html) | Two polyhedra that arithmetic cannot tell apart, and the one question that separates them | Sept 25, 2026 |
 | [The Constants of Nature Are Counts](https://arithmon.substack.com/p/the-constants-of-nature-are-counts) · [🇫🇷](Blog-Constants-Are-Counts.fr.html) | The thesis, the falsification date, and the three open questions | Aug 1, 2026 |
 | [God's Diabolo](https://arithmon.substack.com/p/gods-diabolo) · [🇫🇷](Blog-Gods-Diabolo.fr.html) | Why the string never snaps: stability as motion, not as setting | July 24, 2026 |

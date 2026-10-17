@@ -70,7 +70,7 @@ N_gen    = |PSL(2,7)| / fond(E₇) = 168/56 = 3
 
 ## Vulgarisation
 
-Une écriture accessible sur les idées derrière K₇ vit sur le [blog Substack](https://arithmon.substack.com/) (en anglais), en trois pistes : [la série](Blog-Index.fr.html#series) (la physique par les jeux auxquels vous avez déjà joué), [les idées](Blog-Index.fr.html#ideas) (pourquoi les constantes ne sont peut-être pas arbitraires) et [l'histoire](Blog-Index.fr.html#story) (un chercheur indépendant, une IA, et un an de recherche non-orthodoxe). Les traductions FR sont sur ce wiki ; la liste complète est dans l'[index du blog](Blog-Index.fr.html). Dernier paru : *[Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html)*, la thèse et sa date de mort sur une page.
+Une écriture accessible sur les idées derrière K₇ vit sur le [blog Substack](https://arithmon.substack.com/) (en anglais), en trois pistes : [la série](Blog-Index.fr.html#series) (la physique par les jeux auxquels vous avez déjà joué), [les idées](Blog-Index.fr.html#ideas) (pourquoi les constantes ne sont peut-être pas arbitraires) et [l'histoire](Blog-Index.fr.html#story) (un chercheur indépendant, une IA, et un an de recherche non-orthodoxe). Les traductions FR sont sur ce wiki ; la liste complète est dans l'[index du blog](Blog-Index.fr.html). Dernier paru : *[Peut-on entendre la forme d'un ballon ?](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html)*, une formule de collège démontée, et la symétrie comme information économisée.
 
 ---
 
