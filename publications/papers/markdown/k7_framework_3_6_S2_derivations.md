@@ -4,8 +4,8 @@
 
 Earlier versions of this supplement were titled "Complete Derivations" and presented each relation as a theorem with a proof. Version 3.6 withdraws that framing. No geometric map is known that sends the invariants of (K₇, E₈×E₈) to the Standard-Model parameters, and no rule assigns a formula to an observable (main §3.2). What can be established for each relation is narrower, and this supplement establishes it:
 
-1. **The arithmetic.** Given the declared constants, the closed form evaluates to the stated number. This is exact, and is machine-checked in Lean (theorem `observables_certified`, `GIFT/Certificate/Predictions.lean`, Arithmon/K7-Lean).
-2. **The dictionary choices.** Which constants the formula uses, which operations beyond integer ratios, and which entries of the residue register it depends on (main §3.3: R1–R11).
+1. **The arithmetic.** Given the declared constants, the closed form evaluates to the stated number. The arithmetic below is exact. Its Lean coverage varies by relation (exact equality for 24, components only for 5, bounds for 1, none for 3); the declaration and scope for each relation are in S3.7.
+2. **The dictionary choices.** Which constants the formula uses, which operations beyond integer ratios, and which entries of the residue register it depends on (main §3.3: R1–R12).
 3. **The status.** The status of each relation against the most recent data is given in main §4.1, generated from the dataset; it is not repeated here, so that it has one source.
 
 What a relation's arithmetic does not establish: that the formula is the right one for the observable, that the structure requires it, or that the agreement with measurement is evidence for the framework (main §7). Section S2.6 records the alternative formulas found in the corpus for the same observables; their number is a measure of the vocabulary's freedom, not of robustness.
@@ -66,13 +66,15 @@ Four relations bear on two independent mass ratios, and they are mutually incomp
 | A08 | m_s/m_d | p₂² × Weyl = 4 × 5 = **20** | the PDG gives a range (17–22), not a measurement |
 | A09 | m_c/m_s | (dim E₈ − p₂)/b₂ = 246/21 = **82/7** = 11.7143 | n/a |
 | A10 | m_b/m_t | 1/(2b₂) = **1/42** = 0.023810 | **mass scheme** (R7): m_b in MS-bar at m_b over the directly measured m_t |
-| A11 | m_u/m_d | (1 + dim E₆)/\|PSL(2,7)\| = **79/168** = 0.470238 | additive 1 |
-| A16 | sin θ₁₂ (CKM) = λ | fund(E₇)/dim E₈ = 56/248 = **7/31** = 0.225806 | compared with sin θ₁₂, not sin²θ₁₂ |
-| A17 | A (Wolfenstein) | (Weyl + dim E₆)/H* = **83/99** = 0.838384 | n/a |
-| A18 | sin θ₂₃ (CKM) = Aλ² | dim K₇/\|PSL(2,7)\| = 7/168 = **1/24** = 0.041667 | compared with sin θ₂₃, not sin²θ₂₃ |
+| A11 | m_u/m_d | (1 + dim E₆)/\|PSL(2,7)\| = **79/168** = 0.470238 | additive 1; the PDG uncertainty is at 90% CL |
+| A16 | sin θ₁₂ (CKM) = λ | fund(E₇)/dim E₈ = 56/248 = **7/31** = 0.225806 | compared with sin θ₁₂, not sin²θ₁₂; R12 |
+| A17 | A (Wolfenstein) | (Weyl + dim E₆)/H* = **83/99** = 0.838384 | R12 |
+| A18 | sin θ₂₃ (CKM) = Aλ² | dim K₇/\|PSL(2,7)\| = 7/168 = **1/24** = 0.041667 | compared with sin θ₂₃, not sin²θ₂₃; R12 |
 | A19 | m_H/m_t | fund(E₇)/b₃ = 56/77 = **8/11** = 0.727273 | m_t from direct measurements |
 | A20 | m_H/m_W | (N_gen + dim E₆)/dim F₄ = **81/52** = 1.557692 | n/a |
 | A21 | m_W/m_Z | (2b₂ − Weyl)/(2b₂) = **37/42** = 0.880952 | n/a |
+
+**The CKM sector is overdetermined (R12).** The three relations bear on two Wolfenstein parameters, since sin θ₂₃ = Aλ². With λ = 7/31 and A = 83/99, Aλ² = 4067/95139 = 0.042748, while A18 gives 1/24 = 0.041667: the three relations are 2.6% apart as exact equalities, and at most two can hold. None is selected (main §4.2).
 
 **Labels corrected.** Earlier versions labelled A16 and A18 "sin²θ₁₂(CKM)" and "sin²θ₂₃(CKM)" while comparing them with λ = sin θ₁₂ and Aλ² = sin θ₂₃. The values are sines; the labels are corrected (S3.3).
 
@@ -91,7 +93,7 @@ Four relations bear on two independent mass ratios, and they are mutually incomp
 | A14 | sin²θ₁₃ (PMNS) | D_bulk/dim(E₈×E₈) = **11/496** = 0.022177 | n/a |
 | A15 | δ_CP | dim K₇ · dim G₂ + H* = 98 + 99 = **197**, read as the phase 2π · 197/360 | **unit** (R6) |
 
-**The δ_CP rule.** The prediction is the phase 2π · 197/360; the unit is a dictionary assignment (R6) and the decision rule D1 of main §11 applies: a measurement placing δ_CP outside [182°, 212°] at 3σ rejects the relation and the unit assignment together, with no repair clause. The compactification factor 62/69 of earlier versions is addressed in S2.7.
+**The δ_CP rule.** The prediction is the phase 2π · 197/360, a point value; the unit is a dictionary assignment (R6), and rule D1 of main §11 applies: a measurement whose 3σ interval excludes 197° rejects the relation and the unit assignment together, with no repair clause and no theoretical tolerance added afterwards. The compactification factor 62/69 of earlier versions is addressed in S2.8.
 
 ---
 
@@ -173,7 +175,7 @@ The "TCS building-block" formulas use b₂(M₁) = 11 and b₂(M₂) = 10, Betti
 | 3477 "factorizes into framework constants"; associative-volume "cross-confirmation" | S2.3 |
 | Ω_m = Ω_DE/√5, Ω_DM/Ω_b "exact", ln 2 as an information factor | S2.6 |
 
-**Appendix F of earlier versions: the compactification factor 62/69.** A residual search after the NuFIT 6.0 release found 197 × 62/69 = 177.01, matching that release's central value, and earlier versions kept it as a "contingency plan": if DUNE measured δ_CP near 177°, the framework would adopt 177.01 as its prediction and read 197 as a "bare" value. That plan is a repair clause, and version 3.6 has none (main §11, rule D1). It is withdrawn without condition: if a measurement places δ_CP outside [182°, 212°] at 3σ, the relation δ_CP = 197 and its unit assignment are rejected, and no factor found afterwards replaces them. The factor 62/69 = 248/276 is recorded in S2.7 as one more formula the vocabulary offers.
+**Appendix F of earlier versions: the compactification factor 62/69.** A residual search after the NuFIT 6.0 release found 197 × 62/69 = 177.01, matching that release's central value, and earlier versions kept it as a "contingency plan": if DUNE measured δ_CP near 177°, the framework would adopt 177.01 as its prediction and read 197 as a "bare" value. That plan is a repair clause, and version 3.6 has none (main §11, rule D1). It is withdrawn without condition: if a measurement excludes 197° at 3σ, the relation δ_CP = 197 and its unit assignment are rejected, and no factor found afterwards replaces them. The factor 62/69 = 248/276 is recorded in S2.7 as one more formula the vocabulary offers.
 
 ---
 

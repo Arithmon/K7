@@ -12,7 +12,7 @@
 
 ## Abstract
 
-This supplement presents the mathematical architecture underlying the K₇ framework. Part I develops the E₈ exceptional Lie algebra with the Exceptional Chain theorem. Part II introduces G₂ holonomy manifolds, including the correct characterization of the g₂ subalgebra as the kernel of the Lie derivative map. Part III discusses K₇ manifold topology: the pair (b₂,b₃)=(21,77) does not appear in the standard TCS catalogue, but the Joyce-Karigiannis (JK) Z₂³ orbifold construction realizes it via T³ × K3 / Z₂³ resolution (§8.4). A four-phase computer-assisted audit (V4 symplectic screen, anti-symplectic obstruction, K3 lattice existence via Mukai [44], Garbagnati-Sarti [45] and Nikulin [51], Betti formula) closes the topological count exactly; the analytic torsion-free statement and an explicit polynomial Z₂³ realization are deferred. Part IV describes the algebraic reference form, whose scale is fixed by the imposed normalization det(g) = 65/32 (main R2), and the status of Joyce's perturbation theorem for this setting: its smallness constant depends on geometric bounds that are not established here, and the existence of a compact torsion-free metric is open (main §9). Numerical (PINN) experiments are reported as such. All algebraic results are formally verified in Lean 4 (including `JoyceKarigiannisConstruction.lean`, introduced at core v3.4.14 and since migrated to the authors' archive; see §8.4).
+This supplement presents the mathematical architecture underlying the K₇ framework. Part I develops the E₈ exceptional Lie algebra with the Exceptional Chain theorem. Part II introduces G₂ holonomy manifolds, including the correct characterization of the g₂ subalgebra as the kernel of the Lie derivative map. Part III discusses the topology of K₇: the pair (b₂, b₃) = (21, 77) has no known construction. It does not appear among the catalogued compact G₂ manifolds, and the Joyce–Karigiannis ℤ₂³ route proposed in version 3.5 does not currently realize it, because its quotient cohomology is incompatible with the stated group action (§8.4). Part IV describes the algebraic reference form, whose scale is fixed by the imposed normalization det(g) = 65/32 (main R2), and the status of Joyce's perturbation theorem for this setting: its smallness constant depends on geometric bounds that are not established here, and the existence of a compact torsion-free metric is open (main §9). Numerical (PINN) experiments are reported as such. All algebraic results are formally verified in Lean 4 (including `JoyceKarigiannisConstruction.lean`, introduced at core v3.4.14 and since migrated to the authors' archive; see §8.4).
 
 ---
 
@@ -452,18 +452,18 @@ The twisted connected sum (TCS) construction provides the primary method for con
 
 **Definition**: A complete Riemannian 7-manifold (M, g) with G₂ holonomy is asymptotically cylindrical (ACyl) if there exists a compact subset K ⊂ M such that M \ K is diffeomorphic to (T₀, ∞) × N for some compact 6-manifold N.
 
-### 8.3 Topological Classification
+### 8.3 Topological Status of (21, 77)
 
-The K₇ framework works with a compact 7-manifold K₇ with Betti numbers (b₂, b₃) = (21, 77), realised at the topological level by the Joyce–Karigiannis route (§8.4). The Newton–Kantorovich certificate of [A] concerns the neck (seam) metric; it does not certify the Betti numbers, and no global torsion-free G₂ structure has been constructed (main §9). The classification of this topological type within known construction methods remains open.
+K₇ is posited with (b₂, b₃) = (21, 77) (main R1). **No construction of a compact G₂ manifold with these Betti numbers is currently known.** The Newton–Kantorovich certificate of [A] concerns the neck (seam) metric; it does not certify the Betti numbers, and no global torsion-free G₂ structure has been constructed (main §9).
 
-**Topological status (TCS-specific).** The pair (b₂, b₃) = (21, 77) does not appear among the catalogued TCS-constructed compact G₂ manifolds. Orthogonal TCS is excluded by parity (b₂+b₃=98 is even; CHNP Lemma 6.7). A building block scan (2026-04-14) shows that b₂=21 > 20=max ρ(K3) forces at least one semi-Fano (non-Fano) building block, and all generic K3 lattice embeddings are excluded by the parity theorem. Non-orthogonal TCS and extra-twisted connected sums remain open paths within TCS itself. **The JK orbifold route, however, is constructive (§8.4) and realizes (21, 77) outside TCS via T³ × K3 / Z₂³ resolution.**
-
-**CHNP 2015 range.** The CHNP 2015 explicit tabulation covered building blocks with ρ ≤ 9, giving b₂ ≤ 18. Reaching b₂=21 within TCS would require at least one semi-Fano block with ρ ≥ 20 (Shioda-Inose), outside the CHNP tabulated range. The Mori-Mukai classification allows semi-Fano threefolds with ρ up to ~20; a TCS construction with such high-ρ blocks has not been explicitly carried out and is superseded for our purposes by the JK route below.
+**Catalogued constructions.** The pair does not appear among the catalogued compact G₂ manifolds (Joyce's orbifold constructions; the twisted connected sums of Corti–Haskins–Nordström–Pacini). Orthogonal TCS is excluded by parity (b₂ + b₃ = 98 is even; CHNP Lemma 6.7). A building-block scan (2026-04-14) shows that b₂ = 21 > 20 = max ρ(K3) forces at least one semi-Fano building block, and all generic K3 lattice embeddings are excluded by the parity theorem. The CHNP 2015 tabulation covered building blocks with ρ ≤ 9 (b₂ ≤ 18); a TCS construction with semi-Fano blocks of high Picard rank has not been carried out. Non-orthogonal TCS and extra-twisted connected sums remain open within TCS.
 
 **Lattice-theoretic analysis.** The K3 lattice Λ_{K3} = U³ ⊕ E₈(-1)² admits an
 orthogonal decomposition N₁ ⊕ N₂ ⊕ ⟨2⟩ with rk(N₁) = 11, rk(N₂) = 10, satisfying
 the proposed Nikulin embedding conditions (coprime discriminants, signature, discriminant form
 matching). This is consistent with a TCS construction but does not constitute a proof; the Nikulin embedding is conjectured, and full verification requires an explicit construction of the matching data.
+
+The Joyce–Karigiannis route proposed in version 3.5 as a realization of (21, 77) does not currently realize it (§8.4).
 
 **Global properties assumed, not established**:
 - Compact 7-manifold (no boundary)
@@ -471,133 +471,62 @@ matching). This is consistent with a TCS construction but does not constitute a 
 - If a torsion-free G₂ structure g* exists on K₇, then Hol(g*) = G₂ [Joyce, Prop. 11.2.3] and Ric(g*) = 0. Its existence is open (main §9; v3.5 erratum, §7.5).
 - Euler characteristic: χ(K₇) = 0
 
-**Combinatorial connections**:
-- b₂ = 21 = C(7,2) = edges in complete graph K₇
-- b₃ = 77 = C(7,3) + 2 × b₂ = 35 + 42
+**Arithmetic.** b₂ = 21 = C(7,2) and b₃ = 77 = C(7,3) + 2b₂ = 35 + 42 are arithmetic facts about the posited integers; they define no geometric decomposition (§9.3).
 
-**Status**: The Betti numbers (b₂, b₃) = (21, 77) come from the topological route (§8.4). The spectral analysis ([B]) finds 21 + 77 near-zero eigenvalues, consistent with these Betti numbers; this is a consistency check, not a certificate. Within the TCS catalogue, the pair (21, 77) does not appear. Outside TCS, the JK Z₂³ orbifold route (§8.4) realizes (21, 77) at the topological/lattice level. An explicit closed-form positive G₂-structure ansatz at the neck level, with determinant constraint, hyperkähler rotation, and five-layer Picard-Lefschetz Wirtinger certificate, is established in [D]. No certified bound on the Ricci-flat Kähler metric of the K3 fibre is claimed: the closed-form bound Var(log R) ≤ 1309/10⁷ stated in v3.5 concerns an auxiliary contraction, not the Calabi–Yau residual (v3.5 erratum, §1; main §8.5). A complete *smooth analytic* construction (explicit polynomial Z₂³ realization on a Picard-rank-1, η²=8 K3, plus JK 2017 analytic gluing) remains open.
+### 8.4 The Joyce–Karigiannis ℤ₂³ Route: Proposed, Not Currently a Realization
 
-### 8.4 Joyce-Karigiannis Z₂³ Construction, realizes (b₂, b₃) = (21, 77)
+The Joyce–Karigiannis framework [43] resolves orbifolds (T³ × K3)/G, with G ⊂ Aut(T³) × Aut(K3) acting with A₁-type singularities, by gluing families of Eguchi–Hanson spaces, and yields compact torsion-free G₂ manifolds. For a resolution of this type the Betti numbers are
 
-The Joyce-Karigiannis (JK) framework [43] resolves orbifolds T³ × K3 / G with G ⊂ Aut(T³) × Aut(K3) acting with A₁-type singularities via Eguchi-Hanson gluing, yielding compact torsion-free G₂ manifolds. For G = Z₂³ with a specific mixed-parity action, the resolved 7-manifold N has Betti numbers given by
+$$b_2(N) = b_2\big((T^3 \times K3)/G\big) + b_0(\text{fixed loci}), \qquad b_3(N) = b_3\big((T^3 \times K3)/G\big) + b_1(\text{fixed loci}).$$
 
-$$b_2(N) = b_2(T^3 \times K3 / G) + b_0(\text{fixed loci}), \qquad b_3(N) = b_3(T^3 \times K3 / G) + b_1(\text{fixed loci}).$$
+**What version 3.5 claimed.** For G = ℤ₂³ with a mixed-parity action, a four-phase computer-assisted audit (a symplectic V4 screen on a CI(2,2,2) K3, an anti-symplectic obstruction for P⁵-linear maps, abstract existence of the K3 lattice action via Mukai [44], Garbagnati–Sarti [45] and Nikulin [51], and a fixed-locus table with contributions (b₀, b₁) = (21, 55)) was combined with a quotient cohomology (b₂, b₃) = (0, 22) to give b₂ = 0 + 21 = 21 and b₃ = 22 + 55 = 77, on a K3 of Picard rank 1.
 
-A four-phase computer-assisted audit (`canonical/scripts/jk_*.py`, results in `canonical/results/jk_*.json`, 2026-05-04) closes the count for the framework's signature:
+**Why the claim does not hold.** An audit of 2026-09-16 (Arithmon/K7, `docs/openwave-candidate/K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`, with the standard-library checker `check_k3_jk_quotient_cohomology.py`) shows that the quotient cohomology is incompatible with the stated action:
 
-**Phase 1: V4 symplectic screen on CI(2,2,2).** The diagonal V4 = ⟨s₁, s₂⟩ ⊂ Z₂³ action on the CI(2,2,2) ⊂ ℂP⁵ K3 fiber has 24 raw fixed points, decomposing into **12 V4-orbits → 12 T³ components** of the fixed locus. Generators commute on the V4-invariant 9-dimensional quadric subspace.
+- G acts diagonally on T³ × K3, so the rational cohomology of the quotient is the G-invariant part of the cohomology of T³ × K3. The stated trace of G on H²(K3) gives character multiplicities (5, 5, 2, 2, 2, 2, 2, 2), so dim H²(K3; ℚ)^G = 5.
+- With W = H¹(T³; ℚ) a sum of three characters and H¹(K3) = H³(K3) = 0, the Künneth formula gives b₂((T³ × K3)/G) = 5 + #{i < j : χ_i = χ_j} ≥ 5 and b₃((T³ × K3)/G) ≤ 16. The checker enumerates all 8³ = 512 ordered torus-character triples and confirms both bounds; the product action compatible with the G₂ form gives (b₁, b₂, b₃) = (1, 6, 16).
+- The pair (0, 22) is therefore impossible for this action. Keeping the stated fixed-locus contributions (21, 55) and the same resolution formula would give b₂ ≥ 26 and b₃ ≤ 71, not (21, 77).
+- The stated involution profile also requires a K3 of Picard rank at least 17 (`check_k3_jk_character_gate.py`; `K7_P2_neutrino_JK_character_obstruction.md`), not the Picard-rank-1 K3 on which version 3.5 placed it.
 
-**Phase 2, anti-symplectic obstruction.** For any diagonal τ on CI(2,2,2) ⊂ ℂP⁵ and the canonical quadric net R, the determinant ratio satisfies det(τ) / det(R) ≡ 1, so no diagonal P⁵-linear map is anti-symplectic. The full Z₂³ realization must use *intrinsic K3 lattice automorphisms*, not P⁵-linear actions.
+**Scope.** This invalidates this route as stated. It does not show that every Joyce–Karigiannis construction, or every construction of a compact G₂ manifold with Betti numbers (21, 77), is impossible. The archived Lean module `JoyceKarigiannisConstruction.lean` (master theorem `jk_z23_construction_realizes_gift_betti`) verified the arithmetic of the Betti formula from the erroneous quotient input; it is withdrawn as evidence for the route. Correcting the route would require a fully specified product action, its quotient Betti numbers computed directly, and an independent audit of the singular components and of the resolution formula.
 
-**Phase 2b: K3 lattice abstract existence.** On the K3 lattice Λ = U³ ⊕ E₈(-1)², the Nikulin involution σ₁ = E₈-swap is an order-2 isometry with trace 6 and eigenspaces (14, 8). The coinvariant T_{σ₁} ≅ E₈(-2) has discriminant 2⁸. **Mukai 1988** (V4 = Z₂² ⊂ M₂₃) gives a symplectic K3 action [44]; **Nikulin's classification** of order-two non-symplectic involutions via 2-elementary lattices (invariants (r, a, δ)) [51] contains the triples (r, a, δ) = (11, 7, 1) and (11, 9, 1), with fixed-locus shapes (g, k) = ((22−r−a)/2, (r−a)/2) = (2, 2) and (1, 1) respectively (see also Artebani-Sarti-Taki, arXiv:0903.3481, for the prime-order survey). η² = 8 is representable in each invariant sublattice.
+**The neck.** The NK-certified seam metric of [A] and the closed-form neck ansatz of [D] operate at the neck level of a putative compact extension and do not depend on which global construction, if any, completes it. They are evidence about a neck, not about the existence of K₇.
 
-**Phase 4: Betti formula.** The fixed locus consists of:
-
-| Component | Count | b₀ | b₁ | Source |
-|---|---|---|---|---|
-| T³ | 12 | 12 | 36 | V4-fixed K3 points (Phase 1) |
-| S¹×Σ₂ | 1 | 1 | 5 | τ : (g,k)=(2,2) |
-| S¹×ℂP¹ | 2 | 2 | 2 | τ : k=2 rational curves |
-| S¹×T² | 3 | 3 | 9 | s₁τ, s₂τ, s₁s₂τ : (g,k)=(1,1) |
-| S¹×ℂP¹ | 3 | 3 | 3 | s₁τ, s₂τ, s₁s₂τ : k=1 rational |
-| **Total** | **21** | **21** | **55** | -- |
-
-Combined with the quotient cohomology b₂(T³ × K3 / Z₂³) = 0 and b₃(T³ × K3 / Z₂³) = 22, the JK formula gives
-
-$$b_2(N) = 0 + 21 = 21, \qquad b_3(N) = 22 + 55 = 77, \qquad \chi(N) = 0,$$
-
-matching the framework's topological signature exactly.
-
-**Lean formalization** (introduced at core v3.4.14): the four-phase audit is encoded in `JoyceKarigiannisConstruction.lean` with master theorem `jk_z23_construction_realizes_gift_betti` proving `phase4.b2N = GIFT.Core.b2 ∧ phase4.b3N = GIFT.Core.b3` by `native_decide`. The module introduces 0 axioms and 0 sorry; literature dependencies (Mukai; Nikulin's involution classification) are encoded as Bool flags in a `JKPhase2bLatticeScreen` structure with explicit citation comments. The module was migrated out of the public core release during a later repository audit and is preserved in the authors' archive (available on request); the phase numbering 1, 2, 2b, 4 follows the Lean encoding (2b refines 2; no phase 3).
-
-**Honest scope.** This route certifies the *topological/lattice gate* only:
-- ✓ Betti pair (b₂, b₃) = (21, 77) closed by exact integer arithmetic
-- ✓ K3 surface with required Z₂³ action exists abstractly (Mukai/G-S)
-- ⏳ Explicit polynomial coordinate model on a Picard-rank-1, η² = 8 K3, deferred (existence guaranteed but moduli construction not done here)
-- ⏳ Smooth analytic torsion-free G₂ certificate, deferred to JK 2017 gluing theorem
-
-The full four-phase topological route (lattice screens, explicit (r, a, δ) bookkeeping, and Betti formula closure) follows the Joyce-Karigiannis Z₂³ framework [43]. An explicit closed-form positive G₂-structure ansatz at the neck level, determinant-preserving radial family, hyperkähler rotation, base-coframe absorption, and five-layer Picard-Lefschetz Wirtinger certificate, is established in [D].
-
-**Comparison to TCS within the K₇ framework.** The NK-certified metric ([A]) and the Donaldson analytic note [D] operate at the *neck level* of a putative compact extension and do not depend on whether the global construction is TCS or JK. The JK route provides a constructive existence proof for the topological pair; the NK metric and [D] provide complementary analytic evidence at the neck: the former via Newton-Kantorovich certificate, the latter via explicit closed-form positive G₂-structure ansatz with Wirtinger certificate; together they argue that the framework's signature (b₂, b₃) = (21, 77) is realizable, with the JK route being the leading candidate for the global compact construction.
-
-**Compatibility with intermediate-curvature splitting (Chen-Hong 2026).** Recent work of Chen and Hong [48] establishes a sharp dichotomy for noncompact manifolds with nonnegative m-intermediate curvature admitting a smooth proper degree-nonzero map to M^{n−m} × T^{m−1} × ℝ. For 3 ≤ n ≤ 5 with 1 ≤ m ≤ n−1, or for 6 ≤ n ≤ 7 with m ∈ {1, n−2, n−1}, the manifold is forced to split isometrically as the Riemannian product E × T^{m−1} × ℝ. By contrast, for 6 ≤ n ≤ 7 and 2 ≤ m ≤ n−3, they construct explicit metrics on S^{n−m} × T^{m−1} × ℝ with uniformly positive m-intermediate curvature, showing the algebraic gate m² − mn + m + n > 0 is sharp. The framework's coassociative neck has topology K3 × T² × ℝ (n = 7, m = 3, giving m² − mn + m + n = −2 < 0), placing it within the Chen-Hong "non-rigid" window: metrics on this topology with nonnegative 3-intermediate curvature need not split. The k ≥ 1 Chebyshev corrections that lift the holonomy from SU(2) × U(1) to full G₂ are therefore consistent with the Chen-Hong existence regime, rather than obstructed by a forced splitting.
+**Compatibility with intermediate-curvature splitting (Chen-Hong 2026).** Recent work of Chen and Hong [48] establishes a sharp dichotomy for noncompact manifolds with nonnegative m-intermediate curvature admitting a smooth proper degree-nonzero map to M^{n−m} × T^{m−1} × ℝ. For 3 ≤ n ≤ 5 with 1 ≤ m ≤ n−1, or for 6 ≤ n ≤ 7 with m ∈ {1, n−2, n−1}, the manifold is forced to split isometrically as the Riemannian product E × T^{m−1} × ℝ. By contrast, for 6 ≤ n ≤ 7 and 2 ≤ m ≤ n−3, they construct explicit metrics on S^{n−m} × T^{m−1} × ℝ with uniformly positive m-intermediate curvature, showing the algebraic gate m² − mn + m + n > 0 is sharp. The framework's coassociative neck has topology K3 × T² × ℝ (n = 7, m = 3, giving m² − mn + m + n = −2 < 0), placing it within the Chen-Hong "non-rigid" window: metrics on this topology with nonnegative 3-intermediate curvature need not split. The k ≥ 1 Chebyshev corrections of the seam metric [A] are therefore not obstructed by a forced splitting; this is a compatibility statement about the neck, not a construction of K₇.
 
 ---
 
-## 9. Cohomological Structure
+## 9. Cohomological Structure (Conditional on Existence)
 
-### 9.1 Mayer-Vietoris Analysis
+### 9.1 Betti Spectrum, Poincaré Duality and Euler Characteristic
 
-The Mayer-Vietoris sequence provides the primary tool for computing cohomology:
+If a compact, simply connected K₇ with holonomy G₂ and (b₂, b₃) = (21, 77) exists, Poincaré duality fixes its full Betti spectrum:
 
-$$\cdots \to H^{k-1}(N) \xrightarrow{\delta} H^k(K_7) \xrightarrow{i^*} H^k(M_1) \oplus H^k(M_2) \xrightarrow{j^*} H^k(N) \to \cdots$$
+| k | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|---|
+| b_k(K₇) | 1 | 0 | 21 | 77 | 77 | 21 | 0 | 1 |
 
-### 9.2 Betti Number Derivation
+with b₁ = 0 from simple connectivity, b₂ and b₃ posited (R1), and b₄ to b₇ by duality. The Euler characteristic of any compact oriented odd-dimensional manifold vanishes: χ(K₇) = 0. Lean: `euler_char_K7_is_zero`, `poincare_duality_K7`. The combination H* = b₂ + b₃ + 1 = 99 is used by the dictionary.
 
-**Result for b₂**: b₂(K₇) = 21 is the topological value (§8.4); the NK metric of [A] does not certify it. The spectral analysis of the approximate metric ([B]) finds 21 near-zero eigenvalues of Δ₂ (gap ratio 14,635), consistent with this value; this is a consistency check, not a certificate. A TCS realization would require building blocks with Picard ranks summing to 21, but the specific identification of those blocks is an open problem.
+A Mayer–Vietoris computation of (b₂, b₃) would require a decomposition of K₇, for example the two halves of a twisted connected sum; none is available (§8.3).
 
-**Result for b₃**: b₃(K₇) = 77 is the topological value (§8.4); the NK metric of [A] does not certify it. The harmonic decomposition b₃ = 35 + 42 = (1+7+27) + 2×21 is numerically consistent with the spectrum of the certified metric (gap 10522× between zero and non-zero modes). A splitting b₃ = b₃(M₁) + b₃(M₂) via Mayer-Vietoris is conditional on the building block identification, which remains open.
+### 9.2 Numerical Consistency
 
-**Status**: topological value (JK route, §8.4), numerically consistent with [B]; candidate TCS decomposition is conjectural
+The spectral analysis of the approximate seam metric ([B]) finds 21 near-zero eigenvalues of the Laplacian on 2-forms and 77 on 3-forms, separated from the rest of the spectrum. This is consistent with the posited Betti numbers; it is not a certificate of them, since the metric is approximate and is not a metric on a compact K₇.
 
-### 9.3 Complete Betti Spectrum and Poincaré Duality
-
-For a compact G₂-holonomy 7-manifold K₇, Poincaré duality gives b_k = b_{7-k}:
-
-| k | b_k(K₇) | Derivation |
-|---|---------|------------|
-| 0 | 1 | Connected |
-| 1 | 0 | Simply connected (G₂ holonomy) |
-| 2 | 21 | topological value (JK route, §8.4); spectrally consistent ([B]); building-block decomposition open |
-| 3 | 77 | topological value (JK route, §8.4); numerical decomposition 35 + 42; building-block decomposition open |
-| 4 | 77 | Poincaré duality: b₄ = b₃ |
-| 5 | 21 | Poincaré duality: b₅ = b₂ |
-| 6 | 0 | Poincaré duality: b₆ = b₁ |
-| 7 | 1 | Poincaré duality: b₇ = b₀ |
-
-**Euler characteristic**: For any compact oriented odd-dimensional manifold, χ = 0:
-$$\chi(K_7) = \sum_{k=0}^{7} (-1)^k b_k = 1 - 0 + 21 - 77 + 77 - 21 + 0 - 1 = 0$$
-
-**Status**: **VERIFIED (Lean 4)**: `euler_char_K7_is_zero`, `poincare_duality_K7`
-
-**Effective cohomological dimension**:
-$$H^* = b_2 + b_3 + 1 = 21 + 77 + 1 = 99$$
-
-### 9.4 The Structural Constant 42
+### 9.3 The Integer 42
 
 The number 42 appears in several relations as a combination of framework constants:
 
-$$42 = 2 \times 3 \times 7 = p_2 \times N_{gen} \times \dim(K_7)$$
+| Expression | Value |
+|-----------|-------|
+| p₂ × N_gen × dim(K₇) | 2 × 3 × 7 = 42 |
+| 2 × b₂ | 2 × 21 = 42 |
+| b₃ − C(7,3) | 77 − 35 = 42 |
 
-**Expressions**:
+It is not the Euler characteristic (χ(K₇) = 0). Lean: `structural_42_gift_form`, `structural_42_from_b2`; the Lean name `chi_K7` for 42 is historical and does not denote an Euler characteristic.
 
-| Formula | Value | Interpretation |
-|---------|-------|----------------|
-| p₂ × N_gen × dim(K₇) | 2 × 3 × 7 = 42 | Binary × generations × fiber |
-| 2 × b₂ | 2 × 21 = 42 | Twice the gauge moduli |
-| b₃ - C(7,3) | 77 - 35 = 42 | Global vs local 3-forms |
-
-**Connection to b₃ decomposition**:
-$$b_3 = 77 = C(7,3) + 42 = 35 + 2 \times b_2$$
-
-Reading the 35 as local Λ³(ℝ⁷) forms and the 42 as global modes of a TCS structure is conditional on a TCS realization, which is open (§8.3).
-
-**Status**: **VERIFIED (Lean 4)**: `structural_42_gift_form`, `structural_42_from_b2`
-
-### 9.5 Third Betti Number Decomposition
-
-The b₃ = 77 harmonic 3-forms decompose as:
-
-$$H^3(K_7) = H^3_{\text{local}} \oplus H^3_{\text{global}}$$
-
-| Component | Dimension | Origin |
-|-----------|-----------|--------|
-| H³_local | 35 = C(7,3) | Λ³(ℝ⁷) fiber forms |
-| H³_global | 42 = 2 × 21 | TCS global modes (conditional) |
-
-**Verification**: 35 + 42 = 77
-
-**Status**: numerical decomposition, consistent with the spectrum of the approximate metric; the TCS reading is conditional
+**Withdrawn: a "local ⊕ global" splitting of H³.** Earlier versions wrote H³(K₇) = H³_local ⊕ H³_global with dimensions 35 + 42, the 35 identified with Λ³(ℝ⁷). The 35 is the rank of the bundle Λ³T*K₇, a pointwise dimension; it does not provide a 35-dimensional subspace of the global cohomology H³(K₇). The identity 35 + 42 = 77 is arithmetic and does not justify the decomposition.
 
 ---
 
@@ -653,12 +582,17 @@ numerator/denominator can be expressed as combinations of a few integers.
 
 ### 11.1 The Algebraic Reference Form
 
-The algebraic reference form in a local G₂-adapted orthonormal coframe:
+**Scaling law.** A positive 3-form φ determines its metric g_φ through
+$$(\iota_x\varphi)\wedge(\iota_y\varphi)\wedge\varphi = 6\, g_\varphi(x,y)\,\mathrm{vol}_{g_\varphi}.$$
+Under φ ↦ cφ (c > 0) the left side scales by c³, and if g ↦ λg the volume form scales by λ^{7/2}; hence c³ = λ^{9/2}, that is
+$$g_{c\varphi} = c^{2/3}\, g_\varphi, \qquad \det g_{c\varphi} = c^{14/3}\,\det g_\varphi .$$
 
-$$\varphi_{\text{ref}} = c \cdot \varphi_0, \quad c = \left(\frac{65}{32}\right)^{1/14}$$
-$$g_{\text{ref}} = c^2 \cdot I_7 = \left(\frac{65}{32}\right)^{1/7} \cdot I_7$$
+**The reference form.** Fix a coframe (e¹, …, e⁷) and let φ₀ be the standard form in it (§12.1); in that coframe the matrix of g_{φ₀} is I₇. To impose det g = D = 65/32 in this fixed coframe,
+$$\boxed{\varphi_{\text{ref}} = D^{3/14}\,\varphi_0, \qquad g_{\text{ref}} = D^{1/7}\, g_{\varphi_0}, \qquad \det g_{\text{ref}} = D.}$$
 
-**Important clarification**: This representation holds in a local orthonormal frame. The manifold K₇ is curved and compact; "I₇" reflects the frame choice, not global flatness. The reference form φ_ref yields det(g) = 65/32. The NK-certified model provides computational/conditional evidence for a nearby torsion-free G₂ structure within the certified analytic setup of Paper A; this does not by itself close the independent smooth compact construction problem for K₇, whose full building-block / gluing realization remains open.
+**Correction.** Earlier versions wrote φ_ref = c φ₀ with c = D^{1/14} and g_ref = c² I₇, using the law g_{cφ} = c² g_φ. That law is wrong; with the correct law, D^{1/14} φ₀ induces det g = D^{1/3} ≈ 1.26645, not 65/32. The metric written there, D^{1/7} I₇, is the right metric, but it is induced by D^{3/14} φ₀.
+
+**Which metric the coframe is orthonormal for.** The coframe is orthonormal for g_{φ₀}. For g_ref it is not: the matrix of g_ref in it is D^{1/7} I₇. In a coframe orthonormal for g_ref itself, the matrix of g_ref is I₇ and the form reads φ₀ again; the normalization det g = 65/32 is a statement relative to the fixed coframe, not an invariant of the G₂ structure. "I₇" reflects this frame choice, not global flatness. The NK-certified model of [A] is a conditional statement about a seam region; it does not construct a compact K₇ (main §9).
 
 | Property | Value | Status |
 |----------|-------|--------|
@@ -758,10 +692,10 @@ G₂ = Aut(𝕆), dim = 14
 Standard form φ₀ (Harvey-Lawson 1982)
      │
      ▼
-Scaling c = (65/32)^{1/14}    ← framework constraint
+φ_ref = D^{3/14} φ₀, D = 65/32  ← framework constraint (imposed, R2)
      │
      ▼
-Metric g = c² × I₇
+Metric g_ref = D^{1/7} g_{φ₀}    (law g_{cφ} = c^{2/3} g_φ)
      │
      ▼
 det(g) = 65/32               ← exact by imposed normalization, not fitted to experiment (§10.3)
@@ -799,14 +733,11 @@ All other 28 components are exactly 0.
 
 ### 12.3 Metric Derivation
 
-From φ₀, the metric is computed via:
-$$g_{ij} = \frac{1}{6} \sum_{k,l} \varphi_{ikl} \varphi_{jkl}$$
+The metric of a positive 3-form is defined intrinsically by the identity of §11.1. Equivalently, with
+$$B_\varphi(x,y) = \tfrac{1}{6}\,(\iota_x\varphi)\wedge(\iota_y\varphi)\wedge\varphi \in \Lambda^7,$$
+written in the fixed coframe as B_{ij} e^{1…7}, one has g_φ = (det B)^{-1/9} B. For the standard φ₀, B = I₇ and g = I₇, det g = 1; for cφ₀, B = c³ I₇ and g = c^{2/3} I₇, recovering the scaling law.
 
-For standard φ₀: g = I₇ (identity), det(g) = 1.
-
-Scaling φ → c·φ gives g → c²·g, hence det(g) → c¹⁴·det(g).
-
-Setting c¹⁴ = 65/32 yields the framework metric.
+Earlier versions reconstructed the metric as g_ij = (1/6) Σ_{k,l} φ_ikl φ_jkl. That contraction raises indices with a background Euclidean metric, so it is not a general reconstruction of g_φ: it agrees with g_φ only when φ is already standard for that background metric, and for cφ₀ it gives c² I₇ instead of c^{2/3} I₇. This is the source of the error corrected in §11.1. Setting c^{14/3} = 65/32, i.e. c = (65/32)^{3/14}, yields the framework's reference metric.
 
 ### 12.4 Comparison: Fano Plane vs G₂ Form
 
@@ -821,8 +752,8 @@ Both have 7 terms but different index patterns. The Fano plane defines the octon
 
 | Method | Result | Reference |
 |--------|--------|-----------|
-| Algebraic | φ = (65/32)^{1/14} × φ₀ | This section |
-| Lean 4 | `det_g_equals_target : rfl` | AnalyticalMetric.lean |
+| Algebraic | φ_ref = (65/32)^{3/14} φ₀, g_ref = (65/32)^{1/7} g_{φ₀} | §11.1 |
+| Lean 4 | `det_g_equals_target : rfl` (a definitional equality of the rational 65/32 with the target; it does not check the scaling law) | AnalyticalMetric.lean |
 | PINN | Converges to constant form | gift_core/nn/ |
 | Joyce theorem | applies under a smallness hypothesis whose constant is not computed here | [Joyce 2000]; main §9 |
 

@@ -3,6 +3,48 @@
 *Draft branch `v3.6-draft`. Version 3.5 (Zenodo 21296168) remains the published version; the files `k7_framework_3_5_*` are unchanged. Supplement S4 (look-elsewhere null and descriptive diagnostics) is not yet included: it awaits a rerun of the null on the refreshed data. LaTeX and PDF are not yet regenerated.*
 
 
+**Batch 4 (2026-10-22): outside review of the v3.6 draft, geometry.**
+- The Joyce–Karigiannis ℤ₂³ route does not currently realize (21, 77): its
+  quotient cohomology (0, 22) is incompatible with the stated action (the
+  H²(K3) character forces b₂ ≥ 5 and b₃ ≤ 16 for all 512 torus-character
+  triples; the product action gives (1, 6, 16)), and the stated involution
+  profile requires Picard rank ≥ 17, not 1 (audit of 2026-09-16 and its
+  checkers, rerun). S1 §8.3–§8.4 rewritten, main §1.2, §2.3, §9.1 corrected;
+  no construction of a compact G₂ manifold with (21, 77) is claimed.
+- G₂ normalization corrected (S1 §11.1, §11.5, §12.3, §12.5): g_{cφ} =
+  c^{2/3} g_φ, so φ_ref = D^{3/14} φ₀ and g_ref = D^{1/7} g_{φ₀} for
+  D = 65/32 (the earlier c = D^{1/14} induced det g = D^{1/3}); the
+  index-contraction reconstruction of g from φ, which uses a background
+  metric, replaced by the intrinsic formula; the coframe is orthonormal for
+  g_{φ₀}, not for g_ref.
+- S1 §9 restructured: Betti spectrum conditional on existence; the
+  "H³ = local ⊕ global, 35 + 42" splitting withdrawn (35 is a fibre rank, not
+  a subspace of H³); 42 is not an Euler characteristic.
+
+- Comparisons harmonized: all uncertainties at 1σ (PDG summary entries quoted
+  at 90% CL divided by 1.645: m_u/m_d, m_b and the Type II quark masses);
+  m_s/m_d kept as the PDG range 17–22 with no pull; error propagation
+  described as neglecting correlations (an approximation, not a bound);
+  neutrino density stated as neglected in the flatness closure.
+- One vocabulary: pull (descriptive), tension (2σ–3σ), proximity (beyond
+  3σ, excluded as an exact equality), rejection only under the rules of
+  §11. The single score "25 of 33 within 2σ" replaced by a six-class
+  breakdown generated from the dataset: 24 within 2σ, 2 tensions (m_τ/m_e,
+  m_W/m_Z), 4 proximities, 1 inside the PDG range, 1 non-Gaussian (θ₂₃),
+  1 scheme assignment (m_b/m_t).
+- CKM overdetermination declared (R12): sin θ₂₃ = Aλ², and 7/31, 83/99,
+  1/24 are 2.6% apart as exact equalities. The count "26 independent
+  quantities" withdrawn: three overdetermined sectors are identified, and
+  a complete dependency audit has not been done.
+
+- Decision rule (§11) rewritten for point values (author's decision): a
+  relation stated as exact is rejected when a measurement's 3σ interval
+  excludes its value (general rule G); D1 tests 197° itself, not the band
+  [182°, 212°] (a point value and a band are different hypotheses); D2
+  applies in either octant; D3 rejects each lepton relation separately.
+- §8: the formalization "verifies the arithmetic identities it states"; it
+  does not establish internal consistency of the relations taken together.
+
 **Batch 3 (2026-10-22): leptons, no primary relation.**
 - R8 and §6.1: none of the four lepton relations is declared primary; a
   selection made after the values are known is a dictionary choice, not a

@@ -17,7 +17,7 @@ Earlier versions described the dataset as "95 observables derived from a single 
 | III | 21 | Outputs of mechanisms on the approximate seam metric (Wilson-line splitting, associative volumes, spectral counts, bundle conditioning), with calibration choices; and the withdrawn supersymmetric running | no |
 | IV | 22 | Structural quantities and numerical diagnostics, with no experimental counterpart | no |
 
-**Type I.** Each relation is a ratio of structural integers or uses one further operation (√, φ, ln 2, ζ values), declared in its status. The status vocabulary is that of main §4.1: *integer*, *algebraic / φ / ln 2 / ζ values*, *det(g)* (R2), *κ_T* (R3), *proximity*, *tension*, *approximate* (R8, R11), *unit assignment* (R6), *scheme assignment* (R7).
+**Type I.** Each relation is a ratio of structural integers or uses one further operation (√, φ, ln 2, ζ values), declared in its status. The status vocabulary is that of main §4.1: *integer*, *algebraic / φ / ln 2 / ζ values*, *det(g)* (R2), *κ_T* (R3), *proximity*, *tension*, *approximate* (R8, R11, R12), *inside the PDG range*, *unit assignment* (R6), *scheme assignment* (R7).
 
 **Type II.** Several entries are numbers read in MeV or GeV, for example m_u = √(dim G₂/3) = 2.16, m_d = ln 107 = 4.673, m_c = (dim G₂ − π)³ = 1280, m_t = 415². Reading a structural number in a unit is an assignment of the same kind as reading 197 in degrees, with a far larger space of alternatives (R10). The CKM magnitudes and the mass cascades (m_c/m_d, m_b/m_d, m_t/m_c) are products of Type I relations and add no information beyond them. Earlier versions described all nineteen as "a Type I ratio times an experimental anchor"; that description did not match the dataset and is withdrawn.
 
@@ -38,11 +38,13 @@ The comparison data were refreshed on 2026-10-22 to the most recent releases (`c
 | Planck 2018 [3] | cosmology | base ΛCDM, TT,TE,EE+lowE+lensing; one column for all entries |
 | CODATA 2022 [50] | α at q² = 0, m_μ/m_e | n/a |
 
-**Derived reference values.** Mass ratios are computed from the published masses, density ratios from the published densities, with independent error propagation. This is an upper bound on the uncertainty, since the summary tables do not publish covariances. Ω_Λ/Ω_m and Ω_m/Ω_Λ use flatness (Ω_Λ = 1 − Ω_m). λ_H is the tree-level m_H²/(2v²) with v = (√2 G_F)^(−1/2), a definition that is itself a scheme choice. m_s/m_d is given by the PDG as the range 17–22, not as a measurement; the table uses its centre and half-width.
+**Derived reference values.** Mass ratios are computed from the published masses, density ratios from the published densities, with error propagation that neglects correlations. This is an approximation, not a bound: the summary tables do not publish the covariances, and for a ratio R = x/y the term −2 Cov(x, y)/(xy) in Var(R)/R² can have either sign. Ω_Λ/Ω_m and Ω_m/Ω_Λ use flatness (Ω_Λ = 1 − Ω_m), neglecting the neutrino density (Ω_ν h² ≈ 0.0006 in the Planck base model; Planck's Ω_m includes it). λ_H is the tree-level m_H²/(2v²) with v = (√2 G_F)^(−1/2), a definition that is itself a scheme choice. m_s/m_d is given by the PDG as the range 17–22, without an uncertainty; it is stored as a range, and no pull is defined (the relation's value 20 lies inside it).
+
+**Confidence levels.** All uncertainties are brought to 1σ. The PDG summary tables quote the light-quark masses, m_c, m_b and m_u/m_d at 90% confidence; these are divided by 1.645. The lattice average of m_c/m_s (PDG quark-mass review, statistical and systematic errors in quadrature) is already a 1σ value.
 
 **Asymmetric uncertainties.** NuFIT and the CKM parameter A have asymmetric errors; both sides are kept in the dataset, and the pull uses the side facing the framework's value. The sin²θ₂₃ profile is not Gaussian: its 3σ range (0.435–0.582) contains 6/11 although the Gaussian pull exceeds 4σ (main §4.3).
 
-**Corrections made in the refresh.** The previous dataset gave m_μ/m_τ and m_τ/m_e with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q_Koide from the PDG 2022 τ mass while m_τ/m_e used the later one; gave m_b/m_t an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data, 25 of the 33 relations lie within 2σ (28 before).
+**Corrections made in the refresh.** The previous dataset gave m_μ/m_τ and m_τ/m_e with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q_Koide from the PDG 2022 τ mass while m_τ/m_e used the later one; gave m_b/m_t an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data and one convention for all uncertainties, the 33 relations fall into the six classes of main §4.2: 24 within 2σ, 2 in tension, 4 proximities beyond 3σ, 1 inside the PDG range, 1 with a non-Gaussian profile, 1 scheme assignment. (The earlier count, 28 within 2σ, rested on the uncertainties listed above.)
 
 **Not refreshed.** Y_p (0.245 ± 0.003, observational helium abundance) was not re-verified; the Type II CKM magnitudes and mass cascades keep their earlier reference values, since they are not compared in the main text.
 
@@ -66,34 +68,34 @@ Formulas, framework values and deviations are in main §4.1. This table gives, f
 | A03 | λ_H | 0.12914(23) | PDG 2026 | −1.3σ | tree level m_H²/(2v²), v = (√2 G_F)^(−1/2) = 246.220 GeV | algebraic; det(g) |
 | A04 | α⁻¹(0) | 137.035999177(21) | CODATA 2022 | ≫ 10σ | α⁻¹ at q² = 0 | det(g), κ_T; **proximity** |
 | A05 | Q_Koide | 0.6666645(51) | PDG 2026 | +0.4σ | computed from the PDG 2026 masses | integer; approximate (R8) |
-| A06 | m_τ/m_e | 3477.37(18) | PDG 2026 | −2.1σ | from the PDG 2026 masses | integer; approximate (R8); **proximity** |
+| A06 | m_τ/m_e | 3477.37(18) | PDG 2026 | −2.1σ | from the PDG 2026 masses | integer; approximate (R8); **tension** |
 | A07 | m_μ/m_e | 206.7682827(46) | CODATA 2022 | ≫ 10σ | n/a | φ; approximate (R8); **proximity** |
-| A08 | m_s/m_d | 19.5(25) | PDG 2026 | +0.2σ | PDG gives the range 17–22, not a measurement: centre and half-width | integer |
+| A08 | m_s/m_d | 17–22 (range) | PDG 2026 | n/a | PDG gives the range 17–22, not a measurement with an uncertainty | integer; inside the PDG range |
 | A09 | m_c/m_s | 11.769(35) | PDG 2026 | −1.6σ | lattice average (N_f = 2+1+1), PDG quark-mass review | integer |
-| A10 | m_b/m_t | 0.024253(51) | PDG 2026 | −8.6σ | mixed schemes: m_b in MS-bar at m_b over the directly measured m_t | integer; **scheme assignment** (R7) |
-| A11 | m_u/m_d | 0.462(20) | PDG 2026 | +0.4σ | MS-bar at 2 GeV | integer |
+| A10 | m_b/m_t | 0.024253(43) | PDG 2026 | −10.2σ | m_b at 90% CL converted to 1σ | integer; **scheme assignment** (R7) |
+| A11 | m_u/m_d | 0.462(12) | PDG 2026 | +0.7σ | MS-bar at 2 GeV | integer |
 | A12 | sin²θ₁₂ (PMNS) | 0.3088(+67/−66) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.2σ | n/a | integer |
 | A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.582, contains 6/11 | integer; **tension** (octant; inside the NuFIT 3σ range, §4.3) |
 | A14 | sin²θ₁₃ (PMNS) | 0.02248(+55/−59) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.5σ | n/a | integer |
 | A15 | δ_CP | 212 (+26/−36)° | NuFIT 6.1 (IC24+SK-atm, NO) | −0.4σ | degrees | **unit assignment** (R6) |
-| A16 | sin θ₁₂ (CKM) | 0.22517(68) | PDG 2026 | +0.9σ | PDG CKM review: sin θ₁₂ = λ (not squared) | integer |
-| A17 | A (Wolfenstein) | 0.826(+17/−15) | PDG 2026 | +0.7σ | PDG CKM review, Wolfenstein fit | integer |
-| A18 | sin θ₂₃ (CKM) | 0.04189(+81/−69) | PDG 2026 | −0.3σ | PDG CKM review: sin θ₂₃ = Aλ² (not squared) | integer |
+| A16 | sin θ₁₂ (CKM) | 0.22517(68) | PDG 2026 | +0.9σ | PDG CKM review: sin θ₁₂ = λ (not squared) | integer; approximate (R12) |
+| A17 | A (Wolfenstein) | 0.826(+17/−15) | PDG 2026 | +0.7σ | PDG CKM review, Wolfenstein fit | integer; approximate (R12) |
+| A18 | sin θ₂₃ (CKM) | 0.04189(+81/−69) | PDG 2026 | −0.3σ | PDG CKM review: sin θ₂₃ = Aλ² (not squared) | integer; approximate (R12) |
 | A19 | m_H/m_t | 0.7250(13) | PDG 2026 | +1.8σ | m_t from direct measurements | integer |
 | A20 | m_H/m_W | 1.5571(14) | PDG 2026 | +0.5σ | n/a | integer |
-| A21 | m_W/m_Z | 0.88136(15) | PDG 2026 | −2.7σ | W/Z mass ratio of the PDG summary table | integer; **proximity** |
+| A21 | m_W/m_Z | 0.88136(15) | PDG 2026 | −2.7σ | W/Z mass ratio of the PDG summary table | integer; **tension** |
 | A22 | m_μ/m_τ | 0.0594612(30) | PDG 2026 | +20.8σ | from the PDG 2026 masses | integer; approximate (R8); **proximity** |
 | A23 | Ω_DE | 0.6847(73) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.2σ | Ω_Λ | ln 2; approximate (R11) |
 | A24 | n_s | 0.9649(42) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | n/a | ζ values |
 | A25 | Ω_DM/Ω_b | 5.364(65) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.2σ | Ω_c h² / Ω_b h² | integer; approximate (R11) |
 | A26 | Ω_c/Ω_Λ | 0.3863(84) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.1σ | Ω_c = Ω_c h² / h² | integer; det(g); approximate (R11) |
-| A27 | Ω_Λ/Ω_m | 2.172(73) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | flatness: Ω_Λ = 1 − Ω_m | integer; approximate (R11) |
+| A27 | Ω_Λ/Ω_m | 2.172(73) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | flatness: Ω_Λ = 1 − Ω_m, neutrinos neglected | integer; approximate (R11) |
 | A28 | h | 0.6736(54) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | n/a | integer |
 | A29 | Ω_b/Ω_m | 0.1564(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | Ω_b h² / Ω_m h² | integer; det(g); approximate (R11) |
 | A30 | Ω_c/Ω_m | 0.839(11) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.4σ | Ω_c h² / Ω_m h² | integer; det(g); approximate (R11) |
 | A31 | σ₈ | 0.8111(60) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.3σ | n/a | integer; det(g) |
 | A32 | Y_p | 0.245(3) | Planck 2018 | +0.3σ | n/a | integer; κ_T |
-| A33 | Ω_m/Ω_Λ | 0.460(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | flatness: Ω_Λ = 1 − Ω_m | integer; κ_T; approximate (R11) |
+| A33 | Ω_m/Ω_Λ | 0.460(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | flatness: Ω_Λ = 1 − Ω_m, neutrinos neglected | integer; κ_T; approximate (R11) |
 <!-- END S3-TYPE-I -->
 
 \* Non-Gaussian profile (S3.3).
@@ -177,16 +179,55 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 
 ## S3.7 Lean cross-references
 
-The Lean formalization (Arithmon/K7-Lean, main §8) certifies arithmetic: the algebraic identities among the declared integers behind the 33 relations, and interval statements about computed numbers for some Type III and IV entries. A certified entry is one whose stated arithmetic holds; certification says nothing about the physical identification or the choice of formula.
+The Lean formalization (Arithmon/K7-Lean, main §8) verifies arithmetic identities. A verified identity says that a closed form evaluates to a number; it says nothing about the physical identification, the choice of formula, or the consistency of relations taken together. The table gives, for each of the 33 relations, the Lean declaration that ties the closed form to its value, and the scope of that proof. It is generated from `canonical/results/k7_v3_6_lean_map.json`, a reading of the sources (not a fresh build).
 
-| Type | Entries with a Lean theorem | Total |
-|------|-----------------------------|-------|
-| I | 33 | 33 |
-| II | 0 | 19 |
-| III | 14 | 21 |
-| IV | 8 | 22 |
+<!-- BEGIN S3-LEAN -->
+Arithmon/K7-Lean at commit `70dc589`.
 
-The formalization rests on fourteen axioms beyond Mathlib: four that import results from the literature (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`) and ten interval certificates that import numerical enclosures (v3.5 erratum, §7.1); no `sorry` is used. The theorem attached to each entry is listed in the dataset (field `lean_theorem`).
+| ID | Observable | Lean declaration (under `GIFT.`) | Location | Scope |
+|----|-----------|-----------------------------------|----------|-------|
+| A01 | sin²θ_W | `Observables.WeakMixingAngle.sin2_theta_W_primary` | Observables/WeakMixingAngle.lean:25 | exact equality with the formula |
+| A02 | α_s(M_Z) | `Relations.GaugeSector.alpha_s_denom_from_topology` | Relations/GaugeSector.lean:48 | components only; Lean name differs (see text) |
+| A03 | λ_H | `Relations.lambda_H_num_certified` | Relations.lean:59 | components only |
+| A04 | α⁻¹(0) | `Relations.GaugeSector.alpha_inv_complete_certified` | Relations/GaugeSector.lean:121 | components only; Lean name differs (see text) |
+| A05 | Q_Koide | `Relations.OverDetermination.Q_koide_G2_b2` | Relations/OverDetermination.lean:54 | exact equality with the formula |
+| A06 | m_τ/m_e | `Relations.LeptonSector.m_tau_m_e_from_topology` | Relations/LeptonSector.lean:42 | exact equality with the formula |
+| A07 | m_μ/m_e | `Foundations.GoldenRatioPowers.jordan_power_phi_bounds` | Foundations/GoldenRatioPowers.lean:275 | interval bounds |
+| A08 | m_s/m_d | `Relations.QuarkSector.m_s_m_d_from_topology` | Relations/QuarkSector.lean:17 | exact equality with the formula |
+| A09 | m_c/m_s | `Observables.QuarkMasses.m_c_over_m_s_primary` | Observables/QuarkMasses.lean:36 | exact equality with the formula |
+| A10 | m_b/m_t | `Relations.OverDetermination.mb_mt_2b2` | Relations/OverDetermination.lean:244 | exact equality with the formula; Lean name differs (see text) |
+| A11 | m_u/m_d | `Observables.QuarkMasses.m_u_over_m_d_primary` | Observables/QuarkMasses.lean:64 | exact equality with the formula |
+| A12 | sin²θ₁₂ᴾᴹᴺˢ | `Observables.PMNS.sin2_theta12_primary` | Observables/PMNS.lean:24 | exact equality with the formula |
+| A13 | sin²θ₂₃ᴾᴹᴺˢ | `Observables.PMNS.sin2_theta23_primary` | Observables/PMNS.lean:35 | exact equality with the formula |
+| A14 | sin²θ₁₃ᴾᴹᴺˢ | `Observables.PMNS.sin2_theta13_primary` | Observables/PMNS.lean:52 | exact equality with the formula |
+| A15 | δ_CP | `Relations.NeutrinoSector.delta_CP_gift_v2` | Relations/NeutrinoSector.lean:125 | exact equality with the formula |
+| A16 | sin θ₁₂ᶜᴷᴹ | `Observables.CKM.sin2_theta12_CKM_primary` | Observables/CKM.lean:37 | exact equality with the formula; Lean name differs (see text) |
+| A17 | A_Wolf | `Observables.CKM.A_Wolf_primary` | Observables/CKM.lean:88 | exact equality with the formula |
+| A18 | sin θ₂₃ᶜᴷᴹ | `Observables.CKM.sin2_theta23_CKM_primary` | Observables/CKM.lean:123 | exact equality with the formula; Lean name differs (see text) |
+| A19 | m_H/m_t | `Observables.BosonMasses.m_H_over_m_t_expr2` | Observables/BosonMasses.lean:41 | exact equality with the formula; Lean name differs (see text) |
+| A20 | m_H/m_W | `Observables.BosonMasses.m_H_over_m_W_primary` | Observables/BosonMasses.lean:24 | exact equality with the formula |
+| A21 | m_W/m_Z | `Observables.BosonMasses.m_W_over_m_Z_primary` | Observables/BosonMasses.lean:81 | exact equality with the formula |
+| A22 | m_μ/m_τ | n/a | n/a | no statement |
+| A23 | Ω_DE | `Relations.Cosmology.Omega_DE_fraction_certified` | Relations/Cosmology.lean:55 | components only; Lean name differs (see text) |
+| A24 | n_s | `Relations.Cosmology.n_s_indices_certified` | Relations/Cosmology.lean:30 | components only |
+| A25 | Ω_DM/Ω_b | `Observables.Cosmology.Omega_DM_b_primary` | Observables/Cosmology.lean:28 | exact equality with the formula; Lean name differs (see text) |
+| A26 | Ω_c/Ω_Λ | `Observables.Cosmology.Omega_c_Lambda_primary` | Observables/Cosmology.lean:39 | exact equality with the formula |
+| A27 | Ω_Λ/Ω_m | `Observables.Cosmology.Omega_Lambda_m_primary` | Observables/Cosmology.lean:50 | exact equality with the formula |
+| A28 | h | `Observables.Cosmology.hubble_h_primary` | Observables/Cosmology.lean:61 | exact equality with the formula |
+| A29 | Ω_b/Ω_m | `Observables.Cosmology.Omega_b_m_primary` | Observables/Cosmology.lean:72 | exact equality with the formula |
+| A30 | Ω_c/Ω_m | n/a | n/a | no statement |
+| A31 | σ_8 | `Observables.Cosmology.sigma_8_primary` | Observables/Cosmology.lean:83 | exact equality with the formula; Lean name differs (see text) |
+| A32 | Y_p | `Observables.Cosmology.Y_p_primary` | Observables/Cosmology.lean:94 | exact equality with the formula |
+| A33 | Ω_m/Ω_Λ | n/a | n/a | no statement |
+<!-- END S3-LEAN -->
+
+**Scope counts.** 24 relations have an exact equality between the closed form and its value; 5 have only their components certified (α_s, λ_H, α⁻¹, Ω_DE, n_s: the integers entering the formula, not the irrational value); 1 has interval bounds (27^φ ∈ (206, 209), wider than the deviation it is compared with); 3 have no statement (m_μ/m_τ, Ω_c/Ω_m, Ω_m/Ω_Λ). No Lean statement involves ζ, √2/12, √17/32 or ln 2 · 98/99 as values.
+
+**What earlier versions cited.** Earlier versions cited the single theorem `observables_certified` (`Certificate/Predictions.lean`) as certifying the relations. That theorem is a conjunction of 22 statements of the form `X = v` where `X` is defined as the literal `v`; each holds by definition, and the link to the closed form sits in the separate `*_primary` theorems listed above. It is not cited as a certificate in version 3.6.
+
+**Names and withdrawn content in the Lean sources.** The declarations for A16 and A18 are named `sin2_theta12_CKM` and `sin2_theta23_CKM`, though the quantities compared are sin θ (S2.4). The constant 42 = 2b₂ is named `chi_K7`, though χ(K₇) = 0 (S1 §9.3). The repository also contains statements that the paper does not use or has withdrawn: the δ_CP correction 197 × 62/69 = 12214/69 (S2.8), still a conjunct of the aggregated certificate; and identities giving other values for the same observables (sin²θ₂₃ = 4/7 and sin²θ₁₂ = 7/23 in `Relations/OverDetermination.lean` and `Relations/NeutrinoSector.lean`), further instances of the vocabulary freedom of S2.7. A statement also proves that the Koide parameter built from the framework's own m_μ/m_e = 27^φ and m_τ/m_e = 3477 lies strictly below 2/3 (`Relations/KoideAssembly.lean`), the incompatibility of main §6.1.
+
+**Axioms.** The formalization rests on fourteen axioms beyond Mathlib: four that import results from the literature (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`) and ten interval certificates that import numerical enclosures (v3.5 erratum, §7.1); no `sorry` is used.
 
 ---
 

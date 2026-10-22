@@ -21,64 +21,85 @@
 
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Lean 4](https://img.shields.io/badge/Formally_Verified-Lean_4-blue)](https://github.com/Arithmon/K7-Lean)
+[![Lean 4](https://img.shields.io/badge/Lean_4-arithmetic_verified-blue)](https://github.com/Arithmon/K7-Lean)
 
-Part of the **[Arithmon program](https://github.com/arithmon)** -- the hypothesis that the constants of nature are counts.
+Part of the **[Arithmon program](https://github.com/arithmon)**.
 
-**What if physics isn't fine-tuned, just well-shaped?**
+> **Branch `v3.6-draft`.** This README describes version 3.6 of the framework paper, in preparation. The published version is 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)), read together with its [erratum](publications/ERRATUM_v3.5.md).
 
-K₇ derives Standard Model parameters from the geometry of a single 7-dimensional manifold. No free parameters. No fitting. Every prediction is a consequence of shape: E₈×E₈ gauge theory compactified on a G₂-holonomy manifold K₇ with Betti numbers (b₂, b₃) = (21, 77).
+**A declared correspondence, stated with its dictionary, its residue and a decision rule.**
 
----
-
-## Current Analytic Scope
-
-The compact `K_7` torsion-free existence theorem is an active analytic target,
-not a completed theorem in this repository. Current status is tracked in
-[docs/analytic_status.md](docs/analytic_status.md):
-
-- Level E remains conditional on the anisotropic perturbation theorem `(J)` and
-  compact datum/topology wrappers.
-- Level Q has a Stage E coefficient package certified at the datum D0, which
-  is not realisable as posed (v3.5 erratum, §2).
-- Level CF, a finite closed-form compact metric, remains a separate open
-  programme.
-
-Older public notes about Joyce or Donaldson should be read through that status
-ledger.
-
----
-
-## Start Here
+The K₇ framework assigns 33 dimensionless Standard-Model and cosmological parameters to closed forms in the invariants of a G₂-holonomy seven-manifold K₇ with Betti numbers (b₂, b₃) = (21, 77), together with E₈×E₈. Version 3.6 presents this as a correspondence, not a derivation: no geometric map is known that sends the invariants to the observables, and no rule fixes which formula is assigned to which observable. What the paper does is make the correspondence auditable.
 
 | | |
-|:---:|:---:|
-| [**Watch** (8 min)](https://www.youtube.com/watch?v=6DVck30Q6XM) | [**Read the blog**](https://arithmon.substack.com/) |
-| [**K₇ for Everyone**](docs/GIFT_FOR_EVERYONE.md) | [**FAQ**](docs/FAQ.md) |
+|---|---|
+| **What is proposed** | 33 relations with no continuously adjustable parameter, written in twenty declared structural constants (main §3) |
+| **What is set, not derived** | the residue register R1–R12: the Betti pair, the imposed normalization det(g) = 65/32, κ_T⁻¹ = 61, the unit in which 197 is read as a CP phase, comparison scales and mass schemes, the formula assignments, and the choice among incompatible relations in three overdetermined sectors (main §3.3) |
+| **What is established** | the arithmetic identities stated for the relations, machine-checked in Lean 4 (exact for 24 of the 33; see S3.7); a Newton–Kantorovich-certified seam metric ([A]) |
+| **What is open** | a compact torsion-free G₂ manifold with (21, 77): **no construction is currently known**, and the Joyce–Karigiannis route of v3.5 does not realize the pair ([erratum](publications/ERRATUM_v3.5.md) §9); a physical mechanism to the chiral Standard Model; the selection of (21, 77); an assignment rule |
+| **What would refute it** | the decision rule of main §11, written in advance with no repair clause |
 
 ---
 
-## Blog
+## The 33 relations against current data
 
-All posts on [arithmon.substack.com](https://arithmon.substack.com/).
+Data: PDG 2026, NuFIT 6.1 (normal ordering, with atmospheric data), Planck 2018 (one column), CODATA 2022; all uncertainties at 1σ, correlations neglected. The relations fall into six classes, which are not added into one score (main §4.2):
+
+| Class | Count | Relations |
+|-------|:-----:|-----------|
+| within 2σ | 24 | |
+| tension (between 2σ and 3σ) | 2 | m_τ/m_e, m_W/m_Z |
+| proximity (beyond 3σ, excluded as an exact equality) | 4 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ |
+| inside the PDG range (no uncertainty given) | 1 | m_s/m_d |
+| non-Gaussian profile, octant unresolved | 1 | sin²θ₂₃ = 6/11 |
+| depends on the mass scheme | 1 | m_b/m_t |
+
+**They are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. None is selected after the fact.
+
+**Closeness is not distinctive.** In a preregistered look-elsewhere test, every competing Betti pair and most invented vocabularies, searching for their own formulas in the same grammar and budget, reach as many targets as K₇. The figures published on 2026-10-17 used the earlier dataset; the test is being rerun on the refreshed data, and the coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
 
 ---
 
-## For Specific Audiences
+## Decision rule (main §11)
 
-| Background | Start Here |
-|------------|------------|
-| Everyone | [K₇ for Everyone](docs/GIFT_FOR_EVERYONE.md) -- Complete guide with everyday analogies |
-| Overview | [Executive Summary](docs/GIFT_EXEC_SUMMARY.md) -- Mid-length technical narrative for curious physics readers |
-| Physicist | [Info Geo for Physicists](docs/INFO_GEO_FOR_PHYSICISTS.md) -- Topological approach to SM parameters |
-| Geometer | [GiftPy for Geometers](docs/GIFTPY_FOR_GEOMETERS.md) -- G₂ metric construction pipeline |
-| Formalization | [Lean for Physics](docs/LEAN_FOR_PHYSICS.md) -- Machine-verified physical relations |
+The relations are stated as exact equalities; a relation is rejected when a measurement's 3σ interval excludes its value. No theoretical tolerance is added afterwards.
+
+| # | Relation | Value | Rejected when |
+|---|----------|-------|---------------|
+| D1 | δ_CP, the phase 2π · 197/360 | 197° | a 3σ interval (DUNE, Hyper-Kamiokande, or a global fit) excludes 197°; the unit assignment is rejected with it |
+| D2 | sin²θ₂₃ | 6/11 | a 3σ interval excludes 6/11, in either octant |
+| D3 | m_τ/m_e and Q_Koide | 1776.74 and 1776.97 MeV for m_τ | an m_τ measurement excludes the value at 3σ, for each relation separately |
+| D4 | N_gen | 3 | a fourth sequential generation |
+| D5 | m_s/m_d | 20 | a lattice determination with an uncertainty excludes 20 at 3σ |
+
+A rejection rejects the relation and the dictionary assignment that produced it; it does not by itself reject the programme. A confirmation would show that an assignment agrees with the world, not that the structure requires it.
+
+---
+
+## What version 3.6 withdraws
+
+That the relations are derived from the geometry; "no free parameters, no fitting" as a description of the formula choice; "95 observables" (now 33 relations and 62 conditional or diagnostic entries); a primary lepton relation; the survival of m_H/m_W and Koide in the Sieve; the coincidence probabilities and the P-value of earlier versions; δ_CP as a "pure geometry" prediction read in degrees without saying so; the index-theorem reading of N_gen = 3; the Joyce–Karigiannis realization of (21, 77); the "Joyce threshold, 224× margin"; and the δ_CP compactification factor 62/69 kept as a contingency plan.
 
 ---
 
 ## Papers
 
-### Framework v3.5 (published: PDF, TeX, and markdown -- Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
+### Framework v3.6 (draft, this branch)
+
+| Document | Markdown |
+|----------|----------|
+| Main paper | [k7_framework_3_6_main.md](publications/papers/markdown/k7_framework_3_6_main.md) |
+| S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.md](publications/papers/markdown/k7_framework_3_6_S1_foundations.md) |
+| S2: The 33 relations (arithmetic, dictionary choices, status) | [k7_framework_3_6_S2_derivations.md](publications/papers/markdown/k7_framework_3_6_S2_derivations.md) |
+| S3: Observable dataset | [k7_framework_3_6_S3_observables.md](publications/papers/markdown/k7_framework_3_6_S3_observables.md) |
+| S4: Look-elsewhere test and descriptive diagnostics | in preparation |
+| Changes from v3.5 | [k7_framework_3_6_CHANGELOG.md](publications/papers/markdown/k7_framework_3_6_CHANGELOG.md) |
+
+PDF and LaTeX will be generated at release.
+
+### Framework v3.5 (published: PDF, TeX and markdown, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
+
+Read with the [erratum](publications/ERRATUM_v3.5.md) (sections 1–11).
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
@@ -90,138 +111,32 @@ All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 
 > LaTeX sources: [`publications/papers/tex/`](publications/papers/tex/). Archives: [`legacy/v3.4/`](publications/papers/legacy/v3.4/), [`legacy/v3.3/`](publications/papers/legacy/v3.3/).
 
-### Companion Papers (peer-reviewable, published on Zenodo)
+### Companion papers (published on Zenodo)
 
 | Paper | Description | DOI |
 |-------|-------------|-----|
-| [A: Certified G₂ Structure (PDF)](publications/papers/pdf/g2_certified_neck.pdf) | First computer-assisted existence proof for a metric with special holonomy (TCS neck model) | [10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350) |
-| [B: Spectral Geometry (PDF)](publications/papers/pdf/g2_spectral.pdf) | Laplacian spectrum, harmonic forms, λ₁ = 6π²/475 | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
+| [A: Certified G₂ Structure (PDF)](publications/papers/pdf/g2_certified_neck.pdf) | Newton–Kantorovich certificate for a nearby torsion-free metric on a seam region; it does not construct a compact K₇ | [10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350) |
+| [B: Spectral Geometry (PDF)](publications/papers/pdf/g2_spectral.pdf) | Laplacian spectrum and harmonic forms of the approximate seam metric | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
 | [C: Newton-Kantorovich on K3 (PDF)](publications/papers/pdf/K3_NK_Certificate.pdf) | NK diagnostics on a Donaldson K3 metric (CI(2,2,2)) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
 | [D: Donaldson Analytic Note (PDF)](publications/papers/pdf/donaldson_analytic.pdf) | Explicit closed-form G₂ ansatz on a K3-coassociative neck with 5-layer Wirtinger certificate | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
-| [E: Rank-1 Branched Adiabatic (PDF)](publications/papers/pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for the neck; the datum-level instantiation at D₀ is no longer realisable as posed ([erratum](publications/ERRATUM_v3.5.md), section 2) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
+| [E: Rank-1 Branched Adiabatic (PDF)](publications/papers/pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for the neck; the datum-level instantiation at D₀ is not realisable as posed ([erratum](publications/ERRATUM_v3.5.md), section 2) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
 
 ---
 
-## At a Glance
+## Current analytic scope
+
+The compact K₇ torsion-free existence theorem is not a result of this repository. Status is tracked in [docs/analytic_status.md](docs/analytic_status.md). No compact G₂ manifold with (b₂, b₃) = (21, 77) is currently constructed; the existence layers of main §9 presuppose one.
+
+---
+
+## Start here
 
 | | |
-|---|---|
-| **Parameters** | Zero adjustable -- all structurally determined (3 integer primitives: N=3, r₈=8, r₂=2) |
-| **Verified** | 14 Lean 4 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), zero `sorry`, 213 certificate conjuncts, 460+ certified relations ([K7-Lean v3.5](https://github.com/Arithmon/K7-Lean)) |
-| **Parameter-free core** | 33 exact relations among topological integers (Type I) -- each individually correct-or-wrong, none tunable |
-| **Falsifiable** | δ_CP = 197°, N_gen = 3, θ₂₃ upper octant (**in tension**, see the [scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md)) -- tested by DUNE / FCC-ee |
-| **Observables** | 95 total (33 Type I + 19 Type II + 21 Type III + 22 Type IV); 66 with experimental data |
-| **Precision** | 0.99% mean deviation on the 33 Type-I core relations (PDG 2024 / NuFIT 6.1 / Planck 2018) |
-| **Uniqueness** | #1 of 3M+ configurations *with the formulas held fixed* (log₁₀ p_algebraic = −134); **not** privileged when the formula search is re-run per Betti pair ([Program, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md)); see [Statistical Uniqueness](#statistical-uniqueness) |
+|:---:|:---:|
+| [**Watch** (8 min)](https://www.youtube.com/watch?v=6DVck30Q6XM) | [**Read the blog**](https://arithmon.substack.com/) |
+| [**K₇ for Everyone**](docs/GIFT_FOR_EVERYONE.md) | [**FAQ**](docs/FAQ.md) |
 
-**Dimensional reduction:** E₈×E₈ (496D) → AdS₄ × K₇ (11D) → Standard Model (4D)
-
----
-
-## Key Results
-
-### Exact Relations (Lean 4 Verified)
-
-| Relation | Value | Topological Origin |
-|----------|:-----:|-------------------|
-| sin²θ_W | 3/13 | b₂/(b₃ + dim(G₂)) |
-| κ_T | 1/61 | 1/(b₃ − dim(G₂) − p₂) |
-| τ | 3472/891 | (496 × 21)/(27 × 99) |
-| det(g) | 65/32 | Metric determinant from G₂ structure |
-| δ_CP | 197° | 7 × dim(G₂) + H* |
-| m_s/m_d | 20 | p₂² × w |
-| Q_Koide | 2/3 | dim(G₂)/b₂ |
-
-### Precision by Sector
-
-| Sector | Predictions | Mean Deviation | Highlight |
-|--------|:-----------:|:--------------:|-----------|
-| Electroweak | 3 | 0.12% | sin²θ_W = 3/13 |
-| Lepton | 3 | 0.04% | Q_Koide = 2/3 (0.0009%) |
-| Quark | 1 | 0.00% | m_s/m_d = 20 (exact) |
-| Neutrino | 3+1 | 0.25% + δ_CP at 1σ | θ₁₂ = arctan(2/3) |
-| Cosmology | 3 | 0.07% | n_s = ζ(11)/ζ(5) (0.004%) |
-| Structural | 4 | exact | N_gen = 3, τ = 3472/891 |
-
-### Analytical G₂ Metric
-
-| Property | Value | Status |
-|----------|-------|:------:|
-| Associative 3-form | φ = (65/32)^{3/14} × φ₀ (corrected, [erratum](publications/ERRATUM_v3.5.md) §10) | EXACT local `R^7` model |
-| Metric | g = (65/32)^{1/7} × I₇ | EXACT local `R^7` model |
-| Torsion | T = 0 (constant form) | EXACT local `R^7` model |
-| det(g) | 65/32 | EXACT local `R^7` model |
-
-This table is not a compact `K_7` torsion-free metric theorem.
-
----
-
-## Statistical Uniqueness
-
-Two different questions have been asked of the Betti pair (21, 77), and they get different answers.
-
-1. **With the K₇ formulas held fixed**, does any other configuration fit the data better? No: (21, 77) ranks #1 among 3,070,396 configurations (v3.3 exhaustive scan, tables below).
-2. **If every Betti pair gets its own formula search**, under the same grammar and budget, is (21, 77) special? No. In a blind sweep over 242,064 pairs (b₂, b₃ ∈ [0, 491]), with the alphabet held constant and only the Betti values changing, (21, 77) falls **below the median** on every discriminating axis: about 64% of pairs strictly beat it ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18, Sieve methodology).
-
-The first result says that the frozen formulas single out (21, 77) among the configurations scanned; the second says that the pair is not arithmetically privileged at fitting the Standard Model once formulas are allowed to adapt. Neither is a selection principle. The topological rarity of (21, 77) as a G₂ manifold (Q-A in the same document) is a separate question.
-
-### Exhaustive Search (formulas held fixed)
-
-| Metric | Value |
-|--------|-------|
-| Configurations tested | 3,000,000+ |
-| **K₇ rank** | **#1** |
-| Mean deviation | 0.99% on the 33 Type-I core relations (NuFIT 6.1) |
-| Better alternatives found | 0 |
-
-### Top 5 Configurations (v3.3.24 leave-one-out scan, preserved for traceability)
-
-| Rank | b₂ | b₃ | Deviation |
-|:----:|:--:|:--:|:---------:|
-| **1** | **21** | **77** | **0.24%** |
-| 2 | 21 | 76 | 0.50% |
-| 3 | 21 | 78 | 0.50% |
-| 4 | 21 | 79 | 0.79% |
-| 5 | 21 | 75 | 0.81% |
-
-### Statistical Significance
-
-| Test | Result |
-|------|--------|
-| Null model p-value | < 2×10⁻⁵ (σ > 4.2), three independent null families |
-| Westfall-Young maxT | 11/33 individually significant (global p = 0.008) |
-| Pre-registered test split | p = 6.7×10⁻⁵ (σ = 4.0) |
-| Bayes factor | 304–4,738 across four priors (all decisive) |
-| Exhaustive search | 0/3,070,396 configs better |
-
-Details: [Statistical Evidence](publications/references/STATISTICAL_EVIDENCE.md)
-
----
-
-## Falsification Tests
-
-| Prediction | Experiment | Timeline | Falsification Criterion |
-|------------|------------|----------|------------------------|
-| δ_CP = 197° | DUNE | 2028-2040 | Outside [182°, 212°] at 3σ |
-| θ₂₃ upper octant (49.25°) | DUNE, Hyper-Kamiokande | early to mid 2030s | Lower octant established at 3σ |
-| sin²θ_W = 3/13 | FCC-ee | 2040s | Outside [0.2295, 0.2320] |
-| m_s/m_d = 20 | Lattice QCD | 2030 | Converges outside [19, 21] |
-| N_gen = 3 | LHC | Ongoing | Fourth generation discovery |
-
-**Standing verdicts.** θ₂₃ is currently **in tension**: the NuFIT 6.1 best fit sits at
-43.3°, in the lower octant, and the octant is unresolved, having flipped between
-consecutive global fits. δ_CP returned to within about 1σ after the same release
-without the prediction being touched: the prediction did not move, the data did.
-Every verdict is recorded, favourable or not, in the program
-[scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
-
----
-
-## Limitations
-
-The framework contains **no continuous adjustable parameters** fitted to data. However, it makes **discrete structural choices**: E₈×E₈ as gauge group, K₇ with (b₂=21, b₃=77), TCS building blocks. These are mathematically motivated but constitute model selection. The framework predicts observables *given* these choices: it does not explain *why* nature chose this geometry.
-
-With the formulas held fixed, (b₂=21, b₃=77) is the unique optimum among 3,070,396 tested configurations. When the formula search is re-run for each Betti pair, (21, 77) is not privileged: it falls below the median ([Program, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md)). The choice of (21, 77) is therefore not explained by fit quality; see [Statistical Uniqueness](#statistical-uniqueness).
+The guides under `docs/` were written for earlier versions and will be revised for v3.6; where they differ from the paper, the paper and the erratum hold.
 
 ---
 
@@ -288,6 +203,8 @@ records what a neighbouring work claims and where it differs, in both directions
   version = {3.5}
 }
 ```
+
+Cite the published version (3.5) until 3.6 is deposited.
 
 See [CITATION.md](CITATION.md) for additional formats.
 
