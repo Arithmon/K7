@@ -59,7 +59,7 @@ On peut préparer deux particules ensemble, puis les séparer, les envoyer aux d
 
 Einstein détestait ça. Il a appelé ça, avec mépris, une "action fantôme à distance", et il était convaincu que ça révélait que la mécanique quantique était incomplète, qu'il devait exister des informations cachées, inscrites dans les particules dès le départ, qui détermineraient les résultats à l'avance. Comme deux gants séparés dans deux boîtes : ouvrir une boîte et trouver le gant gauche te dit instantanément que l'autre boîte contient le droit, mais il n'y a là aucune magie, juste une information qui était fixée depuis le début.
 
-On a vu dans l'épisode 0, avec Pudge et le théorème de Bell ([à relire ici](#) si besoin), comment cette dispute a été tranchée. John Bell a trouvé un test expérimental capable de distinguer deux hypothèses : soit les résultats étaient déterminés localement à l'avance, par des variables cachées inscrites dans les particules avant leur séparation, soit la nature viole cette image locale-réaliste. Les expériences ont tranché, et elles ont tranché contre l'explication locale à variables cachées. Il n'y a pas de gants cachés dans les boîtes. La corrélation est réelle, et elle n'est pas portée par quelque chose qui voyage de A vers B comme un message.
+On a vu dans l'épisode 0, avec Pudge et le théorème de Bell ([à relire ici](Blog-Pudge-Quantum-Mechanics.fr.html) si besoin), comment cette dispute a été tranchée. John Bell a trouvé un test expérimental capable de distinguer deux hypothèses : soit les résultats étaient déterminés localement à l'avance, par des variables cachées inscrites dans les particules avant leur séparation, soit la nature viole cette image locale-réaliste. Les expériences ont tranché, et elles ont tranché contre l'explication locale à variables cachées. Il n'y a pas de gants cachés dans les boîtes. La corrélation est réelle, et elle n'est pas portée par quelque chose qui voyage de A vers B comme un message.
 
 Un point important pour ne pas se tromper sur ce que la mesure fait. Quand tu mesures la première particule, tu ne *modifies pas à distance* l'état de la seconde, comme si un effet bondissait de l'une à l'autre. Ce qui se passe est plus subtil et plus radical : la paire, avant toute mesure, ne possède pas en propre des valeurs séparées qui n'attendraient qu'à être lues. Elle possède une *corrélation*, qui n'appartient ni à l'une ni à l'autre mais à la paire. Et cette corrélation se manifeste des deux côtés à la fois, simultanément, dès que l'une est mesurée. Il ne se passe rien de plus de l'autre côté qu'un constat différé, quand on compare les relevés.
 
@@ -115,12 +115,20 @@ Si tu as suivi jusqu'ici, tu as gagné trois intuitions que la plupart des gens 
 
 La carapace bleue n'est pas de l'intrication. Mais elle t'a appris à penser des propriétés non-locales sans avoir peur, et ça, c'est la moitié du chemin.
 
-Dans les épisodes qui viennent, on verra comment cette non-localité se combine avec la mesure (épisode 0) et la non-commutativité (épisode 2) pour produire le comportement le plus déroutant de toute la physique. Pour l'instant, retiens juste ça : la prochaine fois que tu entends ce sifflement monter derrière toi, tu n'entends pas l'injustice d'un jeu mal équilibré. Tu entends une propriété qui n'est nulle part, sur le point de devenir un événement qui est quelque part.
+Dans les épisodes qui viennent, on verra comment cette non-localité se combine avec la mesure ([épisode 0](Blog-Pudge-Quantum-Mechanics.fr.html)) et la non-commutativité ([épisode 2](Blog-Tetris-Order-Is-Everything.fr.html)) pour produire le comportement le plus déroutant de toute la physique. Pour l'instant, retiens juste ça : la prochaine fois que tu entends ce sifflement monter derrière toi, tu n'entends pas l'injustice d'un jeu mal équilibré. Tu entends une propriété qui n'est nulle part, sur le point de devenir un événement qui est quelque part.
 
 Einstein a détesté cette idée toute sa vie. Toi, tu la subis depuis l'enfance, une carapace à la fois.
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
+*◀ Précédent : [Épisode 2 : Le jour où Tetris t'a appris que l'ordre fait tout](Blog-Tetris-Order-Is-Everything.fr.html) · Suivant : [Épisode 4 : Le jour où Minecraft t'a appris à dessiner une sphère qui n'en est pas une](Blog-Minecraft-Discrete-Sphere.fr.html) ▶*
+
+*L'intrication revient, sous forme de lore, à la fin de la série : les Nemesis Stones, fragments anti-corrélés de la Mad Moon, dans l'[épisode 10](Blog-Artifact-Cosmology.fr.html).*
+
+*Mis à jour le 22 octobre 2026 : lien vers l'épisode 0 réparé ; navigation ajoutée ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
 
 🌀

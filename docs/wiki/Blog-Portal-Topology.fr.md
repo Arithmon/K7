@@ -65,7 +65,7 @@ Les cosmologistes et les physiciens théoriciens qui prennent au sérieux la que
 
 **Deux.** La *relativité générale* d'Einstein permet, en principe, l'existence de **trous de ver** : des connexions topologiques entre deux régions éloignées de l'espace-temps, où le tissu de l'espace-temps se plie et se raccorde à lui-même. Mathématiquement, un trou de ver est possible dans les équations. Physiquement, personne n'en a jamais observé, et les conditions énergétiques nécessaires pour en stabiliser un exigent des formes de matière (dites "exotiques") qu'on n'a jamais rencontrées. Les portails de Portal sont, en un certain sens, des trous de ver domestiqués.
 
-**Trois.** La **gravité quantique** (on en avait parlé avec Minecraft, sous l'angle discrétisation) considère souvent que la topologie de l'espace-temps elle-même pourrait *fluctuer* à très petite échelle. À l'échelle de Planck, on ne parlerait plus d'un espace lisse mais d'une *mousse spatio-temporelle* où des micro-trous-de-ver apparaîtraient et disparaîtraient en permanence. C'est spéculatif, personne ne sait vraiment, mais l'idée est prise au sérieux dans plusieurs programmes de recherche.
+**Trois.** La **gravité quantique** (on en avait parlé avec [Minecraft](Blog-Minecraft-Discrete-Sphere.fr.html), sous l'angle discrétisation) considère souvent que la topologie de l'espace-temps elle-même pourrait *fluctuer* à très petite échelle. À l'échelle de Planck, on ne parlerait plus d'un espace lisse mais d'une *mousse spatio-temporelle* où des micro-trous-de-ver apparaîtraient et disparaîtraient en permanence. C'est spéculatif, personne ne sait vraiment, mais l'idée est prise au sérieux dans plusieurs programmes de recherche.
 
 Donc Portal te donne *l'intuition* qu'un espace peut avoir une topologie non-triviale. C'est déjà énorme. Mais les portails du jeu sont des *identifications ponctuelles pré-programmées par les développeurs*. La topologie réelle de l'univers, si elle est non-triviale, est *une propriété intrinsèque* du tissu de l'espace-temps, pas quelque chose qu'un être conscient a bricolé avec un pistolet. C'est la même différence structurel/contingent qu'on a notée pour les autres épisodes.
 
@@ -93,7 +93,7 @@ Si tu as suivi jusqu'ici, tu as compris trois choses que la plupart des gens n'o
 
 **Trois.** Les lois physiques de conservation (énergie, impulsion, moment angulaire) ne dépendent pas de la topologie de l'espace où elles s'appliquent. Portal te le montre en respectant scrupuleusement la conservation de la vitesse à travers les portails, ce qui rend certains puzzles solvables uniquement par cette conservation. C'est une propriété profonde des lois physiques : *elles sont plus fondamentales que la topologie qui les héberge*.
 
-Dans le prochain épisode, on va boucler la série d'une manière particulière. On reviendra à Dota, avec un long *deep dive* sur Artifact et l'univers cosmologique de Valve, pour tirer tous les fils qu'on a posés au fil des épisodes précédents. Faux vide cosmologique, brisure spontanée de symétrie, invariants topologiques, multivers d'Everett : tout cela nous attend, condensé dans un jeu de cartes que peu de gens ont pris au sérieux à sa sortie.
+Dans le prochain épisode, on va boucler la série d'une manière particulière. On reviendra à [Dota](Blog-Artifact-Cosmology.fr.html), avec un long *deep dive* sur Artifact et l'univers cosmologique de Valve, pour tirer tous les fils qu'on a posés au fil des épisodes précédents. Faux vide cosmologique, brisure spontanée de symétrie, invariants topologiques, multivers d'Everett : tout cela nous attend, condensé dans un jeu de cartes que peu de gens ont pris au sérieux à sa sortie.
 
 Pour l'instant, retiens juste ça : la prochaine fois que tu tires un portail bleu sur un mur d'Aperture Science, tu ne joues pas seulement à un puzzle. Tu réactives une des questions les plus profondes de la physique moderne : *quelle est vraiment la forme de l'espace ?*
 
@@ -101,6 +101,14 @@ Poincaré a fait des surfaces. Toi tu as fait des portails. Le geste profond est
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi.*
+*◀ Précédent : [Épisode 8 : Le jour où Counter-Strike t'a appris que tout savoir, c'est tout révéler](Blog-Counter-Strike-Observer-Symmetry.fr.html) · Suivant : [Épisode 10 : Le jour où Dota t'a appris que tu vivais dans une cosmologie](Blog-Artifact-Cosmology.fr.html) ▶*
+
+*Si les trous qu'on ne peut pas résorber t'ont accroché : c'est exactement le genre de « compte » dont parle ce blog. [Et si l'univers était un set Lego reçu en vrac ?](Blog-Lego-Set-Universe.fr.html) explique pourquoi, et [Orientation, pas ontologie](Blog-Orientation-Not-Ontology.fr.html) dit ce qui survit quand on déforme une forme.*
+
+*Mis à jour le 22 octobre 2026 : navigation et renvois ajoutés ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi.*
 
 🌀

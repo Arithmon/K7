@@ -21,7 +21,7 @@ Tu as deux options simples.
 
 Tu n'as pas d'option neutre. Tu n'as pas de troisième touche magique qui te ferait *à la fois rapide et silencieux*. Le jeu te force à choisir entre **être performant en vitesse** et **être performant en discrétion**. Chaque coup gagné quelque part est un coup donné ailleurs.
 
-Tu viens de toucher quelque chose que les physiciens ont compris au début du XXe siècle et qui s'appelle l'**incertitude** au sens fort du terme. Pas l'incertitude au sens de "je ne sais pas". L'incertitude au sens structurel : *tu ne peux pas savoir certaines choses simultanément sans payer dans une autre*. Tu l'as déjà rencontrée dans l'épisode Tetris, avec la balançoire de Heisenberg. Counter-Strike te la fait vivre sous une forme différente, encore plus brutale, parce qu'ici c'est *toi qui es la grandeur mesurée*.
+Tu viens de toucher quelque chose que les physiciens ont compris au début du XXe siècle et qui s'appelle l'**incertitude** au sens fort du terme. Pas l'incertitude au sens de "je ne sais pas". L'incertitude au sens structurel : *tu ne peux pas savoir certaines choses simultanément sans payer dans une autre*. Tu l'as déjà rencontrée dans l'[épisode Tetris](Blog-Tetris-Order-Is-Everything.fr.html), avec la balançoire de Heisenberg. Counter-Strike te la fait vivre sous une forme différente, encore plus brutale, parce qu'ici c'est *toi qui es la grandeur mesurée*.
 
 C'est l'épisode où on parle de ça.
 
@@ -59,7 +59,7 @@ Mais voilà le truc : **à ce même moment-là, *l'autre te voit aussi***.
 
 Cette propriété est largement vraie de la géométrie de Counter-Strike : la ligne de vue est symétrique. Sauf cas particuliers (peeker's advantage où celui qui peek a un avantage de fraction de seconde, smokes, flashes qui asymétrisent l'information), tu ne peux pas voir sans être vu. Tu ne peux pas observer sans être observé. Tu ne peux pas mesurer ta position relative à l'ennemi sans que la mesure soit, dans la même seconde, accessible à l'ennemi.
 
-Cette propriété donne une image tactique très parlante de ce qui structure la mécanique quantique de la mesure, et qu'on a abordée dans l'épisode 0 avec Pudge. Mais là où Pudge te montrait l'effet sur le système observé (la décohérence d'une superposition), CS te montre la chose en miroir : *l'effet sur l'observateur lui-même*. Quand tu mesures, tu te révèles. Tu n'es pas extérieur au système, tu es un de ses éléments. Tout acte de mesure est un acte d'auto-exposition.
+Cette propriété donne une image tactique très parlante de ce qui structure la mécanique quantique de la mesure, et qu'on a abordée dans l'[épisode 0](Blog-Pudge-Quantum-Mechanics.fr.html) avec Pudge. Mais là où Pudge te montrait l'effet sur le système observé (la décohérence d'une superposition), CS te montre la chose en miroir : *l'effet sur l'observateur lui-même*. Quand tu mesures, tu te révèles. Tu n'es pas extérieur au système, tu es un de ses éléments. Tout acte de mesure est un acte d'auto-exposition.
 
 Les physiciens appellent ça, dans le contexte quantique, la **back-action de la mesure**. Quand tu mesures un système quantique avec un appareil, l'appareil entre en interaction avec le système et donc l'appareil aussi change d'état. L'asymétrie observateur/observé qu'on supposait classique (l'observateur regarde, l'observé est regardé, et c'est tout) ne tient plus à l'échelle quantique. Tout est, dans un certain sens, simultanément observateur et observé.
 
@@ -137,6 +137,14 @@ Heisenberg a fait des matrices. Toi tu as fait des peeks. Le geste profond est l
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi.*
+*◀ Précédent : [Épisode 7 : Le jour où Factorio t'a appris pourquoi tu es en vie](Blog-Factorio-Dissipative-Structures.fr.html) · Suivant : [Épisode 9 : Le jour où Portal t'a appris que l'espace peut avoir des trous](Blog-Portal-Topology.fr.html) ▶*
+
+*L'observateur qui modifie ce qu'il observe était déjà le sujet de l'[épisode 0](Blog-Pudge-Quantum-Mechanics.fr.html) ; les matrices derrière l'inégalité de Heisenberg, celui de l'[épisode 2](Blog-Tetris-Order-Is-Everything.fr.html).*
+
+*Mis à jour le 22 octobre 2026 : navigation et renvois ajoutés ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi.*
 
 🌀

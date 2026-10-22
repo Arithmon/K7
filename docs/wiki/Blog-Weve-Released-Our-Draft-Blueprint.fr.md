@@ -105,8 +105,14 @@ La deuxième, c'est que les théories scientifiques ne sont jamais le travail d'
 
 Si tu veux aller plus loin :
 
-- la **notice complète**, dans le détail mathématique, est sur Zenodo (lien dans la page d'accueil du blog),
+- la **notice complète**, dans le détail mathématique, est sur [Zenodo](https://doi.org/10.5281/zenodo.16891489) (toutes les versions, dont la v3.4),
 - les **vérifications informatiques** sont sur [github.com/Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean),
-- les épisodes précédents de ce blog (Pudge et la mécanique quantique, le Lego cosmique, l'algèbre qui a attendu, la géométrie de Roberto Carlos, la notice de Joyce) racontent les morceaux dans le désordre, par petites touches.
+- les épisodes précédents de ce blog ([Pudge et la mécanique quantique](Blog-Pudge-Quantum-Mechanics.fr.html), [le Lego cosmique](Blog-Lego-Set-Universe.fr.html), [l'algèbre qui a attendu](Blog-The-Algebra-That-Waited.fr.html), [la géométrie de Roberto Carlos](Blog-Roberto-Carlos-Geometry.fr.html), [la notice de Joyce](Blog-Joyce-Theorem-in-Lean.fr.html)) racontent les morceaux dans le désordre, par petites touches.
 
 Et comme à la fin de l'épisode Lego : peut-être que nous faisons tous la même chose depuis des siècles. Trier des pièces, comparer des motifs, tester des assemblages, corriger nos erreurs, recommencer.
+
+---
+
+*Ce qui s'est passé après cette annonce : le programme a reçu son nom, Arithmon, en juin ([Le dernier paramètre libre](Blog-The-Last-Free-Parameter.fr.html)), et l'hypothèse a été réénoncée en août ([Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html)), qui remplace les chiffres donnés ici.*
+
+*Mis à jour le 22 octobre 2026 : lien Zenodo et renvois ajoutés. Les chiffres sont ceux de la v3.4 (mai 2026), conservés tels que publiés ; la fenêtre δ_CP citée ici (187° à 207°) a ensuite été fixée à [182°, 212°] à 3σ, voir le billet d'août.*

@@ -159,6 +159,16 @@ Tu n'es pas étranger à cette physique. Tu y vis depuis des années. On va just
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
+*Suivant : [Épisode 1 : Le jour où Newton a perdu le contrôle](Blog-Fall-Guys-Newton-Lost-Control.fr.html) ▶*
+
+*La série complète, de Pudge à Dota, est indexée à la fin de l'[épisode 10](Blog-Artifact-Cosmology.fr.html).*
+
+*Les briques posées ici reviennent chacune : les observables qui ne commutent pas avec Tetris ([épisode 2](Blog-Tetris-Order-Is-Everything.fr.html)), l'observateur qui fait partie du système avec Skyrim ([épisode 5](Blog-Skyrim-Participatory-Observer.fr.html)) et Counter-Strike ([épisode 8](Blog-Counter-Strike-Observer-Symmetry.fr.html)), la décohérence à l'échelle de tout un univers avec Dota ([épisode 10](Blog-Artifact-Cosmology.fr.html)).*
+
+*Mis à jour le 22 octobre 2026 : navigation et index de la série ajoutés ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
 
 🌀

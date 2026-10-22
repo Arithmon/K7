@@ -94,3 +94,15 @@ Peut-être que nous faisons tous la même chose depuis des siècles. Trier des p
 ---
 
 *Brieuc de La Fournière*
+
+---
+
+### Pour aller plus loin
+
+- Comment c'est arrivé : [Brieuc's K₇](Blog-Brieucs-Gift.fr.html).
+- La notice, telle qu'elle était en mai 2026 : [On a publié notre brouillon de notice](Blog-Weve-Released-Our-Draft-Blueprint.fr.html). Telle qu'elle est maintenant, avec le test qui peut la réfuter : [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html).
+- Une pièce entièrement démontée : [Peut-on entendre la forme d'un ballon ?](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html).
+- Pourquoi les comptes survivent et pas les détails locaux, avec Minecraft : [Épisode 4 : Le jour où Minecraft t'a appris à dessiner une sphère qui n'en est pas une](Blog-Minecraft-Discrete-Sphere.fr.html).
+- Le programme : [arithmon.com](https://arithmon.com) · [github.com/Arithmon](https://github.com/Arithmon).
+
+*Mis à jour le 22 octobre 2026 : « pour aller plus loin » ajouté. « G.I.F.T. » dans le texte est le nom du framework à l'époque ; il s'appelle aujourd'hui K₇, framework fondateur du programme Arithmon.*

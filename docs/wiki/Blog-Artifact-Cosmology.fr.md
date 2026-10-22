@@ -230,7 +230,7 @@ Toi tu as joué à Dota. Aristote a fait de la métaphysique. Poincaré a fait d
 
 Merci d'avoir suivi. Merci d'avoir accepté que les jeux vidéo sont des langages sérieux pour dire des choses sérieuses. Merci d'avoir été patient avec les métaphores, rigoureux avec les nuances, curieux avec les questions ouvertes.
 
-Pour ce qui vient après, il y a mon travail de recherche, qui pose exactement cette question-là dans un cadre technique (quels assemblages d'entiers et d'irrationnels redonnent la réalité ?) et qui s'appelle *Arithmon*, du grec *arithmos* : le nombre. Il a sa propre série d'articles. Mais ce n'est pas obligatoire. Ce que tu as gagné dans cette série te reste, même si tu ne lis plus jamais rien sur la physique. Tu sais maintenant que quand tu joues, tu médites. Et que quand tu médites, tu joues.
+Pour ce qui vient après, il y a mon travail de recherche, qui pose exactement cette question-là dans un cadre technique (quels assemblages d'entiers et d'irrationnels redonnent la réalité ?) et qui s'appelle *Arithmon*, du grec *arithmos* : le nombre. Il a sa propre [série d'articles](Blog-Constants-Are-Counts.fr.html). Mais ce n'est pas obligatoire. Ce que tu as gagné dans cette série te reste, même si tu ne lis plus jamais rien sur la physique. Tu sais maintenant que quand tu joues, tu médites. Et que quand tu médites, tu joues.
 
 Zet, quand il retrouve en jeu une autre part de lui-même, a cette réplique : *"Self unites with Radiant self. For now."* Le Soi s'unit au Soi. Pour un moment.
 
@@ -242,6 +242,8 @@ Le geste profond est le même. Il l'a toujours été. Il le restera.
 
 *Fin de la série gaming.*
 
-*Cette série a exploré, jeu après jeu, les concepts fondamentaux de la physique moderne : décohérence (Pudge), chaos classique (Fall Guys), non-commutativité (Tetris), non-localité (Mario Kart), discrétisation (Minecraft), observateur participatif (Skyrim), flèche du temps (Stardew), structures dissipatives (Factorio), symétrie observateur-observé (Counter-Strike), topologie (Portal), et cosmologie complète (Artifact/Dota).*
+*Cette série a exploré, jeu après jeu, les concepts fondamentaux de la physique moderne : décohérence ([Pudge](Blog-Pudge-Quantum-Mechanics.fr.html)), chaos classique ([Fall Guys](Blog-Fall-Guys-Newton-Lost-Control.fr.html)), non-commutativité ([Tetris](Blog-Tetris-Order-Is-Everything.fr.html)), non-localité ([Mario Kart](Blog-Mario-Kart-Blue-Shell.fr.html)), discrétisation ([Minecraft](Blog-Minecraft-Discrete-Sphere.fr.html)), observateur participatif ([Skyrim](Blog-Skyrim-Participatory-Observer.fr.html)), flèche du temps ([Stardew](Blog-Stardew-Arrow-Of-Time.fr.html)), structures dissipatives ([Factorio](Blog-Factorio-Dissipative-Structures.fr.html)), symétrie observateur-observé ([Counter-Strike](Blog-Counter-Strike-Observer-Symmetry.fr.html)), topologie ([Portal](Blog-Portal-Topology.fr.html)), et cosmologie complète (Artifact/Dota).*
 
-*Pour la suite du travail de recherche : arithmon.com*
+*Si tu es venu pour les jeux et veux voir ce qu'ils désignaient : [Et si l'univers était un set Lego reçu en vrac ?](Blog-Lego-Set-Universe.fr.html) est l'entrée la plus douce ; [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html) est l'hypothèse, énoncée sans détour, avec la date à laquelle elle peut mourir. Le programme : [arithmon.com](https://arithmon.com).*
+
+*Mis à jour le 22 octobre 2026 : index de la série : liens vers chaque épisode ajoutés.*

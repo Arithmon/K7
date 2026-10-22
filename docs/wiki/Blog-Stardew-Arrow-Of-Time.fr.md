@@ -67,13 +67,13 @@ C'est la signature même de l'entropie. Détruire est facile parce qu'il y a bea
 
 **La deuxième :** *les saisons macroscopiques sont cycliques, mais leur contenu local est irréversible*. Le printemps revient chaque année, oui. Mais les *plants de navets de ce printemps-ci* ne reviennent pas l'année prochaine. Tu vis dans un système où le cadre se répète (un cycle annuel) tout en imposant que *les événements particuliers à l'intérieur du cycle ne se répètent jamais*. C'est exactement le cas de notre monde : la Terre tourne autour du Soleil, les saisons reviennent, mais aucun jour ne se répète, aucune feuille ne tombe deux fois. Un cadre cyclique n'efface pas la flèche du temps locale.
 
-**La troisième :** *l'ordre que tu maintiens sur ta ferme te coûte de l'énergie en permanence*. Tu dois arroser, récolter, nourrir, réparer. Si tu arrêtes de t’en occuper, rien ne progresse. Les mauvaises herbes gagnent du terrain, les animaux cessent de produire correctement, les cultures ratées encombrent le sol. Ta ferme ne reste pas “en ordre” toute seule. C'est un état que tu *maintiens activement* contre une tendance naturelle à se défaire. Cette intuition est exactement celle que Prigogine a transformée en science : un être vivant, une ville, une ferme, ce sont des *structures dissipatives*, qui maintiennent leur ordre en consommant de l'énergie et en rejetant du désordre autour d'elles. On y reviendra dans un futur épisode, il portera un nom d'usine.
+**La troisième :** *l'ordre que tu maintiens sur ta ferme te coûte de l'énergie en permanence*. Tu dois arroser, récolter, nourrir, réparer. Si tu arrêtes de t’en occuper, rien ne progresse. Les mauvaises herbes gagnent du terrain, les animaux cessent de produire correctement, les cultures ratées encombrent le sol. Ta ferme ne reste pas “en ordre” toute seule. C'est un état que tu *maintiens activement* contre une tendance naturelle à se défaire. Cette intuition est exactement celle que Prigogine a transformée en science : un être vivant, une ville, une ferme, ce sont des *structures dissipatives*, qui maintiennent leur ordre en consommant de l'énergie et en rejetant du désordre autour d'elles. On y reviendra dans un futur épisode, il portera un nom d'usine ([Factorio](Blog-Factorio-Dissipative-Structures.fr.html)).
 
 ---
 
 ## Où Stardew cesse d'être l'image de la physique
 
-Comme on l'a fait pour Tetris, Minecraft et Skyrim, il faut poser la limite honnête de l'analogie. Sinon on bricole une métaphore facile et un physicien lève les yeux au ciel.
+Comme on l'a fait pour [Tetris](Blog-Tetris-Order-Is-Everything.fr.html), [Minecraft](Blog-Minecraft-Discrete-Sphere.fr.html) et [Skyrim](Blog-Skyrim-Participatory-Observer.fr.html), il faut poser la limite honnête de l'analogie. Sinon on bricole une métaphore facile et un physicien lève les yeux au ciel.
 
 Stardew Valley impose la mort de tes cultures par une *règle de jeu*. Le code dit : "à la fin de chaque saison, certaines cultures meurent." C'est un événement scripté, déterministe, programmé par les développeurs. Si tu modifiais le code, tu pourrais faire des navets éternels.
 
@@ -129,6 +129,14 @@ Personne ne sait. Mais toi tu as déjà passé des dizaines d'heures dans une va
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi.*
+*◀ Précédent : [Épisode 5 : Le jour où Bordeciel ne respirait pas sans toi](Blog-Skyrim-Participatory-Observer.fr.html) · Suivant : [Épisode 7 : Le jour où Factorio t'a appris pourquoi tu es en vie](Blog-Factorio-Dissipative-Structures.fr.html) ▶*
+
+*La série complète, de Pudge à Dota, est indexée à la fin de l'[épisode 10](Blog-Artifact-Cosmology.fr.html).*
+
+*Mis à jour le 22 octobre 2026 : navigation ajoutée ; l'épisode « usine » est désormais lié ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi.*
 
 🌀

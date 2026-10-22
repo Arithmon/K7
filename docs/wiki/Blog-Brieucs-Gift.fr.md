@@ -147,3 +147,9 @@ Le roman de science-fiction, d'ailleurs, n'est toujours pas terminé. Mais la ph
 - **Le code** : [github.com/Arithmon/K7](https://github.com/Arithmon/K7)
 - **Le blog** : [arithmon.substack.com](https://arithmon.substack.com)
 - **Le profil Google Scholar** : [scholar.google.com](https://scholar.google.com/citations?user=_oxvuUsAAAAJ&hl=fr&oi=ao)
+
+---
+
+*Où en sont les choses (octobre 2026). Ce texte est le récit d'origine et reste tel qu'écrit ; ses chiffres sont ceux de février 2026. Depuis : un bilan d'un an, [Le sillon](Blog-The-Furrow.fr.html) ; le nom du programme, Arithmon, et celui du framework, K₇ (anciennement GIFT), [Le dernier paramètre libre](Blog-The-Last-Free-Parameter.fr.html) ; et l'hypothèse énoncée en entier, avec le test qui peut la réfuter, [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html). Si vous préférez commencer par un verre de vin ou une boîte de Lego : [Le verre qui chante](Blog-The-Singing-Glass.fr.html), [Et si l'univers était un set Lego reçu en vrac ?](Blog-Lego-Set-Universe.fr.html). Articles : [Zenodo](https://zenodo.org/communities/arithmon/).*
+
+*Mis à jour le 22 octobre 2026 : « où en sont les choses » ajouté. Texte et chiffres inchangés (février 2026).*

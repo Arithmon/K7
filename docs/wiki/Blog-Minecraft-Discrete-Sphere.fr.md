@@ -77,7 +77,7 @@ La première question, c'est : *qu'est-ce qu'on perd quand on simule du continu 
 
 La seconde question, c'est : *et si la nature elle-même était fondamentalement discrète à très petite échelle ?* C'est une question ouverte de physique fondamentale, sans rapport direct avec nos limitations de calcul. L'univers pourrait être lisse jusqu'au bout, et nous serions condamnés à le simuler en grossier. Ou l'univers pourrait être discret, et nos simulations discrètes seraient alors, par hasard, fidèles à sa nature profonde. Les deux questions ne se répondent pas l'une l'autre.
 
-Minecraft, lui, est sans ambiguïté du côté de la première : c'est un outil d'approximation, avec une grille fixe. Et c'est là qu'il faut poser, comme on l'a fait pour Tetris, la limite honnête de l'analogie.
+Minecraft, lui, est sans ambiguïté du côté de la première : c'est un outil d'approximation, avec une grille fixe. Et c'est là qu'il faut poser, comme on l'a fait pour [Tetris](Blog-Tetris-Order-Is-Everything.fr.html), la limite honnête de l'analogie.
 
 ---
 
@@ -121,7 +121,7 @@ Quand tu veux étudier une forme géométrique compliquée qui vit dans un espac
 
 C'est exactement la sphère Minecraft du début de cet épisode. À ceci près qu'au lieu de blocs cubiques alignés sur une grille, tu as des neurones qui interpolent. Et au lieu d'une sphère à trois dimensions, tu as une variété à sept dimensions. Mais le geste profond est le même : tenter de capturer une forme lisse avec des éléments discrets, en raffinant assez pour que les invariants importants survivent à la discrétisation.
 
-C'est un projet que j'appelle K₇, et qui a sa propre série d'articles sur ce blog si la question t'intéresse vraiment. Je n'en parle pas plus ici parce que ce n'est pas le sujet. Le sujet, c'est que cette tension entre le lisse et le grossier, entre l'idéal continu et l'approximation discrète, est *partout* dès qu'on essaie de faire de la science numérique. Et tu y as joué dans Minecraft avant même d'avoir vu une équation.
+C'est un projet que j'appelle K₇, et qui a sa propre [série d'articles](Blog-Brieucs-Gift.fr.html) sur ce blog si la question t'intéresse vraiment. Je n'en parle pas plus ici parce que ce n'est pas le sujet. Le sujet, c'est que cette tension entre le lisse et le grossier, entre l'idéal continu et l'approximation discrète, est *partout* dès qu'on essaie de faire de la science numérique. Et tu y as joué dans Minecraft avant même d'avoir vu une équation.
 
 ---
 
@@ -141,6 +141,14 @@ Personne ne sait. Toi, tu construis pendant qu'on cherche.
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
+*◀ Précédent : [Épisode 3 : Le jour où la carapace bleue a su où tu étais](Blog-Mario-Kart-Blue-Shell.fr.html) · Suivant : [Épisode 5 : Le jour où Bordeciel ne respirait pas sans toi](Blog-Skyrim-Participatory-Observer.fr.html) ▶*
+
+*« Les quantités globales survivent à la discrétisation, les locales non » : c'est tout le pari de ce blog en une phrase. Voir [Et si l'univers était un set Lego reçu en vrac ?](Blog-Lego-Set-Universe.fr.html) et, pour le même point fait avec un ballon et un spectre, [Peut-on entendre la forme d'un ballon ?](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html).*
+
+*Mis à jour le 22 octobre 2026 : navigation et renvois ajoutés ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
 
 🌀

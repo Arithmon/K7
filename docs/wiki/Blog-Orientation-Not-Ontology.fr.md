@@ -111,3 +111,13 @@ Pour le lecteur qui souhaiterait explorer la filiation philosophique mentionnée
 - French, S. (2014). *The Structure of the World: Metaphysics and Representation*. Oxford University Press.
 - Psillos, S. (1999). *Scientific Realism: How Science Tracks Truth*. Routledge.
 - Stanford Encyclopedia of Philosophy, entrée *Structural Realism* (Ladyman, mise à jour régulière), pour un survey accessible.
+
+---
+
+### Sur ce blog
+
+- Les invariants dont il est question ici, énoncés comme hypothèse et avec le test qui peut la réfuter : [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html) (août 2026).
+- Pour une version sans équations de « ce qui survit à la déformation » : [Épisode 9 : Le jour où Portal t'a appris que l'espace peut avoir des trous](Blog-Portal-Topology.fr.html).
+- Dépôts : [github.com/Arithmon](https://github.com/Arithmon) · [Zenodo](https://zenodo.org/communities/arithmon/).
+
+*Mis à jour le 22 octobre 2026 : renvois ajoutés. Texte inchangé.*

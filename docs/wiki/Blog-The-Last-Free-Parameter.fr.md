@@ -53,13 +53,13 @@ Et puis il y a eu la trouvaille que je n'attendais pas. En vérifiant le terrain
 
 > « L'essence éternelle du nombre est la cause la plus providentielle du ciel entier, de la terre et de la région intermédiaire. »
 
-Je ne crois pas aux signes. Mais je crois aux filiations, et celle-là, je la prends, en assumant ce qui vient avec : oui, c'est une intuition pythagoricienne. La différence entre compter et fantasmer, ce sont les 33 relations réfutables, le null model, et le code Lean qui tournent derrière. Le jour où DUNE tranchera, ce ne sera pas Pythagore qu'on interrogera, ce sera la mesure.
+Je ne crois pas aux signes. Mais je crois aux filiations, et celle-là, je la prends, en assumant ce qui vient avec : oui, c'est une intuition pythagoricienne. La différence entre compter et fantasmer, ce sont les [33 relations réfutables](Blog-Constants-Are-Counts.fr.html), le null model, et le code Lean qui tournent derrière. Le jour où DUNE tranchera, ce ne sera pas Pythagore qu'on interrogera, ce sera la mesure.
 
 ## Ce qui change, ce qui ne change pas
 
 Change : le nom, le domaine ([arithmon.com](https://arithmon.com)), cette publication, les profils.
 
-Ne change pas : les mathématiques, les prédictions gelées (δ_CP = 197°, l'octant de θ₂₃, les rapports exacts), le calendrier expérimental, et la méthode. Le sillon continue. Seul le panneau au bord du champ a été repeint.
+Ne change pas : les mathématiques, les prédictions gelées (δ_CP = 197°, l'octant de θ₂₃, les rapports exacts), le calendrier expérimental, et la méthode. Le [sillon](Blog-The-Furrow.fr.html) continue. Seul le panneau au bord du champ a été repeint.
 
 ---
 
@@ -73,4 +73,10 @@ Ne change pas : les mathématiques, les prédictions gelées (δ_CP = 197°, l'o
 
 ---
 
-*GIFT est le framework fondateur du programme Arithmon. Si vous découvrez ce blog, le point de départ est [ici](Blog-Brieucs-Gift.fr.html). Les papiers techniques sont sur [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22de%20La%20Fourni%C3%A8re%2C%20Brieuc%22&l=list&p=1&s=10&sort=bestmatch).*
+*K₇ (anciennement GIFT) est le framework fondateur du programme Arithmon. Si vous découvrez ce blog, le point de départ est [ici](Blog-Brieucs-Gift.fr.html). Les papiers techniques sont sur [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22de%20La%20Fourni%C3%A8re%2C%20Brieuc%22&l=list&p=1&s=10&sort=bestmatch).*
+
+---
+
+*Avant et après : [Le sillon](Blog-The-Furrow.fr.html) (un an après le début, deux semaines avant ce billet), [Le mot qui manque](Blog-No-Word-For-This.fr.html) (sur le nom à donner à ce genre de travail), et [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html) (l'hypothèse sous le nom du programme, énoncée en entier, août 2026).*
+
+*Mis à jour le 22 octobre 2026 : renvois ajoutés ; pied de page aligné sur le nommage actuel (K₇, anciennement GIFT). Texte inchangé.*

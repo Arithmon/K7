@@ -74,3 +74,11 @@ Que l'hypothèse survive ou non relève désormais des mathématiques et de l'ex
 ---
 
 *Si vous découvrez ce blog, le point de départ est [ici](Blog-Brieucs-Gift.fr.html). Les papiers techniques sont sur [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22de%20La%20Fourni%C3%A8re%2C%20Brieuc%22&l=list&p=1&s=10&sort=bestmatch).*
+
+---
+
+*Où se situe ce billet. C'est l'énoncé sec d'une hypothèse annoncée d'abord en langage courant dans [On a publié notre brouillon de notice](Blog-Weve-Released-Our-Draft-Blueprint.fr.html) (mai 2026, v3.4), puis baptisée dans [Le dernier paramètre libre](Blog-The-Last-Free-Parameter.fr.html) (juin 2026) : Arithmon est le nom du programme, K₇ (anciennement GIFT) celui de son framework fondateur. Pour une entrée plus douce : [Et si l'univers était un set Lego reçu en vrac ?](Blog-Lego-Set-Universe.fr.html) et [Le verre qui chante](Blog-The-Singing-Glass.fr.html). Pour savoir comment ça a commencé : [Brieuc's K₇](Blog-Brieucs-Gift.fr.html).*
+
+*Code et preuves : [github.com/Arithmon](https://github.com/Arithmon). Articles : [Zenodo](https://zenodo.org/communities/arithmon/).*
+
+*Mis à jour le 22 octobre 2026 : bloc de contexte et liens ajoutés. Chiffres à la date d'août 2026.*

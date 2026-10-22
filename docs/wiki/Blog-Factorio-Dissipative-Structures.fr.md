@@ -25,7 +25,7 @@ Tu viens de toucher quelque chose que la physique a mis longtemps à théoriser,
 
 ## Le problème que laisse l'entropie
 
-Dans l'épisode précédent, sur Stardew, on a vu la flèche du temps. Le deuxième principe de la thermodynamique dit que l'entropie d'un système isolé tend à augmenter. Le désordre gagne. Les omelettes ne redeviennent pas des œufs. Les navets ne ressuscitent pas. Tout, à la longue, va vers le désordre.
+Dans l'[épisode précédent](Blog-Stardew-Arrow-Of-Time.fr.html), sur Stardew, on a vu la flèche du temps. Le deuxième principe de la thermodynamique dit que l'entropie d'un système isolé tend à augmenter. Le désordre gagne. Les omelettes ne redeviennent pas des œufs. Les navets ne ressuscitent pas. Tout, à la longue, va vers le désordre.
 
 D'accord. Sauf.
 
@@ -124,6 +124,14 @@ Tu n'as pas besoin de grandir sans fin. Mais tu ne tiens qu'aussi longtemps que 
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi.*
+*◀ Précédent : [Épisode 6 : Le jour où Stardew t'a appris pourquoi le temps va dans un seul sens](Blog-Stardew-Arrow-Of-Time.fr.html) · Suivant : [Épisode 8 : Le jour où Counter-Strike t'a appris que tout savoir, c'est tout révéler](Blog-Counter-Strike-Observer-Symmetry.fr.html) ▶*
+
+*Cet épisode est l'autre moitié de celui sur Stardew : là-bas, pourquoi le désordre gagne ; ici, comment l'ordre achète ses exceptions.*
+
+*Mis à jour le 22 octobre 2026 : navigation ajoutée ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi.*
 
 🌀

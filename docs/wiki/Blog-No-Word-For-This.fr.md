@@ -15,7 +15,7 @@ J'ai eu beau chercher, ce que je fais ne rentre dans aucune case. Alors voici le
 
 ---
 
-Trois mots me sont venus, à des moments différents, pour décrire ce que je fais en développant le framework GIFT. Chef d'orchestre. API humaine. *Cristallisateur.* Chacun capture quelque chose. Aucun ne convient quand on regarde de près.
+Trois mots me sont venus, à des moments différents, pour décrire ce que je fais en développant le [framework GIFT](Blog-Weve-Released-Our-Draft-Blueprint.fr.html). Chef d'orchestre. [API humaine](Blog-Brieucs-Gift.fr.html). *Cristallisateur.* Chacun capture quelque chose. Aucun ne convient quand on regarde de près.
 
 **Chef d'orchestre**, c'est flatteur, et c'est faux. Un chef a une partition. Il sait où le morceau va. Il connaît chaque instrument et corrige les fausses notes parce qu'il les *entend*. Moi je n'ai pas de partition. Je n'entends pas toujours les fausses notes : un LLM peut me sortir une dérivation qui *a l'air* propre, et c'est seulement deux jours plus tard, en relisant, que je vois le glissement. Mon vrai travail à ce moment-là n'est pas de diriger. C'est de ne pas me faire avoir.
 
@@ -68,3 +68,9 @@ En attendant je continue à signer mes papiers tout seul, à payer mes abonnemen
 ---
 
 *Les commentaires sont ouverts sur [le post original](https://arithmon.substack.com/p/no-word-for-this). Pour suivre les prochains textes, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
+
+---
+
+*Contexte pour les nouveaux lecteurs : comment ça a commencé est dans [Brieuc's K₇](Blog-Brieucs-Gift.fr.html) (où « API humaine » apparaît pour la première fois) ; le bilan d'un an, écrit une semaine après ce billet, est [Le sillon](Blog-The-Furrow.fr.html) ; et le cadre dont il est question est énoncé dans [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html). La question elle-même reste ouverte.*
+
+*Mis à jour le 22 octobre 2026 : bloc de contexte ajouté. Texte inchangé.*

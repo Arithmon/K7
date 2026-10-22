@@ -68,7 +68,7 @@ C'est l'hypothèse que propose Arithmon, formulée sans une seule équation : pl
 
 Il y a un détail que seuls ceux qui ont vraiment joué au diabolo connaissent. À grande vitesse, un diabolo **chante**. Un sifflement continu, qui monte quand on accélère, qui change si le diabolo est voilé, fêlé, ou d'un autre modèle. Les joueurs expérimentés diagnostiquent leur diabolo à l'oreille, sans le regarder.
 
-En 1966, le mathématicien Mark Kac a posé une question devenue célèbre : « Peut-on entendre la forme d'un tambour ? » Autrement dit : si je vous donne la liste complète des fréquences auxquelles une membrane peut vibrer, pouvez-vous en déduire sa forme ? La réponse complète est subtile (il existe des tambours différents qui sonnent pareil), mais l'idée centrale est solide : le son d'un objet encode énormément de sa géométrie.
+En 1966, le mathématicien Mark Kac a posé une [question devenue célèbre](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html) : « Peut-on entendre la forme d'un tambour ? » Autrement dit : si je vous donne la liste complète des fréquences auxquelles une membrane peut vibrer, pouvez-vous en déduire sa forme ? La réponse complète est subtile (il existe des tambours différents qui sonnent pareil), mais l'idée centrale est solide : le son d'un objet encode énormément de sa géométrie.
 
 Or c'est très exactement ce que nous faisons avec K₇, et je m'en rends compte en écrivant ces lignes : **je ne vois pas cette forme, je l'écoute**. Concrètement, une grande partie du travail consiste à calculer certaines harmoniques de K₇, quelques-uns de ses modes de vibration. Puis à comparer ces harmoniques aux nombres que les physiciens mesurent. J'avais déjà raconté cette idée avec [un verre de Bourgogne](https://arithmon.substack.com/p/the-singing-glass) : la note sort de la forme, sans réglage. Le diabolo ajoute ce que le verre n'avait pas : la note ne sort que si ça tourne.
 
@@ -214,3 +214,9 @@ Si les constantes de la physique sont bien les ombres d'une géométrie plus pro
 Et la vraie énigme n'est peut-être pas de savoir qui tient les baguettes.
 
 C'est de comprendre pourquoi la ficelle ne casse pas.
+
+---
+
+*Sur ce blog. Le diabolo est venu après [Le verre qui chante](Blog-The-Singing-Glass.fr.html) et avant [Peut-on entendre la forme d'un ballon ?](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html), qui pousse l'idée d'écoute jusqu'à sa limite (loi de Weyl, tambours qui sonnent pareil sans être pareils). Le critère de la « note la plus basse » revient dans [Le jumeau étoilé](Blog-The-Star-Twin.fr.html). Les vingt-six cadrans, avec le test qui peut réfuter la lecture qu'en fait ce blog : [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html).*
+
+*Mis à jour le 22 octobre 2026 : bloc « sur ce blog » ajouté. Argument inchangé.*

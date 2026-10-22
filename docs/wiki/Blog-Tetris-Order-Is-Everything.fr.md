@@ -133,7 +133,7 @@ Si tu as suivi jusqu'ici, tu as compris quatre choses qui sont absolument fondam
 
 **Quatre**. La pédagogie classique te présente ces idées comme étrangères et la mécanique quantique comme exotique. Or tu as joué à un jeu qui en exploite la structure pendant des heures sans le savoir. Tu as les intuitions, il manquait juste les noms.
 
-Dans les épisodes qui viennent, on va creuser plus loin. On verra comment cette non-commutativité, combinée avec la mesure (qu'on a vue dans l'épisode 0 avec Pudge), produit l'intrication. Comment elle interagit avec l'aléatoire classique (qu'on a vu dans l'épisode 1 avec Fall Guys). Comment elle structure les particules elles-mêmes.
+Dans les épisodes qui viennent, on va creuser plus loin. On verra comment cette non-commutativité, combinée avec la mesure (qu'on a vue dans l'[épisode 0](Blog-Pudge-Quantum-Mechanics.fr.html) avec Pudge), produit l'intrication. Comment elle interagit avec l'aléatoire classique (qu'on a vu dans l'[épisode 1](Blog-Fall-Guys-Newton-Lost-Control.fr.html) avec Fall Guys). Comment elle structure les particules elles-mêmes.
 
 Pour l'instant, retiens juste ça : à chaque fois que tu fais un T-spin et que tu sens, sans pouvoir l'expliquer, que tu viens d'exploiter une faille dans l'espace géométrique du jeu, tu touches du doigt la même intuition que Heisenberg en 1925, quand il a compris pourquoi position et impulsion ne commutent pas.
 
@@ -141,6 +141,14 @@ Lui en a fait une matrice. Toi tu en as fait un T-spin triple. Le geste profond 
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
+*◀ Précédent : [Épisode 1 : Le jour où Newton a perdu le contrôle](Blog-Fall-Guys-Newton-Lost-Control.fr.html) · Suivant : [Épisode 3 : Le jour où la carapace bleue a su où tu étais](Blog-Mario-Kart-Blue-Shell.fr.html) ▶*
+
+*Ce qui était annoncé ici a eu sa suite : la non-localité, première moitié de l'intrication, c'est l'[épisode 3](Blog-Mario-Kart-Blue-Shell.fr.html) ; les matrices de Heisenberg reviennent dans l'[épisode 8](Blog-Counter-Strike-Observer-Symmetry.fr.html) ; et « comment ça structure les particules » n'est pas un épisode mais tout le reste de ce blog, à commencer par [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html).*
+
+*Mis à jour le 22 octobre 2026 : navigation et liens vers les épisodes annoncés ajoutés ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
 
 🌀

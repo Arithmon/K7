@@ -107,7 +107,7 @@ Si tu as suivi jusqu'ici, tu viens de comprendre quelque chose que même beaucou
 
 Cette découverte change la nature de la question quantique. Avant Fall Guys, tu pouvais croire que l'imprévisibilité quantique était l'exception bizarre dans un univers par ailleurs Newtonien et tranquille. Après Fall Guys, tu sais que l'imprévisibilité est *partout*. Dans les particules subatomiques. Dans le climat. Dans une foule à la sortie d'un stade. Dans 60 jellybeans devant une porte basculante. Ce qui change selon les régimes, c'est *de quelle manière* le système devient imprévisible.
 
-La quantique a sa manière propre, qui rend les choses imprévisibles à très petite échelle pour des raisons spécifiques (interférences, intrication, principe d'incertitude). On y reviendra. Et il faut être précis : le chaos classique et l'indétermination quantique ne sont pas le même type d'imprévisibilité. Le premier est une limite *pratique* : les variables existent, mais aucune mesure finie ne suffit à les capturer. Le second est, dans l'interprétation standard, une indétermination *intrinsèque* : certaines valeurs ne peuvent pas être considérées comme déjà fixées avant la mesure. C'est ce que Bell a montré dans l'épisode précédent : pour un certain type de mesure quantique, aucune valeur préexistante ne peut rendre compte des corrélations observées.
+La quantique a sa manière propre, qui rend les choses imprévisibles à très petite échelle pour des raisons spécifiques (interférences, intrication, principe d'incertitude). On y reviendra. Et il faut être précis : le chaos classique et l'indétermination quantique ne sont pas le même type d'imprévisibilité. Le premier est une limite *pratique* : les variables existent, mais aucune mesure finie ne suffit à les capturer. Le second est, dans l'interprétation standard, une indétermination *intrinsèque* : certaines valeurs ne peuvent pas être considérées comme déjà fixées avant la mesure. C'est ce que Bell a montré dans l'[épisode précédent](Blog-Pudge-Quantum-Mechanics.fr.html) : pour un certain type de mesure quantique, aucune valeur préexistante ne peut rendre compte des corrélations observées.
 
 Mais ce qu'il faut retenir, c'est ceci : la quantique n'est plus une exception isolée dans une physique sereine. Elle est un **régime parmi d'autres** dans une physique qui, prise dans son ensemble, est partout traversée par le chaos et l'émergence.
 
@@ -119,6 +119,14 @@ C'était la promesse de cette série. On commence à la tenir.
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
+*◀ Précédent : [Épisode 0 : Le jour où Pudge t'a appris la mécanique quantique](Blog-Pudge-Quantum-Mechanics.fr.html) · Suivant : [Épisode 2 : Le jour où Tetris t'a appris que l'ordre fait tout](Blog-Tetris-Order-Is-Everything.fr.html) ▶*
+
+*Les trois promesses de cette fin d'épisode ont été tenues : la mesure revient avec Counter-Strike ([épisode 8](Blog-Counter-Strike-Observer-Symmetry.fr.html)), après Pudge ([épisode 0](Blog-Pudge-Quantum-Mechanics.fr.html)) ; la non-commutativité, c'est Tetris ([épisode 2](Blog-Tetris-Order-Is-Everything.fr.html)) ; l'intrication est préparée par la carapace bleue ([épisode 3](Blog-Mario-Kart-Blue-Shell.fr.html), la non-localité) et revient sous forme de lore avec les Nemesis Stones ([épisode 10](Blog-Artifact-Cosmology.fr.html)).*
+
+*Mis à jour le 22 octobre 2026 : navigation et liens vers les épisodes annoncés ajoutés ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi sur [arithmon.substack.com](https://arithmon.substack.com/).*
 
 🌀

@@ -116,7 +116,7 @@ Je ne connais pas encore la réponse. Mais je sais maintenant exactement ce qu'i
 
 Je vous dois un aveu, parce que ce texte me concerne aussi.
 
-Parmi les trente-trois relations exactes du framework K₇, une seule fait intervenir un ingrédient qui n'est pas un nombre entier : le rapport des masses du muon et de l'électron, écrit 27^φ. Le nombre d'or y entre précisément par la correspondance entre E₈ et l'icosaèdre. C'est la relation la plus fragile du framework, et les papiers la tiennent délibérément à part, pour qu'elle n'emprunte pas la solidité des trente-deux autres.
+Parmi les [trente-trois relations exactes](Blog-Constants-Are-Counts.fr.html) du framework K₇, une seule fait intervenir un ingrédient qui n'est pas un nombre entier : le rapport des masses du muon et de l'électron, écrit 27^φ. Le nombre d'or y entre précisément par la correspondance entre E₈ et l'icosaèdre. C'est la relation la plus fragile du framework, et les papiers la tiennent délibérément à part, pour qu'elle n'emprunte pas la solidité des trente-deux autres.
 
 Choisir φ plutôt que son ombre ne la sauve pas. Cela lève une ambiguïté, pas deux. Même avec le bon jumeau en main, il faudrait encore expliquer pourquoi ce nombre devrait se retrouver en exposant, et personne ne l'a fait. Je préfère le dire ici plutôt que de laisser croire qu'un joli polyèdre étoilé a réglé la question.
 
@@ -138,4 +138,10 @@ L'univers, s'il est bâti sur l'un des deux, sait lequel.
 
 ---
 
-*Si vous découvrez ce blog, le point de départ est [ici](Blog-Brieucs-Gift.fr.html). Le dépôt d'OPH est ouvert sur [GitHub](https://github.com/FloatingPragma/observer-patch-holography), et l'exposé de John Baez sur le grand icosaèdre est [ici](https://johncarlosbaez.wordpress.com/2026/05/27/the-great-icosahedron/). Les papiers techniques d'Arithmon sont sur [Zenodo](https://zenodo.org/communities/arithmon/records?q=&l=list&p=1&s=10&sort=newest). Et si vous avez un d20 à portée de main, vous tenez déjà l'un des deux jumeaux.*
+*Si vous découvrez ce blog, le point de départ est [ici](Blog-Brieucs-Gift.fr.html). Le dépôt d'OPH est ouvert sur [GitHub](https://github.com/FloatingPragma/observer-patch-holography), et l'exposé de John Baez sur le grand icosaèdre est [ici](https://johncarlosbaez.wordpress.com/2026/05/27/the-great-icosahedron/). Les papiers techniques d'Arithmon sont sur [Zenodo](https://zenodo.org/communities/arithmon/). Et si vous avez un d20 à portée de main, vous tenez déjà l'un des deux jumeaux.*
+
+---
+
+*Sur ce blog : [Peut-on entendre la forme d'un ballon ?](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html) reprend le critère de la « note la plus basse » utilisé ici et montre ce qu'un spectre peut et ne peut pas révéler d'une forme. Les relations elles-mêmes, avec le test qui peut les réfuter, sont dans [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html).*
+
+*Mis à jour le 22 octobre 2026 : lien Zenodo simplifié ; renvois vers les billets ballon et constantes ajoutés. Argument inchangé.*

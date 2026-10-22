@@ -61,13 +61,13 @@ Une forme symétrique est une forme dont la description se répète, et ce qui s
 
 ## 3. Entendre une forme
 
-En 1966, le mathématicien Mark Kac publie un article au titre devenu célèbre : *Peut-on entendre la forme d'un tambour ?*
+En 1966, le mathématicien [Mark Kac](Blog-Gods-Diabolo.fr.html) publie un article au titre devenu célèbre : *Peut-on entendre la forme d'un tambour ?*
 
 L'idée est la suivante. Une membrane tendue, quand on la frappe, ne vibre pas n'importe comment : elle vibre selon certains modes, chacun avec sa fréquence propre. L'ensemble de ces fréquences, c'est ce que l'oreille reçoit, et c'est ce qu'on appelle le **spectre**. La question de Kac : si je connais toutes les fréquences, est-ce que je connais la forme ? Autrement dit, la géométrie est-elle entièrement écrite dans le son ?
 
 C'est exactement notre question « géométrie et information », mais posée comme un vrai problème mathématique.
 
-Le tambour de Kac est plat, c'est une membrane en deux dimensions. Pour notre ballon, il faut une petite précaution : on ne va pas écouter le caoutchouc, mais **l'air à l'intérieur**. Imaginez une sphère creuse aux parois rigides, et faites résonner l'air qu'elle contient, comme on fait chanter une bouteille en soufflant dessus. C'est la version en trois dimensions du tambour de Kac.
+Le tambour de Kac est plat, c'est une membrane en deux dimensions. Pour notre ballon, il faut une petite précaution : on ne va pas écouter le caoutchouc, mais **l'air à l'intérieur**. Imaginez une sphère creuse aux parois rigides, et faites résonner l'air qu'elle contient, comme on fait [chanter](Blog-The-Singing-Glass.fr.html) une bouteille en soufflant dessus. C'est la version en trois dimensions du tambour de Kac.
 
 Que peut-on entendre ?
 
@@ -194,3 +194,8 @@ Et ce qui fait la différence, c'est la symétrie, qui est peut-être simplement
 - John Milnor, « Eigenvalues of the Laplace operator on certain manifolds », *PNAS*, 1964.
 - Archimède, *De la sphère et du cylindre*.
 - Le billet précédent : [Et si l'univers était un set Lego ?](Blog-Lego-Set-Universe.fr.html)
+- [Le verre qui chante](Blog-The-Singing-Glass.fr.html) : le même geste avec un verre de Bourgogne, et la première fois que ce blog a proposé que les constantes soient les harmoniques d'une forme.
+- [Le diabolo de Dieu](Blog-Gods-Diabolo.fr.html) : pourquoi le tambour de Kac compte pour une géométrie en mouvement.
+- [Le jumeau étoilé](Blog-The-Star-Twin.fr.html) : deux polyèdres que l'arithmétique ne distingue pas, séparés notamment par leur note la plus basse.
+
+*Mis à jour le 22 octobre 2026 : renvois vers le verre qui chante, le diabolo et le jumeau étoilé ajoutés. Argument inchangé.*

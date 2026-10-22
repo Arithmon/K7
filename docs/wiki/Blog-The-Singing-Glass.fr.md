@@ -96,3 +96,9 @@ Puis reprenez une gorgée. Après tout, vous tenez l'expérience entre vos doigt
 ---
 
 *Si cet article vous a donné envie d'écouter le son de votre verre, c'est déjà de la physique expérimentale. Si vous voulez aller plus loin, le point de départ est [ici](Blog-Brieucs-Gift.fr.html). Les papiers techniques sont sur [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22de%20La%20Fourni%C3%A8re%2C%20Brieuc%22&l=list&p=1&s=10&sort=bestmatch). Et si vous êtes physicien, géomètre, sommelier ou simplement curieux, mes DMs sont ouverts.*
+
+---
+
+*Depuis, le verre a eu des suites. [Le diabolo de Dieu](Blog-Gods-Diabolo.fr.html) demande ce qui se passe quand la forme est en mouvement. [Peut-on entendre la forme d'un ballon ?](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html) demande ce qu'un spectre dit vraiment d'une forme, et où l'écoute s'arrête. Et les harmoniques elles-mêmes, en liste, avec le test qui peut les réfuter, sont dans [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html).*
+
+*Mis à jour le 22 octobre 2026 : suites ajoutées. « GIFT » dans le texte est le nom du framework à l'époque : il s'appelle aujourd'hui K₇, framework fondateur du programme Arithmon (voir [Le dernier paramètre libre](Blog-The-Last-Free-Parameter.fr.html)). Chiffres à la date de juin 2026.*

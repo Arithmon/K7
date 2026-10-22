@@ -71,7 +71,7 @@ Ces trois intuitions, tu les as. Pas parce que tu as lu Wheeler, mais parce que 
 
 ## Où Skyrim cesse d'être l'image de la physique
 
-Comme on l'a fait pour Tetris et pour Minecraft, il faut poser la limite honnête de l'analogie. Sinon on bricole une mystique facile et un physicien sérieux a raison de lever les yeux au ciel.
+Comme on l'a fait pour [Tetris](Blog-Tetris-Order-Is-Everything.fr.html) et pour [Minecraft](Blog-Minecraft-Discrete-Sphere.fr.html), il faut poser la limite honnête de l'analogie. Sinon on bricole une mystique facile et un physicien sérieux a raison de lever les yeux au ciel.
 
 Skyrim a un observateur unique : toi, le joueur. Tu es le centre absolu, le référentiel privilégié, celui pour qui le monde se charge. Si tu fais une partie en multijoueur (avec un mod approprié), les choses deviennent vite incohérentes : les deux joueurs ne peuvent pas être centres simultanés. Le moteur doit bricoler. Le modèle Skyrim suppose un observateur unique au monde.
 
@@ -115,6 +115,14 @@ Tu ne sais pas. Wheeler ne savait pas. Personne ne sait. Mais tu as déjà pass�
 
 ---
 
-*Cette série explore une douzaine de jeux et leurs concepts physiques associés. Pour ne rien rater, abonne-toi.*
+*◀ Précédent : [Épisode 4 : Le jour où Minecraft t'a appris à dessiner une sphère qui n'en est pas une](Blog-Minecraft-Discrete-Sphere.fr.html) · Suivant : [Épisode 6 : Le jour où Stardew t'a appris pourquoi le temps va dans un seul sens](Blog-Stardew-Arrow-Of-Time.fr.html) ▶*
+
+*L'observateur revient deux fois : comme le joueur qui se révèle en jetant un œil, dans l'[épisode 8](Blog-Counter-Strike-Observer-Symmetry.fr.html), et comme les dieux qui regardent depuis l'extérieur de la carte, dans l'[épisode 10](Blog-Artifact-Cosmology.fr.html). La sauvegarde rapide, elle, revient avec Stardew ([épisode 6](Blog-Stardew-Arrow-Of-Time.fr.html)).*
+
+*Mis à jour le 22 octobre 2026 : navigation et renvois ajoutés ; taille de la série corrigée.*
+
+---
+
+*Cette série explore, en onze épisodes, des jeux et la physique qui se cache derrière. Pour ne rien rater, abonne-toi.*
 
 🌀
