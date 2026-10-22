@@ -16,7 +16,7 @@ layout: default
 
 ## Résumé
 
-Développe l'architecture E₈, les variétés à holonomie G₂ via le noyau de la dérivée de Lie, et la construction de K₇ via twisted connected sum. Établit la forme algébrique de référence det(g) = 65/32 et le théorème d'existence de Joyce garantissant une métrique sans torsion.
+Développe l'architecture E₈, les variétés à holonomie G₂ via le noyau de la dérivée de Lie, et la topologie de K₇. La paire (b₂, b₃) = (21, 77) est posée : aucune construction d'une variété G₂ compacte avec ces nombres de Betti n'est connue, et la route de Joyce–Karigiannis de la v3.5 ne la réalise pas (erratum v3.5, §9). La forme de référence fixe det(g) = 65/32 par une normalisation imposée (erratum §10 pour sa mise à l'échelle) ; le théorème de perturbation de Joyce ne s'applique que sous une hypothèse de petitesse dont la constante n'est pas calculée ici.
 
 ---
 
@@ -27,8 +27,8 @@ Développe l'architecture E₈, les variétés à holonomie G₂ via le noyau de
 | Chaîne d'algèbres à division | ℝ(1) → ℂ(2) → ℍ(4) → 𝕆(8) | terminale à 8 |
 | Système de racines E₈ | 240 racines = 112 D₈ + 128 demi-entières | vérifié |
 | \|W(E₈)\| | 2¹⁴ × 3⁵ × 5² × 7 = 696 729 600 | vérifié en Lean |
-| Blocs de construction TCS | M₁(quintique)[b₂=11,b₃=40] + M₂(CI(2,2,2))[b₂=10,b₃=37] | → K₇[21,77] |
-| det(g) | 65/32 (3 chemins indépendants) | exact |
+| Blocs de construction TCS | M₁(quintique)[b₂=11,b₃=40] + M₂(CI(2,2,2))[b₂=10,b₃=37] | conjecturaux ; non identifiés |
+| det(g) | 65/32 | normalisation imposée |
 | Spectral gap | λ₁ = 13/99 | algébrique |
 
 ---
@@ -39,7 +39,7 @@ Développe l'architecture E₈, les variétés à holonomie G₂ via le noyau de
 - **Partie I** : algèbre de Lie exceptionnelle E₈, système de racines, groupe de Weyl, chaîne exceptionnelle
 - **Partie II** : variétés à holonomie G₂, définition, classification de Berger, classes de torsion W₁ à W₂₇
 - **Partie III** : construction de la variété K₇, cadre TCS, blocs ACyl, Mayer-Vietoris
-- **Partie IV** : structure métrique et vérification, κ_T = 1/61, det(g) = 65/32, existence de Joyce
+- **Partie IV** : structure métrique et vérification, κ_T = 1/61, det(g) = 65/32 (imposé), statut du théorème de Joyce
 
 ---
 

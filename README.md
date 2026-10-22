@@ -147,7 +147,7 @@ All posts on [arithmon.substack.com](https://arithmon.substack.com/).
 
 | Property | Value | Status |
 |----------|-------|:------:|
-| Associative 3-form | φ = (65/32)^{1/14} × φ₀ | EXACT local `R^7` model |
+| Associative 3-form | φ = (65/32)^{3/14} × φ₀ (corrected, [erratum](publications/ERRATUM_v3.5.md) §10) | EXACT local `R^7` model |
 | Metric | g = (65/32)^{1/7} × I₇ | EXACT local `R^7` model |
 | Torsion | T = 0 (constant form) | EXACT local `R^7` model |
 | det(g) | 65/32 | EXACT local `R^7` model |

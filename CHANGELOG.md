@@ -5,6 +5,20 @@ All notable changes to the GIFT framework are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Erratum to v3.5, §9–§11 (2026-10-22)
+
+- **§9, the Joyce–Karigiannis route does not realize (21, 77).** Its quotient
+  cohomology (0, 22) is incompatible with the stated ℤ₂³ action (b₂ ≥ 5,
+  b₃ ≤ 16 for all 512 torus-character triples), and the stated involution
+  profile needs Picard rank ≥ 17. No construction of a compact G₂ manifold
+  with (21, 77) is currently known. The 33 relations do not use the route.
+- **§10, the scaling of the reference G₂ form is wrong**: g_{cφ} = c^{2/3} g_φ,
+  so φ_ref = (65/32)^{3/14} φ₀, not (65/32)^{1/14} φ₀; the metric written,
+  (65/32)^{1/7} I₇, stands.
+- **§11**: v3.6 declares no primary lepton relation (updates §8.1).
+- Surfaces: wiki S1 page (EN, FR) no longer states a TCS construction, a
+  Joyce existence guarantee, or det(g) as exact by three paths.
+
 ## Erratum to v3.5, §7–§8 (2026-10-17)
 
 - **§7, six statements wrong as written** (no predicted value changes):
