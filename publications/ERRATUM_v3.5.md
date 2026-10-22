@@ -294,6 +294,88 @@ the three couplings form a triplet at a common scale.
 
 ---
 
+## 9. The Joyce–Karigiannis route does not realize (b₂, b₃) = (21, 77) (added 2026-10-22)
+
+**Where.** `publications/papers/markdown/k7_framework_3_5_main.md` line 11
+(abstract: "a Joyce–Karigiannis route realizing (b₂, b₃) = (21, 77)") and line
+131 (§2.3, "a Joyce-Karigiannis (JK) Z₂³ orbifold construction [43] *does*
+produce (b₂, b₃) = (21, 77)"); `…/k7_framework_3_5_S1_foundations.md` line 15
+(abstract) and §8.4 (lines 530–575, in particular line 555, "quotient
+cohomology b₂(T³ × K3 / Z₂³) = 0 and b₃(T³ × K3 / Z₂³) = 22", and line 566, a
+Picard-rank-1 K3); `…/k7_framework_3_5_S2_derivations.md` lines 42 and 69; the
+corresponding passages of the `.tex` sources.
+
+**What is wrong.** The Betti count adds the fixed-locus contributions
+(b₀, b₁) = (21, 55) to a quotient cohomology (b₂, b₃) = (0, 22) of
+(T³ × K3)/ℤ₂³. That quotient cohomology is incompatible with the group action
+the paper states. The action is diagonal, so the rational cohomology of the
+quotient is the invariant part of H*(T³ × K3); the stated character of ℤ₂³ on
+H²(K3) has multiplicities (5, 5, 2, 2, 2, 2, 2, 2), so dim H²(K3; ℚ)^G = 5, and
+the Künneth formula then gives b₂ ≥ 5 and b₃ ≤ 16 for every compatible torus
+action (the product action gives (b₁, b₂, b₃) = (1, 6, 16)). With the same
+fixed-locus contributions and resolution formula, the resolved manifold would
+have b₂ ≥ 26 and b₃ ≤ 71, not (21, 77). The stated involution profile also
+requires a K3 of Picard rank at least 17, not 1. The Lean module
+`JoyceKarigiannisConstruction.lean` verified the arithmetic of the Betti
+formula from the erroneous quotient input and does not bear on this.
+
+**How it was checked.** The audit
+`docs/openwave-candidate/K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`
+in this repository, with the standard-library checkers
+`check_k3_jk_quotient_cohomology.py` (all 8³ = 512 torus-character triples)
+and `check_k3_jk_character_gate.py` (Picard rank ≥ 17), rerun on 2026-10-22.
+The audit dates from 2026-09-16 and was not carried into the paper until an
+outside review of the v3.6 draft pointed to it; the delay is ours.
+
+**What still stands.** Nothing in the 33 relations uses this route: they use
+the integers (21, 77) as posited inputs. The route is invalidated as stated;
+this does not show that every Joyce–Karigiannis construction, or every
+construction of a compact G₂ manifold with Betti numbers (21, 77), is
+impossible.
+
+**What v3.6 does.** It states that no construction of a compact G₂ manifold
+with (b₂, b₃) = (21, 77) is currently known, and that the proposed route does
+not realize the pair.
+
+---
+
+## 10. The scaling of the reference G₂ form is wrong (added 2026-10-22)
+
+**Where.** `publications/papers/markdown/k7_framework_3_5_S1_foundations.md`
+§11.1 (line 712), §11.5 (line 815), §12.3 (lines 855–863) and §12.5 (line 878).
+
+**What is wrong.** The text scales the standard form, φ ↦ cφ, with the law
+g ↦ c²g, and takes c = (65/32)^{1/14} so that det g = 65/32. The metric of a
+positive 3-form scales as g_{cφ} = c^{2/3} g_φ (the defining identity
+(ι_xφ) ∧ (ι_yφ) ∧ φ = 6 g(x, y) vol_g scales by c³ on the left and by λ^{9/2}
+on the right when g ↦ λg). With the correct law, (65/32)^{1/14} φ₀ induces
+det g = (65/32)^{1/3} ≈ 1.2664, not 65/32. The reconstruction
+g_ij = (1/6) Σ φ_ikl φ_jkl of §12.3 contracts indices with a background
+Euclidean metric; it is not a general formula for g_φ, and it is the source
+of the wrong law.
+
+**What still stands.** The metric written in the text, (65/32)^{1/7} I₇ in
+the fixed coframe, is the metric with determinant 65/32; it is induced by
+φ_ref = (65/32)^{3/14} φ₀, not by (65/32)^{1/14} φ₀. The normalization
+det g = 65/32 remains imposed, not derived (§7.6 of this erratum, and v3.6).
+
+**What v3.6 does.** It states the scaling law, gives φ_ref = D^{3/14} φ₀ and
+g_ref = D^{1/7} g_{φ₀} for D = 65/32, uses the intrinsic reconstruction of the
+metric from φ, and says for which metric the coframe is orthonormal.
+
+---
+
+## 11. Update to §8.1: v3.6 declares no primary lepton relation (added 2026-10-22)
+
+Section 8.1 announced that v3.6 would take m_μ/m_e = 27^φ as the primary lepton
+relation. That choice was made after the values were known and has been
+withdrawn: **v3.6 declares none of the four lepton relations primary.** All
+four are stated as approximate, with their deviations; m_μ/m_e = 27^φ is
+excluded as an exact equality at current precision and kept as a numerical
+proximity. Section 8.2 is unchanged.
+
+---
+
 ## Provenance
 
 Sections 1–3 were surfaced by an internal audit of the corpus on
@@ -308,3 +390,8 @@ checked against its primary source:
 - the axiom list, by `grep` on K7-Lean main and its history;
 - the DOIs, against the Zenodo API;
 - the lepton numbers, recomputed independently.
+
+Sections 9–11 come from an outside review of the public v3.6 draft
+(branch `v3.6-draft`, 2026-10-22). Section 9 was checked by rerunning the two
+checkers named there; section 10 by the scaling identity it states, and by
+evaluating (65/32)^{1/3}.
