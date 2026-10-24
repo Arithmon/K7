@@ -59,7 +59,7 @@ publications/
 | S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.md](markdown/k7_framework_3_6_S1_foundations.md) |
 | S2: The 33 relations | [k7_framework_3_6_S2_derivations.md](markdown/k7_framework_3_6_S2_derivations.md) |
 | S3: Observable dataset | [k7_framework_3_6_S3_observables.md](markdown/k7_framework_3_6_S3_observables.md) |
-| S4: Look-elsewhere test | in preparation |
+| S4: Look-elsewhere test | [k7_framework_3_6_S4_sieve_diagnostics.md](markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
 | Changes from v3.5 | [k7_framework_3_6_CHANGELOG.md](markdown/k7_framework_3_6_CHANGELOG.md) |
 
 The v3.5 files below are unchanged, and are read together with the [erratum](../ERRATUM_v3.5.md).

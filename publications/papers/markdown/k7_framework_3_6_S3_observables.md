@@ -179,53 +179,53 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 
 ## S3.7 Lean cross-references
 
-The Lean formalization (Arithmon/K7-Lean, main §8) verifies arithmetic identities. A verified identity says that a closed form evaluates to a number; it says nothing about the physical identification, the choice of formula, or the consistency of relations taken together. The table gives, for each of the 33 relations, the Lean declaration that ties the closed form to its value, and the scope of that proof. It is generated from `canonical/results/k7_v3_6_lean_map.json`, a reading of the sources (not a fresh build).
+The Lean formalization (Arithmon/K7-Lean, main §8) verifies arithmetic identities. A verified identity says that a closed form evaluates to a number; it says nothing about the physical identification, the choice of formula, or the consistency of relations taken together. The table gives, for each of the 33 relations, the Lean declaration that ties the closed form to its value, and the scope of that proof. It is generated from `canonical/results/k7_v3_6_lean_map.json`; the library builds at the commit named, and the axioms are those reported by `#print axioms`.
 
 <!-- BEGIN S3-LEAN -->
-Arithmon/K7-Lean at commit `70dc589`.
+Arithmon/K7-Lean, branch `v3.6-alignment`, commit `34ce857`; aggregate `Certificate.RelationsV36.relations_v36_certified`, which depends only on the axioms `propext`, `Classical.choice`, `Quot.sound`.
 
 | ID | Observable | Lean declaration (under `GIFT.`) | Location | Scope |
 |----|-----------|-----------------------------------|----------|-------|
-| A01 | sin²θ_W | `Observables.WeakMixingAngle.sin2_theta_W_primary` | Observables/WeakMixingAngle.lean:25 | exact equality with the formula |
-| A02 | α_s(M_Z) | `Relations.GaugeSector.alpha_s_denom_from_topology` | Relations/GaugeSector.lean:48 | components only; Lean name differs (see text) |
-| A03 | λ_H | `Relations.lambda_H_num_certified` | Relations.lean:59 | components only |
-| A04 | α⁻¹(0) | `Relations.GaugeSector.alpha_inv_complete_certified` | Relations/GaugeSector.lean:121 | components only; Lean name differs (see text) |
-| A05 | Q_Koide | `Relations.OverDetermination.Q_koide_G2_b2` | Relations/OverDetermination.lean:54 | exact equality with the formula |
-| A06 | m_τ/m_e | `Relations.LeptonSector.m_tau_m_e_from_topology` | Relations/LeptonSector.lean:42 | exact equality with the formula |
-| A07 | m_μ/m_e | `Foundations.GoldenRatioPowers.jordan_power_phi_bounds` | Foundations/GoldenRatioPowers.lean:275 | interval bounds |
-| A08 | m_s/m_d | `Relations.QuarkSector.m_s_m_d_from_topology` | Relations/QuarkSector.lean:17 | exact equality with the formula |
-| A09 | m_c/m_s | `Observables.QuarkMasses.m_c_over_m_s_primary` | Observables/QuarkMasses.lean:36 | exact equality with the formula |
-| A10 | m_b/m_t | `Relations.OverDetermination.mb_mt_2b2` | Relations/OverDetermination.lean:244 | exact equality with the formula; Lean name differs (see text) |
-| A11 | m_u/m_d | `Observables.QuarkMasses.m_u_over_m_d_primary` | Observables/QuarkMasses.lean:64 | exact equality with the formula |
-| A12 | sin²θ₁₂ᴾᴹᴺˢ | `Observables.PMNS.sin2_theta12_primary` | Observables/PMNS.lean:24 | exact equality with the formula |
-| A13 | sin²θ₂₃ᴾᴹᴺˢ | `Observables.PMNS.sin2_theta23_primary` | Observables/PMNS.lean:35 | exact equality with the formula |
-| A14 | sin²θ₁₃ᴾᴹᴺˢ | `Observables.PMNS.sin2_theta13_primary` | Observables/PMNS.lean:52 | exact equality with the formula |
-| A15 | δ_CP | `Relations.NeutrinoSector.delta_CP_gift_v2` | Relations/NeutrinoSector.lean:125 | exact equality with the formula |
-| A16 | sin θ₁₂ᶜᴷᴹ | `Observables.CKM.sin2_theta12_CKM_primary` | Observables/CKM.lean:37 | exact equality with the formula; Lean name differs (see text) |
-| A17 | A_Wolf | `Observables.CKM.A_Wolf_primary` | Observables/CKM.lean:88 | exact equality with the formula |
-| A18 | sin θ₂₃ᶜᴷᴹ | `Observables.CKM.sin2_theta23_CKM_primary` | Observables/CKM.lean:123 | exact equality with the formula; Lean name differs (see text) |
-| A19 | m_H/m_t | `Observables.BosonMasses.m_H_over_m_t_expr2` | Observables/BosonMasses.lean:41 | exact equality with the formula; Lean name differs (see text) |
-| A20 | m_H/m_W | `Observables.BosonMasses.m_H_over_m_W_primary` | Observables/BosonMasses.lean:24 | exact equality with the formula |
-| A21 | m_W/m_Z | `Observables.BosonMasses.m_W_over_m_Z_primary` | Observables/BosonMasses.lean:81 | exact equality with the formula |
-| A22 | m_μ/m_τ | n/a | n/a | no statement |
-| A23 | Ω_DE | `Relations.Cosmology.Omega_DE_fraction_certified` | Relations/Cosmology.lean:55 | components only; Lean name differs (see text) |
-| A24 | n_s | `Relations.Cosmology.n_s_indices_certified` | Relations/Cosmology.lean:30 | components only |
-| A25 | Ω_DM/Ω_b | `Observables.Cosmology.Omega_DM_b_primary` | Observables/Cosmology.lean:28 | exact equality with the formula; Lean name differs (see text) |
-| A26 | Ω_c/Ω_Λ | `Observables.Cosmology.Omega_c_Lambda_primary` | Observables/Cosmology.lean:39 | exact equality with the formula |
-| A27 | Ω_Λ/Ω_m | `Observables.Cosmology.Omega_Lambda_m_primary` | Observables/Cosmology.lean:50 | exact equality with the formula |
-| A28 | h | `Observables.Cosmology.hubble_h_primary` | Observables/Cosmology.lean:61 | exact equality with the formula |
-| A29 | Ω_b/Ω_m | `Observables.Cosmology.Omega_b_m_primary` | Observables/Cosmology.lean:72 | exact equality with the formula |
-| A30 | Ω_c/Ω_m | n/a | n/a | no statement |
-| A31 | σ_8 | `Observables.Cosmology.sigma_8_primary` | Observables/Cosmology.lean:83 | exact equality with the formula; Lean name differs (see text) |
-| A32 | Y_p | `Observables.Cosmology.Y_p_primary` | Observables/Cosmology.lean:94 | exact equality with the formula |
-| A33 | Ω_m/Ω_Λ | n/a | n/a | no statement |
+| A01 | sin²θ_W | `Certificate.RelationsV36.A01_sin2_theta_W` | Certificate/RelationsV36.lean:50 | exact rational equality of the closed form |
+| A02 | α_s(M_Z) | `Certificate.RelationsV36.A02_alpha_s` | Certificate/RelationsV36.lean:55 | closed form in ℝ equal to the stated real value (no numerical bound) |
+| A03 | λ_H | `Certificate.RelationsV36.A03_lambda_H` | Certificate/RelationsV36.lean:59 | closed form in ℝ equal to the stated real value (no numerical bound) |
+| A04 | α⁻¹(0) | `Certificate.RelationsV36.A04_alpha_inv` | Certificate/RelationsV36.lean:65 | exact rational equality of the closed form |
+| A05 | Q_Koide | `Certificate.RelationsV36.A05_Q_Koide` | Certificate/RelationsV36.lean:73 | exact rational equality of the closed form |
+| A06 | m_τ/m_e | `Certificate.RelationsV36.A06_m_tau_m_e` | Certificate/RelationsV36.lean:77 | exact rational equality of the closed form |
+| A07 | m_μ/m_e | `Certificate.RelationsV36.A07_m_mu_m_e` | Certificate/RelationsV36.lean:81 | base 27 and interval bounds on 27^φ |
+| A08 | m_s/m_d | `Certificate.RelationsV36.A08_m_s_m_d` | Certificate/RelationsV36.lean:91 | exact rational equality of the closed form |
+| A09 | m_c/m_s | `Certificate.RelationsV36.A09_m_c_m_s` | Certificate/RelationsV36.lean:95 | exact rational equality of the closed form |
+| A10 | m_b/m_t | `Certificate.RelationsV36.A10_m_b_m_t` | Certificate/RelationsV36.lean:100 | exact rational equality of the closed form |
+| A11 | m_u/m_d | `Certificate.RelationsV36.A11_m_u_m_d` | Certificate/RelationsV36.lean:104 | exact rational equality of the closed form |
+| A12 | sin²θ₁₂ᴾᴹᴺˢ | `Certificate.RelationsV36.A12_sin2_theta12_PMNS` | Certificate/RelationsV36.lean:109 | exact rational equality of the closed form |
+| A13 | sin²θ₂₃ᴾᴹᴺˢ | `Certificate.RelationsV36.A13_sin2_theta23_PMNS` | Certificate/RelationsV36.lean:113 | exact rational equality of the closed form |
+| A14 | sin²θ₁₃ᴾᴹᴺˢ | `Certificate.RelationsV36.A14_sin2_theta13_PMNS` | Certificate/RelationsV36.lean:117 | exact rational equality of the closed form |
+| A15 | δ_CP | `Certificate.RelationsV36.A15_delta_CP` | Certificate/RelationsV36.lean:122 | the integer 197 (the unit is not in Lean) |
+| A16 | sin θ₁₂ᶜᴷᴹ | `Certificate.RelationsV36.A16_sin_theta12_CKM` | Certificate/RelationsV36.lean:126 | exact rational equality of the closed form |
+| A17 | A_Wolf | `Certificate.RelationsV36.A17_A_Wolf` | Certificate/RelationsV36.lean:131 | exact rational equality of the closed form |
+| A18 | sin θ₂₃ᶜᴷᴹ | `Certificate.RelationsV36.A18_sin_theta23_CKM` | Certificate/RelationsV36.lean:135 | exact rational equality of the closed form |
+| A19 | m_H/m_t | `Certificate.RelationsV36.A19_m_H_m_t` | Certificate/RelationsV36.lean:140 | exact rational equality of the closed form |
+| A20 | m_H/m_W | `Certificate.RelationsV36.A20_m_H_m_W` | Certificate/RelationsV36.lean:145 | exact rational equality of the closed form |
+| A21 | m_W/m_Z | `Certificate.RelationsV36.A21_m_W_m_Z` | Certificate/RelationsV36.lean:150 | exact rational equality of the closed form |
+| A22 | m_μ/m_τ | `Certificate.RelationsV36.A22_m_mu_m_tau` | Certificate/RelationsV36.lean:155 | exact rational equality of the closed form |
+| A23 | Ω_DE | `Certificate.RelationsV36.A23_Omega_DE` | Certificate/RelationsV36.lean:159 | closed form in ℝ equal to the stated real value (no numerical bound) |
+| A24 | n_s | `Certificate.RelationsV36.A24_n_s` | Certificate/RelationsV36.lean:165 | indices (11, 5) and ζ(D_bulk)/ζ(Weyl) = ζ(11)/ζ(5) (no numerical bound) |
+| A25 | Ω_DM/Ω_b | `Certificate.RelationsV36.A25_Omega_DM_b` | Certificate/RelationsV36.lean:173 | exact rational equality of the closed form |
+| A26 | Ω_c/Ω_Λ | `Certificate.RelationsV36.A26_Omega_c_Lambda` | Certificate/RelationsV36.lean:177 | exact rational equality of the closed form |
+| A27 | Ω_Λ/Ω_m | `Certificate.RelationsV36.A27_Omega_Lambda_m` | Certificate/RelationsV36.lean:182 | exact rational equality of the closed form |
+| A28 | h | `Certificate.RelationsV36.A28_hubble_h` | Certificate/RelationsV36.lean:187 | exact rational equality of the closed form |
+| A29 | Ω_b/Ω_m | `Certificate.RelationsV36.A29_Omega_b_m` | Certificate/RelationsV36.lean:191 | exact rational equality of the closed form |
+| A30 | Ω_c/Ω_m | `Certificate.RelationsV36.A30_Omega_c_m` | Certificate/RelationsV36.lean:196 | exact rational equality of the closed form |
+| A31 | σ_8 | `Certificate.RelationsV36.A31_sigma_8` | Certificate/RelationsV36.lean:200 | exact rational equality of the closed form |
+| A32 | Y_p | `Certificate.RelationsV36.A32_Y_p` | Certificate/RelationsV36.lean:204 | exact rational equality of the closed form |
+| A33 | Ω_m/Ω_Λ | `Certificate.RelationsV36.A33_Omega_m_Lambda` | Certificate/RelationsV36.lean:208 | exact rational equality of the closed form |
 <!-- END S3-LEAN -->
 
-**Scope counts.** 24 relations have an exact equality between the closed form and its value; 5 have only their components certified (α_s, λ_H, α⁻¹, Ω_DE, n_s: the integers entering the formula, not the irrational value); 1 has interval bounds (27^φ ∈ (206, 209), wider than the deviation it is compared with); 3 have no statement (m_μ/m_τ, Ω_c/Ω_m, Ω_m/Ω_Λ). No Lean statement involves ζ, √2/12, √17/32 or ln 2 · 98/99 as values.
+**Scope.** Every relation has a statement that ties its closed form, written in the structural constants, to its value: an exact rational equality for 27; a closed form in ℝ equal to the stated real value for α_s, λ_H and Ω_DE, with no numerical bound; the indices and the ζ-quotient for n_s, with no numerical bound; the base 27 and the bounds 206 < 27^φ < 209 for m_μ/m_e, an interval wider than the deviation it is compared with; and the integer 197 for δ_CP, whose unit is a dictionary assignment outside Lean. The 33 statements are collected in `relations_v36_certified`.
 
-**What earlier versions cited.** Earlier versions cited the single theorem `observables_certified` (`Certificate/Predictions.lean`) as certifying the relations. That theorem is a conjunction of 22 statements of the form `X = v` where `X` is defined as the literal `v`; each holds by definition, and the link to the closed form sits in the separate `*_primary` theorems listed above. It is not cited as a certificate in version 3.6.
+**What earlier versions cited.** Earlier versions cited the single theorem `observables_certified` (`Certificate/Predictions.lean`) as certifying the relations. That theorem is a conjunction of statements of the form `X = v` where `X` is defined as the literal `v`; each holds by definition. Before the alignment of 2026-10-22 (commit `70dc589`), 24 relations had an exact statement elsewhere in the library, 5 had only their components, 1 had bounds and 3 (m_μ/m_τ, Ω_c/Ω_m, Ω_m/Ω_Λ) had none.
 
-**Names and withdrawn content in the Lean sources.** The declarations for A16 and A18 are named `sin2_theta12_CKM` and `sin2_theta23_CKM`, though the quantities compared are sin θ (S2.4). The constant 42 = 2b₂ is named `chi_K7`, though χ(K₇) = 0 (S1 §9.3). The repository also contains statements that the paper does not use or has withdrawn: the δ_CP correction 197 × 62/69 = 12214/69 (S2.8), still a conjunct of the aggregated certificate; and identities giving other values for the same observables (sin²θ₂₃ = 4/7 and sin²θ₁₂ = 7/23 in `Relations/OverDetermination.lean` and `Relations/NeutrinoSector.lean`), further instances of the vocabulary freedom of S2.7. A statement also proves that the Koide parameter built from the framework's own m_μ/m_e = 27^φ and m_τ/m_e = 3477 lies strictly below 2/3 (`Relations/KoideAssembly.lean`), the incompatibility of main §6.1.
+**Names and withdrawn content.** The alignment renamed declarations whose names misdescribed them, keeping the old names as deprecated aliases: the CKM entries are now `sin_theta12_CKM` and `sin_theta23_CKM` (the quantities compared are sin θ, S2.4); 42 is `two_b2 := 2 * b2`, not `chi_K7` (χ(K₇) = 0, S1 §9.3); identities giving other values for the paper's observables (4/7 and 8/14 for θ₂₃, 7/23 for θ₁₂, 85/99) carry neutral arithmetic names and are documented as instances of the vocabulary freedom of S2.7. The δ_CP correction 197 × 62/69 = 12214/69 (S2.8) was removed from the aggregated certificate; its module is kept, marked withdrawn. A statement proves that the Koide parameter built from the framework's own m_μ/m_e = 27^φ and m_τ/m_e = 3477 lies strictly below 2/3 (`Relations/KoideAssembly.lean`), the incompatibility of main §6.1.
 
 **Axioms.** The formalization rests on fourteen axioms beyond Mathlib: four that import results from the literature (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`) and ten interval certificates that import numerical enclosures (v3.5 erratum, §7.1); no `sorry` is used.
 

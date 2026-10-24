@@ -56,7 +56,7 @@ Data: PDG 2026, NuFIT 6.1 (normal ordering, with atmospheric data), Planck 2018 
 
 **They are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. None is selected after the fact.
 
-**Closeness is not distinctive.** In a preregistered look-elsewhere test, every competing Betti pair and most invented vocabularies, searching for their own formulas in the same grammar and budget, reach as many targets as K₇. The figures published on 2026-10-17 used the earlier dataset; the test is being rerun on the refreshed data, and the coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
+**Closeness is not distinctive.** In a preregistered look-elsewhere test, each competitor searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (P_global = 0.51, S4). The coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
 
 ---
 
@@ -92,7 +92,7 @@ That the relations are derived from the geometry; "no free parameters, no fittin
 | S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.md](publications/papers/markdown/k7_framework_3_6_S1_foundations.md) |
 | S2: The 33 relations (arithmetic, dictionary choices, status) | [k7_framework_3_6_S2_derivations.md](publications/papers/markdown/k7_framework_3_6_S2_derivations.md) |
 | S3: Observable dataset | [k7_framework_3_6_S3_observables.md](publications/papers/markdown/k7_framework_3_6_S3_observables.md) |
-| S4: Look-elsewhere test and descriptive diagnostics | in preparation |
+| S4: Look-elsewhere test and descriptive diagnostics | [k7_framework_3_6_S4_sieve_diagnostics.md](publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
 | Changes from v3.5 | [k7_framework_3_6_CHANGELOG.md](publications/papers/markdown/k7_framework_3_6_CHANGELOG.md) |
 
 PDF and LaTeX will be generated at release.

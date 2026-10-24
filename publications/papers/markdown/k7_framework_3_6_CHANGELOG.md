@@ -1,7 +1,48 @@
 # Changelog: K₇ framework paper, version 3.6 (draft)
 
-*Draft branch `v3.6-draft`. Version 3.5 (Zenodo 21296168) remains the published version; the files `k7_framework_3_5_*` are unchanged. Supplement S4 (look-elsewhere null and descriptive diagnostics) is not yet included: it awaits a rerun of the null on the refreshed data. LaTeX and PDF are not yet regenerated.*
+*Draft branch `v3.6-draft`. Version 3.5 (Zenodo 21296168) remains the published version; the files `k7_framework_3_5_*` are unchanged. Supplement S4 (look-elsewhere null and descriptive diagnostics) is included from batch 5. LaTeX and PDF are not yet regenerated.*
 
+
+**Batch 5 (2026-10-24): look-elsewhere null rerun, S4 rewritten, S2 status column, S1 pass.**
+- The preregistered look-elsewhere null rerun on the refreshed dataset with
+  two-sided windows (amendment 1): K₇ reaches 31/33 by blind search on its
+  own vocabulary; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000
+  invented vocabularies reach as many, none more; P_global = 0.51,
+  LEE-RETRAIT (unchanged). α⁻¹ and m_μ/m_e are reached by nobody; the only
+  target that separates competitors is m_τ/m_e. Abstract and §7.2 report
+  this run; the first run (3.5 dataset) is kept as a comparison.
+- S4 rewritten: the Sieve scorecard with its N2 result (the 3.5 "unique
+  survivor" reading withdrawn there too); the design, gates and results of
+  the null, with tables generated from the result files
+  (`k7_v3_6_s4_tables.py`, which also checks the figures of main §7.2); the
+  3.5 diagnostics (random forest, SVD, effective rank, shared constants)
+  archived as descriptive, the "overdetermination ratio" reading withdrawn;
+  the 3.4 coincidence probabilities archived as withdrawn, with the reason.
+- S2: each table carries the status and pull of every relation, generated
+  from the table of main §4.1 (`k7_v3_6_s2_status.py`); cross-reference to
+  S2.7 fixed; m_u/m_d uncertainty stated at 1σ (90% CL ÷ 1.645); the
+  look-elsewhere result cited in S2.7.
+- det(g) declared like κ_T⁻¹ (R2, §3.1, S2.1): its two expressions in the
+  constants, p₂ + 1/(b₂ + dim G₂ − N_gen) (used, App. B) and
+  Weyl · α_sum/2^Weyl, agree on the line b₂ = 21 and differ elsewhere;
+  §3.1 had defined det_num by the second and det_den by the first. No value
+  changes at (21, 77).
+- S1 pass. Lean references checked against Arithmon/K7-Lean: seven cited
+  declaration names did not exist (now the actual names, or the claim of
+  formalization removed); the two G₂ items listed as "remaining" are proved
+  (one by `rfl`, so not a theorem about two characterizations); the file
+  count dropped; `torsion_satisfies_joyce` described as what it is (a
+  comparison with a fixed threshold, not Joyce's constant); the Selberg-bridge
+  and "selection principle" readings withdrawn. "Exceptional Chain Theorem",
+  "VERIFIED"/"STRUCTURAL" statuses, the circle–U(1) analogy and the
+  "topological bound" 14/99 withdrawn; λ₁ match corrected to 0.05% (was
+  0.08%) and λ₁·H* to 12.342 (was 12.3364); Pell solution stated correctly
+  (99 + 14√50 = (7 + √50)², the latter of norm −1); undefined α_B notations
+  replaced. §8.3: the lattice sketch N₁ ⊕ N₂ ⊕ ⟨2⟩ withdrawn (not an
+  orthogonal decomposition of a unimodular lattice; N₁ ⊥ N₂ is the
+  orthogonal gluing excluded by parity). §10: det(g) listed by the
+  expression used (App. B) with the second one declared. PINN described as
+  training on a model, not on K₇.
 
 **Batch 4 (2026-10-22): outside review of the v3.6 draft, geometry.**
 - The Joyce–Karigiannis ℤ₂³ route does not currently realize (21, 77): its
