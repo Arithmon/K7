@@ -90,35 +90,9 @@ The v3.5 files below are unchanged, and are read together with the [erratum](../
 
 ---
 
-## Headline Results
+## Headline results and statistical validation of version 3.5 (withdrawn in 3.6)
 
-| # | Relation | Value | Status |
-|---|----------|-------|--------|
-| 1 | N_gen | 3 | **PROVEN** (Lean) |
-| 2 | τ | 3472/891 | **PROVEN** |
-| 3 | det(g) | 65/32 | **PROVEN** (construction) |
-| 4 | κ_T | 1/61 | **PROVEN** |
-| 5 | sin²θ_W | 3/13 | **PROVEN** |
-| 6 | α_s(M_Z) | √2/12 | TOPOLOGICAL |
-| 7 | Q_Koide | 2/3 | **PROVEN** |
-| 8 | m_τ/m_e | 3477 | **PROVEN** |
-| 9 | m_s/m_d | 20 | **PROVEN** |
-| 10 | δ_CP | 197° | **PROVEN** |
-
-**Zero continuous adjustable parameters. 3 integer primitives (N=3, r₈=8, r₂=2). Mean deviation 0.99% on 33 Type I exact-target relations (PDG 2024 / NuFIT 6.1).**
-
----
-
-## Statistical Validation
-
-| Metric | Value |
-|--------|-------|
-| Configurations tested | 3,000,000+ |
-| Better alternatives | 0 |
-| Algebraic null model | set-level ~10⁻⁶ (assumption-free); log₁₀ p = −134 |
-| Lean certificate | 213 conjuncts, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), 0 sorry |
-
-See [`validation/`](../validation/) and [`STATISTICAL_EVIDENCE.md`](../references/STATISTICAL_EVIDENCE.md) for methodology. The v3.3 validation pipeline (3,070,396-config exhaustive + 7-component bullet-proof) is archived in [`validation/legacy/v3.3/`](../validation/legacy/v3.3/).
+The tables that stood here in version 3.5 gave the relations the status **PROVEN** and reported "0 better alternatives" among 3,000,000+ configurations and a set-level probability of about 10⁻⁶. Version 3.6 withdraws them: the relations are assignments whose arithmetic is verified, not derivations; the alternatives were scored with the framework's own formulas; and in a preregistered test where each competitor searches for its own formulas, a quarter of the alternative Betti pairs and half of the invented vocabularies reach as many targets as K₇ (S4). See the [v3.6 changelog](markdown/k7_framework_3_6_CHANGELOG.md).
 
 ---
 

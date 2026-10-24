@@ -43,18 +43,17 @@ The K₇ framework assigns 33 dimensionless Standard-Model and cosmological para
 
 ## The 33 relations against current data
 
-Data: PDG 2026, NuFIT 6.1 (normal ordering, with atmospheric data), Planck 2018 (one column), CODATA 2022; all uncertainties at 1σ, correlations neglected. The relations fall into six classes, which are not added into one score (main §4.2):
+Data: PDG 2026, NuFIT 6.1 (normal ordering, with atmospheric data), Planck 2018 (one column), CODATA 2022; all uncertainties at 1σ, correlations neglected. The relations fall into five classes, which are not added into one score (main §4.2):
 
 | Class | Count | Relations |
 |-------|:-----:|-----------|
 | within 2σ | 24 | |
 | tension (between 2σ and 3σ) | 2 | m_τ/m_e, m_W/m_Z |
-| proximity (beyond 3σ, excluded as an exact equality) | 4 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ |
+| proximity (beyond 3σ, rejected as an exact equality) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t (in the mass scheme declared in R7) |
 | inside the PDG range (no uncertainty given) | 1 | m_s/m_d |
 | non-Gaussian profile, octant unresolved | 1 | sin²θ₂₃ = 6/11 |
-| depends on the mass scheme | 1 | m_b/m_t |
 
-**They are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. None is selected after the fact.
+**They are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. The relations of a sector cannot all hold together, though some subsets can; none is selected after the fact.
 
 **Closeness is not distinctive.** In a preregistered look-elsewhere test, each competitor searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (P_global = 0.51, S4). The coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
 

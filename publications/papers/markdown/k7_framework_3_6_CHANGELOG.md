@@ -3,6 +3,38 @@
 *Draft branch `v3.6-draft`. Version 3.5 (Zenodo 21296168) remains the published version; the files `k7_framework_3_5_*` are unchanged. Supplement S4 (look-elsewhere null and descriptive diagnostics) is included from batch 5. LaTeX and PDF are not yet regenerated.*
 
 
+**Batch 6 (2026-10-24): second outside review of the draft.**
+- Look-elsewhere test: the alphabet actually tested is declared (§7.2,
+  S4.2.1): the nineteen integers of the 3.5 Monte Carlo register, without
+  dim E₇ = 133 and α_sum = 13 and with κ_T⁻¹ = 61, not literally the
+  register of §3.1; F-BETTI re-derives only H*, κ_T⁻¹ and det(g) and holds
+  N_gen = 3 (author's decision: declared, not rerun). The 30 / 2 / 1
+  structure of the targets stated in §7.2; P_global = 0.51 is not a
+  probability about K₇.
+- "At most as many relations can be exact as the sector has parameters"
+  withdrawn (§4.2, S2.6): A23, A29 and A30 hold together; the largest
+  compatible density subsets have three relations (A29, A30 and one of
+  A23, A26, A27, A33), computed.
+- m_b/m_t rejected as an exact equality in the scheme declared in R7
+  (author's decision): five proximities, no "scheme assignment" class;
+  the classes are 24 / 2 / 5 / 1 / 1. §4.2 aligned with rule G of §11
+  ("none of these statements is a rejection" withdrawn).
+- "Geometric pre-specification" no longer listed among what survives the
+  look-elsewhere tests (§7.1, §7.3, S4.1; author's decision): the origin of
+  the vocabulary is stated as a fact, not as evidence of a selection made
+  before the data, since the grammar was frozen after the formulas.
+- S1: the Chen–Hong compatibility conclusion withdrawn (the theorem does not
+  apply to K3 × T² × ℝ, and that shows nothing about the neck); the PINN
+  holonomy-score description withdrawn (it cannot be 0 for G₂ holonomy and
+  3.5 for a flat metric; Hol ⊆ G₂ is not Hol = G₂); the "b₂ = 21 > 20 =
+  max ρ" building-block argument withdrawn (TCS b₂ = rk K₊ + rk K₋ +
+  rk(N₊ ∩ N₋)); the coframe of §11.2 stated as that of §11.1.
+- Dataset (author's request): B17 formula made explicit (B16 × A08; A09 ×
+  A08 would give 234.29); Y_p labelled PDG 2024 BBN review, eq. 24.3 (was
+  "Planck 2018"); S3 notes the m_μ/m_e uncertainty corrected in the
+  refresh (0.02 → 4.6 × 10⁻⁶). §11.2: m_s/m_d given as the PDG range, not
+  20 ± 2. S2, A03: cross-reference to S2.7.
+
 **Batch 5 (2026-10-24): look-elsewhere null rerun, S4 rewritten, S2 status column, S1 pass.**
 - The preregistered look-elsewhere null rerun on the refreshed dataset with
   two-sided windows (amendment 1): K₇ reaches 31/33 by blind search on its

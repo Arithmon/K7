@@ -453,7 +453,7 @@ Compact G₂ manifolds can be built by gluing two asymptotically cylindrical (AC
 
 K₇ is posited with (b₂, b₃) = (21, 77) (main R1). **No construction of a compact G₂ manifold with these Betti numbers is currently known.** The Newton–Kantorovich certificate of [A] concerns the neck (seam) metric; it does not certify the Betti numbers, and no global torsion-free G₂ structure has been constructed (main §9).
 
-**Catalogued constructions.** The pair does not appear among the catalogued compact G₂ manifolds (Joyce's orbifold constructions; the twisted connected sums of Corti–Haskins–Nordström–Pacini). Orthogonal TCS is excluded by parity (b₂ + b₃ = 98 is even; CHNP Lemma 6.7). A building-block scan (2026-04-14) shows that b₂ = 21 > 20 = max ρ(K3) forces at least one semi-Fano building block, and all generic K3 lattice embeddings are excluded by the parity theorem. The CHNP 2015 tabulation covered building blocks with ρ ≤ 9 (b₂ ≤ 18); a TCS construction with semi-Fano blocks of high Picard rank has not been carried out. Non-orthogonal TCS and extra-twisted connected sums remain open within TCS.
+**Catalogued constructions.** The pair does not appear among the catalogued compact G₂ manifolds (Joyce's orbifold constructions; the twisted connected sums of Corti–Haskins–Nordström–Pacini). Orthogonal TCS is excluded by parity (b₂ + b₃ = 98 is even; CHNP Lemma 6.7). Earlier versions added that a building-block scan (2026-04-14) showed that b₂ = 21 > 20 = max ρ(K3) forces a semi-Fano building block. In a twisted connected sum, b₂(M) = rk K₊ + rk K₋ + rk(N₊ ∩ N₋), where K± are the kernels of the restriction maps H²(Z±) → H²(K3) and N± their images (CHNP); b₂ is not bounded by the Picard rank of the K3 fibre, and the argument does not hold as stated. It is withdrawn: which building blocks and gluings could give b₂ = 21 is open. Non-orthogonal TCS and extra-twisted connected sums remain open within TCS.
 
 **Withdrawn: a lattice sketch.** Earlier versions described sublattices N₁, N₂ of the K3 lattice U³ ⊕ E₈(−1)², of ranks 11 and 10, with N₁ ⊕ N₂ ⊕ ⟨2⟩ of full rank, as "consistent with a TCS construction". N₁ ⊕ N₂ ⊕ ⟨2⟩ cannot be an orthogonal decomposition of the unimodular K3 lattice (⟨2⟩ is not unimodular), only a sublattice of finite index; and two building-block lattices N₁ ⊥ N₂ describe an orthogonal gluing, which is the case excluded by parity above. The embedding conditions were never verified and no matching data was constructed. The sketch is withdrawn as support for a TCS realization.
 
@@ -486,7 +486,7 @@ $$b_2(N) = b_2\big((T^3 \times K3)/G\big) + b_0(\text{fixed loci}), \qquad b_3(N
 
 **The neck.** The NK-certified seam metric of [A] and the closed-form neck ansatz of [D] operate at the neck level of a putative compact extension and do not depend on which global construction, if any, completes it. They are evidence about a neck, not about the existence of K₇.
 
-**Compatibility with intermediate-curvature splitting (Chen-Hong 2026).** Recent work of Chen and Hong [48] establishes a sharp dichotomy for noncompact manifolds with nonnegative m-intermediate curvature admitting a smooth proper degree-nonzero map to M^{n−m} × T^{m−1} × ℝ. For 3 ≤ n ≤ 5 with 1 ≤ m ≤ n−1, or for 6 ≤ n ≤ 7 with m ∈ {1, n−2, n−1}, the manifold is forced to split isometrically as the Riemannian product E × T^{m−1} × ℝ. By contrast, for 6 ≤ n ≤ 7 and 2 ≤ m ≤ n−3, they construct explicit metrics on S^{n−m} × T^{m−1} × ℝ with uniformly positive m-intermediate curvature, showing the algebraic gate m² − mn + m + n > 0 is sharp. The framework's coassociative neck has topology K3 × T² × ℝ (n = 7, m = 3, giving m² − mn + m + n = −2 < 0), placing it within the Chen-Hong "non-rigid" window: metrics on this topology with nonnegative 3-intermediate curvature need not split. The k ≥ 1 Chebyshev corrections of the seam metric [A] are therefore not obstructed by a forced splitting; this is a compatibility statement about the neck, not a construction of K₇.
+**Intermediate-curvature splitting (Chen–Hong 2026).** Chen and Hong [48] prove that, for certain (n, m), a noncompact manifold with nonnegative m-intermediate curvature admitting a smooth proper map of nonzero degree to M^{n−m} × T^{m−1} × ℝ splits isometrically; outside that range they construct non-split examples on S^{n−m} × T^{m−1} × ℝ. For the neck topology K3 × T² × ℝ (n = 7, m = 3) the splitting theorem does not apply. Nothing follows about the neck: being outside the range of a rigidity theorem does not show that non-split metrics with this curvature condition exist on K3 × T² × ℝ (the examples are on S⁴ × T² × ℝ). Earlier versions concluded that the Chebyshev corrections of the seam metric [A] are "not obstructed by a forced splitting"; that conclusion is withdrawn.
 
 ---
 
@@ -595,7 +595,7 @@ $$\boxed{\varphi_{\text{ref}} = D^{3/14}\,\varphi_0, \qquad g_{\text{ref}} = D^{
 
 ### 11.2 Joyce Existence Theorem and Global Solutions
 
-**Clarification**: The reference form φ_ref = D^{3/14} φ₀ is the canonical G₂ structure in a local orthonormal coframe, not a globally constant form on K₇. On a compact G₂ manifold, the coframe 1-forms {eⁱ} satisfy deⁱ ≠ 0 in general, so "constant components" does not imply dφ = 0 globally.
+**Clarification**: The reference form φ_ref = D^{3/14} φ₀ is the standard form written in the fixed coframe of §11.1 (orthonormal for g_{φ₀}, not for g_ref), not a globally constant form on K₇. On a compact G₂ manifold, the coframe 1-forms {eⁱ} satisfy deⁱ ≠ 0 in general, so "constant components" does not imply dφ = 0 globally.
 
 **Actual solution structure**: The topology and geometry of K₇ impose a deformation:
 $$\varphi = \varphi_{\text{ref}} + \delta\varphi$$
@@ -618,16 +618,16 @@ A companion numerical program trains physics-informed neural networks (PINNs) to
 
 **G₂ holonomy training** (Phase 3, 13 versions, v2-v13):
 
-Over successive training protocol refinements, the holonomy quality has improved:
+Over successive training protocols, the training scores evolved as follows:
 
 | Metric | Initial (v5) | Current best (v11) | Improvement |
 |--------|-------------|-------------------|-------------|
-| g2_self (honest holonomy) | 3.86 | 3.25 | -16% |
+| g2_self | 3.86 | 3.25 | −16% |
 | V₇ projection score | 0.51 | 0.014 | -97% |
 | det(g) at neck | 4.69 | 2.031 | locked at target |
 | phi drift | 13.4% | 0% | controlled |
 
-The g2_score measures the normalized projection of Riemann curvature onto the complement of g₂ in so(7). A score of 0 corresponds to exact G₂ holonomy; the flat metric scores approximately 3.5. The V₇ projection score measures the fraction of curvature outside the g₂ subalgebra (using the correct kernel-based g₂ decomposition, see Section 6.2).
+The g2_self and V₇ projection scores are training diagnostics of the companion code, and their definition is not stated here. Earlier versions described g2_score as a normalized projection of the Riemann curvature onto the complement of g₂, equal to 0 for G₂ holonomy and about 3.5 for the flat metric. Both cannot hold: a flat metric has R = 0, so a normalized projection of R vanishes or is undefined. And curvature valued in g₂ would give Hol ⊆ G₂, not Hol = G₂. The table records how the scores evolved; it is not a measure of holonomy.
 
 A critical bug in the g₂ basis construction was discovered and corrected between versions 9 and 10: the Fano-plane heuristic does not produce correct g₂ generators. The correct g₂ subalgebra is the kernel of the Lie derivative map (Section 6.2). This correction led to significant improvement in all subsequent versions.
 

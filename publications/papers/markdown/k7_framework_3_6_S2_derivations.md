@@ -42,7 +42,7 @@ The twenty structural constants and their status (Lie datum, topological, input,
 
 **On A04.** The three terms were written as "algebraic", "bulk impedance" and "torsional correction" in earlier versions. None of the three names corresponds to a computation; the correction term is the product of the imposed normalization and the unnamed combination. The relation lies 19.7 ppm below α⁻¹(0), whose uncertainty is 1.5 × 10⁻¹⁰ relative: a proximity (main §4.2).
 
-**On A03.** A second formula for λ_H is recorded in the corpus (S2.6).
+**On A03.** A second formula for λ_H is recorded in the corpus (S2.7).
 
 ---
 
@@ -65,7 +65,7 @@ Four relations bear on two independent mass ratios, and they are mutually incomp
 |----|----------|-----------|------------------|---|
 | A08 | m_s/m_d | p₂² × Weyl = 4 × 5 = **20** | the PDG gives a range (17–22), not a measurement | integer; inside the PDG range |
 | A09 | m_c/m_s | (dim E₈ − p₂)/b₂ = 246/21 = **82/7** = 11.7143 | n/a | integer; pull −1.6σ |
-| A10 | m_b/m_t | 1/(2b₂) = **1/42** = 0.023810 | **mass scheme** (R7): m_b in MS-bar at m_b over the directly measured m_t | integer; **scheme assignment** (R7); pull −10.2σ |
+| A10 | m_b/m_t | 1/(2b₂) = **1/42** = 0.023810 | **mass scheme** (R7): m_b in MS-bar at m_b over the directly measured m_t | integer; **proximity** (in the scheme declared in R7); pull −10.2σ |
 | A11 | m_u/m_d | (1 + dim E₆)/\|PSL(2,7)\| = **79/168** = 0.470238 | additive 1; the PDG quotes the uncertainty at 90% CL, divided by 1.645 to 1σ (S3) | integer; pull +0.7σ |
 | A16 | sin θ₁₂ (CKM) = λ | fund(E₇)/dim E₈ = 56/248 = **7/31** = 0.225806 | compared with sin θ₁₂, not sin²θ₁₂; R12 | integer; approximate (R12); pull +0.9σ |
 | A17 | A (Wolfenstein) | (Weyl + dim E₆)/H* = **83/99** = 0.838384 | R12 | integer; approximate (R12); pull +0.7σ |
@@ -121,7 +121,7 @@ Four relations bear on two independent mass ratios, and they are mutually incomp
 | Ω_c/Ω_b | 43/8 = 5.375 (A25); 27/5 = 5.400 (A30/A29) |
 | Ω_c/Ω_Λ | 65/168 = 0.3869 (A26); 0.3873 (A30 × A33); 0.3883 (A30/A27) |
 
-A27 and A33 are the same quantity, written with two formulas. The disagreements are below the Planck uncertainties, which is why each relation passes at 2σ; at most two of the seven can be exact, and none is selected (R11). Only A29 and A30 are mutually consistent (5/32 + 27/32 = 1, neglecting neutrinos).
+A27 and A33 are the same quantity, written with two formulas. The disagreements are below the Planck uncertainties, which is why each relation passes at 2σ. The seven cannot hold together; none is selected (R11). Some are redundant and some subsets are compatible: A29 and A30 are equivalent under flatness without neutrinos (5/32 + 27/32 = 1), and the largest compatible subsets have three relations, A29 and A30 with one of A23, A26, A27 or A33 (checked by solving each subset for (Ω_b, Ω_c)). Earlier drafts of this version said that at most two of the seven can be exact; A23, A29 and A30 hold together, and the statement is withdrawn.
 
 **Withdrawn.** Earlier versions also gave Ω_m = Ω_DE/√Weyl = 0.3068 (2.7% from Planck) as a "derived" relation, and described ln 2 as a "binary information factor" of the moduli space. The first is an eighth density relation, incompatible with the others; the second names an operation without a computation behind it. Both are withdrawn. The statement that Ω_DM/Ω_b = 43/8 is "exact" (from a dataset value 5.375 ± 0.1 that matched no Planck column) is withdrawn; against Planck 2018 it is 5.364 ± 0.065.
 

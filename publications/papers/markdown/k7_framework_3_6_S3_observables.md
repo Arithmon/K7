@@ -17,7 +17,7 @@ Earlier versions described the dataset as "95 observables derived from a single 
 | III | 21 | Outputs of mechanisms on the approximate seam metric (Wilson-line splitting, associative volumes, spectral counts, bundle conditioning), with calibration choices; and the withdrawn supersymmetric running | no |
 | IV | 22 | Structural quantities and numerical diagnostics, with no experimental counterpart | no |
 
-**Type I.** Each relation is a ratio of structural integers or uses one further operation (√, φ, ln 2, ζ values), declared in its status. The status vocabulary is that of main §4.1: *integer*, *algebraic / φ / ln 2 / ζ values*, *det(g)* (R2), *κ_T* (R3), *proximity*, *tension*, *approximate* (R8, R11, R12), *inside the PDG range*, *unit assignment* (R6), *scheme assignment* (R7).
+**Type I.** Each relation is a ratio of structural integers or uses one further operation (√, φ, ln 2, ζ values), declared in its status. The status vocabulary is that of main §4.1: *integer*, *algebraic / φ / ln 2 / ζ values*, *det(g)* (R2), *κ_T* (R3), *proximity*, *tension*, *approximate* (R8, R11, R12), *inside the PDG range*, *unit assignment* (R6); m_b/m_t is compared in the mass scheme declared in R7.
 
 **Type II.** Several entries are numbers read in MeV or GeV, for example m_u = √(dim G₂/3) = 2.16, m_d = ln 107 = 4.673, m_c = (dim G₂ − π)³ = 1280, m_t = 415². Reading a structural number in a unit is an assignment of the same kind as reading 197 in degrees, with a far larger space of alternatives (R10). The CKM magnitudes and the mass cascades (m_c/m_d, m_b/m_d, m_t/m_c) are products of Type I relations and add no information beyond them. Earlier versions described all nineteen as "a Type I ratio times an experimental anchor"; that description did not match the dataset and is withdrawn.
 
@@ -44,9 +44,9 @@ The comparison data were refreshed on 2026-10-22 to the most recent releases (`c
 
 **Asymmetric uncertainties.** NuFIT and the CKM parameter A have asymmetric errors; both sides are kept in the dataset, and the pull uses the side facing the framework's value. The sin²θ₂₃ profile is not Gaussian: its 3σ range (0.435–0.582) contains 6/11 although the Gaussian pull exceeds 4σ (main §4.3).
 
-**Corrections made in the refresh.** The previous dataset gave m_μ/m_τ and m_τ/m_e with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q_Koide from the PDG 2022 τ mass while m_τ/m_e used the later one; gave m_b/m_t an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data and one convention for all uncertainties, the 33 relations fall into the six classes of main §4.2: 24 within 2σ, 2 in tension, 4 proximities beyond 3σ, 1 inside the PDG range, 1 with a non-Gaussian profile, 1 scheme assignment. (The earlier count, 28 within 2σ, rested on the uncertainties listed above.)
+**Corrections made in the refresh.** The previous dataset gave m_μ/m_τ and m_τ/m_e with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q_Koide from the PDG 2022 τ mass while m_τ/m_e used the later one; gave m_b/m_t an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; gave m_μ/m_e an uncertainty of 0.02 where CODATA 2022 gives 4.6 × 10⁻⁶; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data and one convention for all uncertainties, the 33 relations fall into the five classes of main §4.2: 24 within 2σ, 2 in tension, 5 proximities beyond 3σ (m_b/m_t in the scheme of R7 among them), 1 inside the PDG range, 1 with a non-Gaussian profile. (The earlier count, 28 within 2σ, rested on the uncertainties listed above.)
 
-**Not refreshed.** Y_p (0.245 ± 0.003, observational helium abundance) was not re-verified; the Type II CKM magnitudes and mass cascades keep their earlier reference values, since they are not compared in the main text.
+**Not refreshed.** Y_p (0.245 ± 0.003) is the PDG's recommended observational helium abundance from HII regions (BBN review of the 2024 Review of Particle Physics, eq. 24.3; earlier versions of the dataset labelled it Planck 2018, which it is not), and was not re-checked against the 2026 edition; the Type II CKM magnitudes and mass cascades keep their earlier reference values, since they are not compared in the main text.
 
 ---
 
@@ -72,7 +72,7 @@ Formulas, framework values and deviations are in main §4.1. This table gives, f
 | A07 | m_μ/m_e | 206.7682827(46) | CODATA 2022 | ≫ 10σ | n/a | φ; approximate (R8); **proximity** |
 | A08 | m_s/m_d | 17–22 (range) | PDG 2026 | n/a | PDG gives the range 17–22, not a measurement with an uncertainty | integer; inside the PDG range |
 | A09 | m_c/m_s | 11.769(35) | PDG 2026 | −1.6σ | lattice average (N_f = 2+1+1), PDG quark-mass review | integer |
-| A10 | m_b/m_t | 0.024253(43) | PDG 2026 | −10.2σ | m_b at 90% CL converted to 1σ | integer; **scheme assignment** (R7) |
+| A10 | m_b/m_t | 0.024253(43) | PDG 2026 | −10.2σ | m_b at 90% CL converted to 1σ | integer; **proximity** (in the scheme declared in R7) |
 | A11 | m_u/m_d | 0.462(12) | PDG 2026 | +0.7σ | MS-bar at 2 GeV | integer |
 | A12 | sin²θ₁₂ (PMNS) | 0.3088(+67/−66) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.2σ | n/a | integer |
 | A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.582, contains 6/11 | integer; **tension** (octant; inside the NuFIT 3σ range, §4.3) |
@@ -94,7 +94,7 @@ Formulas, framework values and deviations are in main §4.1. This table gives, f
 | A29 | Ω_b/Ω_m | 0.1564(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | Ω_b h² / Ω_m h² | integer; det(g); approximate (R11) |
 | A30 | Ω_c/Ω_m | 0.839(11) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.4σ | Ω_c h² / Ω_m h² | integer; det(g); approximate (R11) |
 | A31 | σ₈ | 0.8111(60) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.3σ | n/a | integer; det(g) |
-| A32 | Y_p | 0.245(3) | Planck 2018 | +0.3σ | n/a | integer; κ_T |
+| A32 | Y_p | 0.245(3) | PDG 2024 (BBN review, eq. 24.3) | +0.3σ | n/a | integer; κ_T |
 | A33 | Ω_m/Ω_Λ | 0.460(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | flatness: Ω_Λ = 1 − Ω_m, neutrinos neglected | integer; κ_T; approximate (R11) |
 <!-- END S3-TYPE-I -->
 
@@ -125,7 +125,7 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 | B14 | II | \|V_ts\| | strange-top coupling | 0.04154 | 0.0415 | cascade of Type I relations; no independent content |
 | B15 | II | \|V_tb\| | unitarity | 0.999106 | 0.999105 | cascade of Type I relations; no independent content |
 | B16 | II | m_c/m_s (ext) | τ×3.49 | 13.6 | 13.6 | mixed scales (m_c at m_c, m_s at 2 GeV); not comparable |
-| B17 | II | m_c/m_d | m_c/m_s × m_s/m_d | 271.99 | 272 | cascade of Type I relations; no independent content |
+| B17 | II | m_c/m_d | m_c/m_s (ext, B16) × m_s/m_d (A08) = τ×3.49×20 | 271.99 | 272 | cascade of B16 (Type II, not comparable) and A08; no independent content |
 | B18 | II | m_b/m_d | cascade | 891.97 | 893 | cascade of Type I relations; no independent content |
 | B19 | II | m_t/m_c | cascade | 135.49 | 136 | cascade of Type I relations; no independent content |
 | C01 | III | m_τ/m_e (dyn) | Wilson line 3-gen optimization | 3403.1 | 3477.37 | conditional reconstruction (calibration choices, main §6.2) |
