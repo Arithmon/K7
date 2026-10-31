@@ -3,6 +3,20 @@
 *Draft branch `v3.6-draft`. Version 3.5 (Zenodo 21296168) remains the published version; the files `k7_framework_3_5_*` are unchanged. Supplement S4 (look-elsewhere null and descriptive diagnostics) is included from batch 5. LaTeX and PDF are not yet regenerated.*
 
 
+**Batch 7 (2026-10-31): title, and the companion philosophy paper cited.**
+- Title: "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and
+  Cosmology" (author's decision), replacing "The K₇ Framework: Conditional
+  Topological Relations for Standard-Model Parameters from G₂ Holonomy and
+  E₈×E₈ Structure". The series keeps the name "The K₇ Framework".
+- The companion philosophy paper [WNE] ("Where Necessity Ends: Selection by
+  Joint Compatibility") is cited: §3.5 (the three states and the condition of
+  independence come from it; its §13 audits version 3.5) and §12.2. It was
+  left uncited during its anonymous review, which has ended.
+- The wording neutralised for that review is restored: §12 "Where the
+  Necessity of K₇ Ends", §12.2 "Where its necessity ends", §3.3 and §7.3
+  ("where the framework's necessity ends").
+- Not yet: .tex regeneration, release audit.
+
 **Batch 6 (2026-10-24): second outside review of the draft.**
 - Look-elsewhere test: the alphabet actually tested is declared (§7.2,
   S4.2.1): the nineteen integers of the 3.5 Monte Carlo register, without
@@ -176,8 +190,8 @@
 **Batch 2 (2026-10-20): reframing of the main paper (physics_main.md).**
 Decisions of the author (2026-10-17 and 2026-10-20): full reframing; δ_CP as a
 phase with the unit declared; the 33 Type I relations in front, Types II–IV as
-conditional extractions; the selection-principle discussion rewritten into the
-text.
+conditional extractions; the selection-principle thesis rewritten into the text
+without citing the companion philosophy paper (under anonymous review).
 - New §3 "The correspondence and its dictionary": the twenty constants with a
   status column; the grammar (frozen after discovery); the absence of an
   assignment rule declared (the "metric uniqueness" / "functionals of the
@@ -210,7 +224,7 @@ text.
 - §10: the "why Lorentz invariance?" analogy and the "unique holonomy with
   the stabilizer chain" claim withdrawn (Spin(7) contains it).
 - New §11: decision rule with no repair clause (D1–D6).
-- §12: what K₇ does not fix; list of withdrawn claims.
+- §12: where the necessity of K₇ ends; list of withdrawn claims.
 - Not yet: supplements S1–S4 (status per relation in S2, status column in S3,
   the new null in S4), .tex regeneration, title, release audit.
 

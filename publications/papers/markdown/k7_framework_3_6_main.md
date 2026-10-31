@@ -1,4 +1,4 @@
-# The K₇ Framework: Conditional Topological Relations for Standard-Model Parameters from G₂ Holonomy and E₈×E₈ Structure
+# The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology
 
 **Brieuc de La Fourniere**
 
@@ -61,7 +61,7 @@ Throughout, the residue register of §3.3 is given the same rank as the results.
 - **§9** Existence status of the compact K₇.
 - **§10** Selection audit of (21, 77).
 - **§11** Decision rule and refutation.
-- **§12** Discussion and conclusion: what K₇ does not fix.
+- **§12** Discussion and conclusion: where the necessity of K₇ ends.
 
 Four supplements give technical details: S1 (mathematical foundations), S2 (the arithmetic of the 33 relations and the dictionary choices each makes), S3 (the 95-entry dataset, with a status column), S4 (Sieve and look-elsewhere diagnostics).
 
@@ -163,7 +163,7 @@ Structural redundancy does not repair this. That sin²θ_W = 3/13 can be written
 
 ### 3.3 The residue register
 
-The residue is the part of the framework not fixed by its requirements: what was set rather than derived. It is written here with the same prominence as the results, because it indicates where a further requirement would have to bite, or where the framework rests on a choice.
+The residue is the part of the framework not fixed by its requirements: what was set rather than derived. It is written here with the same prominence as the results, because it indicates where a further requirement would have to bite, or where the framework's necessity ends.
 
 | Item | What is set | Where it acts | Status |
 |------|-------------|---------------|--------|
@@ -200,7 +200,7 @@ A correspondence that is not derived can still be worth stating, provided its st
 2. **Residual family.** The requirements leave several physically distinct candidates, and the programme says what would tell them apart.
 3. **Privileged candidate.** The requirements leave a family, and the author designates a member for reasons that are the author's own and are declared as such.
 
-All three are legitimate. What is not legitimate is to present the third as the first. K₇ is in the third state. The requirements that motivate it (G₂ holonomy, compactness, the E₈ data) are justified independently of the Standard Model's values, which answers the first question of §1.1. They do not select (21, 77), the formulas, or the normalization: these are where the author's choice enters, and the register of §3.3 records them.
+All three are legitimate. What is not legitimate is to present the third as the first. The three states, and the condition of independence stated below, are developed in a companion paper in the philosophy of science [WNE], which also audits version 3.5 of this framework against them. K₇ is in the third state. The requirements that motivate it (G₂ holonomy, compactness, the E₈ data) are justified independently of the Standard Model's values, which answers the first question of §1.1. They do not select (21, 77), the formulas, or the normalization: these are where the author's choice enters, and the register of §3.3 records them.
 
 Two points follow, and they set the posture of the paper.
 
@@ -414,7 +414,7 @@ The preregistered verdict takes the larger of the two family values, P_global = 
 Two things survive the look-elsewhere tests, and the paper rests on them rather than on closeness:
 
 1. **Rigidity under a fixed dictionary.** Each relation has no continuous parameter. With the dictionary fixed in advance, a single measurement can reject it (§11).
-2. **The declared residue.** What was set is written down (§3.3), so that a reader can see where the framework's choices enter.
+2. **The declared residue.** What was set is written down (§3.3), so that a reader can see where the framework's necessity ends.
 
 The origin of the vocabulary (E₈, G₂ and the Betti numbers rather than an invented list) is not on this list. No null of the kind above can price it, but it does not show a selection made before the data were known: the grammar was frozen after the formulas had been found (§3.2), and the selecting step is what §10 has not justified.
 
@@ -552,7 +552,7 @@ The relations are stated as exact equalities with no theoretical uncertainty, an
 
 ---
 
-## 12. Discussion and Conclusion: What K₇ Does Not Fix
+## 12. Discussion and Conclusion: Where the Necessity of K₇ Ends
 
 ### 12.1 What the framework is, and what it is not
 
@@ -560,9 +560,9 @@ The framework is a correspondence between invariants of (K₇, E₈×E₈) and 3
 
 Version 3.6 withdraws several things earlier versions said: that the relations are derived from the geometry; that they cannot be fitted; that 95 observables are predicted; that m_H/m_W and Koide survive the Sieve; that a coincidence probability of 10⁻³⁴⁶ or a P-value of 5 × 10⁻⁶ measures the framework's distinctiveness; that 197° is a "pure geometry" prediction; that the generation count comes from an index theorem. Each of these was stronger than what the work supports. What remains is smaller and can be checked.
 
-### 12.2 Where the choices enter
+### 12.2 Where its necessity ends
 
-Every framework rests somewhere on choices it does not derive, and saying where is part of stating it. For K₇ there are three places.
+Necessity ends somewhere in every framework, and saying where is part of stating it [WNE]. For K₇ it ends in three places.
 
 - **At the requirements.** G₂ holonomy, compactness and the E₈ data are posited, not derived. They are well motivated, and they answer the question of whether the family deserves exploration; they do not answer why this member.
 - **At the residue.** The Betti pair (21, 77), the normalization det(g) = 65/32 and the combination κ_T⁻¹ = 61 are set, not forced, and in the two overdetermined sectors (four lepton relations, seven density relations) none of the incompatible relations is selected (§3.3). §10 closes five routes to deriving (21, 77) and leaves one identity open.
@@ -694,6 +694,7 @@ The author declares no competing interests.
 - **[M]** B. de La Fournière, "A reproducible standard for arithmetic coincidence claims in fundamental physics," Zenodo [10.5281/zenodo.20728964](https://doi.org/10.5281/zenodo.20728964) (2026). The Sieve methodology and its four-null scorecard for the K₇ relations.
 - **[S-frozen]** B. de La Fournière, "Counting Coincidences: frozen inputs" (observable list and expression grammars), Zenodo dataset [10.5281/zenodo.20666878](https://doi.org/10.5281/zenodo.20666878), v1.0 of 12 June 2026.
 - **[K3A]** B. de La Fournière, "Certified Analytic Geometry on an Explicit K3 Surface," Zenodo [10.5281/zenodo.22047469](https://doi.org/10.5281/zenodo.22047469) (2026). A certified holomorphic atlas of an explicit K3 surface; no metric claim.
+- **[WNE]** B. de La Fournière, "Where Necessity Ends: Selection by Joint Compatibility," preprint, PhilArchive (2026). Selection by the joint compatibility of independently motivated requirements, the obligations it carries (independence, a fixed dictionary, a declared residue, refutation with no repair clause), and the three states of §3.5; its §13 audits version 3.5 of this framework.
 - **[essay]** B. de La Fournière, *Orientation, not ontology* (companion essay), <https://arithmon.substack.com/p/orientation-not-ontology> (2026).
 
 *This is the founding-framework paper of the [Arithmon program](https://arithmon.com); the methodology of §7 is [M].*
