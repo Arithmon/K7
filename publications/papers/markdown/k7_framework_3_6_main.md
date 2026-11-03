@@ -306,7 +306,7 @@ The dataset of S3 contains 62 further entries. Version 3.6 does not count them a
 - **Type III (21 entries)** are outputs of mechanisms (Wilson-line eigenvalue splitting, associative-cycle volumes, spectral counts, gauge-bundle conditioning) that consume declared calibration choices (§6.2). They are conditional reconstructions. The four entries of the two-loop supersymmetric running from a grand-unification boundary condition are withdrawn with that reading (§5).
 - **Type IV (22 entries)** are structural diagnostics of the construction (Betti numbers, certificates, conditioning numbers) with no experimental counterpart. They are not observables. Three of them are taken from the black-hole-remnant analysis of [42]; one of these depends on the scale identification τ₀ = v_EW.
 
-The count "95 observables" of earlier versions is therefore replaced by: **33 relations** in the six classes of §4.2, not all independent; and 62 conditional or diagnostic entries, kept in S3 for traceability.
+The count "95 observables" of earlier versions is therefore replaced by: **33 relations** in the five classes of §4.2, not all independent; and 62 conditional or diagnostic entries, kept in S3 for traceability.
 
 ---
 
@@ -437,7 +437,7 @@ This section gathers in one place every claim about *existence of the compact $K
 ### 9.1 The two layers
 
 - **Topological layer (prior to both).** No compact G₂ manifold with Betti numbers (21, 77) is currently constructed; the Joyce–Karigiannis route of version 3.5 does not realize the pair (§2.3; S1 §8.4). Both layers below presuppose a manifold with this topology.
-- **Datum-level analytic layer.** A *normalised datum* $\mathcal D_0$ is fixed: a base $S^3$, a coassociative fibration $\pi: K_7 \to S^3$ with $N = 77$ round-unlink branch components, a rank-one Picard–Lefschetz monodromy along each meridian, and a collar-affine period section $h$. On $\mathcal D_0$, the companion paper [E] proves a *conditional branched lifting scheme* (a special case of [Donaldson 2017, Conjecture 1]) via seven theorem-grade results. Source-side discharge constants ($C_{\rm src} = 27/16$, $C_{\rm nl} = 2/3$, $C_{\rm link} \le 1$, $\gamma = 2$) carry structural provenance; the tail-contraction threshold $R_0(\mathcal D_0) \le 4.9 \cdot 10^3$ is enclosed by outward-rounded interval arithmetic. **But $\mathcal D_0$ is not realisable as posed**: a Stokes-type obstruction (2026-08-19) shows that the single-root global datum admits no period section (v3.5 erratum, §2). This layer is therefore *conditional on a datum that is not currently instantiated*; it is not discharged.
+- **Datum-level analytic layer.** A *normalised datum* $\mathcal D_0$ is fixed: a base $S^3$, a coassociative fibration $\pi: K_7 \to S^3$ with $N = 77$ round-unlink branch components, a rank-one Picard–Lefschetz monodromy along each meridian, and a collar-affine period section $h$. On $\mathcal D_0$, the companion paper [E] proves a *conditional branched lifting scheme* (a special case of [53, Conjecture 1]) via seven theorem-grade results. Source-side discharge constants ($C_{\rm src} = 27/16$, $C_{\rm nl} = 2/3$, $C_{\rm link} \le 1$, $\gamma = 2$) carry structural provenance; the tail-contraction threshold $R_0(\mathcal D_0) \le 4.9 \cdot 10^3$ is enclosed by outward-rounded interval arithmetic. **But $\mathcal D_0$ is not realisable as posed**: a Stokes-type obstruction (2026-08-19) shows that the single-root global datum admits no period section (v3.5 erratum, §2). This layer is therefore *conditional on a datum that is not currently instantiated*; it is not discharged.
 - **Global-analytic layer.** Passing to a smooth compact $K_7$ carrying a genuine torsion-free $G_2$-structure requires, first, a **realisable datum** replacing $\mathcal D_0$, and then closing, for that datum, two external structural slots (jointly the pack $\mathsf H_{\rm global}$ of [E]) and one standalone hypothesis:
   1. **(L4) Hyperkähler K3-fibration with prescribed periods.** A hyperkähler K3-fibration on the topological $K_7$ with rank-one Picard–Lefschetz monodromy along the 77-unlink and a period section $h$ consistent with the datum $(A_2^{\rm collar})$–$(A_5)$. The closest current template is Kovalev's Hopf-link coassociative K3 fibration [13].
   2. **(C.1) Smooth-topology classification.** Standard Voisin–Kovalev classification data [21] (Dehn–Seidel twist + K3-family gluing) producing the smooth 7-manifold on which (L4) can live.
@@ -501,8 +501,8 @@ This section concerns one item of the residue register (R1): why the Betti pair 
 - **Landscape density.** In the census of Picard-lattice-realisable hyperkähler K3 pairs, (21, 77) is sub-median: convenient, not special. It is not a distinguished point of a natural density.
 - **Chamber structure.** The associated chamber analysis yields one chamber with three gauge orbits off 77; the "77 side" is not a distinguished wall.
 - **S₅ propagation.** The propagation S₅ → 77 closes negatively by mechanism: the induced flow on the moduli side does not favour 77 over its neighbours.
-- **Higher-hyperkähler distinguishedness.** Across several classifications, 21 has distinguishing invariants and 77 does not, under any of the mechanisms specified so far; the single exception is an isolated context (Camere, Lemma 5.8).
-- **An independent construction.** The Zhou series produces (b₂, b₃) = 7 · (3, 11) as a reparametrisation rather than an alternative construction; a screening constraint b₂ ≥ 9 used there is refuted by the census.
+- **Higher-hyperkähler distinguishedness.** Across several classifications, 21 has distinguishing invariants and 77 does not, under any of the mechanisms specified so far; the single exception is an isolated context ([54], Lemma 5.8).
+- **An independent construction.** The Zhou series [55] produces (b₂, b₃) = 7 · (3, 11) as a reparametrisation rather than an alternative construction; a screening constraint b₂ ≥ 9 used there is refuted by the census.
 
 Each route is closed as an investigation. The selection question itself is not closed.
 
@@ -565,7 +565,7 @@ Version 3.6 withdraws several things earlier versions said: that the relations a
 Necessity ends somewhere in every framework, and saying where is part of stating it [WNE]. For K₇ it ends in three places.
 
 - **At the requirements.** G₂ holonomy, compactness and the E₈ data are posited, not derived. They are well motivated, and they answer the question of whether the family deserves exploration; they do not answer why this member.
-- **At the residue.** The Betti pair (21, 77), the normalization det(g) = 65/32 and the combination κ_T⁻¹ = 61 are set, not forced, and in the two overdetermined sectors (four lepton relations, seven density relations) none of the incompatible relations is selected (§3.3). §10 closes five routes to deriving (21, 77) and leaves one identity open.
+- **At the residue.** The Betti pair (21, 77), the normalization det(g) = 65/32 and the combination κ_T⁻¹ = 61 are set, not forced, and in the three overdetermined sectors (four lepton relations, three CKM relations, seven density relations) none of the incompatible relations is selected (§3.3). §10 closes five routes to deriving (21, 77) and leaves one identity open.
 - **At the dictionary.** No rule assigns formulas to observables, and two assignments carry units or scales that the structure does not supply: the degrees in which 197 is read, and the scales at which the couplings are compared. A confirmation of a relation would confirm the assignment, not a requirement of the structure.
 
 ### 12.3 Relation to M-theory and to other proposals
@@ -679,6 +679,12 @@ The author declares no competing interests.
 [51] V. V. Nikulin, "Integer symmetric bilinear forms and some of their geometric applications," Izv. Akad. Nauk SSSR Ser. Mat. 43 (1979); English transl. Math. USSR Izv. 14 (1980).
 
 [52] Belle II Collaboration, "Measurement of the τ-lepton mass with the Belle II experiment," Phys. Rev. D 108, 032006 (2023), doi:10.1103/PhysRevD.108.032006, arXiv:2305.19116.
+
+[53] S. K. Donaldson, "Adiabatic limits of co-associative Kovalev–Lefschetz fibrations," in Algebra, Geometry, and Physics in the 21st Century, Progr. Math. 324, Birkhäuser (2017), pp. 1–29, arXiv:1603.08391.
+
+[54] C. Camere, "Lattice polarized irreducible holomorphic symplectic manifolds," Ann. Inst. Fourier 66 (2016), 687–709, arXiv:1312.3224.
+
+[55] C. Zhou, Z. Zhou, "Algebraic Stability and Cosmological Structure E: The Arithmetic Necessity of Three Generations of Fermions," Zenodo, doi:10.5281/zenodo.18626667 (2026).
 
 ---
 
