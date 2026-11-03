@@ -7,6 +7,8 @@
 - The four entries A12–A15 were compared with the NuFIT 6.1 parameter table (archived copy of www.nu-fit.org, snapshot of 2026-09-12; the live site was unreachable on 2026-10-22 and 2026-11-03). Central values, 1σ errors and the δ_CP 3σ range all agree.
 - One correction: the upper 3σ bound of sin²θ₂₃ was given as 0.582; the table gives 0.584, consistent with θ₂₃ < 49.86°. 6/11 stays inside the range; no pull or status changes.
 - Release audit, first fixes: "six classes" corrected to five (§4.5, against §4.2); the overdetermined sectors in §12.2 corrected from two to three (CKM added); three sources named without a bibliography entry now cited: Donaldson [53], Camere [54], the Zhou series [55].
+- [B10–B15, B18, B19] reclassified: "cascade of Type I relations; no independent content" withdrawn. These eight entries are legacy values whose derivation is not documented in the dataset, retained for traceability and not counted as predictions (dataset, S3 §1 and table, main §4.5). The 33 relations and their breakdown are unchanged.
+- The v3.5 erratum is now a bibliography entry, [ERR], at a fixed commit; its nine citations read [ERR, §N].
 
 **Batch 7 (2026-10-31): title, and the companion philosophy paper cited.**
 - Title: "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and

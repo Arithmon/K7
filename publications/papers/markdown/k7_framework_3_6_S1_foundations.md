@@ -226,7 +226,7 @@ Lean: `tau_num_factorization`. τ is used only by Type II entries (S3).
 
 ### 4.3 The Binary Ratio p₂ = 2
 
-p₂ is defined as dim(G₂)/dim(K₇) = 14/7 = 2 and is called the binary ratio. It is not a Pontryagin class (v3.5 erratum, §6). Earlier versions listed a "triple geometric origin" of p₂ (also 496/248, and the √2 of the E₈ root length); these are three different occurrences of the number 2, not three derivations of one constant, and the list is withdrawn.
+p₂ is defined as dim(G₂)/dim(K₇) = 14/7 = 2 and is called the binary ratio. It is not a Pontryagin class [ERR, §6]. Earlier versions listed a "triple geometric origin" of p₂ (also 496/248, and the √2 of the E₈ root length); these are three different occurrences of the number 2, not three derivations of one constant, and the list is withdrawn.
 
 ---
 
@@ -462,7 +462,7 @@ The Joyce–Karigiannis route proposed in version 3.5 as a realization of (21, 7
 **Global properties assumed, not established**:
 - Compact 7-manifold (no boundary)
 - Simply connected: π₁(K₇) = {1}, b₁ = 0
-- If a torsion-free G₂ structure g* exists on K₇, then Hol(g*) = G₂ [Joyce, Prop. 11.2.3] and Ric(g*) = 0. Its existence is open (main §9; v3.5 erratum, §7.5).
+- If a torsion-free G₂ structure g* exists on K₇, then Hol(g*) = G₂ [Joyce, Prop. 11.2.3] and Ric(g*) = 0. Its existence is open (main §9; [ERR, §7.5]).
 - (Euler characteristic χ(K₇) = 0 is automatic for a closed odd-dimensional manifold; §9.1.)
 
 **Arithmetic.** b₂ = 21 = C(7,2) and b₃ = 77 = C(7,3) + 2b₂ = 35 + 42 are arithmetic facts about the posited integers; they define no geometric decomposition (§9.3).
@@ -602,7 +602,7 @@ $$\varphi = \varphi_{\text{ref}} + \delta\varphi$$
 
 The torsion-free condition (dφ = 0, d*φ = 0) is a **global constraint**. Joyce's perturbation theorem gives a nearby torsion-free G₂ metric when the torsion of a closed G₂ structure is small compared with a constant that depends on the injectivity radius and curvature bounds of that structure (Joyce 2000, Thm. 11.6.1). Earlier versions compared a PINN torsion value (‖T‖_max = 4.46 × 10⁻⁴) with a fixed threshold ε₀ = 0.1 and reported a "224× safety margin". There is no universal threshold: the constant has not been computed for this structure, and the comparison is not an existence argument (main §9).
 
-*(Version 3.5 added here that the bound κ_T = 1/61 places K₇ within Joyce's perturbative regime. No argument connects the number 1/61 to Joyce's smallness hypothesis, and the sentence is withdrawn; v3.5 erratum, §7.6.)*
+*(Version 3.5 added here that the bound κ_T = 1/61 places K₇ within Joyce's perturbative regime. No argument connects the number 1/61 to Joyce's smallness hypothesis, and the sentence is withdrawn; [ERR, §7.6].)*
 
 ### 11.3 Independent Numerical Validation (PINN)
 
@@ -643,7 +643,7 @@ Full details of the PINN architecture, training protocol, and version-by-version
 3. G₂ linear algebra on ℝ⁷: exterior algebra, Hodge star, ψ = ⋆φ (`Geometry` module)
 4. Spectral modules (§7.3), which no relation uses
 
-**The axioms** (see main §8.1): four prediction-chain axioms import literature results (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`), and ten interval certificates import numerical enclosures (`det_g_at_half`, `K3_eigenvalue_0…3` and their `_bracketed` forms). They carry content that cannot be checked by `decide` alone because it involves real arithmetic. The v3.5 text named four "external data-package" axioms, three of which had already been eliminated (v3.5 erratum, §7.1).
+**The axioms** (see main §8.1): four prediction-chain axioms import literature results (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`), and ten interval certificates import numerical enclosures (`det_g_at_half`, `K3_eigenvalue_0…3` and their `_bracketed` forms). They carry content that cannot be checked by `decide` alone because it involves real arithmetic. The v3.5 text named four "external data-package" axioms, three of which had already been eliminated [ERR, §7.1].
 
 It does **not** formalize:
 - Existence of K₇ as a smooth G₂ manifold
@@ -773,6 +773,7 @@ None of these methods establishes a torsion-free metric on a compact K₇ (main 
 - **[A]** B. de La Fournière, "An Explicit Approximate G₂ Metric on a Compact 7-Manifold with Certified Torsion-Free Completion," Zenodo [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) (2026).
 - **[B]** B. de La Fournière, "Spectral Geometry of the G₂-GIFT Manifold: Betti Numbers, KK Spectrum, and Spectral Invariants," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
 - **[D]** B. de La Fournière, "An Explicit Closed-Form G₂ Ansatz on a K3-Coassociative Neck with Hyperkähler Rotation and Picard-Lefschetz Wirtinger Certificate," Zenodo [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) (2026).
+- **[ERR]** B. de La Fournière, "Erratum: GIFT / K₇ framework v3.5" (2026), repository Arithmon/K7, `publications/ERRATUM_v3.5.md`, commit aed460315eecc17a20402b1f4d20ac310dd4f6c2, [github.com/Arithmon/K7/blob/aed4603/publications/ERRATUM_v3.5.md](https://github.com/Arithmon/K7/blob/aed460315eecc17a20402b1f4d20ac310dd4f6c2/publications/ERRATUM_v3.5.md).
 
 ---
 
