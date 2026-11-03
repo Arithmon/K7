@@ -4,13 +4,13 @@
 
 *Mathematical background for the K₇ framework: the E₈ and G₂ data the dictionary uses, the topological status of K₇, and the algebraic reference form.*
 
-**Lean**: the arithmetic statements of this supplement are formalized in Arithmon/K7-Lean (the library rests on fourteen axioms beyond Mathlib's foundations, four literature imports and ten interval certificates, and uses no `sorry`; the 33 relations themselves depend only on the standard axioms; main §8, S3.7). Formalization establishes the arithmetic, not the physical reading. Lean names are given as they appear in the repository (v3.6 alignment branch, S3.7).
+**Lean**: the arithmetic statements of this supplement are formalized in Arithmon/K7-Lean (the library rests on fourteen axioms beyond Mathlib's foundations, four literature imports and ten interval certificates, and uses no `sorry`; the 33 relations themselves depend only on the standard axioms; main §8, S3.7). Formalization establishes the arithmetic, not the physical reading. Lean names are given as they appear in the repository at commit `34ce857` (S3.7).
 
 ---
 
 ## Abstract
 
-This supplement presents the mathematical architecture underlying the K₇ framework. Part I gives the E₈ data the dictionary uses, with the arithmetic rewritings of earlier versions and their status. Part II introduces G₂ holonomy manifolds, including the characterization of the g₂ subalgebra as the kernel of the Lie derivative map. Part III discusses the topology of K₇: the pair (b₂, b₃) = (21, 77) has no known construction. It does not appear among the catalogued compact G₂ manifolds, and the Joyce–Karigiannis ℤ₂³ route proposed in version 3.5 does not currently realize it, because its quotient cohomology is incompatible with the stated group action (§8.4). Part IV describes the algebraic reference form, whose scale is fixed by the imposed normalization det(g) = 65/32 (main R2), and the status of Joyce's perturbation theorem for this setting: its smallness constant depends on geometric bounds that are not established here, and the existence of a compact torsion-free metric is open (main §9). Numerical (PINN) experiments are reported as such. The arithmetic statements are verified in Lean 4; the archived module `JoyceKarigiannisConstruction.lean` verified arithmetic on an erroneous input and is withdrawn as evidence (§8.4).
+This supplement presents the mathematical architecture underlying the K₇ framework. Part I gives the E₈ data the dictionary uses, with the arithmetic rewritings of earlier versions and their status. Part II introduces G₂ holonomy manifolds, including the characterization of the g₂ subalgebra as the kernel of the Lie derivative map. Part III discusses the topology of K₇: the pair (b₂, b₃) = (21, 77) has no known construction. It does not appear among the catalogued compact G₂ manifolds, and the Joyce–Karigiannis ℤ₂³ route proposed in version 3.5 does not currently realise it, because its quotient cohomology is incompatible with the stated group action (§8.4). Part IV describes the algebraic reference form, whose scale is fixed by the imposed normalization det(g) = 65/32 (main R2), and the status of Joyce's perturbation theorem for this setting: its smallness constant depends on geometric bounds that are not established here, and the existence of a compact torsion-free metric is open (main §9). Numerical (PINN) experiments are reported as such. The arithmetic statements are verified in Lean 4; an earlier module, `JoyceKarigiannisConstruction.lean`, verified arithmetic on an erroneous input and is withdrawn as evidence (§8.4).
 
 ---
 
@@ -234,12 +234,12 @@ p₂ is defined as dim(G₂)/dim(K₇) = 14/7 = 2 and is called the binary ratio
 
 The foundational role of octonions is established in Part 0. This section details the exceptional algebraic structures that emerge from 𝕆.
 
-### 5.1 Exceptional Jordan Algebra J₃(O)
+### 5.1 Exceptional Jordan Algebra J₃(𝕆)
 
 | Property | Value |
 |----------|-------|
-| dim(J₃(O)) | 27 = 3³ |
-| dim(J₃(O)₀) | 26 (traceless) |
+| dim(J₃(𝕆)) | 27 = 3³ |
+| dim(J₃(𝕆)₀) | 26 (traceless) |
 
 **E-series expression**: 27 can be written in E-series dimensions:
 
@@ -251,16 +251,16 @@ Lean: `j3o_e_series_certificate`.
 
 ### 5.2 F₄ Connection
 
-F₄ is the automorphism group of J₃(O):
+F₄ is the automorphism group of J₃(𝕆):
 $$\dim(F_4) = 52 = p_2^2 \times \alpha_{sum} = 4 \times 13$$
 
 ### 5.3 Exceptional Differences
 
 | Difference | Value | Framework expression |
 |------------|-------|------|
-| dim(E₈) − dim(J₃(O)) | 221 = 13 × 17 | α_sum × (dim G₂ + N_gen) |
-| dim(F₄) − dim(J₃(O)) | 25 = 5² | Weyl² |
-| dim(E₆) − dim(F₄) | 26 | dim(J₃(O)₀) |
+| dim(E₈) − dim(J₃(𝕆)) | 221 = 13 × 17 | α_sum × (dim G₂ + N_gen) |
+| dim(F₄) − dim(J₃(𝕆)) | 25 = 5² | Weyl² |
+| dim(E₆) − dim(F₄) | 26 | dim(J₃(𝕆)₀) |
 
 These are arithmetic rewritings (S2.7); they are not formalized as a group.
 
@@ -292,7 +292,7 @@ Lean: `tau_structural_certificate`.
 |----------|-------|-----------|
 | dim(G₂) | 14 | Q_Koide numerator |
 | rank(G₂) | 2 | Lie rank |
-| Definition | Aut(O) | Octonion automorphisms |
+| Definition | Aut(𝕆) | Octonion automorphisms |
 
 **Lean**: the G₂ cross-product statements are proved:
 - `epsilon_antisymm`, `epsilon_diag`, `cross_apply` ✓
@@ -304,17 +304,17 @@ Lean: `tau_structural_certificate`.
 
 ### 6.2 G₂ as Kernel of the Lie Derivative
 
-The G₂ subalgebra of so(7) admits a precise characterization as the stabilizer of the associative 3-form phi₀. For any antisymmetric matrix A in so(7), the Lie derivative of phi₀ is:
+The G₂ subalgebra of so(7) admits a precise characterization as the stabilizer of the associative 3-form φ₀. For any antisymmetric matrix A in so(7), the Lie derivative of φ₀ is:
 
 $$L_A(\varphi_0)_{ijk} = A_{ia}\varphi_{ajk} + A_{ja}\varphi_{iak} + A_{ka}\varphi_{ija}$$
 
-The g₂ subalgebra consists of all A for which L_A(phi₀) = 0:
+The g₂ subalgebra consists of all A for which L_A(φ₀) = 0:
 
 $$\mathfrak{g}_2 = \ker(L) = \{A \in \mathfrak{so}(7) : L_A(\varphi_0) = 0\}$$
 
 This yields the decomposition so(7) = g₂ + V₇, where dim(g₂) = 14 and dim(V₇) = 7. The complement V₇ carries the standard 7-dimensional representation of G₂.
 
-In practice, the kernel is computed via singular value decomposition (SVD) of the linear map L: so(7) --> Lambda³(R⁷). The 14 singular vectors with eigenvalue zero span g₂; the 7 singular vectors with nonzero eigenvalue span V₇.
+In practice, the kernel is computed via singular value decomposition (SVD) of the linear map L: so(7) --> Λ³(ℝ⁷). The 14 singular vectors with eigenvalue zero span g₂; the 7 singular vectors with nonzero eigenvalue span V₇.
 
 **Note**: A heuristic construction based on Fano-plane indices does not produce correct g₂ generators (each such generator is approximately 67% in g₂ and 33% in V₇). The kernel-based construction is the correct definition and must be used in all numerical computations involving g₂/V₇ decomposition.
 
@@ -455,19 +455,19 @@ K₇ is posited with (b₂, b₃) = (21, 77) (main R1). **No construction of a c
 
 **Catalogued constructions.** The pair does not appear among the catalogued compact G₂ manifolds (Joyce's orbifold constructions; the twisted connected sums of Corti–Haskins–Nordström–Pacini). Orthogonal TCS is excluded by parity (b₂ + b₃ = 98 is even; CHNP Lemma 6.7). Earlier versions added that a building-block scan (2026-04-14) showed that b₂ = 21 > 20 = max ρ(K3) forces a semi-Fano building block. In a twisted connected sum, b₂(M) = rk K₊ + rk K₋ + rk(N₊ ∩ N₋), where K± are the kernels of the restriction maps H²(Z±) → H²(K3) and N± their images (CHNP); b₂ is not bounded by the Picard rank of the K3 fibre, and the argument does not hold as stated. It is withdrawn: which building blocks and gluings could give b₂ = 21 is open. Non-orthogonal TCS and extra-twisted connected sums remain open within TCS.
 
-**Withdrawn: a lattice sketch.** Earlier versions described sublattices N₁, N₂ of the K3 lattice U³ ⊕ E₈(−1)², of ranks 11 and 10, with N₁ ⊕ N₂ ⊕ ⟨2⟩ of full rank, as "consistent with a TCS construction". N₁ ⊕ N₂ ⊕ ⟨2⟩ cannot be an orthogonal decomposition of the unimodular K3 lattice (⟨2⟩ is not unimodular), only a sublattice of finite index; and two building-block lattices N₁ ⊥ N₂ describe an orthogonal gluing, which is the case excluded by parity above. The embedding conditions were never verified and no matching data was constructed. The sketch is withdrawn as support for a TCS realization.
+**Withdrawn: a lattice sketch.** Earlier versions described sublattices N₁, N₂ of the K3 lattice U³ ⊕ E₈(−1)², of ranks 11 and 10, with N₁ ⊕ N₂ ⊕ ⟨2⟩ of full rank, as "consistent with a TCS construction". N₁ ⊕ N₂ ⊕ ⟨2⟩ cannot be an orthogonal decomposition of the unimodular K3 lattice (⟨2⟩ is not unimodular), only a sublattice of finite index; and two building-block lattices N₁ ⊥ N₂ describe an orthogonal gluing, which is the case excluded by parity above. The embedding conditions were never verified and no matching data was constructed. The sketch is withdrawn as support for a TCS realisation.
 
-The Joyce–Karigiannis route proposed in version 3.5 as a realization of (21, 77) does not currently realize it (§8.4).
+The Joyce–Karigiannis route proposed in version 3.5 as a realisation of (21, 77) does not currently realise it (§8.4).
 
 **Global properties assumed, not established**:
 - Compact 7-manifold (no boundary)
 - Simply connected: π₁(K₇) = {1}, b₁ = 0
-- If a torsion-free G₂ structure g* exists on K₇, then Hol(g*) = G₂ [Joyce, Prop. 11.2.3] and Ric(g*) = 0. Its existence is open (main §9; [ERR, §7.5]).
+- If a torsion-free G₂ structure g\* exists on K₇, then Hol(g\*) = G₂ [20, Prop. 11.2.3] and Ric(g\*) = 0. Its existence is open (main §9; [ERR, §7.5]).
 - (Euler characteristic χ(K₇) = 0 is automatic for a closed odd-dimensional manifold; §9.1.)
 
 **Arithmetic.** b₂ = 21 = C(7,2) and b₃ = 77 = C(7,3) + 2b₂ = 35 + 42 are arithmetic facts about the posited integers; they define no geometric decomposition (§9.3).
 
-### 8.4 The Joyce–Karigiannis ℤ₂³ Route: Proposed, Not Currently a Realization
+### 8.4 The Joyce–Karigiannis ℤ₂³ Route: Proposed, Not Currently a Realisation
 
 The Joyce–Karigiannis framework [43] resolves orbifolds (T³ × K3)/G, with G ⊂ Aut(T³) × Aut(K3) acting with A₁-type singularities, by gluing families of Eguchi–Hanson spaces, and yields compact torsion-free G₂ manifolds. For a resolution of this type the Betti numbers are
 
@@ -482,7 +482,7 @@ $$b_2(N) = b_2\big((T^3 \times K3)/G\big) + b_0(\text{fixed loci}), \qquad b_3(N
 - The pair (0, 22) is therefore impossible for this action. Keeping the stated fixed-locus contributions (21, 55) and the same resolution formula would give b₂ ≥ 26 and b₃ ≤ 71, not (21, 77).
 - The stated involution profile also requires a K3 of Picard rank at least 17 (`check_k3_jk_character_gate.py`; `K7_P2_neutrino_JK_character_obstruction.md`), not the Picard-rank-1 K3 on which version 3.5 placed it.
 
-**Scope.** This invalidates this route as stated. It does not show that every Joyce–Karigiannis construction, or every construction of a compact G₂ manifold with Betti numbers (21, 77), is impossible. The archived Lean module `JoyceKarigiannisConstruction.lean` (master theorem `jk_z23_construction_realizes_gift_betti`) verified the arithmetic of the Betti formula from the erroneous quotient input; it is withdrawn as evidence for the route. Correcting the route would require a fully specified product action, its quotient Betti numbers computed directly, and an independent audit of the singular components and of the resolution formula.
+**Scope.** This invalidates this route as stated. It does not show that every Joyce–Karigiannis construction, or every construction of a compact G₂ manifold with Betti numbers (21, 77), is impossible. An earlier Lean module, `JoyceKarigiannisConstruction.lean` (K7-Lean commit `6acbf49`, since removed; master theorem `jk_z23_construction_realizes_gift_betti`) verified the arithmetic of the Betti formula from the erroneous quotient input; it is withdrawn as evidence for the route. Correcting the route would require a fully specified product action, its quotient Betti numbers computed directly, and an independent audit of the singular components and of the resolution formula.
 
 **The neck.** The NK-certified seam metric of [A] and the closed-form neck ansatz of [D] operate at the neck level of a putative compact extension and do not depend on which global construction, if any, completes it. They are evidence about a neck, not about the existence of K₇.
 
@@ -518,7 +518,7 @@ The number 42 appears in several relations as a combination of framework constan
 | 2 × b₂ | 2 × 21 = 42 |
 | b₃ − C(7,3) | 77 − 35 = 42 |
 
-It is not the Euler characteristic (χ(K₇) = 0). Lean: `magic_42_gift_form`; on the v3.6 alignment branch 42 is `two_b2 := 2 * b2`, and the earlier name `chi_K7` is kept only as a deprecated alias (S3.7).
+It is not the Euler characteristic (χ(K₇) = 0). Lean: `magic_42_gift_form`; at commit `34ce857` 42 is `two_b2 := 2 * b2`, and the earlier name `chi_K7` is kept only as a deprecated alias (S3.7).
 
 **Withdrawn: a "local ⊕ global" splitting of H³.** Earlier versions wrote H³(K₇) = H³_local ⊕ H³_global with dimensions 35 + 42, the 35 identified with Λ³(ℝ⁷). The 35 is the rank of the bundle Λ³T*K₇, a pointwise dimension; it does not provide a 35-dimensional subspace of the global cohomology H³(K₇). The identity 35 + 42 = 77 is arithmetic and does not justify the decomposition.
 
@@ -600,7 +600,7 @@ $$\boxed{\varphi_{\text{ref}} = D^{3/14}\,\varphi_0, \qquad g_{\text{ref}} = D^{
 **Actual solution structure**: The topology and geometry of K₇ impose a deformation:
 $$\varphi = \varphi_{\text{ref}} + \delta\varphi$$
 
-The torsion-free condition (dφ = 0, d*φ = 0) is a **global constraint**. Joyce's perturbation theorem gives a nearby torsion-free G₂ metric when the torsion of a closed G₂ structure is small compared with a constant that depends on the injectivity radius and curvature bounds of that structure (Joyce 2000, Thm. 11.6.1). Earlier versions compared a PINN torsion value (‖T‖_max = 4.46 × 10⁻⁴) with a fixed threshold ε₀ = 0.1 and reported a "224× safety margin". There is no universal threshold: the constant has not been computed for this structure, and the comparison is not an existence argument (main §9).
+The torsion-free condition (dφ = 0, d*φ = 0) is a **global constraint**. Joyce's perturbation theorem gives a nearby torsion-free G₂ metric when the torsion of a closed G₂ structure is small compared with a constant that depends on the injectivity radius and curvature bounds of that structure ([20], Thm. 11.6.1). Earlier versions compared a PINN torsion value (‖T‖_max = 4.46 × 10⁻⁴) with a fixed threshold ε₀ = 0.1 and reported a "224× safety margin". There is no universal threshold: the constant has not been computed for this structure, and the comparison is not an existence argument (main §9).
 
 *(Version 3.5 added here that the bound κ_T = 1/61 places K₇ within Joyce's perturbative regime. No argument connects the number 1/61 to Joyce's smallness hypothesis, and the sentence is withdrawn; [ERR, §7.6].)*
 
@@ -616,24 +616,22 @@ A companion numerical program trains physics-informed neural networks (PINNs) to
 | ‖T‖_mean | 9.8 × 10⁻⁵ | small |
 | det(g) error | < 10⁻⁶ | the training constrains det(g) to 65/32, so this measures the constraint, not a confirmation |
 
-**G₂ holonomy training** (Phase 3, 13 versions, v2-v13):
+**G₂ holonomy training** (Phase 3, versions v2-v13):
 
 Over successive training protocols, the training scores evolved as follows:
 
 | Metric | Initial (v5) | Current best (v11) | Improvement |
 |--------|-------------|-------------------|-------------|
-| g2_self | 3.86 | 3.25 | −16% |
+| `g2_self` | 3.86 | 3.25 | −16% |
 | V₇ projection score | 0.51 | 0.014 | -97% |
 | det(g) at neck | 4.69 | 2.031 | locked at target |
 | phi drift | 13.4% | 0% | controlled |
 
-The g2_self and V₇ projection scores are training diagnostics of the companion code, and their definition is not stated here. Earlier versions described g2_score as a normalized projection of the Riemann curvature onto the complement of g₂, equal to 0 for G₂ holonomy and about 3.5 for the flat metric. Both cannot hold: a flat metric has R = 0, so a normalized projection of R vanishes or is undefined. And curvature valued in g₂ would give Hol ⊆ G₂, not Hol = G₂. The table records how the scores evolved; it is not a measure of holonomy.
+The `g2_self` and V₇ projection scores are training diagnostics of the companion code, and their definition is not stated here. Earlier versions described `g2_score` as a normalized projection of the Riemann curvature onto the complement of g₂, equal to 0 for G₂ holonomy and about 3.5 for the flat metric. Both cannot hold: a flat metric has R = 0, so a normalized projection of R vanishes or is undefined. And curvature valued in g₂ would give Hol ⊆ G₂, not Hol = G₂. The table records how the scores evolved; it is not a measure of holonomy.
 
 A critical bug in the g₂ basis construction was discovered and corrected between versions 9 and 10: the Fano-plane heuristic does not produce correct g₂ generators. The correct g₂ subalgebra is the kernel of the Lie derivative map (Section 6.2). This correction led to significant improvement in all subsequent versions.
 
 Earlier versions reported that the normalization target det(g) = 65/32 "passes 8/8 independent consistency tests" (permutation, bootstrap, a Bayesian posterior, a joint p-value). A target that the optimization is constrained to cannot be validated by the optimization's output; these tests are withdrawn. det(g) = 65/32 is imposed (main R2, §10.3).
-
-Full details of the PINN architecture, training protocol, and version-by-version results are presented in a companion paper.
 
 ### 11.4 Lean 4 Formalization
 
@@ -689,10 +687,10 @@ Standard form φ₀ (Harvey-Lawson 1982)
 Metric g_ref = D^{1/7} g_{φ₀}    (law g_{cφ} = c^{2/3} g_φ)
      │
      ▼
-det(g) = 65/32               ← exact by imposed normalization, not fitted to experiment (§10.3)
+det(g) = 65/32               ← imposed normalization, not fitted (§10.3)
      │
      ▼
-sin²θ_W = 3/13, Q = 2/3, ...  ← assigned relations (main §3); not functionals of this metric
+sin²θ_W = 3/13, Q = 2/3, ...  ← assigned (main §3); not functionals of this metric
 ```
 
 ---
@@ -746,7 +744,7 @@ Both have 7 terms but different index patterns. The Fano plane defines the octon
 | Algebraic | φ_ref = (65/32)^{3/14} φ₀, g_ref = (65/32)^{1/7} g_{φ₀} | §11.1 |
 | Lean 4 | `det_g_equals_target : rfl` (a definitional equality of the rational 65/32 with the target; it does not check the scaling law) | AnalyticalMetric.lean |
 | PINN | small torsion, holonomy score improved; not a torsion-free metric | §11.3 |
-| Joyce theorem | applies under a smallness hypothesis whose constant is not computed here | [Joyce 2000]; main §9 |
+| Joyce theorem | applies under a smallness hypothesis whose constant is not computed here | [20]; main §9 |
 
 None of these methods establishes a torsion-free metric on a compact K₇ (main §9).
 
@@ -762,16 +760,17 @@ None of these methods establishes a torsion-free metric on a compact K₇ (main 
 
 [45] Garbagnati, A., Sarti, A. "Symplectic automorphisms of prime order on K3 surfaces." *J. Algebra* **318**, 323–350 (2007), arXiv:math/0603742.
 
+[20] D.D. Joyce, *Compact Manifolds with Special Holonomy*, Oxford U. Press (2000)
+
 [48] Chen, J., Hong, H. "Intermediate curvature and splitting theorem," arXiv:2604.26529 (2026).
 
 [51] V. V. Nikulin, "Integer symmetric bilinear forms and some of their geometric applications," Izv. Akad. Nauk SSSR Ser. Mat. 43 (1979); English transl. Math. USSR Izv. 14 (1980).
 
-*Background, not cited by number:*
+## Background (not cited by number)
 
 - Adams, J.F. *Lectures on Exceptional Lie Groups*
 - Harvey, R., Lawson, H.B. "Calibrated geometries." *Acta Math.* 148, 47-157 (1982)
 - Bryant, R.L. "Metrics with exceptional holonomy." *Ann. of Math.* 126, 525-576 (1987)
-- Joyce, D. *Compact Manifolds with Special Holonomy*, Oxford U. Press (2000)
 - Corti, Haskins, Nordström, Pacini. *G₂-manifolds and associative submanifolds*
 - Kovalev, A. *Twisted connected sums and special Riemannian holonomy*
 - Conway, J.H., Sloane, N.J.A. *Sphere Packings, Lattices and Groups*
@@ -780,8 +779,8 @@ None of these methods establishes a torsion-free metric on a compact K₇ (main 
 
 ## Author's Related Works
 
-- **[A]** B. de La Fournière, "An Explicit Approximate G₂ Metric on a Compact 7-Manifold with Certified Torsion-Free Completion," Zenodo [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) (2026).
-- **[B]** B. de La Fournière, "Spectral Geometry of the G₂-GIFT Manifold: Betti Numbers, KK Spectrum, and Spectral Invariants," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
+- **[A]** B. de La Fournière, "A Certified Torsion-Free G₂ Structure on a TCS Neck Model via Computer-Assisted Proof," Zenodo [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) (2026).
+- **[B]** B. de La Fournière, "Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
 - **[D]** B. de La Fournière, "An Explicit Closed-Form G₂ Ansatz on a K3-Coassociative Neck with Hyperkähler Rotation and Picard-Lefschetz Wirtinger Certificate," Zenodo [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) (2026).
 - **[ERR]** B. de La Fournière, "Erratum: GIFT / K₇ framework v3.5" (2026), repository Arithmon/K7, `publications/ERRATUM_v3.5.md`, commit aed460315eecc17a20402b1f4d20ac310dd4f6c2, [github.com/Arithmon/K7/blob/aed4603/publications/ERRATUM_v3.5.md](https://github.com/Arithmon/K7/blob/aed460315eecc17a20402b1f4d20ac310dd4f6c2/publications/ERRATUM_v3.5.md).
 

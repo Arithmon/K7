@@ -89,7 +89,7 @@ Four relations bear on two independent mass ratios, and they are mutually incomp
 | ID | Relation | Arithmetic | Choices declared | Status (main §4.1) |
 |----|----------|-----------|------------------|---|
 | A12 | sin²θ₁₂ (PMNS) | (1 + N_gen)/α_sum = **4/13** = 0.307692 | additive 1 | integer; pull −0.2σ |
-| A13 | sin²θ₂₃ (PMNS) | (D_bulk − Weyl)/D_bulk = **6/11** = 0.545455 | octant (main §4.3) | integer; **tension** (octant; inside the NuFIT 3σ range, §4.3); pull +4.4σ, not Gaussian (main §4.3) |
+| A13 | sin²θ₂₃ (PMNS) | (D_bulk − Weyl)/D_bulk = **6/11** = 0.545455 | octant (main §4.3) | integer; **tension** (octant; inside the NuFIT 3σ range, main §4.3); pull +4.4σ, not Gaussian (main §4.3) |
 | A14 | sin²θ₁₃ (PMNS) | D_bulk/dim(E₈×E₈) = **11/496** = 0.022177 | n/a | integer; pull −0.5σ |
 | A15 | δ_CP | dim K₇ · dim G₂ + H* = 98 + 99 = **197**, read as the phase 2π · 197/360 | **unit** (R6) | **unit assignment** (R6); pull −0.4σ |
 
@@ -155,7 +155,7 @@ Earlier versions counted, for each relation, the number of distinct expressions 
 
 The "TCS building-block" formulas use b₂(M₁) = 11 and b₂(M₂) = 10, Betti numbers of building blocks whose identification is open (main §9). Several alternatives were introduced after a release of the data had moved: the Ω_DE alternative was preferred against one Planck release and not the other, and the θ₁₃ alternative "in degrees" is a second unit assignment of the kind R6 registers. None of these is part of the 33; they are listed because they show, on the framework's own record, how many formulas the vocabulary offers for one observable and how the choice among them was made.
 
-**Patterns.** The Fibonacci and Lucas numbers among the constants (2, 3, 5, 8, 13, 21; 7, 11, 47) and the identities among the integers (dim G₂ = p₂ · dim K₇, b₂ = N_gen · dim K₇, \|PSL(2,7)\| = rank E₈ · b₂, b₃ + dim G₂ = dim K₇ · α_sum) are arithmetic facts about the chosen integers. Earlier versions called them an "algebraic web" and a "Fibonacci–Lucas embedding" reflecting icosahedral geometry. Small integers satisfy many such identities; no physical consequence follows from these, and they are not evidence.
+**Patterns.** The Fibonacci and Lucas numbers among the constants (2, 3, 5, 8, 13, 21; 7, 11) and the identities among the integers (dim G₂ = p₂ · dim K₇, b₂ = N_gen · dim K₇, \|PSL(2,7)\| = rank E₈ · b₂, b₃ + dim G₂ = dim K₇ · α_sum) are arithmetic facts about the chosen integers. Earlier versions called them an "algebraic web" and a "Fibonacci–Lucas embedding" reflecting icosahedral geometry. Small integers satisfy many such identities; no physical consequence follows from these, and they are not evidence.
 
 ---
 

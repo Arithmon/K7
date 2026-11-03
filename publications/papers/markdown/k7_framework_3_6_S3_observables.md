@@ -21,7 +21,7 @@ Earlier versions described the dataset as "95 observables derived from a single 
 
 **Type II.** Several entries are numbers read in MeV or GeV, for example m_u = √(dim G₂/3) = 2.16, m_d = ln 107 = 4.673, m_c = (dim G₂ − π)³ = 1280, m_t = 415². Reading a structural number in a unit is an assignment of the same kind as reading 197 in degrees, with a far larger space of alternatives (R10). The CKM magnitudes (B10–B15) and the ratios m_b/m_d and m_t/m_c (B18, B19) are legacy values: their derivation is not documented in the current dataset, and they are retained for traceability, not counted as predictions. B18 and B19 are not fixed by the Type I quark ratios alone, which relate two separate groups, {u, d, s, c} and {b, t}. m_c/m_d (B17) combines B16, of Type II, with A08. Earlier versions described all nineteen as "a Type I ratio times an experimental anchor"; that description did not match the dataset and is withdrawn.
 
-**Type III.** The Wilson-line and associative-volume entries reproduce lepton mass ratios at the percent level with declared calibration choices (a coupling c = 0.452, an exponent α = e^K = 0.002763, a cycle assignment) selected against the measured ratios; they are conditional reconstructions (main §6.2). The comparison of C18 is mismatched: its value is Vol_e − Vol_μ = 3.271, its reference is ln(m_τ/m_μ) = 2.823, and the instanton relation pairs that reference with Vol_μ − Vol_τ = 5.362 (the matching reference for Vol_e − Vol_μ is ln(m_μ/m_e) = 5.33), so its 15.9% deviation carries no meaning. The cycle search scored this same pair, and C20 and C21 use the same difference; with Vol_μ − Vol_τ they would read 16.79 and 207.6, still within 1%. The entries are kept as computed. The four entries of the two-loop supersymmetric running from a grand-unification boundary (C04–C07) are withdrawn with that reading (main §5). The remaining entries are diagnostics, some compared with a mathematical expectation (the Weyl exponent with d/2, the gauge-kinetic conditioning with 1), none with a measurement.
+**Type III.** The Wilson-line and associative-volume entries reproduce lepton mass ratios at the percent level with declared calibration choices (a coupling c = 0.452 and a cycle assignment) selected against the measured ratios, and an exponent α = e^K = 0.002763 computed from the Kähler potential of the approximate metric; they are conditional reconstructions (main §6.2). The comparison of C18 is mismatched: its value is Vol_e − Vol_μ = 3.271, its reference is ln(m_τ/m_μ) = 2.823, and the instanton relation pairs that reference with Vol_μ − Vol_τ = 5.362 (the matching reference for Vol_e − Vol_μ is ln(m_μ/m_e) = 5.33), so its 15.9% deviation carries no meaning. The cycle search scored this same pair. C20 uses the same difference and C21 is the ratio C19/C20; with Vol_μ − Vol_τ in C20 they would read 16.79 and 207.6, still within 1%. The entries are kept as computed. The four entries of the two-loop supersymmetric running from a grand-unification boundary (C04–C07) are withdrawn with that reading (main §5). The remaining entries are diagnostics, some compared with a mathematical expectation (the Weyl exponent with d/2, the gauge-kinetic conditioning with 1), none with a measurement.
 
 **Type IV.** Topological inputs (b₂, b₃: R1), integer combinations (H*, N_gen), the imposed normalization det(g) = 65/32 (R2), numerical diagnostics of the certified seam metric (Newton–Kantorovich quantities, Gram conditioning, spectral counts, metric block eigenvalues), and three entries taken from the black-hole-remnant analysis of main ref. [42], one of which depends on the scale identification τ₀ = v_EW.
 
@@ -46,7 +46,7 @@ The comparison data were refreshed on 2026-10-22 to the most recent releases (`c
 
 **Corrections made in the refresh.** The previous dataset gave m_μ/m_τ and m_τ/m_e with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q_Koide from the PDG 2022 τ mass while m_τ/m_e used the later one; gave m_b/m_t an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; gave m_μ/m_e an uncertainty of 0.02 where CODATA 2022 gives 4.6 × 10⁻⁶; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data and one convention for all uncertainties, the 33 relations fall into the five classes of main §4.2: 24 within 2σ, 2 in tension, 5 proximities beyond 3σ (m_b/m_t in the scheme of R7 among them), 1 inside the PDG range, 1 with a non-Gaussian profile. (The earlier count, 28 within 2σ, rested on the uncertainties listed above.)
 
-**Not refreshed.** Y_p (0.245 ± 0.003) is the PDG's recommended observational helium abundance from HII regions (BBN review of the 2024 Review of Particle Physics, eq. 24.3; earlier versions of the dataset labelled it Planck 2018, which it is not), and was not re-checked against the 2026 edition; the Type II CKM magnitudes and mass cascades keep their earlier reference values, since they are not compared in the main text.
+**Not refreshed.** Y_p (0.245 ± 0.003) is the PDG's recommended observational helium abundance from HII regions (BBN review of the 2024 Review of Particle Physics [56], eq. 24.3; earlier versions of the dataset labelled it Planck 2018, which it is not), and was not re-checked against the 2026 edition; the Type II CKM magnitudes and mass cascades, and the entries C05, C17 and C18, keep their earlier reference values (PDG 2025), since they are not compared in the main text.
 
 ---
 
@@ -75,7 +75,7 @@ Formulas, framework values and deviations are in main §4.1. This table gives, f
 | A10 | m_b/m_t | 0.024253(43) | PDG 2026 | −10.2σ | m_b at 90% CL converted to 1σ | integer; **proximity** (in the scheme declared in R7) |
 | A11 | m_u/m_d | 0.462(12) | PDG 2026 | +0.7σ | MS-bar at 2 GeV | integer |
 | A12 | sin²θ₁₂ (PMNS) | 0.3088(+67/−66) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.2σ | n/a | integer |
-| A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.584, contains 6/11 | integer; **tension** (octant; inside the NuFIT 3σ range, §4.3) |
+| A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.584, contains 6/11 | integer; **tension** (octant; inside the NuFIT 3σ range, main §4.3) |
 | A14 | sin²θ₁₃ (PMNS) | 0.02248(+55/−59) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.5σ | n/a | integer |
 | A15 | δ_CP | 212 (+26/−36)° | NuFIT 6.1 (IC24+SK-atm, NO) | −0.4σ | degrees | **unit assignment** (R6) |
 | A16 | sin θ₁₂ (CKM) | 0.22517(68) | PDG 2026 | +0.9σ | PDG CKM review: sin θ₁₂ = λ (not squared) | integer; approximate (R12) |
@@ -141,14 +141,14 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 | C11 | III | N_fiber | Adiabatic + explicit fiber modes | 57578 | n/a | diagnostic of the approximate seam metric |
 | C12 | III | spacing | Level spacing statistics | 1.35838 | n/a | diagnostic of the approximate seam metric |
 | C13 | III | κ_gauge | f_IJ eigenvalue spread | 1.0471 | 1 | diagnostic of the approximate seam metric (compared with 1, not a measurement) |
-| C14 | III | rank(Y) | Mass matrix SVD | 3 | 3 | diagnostic of the approximate seam metric (compared with N_gen) |
+| C14 | III | n_SD | Count of positive eigenvalues of the K3 intersection form | 3 | 3 | diagnostic of the approximate seam metric (compared with N_gen) |
 | C15 | III | N_assoc | Homology 3-cycles with φ-calibration | 57 | n/a | diagnostic of the approximate seam metric |
 | C16 | III | \|\|T\|\|_C⁰ | G₂ torsion norm | 2.98e-05 | n/a | diagnostic of the approximate seam metric |
 | C17 | III | ΔV(e-τ) | Associative volume differences | 8.6331 | 8.15393 | conditional reconstruction (calibration choices, main §6.2) |
 | C18 | III | ΔV(e-μ) | Associative volume differences | 3.27125 | 2.82257 | conditional reconstruction (calibration choices, main §6.2); mismatched reference (see Type III above) |
 | C19 | III | m_τ/m_e (comb) | Wilson-line ratio × exp(e^K · ΔV) | 3485.3 | 3477.37 | conditional reconstruction (calibration choices, main §6.2) |
 | C20 | III | m_τ/m_μ (comb) | Wilson-line ratio × exp(e^K · ΔV) | 16.69 | 16.8177 | conditional reconstruction (calibration choices, main §6.2); inherits the C18 pairing |
-| C21 | III | m_μ/m_e (comb) | Wilson-line ratio × exp(e^K · ΔV) | 208.8 | 206.768 | conditional reconstruction (calibration choices, main §6.2); inherits the C18 pairing |
+| C21 | III | m_μ/m_e (comb) | Wilson-line ratio × exp(e^K · ΔV) | 208.8 | 206.768 | conditional reconstruction (calibration choices, main §6.2); ratio C19/C20, inherits the C18 pairing |
 | D01 | IV | b₂ | TCS K₇ | 21 | n/a | input (R1) |
 | D02 | IV | b₃ | TCS K₇ | 77 | n/a | input (R1) |
 | D03 | IV | H* | b₂+b₃+1 | 99 | n/a | integer combination of R1 |
@@ -159,7 +159,7 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 | D08 | IV | \|\|T\|\|_C⁰ (cert) | Chebyshev coefficient bound | 2.95e-05 | n/a | diagnostic of the approximate seam metric |
 | D09 | IV | κ(G_K3) | L² Gram matrix K3 2-forms | 1.05232 | n/a | diagnostic of the approximate seam metric |
 | D10 | IV | N_levels | Unified spectrum enumeration | 22671 | n/a | diagnostic of the approximate seam metric |
-| D11 | IV | N_states_total | Including degeneracies | 210060 | n/a | diagnostic of the approximate seam metric |
+| D11 | IV | `N_states_total` | Including degeneracies | 210060 | n/a | diagnostic of the approximate seam metric |
 | D12 | IV | V_eff | Effective 7D volume from Weyl fit | 5.38e+05 | n/a | diagnostic of the approximate seam metric |
 | D13 | IV | n_homology | b₃ = 77 | 77 | n/a | diagnostic of the approximate seam metric |
 | D14 | IV | N_assoc | φ-calibrated cycles | 57 | n/a | diagnostic of the approximate seam metric |
@@ -169,7 +169,7 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 | D18 | IV | g_T2 | g_T2 = 7/6 (T² sector) | 1.16667 | n/a | diagnostic of the approximate seam metric |
 | D19 | IV | g_K3 | g_K3 ~ 64/77 (K3 sector mean) | 0.831169 | n/a | diagnostic of the approximate seam metric |
 | D20 | IV | N_QNM | b2 + b3 = H* - 1 | 98 | n/a | from [42]; topological count |
-| D21 | IV | b3/b3_S3S4 | b3(K7) = 77 vs b3(S3xS4) = 1 | 77 | n/a | from [42]; topological count |
+| D21 | IV | `b3/b3_S3S4` | b3(K7) = 77 vs b3(S3xS4) = 1 | 77 | n/a | from [42]; topological count |
 | D22 | IV | M_res | tau_0 = v_EW, M_res = v_EW^2 / M_Pl | 4969.2 | n/a | from [42]; conditional on the scale identification τ₀ = v_EW |
 <!-- END S3-TYPE-II-IV -->
 
@@ -246,9 +246,11 @@ The dataset is `canonical/data/observables.json` (95 entries; for each: formula,
 [49] M. Tristram et al., "Cosmological parameters derived from the final Planck data release (PR4)," A&A 682, A37 (2024). (Cited in Supplement S3; not used in the dataset.)
 [50] CODATA 2022, Rev. Mod. Phys. 97, 025002 (2025), physics.nist.gov/cuu/Constants
 
-**Author's related works**
+[56] Particle Data Group, S. Navas et al., "Review of Particle Physics," Phys. Rev. D 110, 030001 (2024), doi:10.1103/PhysRevD.110.030001 (cited in S3 only)
 
-- **[B]** B. de La Fournière, "Spectral Geometry of the G₂-GIFT Manifold: Betti Numbers, KK Spectrum, and Spectral Invariants," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
+## Author's Related Works
+
+- **[B]** B. de La Fournière, "Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
 - **[ERR]** B. de La Fournière, "Erratum: GIFT / K₇ framework v3.5" (2026), repository Arithmon/K7, `publications/ERRATUM_v3.5.md`, commit aed460315eecc17a20402b1f4d20ac310dd4f6c2, [github.com/Arithmon/K7/blob/aed4603/publications/ERRATUM_v3.5.md](https://github.com/Arithmon/K7/blob/aed460315eecc17a20402b1f4d20ac310dd4f6c2/publications/ERRATUM_v3.5.md).
 
 ---

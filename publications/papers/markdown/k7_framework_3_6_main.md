@@ -1,6 +1,6 @@
 # The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology
 
-**Brieuc de La Fourniere**
+**Brieuc de La Fournière**
 
 *Independent researcher, Beaune, France*
 
@@ -20,7 +20,7 @@ The Standard Model leaves about nineteen parameters to measurement, and no theor
 
 - **What is proposed.** A correspondence between invariants of (K₇, E₈×E₈) and 33 dimensionless parameters, written in a declared dictionary (§3). It is a privileged candidate, chosen by the author, not a selection that the requirements force (§3.5).
 - **What is set rather than derived.** The residue register of §3.3: the Betti pair, det(g) = 65/32, κ_T⁻¹ = 61, the unit of δ_CP, the comparison scales, the formula assignments.
-- **What is established.** The arithmetic identities stated for the relations, machine-checked in Lean 4 (§8, S3.7); a Newton–Kantorovich-certified seam metric [A]. These verify the stated arithmetic and a local metric, not physical content; the relations, each correctly computed, are mutually incompatible in the overdetermined sectors (§4.2). No construction of a compact G₂ manifold with (21, 77) is currently known; the topological route of version 3.5 does not realize it (§2.3).
+- **What is established.** The arithmetic identities stated for the relations, machine-checked in Lean 4 (§8, S3.7); a Newton–Kantorovich-certified seam metric [A]. These verify the stated arithmetic and a local metric, not physical content; the relations, each correctly computed, are mutually incompatible in the overdetermined sectors (§4.2). No construction of a compact G₂ manifold with (21, 77) is currently known; the topological route of version 3.5 does not realise it (§2.3).
 - **What is open.** A compact torsion-free G₂ manifold realising K₇ (§9); a physical mechanism from the smooth K₇ to the chiral non-abelian Standard Model (§2.3); the selection of (21, 77) (§10); a rule that assigns formulas to observables (§3.2).
 - **What would refute it.** The decision rule of §11.
 
@@ -99,7 +99,7 @@ compatible with the Standard-Model representations. This is a chain of embedding
 The framework posits a compact, simply connected seven-manifold K₇ with holonomy G₂ and Betti numbers (b₂, b₃) = (21, 77). A compact Riemannian seven-manifold with holonomy G₂ is Ricci-flat, and its compactification of M-theory preserves N = 1 supersymmetry in four dimensions [11]. Whether a compact manifold of this kind exists with these Betti numbers is open (§9); the relations of §4 use only the integers, never the metric.
 
 **What is known about the geometry.**
-- *Topology.* Among the catalogued compact G₂ examples (Joyce's orbifold constructions [20] and the twisted connected sums of Corti–Haskins–Nordström–Pacini [21, 22]), the pair (21, 77) does not appear (see [12, 14, 15] for the construction literature and census), and orthogonal twisted connected sums are excluded by parity (b₂ + b₃ = 98 is even; [22], Lemma 6.7). Version 3.5 presented a Joyce–Karigiannis ℤ₂³ orbifold route [43] as realizing (21, 77) at the topological level. **The proposed construction does not currently realize (21, 77)**: its historical computation of the quotient cohomology, (b₂, b₃) = (0, 22), is incompatible with the stated group action, whose character on H²(K3) forces b₂ ≥ 5 and b₃ ≤ 16 for every compatible torus action; the stated involution profile also requires a K3 of Picard rank at least 17, not 1 (S1 §8.4; the lattice inputs of the route come from [44, 45, 51]). This invalidates that route, not every possible construction of a compact G₂ manifold with Betti numbers (21, 77). No such construction is currently known.
+- *Topology.* Among the catalogued compact G₂ examples (Joyce's orbifold constructions [20] and the twisted connected sums of Corti–Haskins–Nordström–Pacini [21, 22]), the pair (21, 77) does not appear (see [12, 14, 15] for the construction literature and census), and orthogonal twisted connected sums are excluded by parity (b₂ + b₃ = 98 is even; [22], Lemma 6.7). Version 3.5 presented a Joyce–Karigiannis ℤ₂³ orbifold route [43] as realising (21, 77) at the topological level. **The proposed construction does not currently realise (21, 77)**: its historical computation of the quotient cohomology, (b₂, b₃) = (0, 22), is incompatible with the stated group action, whose character on H²(K3) forces b₂ ≥ 5 and b₃ ≤ 16 for every compatible torus action; the stated involution profile also requires a K3 of Picard rank at least 17, not 1 (S1 §8.4; the lattice inputs of the route come from [44, 45, 51]). This invalidates that route, not every possible construction of a compact G₂ manifold with Betti numbers (21, 77). No such construction is currently known.
 - *A local metric.* An explicit approximate G₂ metric on a seam region, g = g_seam(s) ⊕ g_{T²} ⊕ g_{K3}(y), with 169 Chebyshev–Cholesky parameters, carries a Newton–Kantorovich certificate (h = 8.95 × 10⁻⁹) for a nearby torsion-free metric within a ball δg/g ≤ 4.86 × 10⁻⁶ [A]. Its spectral analysis is consistent with (b₂, b₃) = (21, 77) [B]. The certificate is local: it does not construct a compact K₇ (§9).
 - *A neck ansatz and a conditional analytic scheme.* An explicit closed-form positive G₂ ansatz on a K3-coassociative neck is certified in [D]. The conditional analytic scheme of [E] for a K₇ → S³ construction with 77 branch components is computed at a datum 𝒟₀ that is not realisable as posed (§9).
 - *The K3 fibre.* No certified bound on a Ricci-flat metric of the K3 fibre is claimed; the closed-form bound stated in version 3.5 concerns an auxiliary quantity [ERR, §1]. An explicit K3 surface has a publicly certified holomorphic atlas, with no metric claim [K3A].
@@ -219,7 +219,7 @@ Two points follow, and they set the posture of the paper.
 ### 4.1 Table
 
 | ID | Observable | Formula | K₇ value | Measured | Dev. | Pull | Status |
-|----|-----------|---------|----------|----------|------|------|--------|
+|---|-------|-------------|------|----------|------|-----|--------|
 | A01 | sin²θ_W (M_Z) | b₂/(b₃ + dim G₂) = 3/13 | 0.230769 | 0.23122(6) | −0.19% | −7.5σ | integer; **proximity** |
 | A02 | α_s(M_Z) | √2/(dim G₂ − p₂) = √2/12 | 0.117851 | 0.1180(9) | −0.13% | −0.2σ | algebraic |
 | A03 | λ_H | √(dim G₂ + N_gen)/det_den = √17/32 | 0.128847 | 0.12914(23) | −0.22% | −1.3σ | algebraic; det(g) |
@@ -374,7 +374,7 @@ The lepton sector therefore supplies no relation specific to K₇ that agrees wi
 
 ### 6.2 Mechanisms (Type III, conditional)
 
-Two mechanisms on the approximate seam metric reproduce the hierarchy at the percent level: an eigenvalue splitting of a non-adiabatic Wilson-line operator on the K3 fibre, and the exponential of differences of associative 3-cycle volumes [23]. Both consume declared calibration choices: a coupling c = 0.452 and three positions for the first, and an assignment of the three generations to three of 57 associative cycles, selected by minimising the combined deviation, for the second. Their combination, normalised by α = e^K computed from the Kähler potential of the approximate metric, gives m_τ/m_e = 3485, m_τ/m_μ = 16.69, m_μ/m_e = 208.8, within 1% of measurement.
+Two mechanisms on the approximate seam metric reproduce the hierarchy at the percent level: an eigenvalue splitting of a non-adiabatic Wilson-line operator on the K3 fibre, and the exponential of differences of associative 3-cycle volumes [23]. Both consume declared calibration choices: a coupling c = 0.452 and three positions for the first, and an assignment of the three generations to three of the six self-dual cycles among the 57 associative cycles, selected by minimising the deviation from the measured ratios, for the second. Their combination, normalised by α = e^K computed from the Kähler potential of the approximate metric, gives m_τ/m_e = 3485, m_τ/m_μ = 16.69, m_μ/m_e = 208.8, within 1% of measurement.
 
 Because the calibration choices are selected against the measured ratios, these are conditional reconstructions, not predictions; they are Type III entries (§4.5), with their calibration choices listed in S3. The SVD of the fibre Wilson-line operator has numerical rank 2; the count of three generations does not come from it.
 
@@ -436,7 +436,7 @@ This section gathers in one place every claim about *existence of the compact $K
 
 ### 9.1 The two layers
 
-- **Topological layer (prior to both).** No compact G₂ manifold with Betti numbers (21, 77) is currently constructed; the Joyce–Karigiannis route of version 3.5 does not realize the pair (§2.3; S1 §8.4). Both layers below presuppose a manifold with this topology.
+- **Topological layer (prior to both).** No compact G₂ manifold with Betti numbers (21, 77) is currently constructed; the Joyce–Karigiannis route of version 3.5 does not realise the pair (§2.3; S1 §8.4). Both layers below presuppose a manifold with this topology.
 - **Datum-level analytic layer.** A *normalised datum* $\mathcal D_0$ is fixed: a base $S^3$, a coassociative fibration $\pi: K_7 \to S^3$ with $N = 77$ round-unlink branch components, a rank-one Picard–Lefschetz monodromy along each meridian, and a collar-affine period section $h$. On $\mathcal D_0$, the companion paper [E] proves a *conditional branched lifting scheme* (a special case of [53, Conjecture 1]) via seven theorem-grade results. Source-side discharge constants ($C_{\rm src} = 27/16$, $C_{\rm nl} = 2/3$, $C_{\rm link} \le 1$, $\gamma = 2$) carry structural provenance; the tail-contraction threshold $R_0(\mathcal D_0) \le 4.9 \cdot 10^3$ is enclosed by outward-rounded interval arithmetic. **But $\mathcal D_0$ is not realisable as posed**: a Stokes-type obstruction (2026-08-19) shows that the single-root global datum admits no period section [ERR, §2]. This layer is therefore *conditional on a datum that is not currently instantiated*; it is not discharged.
 - **Global-analytic layer.** Passing to a smooth compact $K_7$ carrying a genuine torsion-free $G_2$-structure requires, first, a **realisable datum** replacing $\mathcal D_0$, and then closing, for that datum, two external structural slots (jointly the pack $\mathsf H_{\rm global}$ of [E]) and one standalone hypothesis:
   1. **(L4) Hyperkähler K3-fibration with prescribed periods.** A hyperkähler K3-fibration on the topological $K_7$ with rank-one Picard–Lefschetz monodromy along the 77-unlink and a period section $h$ consistent with the datum $(A_2^{\rm collar})$–$(A_5)$. The closest current template is Kovalev's Hopf-link coassociative K3 fibration [13].
@@ -686,15 +686,17 @@ The author declares no competing interests.
 
 [55] C. Zhou, Z. Zhou, "Algebraic Stability and Cosmological Structure E: The Arithmetic Necessity of Three Generations of Fermions," Zenodo, doi:10.5281/zenodo.18626667 (2026).
 
+[56] Particle Data Group, S. Navas et al., "Review of Particle Physics," Phys. Rev. D 110, 030001 (2024), doi:10.1103/PhysRevD.110.030001 (cited in S3 only)
+
 ---
 
 ## Author's Related Works
 
 *Code and Lean proofs:* [github.com/Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) (formerly `gift-framework/core`).
 
-- **[A]** B. de La Fournière, "An Explicit Approximate G₂ Metric on a Compact 7-Manifold with Certified Torsion-Free Completion," Zenodo [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) (2026).
-- **[B]** B. de La Fournière, "Spectral Geometry of the G₂-GIFT Manifold: Betti Numbers, KK Spectrum, and Spectral Invariants," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
-- **[C]** B. de La Fournière, "Newton-Kantorovich Certificate for the K3 Donaldson Embedding in the G₂-GIFT Metric," Zenodo [10.5281/zenodo.19708915](https://doi.org/10.5281/zenodo.19708915) (2026).
+- **[A]** B. de La Fournière, "A Certified Torsion-Free G₂ Structure on a TCS Neck Model via Computer-Assisted Proof," Zenodo [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) (2026).
+- **[B]** B. de La Fournière, "Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
+- **[C]** B. de La Fournière, "Newton–Kantorovich diagnostics on a Donaldson K3 metric: two β estimates, machine-checked inequalities," Zenodo [10.5281/zenodo.19708915](https://doi.org/10.5281/zenodo.19708915) (2026).
 - **[D]** B. de La Fournière, "An Explicit Closed-Form G₂ Ansatz on a K3-Coassociative Neck with Hyperkähler Rotation and Picard-Lefschetz Wirtinger Certificate," Zenodo [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) (2026).
 - **[E]** B. de La Fournière, "A conditional analytic framework for rank-one branched Kovalev–Lefschetz adiabatic limits," Zenodo DOI [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) (2026), main paper 68 pp + supplement 25 pp; dataset and four `mpmath.iv` verification scripts at Zenodo [10.5281/zenodo.21209412](https://doi.org/10.5281/zenodo.21209412) (CC BY 4.0). Conditional theorems for a $K_7 \to S^3$ construction with $N = 77$ round-unlink branch components; the single-root datum $\mathcal D_0$ at which its constants are computed is not realisable as posed (§9).
 - **[M]** B. de La Fournière, "A reproducible standard for arithmetic coincidence claims in fundamental physics," Zenodo [10.5281/zenodo.20728964](https://doi.org/10.5281/zenodo.20728964) (2026). The Sieve methodology and its four-null scorecard for the K₇ relations.

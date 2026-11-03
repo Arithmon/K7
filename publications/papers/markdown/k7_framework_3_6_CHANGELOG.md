@@ -12,6 +12,9 @@
 - Dataset labels and metadata corrected, no value changed: title and version, Lean build block (commit 34ce857: 156 files, 14 axioms), concept DOIs, `lean_theorem` of the 33 relations (the theorem of each relation, replacing `observables_certified`), B07 and C19–C21 formula labels, A08 note; summary statistics recomputed (they predated the refresh); CSV and LaTeX exports regenerated.
 - C18 disclosed in S3: its comparison is mismatched (Vol_e − Vol_μ against ln(m_τ/m_μ), which the instanton relation pairs with Vol_μ − Vol_τ); C20 and C21 use the same difference. Entries kept as computed.
 - LaTeX regenerated: subscripts and superscripts typeset, table widths set from the generator.
+- C14 renamed n_SD: its value 3 is the count of positive eigenvalues of the K3 intersection form, not the rank of a mass matrix (that rank is 22).
+- Second release audit: search space corrected in §6.2 (three of the six self-dual cycles among the 57); α = e^K no longer listed in S3 among the choices selected against the data; titles of [A], [B], [C] aligned with their Zenodo records; PDF pipeline repaired (S3 related works and S1 background kept, starred symbols, lists, PMNS and CKM superscripts). The unused `observables_latex.tex` export, which did not compile, is removed.
+- Release audit, notes closed: "main §" on copied cross-references; author accent; 47 removed from the constants it is not among; unreferenced companion paper removed; earlier Lean module located at its commit; notation J₃(𝕆), Aut(𝕆), φ₀, Λ³(ℝ⁷); realis- throughout; PDG 2024 cited for Y_p, [56].
 
 **Batch 7 (2026-10-31): title, and the companion philosophy paper cited.**
 - Title: "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and
