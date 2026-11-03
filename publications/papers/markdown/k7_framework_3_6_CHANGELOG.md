@@ -1,7 +1,6 @@
-# Changelog: K₇ framework paper, version 3.6 (draft)
+# Changelog: K₇ framework paper (formerly GIFT)
 
-*Draft branch `v3.6-draft`. Version 3.5 (Zenodo 21296168) remains the published version; the files `k7_framework_3_5_*` are unchanged. Supplement S4 (look-elsewhere null and descriptive diagnostics) is included from batch 5. LaTeX and PDF are not yet regenerated.*
-
+## v3.6 (in progress; plan: `plan_v3_6_2026_10_17.md`)
 
 **Batch 8 (2026-11-03): NuFIT 6.1 checked against the official table.**
 - The four entries A12–A15 were compared with the NuFIT 6.1 parameter table (archived copy of www.nu-fit.org, snapshot of 2026-09-12; the live site was unreachable on 2026-10-22 and 2026-11-03). Central values, 1σ errors and the δ_CP 3σ range all agree.
@@ -10,6 +9,9 @@
 - [B10–B15, B18, B19] reclassified: "cascade of Type I relations; no independent content" withdrawn. These eight entries are legacy values whose derivation is not documented in the dataset, retained for traceability and not counted as predictions (dataset, S3 §1 and table, main §4.5). The 33 relations and their breakdown are unchanged.
 - Release audit, minor fixes: S1, S2 and S4 reference sections made consistent with the shared bibliography; dead cross-references removed; residual French and internal jargon removed from the main text.
 - The v3.5 erratum is now a bibliography entry, [ERR], at a fixed commit; its nine citations read [ERR, §N].
+- Dataset labels and metadata corrected, no value changed: title and version, Lean build block (commit 34ce857: 156 files, 14 axioms), concept DOIs, `lean_theorem` of the 33 relations (the theorem of each relation, replacing `observables_certified`), B07 and C19–C21 formula labels, A08 note; summary statistics recomputed (they predated the refresh); CSV and LaTeX exports regenerated.
+- C18 disclosed in S3: its comparison is mismatched (Vol_e − Vol_μ against ln(m_τ/m_μ), which the instanton relation pairs with Vol_μ − Vol_τ); C20 and C21 use the same difference. Entries kept as computed.
+- LaTeX regenerated: subscripts and superscripts typeset, table widths set from the generator.
 
 **Batch 7 (2026-10-31): title, and the companion philosophy paper cited.**
 - Title: "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and
@@ -263,3 +265,418 @@ without citing the companion philosophy paper (under anonymous review).
 - Lean code link → Arithmon/K7-Lean; [E] dataset DOI 21209412 cited separately.
 - Not yet: abstract and summaries (part of the reframing), .tex regeneration
   (build_3.6), decisions 2–4 (leptons, M_Z, δ_CP), Pontryagin in the .tex.
+
+## Erratum (2026-10-16, Scientific Reports referee, point 2)
+
+- **p₂ is not a Pontryagin class.** The constant p₂ = dim(G₂)/dim(K₇) = 2 was
+  labelled "Pontryagin class / Pontryagin ratio" (main §gauge "holonomy
+  sequence", S2 θ₂₃ components and Fibonacci table). For a 7-manifold,
+  p₂(TK₇) ∈ H⁸(K₇; ℤ) = 0, and 14/7 is neither a Pontryagin class nor a
+  Pontryagin number. Relabelled "binary ratio" (the name S1/S2 already use
+  elsewhere: "binary duality factor"); the unfounded "spin structure
+  correction" reading of θ₂₃ is withdrawn. Values and formulas unchanged.
+
+## v3.5 (2026-07, cold-read + external AI-review fixes, 2026-07-09)
+
+**Content corrections (claude-chat review):**
+
+- Ref [32] title corrected: NPB 471, 135 (1996) is Witten, "Strong coupling
+  expansion of Calabi-Yau compactification" (heterotic M-theory), not "Bound
+  states of strings and p-branes" (= NPB 460, 335). Same error class as the
+  FHN/Bera catches.
+- Conjunct ventilation reconciled against core v3.4.29 (commit 667c8b9) by
+  direct count of the master-certificate refine tuples: Foundations 38->39,
+  Predictions 55->56, Spectral 41->45. The headline **213 stands verified**
+  (sum 39+56+45+15+10+6+10+11+14+7); the old ventilation summed to 207.
+  Counting convention stated: top-level conjunctions.
+- Build jobs 8378 -> **8394** (core README at v3.4.29); .lean file count
+  134 (=128+6; 12 test) -> **146 under GIFT/ (140 core + 6 generated)**;
+  the old ventilation matched no release.
+- Figure 1 annotation: 3 generations now credited to Z_3 lattice action +
+  (27,3) branching (S6.1), Wilson-line rank-2 SVD demoted to auxiliary data;
+  broken parentheses in S8.1 anchors list fixed; [49] Tristram now cited
+  numerically at the S3.1 conventions paragraph; essay URL moved to
+  arithmon.substack.com; tau/e and mu/e deviations harmonized to 0.23%/0.98%;
+  V_min vs S6.3 volumes normalization clarified; 65-catalogued vs 66-known
+  clarified (65 + K_7); private master note citation made explicit.
+- Parenthetical spaced double-hyphens purged from prose (they render as
+  en-dashes in the PDF, same effect as the banned em-dash); paper_lint
+  gains a DASH-PROSE check.
+
+**Supplements pass (claude-chat review round 2, same day):**
+
+- S1 LaTeX leak fixed: the build's SMP glyph substitution is now
+  verbatim-aware (ASCII fallbacks inside verbatim; the derivation diagrams
+  printed a literal "ensuremath" macro).
+- Attribution corrected (FHN/Bera class): the (r,a,delta) classification of
+  order-two non-symplectic involutions with fixed-locus shapes (g,k) is
+  **Nikulin's** (new shared-bib entry [51], Izv. 43 (1979); AST survey
+  arXiv:0903.3481 inline), not "Garbagnati-Sarti 2009". [45] stays for the
+  symplectic side.
+- `JoyceKarigiannisConstruction.lean` is NOT in core v3.4.29 (migrated to
+  the authors' archive at a repo audit): all three citation sites now say
+  so explicitly.
+- S3 exact-match m_c/m_d row fixed (272.0 via the extended Type II chain,
+  not 234.3/234.0); sector buckets reassigned to their declared thresholds;
+  PMNS composition fixed (sin2theta13 0.81%, mean 0.29% now exact);
+  Instanton split from Bundle (kappa_gauge) per main S5.5; quark sector
+  mean 0.24%.
+- S2 S22 deviation table recomputed over the full 33 Type I at the frozen
+  dataset (git snapshot a34c5c05, mean 0.7319); S23 headline ratios aligned
+  on the tables (~12x next-best gauge, ~6x vs SU(3)) in both S2 and main
+  S8.4 (the "13x/13x" and "10x/5x" variants were stale); S24.2 distribution
+  recounted (3/2/2/10/1, delta_CP reclassified DERIVED); duplicate section
+  number 21 -> 20b.
+- S3.8 Data Availability rewritten to verifiable claims only: DOI
+  10.5281/zenodo.19893371 is the [B] spectral record (checked live) and
+  does NOT hold the observable dataset; dataset now "available on request
+  pending public deposit". Private working-supplement names (S6-S25, S9,
+  Paper I, STATISTICAL_EVIDENCE.md path) purged from public text.
+- Omega_DE 53/77 claim qualified against the declared PR4 freeze; S4.5
+  reconciles 0.99% (post-audit sources) vs 0.73% (frozen); Spectral.lean
+  coverage label Types III-IV; supplement page headers use ":" (no em-dash);
+  Appendix C page counts fixed (S2 38, S3 15, S4 6); PDG source date fixed;
+  shared-bibliography note added at the head of References.
+
+**Layout (cold-read Brieuc):** abstract shortened ~40% (honest-scope
+qualifiers preserved; "conditionally" reinstated per release-auditor),
+abstract+keywords fit page 1, ToC added page 2, full-width rules, long
+code tokens made breakable (main overfull sites cleared, S2 44->35).
+
+## v3.5 (2026-07, rename: The K₇ Framework, 2026-07-08)
+
+The framework is renamed **The K₇ Framework** (formerly the Geometric
+Information Field Theory, GIFT). Motivation: the framework takes the name
+of its central object, following the K3 precedent (Weil); "Geometric
+Information Field Theory" collided with Ensslin's established Information
+Field Theory; the GIFT brand had reached saturation. Versions 1.0-3.4 of
+this record remain the same line of work; nothing is retracted.
+
+- New title: *The K₇ Framework: Conditional Topological Relations for
+  Standard-Model Parameters from G₂ Holonomy and E₈×E₈ Structure*.
+- Continuity line added to the first-page status box and the §1.2
+  definition site; footers now read "The K₇ Framework (formerly GIFT)".
+- Observable-table columns "GIFT" / "GIFT prediction" → "Prediction";
+  comparison-table labels (main §11, S3 Koide, S4 vs random algebraic)
+  → "K₇ framework".
+- **Unchanged (frozen identifiers)**: published titles of [B] and [C]
+  ("G₂-GIFT Manifold/Metric"), the ledger symbol γ_GIFT (flagged
+  "historical symbol name" at first occurrence), axiom class E
+  "GIFT-claims" (synced with core v3.4.29), Lean identifiers
+  `GIFT.Core.*`, pre-registration pointers (Sieve v1.0 `247e165`, core
+  v3.4.29 `667c8b9`), repository URLs, and this changelog's history.
+- Zenodo: v3.5 stacks as a new version on the existing concept DOI
+  10.5281/zenodo.18837071 (GIFT 1.0-3.4 chain); "GIFT" kept in keywords
+  for discoverability.
+
+## v3.5 (2026-07, §4 catalogue deflation, 2026-07-07)
+
+The deferred structural move from restructure pass 1, plus the length
+concern raised by the round-1 reviews (DeepSeek: "45-50 pages"; GPT:
+reader fatigue).
+
+- Main §4 restructured from 12 subsections to 6: §4.1 Type I summary
+  (representative table + Koide and Weinberg highlights + a dedicated
+  **golden-ratio caveat** subsection for m_mu/m_e = 27^phi, per the
+  review request that phi's weaker McKay-dependent status not borrow
+  from the integer-ratio relations), §4.2 delta_CP (falsifiability
+  flagship, kept whole), §4.3-4.5 Type II/III/IV, §4.6 summary stats.
+- The eight per-sector relation tables (gauge, lepton, quark, neutrino
+  mixing, Higgs, boson, CKM, cosmology) with their derivational prose
+  moved to **S3 §3.4 "Per-Sector Relation Tables"**, ahead of the
+  existing sector-performance narrative; conventions header points back
+  to main §4.
+- All cross-references renumbered (main §3.2, conventions note, §4.4/4.5
+  internal, §11.4 table; S2 and S3 pointers to old §4.4.1 → §4.2).
+- Main paper 1136 → 1040 lines; duplicate Type I summary table removed
+  (was §4.8.1).
+
+## v3.5 (2026-07, supplements sync, 2026-07-07)
+
+The four supplements had not been touched since ~v3.4.13/14 (except S4,
+new at 3.5); an audit pass reconciled them with the 3.5 main paper.
+
+- **Axiom count** reconciled at all six stale sites (S1 x4, S2 x1, S3 x1):
+  "4 axioms" → "15 classified axioms (A-F taxonomy), of which 4 external
+  data packages", pointing to main §8.1. S1 §11.4's incorrect location
+  claim (Foundation/Bounds) replaced by the four named data-package axioms.
+- **NuFIT 6.1** propagated: S2 §13 table + drift paragraph, S2 Appendix F
+  (new "NuFIT 6.1 update" note), S2 summary-table footnote, S3 sources +
+  outliers + exact-matches note; NuFIT 6.0 kept where it is the *frozen
+  dataset* of the deviation statistics, now labelled as such. Refs updated
+  to the JHEP 12 (2024) 216 + 6.1 web-release pair.
+- **Mechanical**: broken `|, |` cells repaired in S2 Appendix F table and
+  S4 KS-test row; S4's 6 em-dashes removed; S4.3 survivor bullets repaired
+  (the "Lean rebate" → "formal-identity flag" rename had mangled
+  "rebate ≈ 0" semantics; now matches main §7 wording).
+- **S2 "92-observable dataset" → 95** (stale count). Stale v3.4.13 tags
+  dropped; Lean-module provenance tags (v3.4.14) retained.
+- **S1 §11.3**: "det(g) = 65/32 prediction" → normalization target, per
+  main §2.3.
+- Stale main-numbering cross-refs in S2/S3 (Pinčák "[46]" → main [42]).
+- Main-paper conventions note fixed: cosmology source is Planck PR4
+  (Tristram et al. 2024), per S3 §3.2, not Planck 2018.
+- DUNE "2028-2040" language in S2/S3 updated to first-beam-2031.
+
+## v3.5 (2026-07, IA-review round 1 discharge, 2026-07-07)
+
+Five independent AI reviews (GLM, Kimi, DeepSeek, GPT, Claude chat) of the
+post-restructure draft; every mechanical claim verified against the file
+and against primary sources before applying. Main paper only (supplements
+in a following pass).
+
+**Mechanical repairs:**
+- Six table cells mutilated by the anti-em-dash script repaired to `n/a`
+  (§5.5 G_35 row, §6.3 V_e row, §6.4 m_mu/m_e row, §11.3 two rows,
+  §11.4 quantum-gravity row). Git archaeology confirmed all six were
+  em-dash placeholders, no values lost.
+- The 33 remaining em-dashes purged (colons/parens/commas), restoring the
+  zero-em-dash rule.
+- §2.3 metric-decomposition paragraph: four-sentence run-on parenthesis
+  restructured.
+- Dagger footnote in §4.12 anchored (11.3%†); Appendix C now lists S4.
+
+**References (all verified against primary sources):**
+- [26] T2K/NOvA joint analysis corrected to Nature 646, 818-824 (2025),
+  doi:10.1038/s41586-025-09599-3 (was: invented volume/pages Nature 638).
+- [27] now cites the NuFit-6.0 JHEP paper (JHEP 12 (2024) 216,
+  arXiv:2410.05380) plus the NuFIT 6.1 web release, per the site's own
+  citation instruction.
+- [45] Garbagnati-Sarti corrected to J. Algebra 318 (2007), 323-350,
+  arXiv:math/0603742 (was: 2008 + wrong arXiv ID); in-text
+  "Garbagnati-Sarti 2009" fixed.
+- [34] Atiyah-Witten no longer miscited for the LEP chargino bound; new
+  [46] LEPSUSYWG/01-03.1 (103.5 GeV) carries it.
+- New [47] Fermilab DUNE first-beam-2031 milestone news (2026-05-07).
+- [13] (orphaned duplicate of [16] CGN) recycled as Kovalev 2005
+  coassociative K3 fibrations (arXiv:math/0511150), now cited as the L4
+  closest template in §9.1.
+- Chen-Hong entry dropped (never cited, no natural home). All remaining
+  orphans wired where cited by name (octonionic SM literature §2.1,
+  construction catalogue §2.3, Harvey-Lawson §6.3, heterotic M-theory
+  §11.2, Mukai §2.3, DUNE TDR §3.3, T2K/NOvA §4.4.1, Springer AI policy
+  in the author's note). Bibliography now 1-47, zero orphans, zero
+  dangling numbers.
+- Stale "[30, 45]" on the §5 intro (K3-fiber 0.07% certification)
+  corrected to [C].
+
+**Consistency fixes:**
+- §11.4 "Singularity structure: Not required" row replaced: it contradicted
+  the UV-bridge caveat added in the GPT review pass. Now reads "Not yet
+  supplied ... requires an explicit UV bridge; load-bearing open question."
+- "CLOSED program" language harmonized with the §10 rename at all three
+  remaining sites (§1.3, §3.4, §11.4 x2): audit closed, selection question
+  open.
+- §11.4 delta_CP row updated to NuFIT 6.1 (4.8%, inside 1-sigma), stale
+  §9.1 pointer fixed; §3.5 stale "§9.4" pointer fixed to §10.
+- DUNE timeline table: "2028-2030" replaced by "after first beam (targeted
+  2031); exposure-dependent".
+- M_GUT 2e16 (§5.1) vs 2.7e16 (§5.4) harmonized with an explicit note.
+- Version-history self-references ("The 3.5 update...") softened in body
+  text (§3.2, §7, §9, §10, §11.4); the delta lives in this CHANGELOG.
+
+**Substantive additions (review decisions):**
+- §6 opens with a "Status: conditional calibration (Type III)" disclosure:
+  c = 0.452, optimized positions, and cycle assignment are declared
+  mechanism/calibration choices; results are conditional reconstructions,
+  not independent predictions. §4.10 points to it.
+- §7 statistical claim layered explicitly (33 conditional ledger identities
+  vs sieve-distinguished survivors m_H/m_W + Koide) + a pre-registration
+  traceability paragraph with frozen artifacts: Sieve v1.0 (commit 247e165,
+  2026-06-12, Zenodo 10.5281/zenodo.20666879) and Lean core v3.4.29
+  (commit 667c8b9).
+- §4 opens with a measurement-conventions paragraph (scheme / scale /
+  dataset / freeze-date defaults; NuFIT 6.0 frozen for tables, 6.1 tracked
+  in §4.4.1 prose).
+- §10.2 adds the operational status of (21,77): a construction-level input,
+  discrete and pre-registered, not chosen from a continuum; the Sieve tests
+  the relations given the input.
+- Author's note updated: GPT/Codex (OpenAI) credited for audit passes,
+  certificate engineering, and adversarial reviews; Kimi, DeepSeek, GLM
+  added for review rounds; publisher-AI-policy citation [38] wired.
+
+## v3.5 (2026-07, restructure, GPT review pass 2026-07-06)
+
+**GPT review pass (2026-07-06).** Fifteen targeted corrections after a
+first restructure pass. The paper is now defensible on the specific
+correctness gates GPT flagged:
+
+- Koide formula corrected (numerator not squared).
+- Wilson-line rank statement corrected (numerical rank 2, not 3; the
+  three-generation count comes from the Z₃ lattice action + (27, 3)
+  branching, not from a rank-3 SVD).
+- Coquille $137.033 = 4\pi/\alpha_{\rm em}$ fixed to $\alpha_{\rm em}^{-1} = 137.033$.
+- $b_1 = 0$ vs $\pi_1(K_7) = 1$ fixed: $b_1$ constrains only the
+  abelianisation; simple connectivity is postulated as a construction
+  input (established in [E, Suppl. App. C] via Van Kampen). Metric
+  corrections are not "responsible for $b_1 = 0$" (Betti topological).
+- E₈ breaking chain rewritten as a representation-branching chain
+  (subgroup branchings compatible with SM reps) rather than a physical
+  breaking mechanism; the intermediate $SU(3)$ factor is now explicitly
+  hidden-sector; SU(5) × U(1) is *not* Pati–Salam (which is
+  $SU(4) \times SU(2)_L \times SU(2)_R$): mislabel fixed.
+- "Exact U(1)² symmetry to $2 \times 10^{-5}$" replaced by "numerically
+  compatible with U(1)² to tolerance". "Exact" and finite tolerance
+  cannot coexist.
+- **UV bridge caveat added** (§2.3, §5.1, §9, §11.5): the smooth
+  NK-certified metric does not by itself produce non-abelian chiral
+  gauge physics in the standard M-theory dictionary (Acharya–Witten
+  [hep-th/0109152]); a heterotic-bundle / duality / singular-$G_2$-locus
+  bridge is a load-bearing open question, on par with $\mathsf H_{\rm global}$
+  and $(\mathrm J)$.
+- "Zero free parameters" tightened: 33 Type I relations use no
+  continuously tuned parameter after ledger freeze; Types II/III/IV
+  are conditional extractions (experimental anchors / dynamical
+  assumptions / diagnostics), *not* independent new predictions.
+- **"Lean rebate" → "formal-identity flag"** everywhere (main paper,
+  Supplement 4, CHANGELOG). The flag certifies the conditional
+  identity Lean has been given; it does not raise the physical prior.
+- §10 renamed from "Selection principle: CLOSED program" to
+  **"Selection audit: five investigated routes and one open residual"**.
+  The audit is closed; the selection question is not.
+- **NuFIT 6.1 update.** $\delta_{\rm CP} = 207^{+23}_{-20}$° (NO w/o
+  SK-atm), so the prediction 197° now sits inside the 1σ band
+  (deviation 4.8% from central); replaces the NuFIT 6.0 framing.
+- **DUNE calendar update.** First beam targeted by 2031 per Fermilab's
+  2026-05 milestone communication; the "2028–2040" window is dropped.
+- **Title updated** to "Geometric Information Field Theory: Conditional
+  Topological Relations for Standard-Model Parameters from a G₂ / E₈
+  Framework".
+- **Four-line status box on first page** ("Formally established /
+  Established at the datum / Open / Phenomenology"), replacing the
+  "at a glance" 5-row table.
+- §9 datum-conditional language propagated to Abstract, §2.3, §8.5,
+  §11.5 (existing NK "existence and uniqueness" phrasing everywhere
+  qualified with "seam / datum level, not global compact").
+
+## v3.5 (2026-07, restructure)
+
+This is a restructure of the 3.4 framework paper (published 2026-05-07 on
+Zenodo, DOI [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071),
+44 pp). The scientific content is stable; the delta is (i) a companion
+paper cited upfront, (ii) a methodology swap, (iii) a section re-layout,
+(iv) a series of language tightenings and reconciliations.
+
+### Companion paper cited upfront ([E])
+
+Introduces a load-bearing external reference:
+
+> **[E]** B. de La Fournière, "A conditional analytic framework for
+> rank-one branched Kovalev–Lefschetz adiabatic limits," Zenodo concept
+> DOI [10.5281/zenodo.21209413](https://doi.org/10.5281/zenodo.21209413)
+> (2026), main paper 68 pp + supplement 25 pp, dataset and four
+> `mpmath.iv` verification scripts (CC BY 4.0).
+
+[E] discharges the analytic side of the existence question at a
+normalised datum $\mathcal D_0$ (a $K_7 \to S^3$ construction with
+$N = 77$ round-unlink branch components):
+
+- structural: seven theorem-grade results assembled into a conditional
+  branched lifting scheme in the sense of a special case of
+  [Donaldson 2017, Conjecture 1];
+- quantitative: source-side discharge constants certified with
+  structural provenance ($C_{\rm src} = 27/16$, $C_{\rm nl} = 2/3$,
+  $C_{\rm link} \le 1$, $\gamma = 2$); tail-contraction threshold
+  $R_0(\mathcal D_0) \le 4.9 \cdot 10^3$ enclosed by outward-rounded
+  interval arithmetic;
+- residual: two structural hypotheses (an anisotropic three-scale
+  perturbation theorem, and a hyperkähler-with-periods geometric upgrade)
+  remain OPEN and are cited as such.
+
+Everywhere the 3.4 paper wrote "full smooth compact construction remains
+open" or "NK ball only," the 3.5 paper writes "the datum-level
+analytic scheme is discharged conditionally on the two external slots of
+[E]" and cites the concept DOI. Load-bearing locations updated:
+Abstract, §2.3 K₇ Manifold, §5.5 Bundle universality, §8.5 G₂ metric,
+§9.3 comparison table, §9.4 open questions.
+
+### Methodology swap: statistical stress test → Sieve reading
+
+The 3.4 sensitivity headline was a coincidence-probability calculation
+under a uniform and an algebraic null model, giving $\sim 10^{-346}$ /
+$\sim 10^{-133}$. These exponents are retained here only as an appendix
+diagnostic; the headline is replaced by the **Sieve reading** consistent
+with the Arithmon methodology paper (Zenodo DOI 10.5281/zenodo.20666879):
+
+- public 4-null battery (uniform / algebraic / factorised / permuted);
+- certified survivors with per-survivor budget-uniqueness rank;
+- Lean 4 formal-identity flag for survivors that carry a Lean R2 pre-registered
+  identity (so that the sieve-passage becomes a certified statement
+  rather than a coincidence-probability tail).
+
+Under the Sieve reading, the m_H/m_W route (Route A) is the unique
+survivor at exact rank 1 budget-unique after Type I calibration;
+Koide's Q remains a survivor but with formal-identity flag ≈ 0 (§7 revised).
+
+### Section re-layout
+
+- **New §9 "Existence status"**: absorbs the six 3.4 loci that
+  independently wrote "remains open" language; centralises the [E]
+  citation and states the two remaining external slots explicitly.
+- **New §10 "Selection principle"**: extracted from the 3.4 §9.4 mixed
+  "limitations and open questions" block. States the CLOSED selection
+  program (convenient-not-special under KS-full ; distinguishedness
+  across multiple higher-HK classifications with a single exception at
+  Camere Lemma 5.8 ; sub-Q1/Q2 mechanisms of 77 invisibility ; sub-Q3
+  distinguishedness-yes-77-no) and preserves the honest residual
+  $b_2 + b_3 = 98 = \dim K_7 \cdot \dim G_2$ (pre-registration flagged
+  as required for that identity to graduate from numerology).
+- **§4 deflation**: the previous §4 "Observables: 95 Relations"
+  (228 lines) is compressed to a "Results at a glance" table; the
+  sector-by-sector detail moves to Supplement 3 (Observables).
+- **§7 + §8.4 fusion**: statistical uniqueness content is unified
+  under the Sieve reading in a single section; the 3.4 §7.5
+  coincidence tables move to a new **Supplement 4 (Sieve diagnostics)**.
+
+### Reconciliations and language
+
+- **Axiom count clarified.** The 3.4 paper wrote "4 axioms" for the
+  Lean layer (referring to the four data packages
+  `K7_analysis_data`, `K7_spectral_data`, `literature_package`,
+  `KK_YM_EFT`). The Lean core headline released as v3.4.29
+  (2026-06-24, `#print axioms` count over the ledger) is **15
+  classified axioms** (A-F taxonomy: A definitional, B standard,
+  C geometric, D literature, E GIFT-claims, F numerical). 3.5 states
+  both counts explicitly: "4 external data-package axioms; 15 total
+  ledger axioms across the A-F classification."
+- **Selection principle language** ("full formula-selection rule
+  remains open") replaced by pointers to §10 and to the master note
+  `axis2_selection_principle_master_2026_07_04` (private).
+- **Arithmon hat.** Footer "GIFT is the founding framework of the
+  Arithmon program"; three contact entries maximum
+  (`brieuc@arithmon.com`, `contact@arithmon.com`, arithmon.com).
+- **Related work.** Adds bridge note on Zhou (rank-1 K3-fibration
+  series ; retrograded 2026-05) ; Cabannas-Silva short entry ;
+  no change to Flyxion pointer.
+- **Observables reconciliation.** 0.99% Type I after the audit
+  documented in `frozen_inputs_divergence_audit_2026_06_16` ;
+  m_c/m_s erratum inlined.
+
+### Referee-pass items (from 3.4 → 3.5)
+
+- $\det(g) = 65/32$ is a **normalisation target** (scale module of a
+  Ricci-flat metric), **not** a prediction ; the dimensionless
+  spectrum is invariant under the $65/32 \to 2$ rescaling ;
+- $\kappa_T^{-1} = 61$ is a **topological anchor**
+  $b_3 - \dim(G_2) - p_2$ (not a torsion mass) ; the closure
+  $Y_p + \Omega_m/\Omega_\Lambda$ fixes 61 independently of
+  $m_\tau/m_e$, defusing the circularity concern.
+
+### Files updated
+
+- `physics_main.md`: restructured.
+- `supplement_derivations.md`: unchanged (referenced from §4 table).
+- `supplement_foundations.md`: unchanged.
+- `supplement_observables.md`: absorbs the 3.4 §4 sector-by-sector detail.
+- `supplement_sieve_diagnostics.md` (**new**): 3.4 §7.5 coincidence
+  tables + Sieve reading formal-identity flag details.
+- `latex/gift_3.5_main.tex` (**new**): hand-maintained LaTeX build.
+  `gift_3.4_main.tex` preserved as archive.
+
+## v3.4 (2026-05-07)
+
+Published on Zenodo, DOI 10.5281/zenodo.18837071. 44 pp.
+95 observables; four types (I direct-algebraic, II one-step-physical,
+III multi-step-dynamical, IV structural-diagnostic). Lean 4 layer
+with 213 conjuncts, 4 axioms, 0 sorry. DUNE δ_CP = 197° prediction.
+No prior CHANGELOG.

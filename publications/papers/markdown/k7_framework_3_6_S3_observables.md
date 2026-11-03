@@ -21,7 +21,7 @@ Earlier versions described the dataset as "95 observables derived from a single 
 
 **Type II.** Several entries are numbers read in MeV or GeV, for example m_u = √(dim G₂/3) = 2.16, m_d = ln 107 = 4.673, m_c = (dim G₂ − π)³ = 1280, m_t = 415². Reading a structural number in a unit is an assignment of the same kind as reading 197 in degrees, with a far larger space of alternatives (R10). The CKM magnitudes (B10–B15) and the ratios m_b/m_d and m_t/m_c (B18, B19) are legacy values: their derivation is not documented in the current dataset, and they are retained for traceability, not counted as predictions. B18 and B19 are not fixed by the Type I quark ratios alone, which relate two separate groups, {u, d, s, c} and {b, t}. m_c/m_d (B17) combines B16, of Type II, with A08. Earlier versions described all nineteen as "a Type I ratio times an experimental anchor"; that description did not match the dataset and is withdrawn.
 
-**Type III.** The Wilson-line and associative-volume entries reproduce lepton mass ratios at the percent level with declared calibration choices (a coupling c = 0.452, an exponent α = e^K = 0.002763, a cycle assignment) selected against the measured ratios; they are conditional reconstructions (main §6.2). The four entries of the two-loop supersymmetric running from a grand-unification boundary (C04–C07) are withdrawn with that reading (main §5). The remaining entries are diagnostics, some compared with a mathematical expectation (the Weyl exponent with d/2, the gauge-kinetic conditioning with 1), none with a measurement.
+**Type III.** The Wilson-line and associative-volume entries reproduce lepton mass ratios at the percent level with declared calibration choices (a coupling c = 0.452, an exponent α = e^K = 0.002763, a cycle assignment) selected against the measured ratios; they are conditional reconstructions (main §6.2). The comparison of C18 is mismatched: its value is Vol_e − Vol_μ = 3.271, its reference is ln(m_τ/m_μ) = 2.823, and the instanton relation pairs that reference with Vol_μ − Vol_τ = 5.362 (the matching reference for Vol_e − Vol_μ is ln(m_μ/m_e) = 5.33), so its 15.9% deviation carries no meaning. The cycle search scored this same pair, and C20 and C21 use the same difference; with Vol_μ − Vol_τ they would read 16.79 and 207.6, still within 1%. The entries are kept as computed. The four entries of the two-loop supersymmetric running from a grand-unification boundary (C04–C07) are withdrawn with that reading (main §5). The remaining entries are diagnostics, some compared with a mathematical expectation (the Weyl exponent with d/2, the gauge-kinetic conditioning with 1), none with a measurement.
 
 **Type IV.** Topological inputs (b₂, b₃: R1), integer combinations (H*, N_gen), the imposed normalization det(g) = 65/32 (R2), numerical diagnostics of the certified seam metric (Newton–Kantorovich quantities, Gram conditioning, spectral counts, metric block eigenvalues), and three entries taken from the black-hole-remnant analysis of main ref. [42], one of which depends on the scale identification τ₀ = v_EW.
 
@@ -62,7 +62,7 @@ Formulas, framework values and deviations are in main §4.1. This table gives, f
 
 <!-- BEGIN S3-TYPE-I -->
 | ID | Observable | Measured | Source | Pull | Convention / note | Status |
-|----|-----------|----------|--------|------|-------------------|--------|
+|---|--------|------------|-------|----|---------------------|---------------|
 | A01 | sin²θ_W (M_Z) | 0.23122(6) | PDG 2026 | −7.5σ | MS-bar at M_Z (PDG Table 1.1) | integer; **proximity** |
 | A02 | α_s(M_Z) | 0.1180(9) | PDG 2026 | −0.2σ | n/a | algebraic |
 | A03 | λ_H | 0.12914(23) | PDG 2026 | −1.3σ | tree level m_H²/(2v²), v = (√2 G_F)^(−1/2) = 246.220 GeV | algebraic; det(g) |
@@ -108,14 +108,14 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 
 <!-- BEGIN S3-TYPE-II-IV -->
 | ID | Type | Quantity | Formula or mechanism | Framework value | Reference value | Status |
-|----|------|----------|----------------------|-----------------|-----------------|--------|
+|---|---|-------|-------------|------|------|----------------------|
 | B01 | II | m_u | sqrt(dim(G₂)/3) | 2.16 | 2.16 | unit assignment (R10) |
 | B02 | II | m_d | ln(107) | 4.673 | 4.7 | unit assignment (R10) |
 | B03 | II | m_s | τ×24 | 93.52 | 92.9 | unit assignment (R10) |
 | B04 | II | m_c | (dim(G₂)-π)³ | 1280 | 1272.9 | unit assignment (R10) |
 | B05 | II | m_b | 2b₂×H* | 4158 | 4186 | unit assignment (R10) |
 | B06 | II | m_t | 415² | 172225 | 172600 | unit assignment (R10) |
-| B07 | II | v_EW | Λ_GIFT scale bridge | 246.87 | 246.22 | scale bridge; unit assignment (R10) |
+| B07 | II | v_EW | Scale bridge from the unit assignment (R10) | 246.87 | 246.22 | scale bridge; unit assignment (R10) |
 | B08 | II | M_W | (g₂/2)×v_EW | 80.4 | 80.3625 | scale bridge; unit assignment (R10) |
 | B09 | II | M_Z | M_W/cos(θ_W) | 91.2 | 91.1879 | scale bridge; unit assignment (R10) |
 | B10 | II | \|V_us\| | not documented (legacy label: Cabibbo from b₂) | 0.2245 | 0.2243 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
@@ -145,10 +145,10 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 | C15 | III | N_assoc | Homology 3-cycles with φ-calibration | 57 | n/a | diagnostic of the approximate seam metric |
 | C16 | III | \|\|T\|\|_C⁰ | G₂ torsion norm | 2.98e-05 | n/a | diagnostic of the approximate seam metric |
 | C17 | III | ΔV(e-τ) | Associative volume differences | 8.6331 | 8.15393 | conditional reconstruction (calibration choices, main §6.2) |
-| C18 | III | ΔV(e-μ) | Associative volume differences | 3.27125 | 2.82257 | conditional reconstruction (calibration choices, main §6.2) |
-| C19 | III | m_τ/m_e (comb) | S10 × exp(e^K · ΔV) | 3485.3 | 3477.37 | conditional reconstruction (calibration choices, main §6.2) |
-| C20 | III | m_τ/m_μ (comb) | S10 × exp(e^K · ΔV) | 16.69 | 16.8177 | conditional reconstruction (calibration choices, main §6.2) |
-| C21 | III | m_μ/m_e (comb) | S10 × exp(e^K · ΔV) | 208.8 | 206.768 | conditional reconstruction (calibration choices, main §6.2) |
+| C18 | III | ΔV(e-μ) | Associative volume differences | 3.27125 | 2.82257 | conditional reconstruction (calibration choices, main §6.2); mismatched reference (see Type III above) |
+| C19 | III | m_τ/m_e (comb) | Wilson-line ratio × exp(e^K · ΔV) | 3485.3 | 3477.37 | conditional reconstruction (calibration choices, main §6.2) |
+| C20 | III | m_τ/m_μ (comb) | Wilson-line ratio × exp(e^K · ΔV) | 16.69 | 16.8177 | conditional reconstruction (calibration choices, main §6.2); inherits the C18 pairing |
+| C21 | III | m_μ/m_e (comb) | Wilson-line ratio × exp(e^K · ΔV) | 208.8 | 206.768 | conditional reconstruction (calibration choices, main §6.2); inherits the C18 pairing |
 | D01 | IV | b₂ | TCS K₇ | 21 | n/a | input (R1) |
 | D02 | IV | b₃ | TCS K₇ | 77 | n/a | input (R1) |
 | D03 | IV | H* | b₂+b₃+1 | 99 | n/a | integer combination of R1 |
@@ -185,7 +185,7 @@ The Lean formalization (Arithmon/K7-Lean, main §8) verifies arithmetic identiti
 Arithmon/K7-Lean, commit `34ce857` (merged into `main`, PR #167); aggregate `Certificate.RelationsV36.relations_v36_certified`, which depends only on the axioms `propext`, `Classical.choice`, `Quot.sound`.
 
 | ID | Observable | Lean declaration (under `GIFT.`) | Location | Scope |
-|----|-----------|-----------------------------------|----------|-------|
+|---|------|---------------------|-------------|-------------|
 | A01 | sin²θ_W | `Certificate.RelationsV36.A01_sin2_theta_W` | Certificate/RelationsV36.lean:50 | exact rational equality of the closed form |
 | A02 | α_s(M_Z) | `Certificate.RelationsV36.A02_alpha_s` | Certificate/RelationsV36.lean:55 | closed form in ℝ equal to the stated real value (no numerical bound) |
 | A03 | λ_H | `Certificate.RelationsV36.A03_lambda_H` | Certificate/RelationsV36.lean:59 | closed form in ℝ equal to the stated real value (no numerical bound) |
