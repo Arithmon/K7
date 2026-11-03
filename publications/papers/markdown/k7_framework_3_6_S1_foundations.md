@@ -506,7 +506,7 @@ A Mayer–Vietoris computation of (b₂, b₃) would require a decomposition of 
 
 ### 9.2 Numerical Consistency
 
-The spectral analysis of the approximate seam metric ([B]) finds 21 near-zero eigenvalues of the Laplacian on 2-forms and 77 on 3-forms, separated from the rest of the spectrum. This is consistent with the posited Betti numbers; it is not a certificate of them, since the metric is approximate and is not a metric on a compact K₇.
+The spectral analysis of the approximate seam metric ([B]) reports 21 near-zero eigenvalues of the Laplacian on 2-forms and 77 on 3-forms, separated from the rest of the spectrum. These multiplicities are not independent evidence for the posited Betti numbers: [B] constructs the 2-forms from the split 11 + 10 withdrawn in §8.3, and the 3-forms from the split 35 + 21 + 21, whose block of 35 is the identification withdrawn in §9.3. Nor are they a certificate, since the metric is approximate and is not a metric on a compact K₇.
 
 ### 9.3 The Integer 42
 
@@ -735,7 +735,7 @@ Earlier versions reconstructed the metric as g_ij = (1/6) Σ_{k,l} φ_ikl φ_jkl
 | **Fano lines** | (0,1,3), (1,2,4), (2,3,5), (3,4,6), (4,5,0), (5,6,1), (6,0,2) | G₂ cross-product ε_{ijk} |
 | **G₂ form** | (0,1,2), (0,3,4), (0,5,6), (1,3,5), (1,4,6), (2,3,6), (2,4,5) | Associative 3-form |
 
-Both have 7 terms but different index patterns. The Fano plane defines the octonion multiplication (cross-product), while the G₂ form is the associative calibration.
+Both have 7 terms because both are Fano-plane patterns: the associative calibration is φ(x, y, z) = ⟨x × y, z⟩ on Im(𝕆), and the two tables differ by a relabelling of the seven points. The training bug came from penalising the wrong labelling, not from a difference in kind between the two objects.
 
 ### 12.5 Verification Summary
 

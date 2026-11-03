@@ -103,12 +103,12 @@ Four relations bear on two independent mass ratios, and they are mutually incomp
 |----|----------|-----------|------------------|---|
 | A23 | Ω_DE = Ω_Λ | ln 2 · (b₂ + b₃)/H* = ln 2 · 98/99 = **0.686146** | operation ln 2; R11 | ln 2; approximate (R11); pull +0.2σ |
 | A24 | n_s | ζ(D_bulk)/ζ(Weyl) = **ζ(11)/ζ(5)** = 0.964864 | operation ζ | ζ values; pull 0.0σ |
-| A25 | Ω_DM/Ω_b | (1 + 2b₂)/rank E₈ = **43/8** = 5.375 | additive 1; R11 | integer; approximate (R11); pull +0.2σ |
-| A26 | Ω_c/Ω_Λ | det_num/\|PSL(2,7)\| = **65/168** = 0.386905 | R2; R11 | integer; det(g); approximate (R11); pull +0.1σ |
+| A25 | Ω_DM/Ω_b | (1 + 2b₂)/rank E₈ = **43/8** = 5.375 | additive 1; R11 | integer; approximate (R11); pull +0.1σ |
+| A26 | Ω_c/Ω_Λ | det_num/\|PSL(2,7)\| = **65/168** = 0.386905 | R2; R11 | integer; det(g); approximate (R11); pull 0.0σ |
 | A27 | Ω_Λ/Ω_m | (dim G₂ + H*)/dim F₄ = **113/52** = 2.173077 | R11 | integer; approximate (R11); pull 0.0σ |
 | A28 | h | (\|PSL(2,7)\| − 1)/dim E₈ = **167/248** = 0.673387 | additive 1 | integer; pull 0.0σ |
 | A29 | Ω_b/Ω_m | Weyl/det_den = **5/32** = 0.15625 | R2; R11 | integer; det(g); approximate (R11); pull −0.1σ |
-| A30 | Ω_c/Ω_m | (det_den − Weyl)/det_den = **27/32** = 0.84375 | R2; R11 | integer; det(g); approximate (R11); pull +0.4σ |
+| A30 | Ω_c/Ω_m | (det_den − Weyl)/det_den = **27/32** = 0.84375 | R2; R11 | integer; det(g); approximate (R11); **tension**; pull +2.5σ |
 | A31 | σ₈ | (p₂ + det_den)/(2b₂) = 34/42 = **17/21** = 0.809524 | R2 | integer; det(g); pull −0.3σ |
 | A32 | Y_p | (1 + dim G₂)/κ_T⁻¹ = **15/61** = 0.245902 | additive 1; R3 | integer; κ_T; pull +0.3σ |
 | A33 | Ω_m/Ω_Λ | (1 + dim J₃(𝕆))/κ_T⁻¹ = **28/61** = 0.459016 | additive 1; R3; R11 | integer; κ_T; approximate (R11); pull −0.1σ |
@@ -121,15 +121,15 @@ Four relations bear on two independent mass ratios, and they are mutually incomp
 | Ω_c/Ω_b | 43/8 = 5.375 (A25); 27/5 = 5.400 (A30/A29) |
 | Ω_c/Ω_Λ | 65/168 = 0.3869 (A26); 0.3873 (A30 × A33); 0.3883 (A30/A27) |
 
-A27 and A33 are the same quantity, written with two formulas. The disagreements are below the Planck uncertainties, which is why each relation passes at 2σ. The seven cannot hold together; none is selected (R11). Some are redundant and some subsets are compatible: A29 and A30 are equivalent under flatness without neutrinos (5/32 + 27/32 = 1), and the largest compatible subsets have three relations, A29 and A30 with one of A23, A26, A27 or A33 (checked by solving each subset for (Ω_b, Ω_c)). Earlier drafts of this version said that at most two of the seven can be exact; A23, A29 and A30 hold together, and the statement is withdrawn.
+A27 and A33 are the same quantity, written with two formulas. The disagreements are below the Planck uncertainties of these ratios, which is why six of the seven pass at 2σ; Ω_c/Ω_m, whose uncertainty is much smaller (0.0019), is in tension at +2.5σ. The seven cannot hold together; none is selected (R11). Some are redundant and some subsets are compatible: A29 and A30 are equivalent when neutrinos are neglected (Ω_m = Ω_b + Ω_c, so that 5/32 + 27/32 = 1), with or without flatness, and the largest compatible subsets have three relations, A29 and A30 with one of A23, A26, A27 or A33 (checked by solving each subset for (Ω_b, Ω_c)). Earlier drafts of this version said that at most two of the seven can be exact; A23, A29 and A30 hold together, and the statement is withdrawn.
 
-**Withdrawn.** Earlier versions also gave Ω_m = Ω_DE/√Weyl = 0.3068 (2.7% from Planck) as a "derived" relation, and described ln 2 as a "binary information factor" of the moduli space. The first is an eighth density relation, incompatible with the others; the second names an operation without a computation behind it. Both are withdrawn. The statement that Ω_DM/Ω_b = 43/8 is "exact" (from a dataset value 5.375 ± 0.1 that matched no Planck column) is withdrawn; against Planck 2018 it is 5.364 ± 0.065.
+**Withdrawn.** Earlier versions also gave Ω_m = Ω_DE/√Weyl = 0.3068 (2.7% from Planck) as a "derived" relation, and described ln 2 as a "binary information factor" of the moduli space. The first is an eighth density relation, incompatible with the others; the second names an operation without a computation behind it. Both are withdrawn. The statement that Ω_DM/Ω_b = 43/8 is "exact" (from a dataset value 5.375 ± 0.1 that matched no Planck column) is withdrawn; against the Planck 2018 chains it is 5.364 ± 0.077.
 
 ---
 
 ## S2.7 Vocabulary freedom: alternative formulas in the corpus
 
-Earlier versions counted, for each relation, the number of distinct expressions in the constants that reduce to the same value (for example 14 for sin²θ_W = 3/13, 20 for Q_Koide = 2/3, 21 for m_b/m_t = 1/42), and read a large count as "structural robustness": a value reached by many paths was said to be less likely a coincidence. Version 3.6 reverses that reading (main §7). A value reached by many paths through twenty constants is a value the vocabulary reaches easily; the count measures the vocabulary's freedom (R4, R5), and the look-elsewhere test of main §7 prices it: there, every one of the 6 159 competing vocabularies reaches sin²θ_W, Q_Koide and m_b/m_t within 2σ at five nodes (S4.2.2). The counts are kept as such a measure:
+Earlier versions counted, for each relation, the number of distinct expressions in the constants that reduce to the same value (for example 14 for sin²θ_W = 3/13, 20 for Q_Koide = 2/3, 21 for m_b/m_t = 1/42), and read a large count as "structural robustness": a value reached by many paths was said to be less likely a coincidence. Version 3.6 reverses that reading (main §7). A value reached by many paths through twenty constants is a value the vocabulary reaches easily; the count measures the vocabulary's freedom (R4, R5). It is not what the look-elsewhere test of main §7 prices: the published values 3/13 and 1/42 lie outside their 2σ windows, and the 30 targets that every competitor reaches are already reached by the grammar's universal leaves, with no constant of K₇ at all (S4.2.2). The counts are kept as such a measure:
 
 | Relation | Distinct expressions recorded | Examples |
 |----------|-------------------------------|----------|

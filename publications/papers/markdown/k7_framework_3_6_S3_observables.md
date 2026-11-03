@@ -38,13 +38,15 @@ The comparison data were refreshed on 2026-10-22 to the most recent releases (`c
 | Planck 2018 [3] | cosmology | base ΛCDM, TT,TE,EE+lowE+lensing; one column for all entries; the PR4 reanalysis [49] is not used |
 | CODATA 2022 [50] | α at q² = 0, m_μ/m_e | n/a |
 
-**Derived reference values.** Mass ratios are computed from the published masses, density ratios from the published densities, with error propagation that neglects correlations. This is an approximation, not a bound: the summary tables do not publish the covariances, and for a ratio R = x/y the term −2 Cov(x, y)/(xy) in Var(R)/R² can have either sign. Ω_Λ/Ω_m and Ω_m/Ω_Λ use flatness (Ω_Λ = 1 − Ω_m), neglecting the neutrino density (Ω_ν h² ≈ 0.0006 in the Planck base model; Planck's Ω_m includes it). λ_H is the tree-level m_H²/(2v²) with v = (√2 G_F)^(−1/2), a definition that is itself a scheme choice. m_s/m_d is given by the PDG as the range 17–22, without an uncertainty; it is stored as a range, and no pull is defined (the relation's value 20 lies inside it).
+**Derived reference values.** Mass ratios are computed from the published masses, with error propagation that neglects correlations. This is an approximation, not a bound: the summary tables do not publish the covariances, and for a ratio R = x/y the term −2 Cov(x, y)/(xy) in Var(R)/R² can have either sign. The density ratios A25, A26, A27, A29, A30 and A33 are computed sample by sample on the published Planck chains [3] (base_plikHM_TTTEEE_lowl_lowE_lensing, 25 225 weighted samples, whose marginal statistics reproduce the published table), as weighted mean and standard deviation; `canonical/scripts/k7_v3_6_planck_ratios.py`. No first-order propagation or proposal covariance enters. Earlier drafts propagated them without correlations, which gave Ω_c/Ω_m = 0.839(11) at +0.4σ; ω_c and ω_m are correlated at about 0.99, and the chains give 0.8390(19), +2.5σ.
+
+**Total matter.** Planck's Ω_m includes neutrinos (Ω_ν h² = 0.00064 at Σm_ν = 0.06 eV, Ω_ν/Ω_m = 0.0045). So Ω_b/Ω_m + Ω_c/Ω_m = 0.9955 in the reference, while the formulas 5/32 and 27/32 sum to 1. This is a defect of compatibility with the Planck definition; the denominator is not replaced by Ω_b + Ω_c, since that would change the quantities tested. For information, that other quantity gives 0.8428(19) for Ω_c/(Ω_b + Ω_c), and pulls of ±0.5σ. The complementarity of baryons and cold dark matter, with neutrinos neglected, does not require flatness. λ_H is the tree-level m_H²/(2v²) with v = (√2 G_F)^(−1/2), a definition that is itself a scheme choice. m_s/m_d is given by the PDG as the range 17–22, without an uncertainty; it is stored as a range, and no pull is defined (the relation's value 20 lies inside it).
 
 **Confidence levels.** All uncertainties are brought to 1σ. The PDG summary tables quote the light-quark masses, m_c, m_b and m_u/m_d at 90% confidence; these are divided by 1.645. The lattice average of m_c/m_s (PDG quark-mass review, statistical and systematic errors in quadrature) is already a 1σ value.
 
 **Asymmetric uncertainties.** NuFIT and the CKM parameter A have asymmetric errors; both sides are kept in the dataset, and the pull uses the side facing the framework's value. The sin²θ₂₃ profile is not Gaussian: its 3σ range (0.435–0.584) contains 6/11 although the Gaussian pull exceeds 4σ (main §4.3).
 
-**Corrections made in the refresh.** The previous dataset gave m_μ/m_τ and m_τ/m_e with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q_Koide from the PDG 2022 τ mass while m_τ/m_e used the later one; gave m_b/m_t an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; gave m_μ/m_e an uncertainty of 0.02 where CODATA 2022 gives 4.6 × 10⁻⁶; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data and one convention for all uncertainties, the 33 relations fall into the five classes of main §4.2: 24 within 2σ, 2 in tension, 5 proximities beyond 3σ (m_b/m_t in the scheme of R7 among them), 1 inside the PDG range, 1 with a non-Gaussian profile. (The earlier count, 28 within 2σ, rested on the uncertainties listed above.)
+**Corrections made in the refresh.** The previous dataset gave m_μ/m_τ and m_τ/m_e with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q_Koide from the PDG 2022 τ mass while m_τ/m_e used the later one; gave m_b/m_t an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; gave m_μ/m_e an uncertainty of 0.02 where CODATA 2022 gives 4.6 × 10⁻⁶; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data and one convention for all uncertainties, the 33 relations fall into the five classes of main §4.2: 23 within 2σ, 3 in tension, 5 proximities beyond 3σ (m_b/m_t in the scheme of R7 among them), 1 inside the PDG range, 1 with a non-Gaussian profile. (The earlier count, 28 within 2σ, rested on the uncertainties listed above.)
 
 **Not refreshed.** Y_p (0.245 ± 0.003) is the PDG's recommended observational helium abundance from HII regions (BBN review of the 2024 Review of Particle Physics [56], eq. 24.3; earlier versions of the dataset labelled it Planck 2018, which it is not), and was not re-checked against the 2026 edition; the Type II CKM magnitudes and mass cascades, and the entries C05, C17 and C18, keep their earlier reference values (PDG 2025), since they are not compared in the main text.
 
@@ -87,15 +89,15 @@ Formulas, framework values and deviations are in main §4.1. This table gives, f
 | A22 | m_μ/m_τ | 0.0594612(30) | PDG 2026 | +20.8σ | from the PDG 2026 masses | integer; approximate (R8); **proximity** |
 | A23 | Ω_DE | 0.6847(73) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.2σ | Ω_Λ | ln 2; approximate (R11) |
 | A24 | n_s | 0.9649(42) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | n/a | ζ values |
-| A25 | Ω_DM/Ω_b | 5.364(65) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.2σ | Ω_c h² / Ω_b h² | integer; approximate (R11) |
-| A26 | Ω_c/Ω_Λ | 0.3863(84) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.1σ | Ω_c = Ω_c h² / h² | integer; det(g); approximate (R11) |
-| A27 | Ω_Λ/Ω_m | 2.172(73) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | flatness: Ω_Λ = 1 − Ω_m, neutrinos neglected | integer; approximate (R11) |
+| A25 | Ω_DM/Ω_b | 5.364(77) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.1σ | Ω_c h² / Ω_b h² | integer; approximate (R11) |
+| A26 | Ω_c/Ω_Λ | 0.387(14) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | Ω_c h² / h² / Ω_Λ | integer; det(g); approximate (R11) |
+| A27 | Ω_Λ/Ω_m | 2.173(74) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | Ω_Λ / Ω_m, Planck definitions | integer; approximate (R11) |
 | A28 | h | 0.6736(54) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | n/a | integer |
-| A29 | Ω_b/Ω_m | 0.1564(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | Ω_b h² / Ω_m h² | integer; det(g); approximate (R11) |
-| A30 | Ω_c/Ω_m | 0.839(11) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.4σ | Ω_c h² / Ω_m h² | integer; det(g); approximate (R11) |
+| A29 | Ω_b/Ω_m | 0.1565(19) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | Ω_b h² / Ω_m h², Ω_m includes neutrinos | integer; det(g); approximate (R11) |
+| A30 | Ω_c/Ω_m | 0.8390(19) | Planck 2018 (TT,TE,EE+lowE+lensing) | +2.5σ | Ω_c h² / Ω_m h², Ω_m includes neutrinos | integer; det(g); approximate (R11); **tension** |
 | A31 | σ₈ | 0.8111(60) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.3σ | n/a | integer; det(g) |
 | A32 | Y_p | 0.245(3) | PDG 2024 (BBN review, eq. 24.3) | +0.3σ | n/a | integer; κ_T |
-| A33 | Ω_m/Ω_Λ | 0.460(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | flatness: Ω_Λ = 1 − Ω_m, neutrinos neglected | integer; κ_T; approximate (R11) |
+| A33 | Ω_m/Ω_Λ | 0.461(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | Ω_m / Ω_Λ, Planck definitions | integer; κ_T; approximate (R11) |
 <!-- END S3-TYPE-I -->
 
 \* Non-Gaussian profile (S3.3).
@@ -240,13 +242,14 @@ The dataset is `canonical/data/observables.json` (95 entries; for each: formula,
 ## References
 
 [1] Particle Data Group, F. Takahashi et al., Int. J. Mod. Phys. A 41, 2630011 (2026)
-[3] Planck Collaboration, "Planck 2018 results. VI. Cosmological parameters," A&A 641, A6 (2020)
+[3] Planck Collaboration, "Planck 2018 results. VI. Cosmological parameters," A&A 641, A6 (2020); chains: Planck Legacy Archive, COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00
 [27] I. Esteban et al., "NuFit-6.0: updated global analysis of three-flavor neutrino oscillations," JHEP 12 (2024) 216, arXiv:2410.05380; NuFIT 6.1: three-neutrino fit based on data available in November 2025, www.nu-fit.org
 [42] R. Pinčák, A. Pigazzini, M. Pudlák, E. Bartoš, "Geometric origin of a stable black hole remnant from torsion in G₂-manifold geometry," Gen. Rel. Grav. **58**, 29 (2026), doi:10.1007/s10714-026-03528-z
 [49] M. Tristram et al., "Cosmological parameters derived from the final Planck data release (PR4)," A&A 682, A37 (2024). (Cited in Supplement S3; not used in the dataset.)
 [50] CODATA 2022, Rev. Mod. Phys. 97, 025002 (2025), physics.nist.gov/cuu/Constants
 
 [56] Particle Data Group, S. Navas et al., "Review of Particle Physics," Phys. Rev. D 110, 030001 (2024), doi:10.1103/PhysRevD.110.030001 (cited in S3 only)
+
 
 ## Author's Related Works
 

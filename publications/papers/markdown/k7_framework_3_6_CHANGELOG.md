@@ -2,6 +2,16 @@
 
 ## v3.6 (in progress; plan: `plan_v3_6_2026_10_17.md`)
 
+**Batch 9 (2026-11-03): external review of the release draft.**
+- Density ratios A25, A26, A27, A29, A30, A33 computed on the published Planck chains, with their correlations. Ω_c/Ω_m moves from 0.839(11), +0.4σ, to 0.8390(19), +2.5σ: the classes become 23 within 2σ and 3 in tension. No other class changes.
+- Planck's Ω_m includes neutrinos, while 5/32 + 27/32 = 1: declared as a defect of compatibility, the denominator not being replaced.
+- Two withdrawn figures removed from §9.2: ‖𝔐⁻¹‖ ≤ 1.246 (now ≤ 2.76, ≤ 1.076 normalised, as in [E]) and "~34% below an earlier recomputation".
+- §2.3 and S1 §9.2: the spectral analysis of [B] is no longer called consistent with (21, 77); its multiplicities rest on decompositions withdrawn in S1.
+- §11: the rule is anchored on the reference series, with an update procedure; contradicting measurements (SH0ES on h, CDF II on m_W) are reported beside the class. This is a clarification made after the problem was identified, frozen prospectively. Survivors of overdetermined sectors are not selected predictions. The abstract and §12.5 no longer call δ_CP the sharpest test.
+- Status box: joint system, individual relations and wider programme are kept apart. The coefficient 10 of A06 is declared a choice of formula.
+- Look-elsewhere test rerun on the corrected windows (amendment 2), with a witness that has no K₇ constant: it reaches 30 of the 33 targets. K₇ stays at 31/33, the counts of competitors and P_global = 0.51 are those of revision 1 (the six windows changed do not discriminate), LEE-RETRAIT; K₇'s cost moves from 409.2 to 408.1 bits, and the costs of the competitors with it. S2.7 corrected accordingly.
+- §10.1 and S1 §12.4: transcription and Fano-plane statements corrected; imported q_AR declared in §9.2.
+
 **Batch 8 (2026-11-03): NuFIT 6.1 checked against the official table.**
 - The four entries A12–A15 were compared with the NuFIT 6.1 parameter table (archived copy of www.nu-fit.org, snapshot of 2026-09-12; the live site was unreachable on 2026-10-22 and 2026-11-03). Central values, 1σ errors and the δ_CP 3σ range all agree.
 - One correction: the upper 3σ bound of sin²θ₂₃ was given as 0.582; the table gives 0.584, consistent with θ₂₃ < 49.86°. 6/11 stays inside the range; no pull or status changes.

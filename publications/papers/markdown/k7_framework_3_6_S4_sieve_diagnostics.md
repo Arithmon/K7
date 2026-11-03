@@ -32,19 +32,19 @@ The test that replaces it asks: **does K₇ remain exceptional when each competi
 - **Gates.** G1 replays the engine on the (21, 77) row of the earlier landscape scan, target by target, to 10⁻⁹. G2 computes for each target whether K₇'s published value is in the set of its own expressions of at most five nodes, and requires that every such value within its window be reached by the blind search. If either fails, nothing is read.
 - **Variant, outside the rule.** Two derivations of κ_T⁻¹ and det(g) circulate in the project: the published one above, and an earlier one (κ_T⁻¹ = b₃ − b₂ + Weyl, det(g) = Weyl·(N_gen + rank(E₈) + p₂)/2^Weyl) that agrees with it on the line b₂ = 21 and differs elsewhere. Which one is used elsewhere is itself a freedom of the dictionary; the variant family (4 160 pairs, (21, 77) included) reports its effect.
 
-The preregistration was amended once before the current run (2026-10-22), after the external review of the v3.6 draft: the dataset was refreshed (S3) with all uncertainties brought to 1σ, the windows were made two-sided (the first run used only the side of each measurement that faces K₇'s value, which biased the search of the competitors towards that value), and the PDG range became the window of m_s/m_d. The question, families, grammar, budget, seed, τ_z and verdict rule were not changed.
+The preregistration was amended twice. The first amendment (2026-10-22) came after the external review of the v3.6 draft: the dataset was refreshed (S3) with all uncertainties brought to 1σ, the windows were made two-sided (the first run used only the side of each measurement that faces K₇'s value, which biased the search of the competitors towards that value), and the PDG range became the window of m_s/m_d. The second (2026-11-03), after a further external review and before the current run, replaced the windows of the six Planck ratios by those computed on the official chains (S3; the window of Ω_c/Ω_m narrows by a factor of six), and added the witness below. In neither case were the question, families, grammar, budget, seed, τ_z or verdict rule changed.
 
 ### S4.2.2 Result
 
-Both gates pass: G1 reproduces the 28 landscape-scan rows with no disagreement, and G2 finds 28 of K₇'s 33 published values among its own expressions of at most five nodes, every one of them within its window being reached.
+Both gates pass: G1 reproduces the 28 landscape-scan rows with no disagreement, and G2 finds 28 of K₇'s 33 published values among its own expressions of at most five nodes, every one of them within its window being reached. G3 count: 24 of the 33 published formulas lie within their windows (the 23 within 2σ of main §4, and m_s/m_d inside its PDG range); this is a diagnostic, not a statistic, since these formulas were chosen for (21, 77).
 
 <!-- BEGIN S4-LEE-FAMILIES -->
 | Family | N | reach ≥ 31/33 (as many as K₇) | P = (1 + n)/(1 + N) | max S_cover | S_cost range (bits) | cost ≤ K₇ |
 |---|---:|---:|---:|---:|---:|---:|
-| K₇ (21, 77), blind search on its own vocabulary | 1 | 31/33 | n/a | 31 | 409.2 | n/a |
-| F-BETTI: alternative Betti pairs (published derivations) | 4 159 | 1 085 | 0.261 | 31 | 387.1 to 419.8 | 1 329 |
-| F-VOCAB: invented vocabularies (Sieve generator) | 2 000 | 1 015 | 0.508 | 31 | 383.0 to 428.3 | 1 045 |
-| F-BETTI-FICHE: alternative Betti pairs, variant derivations (outside the rule) | 4 160 | 723 | 0.174 | 31 | 392.4 to 418.7 | 694 |
+| K₇ (21, 77), blind search on its own vocabulary | 1 | 31/33 | n/a | 31 | 408.1 | n/a |
+| F-BETTI: alternative Betti pairs (published derivations) | 4 159 | 1 085 | 0.261 | 31 | 389.2 to 418.7 | 1 163 |
+| F-VOCAB: invented vocabularies (Sieve generator) | 2 000 | 1 015 | 0.508 | 31 | 385.0 to 430.4 | 698 |
+| F-BETTI-FICHE: alternative Betti pairs, variant derivations (outside the rule) | 4 160 | 723 | 0.174 | 31 | 391.3 to 417.6 | 601 |
 
 P_global = max(P_F-BETTI, P_F-VOCAB) = **0.508**; threshold 0.01; verdict **LEE-RETRAIT**. The variant row does not enter the verdict. "Cost ≤ K₇" counts floating-point ties as ties (|ΔS_cost| ≤ 1e-09 bit; every tie is at the same (length, operations) pair as K₇).
 <!-- END S4-LEE-FAMILIES -->
@@ -83,29 +83,29 @@ Per target, the blind search of K₇ and the frequency with which each family re
 | A27 | Ω_Λ/Ω_m | yes | yes | yes | 4 159 | 2 000 |
 | A28 | h | yes | yes | yes | 4 159 | 2 000 |
 | A29 | Ω_b/Ω_m | yes | yes | yes | 4 159 | 2 000 |
-| A30 | Ω_c/Ω_m | yes | yes | yes | 4 159 | 2 000 |
+| A30 | Ω_c/Ω_m | yes | yes | no | 4 159 | 2 000 |
 | A31 | σ_8 | yes | yes | yes | 4 159 | 2 000 |
 | A32 | Y_p | yes | yes | yes | 4 159 | 2 000 |
 | A33 | Ω_m/Ω_Λ | yes | yes | yes | 4 159 | 2 000 |
 <!-- END S4-LEE-TARGETS -->
 
-Most targets are reached by every competitor: at five nodes and 2σ, the grammar covers them whatever the vocabulary. The targets that discriminate are the few with very small relative uncertainties. α⁻¹ and m_μ/m_e are reached by nobody, K₇ included. Every competitor reaches the other 30 targets that K₇ reaches except m_τ/m_e, which K₇ and about a third of the competitors reach; the counts of the family table are exactly the counts on that one target. A published value outside K₇'s five-node set (α⁻¹, m_μ/m_e and three others) is not available to the blind search, which may still reach the target with another expression.
+Most targets are reached by every competitor: at five nodes and 2σ, the grammar covers them whatever the vocabulary. A witness with no constant of K₇ makes this explicit. With an empty register, only the universal leaves and operations of the grammar remain (1 to 9, π, e, φ, γ, ln 2, the ζ values), and they reach 30 of the 33 targets, all but α⁻¹, m_τ/m_e and m_μ/m_e. Three scores must therefore be kept apart: the published formulas, the free search with K₇'s alphabet, and this witness. The targets that discriminate are the few with very small relative uncertainties. α⁻¹ and m_μ/m_e are reached by nobody, K₇ included. Every competitor reaches the other 30 targets that K₇ reaches except m_τ/m_e, which K₇ and about a third of the competitors reach; the counts of the family table are exactly the counts on that one target. Ω_c/Ω_m shows the difference between the scores: its published value 27/32 lies outside the window of the chains (+2.46σ, main §4), yet the target is reached by K₇ with another expression, as by every competitor and by the witness. A published value outside K₇'s five-node set (α⁻¹, m_μ/m_e and three others) is not available to the blind search, which may still reach the target with another expression.
 
-### S4.2.3 Comparison with the first run
+### S4.2.3 Comparison with the earlier runs
 
 <!-- BEGIN S4-LEE-HISTORY -->
-| Quantity | first run (2026-10-17, dataset of v3.5, one-sided windows) | revision 1 (2026-10-24, current dataset, two-sided windows) |
-|---|---|---|
-| K₇ S_cover | 32/33 | 31/33 |
-| K₇ S_cost (bits) | 395.6 | 409.2 |
-| F-BETTI: reach as many as K₇ | 4 159 of 4 159 (P = 1.000) | 1 085 of 4 159 (P = 0.261) |
-| F-VOCAB: reach as many as K₇ | 1 635 of 2 000 (P = 0.818) | 1 015 of 2 000 (P = 0.508) |
-| F-BETTI-FICHE: reach as many as K₇ | 4 160 of 4 160 (P = 1.000) | 723 of 4 160 (P = 0.174) |
-| P_global, verdict | 1.000, LEE-RETRAIT | 0.508, LEE-RETRAIT |
-| targets reached by nobody | A04 | A04, A07 |
+| Quantity | first run (2026-10-17, dataset of v3.5, one-sided windows) | revision 1 (2026-10-24, refreshed dataset, two-sided windows; historical) | revision 2 (2026-11-03, current dataset) |
+|---|---|---|---|
+| K₇ S_cover | 32/33 | 31/33 | 31/33 |
+| K₇ S_cost (bits) | 395.6 | 409.2 | 408.1 |
+| F-BETTI: reach as many as K₇ | 4 159 of 4 159 (P = 1.000) | 1 085 of 4 159 (P = 0.261) | 1 085 of 4 159 (P = 0.261) |
+| F-VOCAB: reach as many as K₇ | 1 635 of 2 000 (P = 0.818) | 1 015 of 2 000 (P = 0.508) | 1 015 of 2 000 (P = 0.508) |
+| F-BETTI-FICHE: reach as many as K₇ | 4 160 of 4 160 (P = 1.000) | 723 of 4 160 (P = 0.174) | 723 of 4 160 (P = 0.174) |
+| P_global, verdict | 1.000, LEE-RETRAIT | 0.508, LEE-RETRAIT | 0.508, LEE-RETRAIT |
+| targets reached by nobody | A04 | A04, A07 | A04, A07 |
 <!-- END S4-LEE-HISTORY -->
 
-The first run, on the dataset of version 3.5 with one-sided windows, had every alternative Betti pair at K₇'s score. Two targets change. m_μ/m_e, whose uncertainty in the 3.5 dataset (0.02) was some four thousand times the CODATA value (4.6 × 10⁻⁶), is now reached by nobody, K₇ included, which lowers K₇'s score by one and every competitor's alike. m_τ/m_e, reached by every alternative Betti pair and most invented vocabularies in the first run, is now reached by K₇ and by about a third of the competitors, its uncertainty having shrunk from 0.23 to 0.18. It is the only target that separates competitors: those that reach as many targets as K₇ are exactly those that reach m_τ/m_e (S4.2.2). The verdict does not change.
+The first run, on the dataset of version 3.5 with one-sided windows, had every alternative Betti pair at K₇'s score. Two targets change. m_μ/m_e, whose uncertainty in the 3.5 dataset (0.02) was some four thousand times the CODATA value (4.6 × 10⁻⁶), is now reached by nobody, K₇ included, which lowers K₇'s score by one and every competitor's alike. m_τ/m_e, reached by every alternative Betti pair and most invented vocabularies in the first run, is now reached by K₇ and by about a third of the competitors, its uncertainty having shrunk from 0.23 to 0.18. It is the only target that separates competitors: those that reach as many targets as K₇ are exactly those that reach m_τ/m_e (S4.2.2). Revision 2 changes the windows of six ratios that are not discriminating: the counts of competitors reaching as many as K₇ are therefore those of revision 1, while the costs move (K₇, 409.2 to 408.1 bits). The figures of revision 1 are historical. The verdict does not change.
 
 ### S4.2.4 What the test does not cover
 
@@ -142,7 +142,7 @@ The pull distribution of version 3.4 had mean −0.774 and standard deviation 5.
 ## S4.5 Reproducibility
 
 - **Scorecard (S4.1).** [M, §4.3], with the frozen inputs [S-frozen].
-- **Look-elsewhere null (S4.2).** Producer `canonical/scripts/k7_v3_6_lee_null.py` (Sieve engine at commit `5adaf3d`, depth 5, τ_z = 2, seed 20261017); result `canonical/results/k7_v3_6_lee_null.json` (10 319 vocabularies, 2 h 58 on three processes); ties of the dual cost, `canonical/scripts/k7_v3_6_lee_null_closeout.py`. The tables of S4.2 and the figures of main §7.2 are generated and checked by `canonical/scripts/k7_v3_6_s4_tables.py`. The first run is the same producer before the amendment, at its own commit.
+- **Look-elsewhere null (S4.2).** Producer `canonical/scripts/k7_v3_6_lee_null.py` (Sieve engine at commit `601283f`, grammar sha-256 pinned by the producer, depth 5, τ_z = 2, seed 20261017); result `canonical/results/k7_v3_6_lee_null.json` (10 319 vocabularies, 2 h 48 on three processes); ties of the dual cost, `canonical/scripts/k7_v3_6_lee_null_closeout.py`. The tables of S4.2 and the figures of main §7.2 are generated and checked by `canonical/scripts/k7_v3_6_s4_tables.py`. The first run and revision 1 are the same producer before each amendment, each at its own commit, read from git by the generator.
 - **Archives (S4.3, S4.4).** The scripts of the 3.4 and 3.5 releases; they are not maintained.
 
 ## Author's Related Works
