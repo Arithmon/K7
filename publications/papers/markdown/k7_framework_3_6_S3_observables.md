@@ -42,7 +42,7 @@ The comparison data were refreshed on 2026-10-22 to the most recent releases (`c
 
 **Confidence levels.** All uncertainties are brought to 1σ. The PDG summary tables quote the light-quark masses, m_c, m_b and m_u/m_d at 90% confidence; these are divided by 1.645. The lattice average of m_c/m_s (PDG quark-mass review, statistical and systematic errors in quadrature) is already a 1σ value.
 
-**Asymmetric uncertainties.** NuFIT and the CKM parameter A have asymmetric errors; both sides are kept in the dataset, and the pull uses the side facing the framework's value. The sin²θ₂₃ profile is not Gaussian: its 3σ range (0.435–0.582) contains 6/11 although the Gaussian pull exceeds 4σ (main §4.3).
+**Asymmetric uncertainties.** NuFIT and the CKM parameter A have asymmetric errors; both sides are kept in the dataset, and the pull uses the side facing the framework's value. The sin²θ₂₃ profile is not Gaussian: its 3σ range (0.435–0.584) contains 6/11 although the Gaussian pull exceeds 4σ (main §4.3).
 
 **Corrections made in the refresh.** The previous dataset gave m_μ/m_τ and m_τ/m_e with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q_Koide from the PDG 2022 τ mass while m_τ/m_e used the later one; gave m_b/m_t an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; gave m_μ/m_e an uncertainty of 0.02 where CODATA 2022 gives 4.6 × 10⁻⁶; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data and one convention for all uncertainties, the 33 relations fall into the five classes of main §4.2: 24 within 2σ, 2 in tension, 5 proximities beyond 3σ (m_b/m_t in the scheme of R7 among them), 1 inside the PDG range, 1 with a non-Gaussian profile. (The earlier count, 28 within 2σ, rested on the uncertainties listed above.)
 
@@ -75,7 +75,7 @@ Formulas, framework values and deviations are in main §4.1. This table gives, f
 | A10 | m_b/m_t | 0.024253(43) | PDG 2026 | −10.2σ | m_b at 90% CL converted to 1σ | integer; **proximity** (in the scheme declared in R7) |
 | A11 | m_u/m_d | 0.462(12) | PDG 2026 | +0.7σ | MS-bar at 2 GeV | integer |
 | A12 | sin²θ₁₂ (PMNS) | 0.3088(+67/−66) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.2σ | n/a | integer |
-| A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.582, contains 6/11 | integer; **tension** (octant; inside the NuFIT 3σ range, §4.3) |
+| A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.584, contains 6/11 | integer; **tension** (octant; inside the NuFIT 3σ range, §4.3) |
 | A14 | sin²θ₁₃ (PMNS) | 0.02248(+55/−59) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.5σ | n/a | integer |
 | A15 | δ_CP | 212 (+26/−36)° | NuFIT 6.1 (IC24+SK-atm, NO) | −0.4σ | degrees | **unit assignment** (R6) |
 | A16 | sin θ₁₂ (CKM) | 0.22517(68) | PDG 2026 | +0.9σ | PDG CKM review: sin θ₁₂ = λ (not squared) | integer; approximate (R12) |

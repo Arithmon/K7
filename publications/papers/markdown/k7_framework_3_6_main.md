@@ -280,7 +280,7 @@ Earlier versions summarised this table as "33 predictions with mean deviation 0.
 
 ### 4.3 The neutrino sector: θ₂₃ and the CP phase
 
-**sin²θ₂₃ = 6/11 = 0.545.** NuFIT 6.1 (normal ordering, with atmospheric data) prefers the first octant, sin²θ₂₃ = 0.470 (+0.017/−0.014); a Gaussian reading of these errors would put 6/11 about 4σ away. The Δχ² profile is not Gaussian, however: the fit keeps a second-octant branch, and its 3σ range, 41.27° < θ₂₃ < 49.86° (0.435 < sin²θ₂₃ < 0.582), contains 6/11. The relation is therefore in tension with the preferred octant, and the tension depends on an ambiguity the experiments have not resolved. This is stated here as it stands; it is also the largest source of uncertainty in the Jarlskog invariant below.
+**sin²θ₂₃ = 6/11 = 0.545.** NuFIT 6.1 (normal ordering, with atmospheric data) prefers the first octant, sin²θ₂₃ = 0.470 (+0.017/−0.014); a Gaussian reading of these errors would put 6/11 about 4σ away. The Δχ² profile is not Gaussian, however: the fit keeps a second-octant branch, and its 3σ range, 41.27° < θ₂₃ < 49.86° (0.435 < sin²θ₂₃ < 0.584), contains 6/11. The relation is therefore in tension with the preferred octant, and the tension depends on an ambiguity the experiments have not resolved. This is stated here as it stands; it is also the largest source of uncertainty in the Jarlskog invariant below.
 
 **The CP phase.** The structure produces an integer:
 $$\dim(K_7) \cdot \dim(G_2) + H^* = 7 \cdot 14 + 99 = 197.$$
