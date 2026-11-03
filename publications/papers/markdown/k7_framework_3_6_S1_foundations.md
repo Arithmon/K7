@@ -643,7 +643,7 @@ Full details of the PINN architecture, training protocol, and version-by-version
 3. G₂ linear algebra on ℝ⁷: exterior algebra, Hodge star, ψ = ⋆φ (`Geometry` module)
 4. Spectral modules (§7.3), which no relation uses
 
-**The axioms** (see main §8.1): four prediction-chain axioms import literature results (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`), and ten interval certificates import numerical enclosures (`det_g_at_half`, `K3_eigenvalue_0…3` and their `_bracketed` forms). They carry content that cannot be checked by `decide` alone because it involves real arithmetic. The v3.5 text named four "external data-package" axioms, three of which had already been eliminated [ERR, §7.1].
+**The axioms** (see main §8): four prediction-chain axioms import literature results (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`), and ten interval certificates import numerical enclosures (`det_g_at_half`, `K3_eigenvalue_0…3` and their `_bracketed` forms). They carry content that cannot be checked by `decide` alone because it involves real arithmetic. The v3.5 text named four "external data-package" axioms, three of which had already been eliminated [ERR, §7.1].
 
 It does **not** formalize:
 - Existence of K₇ as a smooth G₂ manifold
@@ -754,17 +754,27 @@ None of these methods establishes a torsion-free metric on a compact K₇ (main 
 
 ## References
 
-1. Adams, J.F. *Lectures on Exceptional Lie Groups*
-2. Harvey, R., Lawson, H.B. "Calibrated geometries." *Acta Math.* 148, 47-157 (1982)
-3. Bryant, R.L. "Metrics with exceptional holonomy." *Ann. of Math.* 126, 525-576 (1987)
-4. Joyce, D. *Compact Manifolds with Special Holonomy*, Oxford U. Press (2000)
-5. Corti, Haskins, Nordström, Pacini. *G₂-manifolds and associative submanifolds*
-6. Kovalev, A. *Twisted connected sums and special Riemannian holonomy*
-7. Conway, J.H., Sloane, N.J.A. *Sphere Packings, Lattices and Groups*
-8. **[43]** Joyce, D., Karigiannis, S. "A new construction of compact torsion-free G₂-manifolds by gluing families of Eguchi-Hanson spaces." *J. Differential Geom.* (2021), arXiv:1707.09325 (2017).
-9. **[44]** Mukai, S. "Finite groups of automorphisms of K3 surfaces and the Mathieu group." *Invent. Math.* **94**, 183–221 (1988).
-10. **[45]** Garbagnati, A., Sarti, A. "Symplectic automorphisms of prime order on K3 surfaces." *J. Algebra* **318**, 323–350 (2007), arXiv:math/0603742.
-11. **[48]** Chen, J., Hong, H. "Intermediate curvature and splitting theorem," arXiv:2604.26529 (2026).
+*Cited by number, with the shared numbering of the main paper:*
+
+[43] Joyce, D., Karigiannis, S. "A new construction of compact torsion-free G₂-manifolds by gluing families of Eguchi-Hanson spaces." *J. Differential Geom.* (2021), arXiv:1707.09325 (2017).
+
+[44] Mukai, S. "Finite groups of automorphisms of K3 surfaces and the Mathieu group." *Invent. Math.* **94**, 183–221 (1988).
+
+[45] Garbagnati, A., Sarti, A. "Symplectic automorphisms of prime order on K3 surfaces." *J. Algebra* **318**, 323–350 (2007), arXiv:math/0603742.
+
+[48] Chen, J., Hong, H. "Intermediate curvature and splitting theorem," arXiv:2604.26529 (2026).
+
+[51] V. V. Nikulin, "Integer symmetric bilinear forms and some of their geometric applications," Izv. Akad. Nauk SSSR Ser. Mat. 43 (1979); English transl. Math. USSR Izv. 14 (1980).
+
+*Background, not cited by number:*
+
+- Adams, J.F. *Lectures on Exceptional Lie Groups*
+- Harvey, R., Lawson, H.B. "Calibrated geometries." *Acta Math.* 148, 47-157 (1982)
+- Bryant, R.L. "Metrics with exceptional holonomy." *Ann. of Math.* 126, 525-576 (1987)
+- Joyce, D. *Compact Manifolds with Special Holonomy*, Oxford U. Press (2000)
+- Corti, Haskins, Nordström, Pacini. *G₂-manifolds and associative submanifolds*
+- Kovalev, A. *Twisted connected sums and special Riemannian holonomy*
+- Conway, J.H., Sloane, N.J.A. *Sphere Packings, Lattices and Groups*
 
 ---
 

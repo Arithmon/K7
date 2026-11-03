@@ -35,7 +35,7 @@ The comparison data were refreshed on 2026-10-22 to the most recent releases (`c
 |--------|----------|-----------|
 | PDG 2026 [1] | particle masses, sin²θ_W and α_s at M_Z, CKM parameters, quark mass ratios | MS-bar at the PDG reference scales; m_t from direct measurements |
 | NuFIT 6.1 [27] | neutrino mixing | normal ordering, with the tabulated Super-Kamiokande and IceCube atmospheric data; one variant for all four entries |
-| Planck 2018 [3] | cosmology | base ΛCDM, TT,TE,EE+lowE+lensing; one column for all entries |
+| Planck 2018 [3] | cosmology | base ΛCDM, TT,TE,EE+lowE+lensing; one column for all entries; the PR4 reanalysis [49] is not used |
 | CODATA 2022 [50] | α at q² = 0, m_μ/m_e | n/a |
 
 **Derived reference values.** Mass ratios are computed from the published masses, density ratios from the published densities, with error propagation that neglects correlations. This is an approximation, not a bound: the summary tables do not publish the covariances, and for a ratio R = x/y the term −2 Cov(x, y)/(xy) in Var(R)/R² can have either sign. Ω_Λ/Ω_m and Ω_m/Ω_Λ use flatness (Ω_Λ = 1 − Ω_m), neglecting the neutrino density (Ω_ν h² ≈ 0.0006 in the Planck base model; Planck's Ω_m includes it). λ_H is the tree-level m_H²/(2v²) with v = (√2 G_F)^(−1/2), a definition that is itself a scheme choice. m_s/m_d is given by the PDG as the range 17–22, without an uncertainty; it is stored as a range, and no pull is defined (the relation's value 20 lies inside it).
@@ -104,7 +104,7 @@ Formulas, framework values and deviations are in main §4.1. This table gives, f
 
 ## S3.6 The 62 conditional and diagnostic entries
 
-Generated from the dataset. "Reference value" is the measured value where one exists, otherwise the mathematical expectation the entry is compared with, otherwise a dash. None of these entries is counted as a prediction.
+Generated from the dataset. "Reference value" is the measured value where one exists, otherwise the mathematical expectation the entry is compared with, otherwise n/a. None of these entries is counted as a prediction.
 
 <!-- BEGIN S3-TYPE-II-IV -->
 | ID | Type | Quantity | Formula or mechanism | Framework value | Reference value | Status |
@@ -182,7 +182,7 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 The Lean formalization (Arithmon/K7-Lean, main §8) verifies arithmetic identities. A verified identity says that a closed form evaluates to a number; it says nothing about the physical identification, the choice of formula, or the consistency of relations taken together. The table gives, for each of the 33 relations, the Lean declaration that ties the closed form to its value, and the scope of that proof. It is generated from `canonical/results/k7_v3_6_lean_map.json`; the library builds at the commit named, and the axioms are those reported by `#print axioms`.
 
 <!-- BEGIN S3-LEAN -->
-Arithmon/K7-Lean, branch `v3.6-alignment`, commit `34ce857`; aggregate `Certificate.RelationsV36.relations_v36_certified`, which depends only on the axioms `propext`, `Classical.choice`, `Quot.sound`.
+Arithmon/K7-Lean, commit `34ce857` (merged into `main`, PR #167); aggregate `Certificate.RelationsV36.relations_v36_certified`, which depends only on the axioms `propext`, `Classical.choice`, `Quot.sound`.
 
 | ID | Observable | Lean declaration (under `GIFT.`) | Location | Scope |
 |----|-----------|-----------------------------------|----------|-------|
@@ -243,6 +243,7 @@ The dataset is `canonical/data/observables.json` (95 entries; for each: formula,
 [3] Planck Collaboration, "Planck 2018 results. VI. Cosmological parameters," A&A 641, A6 (2020)
 [27] I. Esteban et al., "NuFit-6.0: updated global analysis of three-flavor neutrino oscillations," JHEP 12 (2024) 216, arXiv:2410.05380; NuFIT 6.1: three-neutrino fit based on data available in November 2025, www.nu-fit.org
 [42] R. Pinčák, A. Pigazzini, M. Pudlák, E. Bartoš, "Geometric origin of a stable black hole remnant from torsion in G₂-manifold geometry," Gen. Rel. Grav. **58**, 29 (2026), doi:10.1007/s10714-026-03528-z
+[49] M. Tristram et al., "Cosmological parameters derived from the final Planck data release (PR4)," A&A 682, A37 (2024). (Cited in Supplement S3; not used in the dataset.)
 [50] CODATA 2022, Rev. Mod. Phys. 97, 025002 (2025), physics.nist.gov/cuu/Constants
 
 **Author's related works**

@@ -8,6 +8,7 @@
 - One correction: the upper 3σ bound of sin²θ₂₃ was given as 0.582; the table gives 0.584, consistent with θ₂₃ < 49.86°. 6/11 stays inside the range; no pull or status changes.
 - Release audit, first fixes: "six classes" corrected to five (§4.5, against §4.2); the overdetermined sectors in §12.2 corrected from two to three (CKM added); three sources named without a bibliography entry now cited: Donaldson [53], Camere [54], the Zhou series [55].
 - [B10–B15, B18, B19] reclassified: "cascade of Type I relations; no independent content" withdrawn. These eight entries are legacy values whose derivation is not documented in the dataset, retained for traceability and not counted as predictions (dataset, S3 §1 and table, main §4.5). The 33 relations and their breakdown are unchanged.
+- Release audit, minor fixes: S1, S2 and S4 reference sections made consistent with the shared bibliography; dead cross-references removed; residual French and internal jargon removed from the main text.
 - The v3.5 erratum is now a bibliography entry, [ERR], at a fixed commit; its nine citations read [ERR, §N].
 
 **Batch 7 (2026-10-31): title, and the companion philosophy paper cited.**
@@ -139,6 +140,14 @@
 - §8: the formalization "verifies the arithmetic identities it states"; it
   does not establish internal consistency of the relations taken together.
 
+- Lean (S3.7): a K7-Lean alignment (commit 34ce857, merged
+  into `main`, PR #167) adds `relations_v36_certified`, one statement per
+  relation tying its closed form to its value (27 exact rational, 3 real
+  closed forms, n_s by indices and ζ-quotient, 27^φ by bounds, δ_CP as the
+  integer 197), standard axioms only; renames `sin2_…_CKM` → `sin_…_CKM` and
+  `chi_K7` → `two_b2` with deprecated aliases; removes 12214/69 from the
+  aggregated certificate. `observables_certified` is not cited.
+
 **Batch 3 (2026-10-22): leptons, no primary relation.**
 - R8 and §6.1: none of the four lepton relations is declared primary; a
   selection made after the values are known is a dictionary choice, not a
@@ -223,17 +232,18 @@ without citing the companion philosophy paper (under anonymous review).
   separated; N_gen = 3 an integer identity, not an index theorem.
 - §7: Sieve scorecard reported with its N2 result (m_H/m_W and n_s do not clear
   N2; Koide a tie); "unique survivor" withdrawn; P < 5·10⁻⁶ withdrawn and
-  replaced by the preregistered look-elsewhere null (LEE-RETRAIT, 32/33
-  reached by all 4 159 Betti alternatives and 1 635/2 000 invented
-  vocabularies); 10⁻³⁴⁶ / 10⁻¹³³ out of the main text; the "14 derivations"
+  replaced by the preregistered look-elsewhere null (LEE-RETRAIT; on the
+  refreshed data with two-sided windows, K₇ reaches 31/33, as do 1 085 of
+  4 159 Betti alternatives and 1 015 of 2 000 invented vocabularies,
+  P_global = 0.51; the first run, on the 3.5 dataset, had 32/33 reached by
+  all Betti alternatives); 10⁻³⁴⁶ / 10⁻¹³³ out of the main text; the "14 derivations"
   argument reversed; SVD / random forest / 2.13× moved to S4 as descriptive.
 - §8: formal verification reduced to one method paragraph.
 - §10: the "why Lorentz invariance?" analogy and the "unique holonomy with
   the stabilizer chain" claim withdrawn (Spin(7) contains it).
 - New §11: decision rule with no repair clause (D1–D6).
 - §12: where the necessity of K₇ ends; list of withdrawn claims.
-- Not yet: supplements S1–S4 (status per relation in S2, status column in S3,
-  the new null in S4), .tex regeneration, title, release audit.
+- Not yet: .tex regeneration, title, release audit (S1–S4 done).
 
 **Batch 1 (2026-10-17): errata integrated into the sources.**
 - §1 (K3 closed-form bound concerns an auxiliary quantity): main §2.3 and §8.5,

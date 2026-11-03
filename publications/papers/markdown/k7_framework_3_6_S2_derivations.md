@@ -181,17 +181,7 @@ The "TCS building-block" formulas use b₂(M₁) = 11 and b₂(M₂) = 10, Betti
 
 ## References
 
-1. Particle Data Group, F. Takahashi et al., Int. J. Mod. Phys. A 41, 2630011 (2026).
-2. I. Esteban et al., "NuFit-6.0: updated global analysis of three-flavor neutrino oscillations," JHEP 12 (2024) 216, arXiv:2410.05380; NuFIT 6.1: three-neutrino fit based on data available in November 2025, www.nu-fit.org.
-3. Planck Collaboration, "Planck 2018 results. VI. Cosmological parameters," A&A 641, A6 (2020).
-4. Y. Koide, Lett. Nuovo Cim. 34, 201 (1982).
-
----
-
-## Author's Related Works
-
-- **[A]** B. de La Fournière, "An Explicit Approximate G₂ Metric on a Compact 7-Manifold with Certified Torsion-Free Completion," Zenodo [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) (2026).
-- **[B]** B. de La Fournière, "Spectral Geometry of the G₂-GIFT Manifold: Betti Numbers, KK Spectrum, and Spectral Invariants," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
+The sources named in this supplement (PDG, NuFIT, Planck, Koide) are those of the main paper's bibliography, which is shared across the main paper and Supplements S1-S4.
 
 ---
 

@@ -376,7 +376,7 @@ The lepton sector therefore supplies no relation specific to K₇ that agrees wi
 
 Two mechanisms on the approximate seam metric reproduce the hierarchy at the percent level: an eigenvalue splitting of a non-adiabatic Wilson-line operator on the K3 fibre, and the exponential of differences of associative 3-cycle volumes [23]. Both consume declared calibration choices: a coupling c = 0.452 and three positions for the first, and an assignment of the three generations to three of 57 associative cycles, selected by minimising the combined deviation, for the second. Their combination, normalised by α = e^K computed from the Kähler potential of the approximate metric, gives m_τ/m_e = 3485, m_τ/m_μ = 16.69, m_μ/m_e = 208.8, within 1% of measurement.
 
-Because the calibration choices are selected against the measured ratios, these are conditional reconstructions, not predictions; they are Type III entries (§4.5), with their search spaces and selection protocol documented in S3. The SVD of the fibre Wilson-line operator has numerical rank 2; the count of three generations does not come from it.
+Because the calibration choices are selected against the measured ratios, these are conditional reconstructions, not predictions; they are Type III entries (§4.5), with their calibration choices listed in S3. The SVD of the fibre Wilson-line operator has numerical rank 2; the count of three generations does not come from it.
 
 ---
 
@@ -441,7 +441,7 @@ This section gathers in one place every claim about *existence of the compact $K
 - **Global-analytic layer.** Passing to a smooth compact $K_7$ carrying a genuine torsion-free $G_2$-structure requires, first, a **realisable datum** replacing $\mathcal D_0$, and then closing, for that datum, two external structural slots (jointly the pack $\mathsf H_{\rm global}$ of [E]) and one standalone hypothesis:
   1. **(L4) Hyperkähler K3-fibration with prescribed periods.** A hyperkähler K3-fibration on the topological $K_7$ with rank-one Picard–Lefschetz monodromy along the 77-unlink and a period section $h$ consistent with the datum $(A_2^{\rm collar})$–$(A_5)$. The closest current template is Kovalev's Hopf-link coassociative K3 fibration [13].
   2. **(C.1) Smooth-topology classification.** Standard Voisin–Kovalev classification data [21] (Dehn–Seidel twist + K3-family gluing) producing the smooth 7-manifold on which (L4) can live.
-  3. **(J) Anisotropic three-scale perturbation.** An anisotropic refinement of Joyce's perturbation theorem in the three-scale collapsing geometry (base $\sim 1$, fibre $\sim \varepsilon$, EH core $\sim \varepsilon^2$) that deforms each closed positive $3$-form of $G_2$-type to a torsion-free $G_2$-structure. Companion long chantier of [E].
+  3. **(J) Anisotropic three-scale perturbation.** An anisotropic refinement of Joyce's perturbation theorem in the three-scale collapsing geometry (base $\sim 1$, fibre $\sim \varepsilon$, EH core $\sim \varepsilon^2$) that deforms each closed positive $3$-form of $G_2$-type to a torsion-free $G_2$-structure. A long-term companion programme to [E].
 
 ### 9.2 Chain-of-locks and certified constants (headline synthesis from [E])
 
@@ -465,8 +465,8 @@ The two CLOSED locks are theorem-grade computations at the posed datum $\mathcal
 
 | Constant | Value | Provenance |
 |----------|-------|------------|
-| $C_{\rm src}$ | $27/16$ | Cubique + parity on Donaldson canonical gauge |
-| $C_{\rm nl}$ | $2/3$ | Simons identity + collinéarité; strictly below power-counting envelope $\sim 1$ |
+| $C_{\rm src}$ | $27/16$ | Cubic term + parity on Donaldson canonical gauge |
+| $C_{\rm nl}$ | $2/3$ | Simons identity + collinearity; strictly below power-counting envelope $\sim 1$ |
 | $\gamma$ | $2$ | Proved (spectral order of the rank-1 branched Jacobi) |
 | $C_{\rm link}$ | $\le 1$ | Impedance match ($\Lambda_{\rm in}^{\rm model} = -\Lambda_{\rm out}^{\rm model}$) $+$ parity $\vert c_0\vert^2$ $+$ type-IV sectional $\vert K_{\rm sec}\vert \le 1$ |
 | $C_{\rm FS}$ | $\approx 0.29$ | Fredholm–Schauder outer coercivity |
@@ -476,7 +476,7 @@ The two CLOSED locks are theorem-grade computations at the posed datum $\mathcal
 | $q_{\rm total}$ | $\le 8.20 \cdot 10^{-3}$ | L2 assembly (Banach product-max on $X_{\rm AR}$) |
 | $R_0(\mathcal D_0)$ | $\le 4.9 \cdot 10^3$ | Newton–Kantorovich tail-contraction threshold; outward-rounded interval arithmetic |
 
-**Operational meaning of $R_0(\mathcal D_0) \le 4.9 \cdot 10^3$.** In the branched adiabatic scheme, $R_0$ is the smallest scale beyond which the Newton–Kantorovich iteration converges uniformly at $\mathcal D_0$. The certified bound $R_0 \le 4.9 \cdot 10^3$ is enclosed by outward-rounded interval arithmetic (mpmath, 60 decimal digits, 4 verification scripts distributed with [E]) and sits $\sim 9\%$ below the power-counting threshold and $\sim 34\%$ below the Codex Stage B recomputation; this headroom is a property of the computation at the posed datum, not of an instantiated one.
+**Operational meaning of $R_0(\mathcal D_0) \le 4.9 \cdot 10^3$.** In the branched adiabatic scheme, $R_0$ is the smallest scale beyond which the Newton–Kantorovich iteration converges uniformly at $\mathcal D_0$. The certified bound $R_0 \le 4.9 \cdot 10^3$ is enclosed by outward-rounded interval arithmetic (mpmath, 60 decimal digits, 4 verification scripts distributed with [E]) and sits $\sim 9\%$ below the power-counting threshold and $\sim 34\%$ below an earlier recomputation; this headroom is a property of the computation at the posed datum, not of an instantiated one.
 
 *What this section does not claim.* All quantities above are proved conditional on $\mathcal D_0$ being an admissible datum, and $\mathcal D_0$ is not: they are computations, not an instantiated layer. Passing to a smooth compact $K_7$ requires a realisable datum and, for it, (L4), (C.1) and (J) (see §9.3). No proof is reproduced here; [E] is the citable source.
 
@@ -488,7 +488,7 @@ The framework does not claim to have constructed a smooth compact $K_7$ carrying
 
 ### 9.4 Relation to earlier drafts and independent constructions
 
-The Chebyshev–Cholesky NK-certified metric of [A] is a *seam-level* result: it certifies the seam that would appear in a TCS-style gluing, subject to that gluing being available. The [D] paper strengthens the neck-level ansatz with an explicit closed-form + five-layer Wirtinger certificate. The [E] paper replaces the TCS-style rectangular hypothesis with a rank-one branched Kovalev–Lefschetz hypothesis; the Crowley–Goette–Nordström invariant statement for a rectangular twisted connected sum [16] (S1) is retained as an independent structural constraint. Since the datum of [E] is not realisable as posed, no existence argument for the compact $K_7$ is currently load-bearing. The (b₂, b₃) = (21, 77) outlier position in the catalogued literature is a documentary observation, not an obstruction.
+The Chebyshev–Cholesky NK-certified metric of [A] is a *seam-level* result: it certifies the seam that would appear in a TCS-style gluing, subject to that gluing being available. The [D] paper strengthens the neck-level ansatz with an explicit closed-form + five-layer Wirtinger certificate. The [E] paper replaces the TCS-style rectangular hypothesis with a rank-one branched Kovalev–Lefschetz hypothesis; the Crowley–Goette–Nordström invariant statement for a rectangular twisted connected sum [16] is retained as an independent structural constraint. Since the datum of [E] is not realisable as posed, no existence argument for the compact $K_7$ is currently load-bearing. The (b₂, b₃) = (21, 77) outlier position in the catalogued literature is a documentary observation, not an obstruction.
 
 ---
 
@@ -672,7 +672,7 @@ The author declares no competing interests.
 
 [48] J. Chen, H. Hong, "Intermediate curvature and splitting theorem," arXiv:2604.26529 (2026). (Cited in Supplement S1, §8.4.)
 
-[49] M. Tristram et al., "Cosmological parameters derived from the final Planck data release (PR4)," A&A 682, A37 (2024). (Frozen cosmology dataset; cited in Supplement S3.)
+[49] M. Tristram et al., "Cosmological parameters derived from the final Planck data release (PR4)," A&A 682, A37 (2024). (Cited in Supplement S3; not used in the dataset.)
 
 [50] E. Tiesinga, P.J. Mohr, D.B. Newell, B.N. Taylor, "CODATA recommended values of the fundamental physical constants: 2022," Rev. Mod. Phys. 97, 025002 (2025). (Cited in Supplement S3.)
 

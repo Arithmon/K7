@@ -145,6 +145,11 @@ The pull distribution of version 3.4 had mean −0.774 and standard deviation 5.
 - **Look-elsewhere null (S4.2).** Producer `canonical/scripts/k7_v3_6_lee_null.py` (Sieve engine at commit `5adaf3d`, depth 5, τ_z = 2, seed 20261017); result `canonical/results/k7_v3_6_lee_null.json` (10 319 vocabularies, 2 h 58 on three processes); ties of the dual cost, `canonical/scripts/k7_v3_6_lee_null_closeout.py`. The tables of S4.2 and the figures of main §7.2 are generated and checked by `canonical/scripts/k7_v3_6_s4_tables.py`. The first run is the same producer before the amendment, at its own commit.
 - **Archives (S4.3, S4.4).** The scripts of the 3.4 and 3.5 releases; they are not maintained.
 
+## Author's Related Works
+
+- **[M]** B. de La Fournière, "A reproducible standard for arithmetic coincidence claims in fundamental physics," Zenodo [10.5281/zenodo.20728964](https://doi.org/10.5281/zenodo.20728964) (2026). The Sieve methodology and its four-null scorecard for the K₇ relations.
+- **[S-frozen]** B. de La Fournière, "Counting Coincidences: frozen inputs" (observable list and expression grammars), Zenodo dataset [10.5281/zenodo.20666878](https://doi.org/10.5281/zenodo.20666878), v1.0 of 12 June 2026.
+
 ---
 
 *The K₇ Framework: Supplement S4: Sieve and Look-Elsewhere Diagnostics*
