@@ -2,6 +2,9 @@
 
 ## v3.6 (in progress; plan: `plan_v3_6_2026_10_17.md`)
 
+**Batch 10 (2026-11-06): [WNE] located.**
+- [WNE] is now on PhilArchive; its bibliography entry gives the record, philpapers.org/rec/DELWNE. No other change.
+
 **Batch 9 (2026-11-03): external review of the release draft.**
 - Density ratios A25, A26, A27, A29, A30, A33 computed on the published Planck chains, with their correlations. Ω_c/Ω_m moves from 0.839(11), +0.4σ, to 0.8390(19), +2.5σ: the classes become 23 within 2σ and 3 in tension. No other class changes.
 - Planck's Ω_m includes neutrinos, while 5/32 + 27/32 = 1: declared as a defect of compatibility, the denominator not being replaced.
