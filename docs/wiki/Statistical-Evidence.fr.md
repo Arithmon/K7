@@ -1,426 +1,140 @@
 ---
-title: "Preuves statistiques"
+title: "Éléments statistiques"
 layout: default
 ---
 
-# Preuves statistiques de K₇
+# Éléments statistiques : le test look-elsewhere
 
-> **Portée de la recherche de configurations (2026-10-02).** Le résultat « n° 1 parmi 3 070 396 configurations » vaut **à formules K₇ fixées**. Quand la recherche de formules est refaite pour chaque paire de Betti, avec la même grammaire et le même budget (balayage aveugle de 242 064 paires), (21, 77) tombe **sous la médiane** : environ 64 % des paires le battent strictement ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18). Les deux tests répondent à des questions différentes ; aucun n'est un principe de sélection.
+**Version du cadre** : 3.6. **Source** : article principal [§7](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) et supplément [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) ; les tables de cette page sont copiées de S4 par un script, sans retouche à la main.
 
-**Version** : 3.4.27
-**Date de validation** : avril 2026
-**Scripts** : [`bulletproof_validation_v33.py`](https://github.com/Arithmon/K7/blob/main/publications/validation/legacy/v3.3/bulletproof_validation_v33.py) (7 composantes, archive v3.3.24), [`exhaustive_validation_v33.py`](https://github.com/Arithmon/K7/blob/main/publications/validation/legacy/v3.3/exhaustive_validation_v33.py) (3M+ configurations)
-
-> **Note (v3.4)** : les statistiques de tête v3.4 sont **0,99 %** d'écart moyen sur **33 relations Type I (cibles exactes)**, avec une borne au niveau ensemble ~10⁻⁶ sur 3 000 000 de jeux de formules aléatoires (sans hypothèse d'indépendance) (catalogue 95 observables : 33 Type I + 19 Type II + 21 Type III + 22 Type IV ; Type II 0,17 %, Type III 3,44 %). Sources de données : NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022. Les ventilations sectorielles ci-dessous conservent l'analyse v3.3.24 NuFIT 6.0 (0,24 % sur 32 bien mesurés / 0,57 % tous les 33) à des fins de traçabilité. Les conclusions qualitatives (significativité > 4,2 σ, optimum unique parmi 3M+ configurations, facteurs de Bayes décisifs) tiennent dans les deux versions.
->
-> **Note historique (v3.3.24)** : les statistiques détaillées ci-dessous ont été calculées avec les valeurs expérimentales NuFIT 5.3 (0,21 % d'écart moyen). Avec la mise à jour v3.3.24 vers NuFIT 6.0 et les formules neutrino améliorées (θ₁₂ = arctan(2/3), θ₂₃ = arctan(√(14/11))), l'écart moyen v3.3.24 était de 0,24 % (32 bien mesurés) / 0,57 % (tous les 33, y compris δ_CP).
+Un cadre qui retrouve 33 valeurs mesurées par des formes closes, avec un vocabulaire de vingt constantes, doit d'abord répondre à une question : combien de fois la même grammaire, avec un autre vocabulaire, les aurait-elle retrouvées aussi bien ? La version 3.6 a posé cette question par un test préenregistré. La réponse est que **la proximité avec les valeurs mesurées ne distingue pas K₇** dans les classes de référence testées. Les affirmations statistiques des versions précédentes de cette page sont retirées ; la section 6 les énumère.
 
 ---
 
-## Résumé exécutif
+## 1. Résumé
 
-### Métriques clés
-
-| Métrique | Valeur |
+| | |
 |---|---|
-| **Écart moyen (custom)** | **0,21 %** |
-| **Écart moyen (relatif)** | **0,41 %** |
-| **p-valeur du modèle nul** | < 2 × 10⁻⁵ (σ > 4,2) |
-| **p global Westfall-Young** | **8,4 × 10⁻³** |
-| **Meilleur facteur de Bayes** | **4 738** (décisif) |
-| **p du test pré-enregistré** | 6,7 × 10⁻⁵ (σ = 4,0) |
-| **Configurations testées (exhaustif)** | 3 070 396 |
-| **Meilleures que K₇** | **0** |
+| **Question** | K₇ reste-t-il exceptionnel quand chaque concurrent cherche ses propres formules, dans la même grammaire, avec le même budget et la même liberté d'attribution et d'unité ? |
+| **Préenregistré** | le 2026-10-17, avant tout passage, avec deux issues seulement : une valeur P globale calibrée, ou le retrait de la valeur P du texte |
+| **K₇** | atteint 31 des 33 cibles |
+| **Paires de Betti alternatives** | 1 085 sur 4 159 en atteignent autant (P = 0,26) ; aucune n'en atteint plus |
+| **Vocabulaires inventés** | 1 015 sur 2 000 en atteignent autant (P = 0,51) ; aucun n'en atteint plus |
+| **Témoin sans constante de K₇** | atteint 30 des 33 avec les seules feuilles universelles de la grammaire |
+| **Verdict** | P_global = 0,51 pour un seuil de 0,01 : l'effet look-elsewhere n'est pas surmonté, et la valeur P est retirée du texte |
 
-### Résultats par niveau de précision (écart relatif)
+P_global = 0,51 n'est pas la probabilité que K₇ soit juste ou faux, et ces comptes ne sont pas une réfutation physique. Ils disent que le meilleur score discrimine peu dans ce protocole : 30 cibles sont atteintes par tous, deux par personne, et une seule sépare les concurrents.
 
-| Niveau | Observables | Seuil | Interprétation |
+## 2. Le test
+
+- **Cibles.** Les 33 relations du jeu de données ([S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md)), avec leurs valeurs mesurées et leurs incertitudes.
+- **Grammaire.** Le moteur gelé du Sieve : ses feuilles universelles (1 à 9, π, e, φ, γ, ln 2, ζ(3) à ζ(11)) plus les 19 constantes entières du concurrent, les opérations + − × / ^, racine carrée, inverse, carré et logarithme, et **cinq nœuds au plus** par expression.
+- **Concordance.** Une cible est atteinte si une expression du vocabulaire tombe à moins de 2σ de la valeur mesurée, de part et d'autre, les incertitudes asymétriques restant asymétriques. Pour m_s/m_d, que le PDG donne comme un intervalle, la fenêtre est cet intervalle. Pour δ_CP, la phase peut être lue en degrés, radians, grades ou tours.
+- **Attribution.** La recherche est aveugle : chaque cible reçoit l'expression concordante la moins coûteuse. La liberté d'attribuer les formules aux observables est donnée à tous, K₇ compris, qui est noté par la même recherche sur son propre vocabulaire et non par ses formules publiées.
+- **Concurrents.** Toute paire de Betti avec b₂ dans [1, 40] et b₃ dans [17, 120] autre que (21, 77), avec H*, κ_T⁻¹ et det(g) re-dérivés et les autres constantes gardées aux valeurs de K₇ ; et 2 000 vocabulaires de 19 entiers tirés par le générateur gelé du Sieve.
+- **Règle de verdict.** Pour une famille de taille N où n concurrents atteignent au moins autant de cibles que K₇, P = (1 + n)/(1 + N), les égalités comptant contre K₇. P_global est la plus grande des deux valeurs, et l'effet n'est surmonté que si P_global ≤ 0,01.
+
+L'alphabet testé pour K₇ est celui des dix-neuf entiers du registre Monte Carlo de la version 3.5, et non littéralement les vingt constantes de l'article principal (§3.1) : dim E₇ = 133 et α_sum = 13 en sont absents, κ_T⁻¹ = 61 y figure. Un test sur le registre littéral serait un autre calcul.
+
+## 3. Résultat
+
+| Famille | N | atteignent ≥ 31/33 (autant que K₇) | P = (1 + n)/(1 + N) | max S_cover | étendue de S_cost (bits) | coût ≤ K₇ |
+|---|---:|---:|---:|---:|---:|---:|
+| K₇ (21, 77), recherche aveugle sur son propre vocabulaire | 1 | 31/33 | s.o. | 31 | 408,1 | s.o. |
+| F-BETTI : paires de Betti alternatives (dérivations publiées) | 4 159 | 1 085 | 0,261 | 31 | 389,2 à 418,7 | 1 163 |
+| F-VOCAB : vocabulaires inventés (générateur du Sieve) | 2 000 | 1 015 | 0,508 | 31 | 385,0 à 430,4 | 698 |
+| F-BETTI-FICHE : paires de Betti alternatives, dérivations variantes (hors règle) | 4 160 | 723 | 0,174 | 31 | 391,3 à 417,6 | 601 |
+
+P_global = max(P_F-BETTI, P_F-VOCAB) = **0,508** ; seuil 0,01. La ligne de la variante n'entre pas dans le verdict. K₇ n'est pas moins coûteux non plus : son coût de description se situe dans l'étendue des deux familles.
+
+Par cible :
+
+| ID | Observable | K₇ atteint (aveugle) | valeur publiée dans l'ensemble ≤ 5 nœuds de K₇ | valeur publiée dans la fenêtre | paires de Betti qui atteignent (sur 4 159) | vocabulaires qui atteignent (sur 2 000) |
+|---|---|---|---|---|---:|---:|
+| A01 | sin²θ_W | oui | oui | non | 4 159 | 2 000 |
+| A02 | α_s(M_Z) | oui | oui | oui | 4 159 | 2 000 |
+| A03 | λ_H | oui | non | oui | 4 159 | 2 000 |
+| A04 | α⁻¹(0) | non | non | non | 0 | 0 |
+| A05 | Q_Koide | oui | oui | oui | 4 159 | 2 000 |
+| A06 | m_τ/m_e | oui | oui | non | 1 085 | 1 015 |
+| A07 | m_μ/m_e | non | non | non | 0 | 0 |
+| A08 | m_s/m_d | oui | oui | oui | 4 159 | 2 000 |
+| A09 | m_c/m_s | oui | oui | oui | 4 159 | 2 000 |
+| A10 | m_b/m_t | oui | oui | non | 4 159 | 2 000 |
+| A11 | m_u/m_d | oui | oui | oui | 4 159 | 2 000 |
+| A12 | sin²θ₁₂ᴾᴹᴺˢ | oui | oui | oui | 4 159 | 2 000 |
+| A13 | sin²θ₂₃ᴾᴹᴺˢ | oui | oui | non | 4 159 | 2 000 |
+| A14 | sin²θ₁₃ᴾᴹᴺˢ | oui | oui | oui | 4 159 | 2 000 |
+| A15 | δ_CP | oui | oui | oui | 4 159 | 2 000 |
+| A16 | sin θ₁₂ᶜᴷᴹ | oui | oui | oui | 4 159 | 2 000 |
+| A17 | A_Wolf | oui | oui | oui | 4 159 | 2 000 |
+| A18 | sin θ₂₃ᶜᴷᴹ | oui | oui | oui | 4 159 | 2 000 |
+| A19 | m_H/m_t | oui | oui | oui | 4 159 | 2 000 |
+| A20 | m_H/m_W | oui | oui | oui | 4 159 | 2 000 |
+| A21 | m_W/m_Z | oui | non | non | 4 159 | 2 000 |
+| A22 | m_μ/m_τ | oui | oui | non | 4 159 | 2 000 |
+| A23 | Ω_DE | oui | oui | oui | 4 159 | 2 000 |
+| A24 | n_s | oui | non | oui | 4 159 | 2 000 |
+| A25 | Ω_DM/Ω_b | oui | oui | oui | 4 159 | 2 000 |
+| A26 | Ω_c/Ω_Λ | oui | oui | oui | 4 159 | 2 000 |
+| A27 | Ω_Λ/Ω_m | oui | oui | oui | 4 159 | 2 000 |
+| A28 | h | oui | oui | oui | 4 159 | 2 000 |
+| A29 | Ω_b/Ω_m | oui | oui | oui | 4 159 | 2 000 |
+| A30 | Ω_c/Ω_m | oui | oui | non | 4 159 | 2 000 |
+| A31 | σ_8 | oui | oui | oui | 4 159 | 2 000 |
+| A32 | Y_p | oui | oui | oui | 4 159 | 2 000 |
+| A33 | Ω_m/Ω_Λ | oui | oui | oui | 4 159 | 2 000 |
+
+La plupart des cibles sont atteintes par tous les concurrents : à cinq nœuds et 2σ, la grammaire les couvre quel que soit le vocabulaire. Les cibles qui discriminent sont les rares dont l'incertitude relative est très petite. α⁻¹ et m_μ/m_e ne sont atteintes par personne, K₇ compris. m_τ/m_e est atteinte par K₇ et par un tiers environ des concurrents, et les comptes de la table des familles sont exactement ceux de cette seule cible. Trois scores sont à distinguer : les formules publiées (24 des 33 tombent dans leur fenêtre), la recherche libre avec l'alphabet de K₇ (31), et le témoin sans constante de K₇ (30).
+
+## 4. Le tableau du Sieve
+
+Le Sieve est une batterie publique de quatre tests nuls, avec une liste d'observables et une grammaire gelées. N1 demande si une relation est isolée dans le vocabulaire fixé ; N2 chiffre la liberté d'avoir choisi le vocabulaire ; N3 et N4 permutent coefficients et cibles. Son tableau publié pour les relations de K₇ donne :
+
+- n_s et m_H/m_W passent N1 sur ses trois axes.
+- Aucune des deux ne passe N2 : un vocabulaire inventé de même budget les retrouve aussi bien (pour m_H/m_W, 22 vocabulaires inventés sur 24).
+- Q_Koide est isolée dans le vocabulaire fixé, mais sa valeur 2/3 est atteinte par tous les vocabulaires : une égalité, pas une survivante.
+- Sur les neuf relations peu profondes testées par N2, l'enveloppe des vocabulaires inventés est battue 0 fois sur 9.
+
+Ce que N2 ne peut pas chiffrer, c'est d'où vient le vocabulaire : les constantes de K₇ sont des dimensions et des rangs de E₈ et les nombres de Betti, pas une liste inventée. C'est un fait sur l'origine des constantes, pas l'indice qu'elles ont été choisies avant de connaître les données.
+
+## 5. Ce que le test ne couvre pas, et son histoire
+
+Le test ne fait varier ni le groupe de jauge ni l'holonomie au-delà des nombres de Betti, ne considère pas d'autres formes d'une observable (un angle plutôt que le carré de son sinus) hormis l'unité de δ_CP, et ne va pas au-delà de cinq nœuds, où se trouvent plusieurs formules de K₇. Ces libertés restent au registre des résidus de l'article principal (R4, R5, R6).
+
+Le préenregistrement a été amendé deux fois, chaque fois après une revue externe et sans changer la question, les familles, la grammaire, le budget, la graine ni la règle de verdict : données rafraîchies et fenêtres des deux côtés (2026-10-22), puis fenêtres des six rapports de densité de Planck recalculées sur les chaînes publiées et ajout du témoin (2026-11-03).
+
+| Quantité | premier passage (2026-10-17, données de la v3.5, fenêtres d'un seul côté) | révision 1 (2026-10-24, données rafraîchies, fenêtres des deux côtés ; historique) | révision 2 (2026-11-03, données courantes) |
 |---|---|---|---|
-| Excellent | 14/33 (42 %) | < 0,1 % | correspondance de précision |
-| Bon | 29/33 (88 %) | < 1 % | accord fort |
-| Acceptable | 33/33 (100 %) | < 5 % | dans la tolérance |
-| À retravailler | 0/33 (0 %) | > 5 % | aucun |
+| K₇ S_cover | 32/33 | 31/33 | 31/33 |
+| K₇ S_cost (bits) | 395,6 | 409,2 | 408,1 |
+| F-BETTI : atteignent autant que K₇ | 4 159 sur 4 159 (P = 1,000) | 1 085 sur 4 159 (P = 0,261) | 1 085 sur 4 159 (P = 0,261) |
+| F-VOCAB : atteignent autant que K₇ | 1 635 sur 2 000 (P = 0,818) | 1 015 sur 2 000 (P = 0,508) | 1 015 sur 2 000 (P = 0,508) |
+| F-BETTI-FICHE : atteignent autant que K₇ | 4 160 sur 4 160 (P = 1,000) | 723 sur 4 160 (P = 0,174) | 723 sur 4 160 (P = 0,174) |
+| P_global, verdict | 1,000, LEE-RETRAIT | 0,508, LEE-RETRAIT | 0,508, LEE-RETRAIT |
+| cibles atteintes par personne | A04 | A04, A07 | A04, A07 |
 
-### Interprétation
+## 6. Ce que disaient les versions précédentes de cette page
 
-- **100 % des prédictions** s'accordent avec l'expérience à moins de 5 %
-- **88 % des prédictions** s'accordent à moins de 1 %
-- K₇ est **uniquement optimal** parmi les 3 070 396 configurations testées
-- Les trois familles de modèles nuls rejettent à p < 2 × 10⁻⁵
-- La correction permutationnelle FWER de Westfall-Young maxT confirme 11/33 individuellement significatifs après prise en compte des corrélations
-- Les facteurs de Bayes vont de 304 à 4 738 pour quatre spécifications de priors (tous décisifs)
+Les versions précédentes de cette page présentaient les éléments suivants comme des preuves statistiques. Chacun est retiré.
 
----
+- **« N° 1 parmi 3 070 396 configurations », « 0 meilleure alternative », valeur p du modèle nul < 2 × 10⁻⁵.** Ils venaient d'une recherche où les alternatives étaient notées avec les formules de K₇ et ne cherchaient pas les leurs. Les formules ayant été choisies pour (21, 77), (21, 77) gagnait par construction. Un balayage aveugle antérieur de 242 064 paires de Betti avait déjà trouvé (21, 77) sous la médiane ([Program, principe de sélection, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md)).
+- **« P < 5 × 10⁻⁶ parmi 192 349 configurations » (version 3.5).** Même protocole ; 1/192 349 était le plancher de l'estimateur. Retiré.
+- **Probabilités de coïncidence 10⁻³⁴⁶, 10⁻¹³⁸ et 10⁻¹³³ (versions 3.3 et 3.4).** Le modèle nul uniforme traite les prédictions comme des nombres aléatoires, ce qu'aucune recherche de formules ne produit ; le modèle nul algébrique compare des formules choisies à des formules aléatoires et ne chiffre donc pas le choix. Retirées.
+- **Écart moyen (0,21 %, 0,24 %, 0,39 %, 0,73 %, 0,99 % selon les versions).** Un écart moyen mesure la proximité, dont le test ci-dessus montre qu'elle n'est pas distinctive, et il masquait les relations au-delà de 2σ. Retiré ; le [bilan de validation](Validation-Summary.fr.html) donne les cinq classes à la place.
+- **Facteurs de Bayes, Westfall–Young et tests hors échantillon du rapport 3.3.** Calculés sur les données de la 3.3 avec le même protocole à formules fixées, ils n'ont pas été recalculés. Retirés comme preuves.
+- **« Rapport de surdétermination 2,13 » et diagnostics voisins (version 3.5).** Ils décrivent l'usage que les formules font des constantes ; ils ne distinguent pas une formule ajustée d'une formule qui ne l'est pas. Gardés en S4.3 comme description archivée.
 
-## 1. Méthodologie
+Les scripts et rapports derrière les chiffres retirés sont conservés, sans maintenance, dans l'[archive de la version 3.3](https://github.com/Arithmon/K7/blob/main/publications/validation/legacy/v3.3/), comme trace de ce qui a été publié.
 
-### 1.1 Métrique principale : écart custom
+## 7. Ce qui reste
 
-La validation K₇ utilise une métrique d'**écart custom** qui capture la qualité d'ajustement sur des observables hétérogènes (angles, ratios, constantes de couplage) :
+Deux choses survivent aux tests look-elsewhere, et l'article s'appuie sur elles plutôt que sur la proximité : **la rigidité sous un dictionnaire fixé** (aucune relation n'a de paramètre continu, une seule mesure peut donc la rejeter selon la règle de décision de l'article principal, §11) et **le résidu déclaré** (ce qui a été posé plutôt que dérivé est écrit, §3.3).
 
-$$\text{Écart} = \frac{|\text{pred} - \text{exp}|}{|\text{exp}|} \times 100\%$$
+## 8. Reproductibilité
 
-moyennée uniformément sur les 33 observables. Cela évite la pathologie des « pulls » σ où des mesures extraordinairement précises (α⁻¹ avec σ = 2,1 × 10⁻⁵) dominent l'agrégat.
-
-### 1.2 Pourquoi pas le χ² ?
-
-| Observable | Écart relatif | Pull (σ) | Problème |
-|---|---|---|---|
-| m_μ/m_e | 0,12 % | 52 951 σ | σ_exp = 4,6 × 10⁻⁶ |
-| α⁻¹ | 0,002 % | 128 σ | σ_exp = 2,1 × 10⁻⁵ |
-
-L'écart relatif identifie correctement ces prédictions comme excellentes (~0,1 %), tandis que les pulls sont trompeusement grands à cause de la précision expérimentale extraordinaire et de l'absence d'estimations d'incertitudes théoriques.
-
-### 1.3 Validation à sept composantes
-
-La validation à toute épreuve couvre sept composantes indépendantes :
-
-1. **Manifeste de pré-enregistrement** : hash SHA-256 verrouillant observables et formules avant les tests
-2. **Trois familles de modèles nuls** : permutation, structure préservée, adversariel
-3. **p-valeurs par observable** : avec corrections de Bonferroni, Holm, Benjamini-Hochberg, et Westfall-Young maxT
-4. **Cross-prédiction held-out** : leave-one-sector-out + split dev/test pré-enregistré
-5. **Analyse de robustesse** : perturbations de poids, MC de bruit, jackknife, leave-k-out, courbe de sensibilité au bruit
-6. **Réplication multi-graines** : 10 graines indépendantes + métrique alternative (χ²)
-7. **Analyse bayésienne** : facteurs de Bayes multi-priors, PPC à 4 statistiques, comparaison WAIC
+Le supplément [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md), section S4.5, donne le producteur, ses entrées épinglées (commit du moteur du Sieve, empreinte de la grammaire, graine) et le fichier de résultats dont les tables ci-dessus sont tirées.
 
 ---
 
-## 2. Familles de modèles nuls
-
-Trois familles indépendantes de modèles nuls rejettent toutes à la limite de résolution de 50 000 permutations :
-
-| Famille nulle | p-valeur | σ | Description |
-|---|---|---|---|
-| **Permutation** | 2,0 × 10⁻⁵ | 4,27 | assignation aléatoire de (b₂, b₃) ; moyenne nulle 82,6 % vs K₇ 0,21 % |
-| **Structure préservée** | 2,0 × 10⁻⁵ | 4,27 | 0/50 000 configurations atteignent ou battent K₇ |
-| **Adversariel** | 2,0 × 10⁻⁵ | 4,27 | meilleur adversaire à 65,8 % vs K₇ 0,21 % |
-
-Les trois familles nulles produisent des écarts moyens environ 300× pires que GIFT.
-
----
-
-## 3. Corrections pour tests multiples
-
-### 3.1 Significativité par observable (α = 0,05)
-
-| Correction | Significatives | Méthode |
-|---|---|---|
-| Brut | 21/33 | p-valeurs empiriques non corrigées |
-| Bonferroni | 0/33 | conservatrice (divise α par 33) |
-| Holm | 0/33 | step-down, encore très conservatrice |
-| Benjamini-Hochberg | 20/33 | contrôle FDR (moins conservatrice) |
-| **Westfall-Young maxT** | **11/33** | **FWER permutationnel respectant les corrélations** |
-
-### 3.2 Westfall-Young maxT
-
-La procédure step-down maxT de Westfall-Young est l'étalon-or pour le contrôle du taux d'erreur familial (FWER) parce qu'elle :
-- Respecte la **structure de corrélation** entre statistiques de test (contrairement à Bonferroni)
-- Utilise la **distribution conjointe** des statistiques max sous permutation
-- Fournit un contrôle FWER **exact**
-
-**Résultat** : p global = 8,4 × 10⁻³, avec 11/33 observables individuellement significatives. C'est la réponse définitive à la question : « combien d'observables survivent à une correction rigoureuse pour tests multiples tout en tenant compte des corrélations inter-observables ? »
-
-### 3.3 Effet « regarder ailleurs » (Look-Elsewhere)
-
-Décompte explicite des essais LEE : 23 167 200 (toutes les combinaisons (b₂, b₃, jauge, holonomie)). Même après correction LEE, la performance du cadre reste significative.
-
----
-
-## 4. Cross-prédiction (tests held-out)
-
-### 4.1 Leave-one-sector-out
-
-Chaque secteur de physique est retiré tour à tour ; le (b₂, b₃) de K₇ est testé sur le secteur retiré sans réajustement :
-
-| Secteur | Obs. retirées | Écart de test | p-valeur | σ |
-|---|---|---|---|---|
-| Couplages de jauge | 3 | 0,17 % | 1,0 × 10⁻³ | 3,3 |
-| Leptons | 4 | 0,06 % | 1,0 × 10⁻⁴ | 3,9 |
-| Quarks | 9 | 0,24 % | 1,0 × 10⁻² | 2,6 |
-| Mélange PMNS | 4 | 0,23 % | 1,0 × 10⁻⁴ | 3,9 |
-| Matrice CKM | 6 | 0,59 % | 1,3 × 10⁻⁴ | 3,8 |
-| Bosons | 3 | 0,13 % | 2,0 × 10⁻⁴ | 3,7 |
-| Cosmologie | 3 | 0,19 % | 3,3 × 10⁻⁵ | 4,1 |
-
-Tous les secteurs non triviaux atteignent p < 0,05, ce qui confirme que la cross-prédiction tient.
-
-### 4.2 Split dev/test pré-enregistré
-
-| Ensemble | N | Écart |
-|---|---|---|
-| Développement (16 obs.) | 16 | 0,10 % |
-| Test (17 obs.) | 17 | 0,32 % |
-| **p-valeur du test** | | **6,7 × 10⁻⁵** (σ = 4,0) |
-
-L'ensemble de test held-out atteint σ = 4,0, ce qui confirme que la précision de K₇ n'est pas un artefact d'ajustement à un sous-ensemble particulier.
-
----
-
-## 5. Robustesse et sensibilité
-
-### 5.1 Perturbation des poids
-
-| Pondération | Écart moyen | Conclusion |
-|---|---|---|
-| Uniforme | 0,21 % | référence |
-| Pondérée par incertitude | 0,00 % | dominée par la précision |
-| Inverse-range | 0,62 % | pire cas |
-| Aléatoire (100 essais) | 0,21 % ± 0,02 % | stable |
-
-Tous les schémas de pondération donnent < 1 %.
-
-### 5.2 Jackknife & leave-k-out
-
-- **Jackknife** : l'influence maximale d'une observable est de 0,029 % (sin²θ₂₃ CKM). Aucune observable ne domine le résultat.
-- **Stabilité leave-k-out** :
-
-| k retirées | Écart moyen | Plage |
-|---|---|---|
-| 1 | 0,212 % ± 0,008 % | [0,18, 0,22] |
-| 3 | 0,212 % ± 0,015 % | [0,14, 0,23] |
-| 5 | 0,212 % ± 0,020 % | [0,13, 0,25] |
-
-Le résultat est remarquablement stable sous suppression systématique.
-
-### 5.3 Courbe de sensibilité au bruit
-
-Balayage d'un bruit gaussien d'amplitude σ_factor × σ_exp sur 200 essais par point :
-
-| Facteur de bruit | Écart moyen | Écart-type |
-|---|---|---|
-| 0,00× | 0,21 % | 0,00 % |
-| 0,25× | 0,46 % | 0,09 % |
-| 0,50× | 0,82 % | 0,18 % |
-| 0,75× | 1,17 % | 0,23 % |
-| **1,00×** | **1,57 %** | **0,36 %** |
-| 1,50× | 2,34 % | 0,55 % |
-| 2,00× | 3,09 % | 0,73 % |
-| 3,00× | 4,61 % | 1,18 % |
-
-**Interprétation** : à 1× les incertitudes expérimentales publiées, l'écart moyen passe de 0,21 % à 1,57 %. C'est le plancher de précision physique : l'accord à 0,21 % du cadre est déjà à un facteur ~7 de ce que le bruit de mesure seul produirait. Améliorer encore les prédictions du cadre demanderait que les mesures expérimentales deviennent plus précises.
-
-### 5.4 Monte Carlo de bruit
-
-Sur 1 000 essais avec 1× les incertitudes publiées :
-- Moyenne : 1,50 % ± 0,35 %
-- Seulement 5 % des essais restent sous 1 %
-
-Ceci confirme la courbe de sensibilité au bruit : le résultat K₇ à 0,21 % se situe bien sous le plancher de bruit.
-
----
-
-## 6. Réplication multi-graines
-
-| Métrique | Valeur |
-|---|---|
-| Graines testées | 10 |
-| Plage de p-valeurs | [5,0 × 10⁻⁵, 1,5 × 10⁻⁴] |
-| Plage de σ | [3,8, 4,1] |
-| Toutes significatives à α=0,05 | oui |
-| Métrique alternative (χ²) | p = 5,0 × 10⁻⁵ (σ = 4,1) |
-| Cohérent inter-métriques | oui |
-
-Les résultats sont invariants à la graine PRNG et tiennent sous une métrique alternative (χ² relatif).
-
----
-
-## 7. Analyse bayésienne
-
-### 7.1 Facteurs de Bayes (4 spécifications de priors)
-
-| Prior | BF | Interprétation |
-|---|---|---|
-| Sceptique (uniforme) | 304 | décisif pour H₁ |
-| Référence (semi-normale) | 397 | décisif pour H₁ |
-| Jeffreys | 2 423 | décisif pour H₁ |
-| Enthousiaste (uniforme ≤ 1 %) | 4 738 | décisif pour H₁ |
-
-Les quatre priors donnent des preuves décisives (BF > 100) en faveur de K₇ contre le nul. Le prior sceptique, qui accorde au nul la latitude maximale, donne encore BF = 304.
-
-### 7.2 Vérifications prédictives postérieures (4 statistiques)
-
-| Statistique | Observée | Moyenne répliquée | p PPC | Statut |
-|---|---|---|---|---|
-| T₁ : écart moyen | 0,21 % | 1,53 % | 1,000 | ↑ supérieur |
-| T₂ : écart max | 1,13 % | 12,04 % | 1,000 | ↑ supérieur |
-| T₃ : nombre > 1 % | 1 | 12,1 | 1,000 | ↑ supérieur |
-| T₄ : pire secteur | 0,59 % | 4,28 % | 1,000 | ↑ supérieur |
-
-**Statut** : `superior_to_noise` : le cadre s'ajuste significativement mieux que ce que prédit le bruit de mesure, sur les quatre statistiques de test. Les jeux de données répliqués (en ajoutant du bruit aux niveaux d'incertitude publiés) montrent systématiquement des écarts de 5 à 12× supérieurs à ce que K₇ atteint. C'est cohérent avec un contenu physique authentique plutôt qu'une coïncidence numérique.
-
-**Note** : un PPC p ≈ 1,0 n'indique pas un mauvais ajustement de modèle. Dans le cadre PPC, un p proche de 0 indique un sous-ajustement systématique, un p proche de 0,5 indique une calibration parfaite au modèle de bruit, et un p proche de 1 indique que le modèle dépasse les attentes du bruit. Le résultat confirme que la précision de K₇ dépasse ce que les incertitudes de mesure seules prédiraient.
-
-### 7.3 Comparaison de modèles WAIC
-
-| Modèle | WAIC | Interprétation |
-|---|---|---|
-| K₇ | 29,9 | préféré |
-| Nul | 580,2 | |
-| **ΔWAIC** | **550,3** | **favorise fortement K₇** |
-
----
-
-## 8. Recherche exhaustive de configurations
-
-### 8.1 Variations des nombres de Betti (3 070 396 configs)
-
-| Métrique | Valeur |
-|---|---|
-| Plage de b₂ | [5, 100] |
-| Plage de b₃ | [40, 200] |
-| Configurations testées | 3 070 396 |
-| Meilleures que K₇ | **0** |
-| IC à 95 % (Clopper-Pearson) | [0, 3,7 × 10⁻⁵] |
-
-### 8.2 Comparaison des groupes de jauge
-
-| Rang | Groupe de jauge | Écart moyen |
-|---|---|---|
-| **1** | **E₈ × E₈** | **0,41 %** |
-| 2 | E₇ × E₈ | 8,8 % |
-| 3 | E₆ × E₈ | 15,5 % |
-
-E₈ × E₈ atteint un accord **21× meilleur** que la prochaine alternative.
-
-### 8.3 Comparaison des groupes d'holonomie
-
-| Rang | Holonomie | dim | Écart moyen |
-|---|---|---|---|
-| **1** | **G₂** | 14 | **0,41 %** |
-| 2 | SU(4) | 15 | 1,5 % |
-| 3 | SU(3) | 8 | 4,4 % |
-| 4 | Spin(7) | 21 | 5,4 % |
-
-G₂ atteint un accord **11× meilleur** que Calabi-Yau (SU(3)).
-
----
-
-## 9. Résultats par catégorie de physique
-
-| Catégorie | N | Écart moyen | Écart max | <0,1 % | <1 % | <5 % |
-|---|---|---|---|---|---|---|
-| Structurel | 1 | 0,00 % | 0,00 % | 1/1 | 1/1 | 1/1 |
-| Électrofaible | 4 | 0,36 % | 0,90 % | 1/4 | 4/4 | 4/4 |
-| Rapports de masses leptons | 4 | 0,06 % | 0,12 % | 2/4 | 4/4 | 4/4 |
-| Rapports de masses quarks | 4 | 0,34 % | 1,21 % | 2/4 | 3/4 | 4/4 |
-| Mélange PMNS | 7 | 0,94 % | 4,81 % | 3/7 | 5/7 | 7/7 |
-| Mélange CKM | 3 | 0,74 % | 1,50 % | 0/3 | 2/3 | 3/3 |
-| Rapports de masses bosons | 3 | 0,12 % | 0,29 % | 2/3 | 3/3 | 3/3 |
-| Cosmologique | 7 | 0,19 % | 0,48 % | 3/7 | 7/7 | 7/7 |
-| **TOTAL** | **33** | **0,41 %** | | 14/33 | 29/33 | 33/33 |
-
----
-
-## 10. Réserves honnêtes
-
-### 10.1 Ce que cette validation établit
-
-1. **Significativité statistique** : p < 2 × 10⁻⁵ contre trois familles nulles indépendantes (σ > 4,2)
-2. **Robustesse aux tests multiples** : 11/33 survivent au FWER Westfall-Young maxT (p global = 0,008)
-3. **Cross-prédiction** : tous les secteurs non triviaux et le split de test pré-enregistré sont significatifs
-4. **Confirmation bayésienne** : BF de 304 à 4 738 sur quatre spécifications de priors, tous décisifs
-5. **Stabilité** : invariant à la pondération, à la graine, au choix de métrique, et à la suppression d'observables
-
-### 10.2 Ce que cette validation N'établit PAS
-
-1. **Justification des formules** : l'optimalité statistique n'explique pas pourquoi ces formules ont été choisies. Les dérivations dans S2 fournissent la motivation théorique, mais l'accord statistique seul n'est pas une preuve d'exactitude physique.
-2. **Vérité physique** : un excellent accord ≠ physique sous-jacente correcte. Le cadre pourrait être une paramétrisation très efficace qui capture des motifs sans que le mécanisme géométrique proposé soit la bonne explication.
-3. **Complétude** : seules les variétés G₂ TCS avec des groupes de jauge/holonomie spécifiques ont été testées.
-
-### 10.3 Statut PPC supérieur au bruit
-
-Les vérifications prédictives postérieures montrent PPC p = 1,0 sur les quatre statistiques de test. Cela signifie que les prédictions du cadre sont plus précises que ce que le bruit de mesure seul prédirait. Explications possibles :
-- Le cadre capture une véritable structure physique (la revendication de K₇)
-- Les incertitudes expérimentales publiées sont conservatrices
-- Il existe des corrélations entre observables non capturées par le modèle de bruit
-
-C'est une force du cadre, pas une faiblesse, mais cela signifie que le PPC ne peut pas distinguer entre ces explications.
-
-### 10.4 Sensibilité au bruit comme limite physique
-
-À 1× les incertitudes publiées, l'écart moyen passe de 0,21 % à 1,57 %. Cela définit le **plancher de précision de mesure** : les prédictions du cadre sont déjà à un facteur ~7 de ce que les meilleures mesures actuelles peuvent distinguer d'un accord parfait. Une validation plus poussée requiert des expériences plus précises.
-
-### 10.5 Bonferroni / Holm donnant zéro
-
-Les corrections de Bonferroni et Holm donnent 0/33 observables significatives parce qu'elles divisent α par 33, ce qui est extrêmement conservateur pour des tests corrélés. C'est pourquoi la procédure Westfall-Young maxT est la bonne correction : elle respecte la structure de corrélation et donne un résultat significatif (11/33 significatives, p global = 0,008).
-
----
-
-## 11. Prédictions de falsification
-
-| Prédiction | Valeur K₇ | Exp. actuelle | Cible | Expérience | Calendrier |
-|---|---|---|---|---|---|
-| δ_CP | 197° | ~207-212° (NuFIT 6.1, ~1 σ) | ±5° | DUNE | 2028-2040 |
-| sin²θ_W | 3/13 | 0,2312 ± 4 × 10⁻⁵ | ±10⁻⁵ | FCC-ee | 2040s |
-| Ω_DM/Ω_b | 43/8 | 5,375 ± 0,1 | ±0,01 | CMB-S4 | 2030s |
-| m_s/m_d | 20 | 20 ± 1 | ±0,3 | QCD sur réseau | 2030 |
-
----
-
-## 12. Comment reproduire
-
-### Validation à toute épreuve (7 composantes)
-
-```bash
-cd publications/validation
-python3 bulletproof_validation_v33.py
-```
-
-**Prérequis** : Python 3.8+, aucune dépendance externe
-**Sortie** : `bulletproof_validation_v33_results.json`
-**Durée** : ~15 secondes
-
-### Recherche exhaustive (3M+ configurations)
-
-```bash
-cd publications/validation
-python3 exhaustive_validation_v33.py
-```
-
-**Durée** : ~2 à 5 minutes
-
----
-
-## 13. Conclusions
-
-### Constatation principale
-
-K₇ atteint un **écart moyen de 0,21 %** (0,41 % relatif) sur 33 observables. Parmi 3 070 396 configurations testées, **zéro** font mieux. Ce résultat survit à :
-
-- Trois familles indépendantes de modèles nuls (p < 2 × 10⁻⁵)
-- Correction FWER de Westfall-Young maxT (p global = 0,008, 11/33 individuellement significatifs)
-- Split dev/test pré-enregistré (p de test = 6,7 × 10⁻⁵)
-- Quatre spécifications de priors bayésiens (BF de 304 à 4 738, tous décisifs)
-- Analyses de stabilité par perturbation de poids, jackknife et leave-k-out
-- Réplication multi-graines et inter-métriques
-
-### Résumé statistique
-
-| Métrique | Valeur |
-|---|---|
-| À moins de 0,1 % | 42 % (14/33) |
-| À moins de 1 % | **88 %** (29/33) |
-| À moins de 5 % | **100 %** (33/33) |
-| Écart moyen | **0,21 %** (custom), **0,41 %** (relatif) |
-| p du modèle nul | < 2 × 10⁻⁵ (σ > 4,2) |
-| p global Westfall-Young | **0,008** |
-| Meilleur facteur de Bayes | **4 738** |
-| Configurations testées | 3 070 396 |
-| Meilleures que K₇ | **0** |
-
----
-
-## Références
-
-- Joyce, D.D. *Compact Manifolds with Special Holonomy* (2000)
-- Westfall, P.H. & Young, S.S. *Resampling-Based Multiple Testing* (1993)
-- Particle Data Group (2024), Review of Particle Physics
-- Planck Collaboration (2020), Cosmological parameters
-- NuFIT 5.3 (2024), Neutrino oscillation parameters
-- CODATA 2022, Fundamental physical constants
-
----
-
-*K₇ Framework v3.4.27 : preuves statistiques à toute épreuve*
-*Tête : écart moyen 0,99 % sur 33 relations Type I (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022) ; une borne au niveau ensemble ~10⁻⁶ sur 3 000 000 de jeux de formules aléatoires (sans hypothèse d'indépendance)*
-*Ventilation sectorielle ci-dessus : analyse v3.3.24 NuFIT 6.0 (0,24 % sur 32 bien mesurés / 0,57 % tous les 33)*
+*K₇ Framework v3.6 | page générée depuis les sources de l'article par `k7_v3_6_surface_pages.py`*

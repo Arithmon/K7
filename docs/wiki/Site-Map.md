@@ -26,18 +26,18 @@ Complete index of all wiki pages.
 ## Papers
 | Page | Description |
 |------|-------------|
-| [Paper Main Framework](Paper-Main-Framework.html) | Main paper: 95 observables (33 Type I, 0.99% mean dev) + 19 Type II + 21 Type III + 22 Type IV |
+| [Paper Main Framework](Paper-Main-Framework.html) | Main paper (v3.6): the correspondence, its dictionary, its residue register, the 33 relations and the decision rule |
 | [Paper S1 Foundations](Paper-S1-Foundations.html) | S1: E₈, G₂, K₇ mathematical foundations |
-| [Paper S2 Derivations](Paper-S2-Derivations.html) | S2: Complete derivations for all 33 observables |
+| [Paper S2 Derivations](Paper-S2-Derivations.html) | S2: arithmetic, dictionary choices and status of the 33 relations |
 | [Paper Explicit G2 Metric](Paper-Explicit-G2-Metric.html) | 169-parameter Chebyshev-Cholesky G₂ metric |
 | [Paper Spectral Geometry](Paper-Spectral-Geometry.html) | KK spectrum, Betti numbers, mass hierarchy |
 
 ## Reference Data
 | Page | Description |
 |------|-------------|
-| [Observable Reference](Observable-Reference.html) | 95 observables: formulas, values, deviations (Type I/II/III/IV) |
-| [Statistical Evidence](Statistical-Evidence.html) | 7-component validation, 3M+ exhaustive search |
-| [Validation Summary](Validation-Summary.html) | Sector-by-sector results with NuFIT 6.1 |
+| [Observable Reference](Observable-Reference.html) | The 33 relations: formulas, data, status; 62 further entries not counted as predictions |
+| [Statistical Evidence](Statistical-Evidence.html) | The look-elsewhere test: closeness to the data does not distinguish K₇ |
+| [Validation Summary](Validation-Summary.html) | The 33 relations in five classes, and the decision rule |
 | [Independent Validations](Independent-Validations.html) | External research converging with K₇ |
 
 ## Blog Posts
@@ -56,7 +56,7 @@ per row, is the **[Blog Index](Blog-Index.html)**.
 ## Project
 | Page | Description |
 |------|-------------|
-| [Lean Formalization](Lean-Formalization.html) | 146 files, 14 axioms (4 main-chain + 10 interval-arithmetic), 213 conjuncts, blueprint |
+| [Lean Formalization](Lean-Formalization.html) | 156 files, 14 axioms (4 from the literature, 10 interval certificates), no `sorry`; arithmetic of the 33 relations, blueprint |
 | [Repository Structure](Repository-Structure.html) | Directory layout and navigation |
 | [External Resources](External-Resources.html) | Links to all external resources |
 | [Citation Guide](Citation-Guide.html) | How to cite K₇ (BibTeX, APA, DOIs) |

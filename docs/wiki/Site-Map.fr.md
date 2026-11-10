@@ -26,18 +26,18 @@ Index complet de toutes les pages du wiki. Les pages avec une version française
 ## Articles
 | Page | Description |
 |------|-------------|
-| 🇫🇷 [Article principal](Paper-Main-Framework.fr.html) | Article principal : 33 relations Type I, 0,99 % d'écart moyen |
+| 🇫🇷 [Article principal](Paper-Main-Framework.fr.html) | Article principal (v3.6) : la correspondance, son dictionnaire, son registre des résidus, les 33 relations et la règle de décision |
 | 🇫🇷 [Article S1 fondations](Paper-S1-Foundations.fr.html) | S1 : fondations mathématiques de E₈, G₂, K₇ |
-| 🇫🇷 [Article S2 dérivations](Paper-S2-Derivations.fr.html) | S2 : dérivations complètes pour les 33 observables |
+| 🇫🇷 [Article S2 dérivations](Paper-S2-Derivations.fr.html) | S2 : arithmétique, choix de dictionnaire et statut des 33 relations |
 | 🇫🇷 [Article métrique G₂ explicite](Paper-Explicit-G2-Metric.fr.html) | Métrique G₂ Chebyshev-Cholesky à 169 paramètres |
 | 🇫🇷 [Article géométrie spectrale](Paper-Spectral-Geometry.fr.html) | Spectre KK, nombres de Betti, hiérarchie des masses |
 
 ## Données de référence
 | Page | Description |
 |------|-------------|
-| 🇫🇷 [Référence des observables](Observable-Reference.fr.html) | 95 observables : formules, valeurs, écarts (Type I/II/III/IV) |
-| 🇫🇷 [Preuves statistiques](Statistical-Evidence.fr.html) | Validation à 7 composantes, recherche exhaustive sur 3M+ configs |
-| 🇫🇷 [Résumé de validation](Validation-Summary.fr.html) | Résultats secteur par secteur avec NuFIT 6.1 |
+| 🇫🇷 [Référence des observables](Observable-Reference.fr.html) | Les 33 relations : formules, données, statut ; 62 autres entrées non comptées comme prédictions |
+| 🇫🇷 [Éléments statistiques](Statistical-Evidence.fr.html) | Le test look-elsewhere : la proximité avec les données ne distingue pas K₇ |
+| 🇫🇷 [Bilan de validation](Validation-Summary.fr.html) | Les 33 relations en cinq classes, et la règle de décision |
 | 🇫🇷 [Validations indépendantes](Independent-Validations.fr.html) | Recherches externes qui convergent avec K₇ |
 
 ## Articles de blog
@@ -56,7 +56,7 @@ et les deux langues par ligne, est l'**[index du blog](Blog-Index.fr.html)**.
 ## Projet
 | Page | Description |
 |------|-------------|
-| 🇫🇷 [Formalisation Lean](Lean-Formalization.fr.html) | 146 fichiers, 14 axiomes (4 principaux + 10 d'arithmétique d'intervalle), 213 conjonctions, blueprint |
+| 🇫🇷 [Formalisation Lean](Lean-Formalization.fr.html) | 156 fichiers, 14 axiomes (4 issus de la littérature, 10 certificats d'intervalles), aucun `sorry` ; arithmétique des 33 relations, blueprint |
 | 🇫🇷 [Structure du dépôt](Repository-Structure.fr.html) | Disposition des dossiers et navigation |
 | 🇫🇷 [Ressources externes](External-Resources.fr.html) | Liens vers toutes les ressources externes |
 | 🇫🇷 [Guide de citation](Citation-Guide.fr.html) | Comment citer K₇ (BibTeX, APA, DOIs) |

@@ -29,11 +29,11 @@ Le cadre K₇ associe 33 paramètres sans dimension du Modèle Standard et de la
 
 | | |
 |---|---|
-| **Nouveau ici ?** | [Pour commencer](Getting-Started.html) : choisissez votre parcours |
-| **Lire les articles** | [Article principal](Paper-Main-Framework.html) ([Métrique G₂ explicite](Paper-Explicit-G2-Metric.html)) [Géométrie spectrale](Paper-Spectral-Geometry.html) |
-| **Parcourir les relations** | [Référence des observables](Observable-Reference.html) : les 33 relations avec formules, données et statut |
-| **Est-ce distinctif ?** | [Éléments statistiques](Statistical-Evidence.html) : le test look-elsewhere |
-| **Vérifier les preuves** | [Formalisation Lean](Lean-Formalization.html) |
+| **Nouveau ici ?** | [Pour commencer](Getting-Started.fr.html) : choisissez votre parcours |
+| **Lire les articles** | [Article principal](Paper-Main-Framework.fr.html) ([Métrique G₂ explicite](Paper-Explicit-G2-Metric.fr.html)) [Géométrie spectrale](Paper-Spectral-Geometry.fr.html) |
+| **Parcourir les relations** | [Référence des observables](Observable-Reference.fr.html) : les 33 relations avec formules, données et statut |
+| **Est-ce distinctif ?** | [Éléments statistiques](Statistical-Evidence.fr.html) : le test look-elsewhere |
+| **Vérifier les preuves** | [Formalisation Lean](Lean-Formalization.fr.html) |
 
 ---
 
