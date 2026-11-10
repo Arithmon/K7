@@ -133,7 +133,7 @@ Deux choses survivent aux tests look-elsewhere, et l'article s'appuie sur elles 
 
 ## 8. Reproductibilité
 
-Le supplément [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md), section S4.5, donne le producteur, ses entrées épinglées (commit du moteur du Sieve, empreinte de la grammaire, graine) et le fichier de résultats dont les tables ci-dessus sont tirées.
+Le producteur, le jeu de données lu par le passage, le préenregistrement et ses deux amendements, le résultat et ceux des deux passages antérieurs sont dans [`publications/validation/v3.6/`](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/), avec leurs empreintes et la commande pour relancer le test. Le supplément [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md), section S4.5, donne les entrées épinglées (commit du moteur du Sieve, empreinte de la grammaire, graine).
 
 ---
 

@@ -133,7 +133,7 @@ Two things survive the look-elsewhere tests, and the paper rests on them rather 
 
 ## 8. Reproducibility
 
-Supplement [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md), section S4.5, gives the producer, its pinned inputs (Sieve engine commit, grammar hash, seed) and the result file from which the tables above are generated.
+The producer, the dataset as read by the run, the preregistration with its two amendments, the result and the results of the two earlier runs are in [`publications/validation/v3.6/`](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/), with their hashes and the command to rerun the test. Supplement [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md), section S4.5, gives the pinned inputs (Sieve engine commit, grammar hash, seed).
 
 ---
 

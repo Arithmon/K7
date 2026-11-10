@@ -1,31 +1,16 @@
-# Statistical Validation for GIFT Framework
+# Statistical validation
 
-This directory archives the v3.3 validation pipeline. The v3.4 statistics refresh was run in core/private (Phase 2 of v3.4 release plan, 2026-04-30):
+| Directory | What it holds | Status |
+|---|---|---|
+| [`v3.6/`](v3.6/) | The preregistered look-elsewhere test of version 3.6: producer, dataset, preregistration, results, hashes, and the command to rerun it | current |
+| [`legacy/v3.3/`](legacy/v3.3/) | The validation pipeline of version 3.3 (fixed-formula configuration search, null models, Bayesian comparison) | archived, not maintained |
 
-- `algebraic_montecarlo.py` (3M configs) → set-level ~10⁻⁶ (assumption-free), log₁₀ p_algebraic = −134, rank 0/3M
-- `sensitivity_analysis.py` → r_eff = 15.53, overdetermination 2.13×, 53 strong pairs
-- `observable_dataset.py` → 95 observables (33 Type I + 19 II + 21 III + 22 IV)
+## Version 3.6
 
-These newer scripts and results live in the canonical workspace (private repo). For the v3.3 archival pipeline, see [`legacy/v3.3/`](legacy/v3.3/).
+In the test of version 3.6, each competitor searches for its own formulas in the same grammar, at the same budget, with the same freedom of assignment and of unit. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more. P_global = 0.51 against a preregistered threshold of 0.01: the look-elsewhere effect is not overcome. See [`v3.6/README.md`](v3.6/README.md), the main paper (§7) and supplement S4.
 
-## v3.4 Headline Results (2026-04-29)
+## Earlier versions
 
-| Metric | Value |
-|--------|-------|
-| Type I observables | 33 (exact-target relations) |
-| Mean deviation (Type I) | **0.99%** (PDG 2024 / NuFIT 6.1) |
-| Total observables | 95 (33 I + 19 II + 21 III + 22 IV) |
-| Algebraic null model | set-level ~10⁻⁶ (assumption-free); log₁₀ p = −134 over 3M+ formulas |
-| Lean certificate | 213 conjuncts, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), 0 sorry |
+The figures reported by versions 3.3 to 3.5 are withdrawn: the rank among several million configurations, the null-model and coincidence probabilities, the Bayes factors and the mean deviation. They came from searches in which the alternatives were scored with the formulas of K₇ and did not search for their own, so that (21, 77) won by construction. The scripts and reports are kept in `legacy/v3.3/` as a record of what was reported. The statistics refresh of version 3.4 was run in the author's working repository and was never deposited here.
 
-## v3.3 Legacy Pipeline
-
-Archived in [`legacy/v3.3/`](legacy/v3.3/) as the validation snapshot accompanying the v3.3.24 framework release (2026-03-02). 3,070,396-config exhaustive search, 7-component bullet-proof analysis, Westfall-Young maxT, Bayesian comparison across 4 priors. Headline number was 0.24% mean deviation across 32 well-measured observables.
-
-## Full Documentation
-
-See [STATISTICAL_EVIDENCE.md](../references/STATISTICAL_EVIDENCE.md) for the canonical methodology and per-observable breakdown.
-
----
-
-**Version**: 3.4.27 (2026-06-03)
+The summary for readers is [Statistical Evidence](../references/STATISTICAL_EVIDENCE.md).

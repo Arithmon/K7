@@ -235,7 +235,7 @@ Arithmon/K7-Lean, commit `34ce857` (merged into `main`, PR #167); aggregate `Cer
 
 ## S3.8 Data availability
 
-The dataset is `canonical/data/observables.json` (95 entries; for each: formula, framework value, reference value and uncertainty, source, deviation, Lean theorem, provenance, and dated notes of every change). The refresh script and its log, and the generators of the main §4.1 table and of the S3 tables, are listed in S3.3 and S3.5. The dataset and scripts are available from the author on request pending public deposit; the spectral companion artifacts of [B] are archived on Zenodo (DOI: [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367)).
+The dataset is `canonical/data/observables.json` (95 entries; for each: formula, framework value, reference value and uncertainty, source, deviation, Lean theorem, provenance, and dated notes of every change). The refresh script and its log, and the generators of the main §4.1 table and of the S3 tables, are listed in S3.3 and S3.5. The dataset is deposited in the public repository (Arithmon/K7), as read by the look-elsewhere run in `publications/validation/v3.6/canonical/data/observables.json` and as a table in `publications/references/observables.csv`. The refresh script and the table generators are available from the author on request. The spectral companion artifacts of [B] are archived on Zenodo (DOI: [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367)).
 
 ---
 

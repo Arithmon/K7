@@ -1,0 +1,53 @@
+{
+ "lot": "K7-V36-LEE-CLOSEOUT",
+ "source": "canonical/results/k7_v3_6_lee_null.json",
+ "source_sha256": "844eeac4a8d250e763de352d0bd88fce9f9ec7f8b3537a4e77c4761a5b3e69a4",
+ "self_sha256": "a470e13e0bcab6f16e5e740dbb09283fb0cbdd4241df67e06772cd5af6b39296",
+ "tolerance_bits": 1e-09,
+ "K7_S_cost": 408.107083271645,
+ "K7_couple": [
+  53,
+  41
+ ],
+ "lignes_sans_couple_entier": 0,
+ "familles": {
+  "F-BETTI": {
+   "n": 4159,
+   "strictement_moins_cher": 1095,
+   "egalites": 68,
+   "P_cost_dual_corrige": 0.2798076923076923,
+   "P_cost_dual_artefact": 0.27860576923076924,
+   "couples_des_egalites": [
+    [
+     53,
+     41
+    ]
+   ]
+  },
+  "F-VOCAB": {
+   "n": 2000,
+   "strictement_moins_cher": 698,
+   "egalites": 0,
+   "P_cost_dual_corrige": 0.3493253373313343,
+   "P_cost_dual_artefact": 0.3493253373313343,
+   "couples_des_egalites": []
+  },
+  "F-BETTI-FICHE": {
+   "n": 4160,
+   "strictement_moins_cher": 482,
+   "egalites": 119,
+   "P_cost_dual_corrige": 0.14467676039413602,
+   "P_cost_dual_artefact": 0.136986301369863,
+   "couples_des_egalites": [
+    [
+     53,
+     41
+    ]
+   ]
+  }
+ },
+ "inchange": {
+  "P_global": 0.5077461269365318,
+  "verdict": "LEE-RETRAIT"
+ }
+}
