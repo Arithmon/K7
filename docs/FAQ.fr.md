@@ -385,7 +385,7 @@ Merci de citer correctement (voir [Guide de citation](Citation-Guide.html)) et d
 **Consultez la documentation** :
 - [Accueil](Home.fr.html) : vue d'ensemble
 - [Structure du dépôt](Repository-Structure.html) : organisation du dépôt
-- [Glossaire](Glossary.fr.html) : définitions techniques
+- [Glossaire](Glossary.html) : définitions techniques
 - [S1](Paper-S1-Foundations.html), [S2](Paper-S2-Derivations.html) : dérivations détaillées
 
 **Ouvrir un ticket** :
