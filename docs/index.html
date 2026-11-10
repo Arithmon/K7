@@ -7,7 +7,7 @@ layout: null
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The K₇ Framework</title>
-  <meta name="description" content="Standard Model parameters from pure geometry. E8 x E8 on G2-holonomy manifold K7, zero adjustable parameters, formally verified in Lean 4.">
+  <meta name="description" content="A declared correspondence between the topology of a G2-holonomy manifold K7 with E8 x E8 and 33 dimensionless parameters of the Standard Model and cosmology, stated with its dictionary, its residue and a decision rule. Arithmetic verified in Lean 4.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,9 +99,10 @@ layout: null
     <h1>The K₇ Framework</h1>
     <p class="subtitle">What if physics isn't fine-tuned, just well-shaped?</p>
     <p class="tagline">
-      K₇ derives Standard Model parameters from the geometry of a single
-      7-dimensional manifold. No free parameters. No fitting.
-      Every prediction is a consequence of shape.
+      K₇ assigns 33 dimensionless parameters of the Standard Model and of cosmology
+      to closed forms in the invariants of a single 7-dimensional shape.
+      It is a declared correspondence, not a derivation: what was set is written down,
+      and so is the rule under which each relation can fail.
     </p>
     <p style="font-size: 0.85rem; color: var(--text-dim); margin: -1rem auto 2rem; max-width: 560px;">
       Part of the <a href="https://github.com/arithmon" style="color: var(--accent);"><strong>Arithmon program</strong></a>
@@ -229,107 +230,132 @@ layout: null
 <!-- ========== RESULTS ========== -->
 <section id="results">
   <div class="container">
-    <h2 class="section-title">Key Results</h2>
+    <h2 class="section-title">Where It Stands</h2>
     <div class="sep"></div>
     <p class="section-intro">
-      Every value below is derived from topology &mdash; the shape of a single
-      G&#8322;-holonomy manifold K&#8327;. Nothing is fitted.
+      Thirty-three relations with no continuously adjustable parameter, compared with the most recent data (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022). The formulas are assigned, not derived, and the classes below are not added into a single score.
     </p>
 
-    <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 1rem; color: var(--accent);">
-      Exact Relations (Lean 4 Verified)
+    <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin: 2rem 0 1rem; color: var(--accent);">
+      The 33 relations in five classes
     </h3>
+
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Count</th>
+          <th>Relations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>within 2&sigma;</td>
+          <td class="value">23</td>
+          <td>the remaining relations</td>
+        </tr>
+        <tr>
+          <td>tension (between 2&sigma; and 3&sigma;)</td>
+          <td class="value">3</td>
+          <td>m<sub>&tau;</sub>/m<sub>e</sub>, m<sub>W</sub>/m<sub>Z</sub>, &Omega;<sub>c</sub>/&Omega;<sub>m</sub></td>
+        </tr>
+        <tr>
+          <td>proximity (beyond 3&sigma;, rejected as an exact equality)</td>
+          <td class="value">5</td>
+          <td>&alpha;<sup>&minus;1</sup>, sin&#178;&#952;<sub>W</sub>, m<sub>&mu;</sub>/m<sub>e</sub>, m<sub>&mu;</sub>/m<sub>&tau;</sub>, m<sub>b</sub>/m<sub>t</sub></td>
+        </tr>
+        <tr>
+          <td>inside the PDG range (no uncertainty given)</td>
+          <td class="value">1</td>
+          <td>m<sub>s</sub>/m<sub>d</sub></td>
+        </tr>
+        <tr>
+          <td>non-Gaussian profile, octant unresolved</td>
+          <td class="value">1</td>
+          <td>sin&#178;&#952;<sub>23</sub></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin: 2rem 0 1rem; color: var(--accent);">
+      A sample of the relations
+    </h3>
+
     <table class="results-table">
       <thead>
         <tr>
           <th>Relation</th>
-          <th>Value</th>
-          <th>Topological origin</th>
+          <th>K₇ value</th>
+          <th>Formula</th>
+          <th>Measured</th>
+          <th>Pull</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>sin&#178;&#952;<sub>W</sub></td>
-          <td class="value exact">3/13</td>
-          <td>b&#8322;/(b&#8323; + dim G&#8322;)</td>
+          <td>Q<sub>Koide</sub></td>
+          <td class="value">2/3</td>
+          <td>dim G&#8322; / b&#8322;</td>
+          <td>0.6666645(51)</td>
+          <td>+0.4&sigma;</td>
         </tr>
         <tr>
-          <td>&#954;<sub>T</sub></td>
-          <td class="value exact">1/61</td>
-          <td>1/(b&#8323; &minus; dim G&#8322; &minus; p&#8322;)</td>
-        </tr>
-        <tr>
-          <td>&#964;</td>
-          <td class="value exact">3472/891</td>
-          <td>(496 &times; 21)/(27 &times; 99)</td>
-        </tr>
-        <tr>
-          <td>det(g)</td>
-          <td class="value exact">65/32</td>
-          <td>G&#8322; metric determinant</td>
+          <td>&alpha;<sub>s</sub>(M<sub>Z</sub>)</td>
+          <td class="value">&radic;2/12</td>
+          <td>&radic;2 / (dim G&#8322; &minus; p&#8322;)</td>
+          <td>0.1180(9)</td>
+          <td>&minus;0.2&sigma;</td>
         </tr>
         <tr>
           <td>&#948;<sub>CP</sub></td>
-          <td class="value exact">197&deg;</td>
-          <td>7 &times; dim G&#8322; + H*</td>
+          <td class="value">197&deg;</td>
+          <td>7 &times; dim G&#8322; + H*, read in degrees</td>
+          <td>212 (+26/&minus;36)&deg;</td>
+          <td>&minus;0.4&sigma;</td>
         </tr>
         <tr>
-          <td>Q<sub>Koide</sub></td>
-          <td class="value exact">2/3</td>
-          <td>dim G&#8322; / b&#8322;</td>
+          <td>n<sub>s</sub></td>
+          <td class="value">0.964864</td>
+          <td>&#950;(11)/&#950;(5)</td>
+          <td>0.9649(42)</td>
+          <td>0.0&sigma;</td>
+        </tr>
+        <tr>
+          <td>m<sub>W</sub>/m<sub>Z</sub></td>
+          <td class="value">37/42</td>
+          <td>(2b&#8322; &minus; 5) / 2b&#8322;</td>
+          <td>0.88136(15)</td>
+          <td>&minus;2.7&sigma;</td>
+        </tr>
+        <tr>
+          <td>sin&#178;&#952;<sub>W</sub></td>
+          <td class="value">3/13</td>
+          <td>b&#8322; / (b&#8323; + dim G&#8322;)</td>
+          <td>0.23122(6)</td>
+          <td>&minus;7.5&sigma;</td>
+        </tr>
+        <tr>
+          <td>sin&#178;&#952;<sub>23</sub></td>
+          <td class="value">6/11</td>
+          <td>(11 &minus; 5) / 11</td>
+          <td>0.470 (+17/&minus;14)</td>
+          <td>second octant</td>
         </tr>
       </tbody>
     </table>
 
-    <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin: 2rem 0 1rem; color: var(--accent);">
-      Precision by Sector
-    </h3>
-    <table class="results-table">
-      <thead>
-        <tr>
-          <th>Sector</th>
-          <th>Predictions</th>
-          <th>Mean deviation</th>
-          <th>Highlight</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Electroweak</td>
-          <td>3</td>
-          <td class="value">0.12%</td>
-          <td>sin&#178;&#952;<sub>W</sub> = 3/13</td>
-        </tr>
-        <tr>
-          <td>Lepton</td>
-          <td>3</td>
-          <td class="value">0.04%</td>
-          <td>Q<sub>Koide</sub> = 2/3 (0.0009%)</td>
-        </tr>
-        <tr>
-          <td>Neutrino</td>
-          <td>3+1</td>
-          <td class="value">0.25%</td>
-          <td>&#952;&#8321;&#8322; = arctan(2/3)</td>
-        </tr>
-        <tr>
-          <td>Cosmology</td>
-          <td>3</td>
-          <td class="value">0.07%</td>
-          <td>n<sub>s</sub> = &#950;(11)/&#950;(5)</td>
-        </tr>
-        <tr>
-          <td>Structural</td>
-          <td>4</td>
-          <td class="value exact">exact</td>
-          <td>N<sub>gen</sub> = 3</td>
-        </tr>
-      </tbody>
-    </table>
+    <p class="section-intro">
+      Three sectors are overdetermined: four lepton relations bear on two mass ratios, three CKM relations on two parameters, seven density relations on two densities. In each, the relations disagree with one another as exact equalities, and none is selected after the fact. The 33 are not 33 independent tests.
+    </p>
 
     <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin: 2rem 0 1rem; color: var(--accent);">
-      Statistical Uniqueness
+      Is the agreement distinctive?
     </h3>
+
+    <p class="section-intro">
+      No. In a preregistered look-elsewhere test, every competitor searches for its own formulas, in the same grammar and with the same budget.
+    </p>
+
     <table class="results-table">
       <thead>
         <tr>
@@ -339,27 +365,31 @@ layout: null
       </thead>
       <tbody>
         <tr>
-          <td>Configurations tested</td>
-          <td class="value">3,000,000+</td>
+          <td>Targets reached by K₇</td>
+          <td class="value">31 of 33</td>
         </tr>
         <tr>
-          <td>K₇ rank</td>
-          <td class="value exact">#1</td>
+          <td>Alternative Betti pairs that reach as many</td>
+          <td class="value">1 085 of 4 159 (P = 0.26)</td>
         </tr>
         <tr>
-          <td>Better alternatives found</td>
-          <td class="value exact">0</td>
+          <td>Invented vocabularies that reach as many</td>
+          <td class="value">1 015 of 2 000 (P = 0.51)</td>
         </tr>
         <tr>
-          <td>Null model p-value</td>
-          <td class="value">&lt; 2&times;10&#8315;&#8309; (&sigma; &gt; 4.2)</td>
+          <td>A witness with no K₇ constant</td>
+          <td class="value">30 of 33</td>
         </tr>
         <tr>
-          <td>Bayes factor</td>
-          <td class="value">304&ndash;4,738 (decisive)</td>
+          <td>Preregistered verdict</td>
+          <td class="value">look-elsewhere effect not overcome</td>
         </tr>
       </tbody>
     </table>
+
+    <p class="section-intro">
+      Closeness to the measured values is therefore not, by itself, evidence for K₇. The coincidence probabilities and the P-values shown on earlier versions of this page are withdrawn. What remains is rigidity (an integer ratio cannot be nudged, so one measurement can reject a relation) and a written list of everything that was set rather than derived.
+    </p>
   </div>
 </section>
 
@@ -368,43 +398,50 @@ layout: null
   <div class="container">
     <h2 class="section-title">Papers &amp; Proofs</h2>
     <div class="sep"></div>
+    <p class="section-intro">
+      Version 3.6 of the framework paper. The latest deposited version is always at the <a href="https://doi.org/10.5281/zenodo.16891489">Zenodo concept DOI</a>; version 3.5 is read together with its <a href="https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md">erratum</a>.
+    </p>
 
     <div class="cards">
       <div class="card">
-        <h3>Main Paper (v3.5)</h3>
-        <p>Complete theoretical framework: E&#8328;&times;E&#8328; compactification, K&#8327; construction, all derivations. 47&nbsp;pp.</p>
+        <h3>Main Paper (v3.6)</h3>
+        <p><em>The K₇ Dictionary: Testing G&#8322; Topology against Particle Physics and Cosmology.</em> The correspondence, its dictionary, its residue register, the 33 relations, the look-elsewhere test and the decision rule.</p>
         <div class="card-meta">
-          <a href="https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_main.pdf">PDF &rarr;</a>
-          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_5_main.md">Markdown &rarr;</a>
+          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md">Markdown &rarr;</a>
+          <a href="https://doi.org/10.5281/zenodo.16891489">Zenodo &rarr;</a>
         </div>
       </div>
       <div class="card">
-        <h3>S1: Foundations (v3.5)</h3>
-        <p>E&#8328;, G&#8322;, K&#8327; mathematical construction. Lattice theory, holonomy, TCS gluing. 27&nbsp;pp.</p>
+        <h3>S1: Foundations (v3.6)</h3>
+        <p>E&#8328;, G&#8322; and the topology assumed for K&#8327;. No compact manifold with (21, 77) is currently constructed.</p>
         <div class="card-meta">
-          <a href="https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_S1_foundations.pdf">PDF &rarr;</a>
-          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_5_S1_foundations.md">Markdown &rarr;</a>
+          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S1_foundations.md">Markdown &rarr;</a>
         </div>
       </div>
       <div class="card">
-        <h3>S2: Derivations (v3.5)</h3>
-        <p>All 33 Type I derivations with full computation. 0.99% mean deviation (NuFIT 6.1 / PDG 2024). 42&nbsp;pp.</p>
+        <h3>S2: The 33 Relations (v3.6)</h3>
+        <p>The arithmetic of each relation, the dictionary choices it makes and its status.</p>
         <div class="card-meta">
-          <a href="https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_S2_derivations.pdf">PDF &rarr;</a>
-          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_5_S2_derivations.md">Markdown &rarr;</a>
+          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S2_derivations.md">Markdown &rarr;</a>
         </div>
       </div>
       <div class="card">
-        <h3>S3: Observables (v3.5)</h3>
-        <p>95-observable catalog with type breakdown (33 Type I + 19 II + 21 III + 22 IV). 10&nbsp;pp.</p>
+        <h3>S3: Observable Dataset (v3.6)</h3>
+        <p>Reference data for the 33 relations, and 62 conditional or diagnostic entries that are not counted as predictions.</p>
         <div class="card-meta">
-          <a href="https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_S3_observables.pdf">PDF &rarr;</a>
-          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_5_S3_observables.md">Markdown &rarr;</a>
+          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md">Markdown &rarr;</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>S4: Look-Elsewhere (v3.6)</h3>
+        <p>The preregistered test in which every competitor searches for its own formulas, and descriptive diagnostics.</p>
+        <div class="card-meta">
+          <a href="https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md">Markdown &rarr;</a>
         </div>
       </div>
       <div class="card">
         <h3>Paper A &mdash; Certified G&#8322; Structure</h3>
-        <p>First computer-assisted existence proof for a metric with special holonomy. Zenodo 19892350.</p>
+        <p>Newton&ndash;Kantorovich certificate for a nearby torsion-free metric on a seam region. It does not construct a compact K&#8327;. Zenodo 19892350.</p>
         <div class="card-meta">
           <a href="https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/g2_certified_neck.pdf">PDF &rarr;</a>
           <a href="https://doi.org/10.5281/zenodo.19892350">DOI &rarr;</a>
@@ -412,7 +449,7 @@ layout: null
       </div>
       <div class="card">
         <h3>Paper B &mdash; Spectral Geometry</h3>
-        <p>Laplacian spectrum, harmonic forms, &lambda;&#8321; &asymp; 6&pi;&sup2;/475. Zenodo 19893371.</p>
+        <p>Laplacian spectrum and harmonic forms of the approximate seam metric. Zenodo 19893371.</p>
         <div class="card-meta">
           <a href="https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/g2_spectral.pdf">PDF &rarr;</a>
           <a href="https://doi.org/10.5281/zenodo.19893371">DOI &rarr;</a>
@@ -435,8 +472,16 @@ layout: null
         </div>
       </div>
       <div class="card">
+        <h3>Paper E &mdash; Rank-1 Branched Adiabatic</h3>
+        <p>Conditional analytic framework for the neck. Its datum is not realisable as posed (erratum, section 2). Zenodo 21215956.</p>
+        <div class="card-meta">
+          <a href="https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/rank_one_branched_adiabatic.pdf">PDF &rarr;</a>
+          <a href="https://doi.org/10.5281/zenodo.21215956">DOI &rarr;</a>
+        </div>
+      </div>
+      <div class="card">
         <h3>Lean 4 Proofs</h3>
-        <p>143 files, 14 axioms (4 main-chain + 10 interval-arithmetic), zero sorry. Formally verified in Lean 4 (K7-Lean main).</p>
+        <p>156 files, 14 axioms (4 from the literature, 10 interval certificates), no sorry. The formalization verifies the arithmetic of the 33 relations; it does not establish their physical content or the existence of K&#8327;.</p>
         <div class="card-meta">
           <a href="https://github.com/Arithmon/K7-Lean">Repository &rarr;</a>
         </div>
@@ -476,62 +521,57 @@ layout: null
 <!-- ========== FALSIFICATION ========== -->
 <section id="falsification">
   <div class="container">
-    <h2 class="section-title">Falsification Tests</h2>
+    <h2 class="section-title">Decision Rule</h2>
     <div class="sep"></div>
     <p class="section-intro">
-      K₇ makes concrete predictions that can be tested by running or planned experiments.
+      The relations are stated as exact equalities. A relation is rejected when its reference series (PDG, NuFIT, Planck, CODATA) excludes its value at 3&sigma;. The rule has no repair clause: a relation that fails is not rescued by changing its formula, its unit, its scale or its dataset.
     </p>
 
     <table class="results-table">
       <thead>
         <tr>
-          <th>Prediction</th>
-          <th>Experiment</th>
-          <th>Timeline</th>
-          <th>Falsification criterion</th>
+          <th>Relation</th>
+          <th>Value</th>
+          <th>Rejected when</th>
+          <th>Where</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>&#948;<sub>CP</sub> = 197&deg;</td>
-          <td>DUNE</td>
-          <td>2028&ndash;2040</td>
-          <td>Outside [182&deg;, 212&deg;]</td>
-        </tr>
-        <tr>
-          <td>&#952;<sub>23</sub> upper octant (49.25&deg;)</td>
+          <td>&#948;<sub>CP</sub>, the phase 2&pi;&middot;197/360</td>
+          <td class="value">197&deg;</td>
+          <td>a global fit whose 3&sigma; interval excludes 197&deg;; the unit assignment is rejected with it</td>
           <td>DUNE, Hyper-Kamiokande</td>
-          <td>early to mid 2030s</td>
-          <td>Lower octant established at 3&sigma;</td>
         </tr>
         <tr>
-          <td>sin&#178;&#952;<sub>W</sub> = 3/13</td>
-          <td>FCC-ee</td>
-          <td>2040s</td>
-          <td>Outside [0.2295, 0.2320]</td>
+          <td>sin&#178;&#952;<sub>23</sub></td>
+          <td class="value">6/11</td>
+          <td>a global fit whose 3&sigma; interval excludes 6/11, in either octant</td>
+          <td>DUNE, Hyper-Kamiokande</td>
         </tr>
         <tr>
-          <td>m<sub>s</sub>/m<sub>d</sub> = 20</td>
+          <td>m<sub>&tau;</sub>/m<sub>e</sub> and Q<sub>Koide</sub></td>
+          <td class="value">1776.74 and 1776.97 MeV for m<sub>&tau;</sub></td>
+          <td>an m<sub>&tau;</sub> value whose 3&sigma; interval excludes the value, each relation separately</td>
+          <td>Belle II, BES III</td>
+        </tr>
+        <tr>
+          <td>N<sub>gen</sub></td>
+          <td class="value">3</td>
+          <td>a fourth sequential generation</td>
+          <td>LHC, FCC</td>
+        </tr>
+        <tr>
+          <td>m<sub>s</sub>/m<sub>d</sub></td>
+          <td class="value">20</td>
+          <td>a lattice determination with an uncertainty whose 3&sigma; interval excludes 20</td>
           <td>Lattice QCD</td>
-          <td>2030</td>
-          <td>Converges outside [19, 21]</td>
-        </tr>
-        <tr>
-          <td>N<sub>gen</sub> = 3</td>
-          <td>LHC</td>
-          <td>Ongoing</td>
-          <td>4th generation discovery</td>
         </tr>
       </tbody>
     </table>
+
     <p class="section-intro">
-      <strong>Standing verdicts.</strong> &#952;<sub>23</sub> is currently
-      <strong>in tension</strong>: the NuFIT 6.1 best fit sits at 43.3&deg;, in the lower
-      octant, and the octant is unresolved, having flipped between consecutive global fits.
-      &#948;<sub>CP</sub> returned to within about 1&sigma; after the same release without
-      the prediction being touched: the prediction did not move, the data did. Every
-      verdict is recorded, favourable or not, in the
-      <a href="https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md">program scoreboard</a>.
+      <strong>Standing verdicts.</strong> Five relations are already rejected as exact equalities and kept only as numerical proximities: &alpha;<sup>&minus;1</sup>, sin&#178;&#952;<sub>W</sub>, m<sub>&mu;</sub>/m<sub>e</sub>, m<sub>&mu;</sub>/m<sub>&tau;</sub> and m<sub>b</sub>/m<sub>t</sub>. sin&#178;&#952;<sub>23</sub> is <strong>in tension</strong>: the NuFIT 6.1 best fit sits in the lower octant, and 6/11 lies inside its 3&sigma; range. Two contradicting measurements outside the reference series are reported beside their class: h = 167/248 agrees with Planck and is excluded by the SH0ES distance ladder at 5.5&sigma;; m<sub>W</sub>/m<sub>Z</sub> = 37/42 is at &minus;2.7&sigma; against the PDG and at &minus;10.6&sigma; against the CDF II W mass. A rejection rejects a relation and the assignment that produced it, not the programme by itself. Every verdict is recorded, favourable or not, in the <a href="https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md">program scoreboard</a>.
     </p>
   </div>
 </section>
@@ -564,6 +604,7 @@ layout: null
       <div class="footer-col">
         <h4>Archive</h4>
         <ul>
+          <li><a href="https://doi.org/10.5281/zenodo.21296168">Zenodo (framework v3.5)</a></li>
           <li><a href="https://doi.org/10.5281/zenodo.20070101">Zenodo (framework v3.4)</a></li>
           <li><a href="https://doi.org/10.5281/zenodo.18837071">Zenodo (framework v3.3)</a></li>
           <li><a href="https://doi.org/10.5281/zenodo.19892350">Zenodo (Paper A)</a></li>
@@ -575,7 +616,7 @@ layout: null
       </div>
     </div>
     <div class="footer-bottom">
-      <span>MIT License &middot; K₇ Framework v3.5</span>
+      <span>MIT License &middot; K₇ Framework v3.6</span>
       <span class="gift-from-bit">Gift from bit</span>
     </div>
   </div>

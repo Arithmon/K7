@@ -5,20 +5,23 @@ layout: default
 
 # The K₇ Framework
 
-**A zero-parameter framework deriving Standard Model constants from G₂ holonomy geometry.**
+**A declared correspondence between G₂ topology and 33 dimensionless parameters, stated with its dictionary, its residue and a decision rule.**
+
+The K₇ framework assigns 33 dimensionless Standard-Model and cosmological parameters to closed forms in the invariants of a G₂-holonomy seven-manifold K₇ with Betti numbers (b₂, b₃) = (21, 77), together with E₈×E₈. Version 3.6 presents this as a correspondence, not a derivation: no geometric map is known that sends the invariants to the observables, and no rule fixes which formula is assigned to which observable. K₇ is a privileged candidate chosen by the author, and the paper says so.
 
 ---
 
 ## At a Glance
 
-| Property | Value |
+| | |
 |----------|-------|
-| **Predictions** | 95 observables (33 Type I + 19 Type II + 21 Type III + 22 Type IV) |
-| **Mean deviation** | 0.99% on 33 Type I (exact-target) relations (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022) |
-| **Free parameters** | 0 (3 integer primitives: N=3, r₈=8, r₂=2) |
-| **Lean 4 verification** | 146 files, 8394 build jobs, 0 sorry, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates) (K7-Lean v3.5) |
-| **Statistical significance** | p < 2×10⁻⁵ (σ > 4.2), unique among 3M+ configurations |
-| **Monte Carlo null model** | P(algebraic) = 10⁻¹³⁸ over 3M+ formulas |
+| **What is proposed** | 33 relations with no continuously adjustable parameter, written in twenty declared structural constants |
+| **What is set, not derived** | the residue register R1–R12: the Betti pair (21, 77), the imposed normalization det(g) = 65/32, κ_T⁻¹ = 61, the unit in which 197 is read as a CP phase, the comparison scales, the formula assignments |
+| **Against current data** | 23 within 2σ, 3 in tension, 5 rejected as exact equalities and kept as proximities, 1 inside a PDG range, 1 with an unresolved octant (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022) |
+| **Look-elsewhere** | not overcome: when every competitor searches for its own formulas, 1 085 of 4 159 Betti pairs and 1 015 of 2 000 invented vocabularies reach as many targets as K₇ (P_global = 0.51) |
+| **Lean 4 verification** | the arithmetic of the 33 relations (`relations_v36_certified`), 156 files, 14 axioms, no `sorry`; it verifies stated arithmetic, not physical content |
+| **Existence of K₇** | open: no compact torsion-free G₂ manifold with (21, 77) is currently constructed |
+| **Further dataset entries** | 62 conditional extractions and diagnostics, kept for traceability and not counted as predictions |
 
 ---
 
@@ -28,43 +31,58 @@ layout: default
 |---|---|
 | **New here?** | [Getting Started](Getting-Started.html): Pick your path |
 | **Read papers** | [Paper Main Framework](Paper-Main-Framework.html) ([Paper Explicit G2 Metric](Paper-Explicit-G2-Metric.html)) [Paper Spectral Geometry](Paper-Spectral-Geometry.html) |
-| **Browse predictions** | [Observable Reference](Observable-Reference.html), 95 observables with formulas |
-| **Check proofs** | [Lean Formalization](Lean-Formalization.html), 140-conjunct certificate |
+| **Browse the relations** | [Observable Reference](Observable-Reference.html): the 33 relations with formulas, data and status |
+| **How distinctive is it?** | [Statistical Evidence](Statistical-Evidence.html): the look-elsewhere test |
+| **Check proofs** | [Lean Formalization](Lean-Formalization.html) |
 
 ---
 
-## Key Results
+## The 33 Relations in Five Classes
 
-| Observable | K₇ Formula | Value | Exp. | Dev. |
-|------------|-------------|-------|------|------|
-| sin²θ_W | b₂/(b₃+dim(G₂)) = 21/91 | 3/13 | 0.2312 | 0.19% |
-| N_gen | rank(E₈) − Weyl | 3 | 3 | exact |
-| Q_Koide | dim(G₂)/b₂ = 14/21 | 2/3 | 0.6667 | 0.001% |
-| α_s(M_Z) | √2/(dim(G₂)−p₂) | √2/12 | 0.1179 | 0.04% |
-| δ_CP | dim(K₇)×dim(G₂)+H* | 197° | ~207-212° (NuFIT 6.1) | ~1σ |
-| m_τ/m_e | 7+10×248+10×99 | 3477 | 3477.2 | 0.004% |
-| Ω_DE | ln(2)×98/99 | 0.686 | 0.685 | 0.21% |
+The classes are not added into a single score (main paper §4.2).
 
-## Exact Algebraic Relations
+| Class | Count | Relations |
+|-------|:-----:|-----------|
+| within 2σ | 23 | the remaining relations |
+| tension (between 2σ and 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
+| proximity (beyond 3σ, rejected as an exact equality) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t (in the declared mass scheme) |
+| inside the PDG range (no uncertainty given) | 1 | m_s/m_d |
+| non-Gaussian profile, octant unresolved | 1 | sin²θ₂₃ |
 
-All predictions derive from topological constants of a compact G₂ manifold K₇ with Betti numbers b₂ = 21, b₃ = 77, coupled to E₈×E₈ gauge structure (dim = 496):
+A sample, one or two per class:
 
-```
-sin²θ_W = b₂ / (b₃ + dim(G₂))  = 21/91  = 3/13
-Q_Koide  = dim(G₂) / b₂          = 14/21  = 2/3
-N_gen    = |PSL(2,7)| / fund(E₇) = 168/56 = 3
-κ_T      = 1/(b₃ − dim(G₂) − p₂) = 1/61
-α        = e^K (geometric coupling, zero free params)
-```
+| Observable | K₇ formula | K₇ value | Measured | Pull | Status |
+|------------|-------------|-------|------|------|------|
+| Q_Koide | dim(G₂)/b₂ = 2/3 | 0.666667 | 0.6666645(51) | +0.4σ | within 2σ |
+| α_s(M_Z) | √2/(dim(G₂) − p₂) = √2/12 | 0.117851 | 0.1180(9) | −0.2σ | within 2σ |
+| δ_CP | 7·14 + 99 = 197, read in degrees | 197° | 212 (+26/−36)° | −0.4σ | within 2σ; unit assignment |
+| Ω_DE | ln 2 · 98/99 | 0.686146 | 0.6847(73) | +0.2σ | within 2σ |
+| m_τ/m_e | 7 + 10·248 + 10·99 | 3477 | 3477.37(18) | −2.1σ | tension |
+| m_W/m_Z | 37/42 | 0.880952 | 0.88136(15) | −2.7σ | tension |
+| sin²θ_W(M_Z) | 21/91 = 3/13 | 0.230769 | 0.23122(6) | −7.5σ | proximity |
+| m_μ/m_τ | 10/168 | 0.059524 | 0.0594612(30) | +20.8σ | proximity |
+| m_s/m_d | 4 × 5 = 20 | 20 | 17–22 (range) | n/a | inside the PDG range |
+| sin²θ₂₃ (PMNS) | 6/11 | 0.545455 | 0.470 (+17/−14) | +4.4σ* | tension: second octant, inside the NuFIT 3σ range (*the profile is not Gaussian, so the Gaussian pull overstates it) |
 
-## Falsification Tests
+**They are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations on two mass ratios, three CKM relations on two Wolfenstein parameters, seven density relations on two independent densities. None is selected after the fact.
 
-| Prediction | Experiment | Timeline | Status |
-|------------|------------|----------|--------|
-| δ_CP = 197° (window [182°, 212°]) | DUNE | 2028–2040 | Awaiting |
-| sin²θ_W = 3/13 | FCC-ee | 2040s | Awaiting |
-| N_gen = 3 (no 4th gen) | LHC/FCC | Ongoing | Consistent |
-| m_s/m_d = 20 | Lattice QCD | ~2030 | Consistent |
+## Decision Rule
+
+The relations are stated as exact equalities. A relation is rejected when its reference series (PDG, NuFIT, Planck, CODATA) excludes its value at 3σ; no formula, unit, scale or dataset is changed afterwards to rescue it (main paper §11).
+
+| # | Relation | Value | Rejected when | Where |
+|---|----------|-------|---------------|-------|
+| D1 | δ_CP, the phase 2π·197/360 | 197° | a global fit whose 3σ interval excludes 197°; the unit assignment is rejected with it | DUNE, Hyper-Kamiokande |
+| D2 | sin²θ₂₃ | 6/11 | a global fit whose 3σ interval excludes 6/11, in either octant | DUNE, Hyper-Kamiokande |
+| D3 | m_τ/m_e and Q_Koide | 1776.74 and 1776.97 MeV for m_τ | an m_τ value whose 3σ interval excludes the value, each relation separately | Belle II, BES III |
+| D4 | N_gen | 3 | a fourth sequential generation | LHC, FCC |
+| D5 | m_s/m_d | 20 | a lattice determination with an uncertainty whose 3σ interval excludes 20 | lattice QCD |
+
+A rejection rejects the relation and the assignment that produced it, not the programme by itself. A confirmation would show that an assignment agrees with the world, not that the structure requires it.
+
+## What Version 3.6 Withdraws
+
+Earlier versions of this site said that the relations are derived from the geometry, that the framework has no free parameter and cannot be fitted, that it predicts 95 observables with a small mean deviation, and that a coincidence probability or a P-value measured its distinctiveness. Version 3.6 withdraws each of these. The full list is in the main paper (§12.1) and in the [changelog](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md).
 
 ---
 
@@ -86,4 +104,4 @@ Browse the sidebar for full navigation, or see the [Site Map](Site-Map.html) for
 
 ---
 
-*The K₇ Framework v3.5 | [GitHub](https://github.com/Arithmon/K7) | [Core](https://github.com/Arithmon/K7-Lean) | [Blueprint](https://arithmon.github.io/K7-Lean/) | [Zenodo (Paper A)](https://doi.org/10.5281/zenodo.19892350) · [Paper B](https://doi.org/10.5281/zenodo.19893371) · [Paper C](https://doi.org/10.5281/zenodo.19708916) | MIT License*
+*The K₇ Framework v3.6 | [GitHub](https://github.com/Arithmon/K7) | [Core](https://github.com/Arithmon/K7-Lean) | [Blueprint](https://arithmon.github.io/K7-Lean/) | [Zenodo (Paper A)](https://doi.org/10.5281/zenodo.19892350) · [Paper B](https://doi.org/10.5281/zenodo.19893371) · [Paper C](https://doi.org/10.5281/zenodo.19708916) | MIT License*

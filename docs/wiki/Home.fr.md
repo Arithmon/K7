@@ -5,20 +5,23 @@ layout: default
 
 # Le cadre K₇
 
-**Un cadre théorique à zéro paramètre, qui dérive les constantes du Modèle Standard à partir de la géométrie d'holonomie G₂.**
+**Une correspondance déclarée entre la topologie G₂ et 33 paramètres sans dimension, énoncée avec son dictionnaire, son résidu et une règle de décision.**
+
+Le cadre K₇ associe 33 paramètres sans dimension du Modèle Standard et de la cosmologie à des formes closes en les invariants d'une variété K₇ de dimension sept, d'holonomie G₂ et de nombres de Betti (b₂, b₃) = (21, 77), avec E₈×E₈. La version 3.6 le présente comme une correspondance et non comme une dérivation : on ne connaît aucune application géométrique qui envoie les invariants sur les observables, et aucune règle ne fixe quelle formule est associée à quelle observable. K₇ est un candidat privilégié, choisi par l'auteur, et le papier le dit.
 
 ---
 
 ## En bref
 
-| Propriété | Valeur |
-|---|---|
-| **Prédictions** | 95 observables (33 Type I + 19 Type II + 21 Type III + 22 Type IV) |
-| **Écart moyen** | 0,99 % sur 33 relations Type I (cible exacte, NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022) |
-| **Paramètres libres** | 0 (3 primitives entières : N=3, r₈=8, r₂=2) |
-| **Vérification Lean 4** | 146 fichiers, 8394 jobs de build, 0 sorry, 14 axiomes sur K7-Lean main (4 chaîne de prédiction + 10 certificats d'intervalle K3) (K7-Lean v3.5) |
-| **Significativité statistique** | p < 2×10⁻⁵ (σ > 4,2), unique parmi 3M+ configurations |
-| **Modèle nul Monte Carlo** | P(algébrique) = 10⁻¹³⁸ sur 3M+ formules |
+| | |
+|----------|-------|
+| **Ce qui est proposé** | 33 relations sans paramètre continûment ajustable, écrites avec vingt constantes structurelles déclarées |
+| **Ce qui est posé, non dérivé** | le registre des résidus R1–R12 : la paire de Betti (21, 77), la normalisation imposée det(g) = 65/32, κ_T⁻¹ = 61, l'unité dans laquelle 197 est lu comme phase CP, les échelles de comparaison, l'attribution des formules |
+| **Face aux données actuelles** | 23 à moins de 2σ, 3 en tension, 5 rejetées comme égalités exactes et gardées comme proximités, 1 dans un intervalle du PDG, 1 dont l'octant n'est pas tranché (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022) |
+| **Effet look-elsewhere** | non surmonté : quand chaque concurrent cherche ses propres formules, 1 085 paires de Betti sur 4 159 et 1 015 vocabulaires inventés sur 2 000 atteignent autant de cibles que K₇ (P_global = 0,51) |
+| **Vérification Lean 4** | l'arithmétique des 33 relations (`relations_v36_certified`), 156 fichiers, 14 axiomes, aucun `sorry` ; elle vérifie l'arithmétique énoncée, pas le contenu physique |
+| **Existence de K₇** | ouverte : aucune variété G₂ compacte sans torsion de nombres (21, 77) n'est construite à ce jour |
+| **Autres entrées du jeu de données** | 62 extractions conditionnelles et diagnostics, gardés pour la traçabilité et non comptés comme prédictions |
 
 ---
 
@@ -26,45 +29,60 @@ layout: default
 
 | | |
 |---|---|
-| **Vous découvrez ?** | [Pour commencer](Getting-Started.fr.html) : choisissez votre voie |
+| **Nouveau ici ?** | [Pour commencer](Getting-Started.html) : choisissez votre parcours |
 | **Lire les articles** | [Article principal](Paper-Main-Framework.html) ([Métrique G₂ explicite](Paper-Explicit-G2-Metric.html)) [Géométrie spectrale](Paper-Spectral-Geometry.html) |
-| **Parcourir les prédictions** | [Référence des observables](Observable-Reference.html), 95 observables avec formules |
-| **Vérifier les preuves** | [Formalisation Lean](Lean-Formalization.html), certificat à 213 conjonctions |
+| **Parcourir les relations** | [Référence des observables](Observable-Reference.html) : les 33 relations avec formules, données et statut |
+| **Est-ce distinctif ?** | [Éléments statistiques](Statistical-Evidence.html) : le test look-elsewhere |
+| **Vérifier les preuves** | [Formalisation Lean](Lean-Formalization.html) |
 
 ---
 
-## Résultats clés
+## Les 33 relations en cinq classes
 
-| Observable | Formule K₇ | Valeur | Exp. | Écart |
-|---|---|---|---|---|
-| sin²θ_W | b₂/(b₃+dim(G₂)) = 21/91 | 3/13 | 0,2312 | 0,19 % |
-| N_gen | rang(E₈) − Weyl | 3 | 3 | exact |
-| Q_Koide | dim(G₂)/b₂ = 14/21 | 2/3 | 0,6667 | 0,001 % |
-| α_s(M_Z) | √2/(dim(G₂)−p₂) | √2/12 | 0,1179 | 0,04 % |
-| δ_CP | dim(K₇)×dim(G₂)+H* | 197° | ~207-212° (NuFIT 6.1) | ~1σ |
-| m_τ/m_e | 7+10×248+10×99 | 3477 | 3477,2 | 0,004 % |
-| Ω_DE | ln(2)×98/99 | 0,686 | 0,685 | 0,21 % |
+Les classes ne s'additionnent pas en un score unique (article principal, §4.2).
 
-## Relations algébriques exactes
+| Classe | Nombre | Relations |
+|-------|:-----:|-----------|
+| à moins de 2σ | 23 | les autres relations |
+| tension (entre 2σ et 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
+| proximité (au-delà de 3σ, rejetée comme égalité exacte) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t (dans le schéma de masse déclaré) |
+| dans l'intervalle du PDG (sans incertitude) | 1 | m_s/m_d |
+| profil non gaussien, octant non tranché | 1 | sin²θ₂₃ |
 
-Toutes les prédictions découlent des constantes topologiques d'une variété compacte G₂ K₇ de nombres de Betti b₂ = 21, b₃ = 77, couplée à la structure de jauge E₈×E₈ (dim = 496) :
+Un échantillon, une ou deux par classe :
 
-```
-sin²θ_W = b₂ / (b₃ + dim(G₂))  = 21/91  = 3/13
-Q_Koide  = dim(G₂) / b₂          = 14/21  = 2/3
-N_gen    = |PSL(2,7)| / fond(E₇) = 168/56 = 3
-κ_T      = 1/(b₃ − dim(G₂) − p₂) = 1/61
-α        = e^K (couplage géométrique, zéro paramètre libre)
-```
+| Observable | Formule K₇ | Valeur K₇ | Mesure | Écart normalisé | Statut |
+|------------|-------------|-------|------|------|------|
+| Q_Koide | dim(G₂)/b₂ = 2/3 | 0,666667 | 0,6666645(51) | +0,4σ | à moins de 2σ |
+| α_s(M_Z) | √2/(dim(G₂) − p₂) = √2/12 | 0,117851 | 0,1180(9) | −0,2σ | à moins de 2σ |
+| δ_CP | 7·14 + 99 = 197, lu en degrés | 197° | 212 (+26/−36)° | −0,4σ | à moins de 2σ ; assignation d'unité |
+| Ω_DE | ln 2 · 98/99 | 0,686146 | 0,6847(73) | +0,2σ | à moins de 2σ |
+| m_τ/m_e | 7 + 10·248 + 10·99 | 3477 | 3477,37(18) | −2,1σ | tension |
+| m_W/m_Z | 37/42 | 0,880952 | 0,88136(15) | −2,7σ | tension |
+| sin²θ_W(M_Z) | 21/91 = 3/13 | 0,230769 | 0,23122(6) | −7,5σ | proximité |
+| m_μ/m_τ | 10/168 | 0,059524 | 0,0594612(30) | +20,8σ | proximité |
+| m_s/m_d | 4 × 5 = 20 | 20 | 17–22 (intervalle) | s.o. | dans l'intervalle du PDG |
+| sin²θ₂₃ (PMNS) | 6/11 | 0,545455 | 0,470 (+17/−14) | +4,4σ* | tension : second octant, dans l'intervalle à 3σ de NuFIT (*le profil n'est pas gaussien, l'écart gaussien la surestime) |
 
-## Tests de falsification
+**Ce ne sont pas 33 tests indépendants.** Trois secteurs sont surdéterminés, et dans chacun les relations se contredisent en tant qu'égalités exactes : quatre relations leptoniques pour deux rapports de masses, trois relations CKM pour deux paramètres de Wolfenstein, sept relations de densité pour deux densités indépendantes. Aucune n'est choisie après coup.
 
-| Prédiction | Expérience | Calendrier | État |
-|---|---|---|---|
-| δ_CP = 197° (fenêtre [182°, 212°]) | DUNE | 2028–2040 | en attente |
-| sin²θ_W = 3/13 | FCC-ee | 2040s | en attente |
-| N_gen = 3 (pas de 4e gén.) | LHC/FCC | en cours | cohérent |
-| m_s/m_d = 20 | QCD sur réseau | ~2030 | cohérent |
+## Règle de décision
+
+Les relations sont énoncées comme des égalités exactes. Une relation est rejetée quand sa série de référence (PDG, NuFIT, Planck, CODATA) exclut sa valeur à 3σ ; ni la formule, ni l'unité, ni l'échelle, ni le jeu de données ne sont changés ensuite pour la sauver (article principal, §11).
+
+| # | Relation | Valeur | Rejetée quand | Où |
+|---|----------|-------|---------------|-------|
+| D1 | δ_CP, la phase 2π·197/360 | 197° | un ajustement global dont l'intervalle à 3σ exclut 197° ; l'assignation d'unité est rejetée avec elle | DUNE, Hyper-Kamiokande |
+| D2 | sin²θ₂₃ | 6/11 | un ajustement global dont l'intervalle à 3σ exclut 6/11, dans l'un ou l'autre octant | DUNE, Hyper-Kamiokande |
+| D3 | m_τ/m_e et Q_Koide | 1776,74 et 1776,97 MeV pour m_τ | une valeur de m_τ dont l'intervalle à 3σ exclut la valeur, chaque relation séparément | Belle II, BES III |
+| D4 | N_gen | 3 | une quatrième génération séquentielle | LHC, FCC |
+| D5 | m_s/m_d | 20 | une détermination sur réseau, avec incertitude, dont l'intervalle à 3σ exclut 20 | QCD sur réseau |
+
+Un rejet rejette la relation et l'assignation qui l'a produite, pas le programme à lui seul. Une confirmation montrerait qu'une assignation s'accorde avec le monde, pas que la structure l'impose.
+
+## Ce que la version 3.6 retire
+
+Les versions précédentes de ce site disaient que les relations sont dérivées de la géométrie, que le cadre n'a aucun paramètre libre et ne peut pas être ajusté, qu'il prédit 95 observables avec un faible écart moyen, et qu'une probabilité de coïncidence ou une valeur P mesurait son caractère distinctif. La version 3.6 retire chacune de ces affirmations. La liste complète est dans l'article principal (§12.1) et dans le [journal des changements](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md).
 
 ---
 
@@ -86,4 +104,4 @@ Parcourez la barre latérale pour la navigation complète, ou consultez le [plan
 
 ---
 
-*K₇ Framework v3.5 | [GitHub](https://github.com/Arithmon/K7) | [Core](https://github.com/Arithmon/K7-Lean) | [Blueprint](https://arithmon.github.io/K7-Lean/) | [Zenodo (Article A)](https://doi.org/10.5281/zenodo.19892350) · [Article B](https://doi.org/10.5281/zenodo.19893371) · [Article C](https://doi.org/10.5281/zenodo.19708916) | Licence MIT*
+*K₇ Framework v3.6 | [GitHub](https://github.com/Arithmon/K7) | [Core](https://github.com/Arithmon/K7-Lean) | [Blueprint](https://arithmon.github.io/K7-Lean/) | [Zenodo (Article A)](https://doi.org/10.5281/zenodo.19892350) · [Article B](https://doi.org/10.5281/zenodo.19893371) · [Article C](https://doi.org/10.5281/zenodo.19708916) | Licence MIT*

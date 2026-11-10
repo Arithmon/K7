@@ -35,7 +35,7 @@ The K₇ framework assigns 33 dimensionless Standard-Model and cosmological para
 |---|---|
 | **What is proposed** | 33 relations with no continuously adjustable parameter, written in twenty declared structural constants (main §3) |
 | **What is set, not derived** | the residue register R1–R12: the Betti pair, the imposed normalization det(g) = 65/32, κ_T⁻¹ = 61, the unit in which 197 is read as a CP phase, comparison scales and mass schemes, the formula assignments, and the choice among incompatible relations in three overdetermined sectors (main §3.3) |
-| **What is established** | the arithmetic identities stated for the relations, machine-checked in Lean 4 (exact for 24 of the 33; see S3.7); a Newton–Kantorovich-certified seam metric ([A]) |
+| **What is established** | the arithmetic identities stated for the relations, machine-checked in Lean 4 (an exact rational equality for 27 of the 33; see S3.7); a Newton–Kantorovich-certified seam metric ([A]) |
 | **What is open** | a compact torsion-free G₂ manifold with (21, 77): **no construction is currently known**, and the Joyce–Karigiannis route of v3.5 does not realize the pair ([erratum](publications/ERRATUM_v3.5.md) §9); a physical mechanism to the chiral Standard Model; the selection of (21, 77); an assignment rule |
 | **What would refute it** | the decision rule of main §11, written in advance with no repair clause |
 
@@ -43,33 +43,33 @@ The K₇ framework assigns 33 dimensionless Standard-Model and cosmological para
 
 ## The 33 relations against current data
 
-Data: PDG 2026, NuFIT 6.1 (normal ordering, with atmospheric data), Planck 2018 (one column), CODATA 2022; all uncertainties at 1σ, correlations neglected. The relations fall into five classes, which are not added into one score (main §4.2):
+Data: PDG 2026, NuFIT 6.1 (normal ordering, with atmospheric data), Planck 2018 (one column), CODATA 2022; all uncertainties at 1σ, correlations neglected except in the Planck density ratios, which are computed on the published chains. The relations fall into five classes, which are not added into one score (main §4.2):
 
 | Class | Count | Relations |
 |-------|:-----:|-----------|
-| within 2σ | 24 | |
-| tension (between 2σ and 3σ) | 2 | m_τ/m_e, m_W/m_Z |
+| within 2σ | 23 | |
+| tension (between 2σ and 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
 | proximity (beyond 3σ, rejected as an exact equality) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t (in the mass scheme declared in R7) |
 | inside the PDG range (no uncertainty given) | 1 | m_s/m_d |
 | non-Gaussian profile, octant unresolved | 1 | sin²θ₂₃ = 6/11 |
 
 **They are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. The relations of a sector cannot all hold together, though some subsets can; none is selected after the fact.
 
-**Closeness is not distinctive.** In a preregistered look-elsewhere test, each competitor searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (P_global = 0.51, S4). The coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
+**Closeness is not distinctive.** In a preregistered look-elsewhere test, each competitor searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (P_global = 0.51, S4). A witness with no K₇ constant reaches 30 of the 33: the score has little discriminating power. The coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
 
 ---
 
 ## Decision rule (main §11)
 
-The relations are stated as exact equalities; a relation is rejected when a measurement's 3σ interval excludes its value. No theoretical tolerance is added afterwards.
+The relations are stated as exact equalities; a relation is rejected when its reference series (PDG, NuFIT, Planck, CODATA) excludes its value at 3σ. No theoretical tolerance is added afterwards, and a contradicting measurement outside the series is reported beside the class: h = 167/248 agrees with Planck and is excluded by SH0ES at 5.5σ; m_W/m_Z = 37/42 is at −2.7σ against the PDG and −10.6σ against the CDF II W mass.
 
 | # | Relation | Value | Rejected when |
 |---|----------|-------|---------------|
-| D1 | δ_CP, the phase 2π · 197/360 | 197° | a 3σ interval (DUNE, Hyper-Kamiokande, or a global fit) excludes 197°; the unit assignment is rejected with it |
-| D2 | sin²θ₂₃ | 6/11 | a 3σ interval excludes 6/11, in either octant |
-| D3 | m_τ/m_e and Q_Koide | 1776.74 and 1776.97 MeV for m_τ | an m_τ measurement excludes the value at 3σ, for each relation separately |
+| D1 | δ_CP, the phase 2π · 197/360 | 197° | a global fit of the reference series, including DUNE or Hyper-Kamiokande, whose 3σ interval excludes 197°; the unit assignment is rejected with it |
+| D2 | sin²θ₂₃ | 6/11 | a global fit of the reference series whose 3σ interval excludes 6/11, in either octant |
+| D3 | m_τ/m_e and Q_Koide | 1776.74 and 1776.97 MeV for m_τ | a value of m_τ in the reference series whose 3σ interval excludes the value, for each relation separately |
 | D4 | N_gen | 3 | a fourth sequential generation |
-| D5 | m_s/m_d | 20 | a lattice determination with an uncertainty excludes 20 at 3σ |
+| D5 | m_s/m_d | 20 | a lattice determination adopted by the reference series, with an uncertainty whose 3σ interval excludes 20 |
 
 A rejection rejects the relation and the dictionary assignment that produced it; it does not by itself reject the programme. A confirmation would show that an assignment agrees with the world, not that the structure requires it.
 
