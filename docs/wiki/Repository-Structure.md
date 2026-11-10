@@ -41,7 +41,6 @@ K₇/
 │   │   ├── observables.csv            # Machine-readable observables
 │   │   ├── OBSERVABLE_REFERENCE.md    # Complete observable catalog
 │   │   ├── STATISTICAL_EVIDENCE.md    # Rigorous statistical analysis
-│   │   ├── INDEPENDENT_VALIDATIONS.md # External research converging with K₇
 │   │   └── Bibliography.md            # References
 │   └── validation/                    # Monte Carlo validation
 │       └── legacy/v3.3/               # v3.3 validation scripts (archived;

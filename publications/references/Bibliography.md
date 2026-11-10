@@ -195,7 +195,7 @@ Yablo, S. (2012). "Explanation, Extrapolation, and Existence." *Mind*, 121(484):
 
 ---
 
-## Independent Validations & Related Work
+## Works That Cite K₇
 
 Theodorsson, T. (2026). "The Geometric Equation of State: Conservation of Action in the E₈ Vacuum." *Independent manuscript*. [Cites GIFT; writes sin²θ_W = 3/13 from E₈ and G₂ integers]
 
@@ -251,5 +251,5 @@ See Baker (2005, 2009), Steiner
 **For nominalist alternatives:**
 See Field (1980, 1989), Azzouni, Burgess & Rosen
 
-**For independent validations:**
+**For works that cite K₇:**
 See Theodorsson (2026), Zhou & Zhou (2026)

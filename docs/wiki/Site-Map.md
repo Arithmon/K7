@@ -38,7 +38,6 @@ Complete index of all wiki pages.
 | [Observable Reference](Observable-Reference.html) | The 33 relations: formulas, data, status; 62 further entries not counted as predictions |
 | [Statistical Evidence](Statistical-Evidence.html) | The look-elsewhere test: closeness to the data does not distinguish K₇ |
 | [Validation Summary](Validation-Summary.html) | The 33 relations in five classes, and the decision rule |
-| [Independent Validations](Independent-Validations.html) | External research converging with K₇ |
 
 ## Blog Posts
 

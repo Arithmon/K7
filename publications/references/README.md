@@ -14,12 +14,11 @@ Reference documents for the GIFT framework v3.3.
 | [observables.csv](observables.csv) | Machine-readable observable data (predictions + experimental values) |
 | [OBSERVABLE_REFERENCE.md](OBSERVABLE_REFERENCE.md) | Complete observable catalog (51 quantities, v3.3.24) |
 
-### Independent Validations
+### Statistical Evidence
 
 | Document | Content | Status |
 |----------|---------|--------|
-| [INDEPENDENT_VALIDATIONS.md](INDEPENDENT_VALIDATIONS.md) | External research converging with GIFT | Active |
-| [STATISTICAL_EVIDENCE.md](STATISTICAL_EVIDENCE.md) | 78+ relations, deviation analysis, duality patterns | Active |
+| [STATISTICAL_EVIDENCE.md](STATISTICAL_EVIDENCE.md) | Classification of the 33 relations and the look-elsewhere test (v3.6) | Active |
 
 
 ---

@@ -38,7 +38,6 @@ Index complet de toutes les pages du wiki. Les pages avec une version française
 | 🇫🇷 [Référence des observables](Observable-Reference.fr.html) | Les 33 relations : formules, données, statut ; 62 autres entrées non comptées comme prédictions |
 | 🇫🇷 [Éléments statistiques](Statistical-Evidence.fr.html) | Le test look-elsewhere : la proximité avec les données ne distingue pas K₇ |
 | 🇫🇷 [Bilan de validation](Validation-Summary.fr.html) | Les 33 relations en cinq classes, et la règle de décision |
-| [Validations indépendantes](Independent-Validations.html) | Recherches externes qui convergent avec K₇ (en anglais) |
 
 ## Articles de blog
 
