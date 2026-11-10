@@ -1,442 +1,238 @@
-# GIFT Observable Reference
+# Observable Reference
 
-**Version**: 3.3.24
-**Status**: Reference documentation
-**Date**: March 2026
+**Framework version**: 3.6. **Source**: main paper [§3–§4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) and supplement [S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md); every table on this page is copied from the paper by a script. Machine-readable data: [`observables.csv`](https://github.com/Arithmon/K7/blob/main/publications/references/observables.csv) (95 entries).
 
----
-
-## Executive Summary
-
-| Metric | Value |
-|--------|-------|
-| **Core dimensionless predictions** | 18 |
-| **Extended dimensionless** | 15 |
-| **Cosmological parameters** | 11 |
-| **Structural constants** | 18 |
-| **Total cataloged quantities** | **51** |
-| Mean deviation (32 well-measured) | 0.24% (0.57% incl. δ_CP; PDG 2024 / NuFIT 6.0) |
-| Exact matches (< 0.1%) | 14 (42%) |
-| Multiply determined (>=3 expr.) | 92% |
-| Total equivalent expressions | 280+ |
-| Free parameters | 0 |
+The dataset has 95 entries. **33 are relations** compared with measurement and counted in the main paper; **62 are conditional extractions and diagnostics**, kept for traceability and not counted as predictions. Earlier versions of this page counted all 95 as observables predicted by the framework and summarised them by a mean deviation; both are withdrawn.
 
 ---
 
-## 1. GIFT Topological Constants
+## 1. Types
 
-### 1.1 Primary Constants
+| Type | Count | What it is | Counted in main §4 |
+|------|-------|-----------|--------------------|
+| I | 33 | Dimensionless closed forms in the structural constants, assigned to measured parameters | yes |
+| II | 19 | Dimensionful numbers read in a chosen unit (R10), scale bridges, one mixed-scale ratio (B16) and its cascade (B17), and legacy values without a documented derivation | no |
+| III | 21 | Outputs of mechanisms on the approximate seam metric (Wilson-line splitting, associative volumes, spectral counts, bundle conditioning), with calibration choices; and the withdrawn supersymmetric running | no |
+| IV | 22 | Structural quantities and numerical diagnostics, with no experimental counterpart | no |
 
-| Symbol | Value | Definition | mod 7 | Factor |
-|--------|-------|------------|-------|--------|
-| b_0 | 1 | Zeroth Betti number | 1 | - |
-| p_2 | 2 | Duality parameter | 2 | - |
-| N_gen | 3 | Number of generations | 3 | - |
-| Weyl | 5 | Weyl factor | 5 | - |
-| dim(K_7) | 7 | Compact manifold dimension | **0** | 7 |
-| rank(E_8) | 8 | E_8 Cartan rank | 1 | - |
-| D_bulk | 11 | Bulk dimension | 4 | - |
-| alpha_sum | 13 | Anomaly sum | 6 | - |
-| dim(G_2) | 14 | G_2 holonomy dimension | **0** | 2x7 |
-| b_2 | 21 | Second Betti number | **0** | 3x7 |
-| dim(J_3(O)) | 27 | Exceptional Jordan algebra | 6 | - |
-| det(g)_den | 32 | Metric determinant denominator | 4 | 2^5 |
-| 2b_2 | 42 | Structural constant (= p₂ × b₂) | **0** | 6x7 |
-| dim(F_4) | 52 | F_4 dimension | 3 | - |
-| fund(E_7) | 56 | E_7 fundamental representation | **0** | 8x7 |
-| kappa_T^-1 | 61 | Inverse torsion capacity | 5 | prime |
-| det(g)_num | 65 | Metric determinant numerator | 2 | 5x13 |
-| b_3 | 77 | Third Betti number | **0** | 11x7 |
-| dim(E_6) | 78 | E_6 dimension | 1 | - |
-| H* | 99 | Total cohomology (b_2+b_3+1) | 1 | 9x11 |
-| PSL(2,7) | 168 | Fano symmetry order | **0** | 24x7 |
-| dim(E_8) | 248 | E_8 dimension | 3 | - |
-| dim(E_8xE_8) | 496 | Gauge group dimension | 6 | - |
+## 2. The structural constants
 
-### 1.2 Master Algebraic Identities
+All 33 relations are written in twenty structural constants. Seven are primitive; thirteen are derived from them, and the derivation is part of the dictionary.
 
-```
-dim(G_2)       = p_2 x dim(K_7)           = 2 x 7   = 14
-b_2            = N_gen x dim(K_7)         = 3 x 7   = 21
-b_3 + dim(G_2) = dim(K_7) x alpha_sum     = 7 x 13  = 91
-alpha_sum      = rank(E_8) + Weyl         = 8 + 5   = 13
-D_bulk         = rank(E_8) + N_gen        = 8 + 3   = 11
-2b_2           = p_2 x b_2                = 2 x 21  = 42  (structural constant)
-H*             = b_2 + b_3 + 1            = 21+77+1 = 99
+| # | Constant | Value | Origin | Status |
+|---|----------|-------|--------|--------|
+| 1 | dim(E₈) | 248 | Lie algebra | Lie datum |
+| 2 | rank(E₈) | 8 | Cartan subalgebra | Lie datum |
+| 3 | dim(G₂) | 14 | Aut(𝕆) | Lie datum |
+| 4 | dim(K₇) | 7 | Im(𝕆) | topological |
+| 5 | b₂(K₇) | 21 | posited (§10) | input |
+| 6 | b₃(K₇) | 77 | posited (§10) | input |
+| 7 | dim(J₃(𝕆)) | 27 | exceptional Jordan algebra | Lie datum |
+| 8 | N_gen | 3 | b₂/dim(K₇); the integer identity of §2.4 | measured, reproduced |
+| 9 | p₂ | 2 | dim(G₂)/dim(K₇) ("binary ratio"; not a Pontryagin class) | combination |
+| 10 | Weyl | 5 | factor of \|W(E₈)\| | combination |
+| 11 | H* | 99 | b₂ + b₃ + 1 | combination |
+| 12 | dim(E₆) | 78 | Lie algebra | Lie datum |
+| 13 | dim(E₇) | 133 | Lie algebra | Lie datum |
+| 14 | dim(F₄) | 52 | Aut(J₃(𝕆)) | Lie datum |
+| 15 | fund(E₇) | 56 | fundamental representation | Lie datum |
+| 16 | \|PSL(2,7)\| | 168 | automorphisms of the Fano plane | Lie datum |
+| 17 | D_bulk | 11 | 4 + 7 | combination |
+| 18 | α_sum | 13 | rank(E₈) + Weyl | combination |
+| 19 | det_den | 32 | b₂ + dim(G₂) − N_gen | combination; enters det(g) |
+| 20 | det_num | 65 | p₂ · det_den + 1 (also Weyl × α_sum) | combination; enters det(g) |
 
-PSL(2,7) = 168 = rank(E_8) x b_2          = 8 x 21
-               = N_gen x fund(E_7)        = 3 x 56
-               = (b_3 + dim(G_2)) + b_3   = 91 + 77
-```
+N_gen = 3 is an integer identity (b₂/dim K₇), not the output of an index theorem. b₂ and b₃ are inputs posited by the framework, not quantities confirmed by a computation: no compact G₂ manifold with (21, 77) is currently constructed.
+
+## 3. The 33 relations
+
+Formulas, values and status. Data: PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022; uncertainties at 1σ. The pull is (K₇ − measured)/σ with the experimental uncertainty alone.
+
+| ID | Observable | Formula | K₇ value | Measured | Dev. | Pull | Status |
+|---|-------|-------------|------|----------|------|-----|--------|
+| A01 | sin²θ_W (M_Z) | b₂/(b₃ + dim G₂) = 3/13 | 0.230769 | 0.23122(6) | −0.19% | −7.5σ | integer; **proximity** |
+| A02 | α_s(M_Z) | √2/(dim G₂ − p₂) = √2/12 | 0.117851 | 0.1180(9) | −0.13% | −0.2σ | algebraic |
+| A03 | λ_H | √(dim G₂ + N_gen)/det_den = √17/32 | 0.128847 | 0.12914(23) | −0.22% | −1.3σ | algebraic; det(g) |
+| A04 | α⁻¹(0) | 128 + 9 + det(g)·κ_T | 137.0333 | 137.035999177(21) | −0.0020% | ≫ 10σ | det(g), κ_T; **proximity** |
+| A05 | Q_Koide | dim G₂/b₂ = 2/3 | 0.666667 | 0.6666645(51) | +0.0003% | +0.4σ | integer; approximate (R8) |
+| A06 | m_τ/m_e | 7 + 10·248 + 10·99 = 3477 | 3477 | 3477.37(18) | −0.011% | −2.1σ | integer; approximate (R8); **tension** |
+| A07 | m_μ/m_e | 27^φ | 207.012 | 206.7682827(46) | +0.12% | ≫ 10σ | φ; approximate (R8); **proximity** |
+| A08 | m_s/m_d | p₂² × Weyl = 20 | 20 | 17–22 (range) | n/a | n/a | integer; inside the PDG range |
+| A09 | m_c/m_s | (dim E₈ − p₂)/b₂ = 246/21 | 11.714 | 11.769(35) | −0.46% | −1.6σ | integer |
+| A10 | m_b/m_t | 1/(2b₂) = 1/42 | 0.023810 | 0.024253(43) | −1.83% | −10.2σ | integer; **proximity** (in the scheme declared in R7) |
+| A11 | m_u/m_d | (1 + dim E₆)/\|PSL(2,7)\| = 79/168 | 0.470238 | 0.462(12) | +1.78% | +0.7σ | integer |
+| A12 | sin²θ₁₂ (PMNS) | (1 + N_gen)/α_sum = 4/13 | 0.307692 | 0.3088(+67/−66) | −0.36% | −0.2σ | integer |
+| A13 | sin²θ₂₃ (PMNS) | (D_bulk − Weyl)/D_bulk = 6/11 | 0.545455 | 0.470(+17/−14) | +16.05% | +4.4σ* | integer; **tension** (octant; inside the NuFIT 3σ range, §4.3) |
+| A14 | sin²θ₁₃ (PMNS) | D_bulk/dim(E₈×E₈) = 11/496 | 0.022177 | 0.02248(+55/−59) | −1.35% | −0.5σ | integer |
+| A15 | δ_CP | dim K₇ · dim G₂ + H* = 197 | 197 → phase 2π·197/360 | 212 (+26/−36)° | −7.08% | −0.4σ | **unit assignment** (R6) |
+| A16 | sin θ₁₂ (CKM) | fund(E₇)/dim E₈ = 56/248 | 0.225806 | 0.22517(68) | +0.28% | +0.9σ | integer; approximate (R12) |
+| A17 | A (Wolfenstein) | (Weyl + dim E₆)/H* = 83/99 | 0.838384 | 0.826(+17/−15) | +1.50% | +0.7σ | integer; approximate (R12) |
+| A18 | sin θ₂₃ (CKM) | dim K₇/\|PSL(2,7)\| = 7/168 | 0.041667 | 0.04189(+81/−69) | −0.53% | −0.3σ | integer; approximate (R12) |
+| A19 | m_H/m_t | fund(E₇)/b₃ = 56/77 | 0.727273 | 0.7250(13) | +0.32% | +1.8σ | integer |
+| A20 | m_H/m_W | (N_gen + dim E₆)/dim F₄ = 81/52 | 1.557692 | 1.5571(14) | +0.040% | +0.5σ | integer |
+| A21 | m_W/m_Z | (2b₂ − Weyl)/(2b₂) = 37/42 | 0.880952 | 0.88136(15) | −0.046% | −2.7σ | integer; **tension** |
+| A22 | m_μ/m_τ | (b₂ − D_bulk)/\|PSL(2,7)\| = 10/168 | 0.059524 | 0.0594612(30) | +0.11% | +20.8σ | integer; approximate (R8); **proximity** |
+| A23 | Ω_DE | ln 2 · (b₂ + b₃)/H* | 0.686146 | 0.6847(73) | +0.21% | +0.2σ | ln 2; approximate (R11) |
+| A24 | n_s | ζ(11)/ζ(5) | 0.964864 | 0.9649(42) | −0.0037% | 0.0σ | ζ values |
+| A25 | Ω_DM/Ω_b | (1 + 2b₂)/rank E₈ = 43/8 | 5.375 | 5.364(77) | +0.21% | +0.1σ | integer; approximate (R11) |
+| A26 | Ω_c/Ω_Λ | det_num/\|PSL(2,7)\| = 65/168 | 0.386905 | 0.387(14) | +0.10% | 0.0σ | integer; det(g); approximate (R11) |
+| A27 | Ω_Λ/Ω_m | (dim G₂ + H*)/dim F₄ = 113/52 | 2.173077 | 2.173(74) | −0.017% | 0.0σ | integer; approximate (R11) |
+| A28 | h | (\|PSL(2,7)\| − 1)/dim E₈ = 167/248 | 0.673387 | 0.6736(54) | −0.032% | 0.0σ | integer |
+| A29 | Ω_b/Ω_m | Weyl/det_den = 5/32 | 0.15625 | 0.1565(19) | −0.13% | −0.1σ | integer; det(g); approximate (R11) |
+| A30 | Ω_c/Ω_m | (det_den − Weyl)/det_den = 27/32 | 0.84375 | 0.8390(19) | +0.56% | +2.5σ | integer; det(g); approximate (R11); **tension** |
+| A31 | σ₈ | (p₂ + det_den)/(2b₂) = 34/42 | 0.809524 | 0.8111(60) | −0.19% | −0.3σ | integer; det(g) |
+| A32 | Y_p | (1 + dim G₂)/κ_T⁻¹ = 15/61 | 0.245902 | 0.245(3) | +0.37% | +0.3σ | integer; κ_T |
+| A33 | Ω_m/Ω_Λ | (1 + dim J₃(𝕆))/κ_T⁻¹ = 28/61 | 0.459016 | 0.461(16) | −0.35% | −0.1σ | integer; κ_T; approximate (R11) |
+
+The classes, the overdetermined sectors and the decision rule are on the [Validation Summary](../../docs/wiki/Validation-Summary.md). How distinctive the agreement is: [Statistical Evidence](STATISTICAL_EVIDENCE.md).
+
+### Reference data and conventions
+
+| ID | Observable | Measured | Source | Pull | Convention / note | Status |
+|---|--------|------------|-------|----|---------------------|---------------|
+| A01 | sin²θ_W (M_Z) | 0.23122(6) | PDG 2026 | −7.5σ | MS-bar at M_Z (PDG Table 1.1) | integer; **proximity** |
+| A02 | α_s(M_Z) | 0.1180(9) | PDG 2026 | −0.2σ | n/a | algebraic |
+| A03 | λ_H | 0.12914(23) | PDG 2026 | −1.3σ | tree level m_H²/(2v²), v = (√2 G_F)^(−1/2) = 246.220 GeV | algebraic; det(g) |
+| A04 | α⁻¹(0) | 137.035999177(21) | CODATA 2022 | ≫ 10σ | α⁻¹ at q² = 0 | det(g), κ_T; **proximity** |
+| A05 | Q_Koide | 0.6666645(51) | PDG 2026 | +0.4σ | computed from the PDG 2026 masses | integer; approximate (R8) |
+| A06 | m_τ/m_e | 3477.37(18) | PDG 2026 | −2.1σ | from the PDG 2026 masses | integer; approximate (R8); **tension** |
+| A07 | m_μ/m_e | 206.7682827(46) | CODATA 2022 | ≫ 10σ | n/a | φ; approximate (R8); **proximity** |
+| A08 | m_s/m_d | 17–22 (range) | PDG 2026 | n/a | PDG gives the range 17–22, not a measurement with an uncertainty | integer; inside the PDG range |
+| A09 | m_c/m_s | 11.769(35) | PDG 2026 | −1.6σ | lattice average (N_f = 2+1+1), PDG quark-mass review | integer |
+| A10 | m_b/m_t | 0.024253(43) | PDG 2026 | −10.2σ | m_b at 90% CL converted to 1σ | integer; **proximity** (in the scheme declared in R7) |
+| A11 | m_u/m_d | 0.462(12) | PDG 2026 | +0.7σ | MS-bar at 2 GeV | integer |
+| A12 | sin²θ₁₂ (PMNS) | 0.3088(+67/−66) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.2σ | n/a | integer |
+| A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.584, contains 6/11 | integer; **tension** (octant; inside the NuFIT 3σ range, main §4.3) |
+| A14 | sin²θ₁₃ (PMNS) | 0.02248(+55/−59) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.5σ | n/a | integer |
+| A15 | δ_CP | 212 (+26/−36)° | NuFIT 6.1 (IC24+SK-atm, NO) | −0.4σ | degrees | **unit assignment** (R6) |
+| A16 | sin θ₁₂ (CKM) | 0.22517(68) | PDG 2026 | +0.9σ | PDG CKM review: sin θ₁₂ = λ (not squared) | integer; approximate (R12) |
+| A17 | A (Wolfenstein) | 0.826(+17/−15) | PDG 2026 | +0.7σ | PDG CKM review, Wolfenstein fit | integer; approximate (R12) |
+| A18 | sin θ₂₃ (CKM) | 0.04189(+81/−69) | PDG 2026 | −0.3σ | PDG CKM review: sin θ₂₃ = Aλ² (not squared) | integer; approximate (R12) |
+| A19 | m_H/m_t | 0.7250(13) | PDG 2026 | +1.8σ | m_t from direct measurements | integer |
+| A20 | m_H/m_W | 1.5571(14) | PDG 2026 | +0.5σ | n/a | integer |
+| A21 | m_W/m_Z | 0.88136(15) | PDG 2026 | −2.7σ | W/Z mass ratio of the PDG summary table | integer; **tension** |
+| A22 | m_μ/m_τ | 0.0594612(30) | PDG 2026 | +20.8σ | from the PDG 2026 masses | integer; approximate (R8); **proximity** |
+| A23 | Ω_DE | 0.6847(73) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.2σ | Ω_Λ | ln 2; approximate (R11) |
+| A24 | n_s | 0.9649(42) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | n/a | ζ values |
+| A25 | Ω_DM/Ω_b | 5.364(77) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.1σ | Ω_c h² / Ω_b h² | integer; approximate (R11) |
+| A26 | Ω_c/Ω_Λ | 0.387(14) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | Ω_c h² / h² / Ω_Λ | integer; det(g); approximate (R11) |
+| A27 | Ω_Λ/Ω_m | 2.173(74) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | Ω_Λ / Ω_m, Planck definitions | integer; approximate (R11) |
+| A28 | h | 0.6736(54) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | n/a | integer |
+| A29 | Ω_b/Ω_m | 0.1565(19) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | Ω_b h² / Ω_m h², Ω_m includes neutrinos | integer; det(g); approximate (R11) |
+| A30 | Ω_c/Ω_m | 0.8390(19) | Planck 2018 (TT,TE,EE+lowE+lensing) | +2.5σ | Ω_c h² / Ω_m h², Ω_m includes neutrinos | integer; det(g); approximate (R11); **tension** |
+| A31 | σ₈ | 0.8111(60) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.3σ | n/a | integer; det(g) |
+| A32 | Y_p | 0.245(3) | PDG 2024 (BBN review, eq. 24.3) | +0.3σ | n/a | integer; κ_T |
+| A33 | Ω_m/Ω_Λ | 0.461(16) | Planck 2018 (TT,TE,EE+lowE+lensing) | −0.1σ | Ω_m / Ω_Λ, Planck definitions | integer; κ_T; approximate (R11) |
+
+## 4. The 62 conditional and diagnostic entries
+
+"Reference value" is the measured value where one exists, otherwise the mathematical expectation the entry is compared with, otherwise n/a. None of these entries is counted as a prediction.
+
+| ID | Type | Quantity | Formula or mechanism | Framework value | Reference value | Status |
+|---|---|-------|-------------|------|------|----------------------|
+| B01 | II | m_u | sqrt(dim(G₂)/3) | 2.16 | 2.16 | unit assignment (R10) |
+| B02 | II | m_d | ln(107) | 4.673 | 4.7 | unit assignment (R10) |
+| B03 | II | m_s | τ×24 | 93.52 | 92.9 | unit assignment (R10) |
+| B04 | II | m_c | (dim(G₂)-π)³ | 1280 | 1272.9 | unit assignment (R10) |
+| B05 | II | m_b | 2b₂×H* | 4158 | 4186 | unit assignment (R10) |
+| B06 | II | m_t | 415² | 172225 | 172600 | unit assignment (R10) |
+| B07 | II | v_EW | Scale bridge from the unit assignment (R10) | 246.87 | 246.22 | scale bridge; unit assignment (R10) |
+| B08 | II | M_W | (g₂/2)×v_EW | 80.4 | 80.3625 | scale bridge; unit assignment (R10) |
+| B09 | II | M_Z | M_W/cos(θ_W) | 91.2 | 91.1879 | scale bridge; unit assignment (R10) |
+| B10 | II | \|V_us\| | not documented (legacy label: Cabibbo from b₂) | 0.2245 | 0.2243 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
+| B11 | II | \|V_cb\| | not documented (legacy label: 2nd gen mixing) | 0.04214 | 0.0422 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
+| B12 | II | \|V_ub\| | not documented (legacy label: 3rd gen coupling) | 0.003947 | 0.00394 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
+| B13 | II | \|V_td\| | not documented (legacy label: down-type mixing) | 0.008657 | 0.00867 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
+| B14 | II | \|V_ts\| | not documented (legacy label: strange-top coupling) | 0.04154 | 0.0415 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
+| B15 | II | \|V_tb\| | not documented (legacy label: unitarity) | 0.999106 | 0.999105 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
+| B16 | II | m_c/m_s (ext) | τ×3.49 | 13.6 | 13.6 | mixed scales (m_c at m_c, m_s at 2 GeV); not comparable |
+| B17 | II | m_c/m_d | m_c/m_s (ext, B16) × m_s/m_d (A08) = τ×3.49×20 | 271.99 | 272 | cascade of B16 (Type II, not comparable) and A08; no independent content |
+| B18 | II | m_b/m_d | not documented (legacy label: cascade) | 891.97 | 893 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
+| B19 | II | m_t/m_c | not documented (legacy label: cascade) | 135.49 | 136 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
+| C01 | III | m_τ/m_e (dyn) | Wilson line 3-gen optimization | 3403.1 | 3477.37 | conditional reconstruction (calibration choices, main §6.2) |
+| C02 | III | m_τ/m_μ (dyn) | Wilson line 3-gen optimization | 16.5441 | 16.8177 | conditional reconstruction (calibration choices, main §6.2) |
+| C03 | III | c* | Non-adiabatic threshold | 0.177828 | n/a | diagnostic of the approximate seam metric |
+| C04 | III | sin²θ_W (RGE) | 2-loop MSSM RGE | 0.237655 | 0.23122 | withdrawn (supersymmetric running from a GUT boundary, main §5) |
+| C05 | III | α_s (RGE) | 2-loop MSSM RGE | 0.103769 | 0.118 | withdrawn (supersymmetric running from a GUT boundary, main §5) |
+| C06 | III | M_GUT | Gauge unification | 2e+16 | 2e+16 | withdrawn (supersymmetric running from a GUT boundary, main §5) |
+| C07 | III | α_GUT⁻¹ | Gauge unification | 25.3 | 25.3 | withdrawn (supersymmetric running from a GUT boundary, main §5) |
+| C08 | III | λ₁ | Neumann FD + Richardson | 0.124607 | n/a | diagnostic of the approximate seam metric |
+| C09 | III | α_Weyl | N(λ) ~ C λ^(d/2) | 3.46002 | 3.5 | diagnostic of the approximate seam metric (compared with d/2, not a measurement) |
+| C10 | III | N_KK | Unified KK tower enumeration | 22671 | n/a | diagnostic of the approximate seam metric |
+| C11 | III | N_fiber | Adiabatic + explicit fiber modes | 57578 | n/a | diagnostic of the approximate seam metric |
+| C12 | III | spacing | Level spacing statistics | 1.35838 | n/a | diagnostic of the approximate seam metric |
+| C13 | III | κ_gauge | f_IJ eigenvalue spread | 1.0471 | 1 | diagnostic of the approximate seam metric (compared with 1, not a measurement) |
+| C14 | III | n_SD | Count of positive eigenvalues of the K3 intersection form | 3 | 3 | diagnostic of the approximate seam metric (compared with N_gen) |
+| C15 | III | N_assoc | Homology 3-cycles with φ-calibration | 57 | n/a | diagnostic of the approximate seam metric |
+| C16 | III | \|\|T\|\|_C⁰ | G₂ torsion norm | 2.98e-05 | n/a | diagnostic of the approximate seam metric |
+| C17 | III | ΔV(e-τ) | Associative volume differences | 8.6331 | 8.15393 | conditional reconstruction (calibration choices, main §6.2) |
+| C18 | III | ΔV(e-μ) | Associative volume differences | 3.27125 | 2.82257 | conditional reconstruction (calibration choices, main §6.2); mismatched reference (see Type III above) |
+| C19 | III | m_τ/m_e (comb) | Wilson-line ratio × exp(e^K · ΔV) | 3485.3 | 3477.37 | conditional reconstruction (calibration choices, main §6.2) |
+| C20 | III | m_τ/m_μ (comb) | Wilson-line ratio × exp(e^K · ΔV) | 16.69 | 16.8177 | conditional reconstruction (calibration choices, main §6.2); inherits the C18 pairing |
+| C21 | III | m_μ/m_e (comb) | Wilson-line ratio × exp(e^K · ΔV) | 208.8 | 206.768 | conditional reconstruction (calibration choices, main §6.2); ratio C19/C20, inherits the C18 pairing |
+| D01 | IV | b₂ | TCS K₇ | 21 | n/a | input (R1) |
+| D02 | IV | b₃ | TCS K₇ | 77 | n/a | input (R1) |
+| D03 | IV | H* | b₂+b₃+1 | 99 | n/a | integer combination of R1 |
+| D04 | IV | N_gen | b₂/dim(K₇) | 3 | n/a | integer identity (main §2.4) |
+| D05 | IV | det(g) | det(g₅) | 2.03125 | n/a | imposed normalization (R2) |
+| D06 | IV | h_NK | β×η×γ | 8.95e-09 | n/a | diagnostic of the approximate seam metric |
+| D07 | IV | dist(g,g*) | NK contraction ball | 4.86e-06 | n/a | diagnostic of the approximate seam metric |
+| D08 | IV | \|\|T\|\|_C⁰ (cert) | Chebyshev coefficient bound | 2.95e-05 | n/a | diagnostic of the approximate seam metric |
+| D09 | IV | κ(G_K3) | L² Gram matrix K3 2-forms | 1.05232 | n/a | diagnostic of the approximate seam metric |
+| D10 | IV | N_levels | Unified spectrum enumeration | 22671 | n/a | diagnostic of the approximate seam metric |
+| D11 | IV | `N_states_total` | Including degeneracies | 210060 | n/a | diagnostic of the approximate seam metric |
+| D12 | IV | V_eff | Effective 7D volume from Weyl fit | 5.38e+05 | n/a | diagnostic of the approximate seam metric |
+| D13 | IV | n_homology | b₃ = 77 | 77 | n/a | diagnostic of the approximate seam metric |
+| D14 | IV | N_assoc | φ-calibrated cycles | 57 | n/a | diagnostic of the approximate seam metric |
+| D15 | IV | \|\|Y\|\| | Total Yukawa coupling norm | 8.96902 | n/a | diagnostic of the approximate seam metric |
+| D16 | IV | ΔV_range | max(V) - min(V) | 8.91952 | n/a | diagnostic of the approximate seam metric |
+| D17 | IV | g_ss | g_ss = 19/6 (S¹ sector) | 3.16667 | n/a | diagnostic of the approximate seam metric |
+| D18 | IV | g_T2 | g_T2 = 7/6 (T² sector) | 1.16667 | n/a | diagnostic of the approximate seam metric |
+| D19 | IV | g_K3 | g_K3 ~ 64/77 (K3 sector mean) | 0.831169 | n/a | diagnostic of the approximate seam metric |
+| D20 | IV | N_QNM | b2 + b3 = H* - 1 | 98 | n/a | from [42]; topological count |
+| D21 | IV | `b3/b3_S3S4` | b3(K7) = 77 vs b3(S3xS4) = 1 | 77 | n/a | from [42]; topological count |
+| D22 | IV | M_res | tau_0 = v_EW, M_res = v_EW^2 / M_Pl | 4969.2 | n/a | from [42]; conditional on the scale identification τ₀ = v_EW |
+
+## 5. Lean cross-references
+
+The arithmetic of each of the 33 relations is machine-checked in Lean 4 (Arithmon/K7-Lean, aggregate `relations_v36_certified`). The formalization verifies that each closed form evaluates to the stated number; it does not establish the physical content of a relation or the choice of assignments.
+
+| ID | Observable | Lean declaration (under `GIFT.`) | Location | Scope |
+|---|------|---------------------|-------------|-------------|
+| A01 | sin²θ_W | `Certificate.RelationsV36.A01_sin2_theta_W` | Certificate/RelationsV36.lean:50 | exact rational equality of the closed form |
+| A02 | α_s(M_Z) | `Certificate.RelationsV36.A02_alpha_s` | Certificate/RelationsV36.lean:55 | closed form in ℝ equal to the stated real value (no numerical bound) |
+| A03 | λ_H | `Certificate.RelationsV36.A03_lambda_H` | Certificate/RelationsV36.lean:59 | closed form in ℝ equal to the stated real value (no numerical bound) |
+| A04 | α⁻¹(0) | `Certificate.RelationsV36.A04_alpha_inv` | Certificate/RelationsV36.lean:65 | exact rational equality of the closed form |
+| A05 | Q_Koide | `Certificate.RelationsV36.A05_Q_Koide` | Certificate/RelationsV36.lean:73 | exact rational equality of the closed form |
+| A06 | m_τ/m_e | `Certificate.RelationsV36.A06_m_tau_m_e` | Certificate/RelationsV36.lean:77 | exact rational equality of the closed form |
+| A07 | m_μ/m_e | `Certificate.RelationsV36.A07_m_mu_m_e` | Certificate/RelationsV36.lean:81 | base 27 and interval bounds on 27^φ |
+| A08 | m_s/m_d | `Certificate.RelationsV36.A08_m_s_m_d` | Certificate/RelationsV36.lean:91 | exact rational equality of the closed form |
+| A09 | m_c/m_s | `Certificate.RelationsV36.A09_m_c_m_s` | Certificate/RelationsV36.lean:95 | exact rational equality of the closed form |
+| A10 | m_b/m_t | `Certificate.RelationsV36.A10_m_b_m_t` | Certificate/RelationsV36.lean:100 | exact rational equality of the closed form |
+| A11 | m_u/m_d | `Certificate.RelationsV36.A11_m_u_m_d` | Certificate/RelationsV36.lean:104 | exact rational equality of the closed form |
+| A12 | sin²θ₁₂ᴾᴹᴺˢ | `Certificate.RelationsV36.A12_sin2_theta12_PMNS` | Certificate/RelationsV36.lean:109 | exact rational equality of the closed form |
+| A13 | sin²θ₂₃ᴾᴹᴺˢ | `Certificate.RelationsV36.A13_sin2_theta23_PMNS` | Certificate/RelationsV36.lean:113 | exact rational equality of the closed form |
+| A14 | sin²θ₁₃ᴾᴹᴺˢ | `Certificate.RelationsV36.A14_sin2_theta13_PMNS` | Certificate/RelationsV36.lean:117 | exact rational equality of the closed form |
+| A15 | δ_CP | `Certificate.RelationsV36.A15_delta_CP` | Certificate/RelationsV36.lean:122 | the integer 197 (the unit is not in Lean) |
+| A16 | sin θ₁₂ᶜᴷᴹ | `Certificate.RelationsV36.A16_sin_theta12_CKM` | Certificate/RelationsV36.lean:126 | exact rational equality of the closed form |
+| A17 | A_Wolf | `Certificate.RelationsV36.A17_A_Wolf` | Certificate/RelationsV36.lean:131 | exact rational equality of the closed form |
+| A18 | sin θ₂₃ᶜᴷᴹ | `Certificate.RelationsV36.A18_sin_theta23_CKM` | Certificate/RelationsV36.lean:135 | exact rational equality of the closed form |
+| A19 | m_H/m_t | `Certificate.RelationsV36.A19_m_H_m_t` | Certificate/RelationsV36.lean:140 | exact rational equality of the closed form |
+| A20 | m_H/m_W | `Certificate.RelationsV36.A20_m_H_m_W` | Certificate/RelationsV36.lean:145 | exact rational equality of the closed form |
+| A21 | m_W/m_Z | `Certificate.RelationsV36.A21_m_W_m_Z` | Certificate/RelationsV36.lean:150 | exact rational equality of the closed form |
+| A22 | m_μ/m_τ | `Certificate.RelationsV36.A22_m_mu_m_tau` | Certificate/RelationsV36.lean:155 | exact rational equality of the closed form |
+| A23 | Ω_DE | `Certificate.RelationsV36.A23_Omega_DE` | Certificate/RelationsV36.lean:159 | closed form in ℝ equal to the stated real value (no numerical bound) |
+| A24 | n_s | `Certificate.RelationsV36.A24_n_s` | Certificate/RelationsV36.lean:165 | indices (11, 5) and ζ(D_bulk)/ζ(Weyl) = ζ(11)/ζ(5) (no numerical bound) |
+| A25 | Ω_DM/Ω_b | `Certificate.RelationsV36.A25_Omega_DM_b` | Certificate/RelationsV36.lean:173 | exact rational equality of the closed form |
+| A26 | Ω_c/Ω_Λ | `Certificate.RelationsV36.A26_Omega_c_Lambda` | Certificate/RelationsV36.lean:177 | exact rational equality of the closed form |
+| A27 | Ω_Λ/Ω_m | `Certificate.RelationsV36.A27_Omega_Lambda_m` | Certificate/RelationsV36.lean:182 | exact rational equality of the closed form |
+| A28 | h | `Certificate.RelationsV36.A28_hubble_h` | Certificate/RelationsV36.lean:187 | exact rational equality of the closed form |
+| A29 | Ω_b/Ω_m | `Certificate.RelationsV36.A29_Omega_b_m` | Certificate/RelationsV36.lean:191 | exact rational equality of the closed form |
+| A30 | Ω_c/Ω_m | `Certificate.RelationsV36.A30_Omega_c_m` | Certificate/RelationsV36.lean:196 | exact rational equality of the closed form |
+| A31 | σ_8 | `Certificate.RelationsV36.A31_sigma_8` | Certificate/RelationsV36.lean:200 | exact rational equality of the closed form |
+| A32 | Y_p | `Certificate.RelationsV36.A32_Y_p` | Certificate/RelationsV36.lean:204 | exact rational equality of the closed form |
+| A33 | Ω_m/Ω_Λ | `Certificate.RelationsV36.A33_Omega_m_Lambda` | Certificate/RelationsV36.lean:208 | exact rational equality of the closed form |
 
 ---
 
-## 2. Structural Inevitability Classification
-
-Each observable receives a classification based on the number of independent algebraic expressions:
-
-| Classification | Criteria | Interpretation |
-|----------------|----------|----------------|
-| **CANONICAL** | >=20 expressions | Maximally over-determined; value emerges from algebraic web |
-| **ROBUST** | 10-19 expressions | Highly constrained; multiple independent derivations |
-| **SUPPORTED** | 5-9 expressions | Multiply derived; structural redundancy |
-| **DERIVED** | 2-4 expressions | At least dual derivation |
-| **SINGULAR** | 1 expression | Unique derivation (possible numerical coincidence) |
-
-**Cross-reference with GIFT_ATLAS.json status labels:**
-
-| This document | Atlas equivalent | Mapping rationale |
-|---------------|-----------------|-------------------|
-| CANONICAL | VERIFIED | Lean-proven, maximally over-determined |
-| ROBUST | VERIFIED | Multiple independent derivations confirm |
-| SUPPORTED | TOPOLOGICAL | Direct topological consequence |
-| DERIVED | TOPOLOGICAL | Algebraic consequence of topological invariants |
-| SINGULAR | TOPOLOGICAL | Single derivation, but topologically grounded |
-
----
-
-## 3. Core 18 Dimensionless Predictions
-
-### 3.1 Structural
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 1 | **N_gen** | Atiyah-Singer index | **3** | 3 | 0.00% | 24+ | CANONICAL |
-
-### 3.2 Electroweak Sector
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 2 | **sin^2 theta_W** | b_2/(b_3+dim_G_2) | 3/13 = 0.2308 | 0.23122 | 0.20% | 19 | ROBUST |
-| 3 | **alpha_s(M_Z)** | sqrt(2)/(dim_G2 - p_2) | sqrt(2)/12 = 0.1179 | 0.1179 | 0.042% | 9 | TOPOLOGICAL |
-| 4 | **lambda_H** | sqrt(17)/32 | 0.1288 | 0.129 | 0.12% | 4 | DERIVED |
-| 5 | **alpha^-1(0)** | 128+9+corr | 137.033 | 137.036 | 0.002% | 3 | DERIVED |
-
-### 3.3 Lepton Sector
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 6 | **Q_Koide** | dim_G_2/b_2 | 2/3 | 0.666661 | 0.001% | 27 | CANONICAL |
-| 7 | **m_tau/m_e** | 7+10x248+10x99 | 3477 | 3477.15 | 0.004% | 3 | DERIVED |
-| 8 | **m_mu/m_e** | 27^phi | 207.01 | 206.768 | 0.12% | 2 | DERIVED |
-
-### 3.4 Quark Sector
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 9 | **m_s/m_d** | p_2^2 x Weyl | 4 x 5 = 20 | 20.0 | 0.00% | 14 | VERIFIED |
-| 10 | **m_c/m_s** | (dim_E8-p_2)/b_2 | 246/21 = 11.71 | 11.7 | 0.12% | 5 | SUPPORTED |
-| 11 | **m_b/m_t** | 1/(2b₂) | 1/42 = 0.0238 | 0.024 | 0.79% | 12 | ROBUST |
-| 12 | **m_u/m_d** | (1+dim_E6)/PSL_27 | 79/168 = 0.470 | 0.47 | 0.05% | 4 | DERIVED |
-
-### 3.5 Neutrino/PMNS Sector
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 13 | **delta_CP** | dim_K7 x dim_G2 + H* | 197 deg | 197 deg +/- 24 deg | 0.00% | 3 | DERIVED |
-| 14 | **theta_13^PMNS** | pi/b_2 | 8.57 deg | 8.54 deg | 0.37% | 3 | DERIVED |
-| 15 | **theta_23^PMNS** | arcsin((b_3-p_2)/H*) = arcsin(25/33) | 49.25 deg | 49.3 deg | 0.10% | 2 | TOPOLOGICAL |
-| 16 | **theta_12^PMNS** | arctan(sqrt(delta/gamma)) | 33.40 deg | 33.41 deg | 0.03% | 2 | DERIVED |
-
-
-> **θ₂₃ octant, standing verdict.** The experimental column above is pinned to the
-> dataset named at the top of this reference. The octant itself is a separate,
-> unresolved question: the framework predicts the upper octant, the NuFIT 6.1 best
-> fit is 43.3° in the lower octant, and the octant has flipped between consecutive
-> global fits. This prediction is recorded as **in tension** in the [scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
-
-### 3.6 Cosmological Sector
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 17 | **Omega_DE** | ln(2)x(b_2+b_3)/H* | 0.6861 | 0.6847 | 0.21% | 2 | DERIVED |
-| 18 | **n_s** | zeta(11)/zeta(5) | 0.9649 | 0.9649 | 0.004% | 2 | DERIVED |
-
----
-
-## 4. Extended Dimensionless Predictions (15)
-
-### 4.1 PMNS sin^2 Form
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 19 | **sin^2 theta_12^PMNS** | (1+N_gen)/alpha_sum | 4/13 = 0.308 | 0.307 | 0.23% | 21 | CANONICAL |
-| 20 | **sin^2 theta_23^PMNS** | (D_bulk-Weyl)/D_bulk | 6/11 = 0.545 | 0.546 | 0.10% | 13 | ROBUST |
-| 21 | **sin^2 theta_13^PMNS** | D_bulk/dim_E8^2 | 11/496 = 0.022 | 0.0220 | 0.81% | 5 | SUPPORTED |
-
-### 4.2 CKM Matrix
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 22 | **sin^2 theta_12^CKM** | fund_E7/dim_E8 | 56/248 = 0.2258 | 0.2250 | 0.36% | 16 | ROBUST |
-| 23 | **A_Wolfenstein** | (Weyl+dim_E6)/H* | 83/99 = 0.838 | 0.836 | 0.29% | 7 | SUPPORTED |
-| 24 | **sin^2 theta_23^CKM** | dim_K7/PSL_27 | 7/168 = 0.042 | 0.0412 | 1.13% | 4 | DERIVED |
-
-### 4.3 Boson Mass Ratios
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 25 | **m_H/m_t** | fund_E7/b_3 | 56/77 = 0.7273 | 0.725 | 0.31% | 16 | ROBUST |
-| 26 | **m_H/m_W** | (N_gen+dim_E6)/dim_F4 | 81/52 = 1.5577 | 1.558 | 0.02% | 3 | DERIVED |
-| 27 | **m_W/m_Z** | (chi-Weyl)/chi | 37/42 = 0.8810 | 0.8815 | 0.06% | 8 | SUPPORTED |
-
-**Note**: m_W/m_Z = 37/42 is a **v3.3 correction**. Previous formula (23/26) had 0.35% deviation; new formula achieves 0.06%.
-
-### 4.4 Lepton Ratios Extended
-
-| # | Observable | GIFT Formula | Value | Exp. | Dev. | # Expr. | Status |
-|---|------------|--------------|-------|------|------|---------|--------|
-| 28 | **m_mu/m_tau** | (b_2-D_bulk)/PSL_27 | 10/168 = 0.0595 | 0.0595 | 0.04% | 9 | SUPPORTED |
-
----
-
-## 5. Cosmological Parameters (Complete)
-
-### 5.1 Universe Composition
-
-| # | Observable | Planck 2018 | GIFT | Value | Dev | # Expr |
-|---|------------|-------------|------|-------|-----|--------|
-| 29 | **Omega_DM/Omega_b** | 5.375 +/- 0.1 | (b_0+chi)/rank | **43/8 = 5.375** | **0.00%** | 3 |
-| 30 | **Omega_c/Omega_Lambda** | 0.387 +/- 0.01 | det_g_num/PSL_27 | 65/168 = 0.3869 | 0.01% | 5 |
-| 31 | **Omega_Lambda/Omega_m** | 2.175 +/- 0.05 | (dim_G2+H*)/dim_F4 | 113/52 = 2.173 | 0.07% | 6 |
-| 32 | **h (Hubble)** | 0.674 +/- 0.005 | (PSL_27-b_0)/dim_E8 | 167/248 = 0.6734 | 0.09% | 4 |
-| 33 | **Omega_b/Omega_m** | 0.156 +/- 0.003 | Weyl/det_g_den | 5/32 = 0.1562 | 0.16% | 7 |
-| 34 | **Omega_c/Omega_m** | 0.841 +/- 0.01 | (dim_E8^2-dim_E6)/dim_E8^2 | 0.8427 | 0.17% | 4 |
-| 35 | **sigma_8** | 0.811 +/- 0.006 | (p_2+det_g_den)/chi | 34/42 = 0.8095 | 0.18% | 3 |
-| 36 | **Omega_m/Omega_Lambda** | 0.460 +/- 0.01 | (b_0+dim_J3O)/kappa_T | 28/61 = 0.459 | 0.18% | 5 |
-| 37 | **Y_p** (primordial He) | 0.245 +/- 0.003 | (b_0+dim_G2)/kappa_T | 15/61 = 0.2459 | 0.37% | 4 |
-| 38 | **Omega_Lambda/Omega_b** | 13.9 +/- 0.3 | (dim_E8^2-dim_F4)/det_g_den | 13.875 | 0.14% | 3 |
-| 39 | **Omega_b/Omega_Lambda** | 0.072 +/- 0.002 | b_0/dim_G2 | 1/14 = 0.0714 | 0.75% | 2 |
-
-### 5.2 The 42 in Cosmology
-
-**Notable result**:
-
-$$\frac{\Omega_{DM}}{\Omega_b} = \frac{b_0 + 2b_2}{\text{rank}(E_8)} = \frac{1 + 42}{8} = \frac{43}{8} = 5.375$$
-
-The ratio of dark matter to baryonic matter **explicitly contains the structural constant 2b₂ = 42**.
-
-**Note**: The Euler characteristic χ(K₇) = 0 for any compact odd-dimensional manifold like K₇. The value 42 = p₂ × b₂ is a distinct structural constant derived from Betti numbers.
-
----
-
-## 6. Structural Constants (18)
-
-### 6.1 E_8 Structure
-
-| # | Constant | Value | Definition | # Expr. | Status |
-|---|----------|-------|------------|---------|--------|
-| 40 | **dim(E_8)** | 248 | E_8 Lie algebra dimension | 5+ | SUPPORTED |
-| 41 | **rank(E_8)** | 8 | Cartan subalgebra | 3+ | DERIVED |
-| 42 | **dim(E_8 x E_8)** | 496 | Product group | 2 | DERIVED |
-| 43 | **|W(E_8)|** | 696,729,600 | Weyl group order | 1 | SINGULAR |
-
-### 6.2 G_2 & K_7 Topology
-
-| # | Constant | Value | Definition | # Expr. | Status |
-|---|----------|-------|------------|---------|--------|
-| 44 | **dim(G_2)** | 14 | Holonomy group | 4+ | DERIVED |
-| 45 | **dim(K_7)** | 7 | Compact manifold | 5+ | SUPPORTED |
-| 46 | **b_2(K_7)** | 21 | Second Betti (gauge moduli) | 3+ | DERIVED |
-| 47 | **b_3(K_7)** | 77 | Third Betti (matter modes) | 3+ | DERIVED |
-| 48 | **H*** | 99 | b_2+b_3+1 (total cohomology) | 5+ | SUPPORTED |
-| 49 | **2b₂** | 42 | Structural constant (p₂ × b₂) | 3+ | DERIVED |
-
-### 6.3 Exceptional Algebras
-
-| # | Constant | Value | Definition | # Expr. | Status |
-|---|----------|-------|------------|---------|--------|
-| 50 | **dim(J_3(O))** | 27 | Exceptional Jordan | 2+ | DERIVED |
-| 51 | **dim(F_4)** | 52 | F_4 dimension | 3+ | DERIVED |
-
----
-
-## 7. Over-Determination Analysis
-
-### 7.1 Top Equivalent Expressions by Fraction
-
-| Fraction | Observable | # Expressions |
-|----------|------------|---------------|
-| 2/3 | Q_Koide | **27** |
-| 21/7 = 3 | N_gen | **24** |
-| 4/13 | sin^2 theta_12^PMNS | **21** |
-| 3/13 | sin^2 theta_W | **19** |
-| 8/11 = 56/77 | m_H/m_t | **16** |
-| 56/248 | sin^2 theta_12^CKM | **16** |
-| 1/42 | m_b/m_t | **12** |
-| 6/11 | sin^2 theta_23^PMNS | **13** |
-| 37/42 | m_W/m_Z | **8** |
-
-**Total: 280+ expressions for major observables**
-
-### 7.2 Example: Q_Koide = 2/3 (27 expressions)
-
-| # | Expression | Computation |
-|---|------------|-------------|
-| 1 | p_2 / N_gen | 2/3 |
-| 2 | dim_G_2 / b_2 | 14/21 = 2/3 |
-| 3 | dim_F_4 / dim_E_6 | 52/78 = 2/3 |
-| 4 | rank_E_8 / (Weyl + dim_K_7) | 8/12 = 2/3 |
-| 5 | chi / (b_2 + chi) | 42/63 = 2/3 |
-| ... | ... | ... |
-
-### 7.3 Statistical Significance
-
-For random numerology with ~20 constants:
-- Expected expressions per fraction: ~1-2
-- Observed: ~16 average
-
-**Probability of this by chance**: p < 10^-12
-
-The structure is **real**, not coincidental.
-
----
-
-## 8. Statistical Distribution
-
-### 8.1 By Deviation (33 observables)
-
-| Range | Count | % | Examples |
-|-------|-------|---|----------|
-| Exact (0%) | 2 | 6% | N_gen, Omega_DM/Omega_b |
-| < 0.1% | 12 | 36% | Q_Koide, m_H/m_W, m_W/m_Z, h |
-| 0.1-0.5% | 12 | 36% | sin^2 theta_W, m_mu/m_e, m_H/m_t |
-| 0.5-1% | 5 | 15% | m_b/m_t, sin^2 theta_13^PMNS |
-| > 1% | 2 | 6% | sin^2 theta_23^CKM |
-
-### 8.2 By Category
-
-| Category | Observables | Mean Dev | Best Match |
-|----------|-------------|----------|------------|
-| Electroweak | 4 | 0.27% | m_W/m_Z (0.06%) |
-| PMNS | 4 | 0.29% | sin^2 theta_23 (0.10%) |
-| Quark masses | 5 | 0.35% | m_s/m_d (0.00%) |
-| Lepton masses | 2 | 0.04% | m_mu/m_tau (0.04%) |
-| Boson masses | 3 | 0.13% | m_H/m_W (0.02%) |
-| CKM | 4 | 0.59% | A_Wolf (0.29%) |
-| Cosmology | 11 | 0.16% | Omega_DM/Omega_b (0.00%) |
-| **Total** | **32+1** | **0.24%** (excl. δ_CP) | - |
-
-### 8.3 By Structural Classification
-
-| Classification | Count | % |
-|----------------|-------|---|
-| CANONICAL | 4 | 12% |
-| ROBUST | 8 | 24% |
-| SUPPORTED | 12 | 36% |
-| DERIVED | 8 | 24% |
-| SINGULAR | 1 | 3% |
-
----
-
-## 9. Unique Expressions (Caution)
-
-Observables with only one GIFT expression (possible numerical coincidence):
-
-| Observable | Expression | Value | Status |
-|------------|------------|-------|--------|
-| |W(E_8)| | 696,729,600 | - | Definition |
-
----
-
-## 10. Uniqueness Analysis
-
-### 10.1 Gauge Group Uniqueness
-
-E₈×E₈ is **optimal** among all tested physically motivated gauge groups.
-
-| Rank | Gauge Group | Mean Dev | N_gen | Status |
-|------|-------------|----------|-------|--------|
-| **1** | **E₈×E₈** | **0.24%** | **3.000** | ✓ OPTIMAL |
-| 2 | E₇×E₈ | 3.06% | 2.625 | ✗ |
-| 3 | E₆×E₈ | 5.72% | 2.250 | ✗ |
-| 4 | E₇×E₇ | 6.05% | 2.625 | ✗ |
-| 5 | SO(32) | 6.82% | 6.000 | ✗ |
-| 6 | E₆×E₆ | 14.52% | 2.250 | ✗ |
-
-**Improvement factor**: E₈×E₈ is **12.8× better** than the next best (E₇×E₈).
-
-**Why rank=8 is special**:
-```
-N_gen = (rank × b₂) / (b₃ - b₂) = (rank × 21) / 56
-
-For N_gen = 3 exactly: rank = 168/21 = 8 ✓
-Note: 168 = |PSL(2,7)| = Fano plane symmetry order
-```
-
-Only E₈ (rank 8) gives exactly 3 generations.
-
-### 10.2 Holonomy Uniqueness
-
-G₂ holonomy achieves significantly better agreement. Calabi-Yau manifolds show poor results.
-
-| Rank | Holonomy | dim_K | SUSY | Mean Dev | Status |
-|------|----------|-------|------|----------|--------|
-| **1** | **G₂** | 7 | N=1 | **0.24%** | ✓ |
-| 2 | SU(4) | 8 | N=1 | 0.71% | ✗ |
-| 3 | SU(3) | 6 | N=2 | 3.12% | ✗✗ |
-| 4 | Spin(7) | 8 | N=0 | 3.56% | ✗✗ |
-
-**Calabi-Yau penalty**: SU(3) holonomy fails by factor **13×**.
-
-### 10.3 The PSL(2,7) Connection
-
-```
-N_gen = |PSL(2,7)| / fund(E₇) = 168 / 56 = 3
-      = |Fano_symmetry| / E₇_fundamental
-```
-
-The number of generations equals Fano plane symmetry order / E₇ representation dimension.
-
-This is **not numerology**, it's the octonionic Fano structure manifesting in particle generations.
-
-### 10.4 Validation Script
-
-Full analysis available: `publications/validation/generate_reference_data.py`
-
-```bash
-python publications/validation/generate_reference_data.py
-```
-
-Results: `publications/validation/results/gift_reference_data.json`
-
----
-
-## 11. Falsification Schedule
-
-| Prediction | Current | Target | Experiment | Year |
-|------------|---------|--------|------------|------|
-| **delta_CP = 197 deg** | +/- 24 deg | +/- 10 deg | DUNE (first results) | 2028-2030 |
-| **delta_CP = 197 deg** | +/- 10 deg | +/- 5 deg | DUNE (precision) | 2034-2039 |
-| **sin^2 theta_W = 3/13** | +/- 0.00004 | +/- 0.00001 | FCC-ee | 2040s |
-| **N_gen = 3** | 3 | 4th gen? | LHC/FCC | ongoing |
-| **m_s/m_d = 20** | +/- 1.0 | +/- 0.3 | Lattice QCD | 2030 |
-| **Q_Koide** | +/- 0.000007 | +/- 0.000001 | tau factories | 2030s |
-
-**Note**: DUNE timeline follows Snowmass 2021 projections. First beam ~2028; +/- 5 deg precision requires extended operation through late 2030s.
-
----
-
-## 12. The Balmer Analogy
-
-| Aspect | Balmer (1885) | GIFT |
-|--------|---------------|------|
-| Empirical formula | lambda = B x n^2/(n^2-4) | sin^2 theta_W = 3/13 |
-| Fits experiment | Yes | Yes |
-| Unique formula | Yes | Yes (up to equivalence) |
-| Derivation came later | Bohr (1913), QM (1926) | ? |
-
----
-
-## 13. References
-
-- Harvey, R., Lawson, H.B. "Calibrated geometries." Acta Math. 148 (1982)
-- Joyce, D.D. *Compact Manifolds with Special Holonomy*. Oxford (2000)
-- Koide, Y. "Fermion-boson two-body model." Lett. Nuovo Cim. 34 (1982)
-- Particle Data Group (2024), Review of Particle Physics
-- Planck Collaboration (2020), Cosmological parameters
-- GIFT Publications: [GIFT_v3.3_main.md](../papers/markdown/GIFT_v3.3_main.md), [GIFT_v3.3_S2_derivations.md](../papers/markdown/GIFT_v3.3_S2_derivations.md)
-
----
-
-*GIFT Framework v3.3 - Observable Reference*
+*The K₇ Framework v3.6 | generated from the paper sources by `k7_v3_6_surface_pages.py`*

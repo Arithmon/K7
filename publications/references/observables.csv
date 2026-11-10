@@ -1,40 +1,96 @@
-Numero,Observable,Formule,Valeur_Predite,Unite,Valeur_Experimentale,Incertitude_Experimentale,Deviation_Pourcent,Statut,Secteur
-1,alpha^-1,"(dim(E8) + rank(E8))/2 + H*/D_bulk + det(g)*kappa_T = 128 + 9 + (65/32)*(1/61)",137.0333,unitless,137.036,0.000001,0.002,TOPOLOGICAL,Gauge Couplings
-2,sin^2(theta_W),b2/(b3 + dim(G2)) = 21/91 = 3/13,0.230769,unitless,0.23122,0.00003,0.195,VERIFIED,Gauge Couplings
-3,alpha_s(M_Z),sqrt(2)/(dim(G2) - p2) = sqrt(2)/12,0.117851,unitless,0.1179,0.0009,0.042,TOPOLOGICAL,Gauge Couplings
-4,theta_12,arctan(sqrt(delta/gamma_GIFT)),33.40,deg,33.41,0.75,0.030,TOPOLOGICAL,Neutrino Mixing
-5,theta_13,pi/b2(K7) = pi/21,8.571,deg,8.54,0.12,0.368,TOPOLOGICAL,Neutrino Mixing
-6,theta_23,"arcsin((b3 - p2)/H*) = arcsin(75/99) = arcsin(25/33)",49.25,deg,49.3,1.0,0.10,TOPOLOGICAL,Neutrino Mixing
-7,delta_CP,7*dim(G2) + H* = 7*14 + 99 = 197,197,deg,197,24,0.000,VERIFIED,Neutrino Mixing
-8,Q_Koide,dim(G2)/b2(K7) = 14/21 = 2/3,0.666667,unitless,0.666661,0.000007,0.001,VERIFIED,Lepton Mass Relations
-9,m_mu/m_e,27^phi = 27^1.6180339,207.012,unitless,206.768,0.001,0.118,TOPOLOGICAL,Lepton Mass Relations
-10,m_tau/m_e,"dim(K7) + 10*dim(E8) + 10*H* = 7 + 2480 + 990 = 3477",3477,unitless,3477.15,0.01,0.004,VERIFIED,Lepton Mass Relations
-11,m_s/m_d,p2^2 * Weyl = 4*5 = 20,20,unitless,20.0,1.0,0.000,VERIFIED,Quark Mass Ratios
-12,m_c/m_s,(dim(E8) - p2)/b2 = (248-2)/21 = 246/21 = 82/7,11.714,unitless,11.7,0.3,0.12,TOPOLOGICAL,Quark Mass Ratios
-13,m_b/m_u,cascade (m_b/m_d)*(m_d/m_u),1935.15,unitless,1935.2,10,0.003,DERIVED,Quark Mass Ratios
-14,m_t/m_b,tau*D_bulk approx 3.897*10.6,41.408,unitless,41.3,0.5,0.262,DERIVED,Quark Mass Ratios
-15,m_c/m_d,m_c/m_s * m_s/m_d = 13.6*20,271.99,unitless,272,12,0.003,DERIVED,Quark Mass Ratios
-16,m_b/m_d,Framework derived,891.97,unitless,893,10,0.115,DERIVED,Quark Mass Ratios
-17,m_t/m_c,Framework derived,135.49,unitless,136,2,0.375,DERIVED,Quark Mass Ratios
-18,m_t/m_s,m_t/m_c * m_c/m_s,1842.6,unitless,1848,60,0.291,DERIVED,Quark Mass Ratios
-19,m_d/m_u,Isospin breaking,2.163,unitless,2.16,0.10,0.139,DERIVED,Quark Mass Ratios
-20,|V_us|,Cabibbo angle from b2 structure,0.2245,unitless,0.2243,0.0005,0.089,THEORETICAL,CKM Matrix
-21,|V_cb|,Second generation mixing,0.04214,unitless,0.0422,0.0008,0.142,THEORETICAL,CKM Matrix
-22,|V_ub|,Third generation coupling,0.003947,unitless,0.00394,0.00036,0.178,THEORETICAL,CKM Matrix
-23,|V_td|,Down-type mixing,0.008657,unitless,0.00867,0.00031,0.150,THEORETICAL,CKM Matrix
-24,|V_ts|,Strange-top coupling,0.04154,unitless,0.0415,0.0009,0.096,THEORETICAL,CKM Matrix
-25,|V_tb|,Near-unity (unitarity),0.999106,unitless,0.999105,0.000032,0.0001,THEORETICAL,CKM Matrix
-26,v_EW,Dimensional transmutation via Lambda_GIFT scale bridge,246.87,GeV,246.22,0.01,0.264,THEORETICAL,Electroweak Scale
-27,M_W,(g2/2)*v_EW,80.40,GeV,80.369,0.019,0.039,DERIVED,Electroweak Scale
-28,M_Z,M_W/cos(theta_W),91.20,GeV,91.188,0.002,0.013,DERIVED,Electroweak Scale
-29,m_u,sqrt(dim(G2)/3) = sqrt(14/3),2.160,MeV,2.16,0.49,0.011,THEORETICAL,Absolute Quark Masses
-30,m_d,ln(107),4.673,MeV,4.67,0.48,0.061,THEORETICAL,Absolute Quark Masses
-31,m_s,tau*24 = (3472/891)*24,93.52,MeV,93.4,8.6,0.130,THEORETICAL,Absolute Quark Masses
-32,m_c,"(dim(G2) - pi)^3 = (14 - 3.14159)^3",1280,MeV,1270,20,0.808,THEORETICAL,Absolute Quark Masses
-33,m_b,42*H* = 42*99,4158,MeV,4180,30,0.526,THEORETICAL,Absolute Quark Masses
-34,m_t,415^2,172225,MeV,172760,300,0.310,THEORETICAL,Absolute Quark Masses
-35,Omega_DE,ln(2)*(H* - 1)/H* = ln(2)*98/99,0.6861,unitless,0.6889,0.0056,0.400,VERIFIED,Cosmological Parameters
-36,n_s,zeta(11)/zeta(5),0.9649,unitless,0.9649,0.0042,0.004,VERIFIED,Cosmological Parameters
-37,kappa_T,1/(b3 - dim(G2) - p2) = 1/(77 - 14 - 2) = 1/61,0.01639,unitless,0.0164,0.0001,0.040,VERIFIED,Structural Relations
-38,tau,496*21/(27*99) = 3472/891,3.8967,unitless,3.897,0.001,0.007,VERIFIED,Structural Relations
-39,lambda_H,"sqrt(dim(G2) + N_gen)/2^Weyl = sqrt(14 + 3)/32 = sqrt(17)/32",0.1288,unitless,0.126,0.008,2.260,VERIFIED,Electroweak Scale
+id,name,symbol,sector,type,gift_value,gift_fraction,exp_value,exp_error,exp_source,deviation_pct,lean_theorem,provenance
+A01,Weinberg angle,sin²θ_W,Electroweak,I,0.23076923076923078,3/13,0.23122,6e-05,PDG 2026,-0.194953,GIFT.Certificate.RelationsV36.A01_sin2_theta_W,deviation_systematics.py
+A02,Strong coupling,α_s(M_Z),Electroweak,I,0.11785113019775793,√2/12,0.118,0.0009,PDG 2026,-0.126161,GIFT.Certificate.RelationsV36.A02_alpha_s,deviation_systematics.py
+A03,Higgs coupling,λ_H,Electroweak,I,0.1288470508005519,√17/32,0.12913601991555962,0.00022704327005053238,PDG 2026,-0.223771,GIFT.Certificate.RelationsV36.A03_lambda_H,deviation_systematics.py
+A04,Fine structure,α⁻¹(0),Electroweak,I,137.03329918032787,267489/1952,137.035999177,2.1e-08,CODATA 2022,-0.00197,GIFT.Certificate.RelationsV36.A04_alpha_inv,deviation_systematics.py
+A05,Koide parameter,Q_Koide,Lepton,I,0.6666666666666666,2/3,0.6666644634026365,5.080824236549293e-06,PDG 2026,0.00033,GIFT.Certificate.RelationsV36.A05_Q_Koide,deviation_systematics.py
+A06,Tau/electron,m_τ/m_e,Lepton,I,3477.0,3477,3477.3652619063464,0.17612560628587023,PDG 2026,-0.010504,GIFT.Certificate.RelationsV36.A06_m_tau_m_e,deviation_systematics.py
+A07,Muon/electron,m_μ/m_e,Lepton,I,207.0118567416035,27^φ,206.7682827,4.6e-06,CODATA 2022,0.1178,GIFT.Certificate.RelationsV36.A07_m_mu_m_e,deviation_systematics.py
+A08,Strange/down,m_s/m_d,Quark,I,20.0,20,19.5,,PDG 2026,2.564103,GIFT.Certificate.RelationsV36.A08_m_s_m_d,deviation_systematics.py
+A09,Charm/strange,m_c/m_s,Quark,I,11.714285714285714,246/21,11.769,0.035,PDG 2026,-0.464902,GIFT.Certificate.RelationsV36.A09_m_c_m_s,deviation_systematics.py
+A10,Bottom/top,m_b/m_t,Quark,I,0.023809523809523808,1/42,0.02425260718424102,4.342795302528155e-05,PDG 2026,-1.826952,GIFT.Certificate.RelationsV36.A10_m_b_m_t,deviation_systematics.py
+A11,Up/down,m_u/m_d,Quark,I,0.47023809523809523,79/168,0.462,0.012159136638235384,PDG 2026,1.783137,GIFT.Certificate.RelationsV36.A11_m_u_m_d,deviation_systematics.py
+A12,PMNS sin²θ₁₂,sin²θ₁₂ᴾᴹᴺˢ,PMNS,I,0.3076923076923077,4/13,0.3088,0.0066,"NuFIT 6.1 (IC24+SK-atm, NO)",-0.358709,GIFT.Certificate.RelationsV36.A12_sin2_theta12_PMNS,deviation_systematics.py
+A13,PMNS sin²θ₂₃,sin²θ₂₃ᴾᴹᴺˢ,PMNS,I,0.5454545454545454,6/11,0.47,0.017,"NuFIT 6.1 (IC24+SK-atm, NO)",16.054159,GIFT.Certificate.RelationsV36.A13_sin2_theta23_PMNS,deviation_systematics.py
+A14,PMNS sin²θ₁₃,sin²θ₁₃ᴾᴹᴺˢ,PMNS,I,0.02217741935483871,11/496,0.02248,0.00059,"NuFIT 6.1 (IC24+SK-atm, NO)",-1.345999,GIFT.Certificate.RelationsV36.A14_sin2_theta13_PMNS,deviation_systematics.py
+A15,CP phase,δ_CP,PMNS,I,197,197,212.0,36.0,"NuFIT 6.1 (IC24+SK-atm, NO)",-7.075472,GIFT.Certificate.RelationsV36.A15_delta_CP,deviation_systematics.py
+A16,CKM sin²θ₁₂,sin θ₁₂ᶜᴷᴹ,CKM,I,0.22580645161290322,56/248,0.22517,0.00068,PDG 2026,0.282654,GIFT.Certificate.RelationsV36.A16_sin_theta12_CKM,deviation_systematics.py
+A17,Wolfenstein A,A_Wolf,CKM,I,0.8383838383838383,83/99,0.826,0.017,PDG 2026,1.499254,GIFT.Certificate.RelationsV36.A17_A_Wolf,deviation_systematics.py
+A18,CKM sin²θ₂₃,sin θ₂₃ᶜᴷᴹ,CKM,I,0.041666666666666664,7/168,0.04189,0.00069,PDG 2026,-0.533142,GIFT.Certificate.RelationsV36.A18_sin_theta23_CKM,deviation_systematics.py
+A19,Higgs/top,m_H/m_t,Boson,I,0.7272727272727273,56/77,0.7249710312862109,0.0013008855696346956,PDG 2026,0.317488,GIFT.Certificate.RelationsV36.A19_m_H_m_t,deviation_systematics.py
+A20,Higgs/W,m_H/m_W,Boson,I,1.5576923076923077,81/52,1.557069528698087,0.0013769042070577312,PDG 2026,0.039997,GIFT.Certificate.RelationsV36.A20_m_H_m_W,deviation_systematics.py
+A21,W/Z,m_W/m_Z,Boson,I,0.8809523809523809,37/42,0.88136,0.00015,PDG 2026,-0.046249,GIFT.Certificate.RelationsV36.A21_m_W_m_Z,deviation_systematics.py
+A22,Muon/tau,m_μ/m_τ,Lepton,I,0.05952380952380952,10/168,0.0594611917745775,3.0116592966325228e-06,PDG 2026,0.105309,GIFT.Certificate.RelationsV36.A22_m_mu_m_tau,deviation_systematics.py
+A23,Dark energy,Ω_DE,Cosmology,I,0.6861456938876226,ln(2)×98/99,0.6847,0.0073,"Planck 2018 (TT,TE,EE+lowE+lensing)",0.211143,GIFT.Certificate.RelationsV36.A23_Omega_DE,deviation_systematics.py
+A24,Spectral index,n_s,Cosmology,I,0.9648639296628596,ζ(11)/ζ(5),0.9649,0.0042,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.003738,GIFT.Certificate.RelationsV36.A24_n_s,deviation_systematics.py
+A25,DM/baryon,Ω_DM/Ω_b,Cosmology,I,5.375,43/8,5.363689596234108,0.07699416635612857,"Planck 2018 (TT,TE,EE+lowE+lensing)",0.21087,GIFT.Certificate.RelationsV36.A25_Omega_DM_b,deviation_systematics.py
+A26,CDM/Lambda,Ω_c/Ω_Λ,Cosmology,I,0.3869047619047619,65/168,0.3865101511382174,0.013985811424420859,"Planck 2018 (TT,TE,EE+lowE+lensing)",0.102096,GIFT.Certificate.RelationsV36.A26_Omega_c_Lambda,deviation_systematics.py
+A27,Lambda/matter,Ω_Λ/Ω_m,Cosmology,I,2.173076923076923,113/52,2.17345702247242,0.07374617892916398,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.017488,GIFT.Certificate.RelationsV36.A27_Omega_Lambda_m,deviation_systematics.py
+A28,Hubble h,h,Cosmology,I,0.6733870967741935,167/248,0.6736,0.0054,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.031607,GIFT.Certificate.RelationsV36.A28_hubble_h,deviation_systematics.py
+A29,Baryon/matter,Ω_b/Ω_m,Cosmology,I,0.15625,5/32,0.15645546364545757,0.001888572678941002,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.131324,GIFT.Certificate.RelationsV36.A29_Omega_b_m,deviation_systematics.py
+A30,CDM/matter,Ω_c/Ω_m,Cosmology,I,0.84375,27/32,0.839033154892421,0.0019191660574896026,"Planck 2018 (TT,TE,EE+lowE+lensing)",0.562176,GIFT.Certificate.RelationsV36.A30_Omega_c_m,deviation_systematics.py
+A31,Sigma_8,σ_8,Cosmology,I,0.8095238095238095,34/42,0.8111,0.006,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.194328,GIFT.Certificate.RelationsV36.A31_sigma_8,deviation_systematics.py
+A32,Primordial He,Y_p,Cosmology,I,0.2459016393442623,15/61,0.245,0.003,"PDG 2024 (BBN review, eq. 24.3)",0.368016,GIFT.Certificate.RelationsV36.A32_Y_p,deviation_systematics.py
+A33,Matter/Lambda,Ω_m/Ω_Λ,Cosmology,I,0.45901639344262296,28/61,0.4606270570885577,0.015654151955919873,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.349668,GIFT.Certificate.RelationsV36.A33_Omega_m_Lambda,deviation_systematics.py
+B01,Up quark mass,m_u,Quark,II,2.16,sqrt(14/3),2.16,0.042556978233823844,PDG 2026,0.0,,39_observables.csv
+B02,Down quark mass,m_d,Quark,II,4.673,ln(107),4.7,0.042556978233823844,PDG 2026,-0.574468,,39_observables.csv
+B03,Strange quark mass,m_s,Quark,II,93.52,,92.9,0.4255697823382384,PDG 2026,0.667384,,39_observables.csv
+B04,Charm quark mass,m_c,Quark,II,1280.0,,1272.9,2.735805743602961,PDG 2026,0.557781,,39_observables.csv
+B05,Bottom quark mass,m_b,Quark,II,4158.0,42×99,4186.0,3.6477409914706147,PDG 2026,-0.668896,,39_observables.csv
+B06,Top quark mass,m_t,Quark,II,172225.0,172225,172600.0,270.0,PDG 2026,-0.217265,,39_observables.csv
+B07,EW VEV,v_EW,Electroweak,II,246.87,,246.21967190389205,0.0,PDG 2026,0.264125,,39_observables.csv
+B08,W boson mass,M_W,Electroweak,II,80.4,,80.3625,0.0077,PDG 2026,0.046664,,39_observables.csv
+B09,Z boson mass,M_Z,Electroweak,II,91.2,,91.1879,0.002,PDG 2026,0.013269,,39_observables.csv
+B10,CKM |V_us|,|V_us|,CKM,II,0.2245,,0.2243,0.0005,PDG 2025,0.089166,,39_observables.csv
+B11,CKM |V_cb|,|V_cb|,CKM,II,0.04214,,0.0422,0.0008,PDG 2025,-0.14218,,39_observables.csv
+B12,CKM |V_ub|,|V_ub|,CKM,II,0.003947,,0.00394,0.00036,PDG 2025,0.177665,,39_observables.csv
+B13,CKM |V_td|,|V_td|,CKM,II,0.008657,,0.00867,0.00031,PDG 2025,-0.149942,,39_observables.csv
+B14,CKM |V_ts|,|V_ts|,CKM,II,0.04154,,0.0415,0.0009,PDG 2025,0.096386,,39_observables.csv
+B15,CKM |V_tb|,|V_tb|,CKM,II,0.999106,,0.999105,3.2e-05,PDG 2025,0.0001,,39_observables.csv
+B16,Charm/strange (ext),m_c/m_s (ext),Quark,II,13.6,,13.6,0.5,PDG 2025,0.0,,39_observables.csv
+B17,Charm/down,m_c/m_d,Quark,II,271.99,,272,12,PDG 2025,-0.003676,,39_observables.csv
+B18,Bottom/down,m_b/m_d,Quark,II,891.97,,893,10,PDG 2025,-0.115342,,39_observables.csv
+B19,Top/charm,m_t/m_c,Quark,II,135.49,,136,2,PDG 2025,-0.375,,39_observables.csv
+C01,wilson m_τ/m_e (non-adiab.),m_τ/m_e (dyn),Lepton,III,3403.104111944411,,3477.3652619063464,0.17612560628587023,PDG 2026,-2.135558,yukawa_mass_ratio_certificate,run_wilson_line_3gen.py
+C02,wilson m_τ/m_μ (non-adiab.),m_τ/m_μ (dyn),Lepton,III,16.544136904245384,,16.817691844978253,0.0008518019313310274,PDG 2026,-1.62659,yukawa_mass_ratio_certificate,run_wilson_line_3gen.py
+C03,wilson critical coupling,c*,Lepton,III,0.17782794100389226,,0.0,0.0,,0.0,,run_wilson_line_3gen.py
+C04,RGE sin²θ_W(M_Z),sin²θ_W (RGE),Electroweak,III,0.2376553477033908,,0.23122,6e-05,PDG 2026,2.783214,,run_gauge_coupling_running.py
+C05,RGE α_s(M_Z),α_s (RGE),Electroweak,III,0.10376881310764187,,0.118,0.0009,PDG 2025,-12.060328,,run_gauge_coupling_running.py
+C06,GUT scale,M_GUT,Electroweak,III,2e+16,,2e+16,0,,0.0,,run_gauge_coupling_running.py
+C07,RGE α_GUT⁻¹,α_GUT⁻¹,Electroweak,III,25.3,,25.3,0,,0.0,,run_gauge_coupling_running.py
+C08,Spectral gap λ₁,λ₁,Spectral,III,0.12460729275203386,,0.0,0.0,,0.0,lambda1_near_physical,run_k7_spectrum_unified.py
+C09,Weyl exponent,α_Weyl,Spectral,III,3.4600198408740668,,3.5,0.0,Weyl law,-1.14229,weyl_exponent_close,run_k7_spectrum_unified.py
+C10,KK states below Λ=20,N_KK,Spectral,III,22671,,0,0,,0.0,n_states_large,run_k7_spectrum_unified.py
+C11,Fiber channels,N_fiber,Spectral,III,57578,,0,0,,0.0,n_channels_large,run_k7_spectrum_unified.py
+C12,Level spacing,spacing,Spectral,III,1.3583838044471075,,0,0,,0.0,,run_k7_spectrum_unified.py
+C13,Gauge universality cond.,κ_gauge,Gauge,III,1.0470960187087017,,1.0,0.0,,4.709602,gauge_universality,run_gauge_bundle_data.py
+C14,Self-dual Yukawa count,n_SD,Gauge,III,3,,3,0,,0.0,yukawa_rank_eq_ngen,run_gauge_bundle_data.py
+C15,Associative cycles,N_assoc,Gauge,III,57,,0,0,,0.0,associative_decomposition,run_gauge_bundle_data.py
+C16,Torsion C⁰,||T||_C⁰,Metric,III,2.98e-05,,0,0,,0.0,,run_gauge_bundle_data.py
+C17,ΔV(e-τ) instanton,ΔV(e-τ),Lepton,III,8.633101987358707,,8.153925132007862,0,PDG 2025,5.87664,dv13_close_lower,run_associative_volumes.py
+C18,ΔV(e-μ) instanton,ΔV(e-μ),Lepton,III,3.271253419059148,,2.822568654544802,0,PDG 2025,15.896328,dv12_close_lower,run_associative_volumes.py
+C19,Combined m_τ/m_e,m_τ/m_e (comb),Lepton,III,3485.3,,3477.3652619063464,0.17612560628587023,PDG 2026,0.228182,combined_tau_e_close_lower,run_associative_volumes.py
+C20,Combined m_τ/m_μ,m_τ/m_μ (comb),Lepton,III,16.69,,16.817691844978253,0.0008518019313310274,PDG 2026,-0.759271,combined_tau_mu_close_lower,run_associative_volumes.py
+C21,Combined m_μ/m_e,m_μ/m_e (comb),Lepton,III,208.8,,206.7682827,4.6e-06,CODATA 2022,0.982606,combined_mu_e_close_lower,run_associative_volumes.py
+D01,Betti number b₂,b₂,Topology,IV,21,21,0,0,,0.0,K7_betti_2,
+D02,Betti number b₃,b₃,Topology,IV,77,77,0,0,,0.0,K7_betti_3,
+D03,Total cohomology,H*,Topology,IV,99,99,0,0,,0.0,K7_H_star,
+D04,Number of generations,N_gen,Topology,IV,3,3,0,0,,0.0,,extract_33_from_169.py
+D05,Metric determinant,det(g),Metric,IV,2.03125,65/32,0,0,,0.0,,g9_certification_results.json
+D06,NK parameter h,h_NK,Metric,IV,8.95e-09,,0,0,,0.0,,g9_certification_results.json
+D07,NK distance to g*,"dist(g,g*)",Metric,IV,4.863443773304932e-06,,0,0,,0.0,,g9_certification_results.json
+D08,Torsion C⁰ (certified),||T||_C⁰ (cert),Metric,IV,2.949e-05,,0,0,,0.0,,g9_certification_results.json
+D09,G_K3(22) condition,κ(G_K3),Spectral,IV,1.052319541868895,,0,0,,0.0,,k7_orthonormality_results.json
+D10,Distinct KK levels,N_levels,Spectral,IV,22671,,0,0,,0.0,n_states_large,run_k7_spectrum_unified.py
+D11,Total KK states (with mult),N_states_total,Spectral,IV,210060,,0,0,,0.0,,run_k7_spectrum_unified.py
+D12,Weyl volume,V_eff,Spectral,IV,538412.2984259174,,0,0,,0.0,vol_positive,run_k7_spectrum_unified.py
+D13,Homology 3-classes,n_homology,Topology,IV,77,77,0,0,,0.0,,run_gauge_bundle_data.py
+D14,Associative 3-cycles,N_assoc,Topology,IV,57,57,0,0,,0.0,associative_decomposition,run_gauge_bundle_data.py
+D15,Yukawa norm,||Y||,Gauge,IV,8.969024361520887,,0,0,,0.0,yukawa_norm_positive,run_gauge_bundle_data.py
+D16,Instanton volume range,ΔV_range,Gauge,IV,8.919523950637846,,0,0,,0.0,,run_associative_volumes.py
+D17,Metric eigenvalue g_ss,g_ss,Metric,IV,3.1666666666666665,19/6,0,0,,0.0,g_ss_value,g9_certification_results.json
+D18,Metric eigenvalue g_T2,g_T2,Metric,IV,1.1666666666666667,7/6,0,0,,0.0,,g9_certification_results.json
+D19,Metric eigenvalue g_K3 (mean),g_K3,Metric,IV,0.8311688311688312,64/77,0,0,,0.0,,g9_certification_results.json
+D20,QNM mode families on K7,N_QNM,Topology,IV,98,98,0,0,,0.0,,Pincak et al. (2026)
+D21,Instanton suppression (K7 vs S3xS4),b3/b3_S3S4,Topology,IV,77.0,77,0,0,,0.0,,Pincak et al. (2026)
+D22,BH remnant mass (torsion VEV),M_res,Topology,IV,4969.203967213115,,0,0,,0.0,,Pincak et al. (2026)
