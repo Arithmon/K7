@@ -47,13 +47,15 @@ Que vous soyez étudiant curieux, amateur de sciences, ou simplement quelqu'un q
 
 **K₇** (*anciennement Geometric Information Field Theory*, ou « théorie géométrique des champs d'information ») propose que les constantes fondamentales de la physique (des nombres comme 1/137, les masses des particules, l'intensité des forces) ne sont pas arbitraires. Elles émergent de la **forme** des dimensions cachées de l'univers.
 
-**L'idée centrale en une phrase** : l'univers possède 7 dimensions cachées repliées dans une forme particulière qu'on appelle **K₇**, et les propriétés de cette forme déterminent mathématiquement tout ce que nous mesurons.
+**L'idée centrale en une phrase** : supposons que l'univers possède 7 dimensions cachées repliées dans une forme particulière qu'on appelle **K₇**. Alors 33 des nombres que nous mesurons s'écrivent comme des formules simples en les propriétés de cette forme.
 
 **Pourquoi est-ce que ça vous concerne ?**
 
 Le Modèle Standard de la physique compte **19 paramètres libres**, des nombres qu'on mesure mais qu'on ne sait pas expliquer. Pourquoi l'électron est-il 1836 fois plus léger que le proton ? Pourquoi y a-t-il exactement 3 familles de particules ? Pourquoi la constante de structure fine vaut-elle 1/137 ?
 
-K₇ propose des réponses : **zéro paramètre libre**. Tout vient de la géométrie.
+K₇ propose un dictionnaire où aucune formule n'a de molette à tourner : les nombres sont des rapports de nombres entiers. Ce qu'il n'a pas, c'est la raison pour laquelle *ces* formules vont avec *ces* mesures. Ce manque est écrit noir sur blanc, pas caché.
+
+**Quel genre d'affirmation est-ce (version 3.6) ?** C'est un *dictionnaire*, pas une dérivation. Personne ne connaît de mécanisme qui mène de la forme aux nombres : les formules ont été appariées aux mesures, et le cadre le dit. La forme elle-même n'a pas été construite. Ce guide explique les idées ; quand il dit « dans K₇ », lisez « dans le dictionnaire que propose K₇ ».
 
 ---
 
@@ -397,7 +399,7 @@ K₇ est un « diabolo à 7 dimensions » dont la forme est dictée par les octo
 - 77 « bulles 3D » (b₃ = 77)
 - Une courbure très particulière (holonomie G₂)
 
-**Et dans K₇** : tout découle de K₇. C'est LA forme de l'univers caché.
+**Et dans K₇** : toutes les formules du dictionnaire s'écrivent avec les nombres de cette forme. Savoir si une telle forme existe avec exactement 21 et 77 trous est une question mathématique ouverte : personne ne l'a encore construite.
 
 ---
 
@@ -648,7 +650,7 @@ Les neutrinos traversent la matière comme si elle n'existait pas. Des milliards
 
 Ils « oscillent » entre trois types (électron, muon, tau) en voyageant, c'est comme s'ils changeaient de costume en plein vol.
 
-**Et dans K₇** : les angles de mélange des neutrinos (θ₁₂, θ₁₃, θ₂₃) et la phase CP (δ = 197°) sont dérivés de la topologie.
+**Et dans K₇** : les angles de mélange des neutrinos (θ₁₂, θ₁₃, θ₂₃) et la phase CP (δ = 197°) s'écrivent comme des rapports des nombres de la forme. Pour la phase, la forme donne le nombre entier 197 ; le lire en degrés est un choix.
 
 ---
 
@@ -665,7 +667,7 @@ Les quarks sont **toujours** enfermés par groupes de 2 ou de 3. Vous ne pouvez 
 - Charm, Strange (moyens)
 - Top, Bottom (lourds)
 
-**Et dans K₇** : des rapports comme m_s/m_d = 20 sont dérivés de la topologie.
+**Et dans K₇** : des rapports comme m_s/m_d = 20 s'écrivent comme des produits des nombres de la forme.
 
 ---
 
@@ -845,7 +847,7 @@ Pendant 60+ ans, les physiciens ont mesuré ce nombre avec une précision insens
 
 Feynman, 1985 (*QED: The Strange Theory of Light and Matter*) : *« C'est l'un des plus grands sacrés mystères de la physique : un nombre magique qui nous arrive sans que l'humain le comprenne. On pourrait dire que la "main de Dieu" a écrit ce nombre, et "on ne sait pas comment Il a poussé Son crayon". »*
 
-**La proposition de K₇** : ce n'est pas magique. `α⁻¹ = 137,033` émerge de la topologie de K₇, sous la forme `128 + 9 + correction`, où `128 = 2⁷` (les 7 dimensions cachées de K₇) et `9 = 99/11` (un rapport d'invariants topologiques). Le « grand sacré mystère » de Feynman devient une **conséquence de la forme**.
+**La formule de K₇** : `α⁻¹ = 137,033`, écrit `128 + 9 + correction`, où `128 = 2⁷` et `9 = 99/11` (un rapport des nombres de la forme). C'est proche, et ce n'est pas juste : α est mesuré à dix décimales, et 137,033 n'est pas 137,036. Le cadre garde cette formule comme une *proximité*, un tir à côté de peu, et ne la présente plus comme un résultat exact. Le mystère de Feynman reste entier.
 
 ---
 
@@ -863,7 +865,7 @@ sin²θ_W ≈ 0,231 signifie « environ 23 % de force faible, 77 % d'électromag
 
 C'est le nombre de « bulles 2D » (21) divisé par le total (77 + 14 = 91).
 
-**Et dans K₇** : la recette du cocktail n'est pas arbitraire, elle est dictée par la forme du shaker cosmique (K₇).
+**Et dans K₇** : la recette 3/13 = 0,2308 approche la valeur mesurée, 0,2312. Mais ce nombre est mesuré si précisément que ce petit écart vaut sept fois l'incertitude : comme égalité exacte, la formule est rejetée, et le cadre ne la garde que comme un tir à côté de peu.
 
 ---
 
@@ -883,7 +885,7 @@ Pendant 40 ans, c'est resté une « curiosité numérique » inexpliquée, trop 
 
 **K₇ répond** : 2/3 = 14/21 = `dim(G₂) / b₂`. L'accord n'est pas accidentel, les trois masses leptoniques sont contraintes par la même structure géométrique (la symétrie G₂ de dimension 14, à l'intérieur de la deuxième cohomologie de K₇ de dimension 21). L'« accordage » de l'accord cosmique est dicté par la forme de l'espace caché.
 
-**Et dans K₇** : cette coïncidence troublante devient une conséquence logique.
+**Et dans K₇** : le dictionnaire écrit 2/3 comme le rapport de deux nombres de la forme, et la mesure est d'accord. L'honnêteté demande une note : 2/3 est une fraction si simple que presque n'importe quelle liste de nombres peut la produire, donc cet accord n'est pas un indice que la forme est la bonne.
 
 ---
 
@@ -904,9 +906,7 @@ Pourquoi pas 2 ? Ou 47 ?
 
 **K₇** : le plan de Fano a 168 symétries. 168 ÷ 56 = **3**.
 
-C'est comme demander « pourquoi un cube a 6 faces ? ». La réponse n'est pas « comme ça », c'est « parce que c'est un cube ». La forme impose le nombre.
-
-**Et dans K₇** : le nombre de familles n'est pas un accident, c'est une conséquence géométrique.
+**Et dans K₇** : le nombre 3 sort d'une division de deux entiers du dictionnaire. C'est une identité arithmétique, un contrôle de cohérence ; ce n'est pas la preuve que la nature doit avoir trois familles.
 
 ---
 
@@ -938,17 +938,19 @@ Prenez n'importe quel nombre positif `x`. Calculez `1 + 1/x`. Vous obtenez un no
 
 # Partie VI : Pourquoi K₇ est différent
 
-### Zéro paramètre libre
+### Pas de molette à tourner
 
-**En jargon** : Théorie sans constantes ajustables.
+**En jargon** : Aucune constante continûment ajustable ; et un registre de tout ce qui a été choisi.
 
-**Version comptoir** : IKEA contre meuble sur mesure.
+**Version comptoir** : Lego contre pâte à modeler.
 
-- **Le Modèle Standard** = un meuble sur mesure. Le menuisier prend 19 mesures chez vous et construit un meuble qui s'adapte parfaitement. Mais il ne peut pas expliquer *pourquoi* votre salon a ces dimensions-là.
+- **La pâte à modeler** se presse pour épouser n'importe quel moule. Une théorie à molettes, c'est ça : on tourne la molette, on retrouve la mesure.
 
-- **K₇** = un meuble IKEA universel. La notice dit : « Prenez un diabolo de 7 dimensions à holonomie G₂. » Il n'y a qu'une seule façon de l'assembler. Les dimensions tombent automatiquement.
+- **Les briques de Lego** ne se pressent pas. Une formule comme 3/13 est une brique de Lego : on ne peut pas la pousser de 1 %. Si la mesure s'éloigne, la formule est fausse, c'est tout.
 
-**Et dans K₇** : 19 nombres mystérieux → 0 nombre mystérieux. Tout vient de la forme.
+Les formules de K₇ sont des briques de Lego. Mais quelqu'un a quand même choisi *quelles briques prendre et où les poser*. Avec une boîte assez grande, on construit quelque chose de proche d'à peu près n'importe quelle forme. « Pas de molette » ne veut donc pas dire « rien n'a été choisi ».
+
+**Et dans K₇** : pas de molette, et une liste écrite (le *registre des résidus*) de tous les choix faits : les deux nombres 21 et 77, les formules elles-mêmes, une normalisation, et l'unité dans laquelle on lit 197.
 
 ---
 
@@ -964,12 +966,12 @@ K₇ dit : « La phase CP des neutrinos δ_CP = 197°, ni plus, ni moins. »
 
 L'expérience DUNE le mesurera entre 2034 et 2039.
 
-- Si DUNE trouve 197° ± 5° → K₇ survit
-- Si DUNE trouve 250° → K₇ est mort. Terminé. On passe à autre chose.
+- Si les mesures finissent par exclure 197° (au niveau que les physiciens appellent 3 sigma) → cette formule est morte, et le choix de lire 197 en degrés avec elle. Pas de sauvetage, pas de version retouchée.
+- Si elles incluent 197° → la formule survit. Cela montrerait que le choix s'accorde avec la nature ; cela ne prouverait pas que la forme est la bonne.
 
-**Ça, c'est de la science** : des prédictions qui peuvent mourir.
+**Ça, c'est de la science** : des énoncés qui peuvent mourir, avec des règles écrites avant de connaître le résultat.
 
-**Et dans K₇** : K₇ joue le jeu honnêtement. Il fait des prédictions testables.
+**Et dans K₇** : les règles sont écrites à l'avance, formule par formule. Cinq des 33 formules ont déjà échoué comme égalités exactes, et le cadre dit lesquelles. Une formule qui tombe n'entraîne pas les autres, et le cadre le dit à l'avance aussi.
 
 ---
 
@@ -981,7 +983,7 @@ L'expérience DUNE le mesurera entre 2034 et 2039.
 
 Une théorie est « naturelle » si elle n'a pas besoin de paramètres réglés à 0,0000001 % de précision pour fonctionner.
 
-**Et dans K₇** : zéro paramètre ajustable = naturalité maximale.
+**Et dans K₇** : les formules n'ont pas de molette à régler. Savoir si cela rend le cadre « naturel » ou seulement rigide, c'est justement ce que les expériences diront.
 
 ---
 
@@ -1005,7 +1007,7 @@ Les atomes individuels ne sont pas mouillés. La « mouillure » émerge quand d
 
 Lean 4 est un programme informatique qui vérifie chaque étape de chaque preuve. Vous ne pouvez pas tricher, ni faire d'erreur de calcul, ni « sauter » une étape. Si Lean accepte votre preuve, c'est **mathématiquement certain**.
 
-**Et dans K₇** : 290+ relations vérifiées en Lean 4 avec 0 « sorry » (trous). Zéro axiome spécifique au domaine.
+**Et dans K₇** : l'arithmétique des 33 formules est vérifiée en Lean 4, sans « sorry » (trous). Ce que cela prouve, c'est que les calculs sont justes : que 21/91 vaut bien 3/13. Cela ne prouve pas que 3/13 est la bonne formule pour la nature, ni que la forme existe.
 
 ---
 
@@ -1019,7 +1021,7 @@ Lean 4 est un programme informatique qui vérifie chaque étape de chaque preuve
 
 Le PDG publie chaque année les meilleures valeurs pour toutes les masses, durées de vie, etc. C'est LA référence.
 
-**Et dans K₇** : toutes les comparaisons utilisent le PDG 2024.
+**Et dans K₇** : les comparaisons de particules utilisent les tables du PDG les plus récentes (l'édition 2026 pour la version 3.6).
 
 ---
 
@@ -1033,7 +1035,7 @@ Le LHC accélère des protons à une vitesse proche de celle de la lumière et l
 
 **Découverte majeure** : le boson de Higgs (2012).
 
-**Et dans K₇** : le LHC a mesuré les masses des W, Z et Higgs que K₇ prédit.
+**Et dans K₇** : le LHC a mesuré les masses des W, Z et Higgs ; le dictionnaire a des formules pour leurs rapports.
 
 ---
 
@@ -1045,9 +1047,9 @@ Le LHC accélère des protons à une vitesse proche de celle de la lumière et l
 
 DUNE va envoyer des neutrinos sur 1300 km et étudier leurs oscillations avec une précision inédite.
 
-**Prédiction K₇** : δ_CP = 197° ± 5° (mesurable entre 2034 et 2039)
+**Valeur K₇** : δ_CP = 197°, exactement (les mesures d'aujourd'hui donnent 212°, à une trentaine de degrés près).
 
-**Et dans K₇** : si DUNE trouve δ_CP très différent de 197°, K₇ est falsifié. C'est le test crucial.
+**Et dans K₇** : si les mesures finissent par exclure 197°, cette formule est rejetée, avec le choix de lire 197 en degrés. C'est un test net parmi plusieurs ; à lui seul il ne déciderait pas du cadre entier, ni dans un sens ni dans l'autre.
 
 ---
 
@@ -1059,7 +1061,7 @@ DUNE va envoyer des neutrinos sur 1300 km et étudier leurs oscillations avec un
 
 Le satellite Planck a pris la « photo » la plus détaillée du rayonnement fossile du Big Bang : la lumière la plus ancienne de l'univers.
 
-**Et dans K₇** : Planck a mesuré Ω_DE, n_s, etc., des valeurs que K₇ prédit.
+**Et dans K₇** : Planck a mesuré Ω_DE, n_s et d'autres quantités pour lesquelles le dictionnaire a des formules.
 
 ---
 
@@ -1180,11 +1182,11 @@ Physicien et mathématicien, M-théorie, seul physicien à avoir reçu une méda
 | Variété compacte | [Partie II](#variété-compacte) |
 | Vérification formelle | [Partie VI](#vérification-formelle) |
 | Witten | [Personnages clés](#edward-witten) |
-| Zéro paramètre libre | [Partie VI](#zéro-paramètre-libre) |
+| Pas de molette à tourner | [Partie VI](#pas-de-molette-à-tourner) |
 | Groupe de Weyl | [Partie I](#le-groupe-de-weyl) |
 
 ---
 
-*K₇ Framework v3.4: Pour Tout le Monde*
+*K₇ Framework v3.6 : Pour tout le monde*
 
 *« Si vous avez tout compris, vous en savez plus que moi ! »*

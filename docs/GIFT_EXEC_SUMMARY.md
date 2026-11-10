@@ -1,10 +1,10 @@
 ---
-title: K₇: Executive Summary
+title: "K₇: Executive Summary"
 ---
 
-# K₇: Reading topology instead of fitting it
+# K₇: a correspondence, and the terms on which it can fail
 
-*A technical summary for curious physics readers*
+*A technical summary for curious physics readers, as of version 3.6*
 
 ---
 
@@ -12,142 +12,118 @@ title: K₇: Executive Summary
 
 The Standard Model of particle physics operates with a precision no other scientific theory has ever matched. It describes every known fundamental interaction apart from gravity, with experimental agreement sometimes reaching twelve decimal places.
 
-Yet it contains nineteen free parameters, nineteen numbers the theory does not compute, and which must be measured experimentally before the theory can be used. The masses of the three lepton generations. The masses of the six quarks. The four parameters of the CKM matrix describing quark mixing. The four analogous parameters of the PMNS matrix for neutrinos. The three coupling constants of the electromagnetic, weak, and strong forces. The Higgs mass and its vacuum expectation value.
+Yet it contains about nineteen free parameters, numbers the theory does not compute and which must be measured before the theory can be used: the masses of the charged leptons and of the six quarks, the parameters of the CKM matrix, the three coupling constants, the Higgs mass and its vacuum expectation value. Neutrino masses and mixing add more.
 
-Nineteen numbers. No explanation. The Standard Model is an extraordinarily precise measuring instrument that requires calibration via nineteen tuning dials, with no account of why those dials exist or why they point where they point.
+To this are added long-standing puzzles. Why exactly three generations of matter? Why do the charged lepton masses obey the Koide relation *Q* = 2/3 so closely, a relation noticed in 1981 and never explained? Why does the ratio of dark matter to baryonic matter sit close to a simple rational?
 
-To this are added a handful of long-standing puzzles that have crossed the discipline for decades. Why exactly three generations of matter rather than two, or five, or seventeen? Why do the charged lepton masses obey the Koide relation *Q* = 2/3 to a precision of 10⁻⁴, a relation first noticed in 1981 and never explained? Why does the ratio of dark matter to baryonic matter sit close to a simple rational?
+K₇ (*formerly Geometric Information Field Theory*) is one attempt to look at these numbers differently. It asks: what if they could be written as closed forms in the invariants of a single geometric structure? And, since writing such forms turns out to be easy, it asks a second question with the same seriousness: what would it take for such a correspondence to mean anything?
 
-K₇ (*formerly Geometric Information Field Theory*) is an attempt to answer these questions by changing the nature of the question itself. Rather than asking "what is the value of these parameters," K₇ asks: "what if these parameters were not values to be measured, but consequences of a geometric structure to be identified?"
+## The proposal
 
-## The hypothesis
+In one sentence: 33 dimensionless parameters of the Standard Model and of cosmology are assigned to algebraic combinations of the topological invariants of a compact seven-dimensional manifold with exceptional holonomy, together with an E₈ × E₈ gauge structure.
 
-In its most compact form, the idea fits in a single sentence: the dimensionless parameters of the Standard Model emerge as algebraic combinations of topological invariants of a compact seven-dimensional manifold carrying an exceptional holonomy, coupled to an E₈ × E₈ gauge structure.
+A **seven-dimensional manifold** is a curved space with seven dimensions. **Holonomy** measures how a vector changes when carried around a closed loop in that space. For most manifolds this change can be any rotation. Certain manifolds have holonomy restricted to a subgroup, and in seven dimensions there is an exceptional one, **G₂**, of dimension 14, the automorphism group of the octonions. Manifolds with G₂ holonomy are rare and difficult to construct.
 
-That sentence deserves to be unpacked.
+The **topological invariants** of such a manifold are integers that characterize its shape independently of its metric. The most important are the **Betti numbers** *b₂* and *b₃*, which count the harmonic 2-forms and 3-forms the space can carry. They are whole numbers and cannot vary continuously.
 
-A **seven-dimensional manifold** is a curved space with seven dimensions; one can picture it, very loosely, as an abstract surface, only with six extra dimensions. **Holonomy** measures how a vector changes when parallel-transported around a closed loop in that space. For most manifolds this change can be any rotation: the holonomy group is then the full orthogonal group. Certain privileged manifolds, however, have holonomy *restricted* to a particular subgroup. In seven dimensions there is an exceptional such subgroup, denoted **G₂**, of dimension 14, which arises as the automorphism group of the octonion algebra. Manifolds whose holonomy is reduced to G₂ are rare, difficult to construct, and carry remarkable geometric properties.
+The framework posits a manifold *K₇* with (*b₂*, *b₃*) = (21, 77), together with E₈ × E₈, of dimension 496. From these and a few related integers (twenty structural constants in all), it writes formulas such as
 
-The **topological invariants** of such a manifold are integers that characterize its shape independently of its precise metric. For G₂ manifolds, the most important are the **Betti numbers** *b₂* and *b₃*, which count the harmonic 2-forms and 3-forms the space can carry. These are discrete global properties: they cannot vary continuously. They are whole numbers, full stop.
+- sin²θ_W = *b₂* / (*b₃* + dim G₂) = 3/13,
+- *Q*_Koide = dim G₂ / *b₂* = 2/3,
+- *m*_τ / *m*_e = 7 + 10 × 248 + 10 × 99 = 3477.
 
-K₇ makes the specific hypothesis that there exists such a manifold *K₇* with (*b₂*, *b₃*) = (21, 77), coupled to the E₈ × E₈ gauge structure of dimension 496. From these ingredients alone, it attempts to derive the observed parameters algebraically.
+**E₈** is the largest exceptional Lie group. The framework does not try to embed the Standard Model's particles in E₈, an approach shown to be impossible by Distler and Garibaldi in 2010. It uses E₈ × E₈ as a source of group-theoretic integers, which avoids that obstruction and also means that it makes no claim about how the fermions arise.
 
-**E₈** is the largest of the exceptional Lie groups, of dimension 248, with a singularly rich combinatorial structure. The product E₈ × E₈ arises naturally in heterotic string theory. K₇ does not attempt to embed the Standard Model particles directly in E₈: an approach whose mathematical impossibility was proven by Distler and Garibaldi in 2010. E₈ × E₈ plays a different role in K₇: it supplies the gauge architecture, while matter content and parameter values emerge from the geometry of K₇.
+## A correspondence, not a derivation
 
-## How the framework was built: a story in three acts
+This is the point on which version 3.6 differs most from what came before, and it is worth stating bluntly.
 
-This is where the argument becomes interesting, and where the history matters.
+**No geometric map is known that sends the invariants of K₇ to the observables.** The formulas are *assigned*: nothing in the geometry says that sin²θ_W must be *b₂* / (*b₃* + dim G₂) and not some other ratio. Earlier versions wrote "derive" for this operation. Version 3.6 withdraws the word.
 
-The initial version of K₇, in 2025, carried **four free geometric parameters**: quantities *ξ*, *τ*, *β₀*, *δ* encoding various aspects of the geometric architecture, tuned to reproduce about 22 observables with a mean precision of 0.38%. This was already more constrained than the Standard Model itself (four inputs for twenty-two outputs), but it retained some slack: there was enough latitude in the choice of those four parameters to leave the framework vulnerable to the charge of fitting.
+**No rule fixes which formula goes with which observable.** The grammar and the list of observables were frozen after the formulas had been found.
 
-A second version, at the end of 2025, reduced that count to **three topological parameters**: *p₂* = 2 (a binary duality emerging from dim(G₂)/dim(K₇)), *β₀* = π/8 (an angular quantization tied to the rank of E₈), and a pentagonal factor linked to the Weyl group structure. These three parameters were no longer really free: each was a ratio of topological integers. The number of observables covered had risen to 34, with mean precision 0.13%.
+**The manifold is not constructed.** No compact torsion-free G₂ manifold with Betti numbers (21, 77) is currently known, and the route proposed in version 3.5 does not produce one. The relations use only the declared integers, not a metric.
 
-The current version, K₇ v3.5, took a further step. **There are no continuously adjustable physical parameters.** The structure is entirely fixed by the choice (*b₂*, *b₃*) = (21, 77), the algebraic properties of E₈ × E₈, and a metric normalization target det(g) = 65/32. Ninety-five observables follow, organized in four types: 33 direct algebraic Type I predictions (mean deviation 0.99%), 19 one-step physical extractions (Type II, 0.17%), 21 multi-step dynamical chains (Type III, 3.44%), and 22 structural diagnostics (Type IV). Of the 95 observables, 55 are formally verified in Lean 4 (213 certificate conjuncts, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), 0 sorry).
+What the paper does instead is make the correspondence auditable. It gives the full **dictionary**. It keeps a **residue register** of everything that was set rather than derived: the pair (21, 77), an imposed normalization det(g) = 65/32, a combination κ_T⁻¹ = 61, the unit in which an integer is read as a CP phase, the scales of the comparisons, the assignments themselves. And it writes a **decision rule** with no repair clause.
 
-This trajectory, viewed from the outside, deserves a moment's pause.
+K₇ is, in the paper's own terms, a *privileged candidate*: a member of a well-motivated family, designated by the author for reasons that are the author's own and are declared as such. Presenting a privileged candidate as a demonstrated uniqueness is what the earlier versions did, and what this one stops doing.
 
-In general, when a theoretical framework is tuned to data (what statisticians call an *overfit*) it has to *increase* its degrees of freedom in order to maintain or improve its fit quality as it is asked to cover more observations. This is almost tautological. Add observations without adding parameters and fit quality degrades.
+## How the framework was built
 
-K₇ did the opposite. At each iteration, the number of adjustable parameters went down, the number of observables covered went up, and precision held or improved. This trajectory (4 → 3 → 0 parameters) is an unusual epistemic signature. It suggests that the topological constraints, as they tightened, were genuinely absorbing the degrees of freedom that had previously seemed necessary. In other words: what looked like tunable slack in the early versions turned out to be a consequence of the structure.
+The first version, in 2025, carried four adjustable geometric parameters tuned to reproduce about 22 observables. A second version reduced them to three quantities, each a ratio of topological integers. The current structure has no continuously adjustable parameter: the relations are ratios of integers, or use one further declared operation.
 
-This is not proof that K₇ is correct. But it is proof that *what is happening during iteration is not fitting*. It is compression. And compression that holds, historically in physics, is what precedes moments of new understanding.
+Earlier versions of this summary read that trajectory (four, three, zero parameters, with more observables covered each time) as a sign that what was happening was compression and not fitting. That reading does not survive. Removing continuous parameters while choosing formulas from a rich grammar moves the freedom; it does not remove it. The freedom now sits in the choice of formulas, of the vocabulary and of the Betti pair, which is exactly what the residue register records and what the look-elsewhere test below prices.
 
-## The predictions that no longer move
+What the absence of continuous parameters does give is **rigidity**: an integer ratio cannot be nudged, so a single precise measurement can reject a relation. Rigidity exposes a framework to refutation. It does not certify it: an exceptional structure is rigid whether it was derived or chosen for the values it gives.
 
-At the end of this trajectory, certain relations have revealed themselves to be **exact topological identities**: integer ratios that fall directly out of the structure, with no numerical coefficient to tune. These are the strongest predictions of the framework, because they leave no room for arbitrariness.
+## Where the 33 relations stand
 
-**The number of generations**: *N*_gen = rank(E₈) − pentagonal factor = 8 − 5 = 3. A subtraction of integers. Exactly three, not two or four. The observed value is 3.
+Against the most recent data (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022), with one convention for all uncertainties, the relations fall into five classes, which are not added into a single score:
 
-**The strange-to-down mass ratio**: *m*_s / *m*_d = 2² × 5 = 20. A product of integers. The value obtained from lattice QCD is 20.0 ± 1.0.
+- **23 lie within two standard deviations** of the measurement. Among them *Q*_Koide = 2/3, α_s = √2/12, the CP phase read as 197°, and most quark, mixing and cosmological ratios.
+- **3 are in tension**, between 2σ and 3σ: *m*_τ/*m*_e = 3477, *m*_W/*m*_Z = 37/42 and Ω_c/Ω_m = 27/32.
+- **5 are rejected as exact equalities** at more than 3σ and kept only as numerical proximities: α⁻¹, sin²θ_W = 3/13, *m*_μ/*m*_e, *m*_μ/*m*_τ and *m*_b/*m*_t. The quantities are measured so precisely that a formula 0.2{'main': 'https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md', 'lee': 'https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/', 'concept': 'https://doi.org/10.5281/zenodo.16891489'}way is many standard deviations off.
+- **1 lies inside a range** the PDG gives without uncertainty: *m*_s/*m*_d = 20.
+- **1 sits in the other octant**: sin²θ₂₃ = 6/11, while the global fit prefers the first octant; the value lies inside the fit's 3σ range.
 
-**The tau-to-electron mass ratio**: *m*_τ / *m*_e = dim(*K₇*) + 10 × dim(E₈) + 10 × *H*\* = 7 + 2480 + 990 = 3477. A sum of integer dimensions. The experimental value is 3477.0 ± 0.5.
+They are also **not 33 independent tests**. In three sectors there are more relations than quantities: four lepton relations for two mass ratios, three CKM relations for two parameters, seven density relations for two densities. In each sector the relations disagree with one another as exact equalities. Each formula is computed correctly, and the formulas cannot all be true together.
 
-**The Koide parameter**: *Q* = dim(G₂) / *b*₂(*K₇*) = 14 / 21 = 2/3. An exact rational ratio. The experimental value is 0.6667 ± 0.0001. This relation, observed for more than forty years, had no theoretical explanation.
+Most of the 23 are tested only weakly: where experimental uncertainties are at the percent level, a percent-level agreement is what a rich vocabulary reaches easily.
 
-**The neutrino CP-violating phase**: *δ*_CP = 7 × dim(G₂) + *H*\* = 7 × 14 + 99 = 197°. An additive combination of topological invariants. Under NuFIT 6.1 the best fit has moved to about 207° (no-SK) / 212° (SK), so the predicted 197° sits within about 1σ. This is the framework's most important falsifiable prediction: the DUNE experiment (2028–2040) will measure this phase with a precision that settles it decisively.
+## Why the coincidence hypothesis cannot be ruled out
 
-Alongside these exact identities, the framework predicts the ten elements of the CKM matrix with mean deviation 0.11%, the three neutrino mixing angles to better than 0.5%, the inverse fine-structure constant to 0.002%, nine quark mass ratios to 0.09% on average, and several cosmological observables (including the dark-to-baryonic matter ratio Ω_DM/Ω_b = 43/8) with comparable precision.
+Faced with formulas this close to the data, the question is unavoidable: is this the result of a fishing expedition in an ocean of algebraic combinations?
 
-## Why the coincidence hypothesis can be ruled out
+Earlier versions of this summary answered no, and cited statistical tests: a rank among three million configurations, a P-value, Bayes factors, leave-one-out validations. All of them are withdrawn. They shared one flaw. The alternatives were scored with K₇'s own formulas, which had been chosen for (21, 77); no alternative was allowed to search for its own. Under that design, (21, 77) wins by construction.
 
-Faced with a constellation of formulas this precise, the question is unavoidable: isn't this simply the result of an extended fishing expedition in an ocean of possible algebraic combinations? With enough tries, one eventually hits formulas that match.
+Version 3.6 replaces them with a preregistered test in which **every competitor searches for its own formulas**, in the same grammar, with the same budget and the same freedom of assignment. The result:
 
-The honest answer, in two parts.
+- K₇ reaches 31 of the 33 targets.
+- 1 085 of 4 159 alternative Betti pairs reach as many, and 1 015 of 2 000 invented vocabularies reach as many. None reaches more.
+- A witness with no K₇ constant at all, using only the universal symbols of the grammar, reaches 30.
 
-First, yes, some formulas were indeed found by automated search over restricted algebraic grammars. This is not the only mode of discovery; a substantial part of the framework emerges from direct structural constraints. But it would be dishonest to pretend that every relation was divined by pure geometric intuition. Brute exploration is part of the method, as it has always been in mathematical physics.
+The preregistered verdict: the look-elsewhere effect is not overcome, and the P-value is withdrawn from the text. **Closeness to the measured values is not, by itself, evidence for K₇.** This is not a refutation either: the test says that the score does not discriminate, not that the framework is wrong.
 
-Second, and this is the decisive point: during that exploration, formulas were encountered that produced *better* numerical deviations than those ultimately retained, but which had no structural meaning within the framework. They were set aside. That qualitative criterion (a formula must fit the geometric architecture, not merely match the data) is what distinguishes theoretical compression from numerical fitting. A numerological framework keeps whatever fits best; a structural framework keeps whatever sits inside the structure, even at the cost of slightly lower precision.
+What survives the test is modest and real: rigidity under a dictionary fixed in advance, and a written record of what was chosen.
 
-Beyond this methodological discipline, several statistical analyses documented in the v3.4 main paper test the coincidence hypothesis directly.
+## How a relation can fail
 
-**Combinatorial test**: the configuration (*b*₂, *b*₃) = (21, 77) was compared against 3,070,396 alternatives tested within a bounded space, including thirty G₂ manifolds explicitly known in the mathematical literature. It remains optimal with *p* < 2 × 10⁻⁵, corresponding to significance above 4.2σ. It is also Pareto-optimal: no other tested configuration simultaneously improves on multiple criteria.
+The relations are stated as exact equalities with no theoretical uncertainty. A relation is rejected when its reference data series excludes its value at 3σ. No formula, unit, scale or dataset is changed afterwards to rescue it.
 
-> **Scope of the configuration search (2026-10-02).** The "#1 among 3,070,396 configurations" result holds **with the K₇ formulas held fixed**. When the formula search is re-run for every Betti pair under the same grammar and budget (blind sweep over 242,064 pairs), (21, 77) falls **below the median**: about 64% of pairs strictly beat it ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18). The two tests answer different questions; neither is a selection principle.
+**The CP phase.** The structure produces the integer 197. Reading it in degrees is a choice, declared as such. DUNE and Hyper-Kamiokande will measure δ_CP; a global fit whose 3σ interval excludes 197° rejects the relation together with the choice of unit. Today the fit gives 212 (+26/−36)°.
 
-**Multiple comparisons correction**: the Westfall–Young maxT procedure, which controls the family-wise error rate, confirms that 11 of the 33 predictions remain individually significant after correction, with global significance *p* = 0.008.
+**The octant of θ₂₃.** A fit whose 3σ interval excludes 6/11 rejects that relation.
 
-**Leave-one-out validation**: in 28 independent tests where one observable is withheld and the others used to reconstruct the framework, the (21, 77) configuration remains the unique optimum every time. The withheld prediction is then compared against observation: agreement holds without exception.
+**The tau mass.** Two relations give 1776.74 and 1776.97 MeV; a precise enough measurement must reject at least one.
 
-**Bayesian comparison**: Bayes factors between K₇ and reasonable null models range from 288 to 4,567, placing the result in the "decisive evidence" category by Jeffreys's conventions.
+**A fourth generation** would reject the integer identity *N*_gen = 3.
 
-None of these tests constitutes proof that K₇ is correct. They constitute proof that the observed values are not a combinatorial accident. That distinction matters.
-
-## Falsifiability
-
-The framework is, by construction, without tunable parameters. This means it cannot be "saved" by retouching a constant to absorb an experimental disagreement. Any significant deviation between a K₇ prediction and a sufficiently precise measurement refutes it.
-
-The decisive upcoming tests are clearly identified.
-
-**DUNE** will measure *δ*_CP with an expected precision of a few degrees by 2035. A measured value outside the [182°, 212°] window (more than 15° from the predicted 197°) falsifies the framework.
-
-**Hyper-Kamiokande** will measure *θ*_23 with sub-degree precision. The framework predicts the rational value 85/99 rad = 49.19°. A significant disagreement falsifies.
-
-**The discovery of a fourth generation of matter** at any scale accessible to future colliders falsifies the framework immediately: *N*_gen = 3 is an exact topological consequence, not an empirical observation.
-
-**Future cosmological measurements** (Euclid, CMB-S4) will test predictions for the scalar spectral index, the dark energy density, and other large-scale observables.
-
-The timelines run over 2027–2040. Until then, the framework remains a proposal to be examined, not a validated theory.
+A rejection rejects a relation and the assignment behind it. It does not by itself reject the programme, and the paper says so in advance so that it cannot be said later as a repair. Conversely, a confirmation would show that an assignment agrees with the world, not that the structure requires it. Two results outside the reference series already contradict a relation (the SH0ES value of the Hubble constant, the CDF II W mass) and are reported beside it.
 
 ## What K₇ is not
 
-A new theoretical framework in a mature discipline benefits from defining its limits as sharply as its content.
+K₇ is not a theory of everything. It does not address quantum gravity or the measurement problem.
 
-K₇ is not a theory of everything. It does not claim to explain quantum gravity, resolve the measurement problem in quantum mechanics, or unify all forces in a single framework. It confines itself to a specific problem: deriving the dimensionless parameters of the Standard Model from a fixed geometric structure. The rest is outside its current scope.
+K₇ is not a derivation of the Standard Model. Its smooth manifold does not yield the chiral non-abelian content of the Standard Model, and its relations do not come from a four-dimensional effective theory.
 
-K₇ is not a cosmogony. It proposes no mechanism for the origin of the universe, for the emergence of spacetime, or for the selection of the manifold K₇ among all mathematically possible manifolds. The question "why *this* topology rather than another" remains open, and the framework explicitly acknowledges this as a limit. The only defense available at this stage is statistical: this configuration is optimal among those tested. *Why* it is so remains unknown.
+K₇ is not a cosmogony. It proposes no mechanism for the selection of the manifold. Five routes to deriving (21, 77) have been investigated and closed without success; one numerical observation remains, *b₂* + *b₃* = 98 = 7 × 14, held as a target and not as a theorem.
 
-K₇ does not reduce to any single reading of the word *information*. The name *Geometric Information Field Theory* deserves to be unfolded across three distinct registers.
-
-**At the first register, the empirical predictions depend on no ontological thesis.** The thirty-three derived relations, the numerical deviations, the planned falsification tests, all of these stand independently of what "information" ultimately is. An instrumentalist physicist can work with K₇ by treating its predictions as algebraic consequences of topological invariants, without ever committing further.
-
-**At the second register, the framework's architecture sits within a well-established physics lineage.** The choice of a G₂ manifold coupled to E₈ × E₈, of Betti numbers as primitives, of the total cohomological dimension *H\** as algebraic organizer, belongs to a precise program. Wheeler proposed as early as 1989 that "it from bit" (that matter, energy, and spacetime emerge from information-theoretic foundations. Bekenstein established since the 1970s that the informational capacity of a region is bounded by its area, not its volume. Jacobson derived in 1995 Einstein's equations as a thermodynamic equation of state for observer horizons. Van Raamsdonk showed in 2010 how spacetime connectivity emerges from quantum entanglement. Thirty years of mainstream physics) the holographic principle, black hole thermodynamics, entanglement entropy, have made the idea that geometry, information, and energy are three readings of a single structural organization far less exotic than it sounds. The Betti numbers are not convenient labels in K₇: they are dimensions of harmonic form spaces, hence exact counts of degrees of freedom: the very notion of informational capacity applied to a geometric structure.
-
-**At the third register, the ontological thesis proper** (that geometry, information, and energy are not three correlated aspects but three views of a single underlying configuration) K₇ does not settle. It is compatible with the framework, it motivates the architecture, but it is neither required nor demonstrated by the predictions. Its elaboration is the subject of a separate text (see the companion post [*Gift from Bit*](https://arithmon.substack.com/p/gift-from-bit)). A reader who finds Wheeler prophetic and the holographic program persuasive will see K₇ as a natural piece of that puzzle. A reader who prefers to stay empirical will see a falsifiable predictive framework. Both readings are defensible; the framework requires neither.
-
-Finally, K₇ does not belong to the tradition of unification attempts through direct embedding of Standard Model particles into E₈. That approach, associated with Lisi (2007), meets a mathematical impossibility proven by Distler and Garibaldi in 2010. K₇ uses E₈ × E₈ differently, as gauge architecture, with particles emerging from the cohomology of K₇ rather than from a direct E₈ representation.
+K₇ does not depend on any reading of the word *information*. The relations stand or fall independently of what "information" ultimately is. The lineage that motivated the work (Wheeler's "it from bit", Bekenstein's bound, Jacobson's thermodynamic derivation of Einstein's equations, the holographic programme) makes the idea that geometry and information are related less exotic than it sounds; it is neither required nor supported by the relations. A separate essay discusses it ([*Gift from Bit*](https://arithmon.substack.com/p/gift-from-bit)).
 
 ## The open questions
 
-The framework has weak points its authors have no interest in hiding.
-
-**The selection principle remains open.** No first-principles argument currently derives (*b*₂, *b*₃) = (21, 77) from deeper constraints. The configuration is *selected* by its agreement with experiment, not *deduced* from first principles. Statistical tests show it is optimal, not that it is necessary.
-
-**The explicit construction of K₇ is a program in progress.** The Betti numbers (21, 77) are plausible within the *twisted connected sum* landscape, which produces compact G₂ manifolds. But producing an explicit example with precisely these invariants, and computing directly the volume integrals and Yukawa couplings that would follow, remains a goal to be reached. A first numerical prototype of a local G₂ metric has been produced and verified by the Newton–Kantorovich method, but the full link to the spectrum of observed parameters is yet to be established formally.
-
-**Formulas involving transcendental constants** (where *π*, *ζ*(3), *γ*, or the golden ratio *φ* appear) have a more speculative status than the exact topological identities. The framework treats them as *phenomenological* pending a rigorous derivation from geometry. That floor of the building still needs work.
-
-These limits are acknowledged, documented, and do not obscure what the framework does well.
+- **Existence.** A compact torsion-free G₂ manifold with (21, 77) is not constructed.
+- **Physics.** No mechanism leads from a smooth K₇ to the chiral Standard Model.
+- **Selection.** Nothing selects (21, 77); it is chosen.
+- **Assignment.** No rule assigns formulas to observables.
+- **Dependencies.** The audit of the dependencies among the 33 relations is not complete, so no count of independent tests is given.
 
 ## What remains to be seen
 
-K₇ is a proposal. No more, no less. A mathematically precise proposal, empirically precise at present, and falsifiable through experiments already on the books.
+The paper does not claim that the framework is correct. It may be a genuine structural insight, an approximation to one, or an elaborate coincidence. The aim of version 3.6 is that whichever it is can be found out, and that a reader can see, at every step, what was derived, what was assumed, and what would bring it down.
 
-Its value, if any, will be judged in the years to come. If DUNE measures *δ*_CP at 197° to within a few degrees, the framework passes a hard test. If it measures outside the prediction window, the framework is set aside. If a fourth generation of matter is discovered, the framework is set aside. If the predictions hold, further digging is called for.
-
-What makes this proposal worth examining is not that it would be elegant, many elegant proposals have turned out to be wrong. It is that it was built through a process in which the degrees of freedom *decreased* at each step while *more* observables were covered, and that it has reached a state where it is no longer adjustable. It is either correct or wrong, and experiment will decide.
-
-In a discipline where many recent frameworks struggle to produce near-term testable predictions, that is already an unusual position.
+That is a smaller claim than the one this page used to make. It can be checked.
 
 ---
 
-*For primary sources, formal proofs in Lean 4, complete derivations of the 33 predictions, and detailed statistical analyses, see the main manuscript on Zenodo (DOI [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071)) and the code repository on [GitHub](https://github.com/Arithmon/K7).*
+*For the full statement, see the [main paper](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) and its supplements; the code and results of the look-elsewhere test are [public](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/). The latest deposited version is always at the Zenodo concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489).*

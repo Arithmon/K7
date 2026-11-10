@@ -46,13 +46,15 @@ Whether you're a curious student, a science enthusiast, or just someone who wond
 
 **K₇** (formerly Geometric Information Field Theory) proposes that the fundamental constants of physics (numbers like 1/137, the masses of particles, the strengths of forces) are not arbitrary. They emerge from the **shape** of hidden dimensions in the universe.
 
-**The core idea in one sentence**: The universe has 7 hidden dimensions curled up in a specific shape called K₇, and the properties of this shape mathematically determine everything we measure.
+**The core idea in one sentence**: Suppose the universe has 7 hidden dimensions curled up in a specific shape called K₇. Then 33 of the numbers we measure can be written as simple formulas in the properties of that shape.
+
+**What kind of claim this is (version 3.6).** It is a *dictionary*, not a derivation. Nobody knows a mechanism that goes from the shape to the numbers: the formulas were matched to the measurements, and the framework says so. The shape itself has not been constructed. This guide explains the ideas; whenever it says "in K₇", read "in the dictionary that K₇ proposes".
 
 **Why should you care?**
 
 The Standard Model of physics has **19 free parameters**, numbers we measure but can't explain. Why is the electron 1836 times lighter than the proton? Why are there exactly 3 families of particles? Why is the fine structure constant 1/137?
 
-K₇ proposes answers: **zero free parameters**. Everything comes from geometry.
+K₇ proposes a dictionary in which no formula has a dial to turn: the numbers are ratios of whole numbers. What it does not have is a reason why *these* formulas go with *these* measurements. That gap is written down, not hidden.
 
 ---
 
@@ -396,7 +398,7 @@ K₇ is a "7-dimensional diabolo" whose shape is dictated by octonions (via G₂
 - 77 "3D holes" (b₃ = 77)
 - A very special curvature (G₂ holonomy)
 
-**In K₇**: Everything flows from K₇. It's THE shape of the hidden universe.
+**In K₇**: Every formula of the dictionary is written with the numbers of this shape. Whether such a shape exists with exactly 21 and 77 holes is an open mathematical question: nobody has built it yet.
 
 ---
 
@@ -647,7 +649,7 @@ Neutrinos pass through matter as if it didn't exist. Billions pass through you e
 
 They "oscillate" between three types (electron, muon, tau) while traveling, it's like they change costumes in flight.
 
-**In K₇**: Neutrino mixing angles (θ₁₂, θ₁₃, θ₂₃) and CP phase (δ = 197°) are derived from topology.
+**In K₇**: Neutrino mixing angles (θ₁₂, θ₁₃, θ₂₃) and CP phase (δ = 197°) are written as ratios of the shape's numbers. For the phase, the shape gives the whole number 197; reading it in degrees is a choice.
 
 ---
 
@@ -664,7 +666,7 @@ Quarks are **always** locked up in groups of 2 or 3. You can never see one alone
 - Charm, Strange (medium)
 - Top, Bottom (heavy)
 
-**In K₇**: Quark mass ratios like m_s/m_d = 20 are derived from topology.
+**In K₇**: Quark mass ratios like m_s/m_d = 20 are written as products of the shape's numbers.
 
 ---
 
@@ -844,7 +846,7 @@ For 60+ years, physicists have measured this number to insane precision (10 deci
 
 Feynman, 1985 (*QED: The Strange Theory of Light and Matter*): *"It's one of the greatest damn mysteries of physics: a magic number that comes to us with no understanding by man. You might say the 'hand of God' wrote that number, and 'we don't know how He pushed His pencil.'"*
 
-**K₇'s claim**: it's not magic. `α⁻¹ = 137.033` emerges from the topology of K₇, as `128 + 9 + correction`, where `128 = 2⁷` (the 7 hidden dimensions of K₇) and `9 = 99/11` (a ratio of topological invariants). Feynman's "great damn mystery" becomes a **consequence of shape**.
+**K₇'s formula**: `α⁻¹ = 137.033`, written as `128 + 9 + correction`, where `128 = 2⁷` and `9 = 99/11` (a ratio of the shape's numbers). It is close, and it is not right: α is measured to ten decimal places, and 137.033 is not 137.036. The framework keeps this formula as a *proximity*, a near miss, and no longer claims it as an exact result. Feynman's mystery stands.
 
 ---
 
@@ -862,7 +864,7 @@ sin²θ_W ≈ 0.231 means "about 23% weak force, 77% electromagnetism" in the fi
 
 It's the number of "2D bubbles" (21) divided by the total (77 + 14 = 91).
 
-**In K₇**: The cocktail recipe isn't arbitrary, it's dictated by the shape of the cosmic shaker (K₇).
+**In K₇**: The recipe 3/13 = 0.2308 comes close to the measured 0.2312. But this number is measured so precisely that the small gap is seven times the uncertainty: as an exact equality the formula is rejected, and the framework keeps it only as a near miss.
 
 ---
 
@@ -882,7 +884,7 @@ For 40 years, this stayed an unexplained "numerical curiosity", too precise to b
 
 **K₇ says**: 2/3 = 14/21 = `dim(G₂) / b₂`. The chord isn't accidental: the three lepton masses are constrained by the same geometric structure (the 14-dimensional G₂ symmetry inside the 21-dimensional second cohomology of K₇). The "tuning" of the cosmic chord is dictated by the shape of hidden space.
 
-**In K₇**: This troubling coincidence becomes a logical consequence.
+**In K₇**: The dictionary writes 2/3 as a ratio of two numbers of the shape, and the measurement agrees. Honesty requires a footnote: 2/3 is such a simple fraction that almost any list of numbers can produce it, so this agreement is not evidence that the shape is right.
 
 ---
 
@@ -903,9 +905,7 @@ Why not 2? Or 47?
 
 **K₇**: The Fano plane has 168 symmetries. 168 ÷ 56 = **3**.
 
-It's like asking "Why does a cube have 6 faces?" The answer isn't "just because," it's "because it's a cube." The shape imposes the number.
-
-**In K₇**: The number of families isn't an accident, it's a geometric consequence.
+**In K₇**: The number 3 comes out as a division of two whole numbers of the dictionary. It is an arithmetic identity, a consistency check; it is not a proof that nature must have three families.
 
 ---
 
@@ -937,17 +937,19 @@ At the Planck scale (~10⁻³⁵ m), gravity and quantum mechanics become equall
 
 # Part VI: Why K₇ is Different
 
-### Zero Free Parameters
+### No Dials to Turn
 
-**The fancy word**: Theory without adjustable constants.
+**The fancy word**: No continuously adjustable constant; and a register of everything that was chosen.
 
-**The kitchen table version**: IKEA vs Custom-made.
+**The kitchen table version**: Lego vs modelling clay.
 
-- **The Standard Model** = Custom furniture. The carpenter takes 19 measurements at your place and builds furniture that fits perfectly. But he can't explain *why* your living room has those dimensions.
+- **Modelling clay** can be squeezed to fit any mould. A theory with adjustable dials is like that: turn the dial, match the measurement.
 
-- **K₇** = Universal IKEA furniture. The instructions say: "Take a 7-dimensional diabolo with G₂ holonomy." There's only one way to assemble it. The dimensions come out automatically.
+- **Lego bricks** cannot be squeezed. A formula like 3/13 is a Lego brick: you cannot nudge it by 1%. If the measurement moves away, the formula is simply wrong.
 
-**In K₇**: 19 mysterious numbers → 0 mysterious numbers. Everything comes from the shape.
+K₇'s formulas are Lego bricks. But somebody still chose *which bricks to use and where to put them*. With a big enough box of bricks, you can build something close to almost any shape. So "no dials" is not the same as "nothing was chosen".
+
+**In K₇**: No dials, and a written list (the *residue register*) of every choice that was made: the two numbers 21 and 77, the formulas themselves, a normalization, and the unit in which 197 is read.
 
 ---
 
@@ -963,12 +965,12 @@ K₇ says: "The neutrino CP phase δ_CP = 197°, no more, no less."
 
 The DUNE experiment will measure this in 2034-2039.
 
-- If DUNE finds 197° ± 5° → K₇ survives
-- If DUNE finds 250° → K₇ is dead. Done. We move on.
+- If the measurements end up excluding 197° (at the level physicists call 3 sigma) → this formula is dead, and so is the choice of reading 197 in degrees. No rescue, no adjusted version.
+- If they include 197° → the formula survives. That would show the choice agrees with nature; it would not prove the shape is right.
 
-**That's science**: predictions that can die.
+**That's science**: statements that can die, with the rules written before the result is known.
 
-**In K₇**: K₇ plays the game honestly. It makes testable predictions.
+**In K₇**: The rules are written in advance, formula by formula. Five of the 33 formulas have already failed as exact equalities, and the framework says which. One failed formula does not sink the others, and the framework says that in advance too.
 
 ---
 
@@ -980,7 +982,7 @@ The DUNE experiment will measure this in 2034-2039.
 
 A theory is "natural" if it doesn't need parameters tuned to 0.0000001% precision to work.
 
-**In K₇**: Zero adjustable parameters = maximum naturalness.
+**In K₇**: The formulas have no dial to tune. Whether that makes the framework "natural" or just rigid is exactly what the experiments are for.
 
 ---
 
@@ -1004,7 +1006,7 @@ Individual atoms aren't wet. "Wetness" emerges when billions of atoms are togeth
 
 Lean 4 is a computer program that checks every step of every proof. You can't cheat, can't make calculation errors, can't "skip" a step. If Lean accepts your proof, it's **mathematically certain**.
 
-**In K₇**: 290+ relations verified in Lean 4 with 0 "sorry" (holes). Zero domain-specific axioms.
+**In K₇**: The arithmetic of the 33 formulas is checked in Lean 4, with no "sorry" (holes). What that proves is that the sums are right: that 21/91 really is 3/13. It does not prove that 3/13 is the right formula for nature, nor that the shape exists.
 
 ---
 
@@ -1018,7 +1020,7 @@ Lean 4 is a computer program that checks every step of every proof. You can't ch
 
 The PDG publishes the best values for all masses, lifetimes, etc. every year. It's THE reference.
 
-**In K₇**: All comparisons use PDG 2024.
+**In K₇**: Particle comparisons use the most recent PDG tables (the 2026 edition for version 3.6).
 
 ---
 
@@ -1032,7 +1034,7 @@ The LHC accelerates protons to nearly the speed of light and smashes them togeth
 
 **Major discovery**: Higgs boson (2012).
 
-**In K₇**: The LHC measured W, Z, Higgs masses that K₇ predicts.
+**In K₇**: The LHC measured the W, Z and Higgs masses; the dictionary has formulas for their ratios.
 
 ---
 
@@ -1044,9 +1046,9 @@ The LHC accelerates protons to nearly the speed of light and smashes them togeth
 
 DUNE will send neutrinos 1300 km and study their oscillations with unprecedented precision.
 
-**K₇ prediction**: δ_CP = 197° ± 5° (measurable 2034-2039)
+**K₇ value**: δ_CP = 197°, exactly (today's measurements say 212°, give or take about 30°).
 
-**In K₇**: If DUNE finds δ_CP very different from 197°, K₇ is falsified. This is the key test.
+**In K₇**: If the measurements end up excluding 197°, that formula is rejected, together with the choice of reading 197 in degrees. It is one clear test among several; it would not decide the whole framework by itself, in either direction.
 
 ---
 
@@ -1058,7 +1060,7 @@ DUNE will send neutrinos 1300 km and study their oscillations with unprecedented
 
 The Planck satellite took the most detailed "photo" of the Big Bang's fossil radiation: the oldest light in the universe.
 
-**In K₇**: Planck measured Ω_DE, n_s, etc. that K₇ predicts.
+**In K₇**: Planck measured Ω_DE, n_s and other quantities for which the dictionary has formulas.
 
 ---
 
@@ -1175,6 +1177,6 @@ Physicist and mathematician, M-theory, only physicist with a Fields Medal (1990)
 
 ---
 
-*K₇ Framework v3.3: For Everyone*
+*K₇ Framework v3.6: For Everyone*
 
 *"If you understood correctly all of this, you've understood more than me!"*

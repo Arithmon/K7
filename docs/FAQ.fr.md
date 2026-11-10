@@ -2,400 +2,149 @@
 title: FAQ
 ---
 
-# Questions Fréquentes
+# Foire aux questions
 
-Questions courantes sur le cadre théorique K₇, organisées par thème.
+Les questions courantes sur le cadre K₇, à la version 3.6 de l'article. Là où cette page et l'[article principal](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) diffèrent, c'est l'article qui fait foi.
 
-## Le cadre général
+## Le cadre
 
-### Qu'est-ce que K₇ ?
+### Qu'est-ce que le cadre K₇ ?
 
-K₇ est un cadre théorique qui dérive les paramètres fondamentaux de la physique à partir de la structure géométrique des algèbres de Lie exceptionnelles E₈×E₈ compactifiées sur des variétés à holonomie G₂. Au lieu de traiter les paramètres du Modèle Standard comme des entrées arbitraires, K₇ propose qu'ils émergent comme des invariants topologiques issus de la réduction dimensionnelle.
+Une **correspondance déclarée**. Elle associe 33 paramètres sans dimension du Modèle Standard et de la cosmologie à des formes closes en les invariants d'une variété compacte K₇ de dimension sept, d'holonomie G₂ et de nombres de Betti (b₂, b₃) = (21, 77), avec une structure de jauge E₈×E₈. Par exemple, sin²θ_W reçoit b₂/(b₃ + dim G₂) = 3/13.
 
-### En quoi est-ce différent de la théorie des cordes ?
+Elle est énoncée avec trois choses : son **dictionnaire** (vingt constantes structurelles et la grammaire dans laquelle s'écrivent les formules), son **registre des résidus** (tout ce qui a été posé plutôt que dérivé) et une **règle de décision** écrite à l'avance.
 
-Les deux approches impliquent des dimensions supplémentaires et E₈, mais diffèrent :
+### Est-ce une dérivation des constantes du Modèle Standard ?
 
-**Théorie des cordes** :
-- Vise l'unification de la gravité quantique
-- Contient ~10⁵⁰⁰ vides possibles (le problème du paysage)
-- Requiert généralement la supersymétrie
-- Plongement direct des particules dans les groupes de jauge
+Non. On ne connaît aucune application géométrique qui envoie les invariants de K₇ sur les observables, et aucune règle ne fixe quelle formule est associée à quelle observable. Les versions précédentes écrivaient « dériver » là où l'opération est une attribution ; la version 3.6 retire ce mot partout. K₇ est un candidat privilégié, choisi par l'auteur, et l'article le dit.
 
-**K₇** :
-- Se concentre sur la dérivation des paramètres
-- Une seule structure géométrique (la variété K₇)
-- Pas de supersymétrie requise
-- Architecture théorico-informationnelle, émergence indirecte des particules
+### Y a-t-il des paramètres libres ?
 
-K₇ pourra peut-être se connecter à la théorie des cordes à terme, mais fonctionne comme un cadre indépendant pour la prédiction des paramètres.
+Aucune relation n'a de paramètre **continûment** ajustable : un rapport d'entiers ne se retouche pas. Cela ne veut pas dire que rien n'a été choisi. Le registre des résidus (R1 à R12) énumère ce qui a été posé : la paire de Betti (21, 77), la normalisation imposée det(g) = 65/32, la combinaison κ_T⁻¹ = 61, l'unité dans laquelle l'entier 197 est lu comme phase CP, les échelles et schémas de masse des comparaisons, l'attribution des formules aux observables, et l'absence de choix entre relations incompatibles dans trois secteurs. Les versions précédentes parlaient d'un cadre sans paramètre libre ni ajustement ; cette description du choix des formules est retirée.
 
-### Est-ce de la physique grand public ?
+### La variété K₇ existe-t-elle ?
 
-K₇ est un cadre théorique spéculatif qui présente des prédictions testables. Les fondations mathématiques (E₈, holonomie G₂, réduction dimensionnelle) sont bien établies. La revendication nouvelle, c'est que les paramètres du Modèle Standard émergent comme des invariants topologiques de cette structure spécifique.
+On ne le sait pas. Aucune variété G₂ compacte sans torsion de nombres de Betti (21, 77) n'est construite à ce jour, et la voie proposée dans la version 3.5 ne réalise pas cette paire ([erratum](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md), §9). Les 33 relations n'utilisent pas la métrique de K₇ : elles reposent sur les invariants topologiques déclarés et sur les données du groupe E₈×E₈. Les articles compagnons certifient des morceaux locaux ou conditionnels (une métrique de couture, un ansatz de col), pas un K₇ compact.
 
-Le cadre est évalué selon :
-- La rigueur mathématique des dérivations
-- La précision de l'accord expérimental (v3.4 : 95 observables en 4 types : Type I 0,99 % d'écart moyen sur 33 obs, Type II 0,17 % sur 19 obs, Type III 3,44 % sur 21 obs ; 11 correspondances exactes, 53 sous 1 % ; NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022)
-- La falsifiabilité (critères clairs en S2 Section 10)
-- La reproductibilité (notebook computationnel disponible)
+### Quelle différence avec la théorie des cordes ou la M-théorie ?
 
-### Combien y a-t-il de paramètres libres ?
+E₈×E₈ et l'holonomie G₂ apparaissent toutes deux en M-théorie, mais le cadre ne fournit aucune compactification de ce type. Son K₇ lisse ne donne pas le contenu chiral non abélien du Modèle Standard, et ses relations ne sont pas dérivées d'une théorie effective à quatre dimensions. Il utilise les structures exceptionnelles comme source d'entiers, et le dit.
 
-**Modèle Standard** : 19 paramètres libres
-**K₇ v3.5** : zéro paramètre continu ajustable
+### Est-ce de la physique reconnue ?
 
-Toutes les quantités découlent d'une structure topologique fixe (groupe de jauge E₈×E₈, variété K₇ à holonomie G₂). Le cadre atteint une « détermination structurelle » où des choix mathématiques discrets déterminent uniquement toutes les prédictions.
+Non. C'est le travail d'un chercheur indépendant, mené avec l'aide de l'IA, qui n'est pas passé par l'évaluation d'une revue. Les articles, les données et le code sont publics pour que chacun puisse vérifier ce qui est avancé. Le cadre a été cité dans la littérature à comité de lecture ; une citation n'est pas une approbation.
 
-### K₇ peut-il être falsifié ?
+## Les 33 relations
 
-Oui. Plusieurs critères clairs de falsification :
+### Que compare-t-on à l'expérience ?
 
-1. **Découverte d'une quatrième génération** : N_gen = 3 est exact dans K₇
-2. **Mesure précise de δ_CP** : prédit exactement à 197°
-3. **Précision de sin²θ_W** : prédit comme 3/13 = 0,230769...
-4. **Violation des relations exactes** : Q_Koide ≠ 2/3, m_s/m_d ≠ 20, etc.
-5. **Écarts systématiques** : si plusieurs prédictions s'écartent au-delà des erreurs expérimentales
+Trente-trois relations sans dimension : couplages de jauge, rapports de masses des leptons et des quarks, paramètres de mélange PMNS et CKM, rapports de masses des bosons et paramètres cosmologiques. La [référence des observables](wiki/Observable-Reference.fr.html) donne chaque formule, sa valeur, la mesure et son statut.
 
-Voir S2 Section 10 pour les critères de falsification complets.
+Le jeu de données contient 62 autres entrées (quantités dimensionnées lues dans une unité choisie, sorties de mécanismes avec choix de calibration, diagnostics structurels). La version 3.6 ne les compte **pas** comme prédictions ; les versions précédentes parlaient de 95 observables prédites, ce qui est retiré.
 
-## Structure mathématique
+### Les 33 relations s'accordent-elles avec les données ?
 
-### Pourquoi E₈×E₈ ?
+Face à PDG 2026, NuFIT 6.1, Planck 2018 et CODATA 2022, toutes incertitudes à 1σ, elles se répartissent en cinq classes qui ne s'additionnent pas en un score :
 
-E₈ est la plus grande algèbre de Lie exceptionnelle, avec des propriétés uniques :
-- Dimension 248 (= 31×8, numérologie évocatrice)
-- Simplement lacée (toutes les racines de même longueur)
-- Contient diverses sous-algèbres adaptées aux symétries de jauge
-- Connexion avec la correction d'erreur quantique : code [248, 12, 56](248,-12,-56.html)
+| Classe | Nombre | Relations |
+|---|:---:|---|
+| à moins de 2σ | 23 | les autres relations |
+| tension (entre 2σ et 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
+| proximité (au-delà de 3σ, rejetée comme égalité exacte) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t |
+| dans l'intervalle du PDG (sans incertitude) | 1 | m_s/m_d |
+| profil non gaussien, octant non tranché | 1 | sin²θ₂₃ |
 
-Deux copies (E₈×E₈) fournissent :
-- Une dimension totale de 496 = 2⁴⁸ + 48 (proche d'une puissance de 2)
-- Une structure suffisante après réduction dimensionnelle
-- Une architecture d'information binaire potentielle
+Les versions précédentes résumaient l'accord par un écart moyen. Ce résumé est retiré : il masquait les relations au-delà de 2σ. Le détail est dans le [bilan de validation](wiki/Validation-Summary.fr.html).
 
-### Qu'est-ce que l'holonomie G₂ ?
+### Sont-ce 33 tests indépendants ?
 
-G₂ est le groupe d'automorphismes des octonions, un groupe de Lie de dimension 14. Une variété riemannienne de dimension 7 à holonomie G₂ a des propriétés géométriques particulières :
+Non. Trois secteurs sont surdéterminés : quatre relations leptoniques portent sur deux rapports de masses, trois relations CKM sur deux paramètres, sept relations de densité sur deux densités indépendantes. Dans chacun, les relations se contredisent en tant qu'égalités exactes : elles ne peuvent pas toutes tenir, et aucune n'est choisie après coup. Prises ensemble comme égalités exactes, les 33 sont déjà incompatibles ; chaque relation reste testable séparément.
 
-- Ricci-plate (adaptée à la compactification)
-- Précisément 7 dimensions (K₇)
-- Structure de cohomologie unique : b₂ = 21, b₃ = 77
-- Schémas de brisure naturels pour les symétries de jauge
+### L'accord est-il statistiquement significatif ?
 
-Les nombres de cohomologie (21, 77) collent remarquablement bien au contenu en bosons de jauge et fermions.
+Non. Dans un test look-elsewhere préenregistré, chaque concurrent cherche ses propres formules, dans la même grammaire et avec le même budget. K₇ atteint 31 des 33 cibles ; 1 085 paires de Betti alternatives sur 4 159 et 1 015 vocabulaires inventés sur 2 000 en atteignent autant, et aucun n'en atteint plus (P_global = 0,51 pour un seuil de 0,01). Un témoin sans aucune constante de K₇ en atteint 30. La proximité avec les valeurs mesurées n'est donc pas, à elle seule, un indice en faveur de K₇.
 
-### Qu'est-ce que K₇ ?
+Les probabilités de coïncidence, valeurs P et facteurs de Bayes des versions précédentes sont retirés : ils venaient de tests où les alternatives étaient notées avec les formules de K₇. Voir les [éléments statistiques](wiki/Statistical-Evidence.fr.html) ; le code et les résultats du test sont [publics](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/).
 
-K₇ désigne une variété compacte de dimension 7 à holonomie G₂. Bien que diverses telles variétés existent, leurs invariants topologiques sont contraints. K₇ utilise :
+### Quels sont les points faibles ?
 
-- b₂(K₇) = 21 : contenu en bosons de jauge
-- b₃(K₇) = 77 : contenu en fermions chiraux
-- Dimension totale 7 : dimensions supplémentaires au-delà de l'espace-temps 4D
+- Cinq relations sont rejetées comme égalités exactes et gardées seulement comme proximités numériques, dont α⁻¹ et sin²θ_W.
+- sin²θ₂₃ = 6/11 se trouve dans le second octant alors que l'ajustement global préfère le premier.
+- L'accord n'est pas distinctif (question précédente).
+- La paire de Betti, les formules et la normalisation sont choisies, non dérivées ; cinq voies pour dériver (21, 77) ont été fermées sans succès.
+- La variété n'est pas construite, et aucun mécanisme ne mène d'elle au Modèle Standard chiral.
 
-Voir le Supplément S2 pour la construction explicite de la métrique.
+### Et δ_CP = 197° ?
 
-### Comment fonctionne la réduction dimensionnelle ?
+La structure produit l'entier 197 = 7·14 + 99. Le lire comme un angle en degrés est un choix du dictionnaire, consigné au registre des résidus et compté dans le test look-elsewhere ; lu en radians ou en grades, le même entier donne d'autres phases. NuFIT 6.1 donne δ_CP = 212 (+26/−36)°, de sorte que la lecture en degrés est aujourd'hui dans la bande à 1σ. Une confirmation montrerait que cette assignation s'accorde avec le monde, pas que la structure l'impose.
 
-Configuration de départ : théorie en 11 dimensions avec groupe de jauge E₈×E₈
+### Et les quantités dimensionnées, comme les masses ?
 
-**Étape 1** : compactification sur AdS₄×K₇
-- 4 dimensions → espace-temps
-- 7 dimensions → espace interne compact K₇
+Les masses et les échelles absolues ne figurent que parmi les 62 entrées non comptées comme prédictions. Plusieurs sont des nombres structurels lus en MeV ; lire un nombre dans une unité est une assignation du même genre que lire 197 en degrés, avec un espace d'alternatives bien plus vaste.
 
-**Étape 2** : développement harmonique
-- Champs décomposés en formes harmoniques sur K₇
-- Modes zéro → contenu en particules 4D
-- Modes massifs → tour de Kaluza-Klein
+## Les tests
 
-**Étape 3** : brisure de symétrie
-- L'holonomie G₂ brise E₈×E₈ → sous-groupes
-- Symétrie de jauge → SU(3)×SU(2)×U(1)
-- Fermions chiraux issus de la cohomologie H³(K₇)
+### Le cadre peut-il être réfuté ?
 
-Voir le Supplément S1 pour les détails mathématiques complets.
+Les relations, une à une, oui. Chacune est énoncée comme une égalité exacte, sans incertitude théorique, et la règle est écrite à l'avance, sans clause de réparation : une relation est rejetée quand sa série de référence (PDG, NuFIT, Planck, CODATA) exclut sa valeur à 3σ, et elle n'est pas sauvée en changeant sa formule, son unité, son échelle ou son jeu de données.
 
-## Prédictions et résultats
+| Relation | Valeur | Rejetée quand | Où |
+|---|---|---|---|
+| δ_CP | 197° | un ajustement global dont l'intervalle à 3σ exclut 197° ; l'assignation d'unité est rejetée avec elle | DUNE, Hyper-Kamiokande |
+| sin²θ₂₃ | 6/11 | un ajustement global dont l'intervalle à 3σ exclut 6/11, dans l'un ou l'autre octant | DUNE, Hyper-Kamiokande |
+| m_τ/m_e et Q_Koide | 1776,74 et 1776,97 MeV pour m_τ | une valeur de m_τ dont l'intervalle à 3σ exclut la valeur | Belle II, BES III |
+| N_gen | 3 | une quatrième génération séquentielle | LHC, FCC |
+| m_s/m_d | 20 | une détermination sur réseau, avec incertitude, dont l'intervalle à 3σ exclut 20 | QCD sur réseau |
 
-### Quelles observables K₇ prédit-il ?
+Un rejet rejette la relation et l'assignation qui l'a produite. Il ne rejette pas à lui seul le programme, dont les autres relations tiennent ou tombent chacune pour son compte ; l'article le dit maintenant, pour que cela ne puisse pas être dit plus tard comme une réparation. Le programme exploratoire au sens large n'a, à ce jour, aucun critère unique de réfutation.
 
-**33 relations Type I** (v3.3 : 18 cœur + 15 étendues) :
+### Qu'est-ce qui compterait en sa faveur ?
 
-- 3 couplages de jauge (α, sin²θ_W, α_s)
-- 1 nombre de générations (N_gen = 3)
-- 4 angles de mélange des neutrinos (θ₁₂, θ₁₃, θ₂₃, δ_CP)
-- 2 rapports de masses leptoniques (m_τ/m_e, m_μ/m_e)
-- 1 rapport de masses de quarks (m_s/m_d)
-- 1 paramètre de Koide (Q = 2/3)
-- 2 paramètres cosmologiques (Ω_DE, n_s)
-- 2 paramètres électrofaibles (λ_H, hiérarchie)
-- 2 constantes topologiques (κ_T, det(g))
+Moins qu'on pourrait l'espérer. La proximité n'étant pas distinctive, de nouveaux accords au pour cent ajoutent peu. Ce qui changerait le tableau est d'une autre nature : une construction de la variété, un mécanisme qui sélectionne (21, 77), une règle qui attribue les formules aux observables, ou une relation qui survit à une mesure assez précise pour départager des vocabulaires concurrents.
 
-Écart moyen avec l'expérience (v3.4, 95 observables) : **Type I 0,99 %** sur 33 ratios sans dimension, **Type II 0,17 %** sur 19 extractions physiques en une étape, **Type III 3,44 %** sur 21 chaînes dynamiques multi-étapes ; 11 correspondances exactes (<0,01 %), 53 sous 1 % (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022).
+### Des mesures contredisent-elles déjà une relation ?
 
-*Référence historique (v3.3.24) : 0,24 % d'écart moyen sur 32 observables bien mesurés (0,57 % en incluant δ_CP), préservée dans le découpage par secteur de Statistical-Evidence.*
+Deux résultats contradictoires, hors des séries de référence, sont rapportés à côté de leur classe. h = 167/248 s'accorde avec Planck et est exclu par l'échelle des distances SH0ES à 5,5σ. m_W/m_Z = 37/42 est à −2,7σ du PDG et à −10,6σ de la masse du W de CDF II. Tant que les méthodes divergent, le statut est donné des deux façons, et aucun des deux accords ne vaut confirmation.
 
-### Et les paramètres dimensionnels comme les masses ?
+## Mathématiques et vérification
 
-La version 2.1 introduit le **pont d'échelle** et le cadre de **dynamique torsionnelle** qui relie observables sans dimension et observables dimensionnels :
+### Pourquoi E₈×E₈ et l'holonomie G₂ ?
 
-**Pont d'échelle** : Λ_GIFT = 21×e⁸×248/(7×π⁴) ≈ 1,63×10⁶
+Ce sont des structures dont l'intérêt ne doit rien aux constantes du Modèle Standard : les octonions, la classification des groupes d'holonomie par Berger, les algèbres de Lie exceptionnelles, et leur rôle en M-théorie. Cela répond à la question de savoir si la famille mérite d'être explorée. Cela ne dit pas pourquoi ce membre-ci : ces exigences ne sélectionnent ni (21, 77), ni les formules, ni la normalisation.
 
-Cela permet de prédire :
-- Les masses des quarks (m_u = 2,16 MeV jusqu'à m_t = 172,8 GeV)
-- Les masses des bosons de jauge (M_W = 80,37 GeV, M_Z = 91,19 GeV)
-- La valeur moyenne dans le vide (v_EW = 246,2 GeV)
+### Que prouve la formalisation en Lean 4 ?
 
-Les prédictions dimensionnelles (statut : THEORETICAL/DERIVED) sont moins rigoureuses que les relations topologiques exactes mais montrent un excellent accord (écart moyen ~0,3 % pour les observables dimensionnels).
+L'arithmétique. Étant donné les entiers déclarés, chacune des 33 formes closes s'évalue au nombre annoncé (réunies dans `relations_v36_certified` ; 156 fichiers, 14 axiomes, aucun `sorry`). Elle n'établit ni l'existence de K₇, ni l'interprétation physique d'une relation, ni le choix des attributions, ni la cohérence des relations prises ensemble. Une formule vérifiée par machine n'est pas pour autant la bonne formule.
 
-### Quelle est la précision des prédictions ?
+### Pourquoi ces nombres et pas d'autres ?
 
-**Exactes par construction** (0 % d'écart) :
-- N_gen = 3
-- Q_Koide = 2/3
-- m_s/m_d = 20
+C'est la question de la sélection, et elle est ouverte. La paire (21, 77) est une entrée de construction, au même rang que le postulat de l'holonomie G₂ : fixée avant que les relations soient gelées et utilisée de façon rigide par toutes, mais choisie, non sélectionnée. Une observation numérique subsiste, b₂ + b₃ = 98 = dim(K₇) · dim(G₂), tenue pour une cible et non pour un théorème.
 
-**Ultra-précises** (<0,01 %) :
-- α⁻¹ : 0,001 % d'écart
-- Q_Koide mesuré : 0,005 % d'écart
-- n_s : 0,004 % d'écart
+### Cela veut-il dire que la physique n'est « que des mathématiques » ?
 
-**Haute précision** (<0,5 %) :
-- Secteur neutrino complet : moyenne 0,24 % (référence v3.3.24)
-- Couplages de jauge : moyenne 0,03 %
-- Matrice CKM : moyenne 0,11 %
+Le cadre se lit comme une proposition structurelle : on demande à la structure de porter un poids prédictif, sans engagement ontologique supplémentaire. Les lectures où géométrie et information sont deux aspects d'une même chose ont motivé le travail à l'origine ; les relations ne les exigent pas et ne les étayent pas.
 
-**Globalement (v3.4, dataset à 95 observables)** : Type I 0,99 % sur 33 ratios, Type II 0,17 % sur 19 obs, Type III 3,44 % sur 21 obs ; 11 exactes (<0,01 %), 53 sous 1 %. La référence historique v3.3.24 (0,24 % sur 32 obs, 0,57 % incl. δ_CP) est préservée par secteur pour traçabilité.
+## Pratique
 
-Voir S2 Section 10 pour l'analyse statistique détaillée.
+### Qu'est-ce qui a changé avec la version 3.6 ?
 
-### Quelle est la prédiction la plus impressionnante ?
+Elle retire plusieurs affirmations des versions précédentes : que les relations sont dérivées de la géométrie, qu'elles ne peuvent pas être ajustées, que 95 observables sont prédites, qu'une probabilité de coïncidence ou une valeur P mesure le caractère distinctif du cadre, que 197° est une prédiction de pure géométrie, que le nombre de générations vient d'un théorème de l'indice. Ce qui reste est plus modeste et se vérifie. La liste complète est dans le [journal des changements](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md).
 
-Subjectivement, plusieurs se distinguent :
+### Par où commencer ?
 
-**δ_CP = 197°** : formule topologique exacte δ_CP = dim(K₇)×dim(G₂) + H* = 7×14 + 99 = 197°, confirmée expérimentalement à <0,2 %. C'est un angle sans dimension déterminé par les pures mathématiques.
+- **Sans équations** : [K₇ pour tout le monde](wiki/GIFT-for-Everyone.fr.html).
+- **Physicien** : l'[article principal](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md), sections 3, 4, 7 et 11.
+- **Mathématicien** : le supplément S1 et les articles compagnons sur la métrique de couture.
+- **Les chiffres** : [référence des observables](wiki/Observable-Reference.fr.html), [bilan de validation](wiki/Validation-Summary.fr.html), [éléments statistiques](wiki/Statistical-Evidence.fr.html).
 
-**Secteur neutrino complet** : les quatre paramètres (trois angles, une phase) prédits avec <0,5 % d'écart sans aucune entrée spécifique aux neutrinos.
+### Comment citer ?
 
-**N_gen = 3** : explique pourquoi trois générations existent comme nécessité topologique, pas comme accident.
+L'article du cadre est archivé sur Zenodo ; le DOI concept [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) renvoie toujours à la dernière version. Le [guide de citation](wiki/Citation-Guide.html) (en anglais) donne les formats.
 
-**Paradigme zéro paramètre** : toutes les prédictions dérivées d'une structure topologique fixe sans paramètre continu ajustable.
+### Puis-je m'en servir dans mes recherches, ou contribuer ?
 
-### Quelles sont les plus grosses tensions ?
-
-L'accord global est solide mais des tensions existent :
-
-**Octant de θ₂₃** : le cadre prédit l'octant supérieur (49,25°). Le meilleur ajustement NuFIT 6.1 se situe à 43,3°, dans l'octant inférieur : cette prédiction est donc actuellement **en tension**. L'octant n'est pas tranché et a basculé entre deux ajustements globaux consécutifs ; DUNE et Hyper-Kamiokande le décideront. Consigné au [tableau de bord](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
-
-**Quelques éléments de la CKM** : certains montrent des écarts ~0,3-0,5 %, techniquement dans les erreurs combinées mais à examiner à l'avenir.
-
-**Cadre temporel** : les prédictions dimensionnelles (masses, H₀) sont prometteuses mais ont des incertitudes plus grandes et nécessitent du développement.
-
-Une évaluation honnête requiert de rapporter à la fois les succès et les zones à raffiner.
-
-## Tests expérimentaux
-
-### Quelles expériences peuvent tester K₇ ?
-
-**À court terme (2025-2027)** :
-- Belle II : mesures CKM améliorées
-- T2K/NOvA : angles de mélange neutrino améliorés
-- LHCb : violation CP de précision (δ_CP)
-
-**À moyen terme (2028-2030)** :
-- DUNE : hiérarchie des masses neutrino et δ_CP définitifs
-- LHC/FCC : recherche de nouvelles particules prédites (3,9 GeV, 20 GeV)
-- Physique atomique : mesures ultra-précises de α
-
-**À long terme (2030+)** :
-- Collisionneurs de prochaine génération : recherches de quatrième génération
-- Tests de précision des relations exactes
-- Observations cosmologiques : densité d'énergie noire
-
-Voir l'[article principal](Paper-Main-Framework.html) pour les critères de falsification détaillés.
-
-### Qu'est-ce qui falsifierait définitivement K₇ ?
-
-Plusieurs voies claires de falsification :
-
-1. **Découverte d'une quatrième génération** : falsification nette puisque N_gen = 3 est exact
-2. **Écart de δ_CP** : mesure de haute précision incohérente avec 197°
-3. **Violation des relations exactes** : Q_Koide ≠ 2/3 ou m_s/m_d ≠ 20 hors erreurs
-4. **Écarts systématiques multiples** : le cadre perd son pouvoir prédictif
-
-Le cadre est authentiquement falsifiable, pas ajustable de manière arbitraire.
-
-### Qu'est-ce qui renforcerait la confiance dans K₇ ?
-
-Plusieurs confirmations potentielles :
-
-1. **Précision sur δ_CP** : mesure convergeant vers 197° à haute précision
-2. **Découverte de nouvelles particules** : scalaire à 3,9 GeV, boson de jauge à 20 GeV, etc.
-3. **Relations exactes confirmées** : précision accrue sur Q_Koide, m_s/m_d
-4. **Reconnaissance de motifs** : observables additionnels suivant des schémas géométriques
-5. **Dérivations indépendantes** : voies alternatives vers les mêmes résultats
-
-## Détails techniques
-
-### Quelle est l'architecture d'information ?
-
-Le cadre suggère que les paramètres physiques encodent une structure d'information :
-
-**Structure binaire** :
-- E₈×E₈ : 496 = 2⁴⁸ + 48 dimensions
-- Réduction : 496 → 99 (rapport de compression ≈ 5)
-- Ω_DE = ln(2) : logarithme naturel de 2 (information par bit)
-
-**Correction d'erreur** :
-- Réseau E₈ : code de correction d'erreur quantique [248, 12, 56](248,-12,-56.html)
-- Préservation de l'information durant la réduction dimensionnelle
-- Protection topologique des valeurs des paramètres
-
-Cela suggère que la physique pourrait fondamentalement concerner le traitement d'information, avec les particules et les forces comme structures émergentes.
-
-### Quel est le système de classification de statut ?
-
-Les résultats sont classés par niveau de rigueur :
-
-- **VERIFIED** : preuve mathématique rigoureuse (par exemple, N_gen = 3)
-- **TOPOLOGICAL** : conséquence directe de la structure de la variété
-- **DERIVED** : calculé à partir de résultats prouvés/topologiques
-- **THEORETICAL** : justification théorique, preuve incomplète
-- **PHENOMENOLOGICAL** : empiriquement précis, théorie en cours
-- **EXPLORATORY** : enquête préliminaire
-
-Cette transparence permet aux lecteurs d'évaluer le niveau de confiance pour chaque prédiction.
-
-### Comment cela se calcule-t-il ?
-
-Tous les calculs sont disponibles dans `publications/validation/` et [giftpy](https://github.com/Arithmon/K7-Lean) :
-
-**Analytique** : dérivations mathématiques dans les suppléments
-**Numérique** : implémentation Python avec NumPy, SciPy, SymPy
-**Vérification** : résultats vérifiés à ~15 chiffres de précision
-**Reproductible** : tourne dans le navigateur via Binder/Colab
-
-N'importe qui peut vérifier les calculs indépendamment.
-
-### Et le running du groupe de renormalisation ?
-
-Le cadre actuel traite les paramètres aux échelles caractéristiques (typiquement M_Z). Les extensions intègrent :
-
-- Le running à une boucle des couplages de jauge
-- Les corrections à deux boucles si pertinent
-- Les corrections de seuil à diverses échelles
-
-Des raffinements futurs pourraient atteindre une précision plus élevée via un traitement RG plus sophistiqué.
-
-## Questions philosophiques
-
-### Cela veut-il dire que la physique est « juste des mathématiques » ?
-
-C'est une interprétation, mais elle est subtile :
-
-**Vue réductionniste** : les lois physiques reflètent des structures mathématiques qui doivent exister.
-
-**Vue émergente** : les mathématiques fournissent un langage pour la réalité physique, qui peut avoir des aspects non-mathématiques plus profonds.
-
-**Vue théorico-informationnelle** : la physique concerne le traitement d'information ; les mathématiques décrivent les structures optimales.
-
-K₇ est compatible avec toutes ces perspectives. Le cadre démontre que des valeurs numériques spécifiques peuvent émerger d'une structure géométrique sans prétendre expliquer pourquoi ces structures existent.
-
-### Pourquoi ces nombres précis ?
-
-Le cadre dérive les valeurs numériques à partir de :
-- Invariants topologiques (dimensions, rangs, nombres de Betti)
-- Rapports géométriques (structures de systèmes de racines)
-- Propriétés de groupes discrets (groupes de Weyl, holonomie)
-
-Ce sont des paramètres « dérivés » plutôt qu'« expliqués » au niveau le plus profond. On peut toujours demander : « Pourquoi E₈ ? Pourquoi G₂ ? » K₇ recule la question sans l'éliminer entièrement. C'est un progrès si les paramètres dérivés ont une origine mathématique plus simple que les entrées arbitraires du Modèle Standard.
-
-### Et les conditions initiales et la dynamique ?
-
-Le cadre actuel est principalement cinématique : il dérive des paramètres plutôt que d'expliquer la dynamique ou les conditions initiales cosmologiques. Questions ouvertes :
-
-- Pourquoi l'univers a-t-il choisi ces structures ?
-- Comment la compactification s'est-elle produite ?
-- Qu'est-ce qui sélectionne la variété K₇ spécifique ?
-- Connexion avec l'inflation et l'évolution cosmologique ?
-
-Ces questions restent des domaines de développement futur.
-
-### Est-ce lié à l'hypothèse de la simulation ?
-
-Les aspects théorico-informationnels sont évocateurs mais ne requièrent pas la simulation :
-
-**Similitudes** : encodage optimal de l'information, structures discrètes, architecture binaire
-
-**Différences** : K₇ décrit la structure mathématique de la loi physique, pas le calcul sur un substrat externe
-
-Le cadre est neutre sur les questions métaphysiques de simulation, et se concentre sur des prédictions testables issues de la structure géométrique.
-
-## Questions pratiques
-
-### Comment puis-je contribuer ?
-
-Voir [CONTRIBUTING.md](https://github.com/Arithmon/K7/blob/main/CONTRIBUTING.md) pour les directives détaillées. Contributions bienvenues sur :
-
-- Dérivations et preuves mathématiques
-- Comparaisons expérimentales avec de nouvelles données
-- Outils computationnels et visualisations
-- Documentation et éducation
-- Identification de tensions ou d'erreurs
-
-### Par où commencer la lecture ?
-
-Cela dépend de votre profil :
-
-**Culture scientifique générale** : commencez par [Accueil](Home.fr.html), puis [K₇ pour Tout le Monde](GIFT-for-Everyone.fr.html)
-**Étudiant en physique** : [Article principal](Paper-Main-Framework.html) Sections 1-4, puis le notebook
-**Étudiant en doctorat** : [Article principal](Paper-Main-Framework.html) en entier, puis [S1](Paper-S1-Foundations.html) et [S2](Paper-S2-Derivations.html)
-**Physicien professionnel** : [Article principal](Paper-Main-Framework.html), [S2](Paper-S2-Derivations.html) (dérivations + falsification)
-**Mathématicien** : [S1](Paper-S1-Foundations.html) (fondations) et [S2](Paper-S2-Derivations.html) (dérivations)
-
-### Y a-t-il un article que je peux citer ?
-
-La version actuelle (v3.5) est disponible sur GitHub. Format de citation dans le [Guide de citation](Citation-Guide.html) :
-
-```bibtex
-@software{k7_framework_v35,
-  title={The K₇ Framework (formerly GIFT)},
-  author={de La Fournière, Brieuc},
-  year={2026},
-  url={https://github.com/Arithmon/K7},
-  doi={10.5281/zenodo.16891489},
-  version={3.5}
-}
-```
-
-Soumission à arXiv et à des revues à comité de lecture est prévue. Consultez le dépôt pour les mises à jour.
-
-### Puis-je l'utiliser dans ma recherche ?
-
-Oui, sous licence MIT (voir [LICENSE](https://github.com/Arithmon/K7/blob/main/LICENSE)). Vous pouvez :
-- Utiliser les calculs dans vos travaux
-- Étendre le cadre
-- L'appliquer à des problèmes connexes
-- L'inclure dans des supports éducatifs
-
-Merci de citer correctement (voir [Guide de citation](Citation-Guide.html)) et de signaler toute modification.
-
-## D'autres questions ?
-
-**Consultez la documentation** :
-- [Accueil](Home.fr.html) : vue d'ensemble
-- [Structure du dépôt](Repository-Structure.html) : organisation du dépôt
-- [Glossaire](Glossary.html) : définitions techniques
-- [S1](Paper-S1-Foundations.html), [S2](Paper-S2-Derivations.html) : dérivations détaillées
-
-**Ouvrir un ticket** :
-- https://github.com/Arithmon/K7/issues
-- Mettez le tag « question » pour les demandes de clarification
-
-**Contact** :
-- Mainteneurs du dépôt via GitHub
-- Discussions communautaires (à venir)
+Oui : le dépôt est sous licence MIT. Les corrections, les nouvelles comparaisons de données et les signalements d'erreurs sont bienvenus par les [tickets GitHub](https://github.com/Arithmon/K7/issues) ; voir `CONTRIBUTING.md`.
 
 ---
 
-Cette FAQ est mise à jour périodiquement. Suggérez des ajouts via les issues GitHub ou les pull requests.
+*K₇ Framework v3.6*

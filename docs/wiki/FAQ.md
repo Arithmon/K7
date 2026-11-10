@@ -5,397 +5,147 @@ layout: default
 
 # Frequently Asked Questions
 
-Common questions about the K₇ framework, organized by topic.
+Common questions about the K₇ framework, as of version 3.6 of the framework paper. Where this page and the [main paper](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) differ, the paper holds.
 
-## General Framework
+## The framework
 
-### What is K₇?
+### What is the K₇ framework?
 
-The K₇ framework is a theoretical framework that derives fundamental physics parameters from the geometric structure of E₈×E₈ exceptional Lie algebras compactified on manifolds with G₂ holonomy. Rather than treating Standard Model parameters as arbitrary inputs, K₇ proposes they emerge as topological invariants from dimensional reduction.
+A **declared correspondence**. It assigns 33 dimensionless parameters of the Standard Model and of cosmology to closed forms in the invariants of a compact seven-dimensional manifold K₇ with G₂ holonomy and Betti numbers (b₂, b₃) = (21, 77), together with an E₈×E₈ gauge structure. For example, sin²θ_W is assigned b₂/(b₃ + dim G₂) = 3/13.
 
-### How is this different from string theory?
+It is stated with three things: its **dictionary** (twenty structural constants and the grammar in which formulas are written), its **residue register** (everything that was set rather than derived) and a **decision rule** written in advance.
 
-While both involve extra dimensions and E₈, the approaches differ:
+### Is it a derivation of the Standard Model's constants?
 
-**String Theory**:
-- Seeks quantum gravity unification
-- Contains ~10⁵⁰⁰ possible vacua (landscape problem)
-- Typically requires supersymmetry
-- Direct particle embedding in gauge groups
+No. No geometric map is known that sends the invariants of K₇ to the observables, and no rule fixes which formula is assigned to which observable. Earlier versions wrote "derive" where the operation is an assignment; version 3.6 withdraws that wording throughout. K₇ is a privileged candidate chosen by the author, and the paper says so.
 
-**K₇**:
-- Focuses on parameter derivation
-- Single geometric structure (K₇ manifold)
-- No supersymmetry required
-- Information-theoretic architecture, indirect particle emergence
+### Does it have free parameters?
 
-K₇ may ultimately connect to string theory, but operates as an independent framework for parameter prediction.
+No relation has a **continuously** adjustable parameter: an integer ratio cannot be nudged. That is not the same as having nothing chosen. The residue register (R1 to R12) lists what was set: the Betti pair (21, 77), the imposed normalization det(g) = 65/32, the combination κ_T⁻¹ = 61, the unit in which the integer 197 is read as a CP phase, the scales and mass schemes of the comparisons, the assignment of formulas to observables, and the absence of a choice among incompatible relations in three sectors. Earlier versions described this as a framework with no free parameter and no fitting; that description of the formula choice is withdrawn.
+
+### Does the manifold K₇ exist?
+
+It is not known. No compact torsion-free G₂ manifold with Betti numbers (21, 77) is currently constructed, and the route proposed in version 3.5 does not realise the pair ([erratum](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md), §9). The 33 relations do not use the metric of K₇: they rest on the declared topological invariants and on the E₈×E₈ group data. The companion papers certify local or conditional pieces (a seam metric, a neck ansatz), not a compact K₇.
+
+### How is this different from string theory or M-theory?
+
+E₈×E₈ and G₂ holonomy both appear in M-theory, but the framework does not supply a compactification of either kind. Its smooth K₇ does not yield the chiral non-abelian content of the Standard Model, and its relations are not derived from a four-dimensional effective theory. It uses the exceptional structures as a source of integers and says so.
 
 ### Is this mainstream physics?
 
-K₇ is a speculative theoretical framework presenting testable predictions. The mathematical foundations (E₈, G₂ holonomy, dimensional reduction) are well-established. The novel claim is that Standard Model parameters emerge as topological invariants from this specific structure.
+No. It is the work of an independent researcher, developed with AI assistance, and it has not been through journal peer review. The papers, the data and the code are public so that the claims can be checked by anyone. The framework has been cited in the peer-reviewed literature; a citation is not an endorsement.
 
-The framework is evaluated based on:
-- Mathematical rigor of derivations
-- Precision of experimental agreement (currently 0.99% mean deviation across 33 Type I (exact-target) observables, NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022)
-- Falsifiability (clear criteria in S2 Section 10)
-- Reproducibility (computational notebook available)
+## The 33 relations
 
-### How many free parameters?
+### What does the framework compare with experiment?
 
-**Standard Model**: 19 free parameters
-**K₇ v3.5**: Zero continuous adjustable parameters (3 integer primitives: N=3, r₈=8, r₂=2)
+Thirty-three dimensionless relations: gauge couplings, lepton and quark mass ratios, PMNS and CKM mixing parameters, boson mass ratios and cosmological parameters. The [Observable Reference](Observable-Reference.html) gives each formula, its value, the measurement and its status.
 
-All quantities derive from fixed topological structure (E₈×E₈ gauge group, K₇ manifold with G₂ holonomy). The framework achieves "structural determination" where discrete mathematical choices uniquely determine all predictions.
+The dataset holds 62 further entries (dimensionful quantities read in a chosen unit, outputs of mechanisms with calibration choices, structural diagnostics). Version 3.6 does **not** count them as predictions; earlier versions spoke of 95 predicted observables, which is withdrawn.
 
-### Can K₇ be falsified?
+### How well do the 33 relations agree with the data?
 
-Yes. Clear falsification criteria include:
+Against PDG 2026, NuFIT 6.1, Planck 2018 and CODATA 2022, with all uncertainties at 1σ, they fall into five classes that are not added into one score:
 
-1. **Fourth generation discovery**: N_gen = 3 is exact in K₇
-2. **δ_CP precision measurement**: Predicted exactly as 197°
-3. **sin²θ_W precision**: Predicted as 3/13 = 0.230769...
-4. **Exact relation violations**: Q_Koide ≠ 2/3, m_s/m_d ≠ 20, etc.
-5. **Systematic deviations**: If multiple predictions deviate beyond experimental errors
+| Class | Count | Relations |
+|---|:---:|---|
+| within 2σ | 23 | the remaining relations |
+| tension (between 2σ and 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
+| proximity (beyond 3σ, rejected as an exact equality) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t |
+| inside the PDG range (no uncertainty given) | 1 | m_s/m_d |
+| non-Gaussian profile, octant unresolved | 1 | sin²θ₂₃ |
 
-See S2 Section 10 for comprehensive falsification criteria.
+Earlier versions summarised the agreement by a mean deviation. That summary is withdrawn: it hid the relations outside 2σ. Details are in the [Validation Summary](Validation-Summary.html).
 
-## Mathematical Structure
+### Are these 33 independent tests?
 
-### Why E₈×E₈?
+No. Three sectors are overdetermined: four lepton relations bear on two mass ratios, three CKM relations on two parameters, seven density relations on two independent densities. In each, the relations disagree with one another as exact equalities, so they cannot all hold, and none is selected after the fact. Taken jointly as exact equalities, the 33 are already incompatible; individual relations remain testable.
 
-E₈ is the largest exceptional Lie algebra with unique properties:
-- Dimension 248 (= 31×8, suggestive numerology)
-- Simply-laced (all roots equal length)
-- Contains various subalgebras suitable for gauge symmetries
-- Connection to quantum error correction: [248, 12, 56](248,-12,-56.html) code
+### Is the agreement statistically significant?
 
-Two copies (E₈×E₈) provide:
-- Total dimension 496 = 2⁴⁸ + 48 (near power of 2)
-- Sufficient structure after dimensional reduction
-- Potential binary information architecture
+No. In a preregistered look-elsewhere test, every competitor searches for its own formulas in the same grammar and with the same budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (P_global = 0.51 against a threshold of 0.01). A witness with no K₇ constant reaches 30. Closeness to the measured values is therefore not, by itself, evidence for K₇.
 
-### What is G₂ holonomy?
+The coincidence probabilities, P-values and Bayes factors of earlier versions are withdrawn: they came from tests in which the alternatives were scored with K₇'s own formulas. See [Statistical Evidence](Statistical-Evidence.html); the code and results of the test are [public](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/).
 
-G₂ is the automorphism group of the octonions, a 14-dimensional Lie group. A 7-dimensional Riemannian manifold with G₂ holonomy has special geometric properties:
+### What are the weakest points?
 
-- Ricci-flat (suitable for compactification)
-- Precisely 7 dimensions (K₇)
-- Unique cohomology structure: b₂ = 21, b₃ = 77
-- Natural breaking patterns for gauge symmetries
+- Five relations are rejected as exact equalities and kept only as numerical proximities, among them α⁻¹ and sin²θ_W.
+- sin²θ₂₃ = 6/11 sits in the second octant while the global fit prefers the first.
+- The agreement is not distinctive (previous question).
+- The Betti pair, the formulas and the normalization are chosen, not derived; five routes to deriving (21, 77) have been closed without success.
+- The manifold is not constructed, and no mechanism leads from it to the chiral Standard Model.
 
-The cohomology numbers (21, 77) match gauge bosons and fermion content remarkably well.
+### What about δ_CP = 197°?
 
-### What is K₇?
+The structure produces the integer 197 = 7·14 + 99. Reading it as an angle in degrees is a choice of the dictionary, recorded in the residue register and counted in the look-elsewhere test; read in radians or grads, the same integer gives other phases. NuFIT 6.1 gives δ_CP = 212 (+26/−36)°, so the reading in degrees lies inside the 1σ band today. A confirmation would show that this assignment agrees with the world, not that the structure requires it.
 
-K₇ denotes a compact 7-dimensional manifold with G₂ holonomy. While various such manifolds exist, their topological invariants are constrained. K₇ uses:
+### What about dimensionful quantities like masses?
 
-- b₂(K₇) = 21: Gauge boson content
-- b₃(K₇) = 77: Chiral fermion content
-- Total dimension 7: Extra dimensions beyond 4D spacetime
+Absolute masses and scales appear only among the 62 entries that are not counted as predictions. Several are structural numbers read in MeV; reading a number in a unit is an assignment of the same kind as reading 197 in degrees, with a far larger space of alternatives.
 
-See Supplement S2 for explicit metric construction.
+## Testing
 
-### How does dimensional reduction work?
+### Can the framework be refuted?
 
-Starting configuration: 11-dimensional theory with E₈×E₈ gauge group
+Individual relations can. Each is stated as an exact equality with no theoretical uncertainty, and the rule is written in advance with no repair clause: a relation is rejected when its reference series (PDG, NuFIT, Planck, CODATA) excludes its value at 3σ, and it is not rescued by changing its formula, its unit, its scale or its dataset.
 
-**Step 1**: Compactify on AdS₄×K₇
-- 4 dimensions → spacetime
-- 7 dimensions → compact internal space K₇
+| Relation | Value | Rejected when | Where |
+|---|---|---|---|
+| δ_CP | 197° | a global fit whose 3σ interval excludes 197°; the unit assignment is rejected with it | DUNE, Hyper-Kamiokande |
+| sin²θ₂₃ | 6/11 | a global fit whose 3σ interval excludes 6/11, in either octant | DUNE, Hyper-Kamiokande |
+| m_τ/m_e and Q_Koide | 1776.74 and 1776.97 MeV for m_τ | an m_τ value whose 3σ interval excludes the value | Belle II, BES III |
+| N_gen | 3 | a fourth sequential generation | LHC, FCC |
+| m_s/m_d | 20 | a lattice determination with an uncertainty whose 3σ interval excludes 20 | lattice QCD |
 
-**Step 2**: Harmonic expansion
-- Fields decomposed in harmonic forms on K₇
-- Zero modes → 4D particle content
-- Massive modes → Kaluza-Klein tower
+A rejection rejects the relation and the assignment that produced it. It does not by itself reject the programme, whose other relations stand or fall on their own; the paper says so now, so that it cannot be said later as a repair. The wider exploratory programme has, at present, no single criterion of refutation.
 
-**Step 3**: Symmetry breaking
-- G₂ holonomy breaks E₈×E₈ → subgroups
-- Gauge symmetry → SU(3)×SU(2)×U(1)
-- Chiral fermions from cohomology H³(K₇)
+### What would count in its favour?
 
-See Supplement S1 for complete mathematical details.
+Less than one might hope. Since closeness is not distinctive, further agreements at the percent level add little. What would change the picture is of another kind: a construction of the manifold, a mechanism that selects (21, 77), a rule that assigns formulas to observables, or a relation surviving a measurement precise enough to discriminate among competing vocabularies.
 
-## Predictions and Results
+### Are there measurements that already contradict a relation?
 
-### What observables does K₇ predict?
+Two contradicting results outside the reference series are reported beside their class. h = 167/248 agrees with Planck and is excluded by the SH0ES distance ladder at 5.5σ. m_W/m_Z = 37/42 is at −2.7σ against the PDG and at −10.6σ against the CDF II W mass. While methods disagree, the status is stated both ways, and neither agreement counts as a confirmation.
 
-**95 observables** (v3.4: 33 Type I exact targets + 19 Type II + 21 Type III + 22 Type IV):
+## Mathematics and verification
 
-- 3 gauge couplings (α, sin²θ_W, α_s)
-- 1 generation number (N_gen = 3)
-- 4 neutrino mixing angles (θ₁₂, θ₁₃, θ₂₃, δ_CP)
-- 2 lepton mass ratios (m_τ/m_e, m_μ/m_e)
-- 1 quark mass ratio (m_s/m_d)
-- 1 Koide parameter (Q = 2/3)
-- 2 cosmological parameters (Ω_DE, n_s)
-- 2 electroweak parameters (λ_H, hierarchy)
-- 2 topological constants (κ_T, det(g))
-- additional Type II/III/IV predictions in S3
+### Why E₈×E₈ and G₂ holonomy?
 
-Mean deviation from experiment: **0.99%** across 33 Type I (exact-target) observables (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022).
+They are structures whose interest owes nothing to the Standard Model's constants: the octonions, Berger's classification of holonomy groups, the exceptional Lie algebras, and the role of both in M-theory. That answers whether the family deserves to be explored. It does not answer why this member: the requirements do not select (21, 77), the formulas or the normalization.
 
-### What about dimensional parameters like masses?
+### What does the Lean 4 formalization prove?
 
-Version 2.1 introduces the **scale bridge** and **torsional dynamics** framework that connects dimensionless and dimensional observables:
+The arithmetic. Given the declared integers, each of the 33 closed forms evaluates to the stated number (collected in `relations_v36_certified`; 156 files, 14 axioms, no `sorry`). It does not establish the existence of K₇, the physical interpretation of any relation, the choice of assignments, or the consistency of the relations taken together. A formula that is machine-checked is not thereby the right formula.
 
-**Scale Bridge**: Λ_GIFT = 21×e⁸×248/(7×π⁴) ≈ 1.63×10⁶
+### Why these numbers and not others?
 
-This allows prediction of:
-- Quark masses (m_u = 2.16 MeV through m_t = 172.8 GeV)
-- Gauge boson masses (M_W = 80.37 GeV, M_Z = 91.19 GeV)
-- Vacuum expectation value (v_EW = 246.2 GeV)
-
-The dimensional predictions (status: THEORETICAL/DERIVED) are less rigorous than the topological exact relations but show excellent agreement (mean deviation ~0.3% for dimensional observables).
-
-### How accurate are the predictions?
-
-**Exact by construction** (0% deviation):
-- N_gen = 3
-- Q_Koide = 2/3
-- m_s/m_d = 20
-
-**Ultra-precise** (<0.01%):
-- α⁻¹: 0.001% deviation
-- Q_Koide measured: 0.005% deviation
-- n_s: 0.004% deviation
-
-**High-precision** (<0.5%):
-- Complete neutrino sector: mean 0.24%
-- Gauge couplings: mean 0.03%
-- CKM matrix: mean 0.11%
-
-**Overall**: Mean 0.99% across 33 Type I (exact-target) observables (v3.4, NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022)
-
-See S2 Section 10 for detailed statistical analysis.
-
-### What is the most impressive prediction?
-
-Subjectively, several stand out:
-
-**δ_CP = 197°**: Exact topological formula δ_CP = dim(K₇)×dim(G₂) + H* = 7×14 + 99 = 197°, experimentally confirmed to <0.2%. This is a dimensionless angle determined by pure mathematics.
-
-**Complete neutrino sector**: All four parameters (three angles, one phase) predicted with <0.5% deviation without any neutrino-specific inputs.
-
-**N_gen = 3**: Explains why three generations exist as topological necessity, not accident.
-
-**Zero-parameter paradigm**: All predictions derived from fixed topological structure with no continuous adjustable parameters.
-
-### What are the biggest tensions?
-
-While overall agreement is strong, tensions exist:
-
-**θ₂₃ octant**: the framework predicts the upper octant (49.25°). The NuFIT 6.1 best fit sits at 43.3°, in the lower octant, so this prediction is currently **in tension**. The octant is unresolved and has flipped between consecutive global fits; DUNE and Hyper-Kamiokande decide it. Recorded in the [scoreboard](https://github.com/arithmon/program/blob/main/CONFRONTATIONS.md).
-
-**Some CKM elements**: A few show ~0.3-0.5% deviations, technically within combined errors but worth future scrutiny.
-
-**Temporal framework**: Dimensional predictions (masses, H₀) show promise but have larger uncertainties and require further development.
-
-Honest assessment requires reporting both successes and areas needing refinement.
-
-## Experimental Testing
-
-### What experiments can test K₇?
-
-**Near-term (2025-2027)**:
-- Belle II: Improved CKM measurements
-- T2K/NOvA: Enhanced neutrino mixing angles
-- LHCb: Precision CP violation (δ_CP)
-
-**Medium-term (2028-2030)**:
-- DUNE: Definitive neutrino mass hierarchy and δ_CP
-- LHC/FCC: Search for predicted new particles (3.9 GeV, 20 GeV)
-- Atomic physics: Ultra-precise α measurements
-
-**Long-term (2030+)**:
-- Next-generation colliders: Fourth generation searches
-- Precision tests of exact relations
-- Cosmological observations: Dark energy density
-
-See the [Main Paper](Paper-Main-Framework.html) for detailed falsification criteria.
-
-### What would definitively falsify K₇?
-
-Several clear falsification routes:
-
-1. **Fourth generation discovery**: Clean falsification as N_gen = 3 is exact
-2. **δ_CP deviation**: High-precision measurement inconsistent with 197°
-3. **Exact relation violation**: Q_Koide ≠ 2/3 or m_s/m_d ≠ 20 outside errors
-4. **Multiple systematic deviations**: Framework loses predictive power
-
-The framework is genuinely falsifiable, not arbitrarily adjustable.
-
-### What would strengthen confidence in K₇?
-
-Several potential confirmations:
-
-1. **δ_CP precision**: Measurement converging to 197° at high precision
-2. **New particle discoveries**: 3.9 GeV scalar, 20 GeV gauge boson, etc.
-3. **Exact relations confirmed**: Higher precision on Q_Koide, m_s/m_d
-4. **Pattern recognition**: Additional observables following geometric patterns
-5. **Independent derivations**: Alternative routes to same results
-
-## Technical Details
-
-### What is the information architecture?
-
-The framework suggests physical parameters encode information structure:
-
-**Binary structure**:
-- E₈×E₈: 496 = 2⁴⁸ + 48 dimensions
-- Reduction: 496 → 99 (compression ratio ≈ 5)
-- Ω_DE = ln(2): Natural logarithm of 2 (information per bit)
-
-**Error correction**:
-- E₈ lattice: [248, 12, 56](248,-12,-56.html) quantum error correction code
-- Information preservation during dimensional reduction
-- Topological protection of parameter values
-
-This suggests physics may fundamentally be about information processing, with particles and forces as emergent structures.
-
-### What is the status classification system?
-
-Results are classified by rigor level:
-
-- **VERIFIED**: Rigorous mathematical proof (e.g., N_gen = 3)
-- **TOPOLOGICAL**: Direct consequence of manifold structure
-- **DERIVED**: Calculated from proven/topological results
-- **THEORETICAL**: Theoretical justification, proof incomplete
-- **PHENOMENOLOGICAL**: Empirically accurate, theory in progress
-- **EXPLORATORY**: Preliminary investigation
-
-This transparency allows readers to assess confidence levels for each prediction.
-
-### How is this computed?
-
-All calculations available in `publications/validation/` and [giftpy](https://github.com/Arithmon/K7-Lean):
-
-**Analytical**: Mathematical derivations in supplements
-**Numerical**: Python implementation with NumPy, SciPy, SymPy
-**Verification**: Results checked to ~15 digits precision
-**Reproducible**: Runs in browser via Binder/Colab
-
-Anyone can verify the calculations independently.
-
-### What about renormalization group running?
-
-Current framework treats parameters at characteristic scales (typically M_Z). Extensions incorporate:
-
-- One-loop running of gauge couplings
-- Two-loop corrections where relevant
-- Threshold corrections at various scales
-
-Future refinements may achieve higher precision through more sophisticated RG treatment.
-
-## Philosophical Questions
+That is the selection question, and it is open. The pair (21, 77) is a construction-level input on the same footing as the G₂-holonomy postulate: fixed before the relations were frozen and used rigidly by all of them, but chosen, not selected. One numerical observation survives, b₂ + b₃ = 98 = dim(K₇) · dim(G₂), held as a target and not as a theorem.
 
 ### Does this mean physics is "just mathematics"?
 
-This is one interpretation, though subtle:
+The framework is read as a structural proposal: structure is asked to carry predictive weight, with no further ontological commitment. Readings in which geometry and information are aspects of one thing motivated the work historically; they are neither required nor supported by the relations.
 
-**Reductionist view**: Physical laws reflect mathematical structures that must exist.
+## Practical
 
-**Emergent view**: Mathematics provides language for physical reality, which may have deeper non-mathematical aspects.
+### What changed in version 3.6?
 
-**Information-theoretic view**: Physics is about information processing; mathematics describes optimal structures.
-
-K₇ is consistent with all these perspectives. The framework demonstrates that specific numerical values can emerge from geometric structure without claiming to explain why those structures exist.
-
-### Why these specific numbers?
-
-The framework derives numerical values from:
-- Topological invariants (dimensions, ranks, Betti numbers)
-- Geometric ratios (root system structures)
-- Discrete group properties (Weyl groups, holonomy)
-
-These are "derived" rather than "explained" at the deepest level. One could still ask: "Why E₈? Why G₂?" K₇ pushes the question back but doesn't eliminate it entirely. This is progress if the derived parameters have simpler mathematical origin than arbitrary Standard Model inputs.
-
-### What about initial conditions and dynamics?
-
-Current framework is primarily kinematic: deriving parameters rather than explaining dynamics or cosmological initial conditions. Open questions include:
-
-- Why did universe choose these structures?
-- How did compactification occur?
-- What selects specific K₇ manifold?
-- Connection to inflation, cosmological evolution?
-
-These remain areas for future development.
-
-### Is this related to simulation hypothesis?
-
-The information-theoretic aspects are suggestive but don't require simulation:
-
-**Similarities**: Optimal information encoding, discrete structures, binary architecture
-
-**Differences**: K₇ describes mathematical structure of physical law, not computation on external substrate
-
-The framework is neutral on metaphysical questions about simulation, focusing on testable predictions from geometric structure.
-
-## Practical Questions
-
-### How can I contribute?
-
-See [CONTRIBUTING.md](https://github.com/Arithmon/K7/blob/main/CONTRIBUTING.md) for detailed guidelines. Contributions welcome in:
-
-- Mathematical derivations and proofs
-- Experimental comparisons with new data
-- Computational tools and visualizations
-- Documentation and education
-- Identifying tensions or errors
+It withdraws several things earlier versions said: that the relations are derived from the geometry, that they cannot be fitted, that 95 observables are predicted, that a coincidence probability or a P-value measures the framework's distinctiveness, that 197° is a prediction of pure geometry, that the generation count comes from an index theorem. What remains is smaller and can be checked. The full list is in the [changelog](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md).
 
 ### Where do I start reading?
 
-Depends on background:
+- **No equations**: [K₇ for Everyone](GIFT-for-Everyone.html).
+- **Physicist**: the [main paper](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md), sections 3, 4, 7 and 11.
+- **Mathematician**: supplement S1 and the companion papers on the seam metric.
+- **The numbers**: [Observable Reference](Observable-Reference.html), [Validation Summary](Validation-Summary.html), [Statistical Evidence](Statistical-Evidence.html).
 
-**General science literacy**: Start with [Home](Home.html), then [K₇ for Everyone](GIFT-for-Everyone.html)
-**Undergraduate physics**: [Main paper](Paper-Main-Framework.html) Section 1-4, then notebook
-**Graduate student**: [Main paper](Paper-Main-Framework.html) fully, then [S1](Paper-S1-Foundations.html) & [S2](Paper-S2-Derivations.html)
-**Professional physicist**: [Main paper](Paper-Main-Framework.html), [S2](Paper-S2-Derivations.html) (derivations + falsification)
-**Mathematician**: [S1](Paper-S1-Foundations.html) (foundations) and [S2](Paper-S2-Derivations.html) (derivations)
+### How do I cite it?
 
-### Is there a paper I can cite?
+The framework paper is archived on Zenodo; the concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) always resolves to the latest version. The [Citation Guide](Citation-Guide.html) gives the formats.
 
-Current version (v3.5) is available on GitHub. Citation format in [Citation Guide](Citation-Guide.html):
+### Can I use this in my research, or contribute?
 
-```bibtex
-@software{k7_framework_v35,
-  title={The K₇ Framework (formerly GIFT)},
-  author={de La Fournière, Brieuc},
-  year={2026},
-  url={https://github.com/Arithmon/K7},
-  doi={10.5281/zenodo.16891489},
-  version={3.5}
-}
-```
-
-The triptyque (Papers A, B, C) is published on Zenodo (DOIs 19892350, 19893371, 19708916). Submission to peer-reviewed journals is in progress.
-
-### Can I use this in my research?
-
-Yes, under MIT License (see [LICENSE](https://github.com/Arithmon/K7/blob/main/LICENSE)). You may:
-- Use calculations in your work
-- Extend the framework
-- Apply to related problems
-- Include in educational materials
-
-Please cite appropriately (see [Citation Guide](Citation-Guide.html)) and note any modifications.
-
-## Still Have Questions?
-
-**Check documentation**:
-- [Home](Home.html): Overview
-- [Repository Structure](Repository-Structure.html): Repository organization
-- [Glossary](Glossary.html): Technical definitions
-- [S1](Paper-S1-Foundations.html), [S2](Paper-S2-Derivations.html): Detailed derivations
-
-**Open an issue**:
-- https://github.com/Arithmon/K7/issues
-- Tag as "question" for clarification requests
-
-**Contact**:
-- Repository maintainers via GitHub
-- Community discussions (coming soon)
+Yes: the repository is under the MIT License. Corrections, new data comparisons and reports of errors are welcome through [GitHub issues](https://github.com/Arithmon/K7/issues); see `CONTRIBUTING.md`.
 
 ---
 
-This FAQ is updated periodically. Suggest additions via GitHub issues or pull requests.
+*The K₇ Framework v3.6*

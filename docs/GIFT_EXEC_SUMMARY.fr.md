@@ -1,153 +1,129 @@
 ---
-title: K₇: Résumé exécutif
+title: "K₇ : Résumé"
 ---
 
-# K₇ : lire la topologie plutôt que l'ajuster
+# K₇ : une correspondance, et les conditions de son échec
 
-*Un résumé technique pour lecteurs de physique curieux*
+*Un résumé technique pour les lecteurs curieux de physique, à la version 3.6*
 
 ---
 
-## Le problème, posé simplement
+## Le problème, dit simplement
 
-Le Modèle Standard de la physique des particules fonctionne avec une précision qu'aucune autre théorie scientifique n'a jamais atteinte. Il décrit toutes les interactions fondamentales connues, à l'exception de la gravité, avec des accords expérimentaux allant parfois jusqu'à douze décimales.
+Le Modèle Standard de la physique des particules atteint une précision qu'aucune autre théorie scientifique n'a égalée. Il décrit toutes les interactions fondamentales connues hormis la gravité, avec un accord expérimental qui va parfois jusqu'à douze décimales.
 
-Mais il contient dix-neuf paramètres libres. Dix-neuf nombres que la théorie ne calcule pas et qu'il faut mesurer expérimentalement avant de pouvoir l'utiliser. Les masses des trois générations de leptons. Les masses des six quarks. Les quatre paramètres de la matrice CKM décrivant le mélange des quarks. Les quatre paramètres analogues de la matrice PMNS pour les neutrinos. Les trois constantes de couplage des forces électromagnétique, faible et forte. La masse du Higgs et sa valeur d'attente dans le vide.
+Il contient pourtant une vingtaine de paramètres libres, des nombres que la théorie ne calcule pas et qu'il faut mesurer avant de pouvoir s'en servir : les masses des leptons chargés et des six quarks, les paramètres de la matrice CKM, les trois constantes de couplage, la masse du Higgs et sa valeur moyenne dans le vide. Les masses et le mélange des neutrinos en ajoutent d'autres.
 
-Dix-neuf nombres. Aucune explication. Le Modèle Standard est un instrument de mesure extraordinairement précis qui nécessite d'être calibré avec dix-neuf boutons de réglage, sans qu'on sache pourquoi ces boutons existent ni pourquoi ils pointent là où ils pointent.
+S'y ajoutent des énigmes anciennes. Pourquoi exactement trois générations de matière ? Pourquoi les masses des leptons chargés suivent-elles de si près la relation de Koide *Q* = 2/3, remarquée en 1981 et jamais expliquée ? Pourquoi le rapport entre matière noire et matière baryonique est-il proche d'un rationnel simple ?
 
-À cela s'ajoutent une poignée d'énigmes qui traversent la discipline depuis des décennies. Pourquoi exactement trois générations de matière et pas deux, ou cinq, ou dix-sept ? Pourquoi les masses des leptons chargés obéissent-elles à la relation de Koide *Q* = 2/3 à une précision de 10⁻⁴, relation découverte en 1981 et jamais expliquée ? Pourquoi le rapport entre matière noire et matière baryonique est-il proche d'un rationnel simple ?
+K₇ (*anciennement Geometric Information Field Theory*) est une tentative de regarder ces nombres autrement. Il demande : et s'ils pouvaient s'écrire comme des formes closes en les invariants d'une seule structure géométrique ? Et, puisque écrire de telles formes se révèle facile, il pose une seconde question avec le même sérieux : que faudrait-il pour qu'une telle correspondance signifie quelque chose ?
 
-K₇ (*anciennement Geometric Information Field Theory*) est une tentative de répondre à ces questions en changeant la nature de la question elle-même. Plutôt que de demander « quelle est la valeur de ces paramètres », K₇ demande : « et si ces paramètres n'étaient pas des valeurs à mesurer, mais des conséquences d'une structure géométrique à identifier ? »
+## La proposition
 
-## L'hypothèse
+En une phrase : 33 paramètres sans dimension du Modèle Standard et de la cosmologie sont associés à des combinaisons algébriques des invariants topologiques d'une variété compacte de dimension sept à holonomie exceptionnelle, avec une structure de jauge E₈ × E₈.
 
-L'idée, dans sa version la plus compacte, tient en une phrase : les paramètres sans dimension du Modèle Standard émergent comme combinaisons algébriques d'invariants topologiques d'une variété compacte de dimension sept possédant une holonomie exceptionnelle, couplée à une structure de jauge E₈ × E₈.
+Une **variété de dimension sept** est un espace courbe à sept dimensions. L'**holonomie** mesure la façon dont un vecteur change quand on le transporte le long d'une boucle fermée de cet espace. Pour la plupart des variétés, ce changement peut être n'importe quelle rotation. Certaines ont une holonomie restreinte à un sous-groupe, et en dimension sept il en existe un exceptionnel, **G₂**, de dimension 14, le groupe des automorphismes des octonions. Les variétés à holonomie G₂ sont rares et difficiles à construire.
 
-Cette phrase mérite d'être dépliée.
+Les **invariants topologiques** d'une telle variété sont des entiers qui caractérisent sa forme indépendamment de sa métrique. Les plus importants sont les **nombres de Betti** *b₂* et *b₃*, qui comptent les 2-formes et les 3-formes harmoniques que l'espace peut porter. Ce sont des nombres entiers : ils ne varient pas continûment.
 
-Une **variété de dimension sept** est un espace courbe à sept dimensions ; on peut l'imaginer, très approximativement, comme une surface abstraite mais avec six dimensions de plus. L'**holonomie** mesure comment un vecteur change lorsqu'on le transporte parallèlement le long d'une boucle fermée dans cet espace. Pour la plupart des variétés, ce changement peut être n'importe quelle rotation, le groupe d'holonomie est alors le groupe orthogonal complet. Mais certaines variétés privilégiées ont une holonomie *restreinte* à un sous-groupe particulier. En dimension sept, il existe un sous-groupe exceptionnel qu'on note **G₂**, de dimension 14, qui correspond aux automorphismes de l'algèbre des octonions. Les variétés dont l'holonomie est réduite à G₂ sont rares, difficiles à construire, et possèdent des propriétés géométriques remarquables.
+Le cadre pose une variété *K₇* avec (*b₂*, *b₃*) = (21, 77), accompagnée de E₈ × E₈, de dimension 496. À partir de ces entiers et de quelques autres qui leur sont liés (vingt constantes structurelles en tout), il écrit des formules comme
 
-Les **invariants topologiques** d'une telle variété sont des entiers qui caractérisent sa forme indépendamment de sa métrique précise. Pour les variétés G₂, les plus importants sont les **nombres de Betti** *b₂* et *b₃*, qui comptent respectivement les formes harmoniques de degré 2 et de degré 3 que l'espace peut porter. Ces deux nombres sont des propriétés globales discrètes : ils ne peuvent pas varier continûment. Ce sont des nombres entiers, point.
+- sin²θ_W = *b₂* / (*b₃* + dim G₂) = 3/13,
+- *Q*_Koide = dim G₂ / *b₂* = 2/3,
+- *m*_τ / *m*_e = 7 + 10 × 248 + 10 × 99 = 3477.
 
-K₇ fait l'hypothèse spécifique qu'il existe une telle variété *K₇* avec (*b₂*, *b₃*) = (21, 77), couplée à la structure de jauge E₈ × E₈ de dimension 496. Puis, à partir de ces seuls ingrédients, tente de dériver algébriquement les paramètres observés.
+**E₈** est le plus grand groupe de Lie exceptionnel. Le cadre ne cherche pas à plonger les particules du Modèle Standard dans E₈, approche dont Distler et Garibaldi ont montré l'impossibilité en 2010. Il utilise E₈ × E₈ comme source d'entiers issus de la théorie des groupes, ce qui évite cette obstruction et signifie aussi qu'il ne dit rien de l'origine des fermions.
 
-**E₈** est le plus grand des groupes de Lie exceptionnels, de dimension 248, et possède une structure combinatoire d'une richesse singulière. Le groupe E₈ × E₈ apparaît naturellement dans la théorie des cordes hétérotique. K₇ ne cherche pas à plonger les particules du Modèle Standard directement dans E₈, une approche dont l'impossibilité a été démontrée par Distler et Garibaldi en 2010. Le rôle de E₈ × E₈ dans K₇ est différent : il fournit l'architecture de jauge, tandis que le contenu en matière et les valeurs des paramètres émergent de la géométrie de K₇.
+## Une correspondance, pas une dérivation
 
-## Comment le cadre s'est construit : une histoire en trois actes
+C'est le point sur lequel la version 3.6 s'écarte le plus de ce qui précédait, et il vaut d'être dit sans détour.
 
-C'est ici que l'argument devient intéressant, et qu'il faut regarder l'historique.
+**On ne connaît aucune application géométrique qui envoie les invariants de K₇ sur les observables.** Les formules sont *attribuées* : rien dans la géométrie ne dit que sin²θ_W doit valoir *b₂* / (*b₃* + dim G₂) plutôt qu'un autre rapport. Les versions précédentes écrivaient « dériver » pour cette opération. La version 3.6 retire le mot.
 
-La version initiale de K₇, en 2025, comportait **quatre paramètres géométriques libres** : des quantités *ξ*, *τ*, *β₀*, *δ* encodant divers aspects de l'architecture géométrique, ajustées pour reproduire environ 22 observables avec une précision moyenne de 0.38%. C'était déjà plus contraint que le Modèle Standard lui-même (quatre entrées pour vingt-deux sorties), mais restait relativement souple : il y avait suffisamment de liberté dans le choix de ces quatre paramètres pour rendre le cadre vulnérable à l'accusation d'ajustement.
+**Aucune règle ne fixe quelle formule va avec quelle observable.** La grammaire et la liste des observables ont été gelées après que les formules avaient été trouvées.
 
-Une deuxième version, fin 2025, a réduit ce nombre à **trois paramètres topologiques** : *p₂* = 2 (une dualité binaire émergeant de dim(G₂)/dim(K₇)), *β₀* = π/8 (une quantification angulaire liée au rang de E₈), et un facteur pentagonal lié à la structure du groupe de Weyl. Ces trois paramètres n'étaient plus vraiment libres, chacun était un rapport d'entiers topologiques. Le nombre d'observables couverts était passé à 34, la précision moyenne à 0.13%.
+**La variété n'est pas construite.** Aucune variété G₂ compacte sans torsion de nombres de Betti (21, 77) n'est connue à ce jour, et la voie proposée dans la version 3.5 n'en produit pas. Les relations n'utilisent que les entiers déclarés, pas une métrique.
 
-La version actuelle, K₇ v3.5, a franchi une étape supplémentaire. **Il n'y a plus de paramètre physique continûment ajustable.** La structure est entièrement fixée par le choix (*b₂*, *b₃*) = (21, 77), les propriétés algébriques de E₈ × E₈, et une cible de normalisation métrique det(g) = 65/32. Quatre-vingt-quinze observables se déduisent, organisées en quatre types : 33 prédictions algébriques directes de Type I (déviation moyenne 0,99 %), 19 extractions physiques en une étape (Type II, 0,17 %), 21 chaînes dynamiques multi-étapes (Type III, 3,44 %), et 22 diagnostics structurels (Type IV). Sur les 95 observables, 55 sont formellement vérifiées en Lean 4 (213 conjonctions de certificat, 14 axiomes sur K7-Lean main (4 chaîne de prédiction + 10 certificats d'intervalle K3), 0 sorry).
+Ce que fait l'article, c'est rendre la correspondance vérifiable. Il donne le **dictionnaire** complet. Il tient un **registre des résidus**, où figure tout ce qui a été posé plutôt que dérivé : la paire (21, 77), une normalisation imposée det(g) = 65/32, une combinaison κ_T⁻¹ = 61, l'unité dans laquelle un entier est lu comme phase CP, les échelles des comparaisons, les attributions elles-mêmes. Et il écrit une **règle de décision** sans clause de réparation.
 
-Cette trajectoire, vue de l'extérieur, mérite une seconde de réflexion.
+K₇ est, dans les termes de l'article, un *candidat privilégié* : le membre d'une famille bien motivée, désigné par l'auteur pour des raisons qui sont les siennes et qui sont déclarées comme telles. Présenter un candidat privilégié comme une unicité démontrée, c'est ce que faisaient les versions précédentes, et ce que celle-ci cesse de faire.
 
-En général, quand un cadre théorique est ajusté sur des données (ce qu'on appelle en statistique un *overfit*) il doit *augmenter* ses degrés de liberté pour maintenir ou améliorer la qualité de son ajustement à mesure qu'on lui demande de couvrir plus d'observations. C'est presque une tautologie. Si on ajoute des observations sans ajouter de paramètres, la qualité de l'ajustement diminue.
+## Comment le cadre s'est construit
 
-K₇ a fait l'inverse. À chaque itération, le nombre de paramètres ajustables a diminué, le nombre d'observables couverts a augmenté, et la précision s'est maintenue ou améliorée. Cette trajectoire (4 → 3 → 0 paramètres) est une signature épistémique inhabituelle. Elle suggère que les contraintes topologiques, à mesure qu'elles étaient serrées, absorbaient effectivement les degrés de liberté qui avaient précédemment semblé nécessaires. Autrement dit : ce qui paraissait, dans les versions précoces, être de la liberté réglable, s'est révélé être une conséquence de la structure.
+La première version, en 2025, comportait quatre paramètres géométriques ajustables, réglés pour reproduire environ 22 observables. Une deuxième les a ramenés à trois quantités, chacune un rapport d'entiers topologiques. La structure actuelle n'a aucun paramètre continûment ajustable : les relations sont des rapports d'entiers, ou utilisent une opération supplémentaire déclarée.
 
-Ce n'est pas une preuve que K₇ est correct. Mais c'est une preuve que *ce qui se passe pendant l'itération n'est pas un ajustement*. C'est de la compression. Et la compression qui tient, en physique, est historiquement ce qui précède les moments où l'on comprend quelque chose de nouveau.
+Les versions précédentes de ce résumé lisaient cette trajectoire (quatre, trois, zéro paramètres, avec davantage d'observables couvertes à chaque fois) comme le signe d'une compression et non d'un ajustement. Cette lecture ne tient pas. Supprimer les paramètres continus tout en choisissant les formules dans une grammaire riche déplace la liberté ; cela ne la supprime pas. La liberté se trouve désormais dans le choix des formules, du vocabulaire et de la paire de Betti, c'est-à-dire exactement ce que le registre des résidus consigne et que le test look-elsewhere ci-dessous chiffre.
 
-## Les prédictions qui ne bougent plus
+Ce que donne l'absence de paramètres continus, c'est la **rigidité** : un rapport d'entiers ne se retouche pas, une seule mesure précise peut donc rejeter une relation. La rigidité expose un cadre à la réfutation. Elle ne le certifie pas : une structure exceptionnelle est rigide, qu'elle ait été dérivée ou choisie pour les valeurs qu'elle donne.
 
-Au terme de cette trajectoire, certaines relations se sont révélées être des **identités topologiques exactes** : des rapports d'entiers qui tombent directement de la structure, sans aucun coefficient numérique à ajuster. Ce sont les prédictions les plus fortes du cadre, parce qu'elles ne laissent aucune place à l'arbitraire.
+## Où en sont les 33 relations
 
-**Le nombre de générations** : *N*_gen = rang(E₈) − facteur_pentagonal = 8 − 5 = 3. Une soustraction d'entiers. Trois exactement, ni deux ni quatre. La valeur observée est 3.
+Face aux données les plus récentes (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022), avec une seule convention pour toutes les incertitudes, les relations se répartissent en cinq classes, qui ne s'additionnent pas en un score :
 
-**Le rapport masse strange / masse down** : *m*_s / *m*_d = 2² × 5 = 20. Un produit d'entiers. La valeur mesurée par les calculs de QCD sur réseau est 20.0 ± 1.0.
+- **23 sont à moins de deux écarts-types** de la mesure. Parmi elles *Q*_Koide = 2/3, α_s = √2/12, la phase CP lue comme 197°, et la plupart des rapports de quarks, de mélange et de cosmologie.
+- **3 sont en tension**, entre 2σ et 3σ : *m*_τ/*m*_e = 3477, *m*_W/*m*_Z = 37/42 et Ω_c/Ω_m = 27/32.
+- **5 sont rejetées comme égalités exactes** à plus de 3σ et gardées seulement comme proximités numériques : α⁻¹, sin²θ_W = 3/13, *m*_μ/*m*_e, *m*_μ/*m*_τ et *m*_b/*m*_t. Ces quantités sont mesurées si précisément qu'une formule à 0,2 {'main': 'https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md', 'lee': 'https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/', 'concept': 'https://doi.org/10.5281/zenodo.16891489'}e trouve à de nombreux écarts-types.
+- **1 tombe dans un intervalle** que le PDG donne sans incertitude : *m*_s/*m*_d = 20.
+- **1 se trouve dans l'autre octant** : sin²θ₂₃ = 6/11, alors que l'ajustement global préfère le premier octant ; la valeur est dans son intervalle à 3σ.
 
-**Le rapport masse tau / masse électron** : *m*_τ / *m*_e = dim(*K₇*) + 10 × dim(E₈) + 10 × *H*\* = 7 + 2480 + 990 = 3477. Une somme de dimensions entières. La valeur expérimentale est 3477.0 ± 0.5.
+Ce ne sont pas non plus **33 tests indépendants**. Dans trois secteurs il y a plus de relations que de quantités : quatre relations leptoniques pour deux rapports de masses, trois relations CKM pour deux paramètres, sept relations de densité pour deux densités. Dans chaque secteur, les relations se contredisent en tant qu'égalités exactes. Chaque formule est calculée correctement, et elles ne peuvent pas toutes être vraies ensemble.
 
-**Le paramètre de Koide** : *Q* = dim(G₂) / *b*₂(*K₇*) = 14 / 21 = 2/3. Un rapport rationnel exact. La valeur expérimentale est 0.6667 ± 0.0001. Cette relation, observée depuis plus de quarante ans, n'avait pas d'explication théorique.
+La plupart des 23 ne sont testées que faiblement : là où les incertitudes expérimentales sont de l'ordre du pour cent, un accord au pour cent est ce qu'un vocabulaire riche atteint facilement.
 
-**La phase de violation CP des neutrinos** : *δ*_CP = 7 × dim(G₂) + *H*\* = 7 × 14 + 99 = 197°. Une combinaison additive d'invariants topologiques. Sous NuFIT 6.1, le meilleur ajustement s'est déplacé à environ 207° (sans SK) / 212° (avec SK), de sorte que la valeur prédite de 197° se situe à environ 1σ. C'est la prédiction falsifiable la plus importante du cadre : l'expérience DUNE (2028–2040) mesurera cette phase avec une précision qui tranchera définitivement.
+## Pourquoi l'hypothèse de la coïncidence ne peut pas être écartée
 
-À côté de ces identités exactes, le cadre prédit les dix éléments de la matrice CKM avec une déviation moyenne de 0.11%, les trois angles de mélange des neutrinos à moins de 0.5%, l'inverse de la constante de structure fine à 0.002%, neuf rapports de masses de quarks à 0.09% en moyenne, et plusieurs observables cosmologiques (dont le rapport matière noire / matière baryonique à Ω_DM/Ω_b = 43/8) avec une précision comparable.
+Devant des formules aussi proches des données, la question est inévitable : est-ce le produit d'une pêche au hasard dans un océan de combinaisons algébriques ?
 
-## Pourquoi on peut écarter l'hypothèse de la coïncidence
+Les versions précédentes de ce résumé répondaient non, et citaient des tests statistiques : un rang parmi trois millions de configurations, une valeur P, des facteurs de Bayes, des validations par omission. Tous sont retirés. Ils avaient un défaut commun. Les alternatives étaient notées avec les formules de K₇, qui avaient été choisies pour (21, 77) ; aucune n'avait le droit de chercher les siennes. Avec un tel protocole, (21, 77) gagne par construction.
 
-Face à une constellation de formules aussi précises, la question se pose immanquablement : n'est-ce pas simplement le résultat d'une pêche prolongée dans un océan de combinaisons algébriques possibles ? Après tout, avec suffisamment de tentatives, on finit par trouver des formules qui matchent.
+La version 3.6 les remplace par un test préenregistré où **chaque concurrent cherche ses propres formules**, dans la même grammaire, avec le même budget et la même liberté d'attribution. Le résultat :
 
-La réponse honnête, en deux temps.
+- K₇ atteint 31 des 33 cibles.
+- 1 085 paires de Betti alternatives sur 4 159 en atteignent autant, et 1 015 vocabulaires inventés sur 2 000 aussi. Aucun n'en atteint plus.
+- Un témoin sans aucune constante de K₇, qui n'utilise que les symboles universels de la grammaire, en atteint 30.
 
-D'abord, oui, certaines formules ont effectivement été trouvées par exploration automatisée de grammaires algébriques restreintes. Ce n'est pas le seul mode de découverte (une partie substantielle du cadre émerge de contraintes structurelles directes) mais il serait malhonnête de prétendre que toutes les relations ont été devinées par pure intuition géométrique. L'exploration brute fait partie de la méthode, comme elle l'a toujours fait en physique mathématique.
+Le verdict préenregistré : l'effet look-elsewhere n'est pas surmonté, et la valeur P est retirée du texte. **La proximité avec les valeurs mesurées n'est pas, à elle seule, un indice en faveur de K₇.** Ce n'est pas non plus une réfutation : le test dit que le score ne discrimine pas, pas que le cadre est faux.
 
-Ensuite, et c'est le point décisif : au cours de cette exploration, des formules ont été rencontrées qui produisaient de *meilleures* déviations numériques que celles finalement retenues, mais qui n'avaient pas de sens structurel au sein du cadre. Elles ont été écartées. Ce critère qualitatif (la formule doit s'intégrer à l'architecture géométrique, pas seulement coller aux données) est ce qui distingue une compression théorique d'un ajustement numérique. Un cadre numérologique retient ce qui colle le mieux ; un cadre structurel retient ce qui s'inscrit dans la structure, même au prix d'une précision légèrement moindre.
+Ce qui survit au test est modeste et réel : la rigidité sous un dictionnaire fixé à l'avance, et la trace écrite de ce qui a été choisi.
 
-Au-delà de cette discipline méthodologique, plusieurs analyses statistiques documentées dans la v3.3 testent l'hypothèse de la coïncidence.
+## Comment une relation peut échouer
 
-**Test combinatoire** : la configuration (*b*₂, *b*₃) = (21, 77) a été comparée à 3 070 396 alternatives testées dans un espace délimité, incluant trente variétés G₂ connues explicitement dans la littérature mathématique. Elle reste optimale avec *p* < 2 × 10⁻⁵, soit une significance supérieure à 4.2σ. Elle est également optimale au sens de Pareto : aucune autre configuration testée n'améliore simultanément plusieurs critères.
+Les relations sont énoncées comme des égalités exactes, sans incertitude théorique. Une relation est rejetée quand sa série de données de référence exclut sa valeur à 3σ. Ni la formule, ni l'unité, ni l'échelle, ni le jeu de données ne sont changés ensuite pour la sauver.
 
-> **Portée de la recherche de configurations (2026-10-02).** Le résultat « n° 1 parmi 3 070 396 configurations » vaut **à formules K₇ fixées**. Quand la recherche de formules est refaite pour chaque paire de Betti, avec la même grammaire et le même budget (balayage aveugle de 242 064 paires), (21, 77) tombe **sous la médiane** : environ 64 % des paires le battent strictement ([Program, *selection principle*, Q-B](https://github.com/arithmon/program/blob/main/problems/selection-principle.md), 2026-06-18). Les deux tests répondent à des questions différentes ; aucun n'est un principe de sélection.
+**La phase CP.** La structure produit l'entier 197. Le lire en degrés est un choix, déclaré comme tel. DUNE et Hyper-Kamiokande mesureront δ_CP ; un ajustement global dont l'intervalle à 3σ exclut 197° rejette la relation, et le choix d'unité avec elle. Aujourd'hui l'ajustement donne 212 (+26/−36)°.
 
-**Correction pour comparaisons multiples** : la procédure Westfall-Young maxT, qui contrôle le taux d'erreur familial, confirme que 11 des 33 prédictions restent individuellement significatives après correction, avec une significance globale *p* = 0.008.
+**L'octant de θ₂₃.** Un ajustement dont l'intervalle à 3σ exclut 6/11 rejette cette relation.
 
-**Validation par leave-one-out** : dans 28 tests indépendants où une observable est retirée et les autres utilisées pour reconstruire le cadre, la configuration (21, 77) reste l'optimum unique à chaque fois. La prédiction retirée est ensuite comparée à l'observation : l'accord persiste sans exception.
+**La masse du tau.** Deux relations donnent 1776,74 et 1776,97 MeV ; une mesure assez précise doit en rejeter au moins une.
 
-**Comparaison bayésienne** : les facteurs de Bayes entre K₇ et des modèles nuls raisonnables varient de 288 à 4567, ce qui place le résultat dans la catégorie « évidence décisive » selon les conventions de Jeffreys.
+**Une quatrième génération** rejetterait l'identité entière *N*_gen = 3.
 
-Aucun de ces tests ne constitue une preuve que K₇ est vrai. Ils constituent une preuve que les valeurs observées ne sont pas un accident combinatoire. C'est une différence importante.
-
-## Falsifiabilité
-
-Le cadre est, par construction, sans paramètre ajustable. Cela signifie qu'il ne peut pas être « sauvé » en retouchant une constante pour absorber un désaccord expérimental. Toute déviation significative entre une prédiction K₇ et une mesure suffisamment précise le réfute.
-
-Les tests décisifs à venir sont clairement identifiés :
-
-**DUNE** mesurera *δ*_CP avec une précision attendue de l'ordre de quelques degrés d'ici 2035. Une valeur mesurée en dehors de l'intervalle [182°, 212°] (soit plus de 15° d'écart avec la prédiction de 197°) falsifie le cadre.
-
-**Hyper-Kamiokande** mesurera *θ*_23 avec une précision inférieure au degré. Le cadre prédit la valeur rationnelle 85/99 rad = 49.19°. Un désaccord significatif falsifie.
-
-**La découverte d'une quatrième génération de matière** à n'importe quelle échelle accessible aux collisionneurs futurs falsifie le cadre de manière immédiate : *N*_gen = 3 est une conséquence topologique exacte, pas une observation empirique.
-
-**Les mesures cosmologiques futures** (Euclid, CMB-S4) testeront les prédictions pour l'indice spectral scalaire, la densité d'énergie sombre, et d'autres observables à grande échelle.
-
-Les échéances courent sur la période 2027–2040. D'ici là, le cadre reste une proposition à examiner, pas une théorie validée.
+Un rejet rejette une relation et l'assignation qui la porte. Il ne rejette pas à lui seul le programme, et l'article le dit à l'avance pour que cela ne puisse pas être dit plus tard comme une réparation. À l'inverse, une confirmation montrerait qu'une assignation s'accorde avec le monde, pas que la structure l'impose. Deux résultats hors des séries de référence contredisent déjà une relation (la constante de Hubble de SH0ES, la masse du W de CDF II) et sont rapportés à côté d'elle.
 
 ## Ce que K₇ n'est pas
 
-Un cadre théorique nouveau, dans une discipline mature, gagne à définir ses limites autant que son contenu.
+K₇ n'est pas une théorie du tout. Il ne traite ni la gravité quantique ni le problème de la mesure.
 
-K₇ n'est pas une théorie du tout. Il ne prétend pas expliquer la gravité quantique, résoudre le problème de la mesure en mécanique quantique, ou unifier toutes les forces dans un cadre unique. Il se limite à un problème précis : dériver les paramètres sans dimension du Modèle Standard à partir d'une structure géométrique fixe. Le reste est au-delà de sa portée actuelle.
+K₇ n'est pas une dérivation du Modèle Standard. Sa variété lisse ne donne pas le contenu chiral non abélien du Modèle Standard, et ses relations ne viennent pas d'une théorie effective à quatre dimensions.
 
-K₇ n'est pas une cosmogonie. Il ne propose pas de mécanisme pour l'origine de l'univers, pour l'émergence de l'espace-temps, ou pour la sélection de la variété K₇ parmi toutes les variétés mathématiquement possibles. La question « pourquoi *cette* topologie plutôt qu'une autre » reste ouverte, et le cadre la reconnaît explicitement comme une limite. La seule défense disponible à ce stade est statistique : cette configuration est optimale parmi celles qui ont été testées. Pourquoi elle l'est reste inconnu.
+K₇ n'est pas une cosmogonie. Il ne propose aucun mécanisme de sélection de la variété. Cinq voies pour dériver (21, 77) ont été examinées et fermées sans succès ; il reste une observation numérique, *b₂* + *b₃* = 98 = 7 × 14, tenue pour une cible et non pour un théorème.
 
-K₇ ne se réduit pas à l'une ou l'autre des lectures possibles du mot *information*. Le nom *Geometric Information Field Theory* demande d'être déplié en trois registres distincts.
-
-**Au premier registre, les prédictions empiriques ne dépendent d'aucune thèse ontologique.** Les trente-trois relations dérivées, les déviations numériques, les tests de falsification programmés tiennent indépendamment de la question de savoir ce qu'est « l'information » en dernier ressort. Un physicien instrumentaliste peut travailler avec K₇ en traitant ses prédictions comme des conséquences algébriques d'invariants topologiques, sans jamais s'engager plus loin.
-
-**Au deuxième registre, l'architecture du cadre s'inscrit dans une lignée physique établie.** Le choix d'une variété G₂ couplée à E₈×E₈, des nombres de Betti comme primitives, de la dimension cohomologique totale *H\** comme organisateur algébrique, appartient à un programme précis. Wheeler proposait dès 1989 que « it from bit » (que la matière, l'énergie et l'espace-temps émergent de fondations théorico-informationnelles. Bekenstein a établi depuis les années 1970 que la capacité informationnelle d'une région est bornée par son aire, pas son volume. Jacobson a dérivé en 1995 les équations d'Einstein comme équation d'état thermodynamique d'horizons d'observateurs. Van Raamsdonk a montré en 2010 comment la connectivité de l'espace-temps émerge de l'intrication quantique. Trente années de physique) principe holographique, thermodynamique des trous noirs, entropie d'intrication, ont rendu l'idée que géométrie, information et énergie sont trois lectures d'une même organisation structurelle beaucoup moins exotique qu'elle ne le paraît. Les nombres de Betti ne sont pas dans K₇ des étiquettes commodes : ce sont des dimensions d'espaces de formes harmoniques, donc des décomptes exacts de degrés de liberté, la notion même de capacité informationnelle appliquée à une structure géométrique.
-
-**Au troisième registre, la thèse ontologique proprement dite** (à savoir que géométrie, information et énergie ne sont pas trois aspects corrélés mais trois vues d'une même configuration sous-jacente) K₇ ne la tranche pas. Elle est compatible avec le cadre, elle en motive l'architecture, mais elle n'est ni requise ni démontrée par les prédictions. Son élaboration fait l'objet d'un texte séparé (voir le billet compagnon [*Gift from Bit*](wiki/Blog-Gift-from-Bit.fr.html)). Un lecteur qui trouve Wheeler prophétique et le programme holographique convaincant verra dans K₇ une pièce naturelle de ce puzzle. Un lecteur qui préfère s'en tenir à l'empirique verra un cadre prédictif falsifiable. Les deux lectures sont défendables ; le cadre n'exige aucune des deux.
-
-Enfin, K₇ ne s'inscrit pas dans la tradition des tentatives d'unification par plongement direct des particules du Modèle Standard dans E₈. Cette approche, associée notamment à Lisi (2007), se heurte à une impossibilité mathématique démontrée par Distler et Garibaldi en 2010. K₇ utilise E₈ × E₈ différemment, comme architecture de jauge, avec les particules émergeant de la cohomologie de K₇ et non d'une représentation directe de E₈.
+K₇ ne dépend d'aucune lecture du mot *information*. Les relations tiennent ou tombent indépendamment de ce qu'est, au fond, l'« information ». La lignée qui a motivé le travail (le « it from bit » de Wheeler, la borne de Bekenstein, la dérivation thermodynamique des équations d'Einstein par Jacobson, le programme holographique) rend l'idée d'un lien entre géométrie et information moins exotique qu'il n'y paraît ; les relations ne l'exigent pas et ne l'étayent pas. Un essai à part en discute ([*Gift from Bit*](https://arithmon.substack.com/p/gift-from-bit)).
 
 ## Les questions ouvertes
 
-Le cadre a des points faibles que ses auteurs n'ont aucun intérêt à masquer.
+- **Existence.** Aucune variété G₂ compacte sans torsion de nombres (21, 77) n'est construite.
+- **Physique.** Aucun mécanisme ne mène d'un K₇ lisse au Modèle Standard chiral.
+- **Sélection.** Rien ne sélectionne (21, 77) ; la paire est choisie.
+- **Attribution.** Aucune règle n'attribue les formules aux observables.
+- **Dépendances.** L'audit des dépendances entre les 33 relations n'est pas terminé : aucun compte de tests indépendants n'est donné.
 
-**Le principe de sélection reste ouvert.** Aucun argument de première ligne ne permet, à ce jour, de dériver (*b*₂, *b*₃) = (21, 77) depuis des contraintes plus fondamentales. La configuration est *sélectionnée* par son accord avec l'expérience, pas *déduite* de principes premiers. Les tests statistiques montrent qu'elle est optimale, mais pas qu'elle est nécessaire.
+## Ce qui reste à voir
 
-**La construction explicite de K₇ est un programme en cours.** Les nombres de Betti (21, 77) sont plausibles dans le paysage de la construction dite *twisted connected sum*, qui produit des variétés G₂ compactes. Mais la production d'un exemple explicite avec précisément ces invariants, et le calcul direct des intégrales de volume et des couplages de Yukawa qui en résulteraient, reste un objectif à atteindre. Un premier prototype numérique de métrique G₂ locale a été produit et vérifié par méthode de Newton–Kantorovich, mais le lien complet avec le spectre des paramètres observés reste à établir formellement.
+L'article ne prétend pas que le cadre est juste. Ce peut être une véritable intuition structurelle, l'approximation d'une telle intuition, ou une coïncidence élaborée. Le but de la version 3.6 est que l'on puisse savoir laquelle, et que le lecteur voie, à chaque étape, ce qui a été dérivé, ce qui a été supposé, et ce qui le ferait tomber.
 
-**Les formules impliquant des constantes transcendantales** (où *π*, *ζ*(3), *γ*, ou le nombre d'or *φ* apparaissent) ont un statut plus spéculatif que les identités topologiques exactes. Le cadre les traite comme *phénoménologiques* en attendant une dérivation rigoureuse depuis la géométrie. C'est un étage de l'édifice qui demande encore du travail.
-
-Ces limites sont reconnues, documentées, et ne masquent pas ce que le cadre fait bien.
-
-## Ce qu'il reste à voir
-
-K₇ est une proposition. Ni plus, ni moins. Une proposition mathématiquement précise, empiriquement précise à l'heure actuelle, et falsifiable par des expériences déjà programmées.
-
-Sa valeur, si valeur il y a, sera jugée dans les années qui viennent. Si DUNE mesure *δ*_CP à 197° à quelques degrés près, le cadre passe un test difficile. S'il le mesure hors de la fenêtre de prédiction, le cadre est écarté. Si une quatrième génération de matière est découverte, le cadre est écarté. Si les prédictions tiennent, il faudra continuer à creuser.
-
-Ce qui rend cette proposition digne d'examen n'est pas qu'elle serait élégante, beaucoup de propositions élégantes se sont révélées fausses. C'est qu'elle a été construite selon un processus où les degrés de liberté ont *diminué* à chaque étape tout en couvrant *plus* d'observables, et qu'elle a atteint un état où elle n'est plus ajustable. Elle est soit correcte, soit fausse, et l'expérience décidera.
-
-C'est, dans une discipline où beaucoup de cadres récents peinent à produire des prédictions testables à court terme, déjà une position inhabituelle.
+C'est une affirmation plus modeste que celle que cette page portait. Elle se vérifie.
 
 ---
 
-*Pour les sources primaires, les preuves formelles en Lean 4, les dérivations complètes des 33 prédictions, et les analyses statistiques détaillées, voir le manuscrit principal disponible sur Zenodo (DOI [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071)) et le dépôt de code sur [GitHub](https://github.com/Arithmon/K7).*
+*Pour l'énoncé complet, voir l'[article principal](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) et ses suppléments ; le code et les résultats du test look-elsewhere sont [publics](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/). La dernière version déposée est toujours au DOI concept Zenodo [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489).*
