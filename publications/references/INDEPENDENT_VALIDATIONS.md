@@ -2,6 +2,8 @@
 
 Documentation of independent research converging with or citing GIFT predictions.
 
+> **Status of this page (version 3.6).** This page was written for earlier versions and catalogs works that cite the framework or reach some of the same numbers. It should not be read as validation. The works listed cite the framework, so they are not independent of it; version 3.6 treats the Zhou series as a reparametrisation of the same pair and not as an alternative construction (main paper, §10.1); and sin²θ_W = 3/13, the value on which the first entry agrees, is rejected as an exact equality by the current data (−7.5σ) and kept only as a numerical proximity. The statements below about convergence and about probabilities of agreement are withdrawn. A citation is not an endorsement, in either direction.
+
 ---
 
 ## Overview
@@ -23,7 +25,7 @@ The scientific validity of any theoretical framework is strengthened when indepe
 | Quantity | Theodorsson | GIFT | Agreement |
 |----------|-------------|------|-----------|
 | sin²θ_W (Weinberg angle) | 3/13 ≈ 0.2308 | 3/13 ≈ 0.2308 | Exact |
-| Methodology | Zero adjustable parameters | Zero adjustable parameters | Exact |
+| Methodology | closed forms in E₈ and G₂ integers | closed forms in E₈ and G₂ integers | same kind |
 | Foundation | E₈ + G₂ structure | E₈ + G₂ holonomy | Aligned |
 | Validation | Monte Carlo (10⁷ samples) | Monte Carlo (10⁶ samples) | Consistent |
 
@@ -48,7 +50,7 @@ The scientific validity of any theoretical framework is strengthened when indepe
 
 ### Significance
 
-Two independent frameworks deriving sin²θ_W = 3/13 from E₈/G₂ geometry with zero free parameters represents a non-trivial convergence. The probability of random agreement at this precision is < 10⁻³.
+Two frameworks write sin²θ_W = 3/13 from E₈ and G₂ integers. The second cites the first, and 3/13 is a simple fraction; no probability of agreement is claimed (see the status note at the top of this page).
 
 ---
 

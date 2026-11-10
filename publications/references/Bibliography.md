@@ -197,7 +197,7 @@ Yablo, S. (2012). "Explanation, Extrapolation, and Existence." *Mind*, 121(484):
 
 ## Independent Validations & Related Work
 
-Theodorsson, T. (2026). "The Geometric Equation of State: Conservation of Action in the E₈ Vacuum." *Independent manuscript*. [Cites GIFT; derives sin²θ_W = 3/13 independently via E₈/G₂ geometry with zero adjustable parameters]
+Theodorsson, T. (2026). "The Geometric Equation of State: Conservation of Action in the E₈ Vacuum." *Independent manuscript*. [Cites GIFT; writes sin²θ_W = 3/13 from E₈ and G₂ integers]
 
 Zhou, C. & Zhou, Z. (2026). "Geometrization of Manifold G String Theory as a Low-Energy Geometric Fixed Point Under Topological Backgrounds." *Independent manuscript*. [Discusses G₂ manifolds as compactification alternatives; RG flow framework]
 

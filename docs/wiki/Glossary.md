@@ -390,8 +390,8 @@ Framework introduced in v2.1 connecting non-zero torsion on K₇ to RG flow. Key
 ### Scale Bridge (v2.1)
 Mathematical infrastructure linking dimensionless to dimensional observables: Λ_GIFT = 21×e⁸×248/(7×π⁴) ≈ 1.63×10⁶.
 
-### Lean 4 (v3.4)
-Theorem prover used for formal verification of K₇ exact relations. The [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) repository contains 140 certified conjuncts (143 Lean files, 14 axioms (4 main-chain + 10 interval-arithmetic), 0 sorry) including E₈ root system, G₂ cross product properties, spectral theory, TCS bounds, Yukawa mass ratios, and the K3 Newton-Kantorovich certificate. Key theorem: `K₇_framework_certified`.
+### Lean 4
+Theorem prover used to verify the arithmetic of the K₇ relations. The [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) repository (156 Lean files, 14 axioms: 4 imported from the literature and 10 interval certificates; 0 sorry) collects the 33 relations in `relations_v36_certified` and also covers E₈ root system, G₂ cross product properties, spectral theory, TCS bounds, Yukawa mass ratios, and the K3 Newton-Kantorovich certificate. Key theorem: `K₇_framework_certified`.
 
 ---
 

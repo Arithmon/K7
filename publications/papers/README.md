@@ -98,7 +98,7 @@ The tables that stood here in version 3.5 gave the relations the status **PROVEN
 
 ## Formal Verification
 
-146 Lean 4 files, 213 conjuncts certified, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), 0 sorry, 8394 build jobs.
+156 Lean 4 files, 14 axioms at K7-Lean main (4 imported from the literature, 10 interval certificates), 0 sorry; the arithmetic of the 33 relations is collected in `relations_v36_certified`.
 
 See [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) for proofs (v3.5).
 

@@ -3,135 +3,98 @@ title: "For Physicists"
 layout: default
 ---
 
-# Information Geometry in Particle Physics: The K₇ Perspective
+# The K₇ Dictionary: a Technical Overview for Physicists
+
+*As of version 3.6 of the framework paper. Where this page and the [main paper](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) differ, the paper holds.*
 
 ## Abstract
 
-The K₇ framework proposes that Standard Model parameters are not free constants requiring experimental determination, but rather topological invariants of an underlying geometric structure. Specifically, the framework derives 33 Type-I relations (dimensionless) from the cohomology of a 7-dimensional G₂ holonomy manifold K₇ coupled to E₈×E₈ gauge architecture. This document presents the conceptual structure for theoretical physicists, focusing on how topology might eliminate the need for adjustable parameters.
+The K₇ framework states a **declared correspondence**: the topological and Lie-theoretic invariants of a compact seven-manifold K₇ with G₂ holonomy and Betti numbers (b₂, b₃) = (21, 77), together with an E₈×E₈ gauge structure, are assigned to 33 dimensionless Standard-Model and cosmological parameters by explicit closed forms. It is presented as a privileged candidate, not as a derivation: no geometric map is known that sends the invariants to the observables, and no rule fixes which formula is assigned to which observable. The paper makes the correspondence auditable, with a dictionary, a residue register and a decision rule.
 
-## 1. The Parameter Problem
+## 1. The parameter problem and the selection problem
 
-The Standard Model describes electromagnetic, weak, and strong interactions with high precision, yet contains 19 free parameters: 3 gauge couplings, 9 fermion masses, 4 CKM parameters, and 3 additional constants (Higgs mass, Higgs VEV, QCD vacuum angle). These span six orders of magnitude with no theoretical explanation for their values.
+The Standard Model leaves about nineteen parameters to measurement and explains neither its gauge group nor its three generations. Any framework that proposes structure behind these numbers inherits two questions that are easily run together:
 
-Traditional unification approaches have not resolved this situation. Grand Unified Theories introduce additional parameters while attempting to explain the original 19. String theory's moduli space encompasses approximately 10⁵⁰⁰ vacua, transforming the parameter problem into a vacuum selection problem. The question persists: are these parameters truly free, or do they encode deeper structure?
+1. **Does a family of structures deserve to be explored?** For K₇ the answer is positive: the octonions, G₂ holonomy and E₈ are structures whose interest owes nothing to the Standard Model's constants.
+2. **Why this precise structure, and these precise assignments?** This is **not** answered. The pair (21, 77) is not derived, and the formulas are assigned, not forced.
 
-The K₇ framework explores an alternative: what if the 19 parameters are topological invariants of a compact internal manifold? In this picture, there is nothing to tune because discrete topological data admits no continuous variation.
+## 2. The inputs
 
-## 2. The Geometric Setup
+**E₈×E₈.** Used as a source of group-theoretic integers (dimensions, ranks, representation dimensions of E₈ and of its exceptional subgroups). The framework does not embed Standard-Model fermions in E₈, which avoids the Distler–Garibaldi obstruction and also means it makes no claim about how the fermions arise.
 
-### 2.1 Why E₈×E₈?
+**G₂ holonomy.** In seven dimensions G₂ is the exceptional holonomy group of Berger's list; it is the automorphism group of the octonions and the condition for N = 1 supersymmetry in an M-theory compactification on a seven-manifold.
 
-The product group E₈×E₈ appears for several reasons. E₈ is the largest exceptional simple Lie algebra (dimension 248, rank 8). Its Weyl group W(E₈) has order 696,729,600 = 2¹⁴ × 3⁵ × 5² × 7, containing all the primes and powers that will reappear in observable formulas. The product E₈×E₈ arises naturally in heterotic string theory and satisfies anomaly cancellation requirements.
+**K₇.** A compact G₂-holonomy manifold with (b₂, b₃) = (21, 77) is *posited*. **No such manifold is currently constructed**; the topological route of version 3.5 does not realise the pair. The companion papers certify local or conditional pieces (a Newton–Kantorovich-certified seam metric, a neck ansatz), not a compact K₇. The relations use only the declared integers and no metric.
 
-Importantly, the framework does not embed Standard Model particles directly in E₈ representations. Direct embedding faces the Distler-Garibaldi obstruction: E₈ cannot accommodate three chiral generations with the correct quantum numbers. Instead, E₈×E₈ provides information-theoretic architecture, with physical particles emerging from dimensional reduction on the internal manifold.
+**What is not supplied.** A smooth G₂ compactification gives an abelian, non-chiral four-dimensional theory. The chiral non-abelian content of the Standard Model would require a UV bridge (a singular locus, a heterotic bundle, or a duality) that the framework does not provide. The relations are not derived from a four-dimensional effective theory, and they are not stated at a common energy scale: each comparison carries a (scheme, scale, dataset) tag.
 
-### 2.2 The Internal Manifold K₇
+## 3. The dictionary
 
-The framework posits a compact 7-dimensional Riemannian manifold K₇ with G₂ holonomy. G₂ is the automorphism group of the octonions (dimension 14, rank 2). It is the minimal exceptional holonomy in seven dimensions and preserves exactly one spinor, yielding N=1 supersymmetry upon compactification.
+All 33 relations are written in twenty structural constants: seven primitive (among them dim E₈ = 248, rank E₈ = 8, dim G₂ = 14, dim K₇ = 7, b₂ = 21, b₃ = 77) and thirteen derived (for instance H* = b₂ + b₃ + 1 = 99, N_gen = 3, the Weyl factor 5, |PSL(2,7)| = 168). The grammar is ratios and small integer combinations, with four further operations declared when used (√, φ, ln 2, ζ values).
 
-K₇ is constructed via the twisted connected sum (TCS) method: glue two asymptotically cylindrical Calabi-Yau 3-folds along their common S¹ × K3 boundary. The specific building blocks determine the topology:
+Representative entries:
 
-| Invariant | Value | Physical Interpretation |
-|-----------|-------|------------------------|
-| b₂(K₇) | 21 | Gauge field multiplicity (harmonic 2-forms) |
-| b₃(K₇) | 77 | Matter field multiplicity (harmonic 3-forms) |
-| H* = b₂ + b₃ + 1 | 99 | Effective cohomological dimension |
+| Observable | Formula | K₇ value | Measured | Pull | Status |
+|---|---|---|---|---|---|
+| sin²θ_W (M_Z, MS-bar) | b₂/(b₃ + dim G₂) = 3/13 | 0.230769 | 0.23122(6) | −7.5σ | proximity |
+| α_s(M_Z) | √2/(dim G₂ − p₂) = √2/12 | 0.117851 | 0.1180(9) | −0.2σ | within 2σ |
+| Q_Koide | dim G₂/b₂ = 2/3 | 0.666667 | 0.6666645(51) | +0.4σ | within 2σ |
+| m_τ/m_e | 7 + 10·248 + 10·99 = 3477 | 3477 | 3477.37(18) | −2.1σ | tension |
+| sin²θ₂₃ (PMNS) | 6/11 | 0.545455 | 0.470 (+17/−14) | second octant | inside the NuFIT 3σ range |
+| δ_CP | 7·14 + 99 = 197, read in degrees | 197° | 212 (+26/−36)° | −0.4σ | unit assignment |
+| m_W/m_Z | 37/42 | 0.880952 | 0.88136(15) | −2.7σ | tension |
+| Ω_DE | ln 2 · 98/99 | 0.686146 | 0.6847(73) | +0.2σ | within 2σ |
 
-### 2.3 The Torsion Mechanism
+The complete table is in the [Observable Reference](Observable-Reference.html).
 
-Standard G₂ holonomy manifolds have torsion-free 3-form: dφ = 0, d*φ = 0. Physical interactions require controlled departure from this idealization. The framework introduces torsion with magnitude:
+**The residue register.** What was set rather than derived is listed and ranked with the results (R1 to R12): the Betti pair; the imposed normalization det(g) = 65/32; the combination κ_T⁻¹ = 61; the unit in which 197 is read as a phase; the scales and mass schemes of the comparisons; the formula assignments; and, in three overdetermined sectors, the absence of a choice among mutually incompatible relations.
 
-κ_T = 1/(b₃ - dim(G₂) - p₂) = 1/(77 - 14 - 2) = 1/61
+## 4. Where the relations stand
 
-This torsion generates dynamics through geodesic flow on K₇, providing a geometric interpretation of renormalization group equations.
+Against PDG 2026, NuFIT 6.1, Planck 2018 and CODATA 2022, with uncertainties at 1σ: 23 relations lie within 2σ; 3 are in tension (m_τ/m_e, m_W/m_Z, Ω_c/Ω_m); 5 are excluded as exact equalities at more than 3σ and retained as proximities (α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t); m_s/m_d lies inside a PDG range that carries no uncertainty; sin²θ₂₃ sits in the second octant, inside the 3σ range of the global fit. The classes are not added into one score.
 
-## 3. From Topology to Observables
+The 33 are **not independent tests**. Four lepton relations bear on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. In each sector the relations are mutually incompatible as exact equalities, and none is selected. Other dependencies exist (sin²θ_W and m_W/m_Z are related through radiative corrections) and the audit is not complete.
 
-### 3.1 The Dimensional Reduction
+Six relations use det(g) = 65/32 and three use κ_T⁻¹ = 61. A reader who regards the imposed normalization as an extra parameter should read the framework through the reduced counts given in the [Validation Summary](Validation-Summary.html).
 
-The chain proceeds:
+## 5. Look-elsewhere
 
-E₈×E₈ (496D) → AdS₄ × K₇ (11D) → Standard Model (4D)
+In a preregistered test, every competitor searches for its own formulas in the same grammar, at the same budget (five nodes) and with the same windows (2σ). K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more. P_global = 0.51 against a threshold of 0.01: the effect is not overcome. A witness with no K₇ constant reaches 30. In the public Sieve battery, no K₇ relation clears the null that prices the choice of vocabulary.
 
-Upon compactification, gauge fields arise from harmonic 2-forms on K₇ (hence 21 generators, containing SU(3)×SU(2)×U(1) plus hidden sector), while chiral fermions arise from harmonic 3-forms (hence 77 modes, containing 3 generations of 16 Weyl fermions plus additional states).
+Closeness to the measured values is therefore not, by itself, evidence. The coincidence probabilities and P-values of earlier versions are withdrawn. Details and code: [Statistical Evidence](Statistical-Evidence.html).
 
-### 3.2 Representative Mappings
+## 6. What is claimed, and what is not
 
-The framework derives observables from cohomological and algebraic data. Examples:
+**Claimed.** Given the declared constants and assignments, the 33 relations hold as arithmetic identities (machine-checked in Lean 4), and they lie at the stated deviations from measurement. The decision rule applies to them.
 
-**Weinberg angle** (electroweak mixing):
-sin²θ_W = b₂/(b₃ + dim(G₂)) = 21/(77 + 14) = 21/91 = 3/13 = 0.23077
+**Not claimed.** That the relations are derived from the geometry of K₇; that (21, 77), the formulas or det(g) = 65/32 are forced by any requirement; that the relations hold at a common scale; that closeness is evidence; that the manifold has been constructed; that the chiral Standard Model follows from it.
 
-This is an exact rational number determined by topology.
+## 7. Decision rule
 
-**Generation number**:
-N_gen = rank(E₈) - Weyl = 8 - 5 = 3
+The relations are exact equalities with no theoretical uncertainty. A relation is rejected when its reference series excludes its value at 3σ, and it is not rescued by changing its formula, unit, scale or dataset.
 
-The factor 5 arises from 5² in |W(E₈)|.
+| Quantity | K₇ value | Rejected by |
+|---|---|---|
+| δ_CP (phase 2π·197/360) | 197° | a global fit, with DUNE or Hyper-Kamiokande, whose 3σ interval excludes 197°; the unit assignment falls with it |
+| sin²θ₂₃ | 6/11 | a global fit whose 3σ interval excludes 6/11, in either octant |
+| m_τ/m_e, Q_Koide | m_τ = 1776.74 and 1776.97 MeV | an m_τ value whose 3σ interval excludes the value; the two differ by 0.23 MeV |
+| N_gen | 3 | a fourth sequential generation |
+| m_s/m_d | 20 | a lattice determination with an uncertainty whose 3σ interval excludes 20 |
 
-**CP violation phase** (neutrino sector):
-δ_CP = 7 × dim(G₂) + H* = 7 × 14 + 99 = 197°
+Outside the reference series, h = 167/248 is excluded by SH0ES at 5.5σ while agreeing with Planck, and m_W/m_Z = 37/42 is at −10.6σ against the CDF II W mass; both are reported beside the class. A rejection rejects a relation and its assignment, not the programme by itself; a confirmation would confirm an assignment, not a requirement of the structure.
 
-An additive formula combining manifold dimension, holonomy dimension, and cohomological dimension.
+## 8. Relation to other approaches
 
-**Koide relation** (charged lepton masses):
-Q = dim(G₂)/b₂ = 14/21 = 2/3
+**M-theory.** E₈×E₈ and G₂ holonomy both appear in M-theory. The framework does not supply a compactification of either kind and differs from standard G₂ phenomenology, which works with moduli stabilization and singular compactifications.
 
-The empirical Koide formula (m_e + m_μ + m_τ)/(√m_e + √m_μ + √m_τ)² = 2/3 emerges as a topological ratio.
+**Direct E₈ embeddings.** Not attempted (Distler–Garibaldi).
 
-### 3.3 What is Claimed
+**The string landscape.** The framework does not solve a selection problem; it has one of its own, stated in the residue register.
 
-The framework produces 33 Type-I relations (dimensionless) spanning gauge couplings, neutrino mixing, lepton mass ratios, quark mass ratios, and cosmological observables. The mean deviation from experimental values is 0.99% (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022).
+## 9. Summary
 
-All 460+ certified relations have been formally verified in the Lean 4 proof assistant, with 14 axioms (4 main-chain + 10 interval-arithmetic) and 0 sorry.
-
-### 3.4 What is Not Claimed
-
-The framework does not constitute a complete theory of quantum gravity. It does not derive the action principle from first principles. The dynamical mechanism connecting geometry to physics remains incomplete; the mapping between topological data and physical observables is established but not derived from a deeper principle.
-
-The "zero-parameter" description refers to the absence of continuous adjustable quantities. Discrete structural choices remain: E₈×E₈ rather than SO(32), this specific K₇ rather than other G₂ manifolds. These choices are motivated by consistency requirements (anomaly cancellation, correct field content) but not uniquely determined.
-
-Whether this mathematical structure reflects fundamental reality or constitutes an effective description remains open.
-
-## 4. Experimental Tests
-
-The framework makes specific predictions testable by near-term experiments:
-
-| Prediction | Current Value | Experiment | Timeline |
-|------------|---------------|------------|----------|
-| δ_CP = 197° | best fit ~207-212° (NuFIT 6.1), 197° within ~1σ | DUNE | 2028-2040 |
-| sin²θ_W = 3/13 | 0.23122 ± 0.00003 | FCC-ee | 2040s |
-| m_s/m_d = 20 | 20.0 ± 1.0 | Lattice QCD | 2030 |
-| N_gen = 3 | 3 | LHC | Ongoing |
-
-**Falsification criteria**: The framework would be refuted by measurement of δ_CP outside [182°, 212°], discovery of a fourth generation fermion, or precision determination of m_s/m_d significantly different from 20. These are genuine experimental tests, not post-hoc accommodations.
-
-## 5. Relation to Other Approaches
-
-**Differs from direct E₈ embedding**: Early attempts to embed Standard Model fields directly in E₈ representations encountered the Distler-Garibaldi obstruction. K₇ uses E₈×E₈ as architecture, not as a direct representation space for fermions.
-
-**Differs from string landscape**: String theory's 10⁵⁰⁰ vacua create a selection problem. K₇ proposes that topological constraints uniquely determine observables, eliminating vacuum degeneracy (though this requires the specific K₇ construction).
-
-**Connection to M-theory**: The 11-dimensional bulk and G₂ compactification are standard in M-theory. K₇ may be viewed as extracting specific predictions from a particular corner of the M-theory landscape.
-
-**Information-geometric interpretation**: The binary duality factor p₂ = 2, the appearance of ln(2) in cosmological formulas, and the dimensional compression 496 → 99 → 4 suggest connections to information theory and quantum error correction.
-
-## 6. Summary
-
-The K₇ framework explores whether Standard Model parameters might be topological invariants rather than free constants. The specific proposal involves E₈×E₈ gauge structure, G₂ holonomy on a 7-manifold K₇ with Betti numbers b₂ = 21 and b₃ = 77, and controlled torsion providing dynamics.
-
-The resulting 33 Type-I relations (dimensionless) match experiment to 0.99% mean precision (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022). Whether this reflects fundamental physics or an elaborate coincidence will be determined by experiments, particularly DUNE's measurement of the CP violation phase δ_CP in the coming years.
-
-The framework's value, independent of its physical correctness, lies in demonstrating that geometric principles can substantially constrain particle physics parameters. It provides a concrete example of how topology might replace tuning.
-
-## References
-
-- Main paper: [Paper Main Framework](Paper-Main-Framework.html)
-- Mathematical foundations: [Paper S1 Foundations](Paper-S1-Foundations.html)
-- Complete derivations: [Paper S2 Derivations](Paper-S2-Derivations.html)
-- Spectral geometry: [Paper Spectral Geometry](Paper-Spectral-Geometry.html)
-- Formal verification: [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean)
+Thirty-three dimensionless parameters are matched by closed forms in the invariants of a G₂-holonomy seven-manifold with (21, 77) and of E₈×E₈. The correspondence is not derived, its closeness to the data is not distinctive, and its manifold is not constructed. What it offers is rigidity (no continuous parameter), a written residue, and a rule fixed in advance under which individual relations can be rejected. The paper does not claim that the framework is correct.
 
 ---
 
-*K₇ Framework v3.5*
+*K₇ Framework v3.6*

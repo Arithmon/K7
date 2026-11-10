@@ -4,7 +4,7 @@ title: Documentation
 
 # K₇ Framework - Documentation
 
-Supporting documentation for The K₇ Framework v3.5 (formerly GIFT).
+Supporting documentation for The K₇ Framework v3.6 (formerly GIFT).
 
 ## Contents
 
@@ -27,10 +27,11 @@ Static visualizations are available in the [`figures/`](figures/) directory:
 
 ## Main Documentation
 
-- [Main Paper](../publications/papers/markdown/k7_framework_3_5_main.md) - Complete theoretical framework
-- [S1: Foundations](../publications/papers/markdown/k7_framework_3_5_S1_foundations.md) - E₈, G₂, K₇ mathematical construction
-- [S2: Derivations](../publications/papers/markdown/k7_framework_3_5_S2_derivations.md) - 33 Type I derivations
-- [S3: Observables](../publications/papers/markdown/k7_framework_3_5_S3_observables.md) - 95-observable catalog
+- [Main Paper](../publications/papers/markdown/k7_framework_3_6_main.md) - The correspondence, its dictionary, its residue register, the 33 relations, the look-elsewhere test and the decision rule
+- [S1: Foundations](../publications/papers/markdown/k7_framework_3_6_S1_foundations.md) - E₈, G₂, K₇ mathematical construction
+- [S2: The 33 relations](../publications/papers/markdown/k7_framework_3_6_S2_derivations.md) - Arithmetic, dictionary choices and status
+- [S3: Observable dataset](../publications/papers/markdown/k7_framework_3_6_S3_observables.md) - 33 relations and 62 conditional or diagnostic entries
+- [S4: Look-elsewhere](../publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) - The preregistered test and descriptive diagnostics
 - [Paper A: Certified G₂ Structure](../publications/papers/markdown/g2_certified_neck.md) | [Paper B: Spectral Geometry](../publications/papers/markdown/g2_spectral.md)
 - [Observables CSV](../publications/references/observables.csv) - Machine-readable data
 
