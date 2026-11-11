@@ -9,9 +9,9 @@ layout: default
 
 *Brieuc de La Fournière (2026)*
 
-[**PDF (40 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md)
+[**PDF (41 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md)
 
-Supplements: [S1](Paper-S1-Foundations.html) (foundations, 26 pp.) · [S2](Paper-S2-Derivations.html) (the 33 relations, 14 pp.) · [S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md) (dataset, 15 pp.) · [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) (look-elsewhere, 10 pp.) · [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md)
+Supplements: [S1](Paper-S1-Foundations.html) (foundations, 26 pp.) · [S2](Paper-S2-Derivations.html) (the 33 relations, 14 pp.) · [S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md) (dataset, 15 pp.) · [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) (look-elsewhere, 11 pp.) · [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md)
 
 ---
 
@@ -57,7 +57,7 @@ In a preregistered test, every competing Betti pair and every invented vocabular
 - 8. Formal Verification
 - 9. Existence status (two-layer boundary)
 - 10. Selection Audit of (21, 77)
-- 11. Decision Rule and Refutation
+- 11. Decision Rule and Tests to Come
 - 12. Discussion and Conclusion: Where the Necessity of K₇ Ends
 
 ---

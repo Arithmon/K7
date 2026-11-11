@@ -50,7 +50,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {November},
-  howpublished = {The K₇ Framework v3.6, 40 pp.},
+  howpublished = {The K₇ Framework v3.6, 41 pp.},
   doi          = {10.5281/zenodo.16891489},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf}
 }
@@ -106,7 +106,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {November},
-  howpublished = {The K₇ Framework v3.6, Supplement S4, 10 pp.},
+  howpublished = {The K₇ Framework v3.6, Supplement S4, 11 pp.},
   doi          = {10.5281/zenodo.16891489},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf}
 }

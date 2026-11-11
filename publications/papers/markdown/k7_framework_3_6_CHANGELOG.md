@@ -2,6 +2,14 @@
 
 ## v3.6 (November 2026)
 
+**Batch 13 (2026-11-11): the main paper states the present position; out-of-sample tests.**
+- The body is written in the present tense. What versions up to 3.5 said and version 3.6 no longer says is listed once, in the new Appendix D, with pointers to the erratum; the corresponding passages leave §1.1, §2.3, §2.4, §3.1, §3.2, §4.2, §4.3, §4.5, §5.3, §5.4, §6.1, §7.1, §7.2, §9, §10.3, §11 and §12.1. No number, class or verdict changes.
+- Abstract shortened (507 to 333 words). §3.4 reduced to what is claimed, each limit being stated where it acts.
+- §11.2 becomes "Out-of-sample tests and timeline": a formula retained in a window of half-width w falls by chance in a later window of half-width w/k about once in k. JUNO's first measurement of sin²θ₁₂ (0.3092 ± 0.0087) and its projected six-year precision (about 0.5%) are added against 4/13, with cosmological surveys in the timeline; references [58], [59].
+- §7.2: seven targets are counted as reached although K₇'s published value lies outside the window; m_τ/m_e, the one separating target, is among them, and this is now said.
+- R7: the comparison of λ_H with the tree-level m_H²/(2v²) is declared as a scheme choice, with the MS-bar value; reference [60].
+- §7.3 gains out-of-sample exposure as a third item; conclusion rewritten accordingly. PDFs rebuilt (main 41 pp., S4 11 pp. with the three new references).
+
 **Batch 12 (2026-11-11): release preparation.**
 - The "(draft)" stamp is removed from the title pages; `.tex` and PDF rebuilt. No statement or number changes.
 - The LaTeX sources and PDFs of version 3.6 enter the public repository (`publications/papers/tex/`, `pdf/`), with the current preamble.
