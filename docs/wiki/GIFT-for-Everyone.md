@@ -971,7 +971,7 @@ The DUNE experiment will measure this in 2034-2039.
 
 **That's science**: statements that can die, with the rules written before the result is known.
 
-**In K₇**: The rules are written in advance, formula by formula. Five of the 33 formulas have already failed as exact equalities, and the framework says which. One failed formula does not sink the others, and the framework says that in advance too.
+**In K₇**: The rules are written in advance, formula by formula. Six of the 33 formulas have already failed as exact equalities, and the framework says which. One failed formula does not sink the others, and the framework says that in advance too.
 
 ---
 

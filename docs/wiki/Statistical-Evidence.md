@@ -20,10 +20,10 @@ A framework that matches 33 measured values with closed forms in a vocabulary of
 | **K₇** | reaches 31 of the 33 targets |
 | **Alternative Betti pairs** | 1 085 of 4 159 reach as many (P = 0.26); none reaches more |
 | **Invented vocabularies** | 1 015 of 2 000 reach as many (P = 0.51); none reaches more |
-| **Witness with no K₇ constant** | reaches 30 of the 33 with the universal leaves of the grammar alone |
-| **Verdict** | P_global = 0.51 against a threshold of 0.01: the look-elsewhere effect is not overcome, and the P-value is withdrawn from the text |
+| **Control with no K₇ constant** | reaches 30 of the 33 with the universal leaves of the grammar alone |
+| **Verdict** | global p-value 0.51 against a threshold of 0.01: the look-elsewhere effect is not overcome, and the P-value is withdrawn from the text |
 
-P_global = 0.51 is not a probability that K₇ is right or wrong, and the counts are not a physical refutation. They say that the top score has little discriminating power in this protocol: 30 targets are reached by everyone, two by no one, and one separates the competitors.
+The value 0.51 is not a probability that K₇ is right or wrong, and the counts are not a physical refutation. They say that the top score has little discriminating power in this protocol: 30 targets are reached by everyone, two by no one, and one separates the competitors.
 
 ## 2. The test
 
@@ -32,20 +32,20 @@ P_global = 0.51 is not a probability that K₇ is right or wrong, and the counts
 - **Concordance.** A target is reached if one expression of the vocabulary falls within 2σ of the measured value on either side, asymmetric uncertainties being kept asymmetric. For m_s/m_d, which the PDG gives as a range, the window is that range. For δ_CP, the phase may be read in degrees, radians, grads or turns.
 - **Assignment.** The search is blind: each target takes the cheapest concordant expression. The freedom to assign formulas to observables is granted to everyone, K₇ included, which is scored by the same search on its own vocabulary and not by its published formulas.
 - **Competitors.** Every Betti pair with b₂ in [1, 40] and b₃ in [17, 120] other than (21, 77), with H*, κ_T⁻¹ and det(g) re-derived and the other constants held at K₇'s values; and 2 000 vocabularies of 19 integers drawn by the Sieve's frozen generator.
-- **Verdict rule.** For a family of size N in which n competitors reach at least as many targets as K₇, P = (1 + n)/(1 + N), ties counting against K₇. P_global is the larger of the two family values, and the effect is overcome only if P_global ≤ 0.01.
+- **Verdict rule.** For a family of size N in which n competitors reach at least as many targets as K₇, P = (1 + n)/(1 + N), ties counting against K₇. The global p-value is the larger of the two family values, and the effect is overcome only if it is at most 0.01.
 
 The alphabet tested for K₇ is the nineteen integers of the version 3.5 Monte Carlo register, not literally the twenty constants of the main paper (§3.1): dim E₇ = 133 and α_sum = 13 are absent and κ_T⁻¹ = 61 is present. A test on the literal register would be a separate computation.
 
 ## 3. Result
 
-| Family | N | reach ≥ 31/33 (as many as K₇) | P = (1 + n)/(1 + N) | max S_cover | S_cost range (bits) | cost ≤ K₇ |
+| Family | N | reach ≥ 31/33 (as many as K₇) | P = (1 + n)/(1 + N) | best coverage | description cost, range (bits) | cost ≤ K₇ |
 |---|---:|---:|---:|---:|---:|---:|
 | K₇ (21, 77), blind search on its own vocabulary | 1 | 31/33 | n/a | 31 | 408.1 | n/a |
-| F-BETTI: alternative Betti pairs (published derivations) | 4 159 | 1 085 | 0.261 | 31 | 389.2 to 418.7 | 1 163 |
-| F-VOCAB: invented vocabularies (Sieve generator) | 2 000 | 1 015 | 0.508 | 31 | 385.0 to 430.4 | 698 |
-| F-BETTI-FICHE: alternative Betti pairs, variant derivations (outside the rule) | 4 160 | 723 | 0.174 | 31 | 391.3 to 417.6 | 601 |
+| alternative Betti pairs (published derivations) | 4 159 | 1 085 | 0.261 | 31 | 389.2 to 418.7 | 1 038 |
+| invented vocabularies (generator of [M]) | 2 000 | 1 015 | 0.508 | 31 | 385.0 to 430.4 | 628 |
+| alternative Betti pairs, variant derivations (outside the rule) | 4 160 | 723 | 0.174 | 31 | 391.3 to 417.6 | 548 |
 
-P_global = max(P_F-BETTI, P_F-VOCAB) = **0.508**; threshold 0.01. The variant row does not enter the verdict. K₇ is not cheaper either: its description cost lies inside the range of both families.
+The global p-value, the larger of the first two rows, is **0.508**; threshold 0.01. The variant row does not enter the verdict. K₇ is not cheaper either: its description cost lies inside the range of both families.
 
 Per target:
 
@@ -85,34 +85,34 @@ Per target:
 | A32 | Y_p | yes | yes | yes | 4 159 | 2 000 |
 | A33 | Ω_m/Ω_Λ | yes | yes | yes | 4 159 | 2 000 |
 
-Most targets are reached by every competitor: at five nodes and 2σ, the grammar covers them whatever the vocabulary. The targets that discriminate are the few with very small relative uncertainties. α⁻¹ and m_μ/m_e are reached by nobody, K₇ included. m_τ/m_e is reached by K₇ and by about a third of the competitors, and the counts of the family table are exactly the counts on that one target. Three scores must be kept apart: the published formulas (24 of the 33 lie inside their windows), the free search with K₇'s alphabet (31), and the witness with no K₇ constant (30).
+Most targets are reached by every competitor: at five nodes and 2σ, the grammar covers them whatever the vocabulary. The targets that discriminate are the few with very small relative uncertainties. α⁻¹ and m_μ/m_e are reached by nobody, K₇ included. m_τ/m_e is reached by K₇ and by about a third of the competitors, and the counts of the family table are exactly the counts on that one target. Three scores must be kept apart: the published formulas (24 of the 33 lie inside their windows), the free search with K₇'s alphabet (31), and the control with no K₇ constant (30).
 
 ## 4. The Sieve scorecard
 
-The Sieve is a public battery of four nulls with a frozen observable list and grammar. N1 asks whether a relation is isolated in the fixed vocabulary; N2 prices the freedom to have chosen the vocabulary; N3 and N4 shuffle coefficients and targets. Its published scorecard for the K₇ relations reads:
+The Sieve is a public battery of four null tests with a frozen observable list and grammar. The first asks whether a relation is isolated in the fixed vocabulary; the second prices the freedom to have chosen the vocabulary; the third and fourth shuffle coefficients and targets. Its published scorecard for the K₇ relations reads:
 
-- n_s and m_H/m_W survive N1 on all three of its axes.
-- Neither clears N2: a budget-matched invented vocabulary matches them as well (for m_H/m_W, 22 of 24 invented vocabularies do).
+- n_s and m_H/m_W pass the isolation test on all three of its axes.
+- Neither passes the vocabulary-freedom test: a budget-matched invented vocabulary matches them as well (for m_H/m_W, 22 of 24 invented vocabularies do).
 - Q_Koide is isolated in the fixed vocabulary, but its value 2/3 is reached by every vocabulary: a tie, not a survivor.
-- Across the nine shallow relations tested by N2, the invented-vocabulary envelope is beaten 0 times out of 9.
+- Across the nine shallow relations submitted to the vocabulary-freedom test, the invented-vocabulary envelope is beaten 0 times out of 9.
 
-What N2 cannot price is where the vocabulary comes from: the K₇ constants are E₈ dimensions and ranks and the Betti numbers, not an invented list. That is a fact about the origin of the constants, not evidence that they were selected before the data were known.
+What that test cannot price is where the vocabulary comes from: the K₇ constants are E₈ dimensions and ranks and the Betti numbers, not an invented list. That is a fact about the origin of the constants, not evidence that they were selected before the data were known.
 
 ## 5. What the test does not cover, and its history
 
-The test does not vary the gauge group or the holonomy beyond the Betti numbers, does not consider other forms of an observable (an angle against its sine squared) except for the unit of δ_CP, and does not look beyond five nodes, where several of K₇'s formulas lie. These freedoms stay in the residue register of the main paper (R4, R5, R6).
+The test does not vary the gauge group or the holonomy beyond the Betti numbers, does not consider other forms of an observable (an angle against its sine squared) except for the unit of δ_CP, and does not look beyond five nodes, where several of K₇'s formulas lie. These freedoms stay in the residue register of the main paper (formula assignment, grammar, unit).
 
-The preregistration was amended twice, each time after an external review and without changing the question, families, grammar, budget, seed or verdict rule: the dataset was refreshed and the windows made two-sided (2026-10-22), then the windows of the six Planck density ratios were recomputed on the published chains and the witness was added (2026-11-03).
+The preregistration was amended three times, each time after an external review and without changing the question, families, grammar, budget, seed or verdict rule: the dataset was refreshed and the windows made two-sided (2026-10-22), then the windows of the six Planck density ratios were recomputed on the published chains and the control was added (2026-11-03), and finally the window of m_W/m_Z was computed from the published masses, as for the other mass ratios (2026-11-11).
 
-| Quantity | first run (2026-10-17, dataset of v3.5, one-sided windows) | revision 1 (2026-10-24, refreshed dataset, two-sided windows; historical) | revision 2 (2026-11-03, current dataset) |
-|---|---|---|---|
-| K₇ S_cover | 32/33 | 31/33 | 31/33 |
-| K₇ S_cost (bits) | 395.6 | 409.2 | 408.1 |
-| F-BETTI: reach as many as K₇ | 4 159 of 4 159 (P = 1.000) | 1 085 of 4 159 (P = 0.261) | 1 085 of 4 159 (P = 0.261) |
-| F-VOCAB: reach as many as K₇ | 1 635 of 2 000 (P = 0.818) | 1 015 of 2 000 (P = 0.508) | 1 015 of 2 000 (P = 0.508) |
-| F-BETTI-FICHE: reach as many as K₇ | 4 160 of 4 160 (P = 1.000) | 723 of 4 160 (P = 0.174) | 723 of 4 160 (P = 0.174) |
-| P_global, verdict | 1.000, LEE-RETRAIT | 0.508, LEE-RETRAIT | 0.508, LEE-RETRAIT |
-| targets reached by nobody | A04 | A04, A07 | A04, A07 |
+| Quantity | first run (2026-10-17, dataset of v3.5, one-sided windows) | revision 1 (2026-10-24, refreshed dataset, two-sided windows) | revision 2 (2026-11-03, density ratios on the Planck chains) | revision 3 (2026-11-11, current dataset: m_W/m_Z from the published masses) |
+|---|---|---|---|---|
+| K₇ coverage | 32/33 | 31/33 | 31/33 | 31/33 |
+| K₇ description cost (bits) | 395.6 | 409.2 | 408.1 | 408.1 |
+| alternative Betti pairs (published derivations): reach as many as K₇ | 4 159 of 4 159 (P = 1.000) | 1 085 of 4 159 (P = 0.261) | 1 085 of 4 159 (P = 0.261) | 1 085 of 4 159 (P = 0.261) |
+| invented vocabularies (generator of [M]): reach as many as K₇ | 1 635 of 2 000 (P = 0.818) | 1 015 of 2 000 (P = 0.508) | 1 015 of 2 000 (P = 0.508) | 1 015 of 2 000 (P = 0.508) |
+| alternative Betti pairs, variant derivations (outside the rule): reach as many as K₇ | 4 160 of 4 160 (P = 1.000) | 723 of 4 160 (P = 0.174) | 723 of 4 160 (P = 0.174) | 723 of 4 160 (P = 0.174) |
+| global p-value, outcome | 1.000, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome |
+| targets reached by nobody | α⁻¹(0) | α⁻¹(0), m_μ/m_e | α⁻¹(0), m_μ/m_e | α⁻¹(0), m_μ/m_e |
 
 ## 6. What earlier versions of this page reported
 
@@ -133,7 +133,7 @@ Two things survive the look-elsewhere tests, and the paper rests on them rather 
 
 ## 8. Reproducibility
 
-The producer, the dataset as read by the run, the preregistration with its two amendments, the result and the results of the two earlier runs are in [`publications/validation/v3.6/`](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/), with their hashes and the command to rerun the test. Supplement [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md), section S4.5, gives the pinned inputs (Sieve engine commit, grammar hash, seed).
+The producer, the dataset as read by the run, the preregistration with its three amendments, the result and the results of the three earlier runs are in [`publications/validation/v3.6/`](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/), with their hashes and the command to rerun the test. Supplement [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md), section S4.5, gives the pinned inputs (Sieve engine commit, grammar hash, seed).
 
 ---
 

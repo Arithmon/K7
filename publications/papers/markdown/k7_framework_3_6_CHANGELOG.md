@@ -2,6 +2,16 @@
 
 ## v3.6 (November 2026)
 
+**Batch 14 (2026-11-11): m_W/m_Z by the mass-ratio rule; supplements in the present tense; plain vocabulary.**
+- **A number changes.** m_W/m_Z is computed from the published masses, as every other mass ratio: 80.3625(77)/91.1879(20) = 0.881285(87), correlations neglected, in place of the ratio line of the PDG summary, 0.88136(15). The published value 37/42 moves from −2.7σ to −3.8σ and from "tension" to "proximity". The classes are now 23 within 2σ, 2 tensions (m_τ/m_e, Ω_c/Ω_m), 6 proximities, 1 in range, 1 non-Gaussian. Main §4, S2, S3 and the public pages are regenerated.
+- **Dataset.** `observables.json` carries version 3.6; the field `n_exact` is removed; two conditional entries are set to the value of their formula (B01 = 2.160247, B04 = (14 − π)³ = 1280.26).
+- **Look-elsewhere test, revision 3.** The preregistration receives a third amendment before the run (window of m_W/m_Z alone). Result: nothing in the verdict changes. K₇ reaches 31 of 33; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many; global p-value 0.51. m_W/m_Z is still reached by every competitor. The number of competitors that cost at most as much as K₇ moves (1 163 to 1 038 and 698 to 628). The revision-2 result joins the history of the public deposit.
+- **§9.2 (the chain of locks) is removed**; §9 is renumbered (9.1 what an existence proof would need, 9.2 what depends on existence, 9.3 relation to the companion papers).
+- **DESI.** §11.1 reports the DESI DR2 results beside the classes [61]: DESI alone, Ω_m = 0.2975 ± 0.0086 (1.9σ to 2.0σ from the three density relations); DESI with the CMB, Ω_m = 0.3027 ± 0.0036 and H₀ = 68.17 ± 0.28 (3.1σ to 3.4σ on the density relations, 3.0σ on h). The FCC-ee row leaves the timeline, the relation it would have tested being already rejected.
+- **Vocabulary.** Dataset identifiers, rule labels and internal names of tests and verdicts leave the prose of the main paper and of S1 to S4; they remain as row labels in tables and as field names where a file is cited. Section titles say what the section contains.
+- **Supplements.** S1 to S4 are written in the present tense; each gathers what changed in one section, "Changes since version 3.5".
+- PDFs rebuilt (main 39 pp., S1 28, S2 15, S3 17, S4 11).
+
 **Batch 13 (2026-11-11): the main paper states the present position; out-of-sample tests.**
 - The body is written in the present tense. What versions up to 3.5 said and version 3.6 no longer says is listed once, in the new Appendix D, with pointers to the erratum; the corresponding passages leave §1.1, §2.3, §2.4, §3.1, §3.2, §4.2, §4.3, §4.5, §5.3, §5.4, §6.1, §7.1, §7.2, §9, §10.3, §11 and §12.1. No number, class or verdict changes.
 - Abstract shortened (507 to 333 words). §3.4 reduced to what is claimed, each limit being stated where it acts.

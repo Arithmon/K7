@@ -16,8 +16,8 @@ layout: default
 | Classe | Nombre | Relations |
 |-------|-------|-----------|
 | à moins de 2σ | 23 | les autres relations |
-| tension (2σ < \|écart\| ≤ 3σ) | 3 | m_τ/m_e (−2,1σ), m_W/m_Z (−2,7σ), Ω_c/Ω_m (+2,5σ) |
-| proximité (\|écart\| > 3σ) | 5 | α⁻¹, sin²θ_W (−7,5σ), m_μ/m_e, m_μ/m_τ (+20,8σ), m_b/m_t (−10,2σ, schéma de R7) |
+| tension (2σ < \|écart\| ≤ 3σ) | 2 | m_τ/m_e (−2,1σ), Ω_c/Ω_m (+2,5σ) |
+| proximité (\|écart\| > 3σ) | 6 | α⁻¹, sin²θ_W (−7,5σ), m_μ/m_e, m_μ/m_τ (+20,8σ), m_b/m_t (−10,2σ, dans le schéma de masse déclaré), m_W/m_Z (−3,8σ) |
 | dans l'intervalle du PDG (sans incertitude) | 1 | m_s/m_d |
 | profil non gaussien | 1 | sin²θ₂₃ (§4.3) |
 
@@ -47,7 +47,7 @@ Les versions précédentes résumaient la comparaison par un écart moyen. Ce r�
 | A18 | sin θ₂₃ (CKM) | dim K₇/\|PSL(2,7)\| = 7/168 | 0,041667 | 0,04189(+81/−69) | −0,53% | −0,3σ | entier ; approchée (R12) |
 | A19 | m_H/m_t | fund(E₇)/b₃ = 56/77 | 0,727273 | 0,7250(13) | +0,32% | +1,8σ | entier |
 | A20 | m_H/m_W | (N_gen + dim E₆)/dim F₄ = 81/52 | 1,557692 | 1,5571(14) | +0,040% | +0,5σ | entier |
-| A21 | m_W/m_Z | (2b₂ − Weyl)/(2b₂) = 37/42 | 0,880952 | 0,88136(15) | −0,046% | −2,7σ | entier ; **tension** |
+| A21 | m_W/m_Z | (2b₂ − Weyl)/(2b₂) = 37/42 | 0,880952 | 0,881285(87) | −0,038% | −3,8σ | entier ; **proximité** |
 | A22 | m_μ/m_τ | (b₂ − D_bulk)/\|PSL(2,7)\| = 10/168 | 0,059524 | 0,0594612(30) | +0,11% | +20,8σ | entier ; approchée (R8) ; **proximité** |
 | A23 | Ω_DE | ln 2 · (b₂ + b₃)/H* | 0,686146 | 0,6847(73) | +0,21% | +0,2σ | ln 2 ; approchée (R11) |
 | A24 | n_s | ζ(11)/ζ(5) | 0,964864 | 0,9649(42) | −0,0037% | 0,0σ | valeurs de ζ |
@@ -65,11 +65,11 @@ Les versions précédentes résumaient la comparaison par un écart moyen. Ce r�
 
 ## 3. Ce que montre la table
 
-- **Cinq proximités sont déjà rejetées comme égalités exactes.** α⁻¹, sin²θ_W, m_μ/m_e et m_μ/m_τ se comparent à des quantités mesurées entre 10⁻¹⁰ et quelques 10⁻⁴ ; m_b/m_t est à 1,8 % du rapport dans le schéma de masse déclaré, et n'est pas sauvée par une lecture dans un autre schéma.
+- **Six proximités sont déjà rejetées comme égalités exactes.** α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ et m_W/m_Z se comparent à des quantités mesurées entre 10⁻¹⁰ et quelques 10⁻⁴ (m_W/m_Z = 37/42 est à 3,8σ du rapport des masses publiées) ; m_b/m_t est à 1,8 % du rapport dans le schéma de masse déclaré, et n'est pas sauvée par une lecture dans un autre schéma.
 - **Les 33 relations ne sont pas 33 tests indépendants.** Trois secteurs sont surdéterminés, et dans chacun les relations se contredisent en tant qu'égalités exactes : quatre relations leptoniques portent sur deux rapports de masses ; trois relations CKM sur deux paramètres de Wolfenstein (sin θ₂₃ = Aλ², 2,6 % d'écart) ; sept relations de densité sur deux densités indépendantes. L'audit complet des dépendances entre les 33 n'a pas été fait : aucun compte de quantités indépendantes n'est donné.
 - **La plupart des 23 ne sont testées que faiblement.** Pour les rapports de masses des quarks, les paramètres de mélange et les rapports cosmologiques, les incertitudes expérimentales sont de l'ordre du pour cent, et un accord au pour cent est ce qu'un vocabulaire riche atteint facilement.
 - **sin²θ₂₃ = 6/11.** NuFIT 6.1 préfère le premier octant ; l'ajustement garde une branche dans le second, et son intervalle à 3σ (0,435 à 0,584) contient 6/11. La relation est en tension avec l'octant préféré.
-- **δ_CP.** La structure produit l'entier 197. Le lire en degrés est un choix du dictionnaire, consigné au registre des résidus (R6) et compté dans le test look-elsewhere.
+- **δ_CP.** La structure produit l'entier 197. Le lire en degrés est un choix du dictionnaire, consigné au registre des résidus et compté dans le test look-elsewhere.
 - **Ω_c/Ω_m.** Le Ω_m de Planck inclut les neutrinos, de sorte que Ω_b/Ω_m + Ω_c/Ω_m = 0,9955, alors que 5/32 + 27/32 = 1 : les deux formules ne sont pas compatibles avec cette définition de la matière totale.
 
 ## 4. Avec et sans la normalisation imposée
@@ -92,7 +92,9 @@ Les relations sont énoncées comme des égalités exactes, sans incertitude th�
 | D4 | N_gen | 3 | une quatrième génération séquentielle | l'identité entière, comme contrôle de cohérence |
 | D5 | m_s/m_d | 20 | une détermination sur réseau adoptée par la série de référence, avec une incertitude dont l'intervalle à 3σ exclut 20 | la relation m_s/m_d |
 
-Deux mesures contradictoires, hors des séries de référence, sont rapportées à côté de leur classe : h = 167/248 s'accorde avec Planck (0,0σ) et est exclu par l'échelle des distances SH0ES à 5,5σ ; m_W/m_Z = 37/42 est à −2,7σ du PDG et à −10,6σ de la masse du W de CDF II. Tant que les méthodes divergent, le statut est donné des deux façons, et aucun des deux accords ne vaut confirmation.
+Deux mesures contradictoires, hors des séries de référence, sont rapportées à côté de leur classe : h = 167/248 s'accorde avec Planck (0,0σ) et est exclu par l'échelle des distances SH0ES à 5,5σ ; les relations de densité s'accordent avec Planck et sont mises sous tension par les oscillations acoustiques de baryons de DESI (deuxième livraison de données, arXiv:2503.14738) : en ΛCDM plat, DESI seul donne Ω_m = 0,2975 ± 0,0086, ce qui place Ω_Λ/Ω_m = 113/52 à −1,9σ, Ω_m/Ω_Λ = 28/61 à +2,0σ et Ω_DE à −1,9σ ; DESI combiné au fond diffus cosmologique donne Ω_m = 0,3027 ± 0,0036 et H₀ = 68,17 ± 0,28, ce qui les place à −3,3σ, +3,4σ et −3,1σ, et h à −3,0σ. Tant que les méthodes divergent, le statut est donné des deux façons, et aucun des deux accords ne vaut confirmation.
+
+Sous la même règle, le prochain test serré est sin²θ₁₂ = 4/13 = 0,3077 : la première mesure de JUNO donne 0,3092 ± 0,0087 (arXiv:2511.14593), et après six ans son incertitude devrait être environ quatre fois plus petite que celle de l'ajustement global actuel.
 
 ## 7. Ce qui est vérifié, et ce qui ne l'est pas
 

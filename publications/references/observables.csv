@@ -19,7 +19,7 @@ A17,Wolfenstein A,A_Wolf,CKM,I,0.8383838383838383,83/99,0.826,0.017,PDG 2026,1.4
 A18,CKM sin²θ₂₃,sin θ₂₃ᶜᴷᴹ,CKM,I,0.041666666666666664,7/168,0.04189,0.00069,PDG 2026,-0.533142,GIFT.Certificate.RelationsV36.A18_sin_theta23_CKM,deviation_systematics.py
 A19,Higgs/top,m_H/m_t,Boson,I,0.7272727272727273,56/77,0.7249710312862109,0.0013008855696346956,PDG 2026,0.317488,GIFT.Certificate.RelationsV36.A19_m_H_m_t,deviation_systematics.py
 A20,Higgs/W,m_H/m_W,Boson,I,1.5576923076923077,81/52,1.557069528698087,0.0013769042070577312,PDG 2026,0.039997,GIFT.Certificate.RelationsV36.A20_m_H_m_W,deviation_systematics.py
-A21,W/Z,m_W/m_Z,Boson,I,0.8809523809523809,37/42,0.88136,0.00015,PDG 2026,-0.046249,GIFT.Certificate.RelationsV36.A21_m_W_m_Z,deviation_systematics.py
+A21,W/Z,m_W/m_Z,Boson,I,0.8809523809523809,37/42,0.8812846879904022,8.662503543853557e-05,PDG 2026,-0.037707,GIFT.Certificate.RelationsV36.A21_m_W_m_Z,deviation_systematics.py
 A22,Muon/tau,m_μ/m_τ,Lepton,I,0.05952380952380952,10/168,0.0594611917745775,3.0116592966325228e-06,PDG 2026,0.105309,GIFT.Certificate.RelationsV36.A22_m_mu_m_tau,deviation_systematics.py
 A23,Dark energy,Ω_DE,Cosmology,I,0.6861456938876226,ln(2)×98/99,0.6847,0.0073,"Planck 2018 (TT,TE,EE+lowE+lensing)",0.211143,GIFT.Certificate.RelationsV36.A23_Omega_DE,deviation_systematics.py
 A24,Spectral index,n_s,Cosmology,I,0.9648639296628596,ζ(11)/ζ(5),0.9649,0.0042,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.003738,GIFT.Certificate.RelationsV36.A24_n_s,deviation_systematics.py
@@ -32,10 +32,10 @@ A30,CDM/matter,Ω_c/Ω_m,Cosmology,I,0.84375,27/32,0.839033154892421,0.001919166
 A31,Sigma_8,σ_8,Cosmology,I,0.8095238095238095,34/42,0.8111,0.006,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.194328,GIFT.Certificate.RelationsV36.A31_sigma_8,deviation_systematics.py
 A32,Primordial He,Y_p,Cosmology,I,0.2459016393442623,15/61,0.245,0.003,"PDG 2024 (BBN review, eq. 24.3)",0.368016,GIFT.Certificate.RelationsV36.A32_Y_p,deviation_systematics.py
 A33,Matter/Lambda,Ω_m/Ω_Λ,Cosmology,I,0.45901639344262296,28/61,0.4606270570885577,0.015654151955919873,"Planck 2018 (TT,TE,EE+lowE+lensing)",-0.349668,GIFT.Certificate.RelationsV36.A33_Omega_m_Lambda,deviation_systematics.py
-B01,Up quark mass,m_u,Quark,II,2.16,sqrt(14/3),2.16,0.042556978233823844,PDG 2026,0.0,,39_observables.csv
+B01,Up quark mass,m_u,Quark,II,2.160246899469287,sqrt(14/3),2.16,0.042556978233823844,PDG 2026,0.011431,,39_observables.csv
 B02,Down quark mass,m_d,Quark,II,4.673,ln(107),4.7,0.042556978233823844,PDG 2026,-0.574468,,39_observables.csv
 B03,Strange quark mass,m_s,Quark,II,93.52,,92.9,0.4255697823382384,PDG 2026,0.667384,,39_observables.csv
-B04,Charm quark mass,m_c,Quark,II,1280.0,,1272.9,2.735805743602961,PDG 2026,0.557781,,39_observables.csv
+B04,Charm quark mass,m_c,Quark,II,1280.2606278546548,,1272.9,2.735805743602961,PDG 2026,0.578257,,39_observables.csv
 B05,Bottom quark mass,m_b,Quark,II,4158.0,42×99,4186.0,3.6477409914706147,PDG 2026,-0.668896,,39_observables.csv
 B06,Top quark mass,m_t,Quark,II,172225.0,172225,172600.0,270.0,PDG 2026,-0.217265,,39_observables.csv
 B07,EW VEV,v_EW,Electroweak,II,246.87,,246.21967190389205,0.0,PDG 2026,0.264125,,39_observables.csv

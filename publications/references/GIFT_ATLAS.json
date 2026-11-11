@@ -13,8 +13,8 @@
     },
     "class_counts": {
       "within_2sigma": 23,
-      "tension": 3,
-      "excluded_3sigma": 5,
+      "tension": 2,
+      "excluded_3sigma": 6,
       "in_range": 1,
       "non_gaussian": 1
     },
@@ -471,11 +471,11 @@
       "formula": "(2b₂-Weyl)/2b₂",
       "fraction": "37/42",
       "value": 0.8809523809523809,
-      "measured": 0.88136,
-      "uncertainty_1sigma": 0.00015,
+      "measured": 0.8812846879904022,
+      "uncertainty_1sigma": 8.662503543853557e-05,
       "source": "PDG 2026",
-      "pull": -2.72,
-      "class": "tension",
+      "pull": -3.84,
+      "class": "excluded_3sigma",
       "lean_theorem": "GIFT.Certificate.RelationsV36.A21_m_W_m_Z"
     },
     {

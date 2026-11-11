@@ -11,8 +11,8 @@ The dataset has 95 entries. **33 are relations** compared with measurement and c
 | Type | Count | What it is | Counted in main §4 |
 |------|-------|-----------|--------------------|
 | I | 33 | Dimensionless closed forms in the structural constants, assigned to measured parameters | yes |
-| II | 19 | Dimensionful numbers read in a chosen unit (R10), scale bridges, one mixed-scale ratio (B16) and its cascade (B17), and legacy values without a documented derivation | no |
-| III | 21 | Outputs of mechanisms on the approximate seam metric (Wilson-line splitting, associative volumes, spectral counts, bundle conditioning), with calibration choices; and the withdrawn supersymmetric running | no |
+| II | 19 | Dimensionful numbers read in a chosen unit (register item R10, the unit of dimensionful entries), scale bridges, one ratio of masses taken at different scales and its product with m_s/m_d, and legacy values without a documented derivation | no |
+| III | 21 | Outputs of mechanisms on the approximate seam metric (Wilson-line splitting, associative volumes, spectral counts, bundle conditioning), with calibration choices; and four retired entries of a supersymmetric running | no |
 | IV | 22 | Structural quantities and numerical diagnostics, with no experimental counterpart | no |
 
 ## 2. The structural constants
@@ -70,7 +70,7 @@ Formulas, values and status. Data: PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022
 | A18 | sin θ₂₃ (CKM) | dim K₇/\|PSL(2,7)\| = 7/168 | 0.041667 | 0.04189(+81/−69) | −0.53% | −0.3σ | integer; approximate (R12) |
 | A19 | m_H/m_t | fund(E₇)/b₃ = 56/77 | 0.727273 | 0.7250(13) | +0.32% | +1.8σ | integer |
 | A20 | m_H/m_W | (N_gen + dim E₆)/dim F₄ = 81/52 | 1.557692 | 1.5571(14) | +0.040% | +0.5σ | integer |
-| A21 | m_W/m_Z | (2b₂ − Weyl)/(2b₂) = 37/42 | 0.880952 | 0.88136(15) | −0.046% | −2.7σ | integer; **tension** |
+| A21 | m_W/m_Z | (2b₂ − Weyl)/(2b₂) = 37/42 | 0.880952 | 0.881285(87) | −0.038% | −3.8σ | integer; **proximity** |
 | A22 | m_μ/m_τ | (b₂ − D_bulk)/\|PSL(2,7)\| = 10/168 | 0.059524 | 0.0594612(30) | +0.11% | +20.8σ | integer; approximate (R8); **proximity** |
 | A23 | Ω_DE | ln 2 · (b₂ + b₃)/H* | 0.686146 | 0.6847(73) | +0.21% | +0.2σ | ln 2; approximate (R11) |
 | A24 | n_s | ζ(11)/ζ(5) | 0.964864 | 0.9649(42) | −0.0037% | 0.0σ | ζ values |
@@ -110,7 +110,7 @@ The classes, the overdetermined sectors and the decision rule are on the [Valida
 | A18 | sin θ₂₃ (CKM) | 0.04189(+81/−69) | PDG 2026 | −0.3σ | PDG CKM review: sin θ₂₃ = Aλ² (not squared) | integer; approximate (R12) |
 | A19 | m_H/m_t | 0.7250(13) | PDG 2026 | +1.8σ | m_t from direct measurements | integer |
 | A20 | m_H/m_W | 1.5571(14) | PDG 2026 | +0.5σ | n/a | integer |
-| A21 | m_W/m_Z | 0.88136(15) | PDG 2026 | −2.7σ | W/Z mass ratio of the PDG summary table | integer; **tension** |
+| A21 | m_W/m_Z | 0.881285(87) | PDG 2026 | −3.8σ | from the PDG 2026 masses | integer; **proximity** |
 | A22 | m_μ/m_τ | 0.0594612(30) | PDG 2026 | +20.8σ | from the PDG 2026 masses | integer; approximate (R8); **proximity** |
 | A23 | Ω_DE | 0.6847(73) | Planck 2018 (TT,TE,EE+lowE+lensing) | +0.2σ | Ω_Λ | ln 2; approximate (R11) |
 | A24 | n_s | 0.9649(42) | Planck 2018 (TT,TE,EE+lowE+lensing) | 0.0σ | n/a | ζ values |
@@ -130,10 +130,10 @@ The classes, the overdetermined sectors and the decision rule are on the [Valida
 
 | ID | Type | Quantity | Formula or mechanism | Framework value | Reference value | Status |
 |---|---|-------|-------------|------|------|----------------------|
-| B01 | II | m_u | sqrt(dim(G₂)/3) | 2.16 | 2.16 | unit assignment (R10) |
+| B01 | II | m_u | sqrt(dim(G₂)/3) | 2.16025 | 2.16 | unit assignment (R10) |
 | B02 | II | m_d | ln(107) | 4.673 | 4.7 | unit assignment (R10) |
 | B03 | II | m_s | τ×24 | 93.52 | 92.9 | unit assignment (R10) |
-| B04 | II | m_c | (dim(G₂)-π)³ | 1280 | 1272.9 | unit assignment (R10) |
+| B04 | II | m_c | (dim(G₂)-π)³ | 1280.26 | 1272.9 | unit assignment (R10) |
 | B05 | II | m_b | 2b₂×H* | 4158 | 4186 | unit assignment (R10) |
 | B06 | II | m_t | 415² | 172225 | 172600 | unit assignment (R10) |
 | B07 | II | v_EW | Scale bridge from the unit assignment (R10) | 246.87 | 246.22 | scale bridge; unit assignment (R10) |
@@ -151,20 +151,20 @@ The classes, the overdetermined sectors and the decision rule are on the [Valida
 | B19 | II | m_t/m_c | not documented (legacy label: cascade) | 135.49 | 136 | Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction |
 | C01 | III | m_τ/m_e (dyn) | Wilson line 3-gen optimization | 3403.1 | 3477.37 | conditional reconstruction (calibration choices, main §6.2) |
 | C02 | III | m_τ/m_μ (dyn) | Wilson line 3-gen optimization | 16.5441 | 16.8177 | conditional reconstruction (calibration choices, main §6.2) |
-| C03 | III | c* | Non-adiabatic threshold | 0.177828 | n/a | diagnostic of the approximate seam metric |
-| C04 | III | sin²θ_W (RGE) | 2-loop MSSM RGE | 0.237655 | 0.23122 | withdrawn (supersymmetric running from a GUT boundary, main §5) |
-| C05 | III | α_s (RGE) | 2-loop MSSM RGE | 0.103769 | 0.118 | withdrawn (supersymmetric running from a GUT boundary, main §5) |
-| C06 | III | M_GUT | Gauge unification | 2e+16 | 2e+16 | withdrawn (supersymmetric running from a GUT boundary, main §5) |
-| C07 | III | α_GUT⁻¹ | Gauge unification | 25.3 | 25.3 | withdrawn (supersymmetric running from a GUT boundary, main §5) |
-| C08 | III | λ₁ | Neumann FD + Richardson | 0.124607 | n/a | diagnostic of the approximate seam metric |
-| C09 | III | α_Weyl | N(λ) ~ C λ^(d/2) | 3.46002 | 3.5 | diagnostic of the approximate seam metric (compared with d/2, not a measurement) |
-| C10 | III | N_KK | Unified KK tower enumeration | 22671 | n/a | diagnostic of the approximate seam metric |
-| C11 | III | N_fiber | Adiabatic + explicit fiber modes | 57578 | n/a | diagnostic of the approximate seam metric |
-| C12 | III | spacing | Level spacing statistics | 1.35838 | n/a | diagnostic of the approximate seam metric |
-| C13 | III | κ_gauge | f_IJ eigenvalue spread | 1.0471 | 1 | diagnostic of the approximate seam metric (compared with 1, not a measurement) |
-| C14 | III | n_SD | Count of positive eigenvalues of the K3 intersection form | 3 | 3 | diagnostic of the approximate seam metric (compared with N_gen) |
-| C15 | III | N_assoc | Homology 3-cycles with φ-calibration | 57 | n/a | diagnostic of the approximate seam metric |
-| C16 | III | \|\|T\|\|_C⁰ | G₂ torsion norm | 2.98e-05 | n/a | diagnostic of the approximate seam metric |
+| C03 | III | c* | Non-adiabatic threshold | 0.177828 | n/a | diagnostic of the approximate local metric |
+| C04 | III | sin²θ_W (RGE) | 2-loop MSSM RGE | 0.237655 | 0.23122 | retired (supersymmetric running from a GUT boundary; main App. D) |
+| C05 | III | α_s (RGE) | 2-loop MSSM RGE | 0.103769 | 0.118 | retired (supersymmetric running from a GUT boundary; main App. D) |
+| C06 | III | M_GUT | Gauge unification | 2e+16 | 2e+16 | retired (supersymmetric running from a GUT boundary; main App. D) |
+| C07 | III | α_GUT⁻¹ | Gauge unification | 25.3 | 25.3 | retired (supersymmetric running from a GUT boundary; main App. D) |
+| C08 | III | λ₁ | Neumann FD + Richardson | 0.124607 | n/a | diagnostic of the approximate local metric |
+| C09 | III | α_Weyl | N(λ) ~ C λ^(d/2) | 3.46002 | 3.5 | diagnostic of the approximate local metric (compared with d/2, not a measurement) |
+| C10 | III | N_KK | Unified KK tower enumeration | 22671 | n/a | diagnostic of the approximate local metric |
+| C11 | III | N_fiber | Adiabatic + explicit fiber modes | 57578 | n/a | diagnostic of the approximate local metric |
+| C12 | III | spacing | Level spacing statistics | 1.35838 | n/a | diagnostic of the approximate local metric |
+| C13 | III | κ_gauge | f_IJ eigenvalue spread | 1.0471 | 1 | diagnostic of the approximate local metric (compared with 1, not a measurement) |
+| C14 | III | n_SD | Count of positive eigenvalues of the K3 intersection form | 3 | 3 | diagnostic of the approximate local metric (compared with N_gen) |
+| C15 | III | N_assoc | Homology 3-cycles with φ-calibration | 57 | n/a | diagnostic of the approximate local metric |
+| C16 | III | \|\|T\|\|_C⁰ | G₂ torsion norm | 2.98e-05 | n/a | diagnostic of the approximate local metric |
 | C17 | III | ΔV(e-τ) | Associative volume differences | 8.6331 | 8.15393 | conditional reconstruction (calibration choices, main §6.2) |
 | C18 | III | ΔV(e-μ) | Associative volume differences | 3.27125 | 2.82257 | conditional reconstruction (calibration choices, main §6.2); mismatched reference (see Type III above) |
 | C19 | III | m_τ/m_e (comb) | Wilson-line ratio × exp(e^K · ΔV) | 3485.3 | 3477.37 | conditional reconstruction (calibration choices, main §6.2) |
@@ -175,20 +175,20 @@ The classes, the overdetermined sectors and the decision rule are on the [Valida
 | D03 | IV | H* | b₂+b₃+1 | 99 | n/a | integer combination of R1 |
 | D04 | IV | N_gen | b₂/dim(K₇) | 3 | n/a | integer identity (main §2.4) |
 | D05 | IV | det(g) | det(g₅) | 2.03125 | n/a | imposed normalization (R2) |
-| D06 | IV | h_NK | β×η×γ | 8.95e-09 | n/a | diagnostic of the approximate seam metric |
-| D07 | IV | dist(g,g*) | NK contraction ball | 4.86e-06 | n/a | diagnostic of the approximate seam metric |
-| D08 | IV | \|\|T\|\|_C⁰ (cert) | Chebyshev coefficient bound | 2.95e-05 | n/a | diagnostic of the approximate seam metric |
-| D09 | IV | κ(G_K3) | L² Gram matrix K3 2-forms | 1.05232 | n/a | diagnostic of the approximate seam metric |
-| D10 | IV | N_levels | Unified spectrum enumeration | 22671 | n/a | diagnostic of the approximate seam metric |
-| D11 | IV | `N_states_total` | Including degeneracies | 210060 | n/a | diagnostic of the approximate seam metric |
-| D12 | IV | V_eff | Effective 7D volume from Weyl fit | 5.38e+05 | n/a | diagnostic of the approximate seam metric |
-| D13 | IV | n_homology | b₃ = 77 | 77 | n/a | diagnostic of the approximate seam metric |
-| D14 | IV | N_assoc | φ-calibrated cycles | 57 | n/a | diagnostic of the approximate seam metric |
-| D15 | IV | \|\|Y\|\| | Total Yukawa coupling norm | 8.96902 | n/a | diagnostic of the approximate seam metric |
-| D16 | IV | ΔV_range | max(V) - min(V) | 8.91952 | n/a | diagnostic of the approximate seam metric |
-| D17 | IV | g_ss | g_ss = 19/6 (S¹ sector) | 3.16667 | n/a | diagnostic of the approximate seam metric |
-| D18 | IV | g_T2 | g_T2 = 7/6 (T² sector) | 1.16667 | n/a | diagnostic of the approximate seam metric |
-| D19 | IV | g_K3 | g_K3 ~ 64/77 (K3 sector mean) | 0.831169 | n/a | diagnostic of the approximate seam metric |
+| D06 | IV | h_NK | β×η×γ | 8.95e-09 | n/a | diagnostic of the approximate local metric |
+| D07 | IV | dist(g,g*) | NK contraction ball | 4.86e-06 | n/a | diagnostic of the approximate local metric |
+| D08 | IV | \|\|T\|\|_C⁰ (cert) | Chebyshev coefficient bound | 2.95e-05 | n/a | diagnostic of the approximate local metric |
+| D09 | IV | κ(G_K3) | L² Gram matrix K3 2-forms | 1.05232 | n/a | diagnostic of the approximate local metric |
+| D10 | IV | N_levels | Unified spectrum enumeration | 22671 | n/a | diagnostic of the approximate local metric |
+| D11 | IV | `N_states_total` | Including degeneracies | 210060 | n/a | diagnostic of the approximate local metric |
+| D12 | IV | V_eff | Effective 7D volume from Weyl fit | 5.38e+05 | n/a | diagnostic of the approximate local metric |
+| D13 | IV | n_homology | b₃ = 77 | 77 | n/a | diagnostic of the approximate local metric |
+| D14 | IV | N_assoc | φ-calibrated cycles | 57 | n/a | diagnostic of the approximate local metric |
+| D15 | IV | \|\|Y\|\| | Total Yukawa coupling norm | 8.96902 | n/a | diagnostic of the approximate local metric |
+| D16 | IV | ΔV_range | max(V) - min(V) | 8.91952 | n/a | diagnostic of the approximate local metric |
+| D17 | IV | g_ss | g_ss = 19/6 (S¹ sector) | 3.16667 | n/a | diagnostic of the approximate local metric |
+| D18 | IV | g_T2 | g_T2 = 7/6 (T² sector) | 1.16667 | n/a | diagnostic of the approximate local metric |
+| D19 | IV | g_K3 | g_K3 ~ 64/77 (K3 sector mean) | 0.831169 | n/a | diagnostic of the approximate local metric |
 | D20 | IV | N_QNM | b2 + b3 = H* - 1 | 98 | n/a | from [42]; topological count |
 | D21 | IV | `b3/b3_S3S4` | b3(K7) = 77 vs b3(S3xS4) = 1 | 77 | n/a | from [42]; topological count |
 | D22 | IV | M_res | tau_0 = v_EW, M_res = v_EW^2 / M_Pl | 4969.2 | n/a | from [42]; conditional on the scale identification τ₀ = v_EW |

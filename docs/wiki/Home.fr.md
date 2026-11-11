@@ -17,8 +17,8 @@ Le cadre K₇ associe 33 paramètres sans dimension du Modèle Standard et de la
 |----------|-------|
 | **Ce qui est proposé** | 33 relations sans paramètre continûment ajustable, écrites avec vingt constantes structurelles déclarées |
 | **Ce qui est posé, non dérivé** | le registre des résidus R1–R12 : la paire de Betti (21, 77), la normalisation imposée det(g) = 65/32, κ_T⁻¹ = 61, l'unité dans laquelle 197 est lu comme phase CP, les échelles de comparaison, l'attribution des formules |
-| **Face aux données actuelles** | 23 à moins de 2σ, 3 en tension, 5 rejetées comme égalités exactes et gardées comme proximités, 1 dans un intervalle du PDG, 1 dont l'octant n'est pas tranché (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022) |
-| **Effet look-elsewhere** | non surmonté : quand chaque concurrent cherche ses propres formules, 1 085 paires de Betti sur 4 159 et 1 015 vocabulaires inventés sur 2 000 atteignent autant de cibles que K₇ (P_global = 0,51) |
+| **Face aux données actuelles** | 23 à moins de 2σ, 2 en tension, 6 rejetées comme égalités exactes et gardées comme proximités, 1 dans un intervalle du PDG, 1 dont l'octant n'est pas tranché (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022) |
+| **Effet look-elsewhere** | non surmonté : quand chaque concurrent cherche ses propres formules, 1 085 paires de Betti sur 4 159 et 1 015 vocabulaires inventés sur 2 000 atteignent autant de cibles que K₇ (valeur p globale de 0,51) |
 | **Vérification Lean 4** | l'arithmétique des 33 relations (`relations_v36_certified`), 156 fichiers, 14 axiomes, aucun `sorry` ; elle vérifie l'arithmétique énoncée, pas le contenu physique |
 | **Existence de K₇** | ouverte : aucune variété G₂ compacte sans torsion de nombres (21, 77) n'est construite à ce jour |
 | **Autres entrées du jeu de données** | 62 extractions conditionnelles et diagnostics, gardés pour la traçabilité et non comptés comme prédictions |
@@ -44,8 +44,8 @@ Les classes ne s'additionnent pas en un score unique (article principal, §4.2).
 | Classe | Nombre | Relations |
 |-------|:-----:|-----------|
 | à moins de 2σ | 23 | les autres relations |
-| tension (entre 2σ et 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
-| proximité (au-delà de 3σ, rejetée comme égalité exacte) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t (dans le schéma de masse déclaré) |
+| tension (entre 2σ et 3σ) | 2 | m_τ/m_e, Ω_c/Ω_m |
+| proximité (au-delà de 3σ, rejetée comme égalité exacte) | 6 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t (dans le schéma de masse déclaré), m_W/m_Z |
 | dans l'intervalle du PDG (sans incertitude) | 1 | m_s/m_d |
 | profil non gaussien, octant non tranché | 1 | sin²θ₂₃ |
 
@@ -58,7 +58,7 @@ Un échantillon, une ou deux par classe :
 | δ_CP | 7·14 + 99 = 197, lu en degrés | 197° | 212 (+26/−36)° | −0,4σ | à moins de 2σ ; assignation d'unité |
 | Ω_DE | ln 2 · 98/99 | 0,686146 | 0,6847(73) | +0,2σ | à moins de 2σ |
 | m_τ/m_e | 7 + 10·248 + 10·99 | 3477 | 3477,37(18) | −2,1σ | tension |
-| m_W/m_Z | 37/42 | 0,880952 | 0,88136(15) | −2,7σ | tension |
+| m_W/m_Z | 37/42 | 0,880952 | 0,881285(87) | −3,8σ | proximité |
 | sin²θ_W(M_Z) | 21/91 = 3/13 | 0,230769 | 0,23122(6) | −7,5σ | proximité |
 | m_μ/m_τ | 10/168 | 0,059524 | 0,0594612(30) | +20,8σ | proximité |
 | m_s/m_d | 4 × 5 = 20 | 20 | 17–22 (intervalle) | s.o. | dans l'intervalle du PDG |
@@ -74,6 +74,7 @@ Les relations sont énoncées comme des égalités exactes. Une relation est rej
 |---|----------|-------|---------------|-------|
 | D1 | δ_CP, la phase 2π·197/360 | 197° | un ajustement global dont l'intervalle à 3σ exclut 197° ; l'assignation d'unité est rejetée avec elle | DUNE, Hyper-Kamiokande |
 | D2 | sin²θ₂₃ | 6/11 | un ajustement global dont l'intervalle à 3σ exclut 6/11, dans l'un ou l'autre octant | DUNE, Hyper-Kamiokande |
+| règle générale | sin²θ₁₂ | 4/13 | un ajustement global dont l'intervalle à 3σ exclut 4/13 | JUNO (première mesure 0,3092 ± 0,0087 ; environ quatre fois plus serré que l'ajustement global actuel après six ans) |
 | D3 | m_τ/m_e et Q_Koide | 1776,74 et 1776,97 MeV pour m_τ | une valeur de m_τ dont l'intervalle à 3σ exclut la valeur, chaque relation séparément | Belle II, BES III |
 | D4 | N_gen | 3 | une quatrième génération séquentielle | LHC, FCC |
 | D5 | m_s/m_d | 20 | une détermination sur réseau, avec incertitude, dont l'intervalle à 3σ exclut 20 | QCD sur réseau |

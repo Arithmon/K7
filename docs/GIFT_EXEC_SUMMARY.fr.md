@@ -61,8 +61,8 @@ Ce que donne l'absence de paramètres continus, c'est la **rigidité** : un rapp
 Face aux données les plus récentes (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022), avec une seule convention pour toutes les incertitudes, les relations se répartissent en cinq classes, qui ne s'additionnent pas en un score :
 
 - **23 sont à moins de deux écarts-types** de la mesure. Parmi elles *Q*_Koide = 2/3, α_s = √2/12, la phase CP lue comme 197°, et la plupart des rapports de quarks, de mélange et de cosmologie.
-- **3 sont en tension**, entre 2σ et 3σ : *m*_τ/*m*_e = 3477, *m*_W/*m*_Z = 37/42 et Ω_c/Ω_m = 27/32.
-- **5 sont rejetées comme égalités exactes** à plus de 3σ et gardées seulement comme proximités numériques : α⁻¹, sin²θ_W = 3/13, *m*_μ/*m*_e, *m*_μ/*m*_τ et *m*_b/*m*_t. Ces quantités sont mesurées si précisément qu'une formule à 0,2 {'main': 'https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md', 'lee': 'https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/', 'concept': 'https://doi.org/10.5281/zenodo.16891489'}e trouve à de nombreux écarts-types.
+- **2 sont en tension**, entre 2σ et 3σ : *m*_τ/*m*_e = 3477 et Ω_c/Ω_m = 27/32.
+- **6 sont rejetées comme égalités exactes** à plus de 3σ et gardées seulement comme proximités numériques : α⁻¹, sin²θ_W = 3/13, *m*_μ/*m*_e, *m*_μ/*m*_τ, *m*_b/*m*_t et *m*_W/*m*_Z = 37/42. Ces quantités sont mesurées si précisément qu'une formule à 0,2 % se trouve à de nombreux écarts-types.
 - **1 tombe dans un intervalle** que le PDG donne sans incertitude : *m*_s/*m*_d = 20.
 - **1 se trouve dans l'autre octant** : sin²θ₂₃ = 6/11, alors que l'ajustement global préfère le premier octant ; la valeur est dans son intervalle à 3σ.
 
@@ -94,11 +94,13 @@ Les relations sont énoncées comme des égalités exactes, sans incertitude th�
 
 **L'octant de θ₂₃.** Un ajustement dont l'intervalle à 3σ exclut 6/11 rejette cette relation.
 
+**L'angle solaire.** La première mesure de JUNO donne sin²θ₁₂ = 0,3092 ± 0,0087, pour 4/13 = 0,3077. Après six ans, son incertitude devrait être environ quatre fois plus petite que celle de l'ajustement global actuel, et une exclusion de 4/13 à 3σ rejette la relation.
+
 **La masse du tau.** Deux relations donnent 1776,74 et 1776,97 MeV ; une mesure assez précise doit en rejeter au moins une.
 
 **Une quatrième génération** rejetterait l'identité entière *N*_gen = 3.
 
-Un rejet rejette une relation et l'assignation qui la porte. Il ne rejette pas à lui seul le programme, et l'article le dit à l'avance pour que cela ne puisse pas être dit plus tard comme une réparation. À l'inverse, une confirmation montrerait qu'une assignation s'accorde avec le monde, pas que la structure l'impose. Deux résultats hors des séries de référence contredisent déjà une relation (la constante de Hubble de SH0ES, la masse du W de CDF II) et sont rapportés à côté d'elle.
+Un rejet rejette une relation et l'assignation qui la porte. Il ne rejette pas à lui seul le programme, et l'article le dit à l'avance pour que cela ne puisse pas être dit plus tard comme une réparation. À l'inverse, une confirmation montrerait qu'une assignation s'accorde avec le monde, pas que la structure l'impose. Deux résultats hors des séries de référence contredisent déjà une relation (la constante de Hubble de SH0ES, et les oscillations acoustiques de baryons de DESI pour les rapports de densité) et sont rapportés à côté d'elle.
 
 ## Ce que K₇ n'est pas
 

@@ -1,7 +1,7 @@
 {
  "lot": "K7-V36-LEE-CLOSEOUT",
  "source": "canonical/results/k7_v3_6_lee_null.json",
- "source_sha256": "844eeac4a8d250e763de352d0bd88fce9f9ec7f8b3537a4e77c4761a5b3e69a4",
+ "source_sha256": "56c29ca4028c4f64aba38c58c550e44ce29fe2134e6b944f6f195cdaf7da4f7c",
  "self_sha256": "a470e13e0bcab6f16e5e740dbb09283fb0cbdd4241df67e06772cd5af6b39296",
  "tolerance_bits": 1e-09,
  "K7_S_cost": 408.107083271645,
@@ -13,10 +13,10 @@
  "familles": {
   "F-BETTI": {
    "n": 4159,
-   "strictement_moins_cher": 1095,
-   "egalites": 68,
-   "P_cost_dual_corrige": 0.2798076923076923,
-   "P_cost_dual_artefact": 0.27860576923076924,
+   "strictement_moins_cher": 967,
+   "egalites": 71,
+   "P_cost_dual_corrige": 0.24975961538461539,
+   "P_cost_dual_artefact": 0.2485576923076923,
    "couples_des_egalites": [
     [
      53,
@@ -26,18 +26,23 @@
   },
   "F-VOCAB": {
    "n": 2000,
-   "strictement_moins_cher": 698,
-   "egalites": 0,
-   "P_cost_dual_corrige": 0.3493253373313343,
-   "P_cost_dual_artefact": 0.3493253373313343,
-   "couples_des_egalites": []
+   "strictement_moins_cher": 627,
+   "egalites": 1,
+   "P_cost_dual_corrige": 0.31434282858570717,
+   "P_cost_dual_artefact": 0.31384307846076964,
+   "couples_des_egalites": [
+    [
+     53,
+     41
+    ]
+   ]
   },
   "F-BETTI-FICHE": {
    "n": 4160,
-   "strictement_moins_cher": 482,
-   "egalites": 119,
-   "P_cost_dual_corrige": 0.14467676039413602,
-   "P_cost_dual_artefact": 0.136986301369863,
+   "strictement_moins_cher": 427,
+   "egalites": 121,
+   "P_cost_dual_corrige": 0.13193943763518384,
+   "P_cost_dual_artefact": 0.12448930545541936,
    "couples_des_egalites": [
     [
      53,

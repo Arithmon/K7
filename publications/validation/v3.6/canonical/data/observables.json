@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "K₇ Dictionary Observable Dataset (formerly GIFT): Source of Truth",
-    "version": "3.6-draft",
-    "timestamp": "2026-11-03",
+    "version": "3.6",
+    "timestamp": "2026-11-11",
     "generator": "observable_dataset.py (v3.4), then k7_v3_6_exp_refresh.py and k7_v3_6_dataset_labels.py",
     "metric_artifact": "global_metric_169.json",
     "n_metric_params": 169,
@@ -36,9 +36,9 @@
       "log": "canonical/results/k7_v3_6_exp_refresh.json"
     },
     "label_pass": {
-      "date": "2026-11-03",
+      "date": "2026-11-11",
       "script": "canonical/scripts/k7_v3_6_dataset_labels.py",
-      "values_changed": "exp_value, exp_error, deviation_pct of A25, A26, A27, A29, A30, A33 (Planck chains)",
+      "values_changed": "exp_value, exp_error, deviation_pct of A25, A26, A27, A29, A30, A33 (Planck chains) and of A21 (mass-ratio rule, 2026-11-11); gift_value and deviation_pct of B01, B04 (formula value in place of a rounded one, 2026-11-11)",
       "numeric_fields_compared_with": "1e3bc4828"
     }
   },
@@ -48,13 +48,13 @@
       "I": {
         "count": 33,
         "n_with_exp": 33,
-        "mean_abs_deviation_pct": 1.1259,
+        "mean_abs_deviation_pct": 1.1257,
         "n_lean_certified": 33
       },
       "II": {
         "count": 19,
         "n_with_exp": 19,
-        "mean_abs_deviation_pct": 0.2189,
+        "mean_abs_deviation_pct": 0.2206,
         "n_lean_certified": 0
       },
       "III": {
@@ -74,7 +74,7 @@
       "Boson": {
         "count": 3,
         "n_with_exp": 3,
-        "mean_abs_deviation_pct": 0.1346
+        "mean_abs_deviation_pct": 0.1317
       },
       "CKM": {
         "count": 9,
@@ -114,7 +114,7 @@
       "Quark": {
         "count": 14,
         "n_with_exp": 14,
-        "mean_abs_deviation_pct": 0.7014
+        "mean_abs_deviation_pct": 0.7036
       },
       "Spectral": {
         "count": 9,
@@ -128,8 +128,7 @@
       }
     },
     "n_with_experiment": 66,
-    "mean_abs_deviation_pct": 1.3563,
-    "n_exact": 10,
+    "mean_abs_deviation_pct": 1.3566,
     "n_below_01_pct": 19,
     "n_below_1_pct": 51,
     "n_lean_certified": 55,
@@ -605,17 +604,17 @@
       "gift_value": 0.8809523809523809,
       "gift_formula": "(2b₂-Weyl)/2b₂",
       "gift_fraction": "37/42",
-      "exp_value": 0.88136,
-      "exp_error": 0.00015,
+      "exp_value": 0.8812846879904022,
+      "exp_error": 8.662503543853557e-05,
       "exp_source": "PDG 2026",
-      "deviation_pct": -0.046249,
+      "deviation_pct": -0.037707,
       "lean_theorem": "GIFT.Certificate.RelationsV36.A21_m_W_m_Z",
       "provenance": "deviation_systematics.py",
       "constants_used": [
         "b₂",
         "Weyl"
       ],
-      "notes": "[2026-10-22] exp refreshed to PDG 2026: W/Z mass ratio of the PDG summary table"
+      "notes": "[2026-11-11] exp computed from the PDG 2026 masses m_W = 80.3625(77) GeV and m_Z = 91.1879(20) GeV, as for the other mass ratios (correlations neglected); the ratio line of the PDG summary table, 0.88136(15), is no longer used"
     },
     {
       "id": "A22",
@@ -879,13 +878,13 @@
       "symbol": "m_u",
       "sector": "Quark",
       "type": "II",
-      "gift_value": 2.16,
+      "gift_value": 2.160246899469287,
       "gift_formula": "sqrt(dim(G₂)/3)",
       "gift_fraction": "sqrt(14/3)",
       "exp_value": 2.16,
       "exp_error": 0.042556978233823844,
       "exp_source": "PDG 2026",
-      "deviation_pct": 0.0,
+      "deviation_pct": 0.011431,
       "lean_theorem": "",
       "provenance": "39_observables.csv",
       "constants_used": [],
@@ -933,13 +932,13 @@
       "symbol": "m_c",
       "sector": "Quark",
       "type": "II",
-      "gift_value": 1280.0,
+      "gift_value": 1280.2606278546548,
       "gift_formula": "(dim(G₂)-π)³",
       "gift_fraction": "",
       "exp_value": 1272.9,
       "exp_error": 2.735805743602961,
       "exp_source": "PDG 2026",
-      "deviation_pct": 0.557781,
+      "deviation_pct": 0.578257,
       "lean_theorem": "",
       "provenance": "39_observables.csv",
       "constants_used": [],

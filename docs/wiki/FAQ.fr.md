@@ -50,8 +50,8 @@ Face à PDG 2026, NuFIT 6.1, Planck 2018 et CODATA 2022, toutes incertitudes à 
 | Classe | Nombre | Relations |
 |---|:---:|---|
 | à moins de 2σ | 23 | les autres relations |
-| tension (entre 2σ et 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
-| proximité (au-delà de 3σ, rejetée comme égalité exacte) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t |
+| tension (entre 2σ et 3σ) | 2 | m_τ/m_e, Ω_c/Ω_m |
+| proximité (au-delà de 3σ, rejetée comme égalité exacte) | 6 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t, m_W/m_Z |
 | dans l'intervalle du PDG (sans incertitude) | 1 | m_s/m_d |
 | profil non gaussien, octant non tranché | 1 | sin²θ₂₃ |
 
@@ -63,13 +63,13 @@ Non. Trois secteurs sont surdéterminés : quatre relations leptoniques portent 
 
 ### L'accord est-il statistiquement significatif ?
 
-Non. Dans un test look-elsewhere préenregistré, chaque concurrent cherche ses propres formules, dans la même grammaire et avec le même budget. K₇ atteint 31 des 33 cibles ; 1 085 paires de Betti alternatives sur 4 159 et 1 015 vocabulaires inventés sur 2 000 en atteignent autant, et aucun n'en atteint plus (P_global = 0,51 pour un seuil de 0,01). Un témoin sans aucune constante de K₇ en atteint 30. La proximité avec les valeurs mesurées n'est donc pas, à elle seule, un indice en faveur de K₇.
+Non. Dans un test look-elsewhere préenregistré, chaque concurrent cherche ses propres formules, dans la même grammaire et avec le même budget. K₇ atteint 31 des 33 cibles ; 1 085 paires de Betti alternatives sur 4 159 et 1 015 vocabulaires inventés sur 2 000 en atteignent autant, et aucun n'en atteint plus (valeur p globale de 0,51 pour un seuil de 0,01). Un contrôle sans aucune constante de K₇ en atteint 30. La proximité avec les valeurs mesurées n'est donc pas, à elle seule, un indice en faveur de K₇.
 
 Les probabilités de coïncidence, valeurs P et facteurs de Bayes des versions précédentes sont retirés : ils venaient de tests où les alternatives étaient notées avec les formules de K₇. Voir les [éléments statistiques](Statistical-Evidence.fr.html) ; le code et les résultats du test sont [publics](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/).
 
 ### Quels sont les points faibles ?
 
-- Cinq relations sont rejetées comme égalités exactes et gardées seulement comme proximités numériques, dont α⁻¹ et sin²θ_W.
+- Six relations sont rejetées comme égalités exactes et gardées seulement comme proximités numériques, dont α⁻¹ et sin²θ_W.
 - sin²θ₂₃ = 6/11 se trouve dans le second octant alors que l'ajustement global préfère le premier.
 - L'accord n'est pas distinctif (question précédente).
 - La paire de Betti, les formules et la normalisation sont choisies, non dérivées ; cinq voies pour dériver (21, 77) ont été fermées sans succès.
@@ -93,6 +93,7 @@ Les relations, une à une, oui. Chacune est énoncée comme une égalité exacte
 |---|---|---|---|
 | δ_CP | 197° | un ajustement global dont l'intervalle à 3σ exclut 197° ; l'assignation d'unité est rejetée avec elle | DUNE, Hyper-Kamiokande |
 | sin²θ₂₃ | 6/11 | un ajustement global dont l'intervalle à 3σ exclut 6/11, dans l'un ou l'autre octant | DUNE, Hyper-Kamiokande |
+| sin²θ₁₂ | 4/13 | un ajustement global dont l'intervalle à 3σ exclut 4/13 | JUNO (première mesure 0,3092 ± 0,0087 ; environ quatre fois plus serré que l'ajustement global actuel après six ans) |
 | m_τ/m_e et Q_Koide | 1776,74 et 1776,97 MeV pour m_τ | une valeur de m_τ dont l'intervalle à 3σ exclut la valeur | Belle II, BES III |
 | N_gen | 3 | une quatrième génération séquentielle | LHC, FCC |
 | m_s/m_d | 20 | une détermination sur réseau, avec incertitude, dont l'intervalle à 3σ exclut 20 | QCD sur réseau |
@@ -105,7 +106,7 @@ Moins qu'on pourrait l'espérer. La proximité n'étant pas distinctive, de nouv
 
 ### Des mesures contredisent-elles déjà une relation ?
 
-Deux résultats contradictoires, hors des séries de référence, sont rapportés à côté de leur classe. h = 167/248 s'accorde avec Planck et est exclu par l'échelle des distances SH0ES à 5,5σ. m_W/m_Z = 37/42 est à −2,7σ du PDG et à −10,6σ de la masse du W de CDF II. Tant que les méthodes divergent, le statut est donné des deux façons, et aucun des deux accords ne vaut confirmation.
+Deux résultats contradictoires, hors des séries de référence, sont rapportés à côté de leur classe. h = 167/248 s'accorde avec Planck et est exclu par l'échelle des distances SH0ES à 5,5σ. Les relations de densité s'accordent avec Planck et sont mises sous tension par les oscillations acoustiques de baryons de DESI (deuxième livraison de données) : DESI seul place Ω_Λ/Ω_m = 113/52, Ω_m/Ω_Λ = 28/61 et Ω_DE à environ 2σ ; DESI combiné au fond diffus cosmologique les place à −3,3σ, +3,4σ et −3,1σ, et h à −3,0σ. Tant que les méthodes divergent, le statut est donné des deux façons, et aucun des deux accords ne vaut confirmation.
 
 ## Mathématiques et vérification
 

@@ -61,8 +61,8 @@ What the absence of continuous parameters does give is **rigidity**: an integer 
 Against the most recent data (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022), with one convention for all uncertainties, the relations fall into five classes, which are not added into a single score:
 
 - **23 lie within two standard deviations** of the measurement. Among them *Q*_Koide = 2/3, α_s = √2/12, the CP phase read as 197°, and most quark, mixing and cosmological ratios.
-- **3 are in tension**, between 2σ and 3σ: *m*_τ/*m*_e = 3477, *m*_W/*m*_Z = 37/42 and Ω_c/Ω_m = 27/32.
-- **5 are rejected as exact equalities** at more than 3σ and kept only as numerical proximities: α⁻¹, sin²θ_W = 3/13, *m*_μ/*m*_e, *m*_μ/*m*_τ and *m*_b/*m*_t. The quantities are measured so precisely that a formula 0.2{'main': 'https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md', 'lee': 'https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/', 'concept': 'https://doi.org/10.5281/zenodo.16891489'}way is many standard deviations off.
+- **2 are in tension**, between 2σ and 3σ: *m*_τ/*m*_e = 3477 and Ω_c/Ω_m = 27/32.
+- **6 are rejected as exact equalities** at more than 3σ and kept only as numerical proximities: α⁻¹, sin²θ_W = 3/13, *m*_μ/*m*_e, *m*_μ/*m*_τ, *m*_b/*m*_t and *m*_W/*m*_Z = 37/42. The quantities are measured so precisely that a formula 0.2% away is many standard deviations off.
 - **1 lies inside a range** the PDG gives without uncertainty: *m*_s/*m*_d = 20.
 - **1 sits in the other octant**: sin²θ₂₃ = 6/11, while the global fit prefers the first octant; the value lies inside the fit's 3σ range.
 
@@ -94,11 +94,13 @@ The relations are stated as exact equalities with no theoretical uncertainty. A 
 
 **The octant of θ₂₃.** A fit whose 3σ interval excludes 6/11 rejects that relation.
 
+**The solar angle.** JUNO's first measurement gives sin²θ₁₂ = 0.3092 ± 0.0087, against 4/13 = 0.3077. After six years its uncertainty should be about four times smaller than that of today's global fit, and a 3σ exclusion of 4/13 rejects the relation.
+
 **The tau mass.** Two relations give 1776.74 and 1776.97 MeV; a precise enough measurement must reject at least one.
 
 **A fourth generation** would reject the integer identity *N*_gen = 3.
 
-A rejection rejects a relation and the assignment behind it. It does not by itself reject the programme, and the paper says so in advance so that it cannot be said later as a repair. Conversely, a confirmation would show that an assignment agrees with the world, not that the structure requires it. Two results outside the reference series already contradict a relation (the SH0ES value of the Hubble constant, the CDF II W mass) and are reported beside it.
+A rejection rejects a relation and the assignment behind it. It does not by itself reject the programme, and the paper says so in advance so that it cannot be said later as a repair. Conversely, a confirmation would show that an assignment agrees with the world, not that the structure requires it. Two results outside the reference series already contradict a relation (the SH0ES value of the Hubble constant, and the DESI baryon acoustic oscillations for the density ratios) and are reported beside it.
 
 ## What K₇ is not
 

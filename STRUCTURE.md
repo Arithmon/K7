@@ -78,10 +78,10 @@ K7/
 
 | File (`publications/papers/markdown/`) | Title | Pages (PDF) |
 |----------------------------------------|-------|-------------|
-| `k7_framework_3_6_main.md` | The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology | 41 |
-| `k7_framework_3_6_S1_foundations.md` | Supplement S1: Mathematical Foundations | 26 |
-| `k7_framework_3_6_S2_derivations.md` | Supplement S2: The 33 Relations | 14 |
-| `k7_framework_3_6_S3_observables.md` | Supplement S3: Observable Dataset | 15 |
+| `k7_framework_3_6_main.md` | The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology | 39 |
+| `k7_framework_3_6_S1_foundations.md` | Supplement S1: Mathematical Foundations | 28 |
+| `k7_framework_3_6_S2_derivations.md` | Supplement S2: The 33 Relations | 15 |
+| `k7_framework_3_6_S3_observables.md` | Supplement S3: Observable Dataset | 17 |
 | `k7_framework_3_6_S4_sieve_diagnostics.md` | Supplement S4: Sieve and Look-Elsewhere Diagnostics | 11 |
 
 ## Related repositories
@@ -95,7 +95,7 @@ K7/
 
 **Current**: v3.6 (in preparation)
 
-**Relations**: 33, compared with measurement in five classes: 23 within 2σ of measurement, 3 in tension, 5 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile (main §4.1; PDG 2026, NuFIT 6.1, Planck 2018). The other 62 entries of the dataset are conditional or diagnostic and are not counted.
+**Relations**: 33, compared with measurement in five classes: 23 within 2σ of measurement, 2 in tension, 6 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile (main §4.1; PDG 2026, NuFIT 6.1, Planck 2018). The other 62 entries of the dataset are conditional or diagnostic and are not counted.
 
 **Formal verification**: 156 Lean 4 files, 14 axioms (4 literature imports, 10 interval certificates), no sorry; the arithmetic of the 33 relations is collected in `relations_v36_certified` (commit 34ce857). It establishes the stated arithmetic, not the physical reading.
 

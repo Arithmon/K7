@@ -9,9 +9,9 @@ layout: default
 
 *Brieuc de La Fournière (2026)*
 
-[**PDF (41 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md)
+[**PDF (39 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md)
 
-Supplements: [S1](Paper-S1-Foundations.html) (foundations, 26 pp.) · [S2](Paper-S2-Derivations.html) (the 33 relations, 14 pp.) · [S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md) (dataset, 15 pp.) · [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) (look-elsewhere, 11 pp.) · [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md)
+Supplements: [S1](Paper-S1-Foundations.html) (foundations, 28 pp.) · [S2](Paper-S2-Derivations.html) (the 33 relations, 15 pp.) · [S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md) (dataset, 17 pp.) · [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) (look-elsewhere, 11 pp.) · [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md)
 
 ---
 
@@ -30,8 +30,8 @@ Generated from the dataset (main §4.1; PDG 2026, NuFIT 6.1, Planck 2018; 1σ un
 | Class | Count | Relations |
 |-------|-------|-----------|
 | within 2σ | 23 | the remaining relations |
-| tension (2σ < \|pull\| ≤ 3σ) | 3 | m_τ/m_e (−2.1σ), m_W/m_Z (−2.7σ), Ω_c/Ω_m (+2.5σ) |
-| proximity (\|pull\| > 3σ) | 5 | α⁻¹, sin²θ_W (−7.5σ), m_μ/m_e, m_μ/m_τ (+20.8σ), m_b/m_t (−10.2σ, scheme of R7) |
+| tension (2σ < \|pull\| ≤ 3σ) | 2 | m_τ/m_e (−2.1σ), Ω_c/Ω_m (+2.5σ) |
+| proximity (\|pull\| > 3σ) | 6 | α⁻¹, sin²θ_W (−7.5σ), m_μ/m_e, m_μ/m_τ (+20.8σ), m_b/m_t (−10.2σ, in the declared mass scheme), m_W/m_Z (−3.8σ) |
 | inside the PDG range (no uncertainty) | 1 | m_s/m_d |
 | non-Gaussian profile | 1 | sin²θ₂₃ (§4.3) |
 
@@ -55,7 +55,7 @@ In a preregistered test, every competing Betti pair and every invented vocabular
 - 6. Lepton Masses
 - 7. Look-Elsewhere
 - 8. Formal Verification
-- 9. Existence status (two-layer boundary)
+- 9. Existence Status of the Compact K₇
 - 10. Selection Audit of (21, 77)
 - 11. Decision Rule and Tests to Come
 - 12. Discussion and Conclusion: Where the Necessity of K₇ Ends

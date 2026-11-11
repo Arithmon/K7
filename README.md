@@ -48,20 +48,20 @@ Data: PDG 2026, NuFIT 6.1 (normal ordering, with atmospheric data), Planck 2018 
 | Class | Count | Relations |
 |-------|:-----:|-----------|
 | within 2σ | 23 | |
-| tension (between 2σ and 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
-| proximity (beyond 3σ, rejected as an exact equality) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t (in the mass scheme declared in R7) |
+| tension (between 2σ and 3σ) | 2 | m_τ/m_e, Ω_c/Ω_m |
+| proximity (beyond 3σ, rejected as an exact equality) | 6 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t (in the declared mass scheme), m_W/m_Z |
 | inside the PDG range (no uncertainty given) | 1 | m_s/m_d |
 | non-Gaussian profile, octant unresolved | 1 | sin²θ₂₃ = 6/11 |
 
 **They are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. The relations of a sector cannot all hold together, though some subsets can; none is selected after the fact.
 
-**Closeness is not distinctive.** In a preregistered look-elsewhere test, each competitor searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (P_global = 0.51, S4). A witness with no K₇ constant reaches 30 of the 33: the score has little discriminating power. The coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
+**Closeness is not distinctive.** In a preregistered look-elsewhere test, each competitor searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (global p-value 0.51, S4). A control with no K₇ constant reaches 30 of the 33: the score has little discriminating power. The coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
 
 ---
 
 ## Decision rule (main §11)
 
-The relations are stated as exact equalities; a relation is rejected when its reference series (PDG, NuFIT, Planck, CODATA) excludes its value at 3σ. No theoretical tolerance is added afterwards, and a contradicting measurement outside the series is reported beside the class: h = 167/248 agrees with Planck and is excluded by SH0ES at 5.5σ; m_W/m_Z = 37/42 is at −2.7σ against the PDG and −10.6σ against the CDF II W mass.
+The relations are stated as exact equalities; a relation is rejected when its reference series (PDG, NuFIT, Planck, CODATA) excludes its value at 3σ. No theoretical tolerance is added afterwards, and a contradicting measurement outside the series is reported beside the class: h = 167/248 agrees with Planck and is excluded by SH0ES at 5.5σ; the density relations agree with Planck and are strained by the baryon acoustic oscillations of DESI (second data release): about 2σ with DESI alone, and −3.3σ, +3.4σ and −3.1σ for Ω_Λ/Ω_m, Ω_m/Ω_Λ and Ω_DE with DESI and the cosmic microwave background combined (−3.0σ for h). The next sharp test under the rule is sin²θ₁₂ = 4/13: JUNO's first measurement is 0.3092 ± 0.0087, and its six-year precision is about four times that of today's global fit (main §11.2).
 
 | # | Relation | Value | Rejected when |
 |---|----------|-------|---------------|
@@ -87,10 +87,10 @@ That the relations are derived from the geometry; "no free parameters, no fittin
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
-| Main paper | [PDF (41 pp.)](publications/papers/pdf/k7_framework_3_6_main.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_main.md) |
-| S1: Mathematical foundations | [PDF (26 pp.)](publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S1_foundations.md) |
-| S2: The 33 relations (arithmetic, dictionary choices, status) | [PDF (14 pp.)](publications/papers/pdf/k7_framework_3_6_S2_derivations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S2_derivations.md) |
-| S3: Observable dataset | [PDF (15 pp.)](publications/papers/pdf/k7_framework_3_6_S3_observables.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S3_observables.md) |
+| Main paper | [PDF (39 pp.)](publications/papers/pdf/k7_framework_3_6_main.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_main.md) |
+| S1: Mathematical foundations | [PDF (28 pp.)](publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S1_foundations.md) |
+| S2: The 33 relations (arithmetic, dictionary choices, status) | [PDF (15 pp.)](publications/papers/pdf/k7_framework_3_6_S2_derivations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S2_derivations.md) |
+| S3: Observable dataset | [PDF (17 pp.)](publications/papers/pdf/k7_framework_3_6_S3_observables.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S3_observables.md) |
 | S4: Look-elsewhere test and descriptive diagnostics | [PDF (11 pp.)](publications/papers/pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
 | Changes from v3.5 | | [Markdown](publications/papers/markdown/k7_framework_3_6_CHANGELOG.md) |
 

@@ -55,10 +55,10 @@ publications/
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
-| Main paper | [k7_framework_3_6_main.pdf](pdf/k7_framework_3_6_main.pdf) (41 pp.) | [k7_framework_3_6_main.md](markdown/k7_framework_3_6_main.md) |
-| S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.pdf](pdf/k7_framework_3_6_S1_foundations.pdf) (26 pp.) | [k7_framework_3_6_S1_foundations.md](markdown/k7_framework_3_6_S1_foundations.md) |
-| S2: The 33 relations | [k7_framework_3_6_S2_derivations.pdf](pdf/k7_framework_3_6_S2_derivations.pdf) (14 pp.) | [k7_framework_3_6_S2_derivations.md](markdown/k7_framework_3_6_S2_derivations.md) |
-| S3: Observable dataset | [k7_framework_3_6_S3_observables.pdf](pdf/k7_framework_3_6_S3_observables.pdf) (15 pp.) | [k7_framework_3_6_S3_observables.md](markdown/k7_framework_3_6_S3_observables.md) |
+| Main paper | [k7_framework_3_6_main.pdf](pdf/k7_framework_3_6_main.pdf) (39 pp.) | [k7_framework_3_6_main.md](markdown/k7_framework_3_6_main.md) |
+| S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.pdf](pdf/k7_framework_3_6_S1_foundations.pdf) (28 pp.) | [k7_framework_3_6_S1_foundations.md](markdown/k7_framework_3_6_S1_foundations.md) |
+| S2: The 33 relations | [k7_framework_3_6_S2_derivations.pdf](pdf/k7_framework_3_6_S2_derivations.pdf) (15 pp.) | [k7_framework_3_6_S2_derivations.md](markdown/k7_framework_3_6_S2_derivations.md) |
+| S3: Observable dataset | [k7_framework_3_6_S3_observables.pdf](pdf/k7_framework_3_6_S3_observables.pdf) (17 pp.) | [k7_framework_3_6_S3_observables.md](markdown/k7_framework_3_6_S3_observables.md) |
 | S4: Look-elsewhere test | [k7_framework_3_6_S4_sieve_diagnostics.pdf](pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) (11 pp.) | [k7_framework_3_6_S4_sieve_diagnostics.md](markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
 | Changes from v3.5 | | [k7_framework_3_6_CHANGELOG.md](markdown/k7_framework_3_6_CHANGELOG.md) |
 

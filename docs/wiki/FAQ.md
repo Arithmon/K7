@@ -50,8 +50,8 @@ Against PDG 2026, NuFIT 6.1, Planck 2018 and CODATA 2022, with all uncertainties
 | Class | Count | Relations |
 |---|:---:|---|
 | within 2σ | 23 | the remaining relations |
-| tension (between 2σ and 3σ) | 3 | m_τ/m_e, m_W/m_Z, Ω_c/Ω_m |
-| proximity (beyond 3σ, rejected as an exact equality) | 5 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t |
+| tension (between 2σ and 3σ) | 2 | m_τ/m_e, Ω_c/Ω_m |
+| proximity (beyond 3σ, rejected as an exact equality) | 6 | α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t, m_W/m_Z |
 | inside the PDG range (no uncertainty given) | 1 | m_s/m_d |
 | non-Gaussian profile, octant unresolved | 1 | sin²θ₂₃ |
 
@@ -63,13 +63,13 @@ No. Three sectors are overdetermined: four lepton relations bear on two mass rat
 
 ### Is the agreement statistically significant?
 
-No. In a preregistered look-elsewhere test, every competitor searches for its own formulas in the same grammar and with the same budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (P_global = 0.51 against a threshold of 0.01). A witness with no K₇ constant reaches 30. Closeness to the measured values is therefore not, by itself, evidence for K₇.
+No. In a preregistered look-elsewhere test, every competitor searches for its own formulas in the same grammar and with the same budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (global p-value 0.51 against a threshold of 0.01). A control with no K₇ constant reaches 30. Closeness to the measured values is therefore not, by itself, evidence for K₇.
 
 The coincidence probabilities, P-values and Bayes factors of earlier versions are withdrawn: they came from tests in which the alternatives were scored with K₇'s own formulas. See [Statistical Evidence](Statistical-Evidence.html); the code and results of the test are [public](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/).
 
 ### What are the weakest points?
 
-- Five relations are rejected as exact equalities and kept only as numerical proximities, among them α⁻¹ and sin²θ_W.
+- Six relations are rejected as exact equalities and kept only as numerical proximities, among them α⁻¹ and sin²θ_W.
 - sin²θ₂₃ = 6/11 sits in the second octant while the global fit prefers the first.
 - The agreement is not distinctive (previous question).
 - The Betti pair, the formulas and the normalization are chosen, not derived; five routes to deriving (21, 77) have been closed without success.
@@ -93,6 +93,7 @@ Individual relations can. Each is stated as an exact equality with no theoretica
 |---|---|---|---|
 | δ_CP | 197° | a global fit whose 3σ interval excludes 197°; the unit assignment is rejected with it | DUNE, Hyper-Kamiokande |
 | sin²θ₂₃ | 6/11 | a global fit whose 3σ interval excludes 6/11, in either octant | DUNE, Hyper-Kamiokande |
+| sin²θ₁₂ | 4/13 | a global fit whose 3σ interval excludes 4/13 | JUNO (first result 0.3092 ± 0.0087; about four times tighter than today's global fit after six years) |
 | m_τ/m_e and Q_Koide | 1776.74 and 1776.97 MeV for m_τ | an m_τ value whose 3σ interval excludes the value | Belle II, BES III |
 | N_gen | 3 | a fourth sequential generation | LHC, FCC |
 | m_s/m_d | 20 | a lattice determination with an uncertainty whose 3σ interval excludes 20 | lattice QCD |
@@ -105,7 +106,7 @@ Less than one might hope. Since closeness is not distinctive, further agreements
 
 ### Are there measurements that already contradict a relation?
 
-Two contradicting results outside the reference series are reported beside their class. h = 167/248 agrees with Planck and is excluded by the SH0ES distance ladder at 5.5σ. m_W/m_Z = 37/42 is at −2.7σ against the PDG and at −10.6σ against the CDF II W mass. While methods disagree, the status is stated both ways, and neither agreement counts as a confirmation.
+Two contradicting results outside the reference series are reported beside their class. h = 167/248 agrees with Planck and is excluded by the SH0ES distance ladder at 5.5σ. The density relations agree with Planck and are strained by the baryon acoustic oscillations of DESI (second data release): DESI alone puts Ω_Λ/Ω_m = 113/52, Ω_m/Ω_Λ = 28/61 and Ω_DE at about 2σ; DESI combined with the cosmic microwave background puts them at −3.3σ, +3.4σ and −3.1σ, and h at −3.0σ. While methods disagree, the status is stated both ways, and neither agreement counts as a confirmation.
 
 ## Mathematics and verification
 

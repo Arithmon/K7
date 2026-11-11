@@ -970,7 +970,7 @@ L'expérience DUNE le mesurera entre 2034 et 2039.
 
 **Ça, c'est de la science** : des énoncés qui peuvent mourir, avec des règles écrites avant de connaître le résultat.
 
-**Et dans K₇** : les règles sont écrites à l'avance, formule par formule. Cinq des 33 formules ont déjà échoué comme égalités exactes, et le cadre dit lesquelles. Une formule qui tombe n'entraîne pas les autres, et le cadre le dit à l'avance aussi.
+**Et dans K₇** : les règles sont écrites à l'avance, formule par formule. Six des 33 formules ont déjà échoué comme égalités exactes, et le cadre dit lesquelles. Une formule qui tombe n'entraîne pas les autres, et le cadre le dit à l'avance aussi.
 
 ---
 

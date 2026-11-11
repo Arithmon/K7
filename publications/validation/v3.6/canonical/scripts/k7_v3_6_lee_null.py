@@ -29,6 +29,10 @@ et (ii) le chemin numérique des fenêtres change : une fenêtre est désormais 
 concurrents vers la valeur de K₇), et une référence donnée par le PDG comme simple PLAGE (m_s/m_d, 17–22) a pour
 fenêtre la plage elle-même. Amendement : `canonical/notes/k7_v3_6_lee_null_prereg_2026_10_17.md`, § Amendement 1.
 
+Rév. 3 (2026-11-11) — voie : RERUN PLEIN, justifié par (i) le pin d'entrée `observables.json` a changé (fenêtre de A21,
+m_W/m_Z, calculée depuis les masses publiées comme les autres rapports de masses). Aucun changement de code numérique.
+Amendement 3 de la préinscription.
+
 Usage : python3 canonical/scripts/k7_v3_6_lee_null.py [--limit N] [--workers W] [--no-variante]
         (--limit N : N premiers vocabulaires de chaque famille → k7_v3_6_lee_null_limited.json)
         SIEVE_DIR=<clone du Sieve>/scripts si le clone n'est pas à côté de private/.

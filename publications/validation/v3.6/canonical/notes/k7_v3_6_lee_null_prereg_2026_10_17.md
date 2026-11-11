@@ -209,3 +209,25 @@ P_global = 0,508, **LEE-RETRAIT** (inchangé). Témoin sans constantes : 30/33 (
 Les comptes et les P sont ceux de la rév. 1, car seule A06 départage et sa fenêtre n'a pas bougé ; A30, dont la
 valeur publiée sort de sa fenêtre, reste atteinte à l'aveugle par une autre expression, par K₇ comme par tous les
 concurrents. Tables : `k7_v3_6_s4_tables.py`.
+
+## Amendement 3 (2026-11-11, avant le run rév. 3) — fenêtre de m_W/m_Z
+
+Motif : revue Gemini du 2026-11-11 (`canonical/notes/gemini_k7_v3_6_fop_referee_review_2026_11_11.md`, M3) et décision de
+Brieuc du même jour. Le texte pose que les rapports de masses sont calculés depuis les masses publiées ; A21 (m_W/m_Z)
+utilisait seul la ligne de rapport du résumé PDG, 0,88136(15). La règle lui est appliquée : 80,3625(77)/91,1879(20) =
+0,881285(87), corrélations négligées (`k7_v3_6_exp_refresh.py`). La valeur publiée 37/42 passe de −2,7σ à −3,8σ.
+Changement, seul : la fenêtre de A21, via `observables.json` (centre 0,881285, demi-largeur 2σ = 0,000173 au lieu de
+0,00030). Les valeurs de B01 et B04 (type II) changent aussi dans le dataset ; le test ne lit que le type I.
+Voie : RERUN PLEIN, justifié par (i) le pin d'entrée `observables.json` a changé.
+Inchangés : question, familles, graine, budget (5 nœuds), τ_z = 2, unités de δ_CP, témoin, règle de verdict. Les chiffres du
+run rév. 2 (dataset `dc772909…`) restent cités comme résultat historique.
+Attendu, écrit avant le run et sans valeur de résultat : A21 était atteinte par les 6 159 vocabulaires dans l'ancienne
+fenêtre ; si elle cesse de l'être pour certains, elle devient une seconde cible qui départage, et les P changent.
+
+### Résultat du run rév. 3 (2026-11-11, 10 196 s, `git_head` 274c4a793, Sieve 601283f, grammaire inchangée)
+
+G1 et G2 passent. K₇ 31/33, S_cost 408,1. F-BETTI 1 085/4 159 (P = 0,261), F-VOCAB 1 015/2 000 (P = 0,508),
+P_global = 0,508, **LEE-RETRAIT** (inchangé). Témoin sans constantes : 30/33 (manquent A04, A06, A07).
+A21 reste atteinte par les 6 159 vocabulaires dans sa fenêtre resserrée : elle ne devient pas une seconde cible qui
+départage, et les comptes et les P sont ceux des rév. 1 et 2. Ce qui bouge : les coûts des concurrents, donc les comptes
+« coût ≤ K₇ » du closeout (F-BETTI 1 163 → 1 038, F-VOCAB 698 → 628, variante 601 → 548). Tables : `k7_v3_6_s4_tables.py`.

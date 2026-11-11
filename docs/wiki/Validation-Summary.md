@@ -16,8 +16,8 @@ layout: default
 | Class | Count | Relations |
 |-------|-------|-----------|
 | within 2σ | 23 | the remaining relations |
-| tension (2σ < \|pull\| ≤ 3σ) | 3 | m_τ/m_e (−2.1σ), m_W/m_Z (−2.7σ), Ω_c/Ω_m (+2.5σ) |
-| proximity (\|pull\| > 3σ) | 5 | α⁻¹, sin²θ_W (−7.5σ), m_μ/m_e, m_μ/m_τ (+20.8σ), m_b/m_t (−10.2σ, scheme of R7) |
+| tension (2σ < \|pull\| ≤ 3σ) | 2 | m_τ/m_e (−2.1σ), Ω_c/Ω_m (+2.5σ) |
+| proximity (\|pull\| > 3σ) | 6 | α⁻¹, sin²θ_W (−7.5σ), m_μ/m_e, m_μ/m_τ (+20.8σ), m_b/m_t (−10.2σ, in the declared mass scheme), m_W/m_Z (−3.8σ) |
 | inside the PDG range (no uncertainty) | 1 | m_s/m_d |
 | non-Gaussian profile | 1 | sin²θ₂₃ (§4.3) |
 
@@ -47,7 +47,7 @@ Earlier versions summarised the comparison by a mean deviation. That summary is 
 | A18 | sin θ₂₃ (CKM) | dim K₇/\|PSL(2,7)\| = 7/168 | 0.041667 | 0.04189(+81/−69) | −0.53% | −0.3σ | integer; approximate (R12) |
 | A19 | m_H/m_t | fund(E₇)/b₃ = 56/77 | 0.727273 | 0.7250(13) | +0.32% | +1.8σ | integer |
 | A20 | m_H/m_W | (N_gen + dim E₆)/dim F₄ = 81/52 | 1.557692 | 1.5571(14) | +0.040% | +0.5σ | integer |
-| A21 | m_W/m_Z | (2b₂ − Weyl)/(2b₂) = 37/42 | 0.880952 | 0.88136(15) | −0.046% | −2.7σ | integer; **tension** |
+| A21 | m_W/m_Z | (2b₂ − Weyl)/(2b₂) = 37/42 | 0.880952 | 0.881285(87) | −0.038% | −3.8σ | integer; **proximity** |
 | A22 | m_μ/m_τ | (b₂ − D_bulk)/\|PSL(2,7)\| = 10/168 | 0.059524 | 0.0594612(30) | +0.11% | +20.8σ | integer; approximate (R8); **proximity** |
 | A23 | Ω_DE | ln 2 · (b₂ + b₃)/H* | 0.686146 | 0.6847(73) | +0.21% | +0.2σ | ln 2; approximate (R11) |
 | A24 | n_s | ζ(11)/ζ(5) | 0.964864 | 0.9649(42) | −0.0037% | 0.0σ | ζ values |
@@ -65,11 +65,11 @@ Earlier versions summarised the comparison by a mean deviation. That summary is 
 
 ## 3. What the table shows
 
-- **Five proximities are already rejected as exact equalities.** α⁻¹, sin²θ_W, m_μ/m_e and m_μ/m_τ compare with quantities measured to between 10⁻¹⁰ and a few 10⁻⁴; m_b/m_t lies 1.8% from the ratio in the declared mass scheme and is not rescued by reading it in another scheme.
+- **Six proximities are already rejected as exact equalities.** α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ and m_W/m_Z compare with quantities measured to between 10⁻¹⁰ and a few 10⁻⁴ (m_W/m_Z = 37/42 lies 3.8σ from the ratio of the published masses); m_b/m_t lies 1.8% from the ratio in the declared mass scheme and is not rescued by reading it in another scheme.
 - **The 33 relations are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations bear on two mass ratios; three CKM relations bear on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart); seven density relations bear on two independent densities. A complete audit of the dependencies among the 33 has not been done, so no count of independent quantities is given.
 - **Most of the 23 are tested only weakly.** For quark mass ratios, mixing parameters and cosmological ratios the experimental uncertainties are at the percent level, and a percent-level agreement is what a rich vocabulary reaches easily.
 - **sin²θ₂₃ = 6/11.** NuFIT 6.1 prefers the first octant; the fit keeps a second-octant branch, and its 3σ range (0.435 to 0.584) contains 6/11. The relation is in tension with the preferred octant.
-- **δ_CP.** The structure produces the integer 197. Reading it in degrees is a choice of the dictionary, recorded in the residue register (R6) and counted in the look-elsewhere test.
+- **δ_CP.** The structure produces the integer 197. Reading it in degrees is a choice of the dictionary, recorded in the residue register and counted in the look-elsewhere test.
 - **Ω_c/Ω_m.** Planck's Ω_m includes neutrinos, so that Ω_b/Ω_m + Ω_c/Ω_m = 0.9955, while 5/32 + 27/32 = 1: the two formulas are not compatible with that definition of total matter.
 
 ## 4. With and without the imposed normalization
@@ -92,7 +92,9 @@ The relations are stated as exact equalities with no theoretical uncertainty. A 
 | D4 | N_gen | 3 | a fourth sequential generation | the integer identity, as a consistency check |
 | D5 | m_s/m_d | 20 | a lattice determination adopted by the reference series, with an uncertainty whose 3σ interval excludes 20 | the m_s/m_d relation |
 
-Two contradicting measurements outside the reference series are reported beside their class: h = 167/248 agrees with Planck (0.0σ) and is excluded by the SH0ES distance ladder at 5.5σ; m_W/m_Z = 37/42 is at −2.7σ against the PDG and at −10.6σ against the CDF II W mass. While methods keep disagreeing, the status is stated both ways, and neither agreement counts as a confirmation.
+Two contradicting measurements outside the reference series are reported beside their class: h = 167/248 agrees with Planck (0.0σ) and is excluded by the SH0ES distance ladder at 5.5σ; the density relations agree with Planck and are strained by the baryon acoustic oscillations of DESI (second data release, arXiv:2503.14738): in flat ΛCDM, DESI alone gives Ω_m = 0.2975 ± 0.0086, which puts Ω_Λ/Ω_m = 113/52 at −1.9σ, Ω_m/Ω_Λ = 28/61 at +2.0σ and Ω_DE at −1.9σ; DESI combined with the cosmic microwave background gives Ω_m = 0.3027 ± 0.0036 and H₀ = 68.17 ± 0.28, which puts them at −3.3σ, +3.4σ and −3.1σ, and h at −3.0σ. While methods keep disagreeing, the status is stated both ways, and neither agreement counts as a confirmation.
+
+Under the same rule, the next sharp test is sin²θ₁₂ = 4/13 = 0.3077: JUNO's first measurement is 0.3092 ± 0.0087 (arXiv:2511.14593), and after six years its uncertainty should be about four times smaller than that of today's global fit.
 
 ## 7. What is verified, and what is not
 

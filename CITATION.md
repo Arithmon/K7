@@ -17,7 +17,7 @@ Citation formats for the K₇ framework, version 3.6 (formerly GIFT).
   doi     = {10.5281/zenodo.16891489},
   version = {3.6},
   license = {MIT},
-  note    = {A declared correspondence between invariants of a G₂-holonomy seven-manifold and 33 dimensionless parameters: 23 within 2σ of measurement, 3 in tension, 5 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile (PDG 2026, NuFIT 6.1, Planck 2018). 156 Lean 4 files, 14 axioms (4 literature imports, 10 interval certificates), no sorry; the arithmetic of the 33 relations is collected in relations\_v36\_certified (commit 34ce857).}
+  note    = {A declared correspondence between invariants of a G₂-holonomy seven-manifold and 33 dimensionless parameters: 23 within 2σ of measurement, 2 in tension, 6 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile (PDG 2026, NuFIT 6.1, Planck 2018). 156 Lean 4 files, 14 axioms (4 literature imports, 10 interval certificates), no sorry; the arithmetic of the 33 relations is collected in relations\_v36\_certified (commit 34ce857).}
 }
 ```
 
@@ -45,7 +45,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {November},
-  howpublished = {The K₇ Framework v3.6, 41 pp.},
+  howpublished = {The K₇ Framework v3.6, 39 pp.},
   doi          = {10.5281/zenodo.16891489},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf}
 }
@@ -59,7 +59,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {November},
-  howpublished = {The K₇ Framework v3.6, Supplement S1, 26 pp.},
+  howpublished = {The K₇ Framework v3.6, Supplement S1, 28 pp.},
   doi          = {10.5281/zenodo.16891489},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf}
 }
@@ -73,7 +73,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {November},
-  howpublished = {The K₇ Framework v3.6, Supplement S2, 14 pp.},
+  howpublished = {The K₇ Framework v3.6, Supplement S2, 15 pp.},
   doi          = {10.5281/zenodo.16891489},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S2_derivations.pdf}
 }
@@ -87,7 +87,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {November},
-  howpublished = {The K₇ Framework v3.6, Supplement S3, 15 pp.},
+  howpublished = {The K₇ Framework v3.6, Supplement S3, 17 pp.},
   doi          = {10.5281/zenodo.16891489},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S3_observables.pdf}
 }

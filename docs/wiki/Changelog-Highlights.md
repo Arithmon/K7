@@ -16,7 +16,7 @@ Abridged version history. The full record is in [`CHANGELOG.md`](https://github.
 - **New title**: "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology". The series keeps the name "The K₇ Framework".
 - **Reframing**: the relations are presented as a correspondence chosen by the author, a privileged candidate, not as a derivation. No geometric map from the invariants to the observables is known, and no rule assigns formulas to observables.
 - **Dictionary, residue, decision rule**: twenty structural constants and a grammar; a residue register R1 to R12 of everything set by choice; a rule that rejects a relation with no repair clause.
-- **The 33 relations against the most recent data** (PDG 2026, NuFIT 6.1, Planck 2018): 23 within 2σ of measurement, 3 in tension, 5 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile. A single score over the 33 is no longer reported.
+- **The 33 relations against the most recent data** (PDG 2026, NuFIT 6.1, Planck 2018): 23 within 2σ of measurement, 2 in tension, 6 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile. A single score over the 33 is no longer reported.
 - **Not 33 independent tests**: three sectors are overdetermined, with relations that disagree as exact equalities.
 - **The other 62 entries** of the dataset are conditional extractions and diagnostics, and are not counted as predictions.
 - **Look-elsewhere**: a preregistered test in which every competitor searches for its own formulas. K₇ reaches 31 of the 33 targets and is not distinctive on closeness. Code and results are public in `publications/validation/v3.6/`.

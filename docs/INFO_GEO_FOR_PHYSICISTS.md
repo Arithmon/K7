@@ -41,7 +41,7 @@ Representative entries:
 | m_τ/m_e | 7 + 10·248 + 10·99 = 3477 | 3477 | 3477.37(18) | −2.1σ | tension |
 | sin²θ₂₃ (PMNS) | 6/11 | 0.545455 | 0.470 (+17/−14) | second octant | inside the NuFIT 3σ range |
 | δ_CP | 7·14 + 99 = 197, read in degrees | 197° | 212 (+26/−36)° | −0.4σ | unit assignment |
-| m_W/m_Z | 37/42 | 0.880952 | 0.88136(15) | −2.7σ | tension |
+| m_W/m_Z | 37/42 | 0.880952 | 0.881285(87) | −3.8σ | proximity |
 | Ω_DE | ln 2 · 98/99 | 0.686146 | 0.6847(73) | +0.2σ | within 2σ |
 
 The complete table is in the [Observable Reference](wiki/Observable-Reference.html).
@@ -50,7 +50,7 @@ The complete table is in the [Observable Reference](wiki/Observable-Reference.ht
 
 ## 4. Where the relations stand
 
-Against PDG 2026, NuFIT 6.1, Planck 2018 and CODATA 2022, with uncertainties at 1σ: 23 relations lie within 2σ; 3 are in tension (m_τ/m_e, m_W/m_Z, Ω_c/Ω_m); 5 are excluded as exact equalities at more than 3σ and retained as proximities (α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t); m_s/m_d lies inside a PDG range that carries no uncertainty; sin²θ₂₃ sits in the second octant, inside the 3σ range of the global fit. The classes are not added into one score.
+Against PDG 2026, NuFIT 6.1, Planck 2018 and CODATA 2022, with uncertainties at 1σ: 23 relations lie within 2σ; 2 are in tension (m_τ/m_e, Ω_c/Ω_m); 6 are excluded as exact equalities at more than 3σ and retained as proximities (α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t, m_W/m_Z); m_s/m_d lies inside a PDG range that carries no uncertainty; sin²θ₂₃ sits in the second octant, inside the 3σ range of the global fit. The classes are not added into one score.
 
 The 33 are **not independent tests**. Four lepton relations bear on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. In each sector the relations are mutually incompatible as exact equalities, and none is selected. Other dependencies exist (sin²θ_W and m_W/m_Z are related through radiative corrections) and the audit is not complete.
 
@@ -58,7 +58,7 @@ Six relations use det(g) = 65/32 and three use κ_T⁻¹ = 61. A reader who rega
 
 ## 5. Look-elsewhere
 
-In a preregistered test, every competitor searches for its own formulas in the same grammar, at the same budget (five nodes) and with the same windows (2σ). K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more. P_global = 0.51 against a threshold of 0.01: the effect is not overcome. A witness with no K₇ constant reaches 30. In the public Sieve battery, no K₇ relation clears the null that prices the choice of vocabulary.
+In a preregistered test, every competitor searches for its own formulas in the same grammar, at the same budget (five nodes) and with the same windows (2σ). K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more. The global p-value is 0.51 against a threshold of 0.01: the effect is not overcome. A control with no K₇ constant reaches 30. In the public Sieve battery, no K₇ relation clears the null that prices the choice of vocabulary.
 
 Closeness to the measured values is therefore not, by itself, evidence. The coincidence probabilities and P-values of earlier versions are withdrawn. Details and code: [Statistical Evidence](wiki/Statistical-Evidence.html).
 
@@ -76,11 +76,12 @@ The relations are exact equalities with no theoretical uncertainty. A relation i
 |---|---|---|
 | δ_CP (phase 2π·197/360) | 197° | a global fit, with DUNE or Hyper-Kamiokande, whose 3σ interval excludes 197°; the unit assignment falls with it |
 | sin²θ₂₃ | 6/11 | a global fit whose 3σ interval excludes 6/11, in either octant |
+| sin²θ₁₂ | 4/13 | a global fit whose 3σ interval excludes 4/13; JUNO's first result is 0.3092 ± 0.0087, and its six-year precision is about four times that of today's global fit |
 | m_τ/m_e, Q_Koide | m_τ = 1776.74 and 1776.97 MeV | an m_τ value whose 3σ interval excludes the value; the two differ by 0.23 MeV |
 | N_gen | 3 | a fourth sequential generation |
 | m_s/m_d | 20 | a lattice determination with an uncertainty whose 3σ interval excludes 20 |
 
-Outside the reference series, h = 167/248 is excluded by SH0ES at 5.5σ while agreeing with Planck, and m_W/m_Z = 37/42 is at −10.6σ against the CDF II W mass; both are reported beside the class. A rejection rejects a relation and its assignment, not the programme by itself; a confirmation would confirm an assignment, not a requirement of the structure.
+Outside the reference series, h = 167/248 is excluded by SH0ES at 5.5σ while agreeing with Planck, and the baryon acoustic oscillations of DESI (second data release) combined with the cosmic microwave background put Ω_Λ/Ω_m = 113/52, Ω_m/Ω_Λ = 28/61, Ω_DE and h at −3.3σ, +3.4σ, −3.1σ and −3.0σ (about 2σ for the three density relations with DESI alone); both are reported beside the class. A rejection rejects a relation and its assignment, not the programme by itself; a confirmation would confirm an assignment, not a requirement of the structure.
 
 ## 8. Relation to other approaches
 
