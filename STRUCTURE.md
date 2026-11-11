@@ -79,7 +79,7 @@ K7/
 | File (`publications/papers/markdown/`) | Title | Pages (PDF) |
 |----------------------------------------|-------|-------------|
 | `k7_framework_3_6_main.md` | The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology | 39 |
-| `k7_framework_3_6_S1_foundations.md` | Supplement S1: Mathematical Foundations | 28 |
+| `k7_framework_3_6_S1_foundations.md` | Supplement S1: Mathematical Foundations | 25 |
 | `k7_framework_3_6_S2_derivations.md` | Supplement S2: The 33 Relations | 15 |
 | `k7_framework_3_6_S3_observables.md` | Supplement S3: Observable Dataset | 17 |
 | `k7_framework_3_6_S4_sieve_diagnostics.md` | Supplement S4: Sieve and Look-Elsewhere Diagnostics | 11 |

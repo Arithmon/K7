@@ -11,7 +11,7 @@ layout: default
 
 [**PDF (39 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md)
 
-Supplements: [S1](Paper-S1-Foundations.html) (foundations, 28 pp.) · [S2](Paper-S2-Derivations.html) (the 33 relations, 15 pp.) · [S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md) (dataset, 17 pp.) · [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) (look-elsewhere, 11 pp.) · [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md)
+Supplements: [S1](Paper-S1-Foundations.html) (foundations, 25 pp.) · [S2](Paper-S2-Derivations.html) (the 33 relations, 15 pp.) · [S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md) (dataset, 17 pp.) · [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) (look-elsewhere, 11 pp.) · [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md)
 
 ---
 

@@ -9,7 +9,7 @@ layout: default
 
 *Brieuc de La Fournière (2026)*
 
-[**PDF (28 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S1_foundations.md)
+[**PDF (25 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S1_foundations.md)
 
 ---
 
@@ -67,7 +67,7 @@ From main §3.1; the *status* column separates Lie data, posited inputs and comb
 - 8. Twisted Connected Sum Framework
 - 9. Cohomological Structure (Conditional on Existence)
 - 10. Structural Metric Invariants
-- 11. Reference Form, Numerics and Formalization
+- 11. Reference Form and Formalization
 - 12. Analytical G₂ Metric Details
 - 13. Changes since Version 3.5
 

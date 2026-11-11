@@ -88,7 +88,7 @@ That the relations are derived from the geometry; "no free parameters, no fittin
 | Document | PDF | Markdown |
 |----------|-----|----------|
 | Main paper | [PDF (39 pp.)](publications/papers/pdf/k7_framework_3_6_main.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_main.md) |
-| S1: Mathematical foundations | [PDF (28 pp.)](publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S1_foundations.md) |
+| S1: Mathematical foundations | [PDF (25 pp.)](publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S1_foundations.md) |
 | S2: The 33 relations (arithmetic, dictionary choices, status) | [PDF (15 pp.)](publications/papers/pdf/k7_framework_3_6_S2_derivations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S2_derivations.md) |
 | S3: Observable dataset | [PDF (17 pp.)](publications/papers/pdf/k7_framework_3_6_S3_observables.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S3_observables.md) |
 | S4: Look-elsewhere test and descriptive diagnostics | [PDF (11 pp.)](publications/papers/pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |

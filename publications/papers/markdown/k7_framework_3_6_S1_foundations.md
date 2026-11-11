@@ -10,7 +10,7 @@
 
 ## Abstract
 
-This supplement presents the mathematical architecture underlying the K₇ framework. Part I gives the E₈ data the dictionary uses, with arithmetic rewritings of these data in the structural constants and their status. Part II introduces G₂ holonomy manifolds, including the characterization of the g₂ subalgebra as the kernel of the Lie derivative map. Part III discusses the topology of K₇: the pair (b₂, b₃) = (21, 77) has no known construction. It does not appear among the catalogued compact G₂ manifolds, and a Joyce–Karigiannis ℤ₂³ route does not realise it, because the quotient cohomology it needs is incompatible with the group action (§8.4). Part IV describes the algebraic reference form, whose scale is fixed by the imposed normalization det(g) = 65/32 (item R2 of the residue register, main §3.3, which lists what the framework sets rather than derives), and the status of Joyce's perturbation theorem for this setting: its smallness constant depends on geometric bounds that are not established here, and the existence of a compact torsion-free metric is open (main §9). Numerical experiments with physics-informed neural networks (PINNs) are reported as such. The arithmetic statements are verified in Lean 4. Section 13 lists what changed since version 3.5.
+This supplement presents the mathematical architecture underlying the K₇ framework. Part I gives the E₈ data the dictionary uses, with arithmetic rewritings of these data in the structural constants and their status. Part II introduces G₂ holonomy manifolds, including the characterization of the g₂ subalgebra as the kernel of the Lie derivative map. Part III discusses the topology of K₇: the pair (b₂, b₃) = (21, 77) has no known construction. It does not appear among the catalogued compact G₂ manifolds, and a Joyce–Karigiannis ℤ₂³ route does not realise it, because the quotient cohomology it needs is incompatible with the group action (§8.4). Part IV describes the algebraic reference form, whose scale is fixed by the imposed normalization det(g) = 65/32 (item R2 of the residue register, main §3.3, which lists what the framework sets rather than derives), and the status of Joyce's perturbation theorem for this setting: its smallness constant depends on geometric bounds that are not established here, and the existence of a compact torsion-free metric is open (main §9). The arithmetic statements are verified in Lean 4. Section 13 lists what changed since version 3.5.
 
 ---
 
@@ -373,48 +373,15 @@ $$61 = p_2 \times \text{Weyl} \times (\text{Weyl} + 1) + 1 = 2 \times 5 \times 6
 
 Further expressions for 61 are arithmetic facts of the kind recorded in S2.7; they do not give 61 a physical meaning (R3). Lean: `kappa_T_from_F4_generations`.
 
-### 7.3 Spectral Geometry
-
-The Laplace-Beltrami operator on K₇ admits a discrete spectrum with eigenvalues 0 = λ₀ < λ₁ ≤ λ₂ ≤ ... Its first non-zero eigenvalue is λ₁ (the spectral gap).
-
-**A ratio of the constants**:
-
-$$\frac{\dim(G_2)}{H^*} = \frac{14}{b_2 + b_3 + 1} = \frac{14}{99} = 0.1414...$$
-
-This is not the spectral gap, and it is not a bound on it; it is listed for comparison.
-
-**Analytical spectral gap**: If K₇ were a twisted connected sum with a building block of b₂(M₁) = 11 (a decomposition that is not available, §8.3), the first eigenvalue of the scalar Laplacian admits a closed-form expression from the 1D Sturm-Liouville reduction on the TCS neck:
-
-$$\boxed{\lambda_1 = \frac{\pi^2}{L^2 \cdot g_{ss}} = \frac{6\pi^2}{25 \cdot (b_2(M_1) + \mathrm{rank}(E_8))} = \frac{6\pi^2}{475} = 0.12467...}$$
-
-where L = 5 is the effective neck domain length (including the asymptotically cylindrical tails), g_ss = 19/6 is the component of the neck metric of [A] along the neck, written as (b₂(M₁) + rank(E₈))/(3·rank(G₂)), and b₂(M₁) = 11 is the Picard rank assigned to the first building block of the conjectured decomposition. A numerical computation on the neck metric of [A] (Richardson extrapolation, N = 800 → 1600) gives λ₁ = 0.12461, 0.05% from the closed form.
-
-This is a closed form for the first eigenvalue of the one-dimensional reduction on the neck, conditional on the identification above (see the status paragraph below).
-
-**Comparison with topological ratios:**
-
-| Expression | Value | Deviation from λ₁ | Status |
-|-----------|-------|-------------------|--------|
-| 6π²/475 (closed form) | 0.12467 | 0.00% (definition) | conditional on b₂(M₁) = 11 |
-| Richardson extrapolation on the neck metric | 0.12461 | 0.05% | numerical check |
-| 14/99 (ratio of constants) | 0.14141 | +13.4% | not a bound |
-| 13/99 | 0.13131 | +5.3% | ratio of constants |
-
-*Remark:* The exact value λ₁ = 6π²/475 involves π (from the Sturm-Liouville eigenvalue structure), not a rational number. The product λ₁ × H* = 6π² × 99/475 = 12.342 (see the regularity below).
-
-**Lean**: the arithmetic of the closed form is in the module `Spectral.PhysicalSpectralGap`; the analytic statements it relies on enter through the literature axioms of main §8.
-
-**Status of §7.3.** The closed form assumes a TCS decomposition with b₂(M₁) = 11, whose building blocks are not identified (§8.3), and the numerical value is a spectrum of the approximate neck metric, not of a torsion-free metric on a compact K₇ (main §9). The regularity λ₁ · H* ≈ 12.34 across the catalogued G₂ manifolds is an empirical observation from a scan of the catalogue, not a theorem. No relation of the framework uses λ₁.
-
-### 7.4 Continued Fraction Structure
+### 7.3 Continued Fraction Structure
 
 The ratio dim(G₂)/H* has the continued fraction
 
 $$\frac{14}{99} = [0; 7, 14] = \cfrac{1}{7 + \cfrac{1}{14}}$$
 
-whose partial quotients are 7 = dim(K₇) and 14 = dim(G₂). This is a property of the ratio 14/99, not of the spectral gap. It is an arithmetic fact, with no physical consequence.
+whose partial quotients are 7 = dim(K₇) and 14 = dim(G₂). This is a property of the ratio 14/99: an arithmetic fact, with no physical consequence.
 
-### 7.5 Pell Equation Structure
+### 7.4 Pell Equation Structure
 
 H* and dim(G₂) satisfy a Pell equation:
 
@@ -429,9 +396,9 @@ where $50 = \dim(K_7)^2 + 1 = 49 + 1$.
 
 $$\varepsilon^2 = (7 + \sqrt{50})^2 = 99 + 14\sqrt{50}$$
 
-**Continued fraction**: $\sqrt{50} = [7; \overline{14}]$, with period 1, which is why the same two integers appear in §7.4.
+**Continued fraction**: $\sqrt{50} = [7; \overline{14}]$, with period 1, which is why the same two integers appear in §7.3.
 
-**Status**: arithmetic identity, verified in Lean, with no physical consequence. It has no link with the spectral gap.
+**Status**: arithmetic identity, verified in Lean, with no physical consequence.
 
 ---
 
@@ -567,7 +534,7 @@ Expressions 1 and 2 agree on the line b₂ = 21 and differ elsewhere (R2); expre
 
 ---
 
-## 11. Reference Form, Numerics and Formalization
+## 11. Reference Form and Formalization
 
 ### 11.1 The Algebraic Reference Form
 
@@ -596,44 +563,15 @@ $$\boxed{\varphi_{\text{ref}} = D^{3/14}\,\varphi_0, \qquad g_{\text{ref}} = D^{
 **Actual solution structure**: The topology and geometry of K₇ impose a deformation:
 $$\varphi = \varphi_{\text{ref}} + \delta\varphi$$
 
-The torsion-free condition (dφ = 0, d*φ = 0) is a **global constraint**. Joyce's perturbation theorem gives a nearby torsion-free G₂ metric when the torsion of a closed G₂ structure is small compared with a constant that depends on the injectivity radius and curvature bounds of that structure ([20], Thm. 11.6.1). There is no universal threshold: the constant has not been computed for this structure, so a small numerical torsion value (§11.3) is not an existence argument (main §9). Nor does the number κ_T = 1/61 bear on Joyce's smallness hypothesis [ERR, §7.6].
+The torsion-free condition (dφ = 0, d*φ = 0) is a **global constraint**. Joyce's perturbation theorem gives a nearby torsion-free G₂ metric when the torsion of a closed G₂ structure is small compared with a constant that depends on the injectivity radius and curvature bounds of that structure ([20], Thm. 11.6.1). There is no universal threshold: the constant has not been computed for this structure, so a small numerical torsion value is not an existence argument (main §9). Nor does the number κ_T = 1/61 bear on Joyce's smallness hypothesis [ERR, §7.6].
 
-### 11.3 Numerical Experiments with Physics-Informed Neural Networks
-
-A companion numerical program trains physics-informed neural networks (PINNs) towards G₂ metrics on a model of K₇; since no compact K₇ is constructed, the model is an atlas, not a manifold whose existence is established. The three-chart atlas (neck + two Calabi-Yau bulk regions) uses approximately 10⁶ trainable parameters in float64 precision.
-
-**Phase 2**:
-
-| Metric | Value | Significance |
-|--------|-------|--------------|
-| ‖T‖_max | 4.46 × 10⁻⁴ | small; not compared with a computed Joyce constant |
-| ‖T‖_mean | 9.8 × 10⁻⁵ | small |
-| det(g) error | < 10⁻⁶ | the training constrains det(g) to 65/32, so this measures the constraint, not a confirmation |
-
-**G₂ holonomy training** (Phase 3, training protocols v2 to v13):
-
-Over successive training protocols, the training scores evolved as follows:
-
-| Metric | Initial (v5) | Current best (v11) | Improvement |
-|--------|-------------|-------------------|-------------|
-| `g2_self` | 3.86 | 3.25 | −16% |
-| V₇ projection score | 0.51 | 0.014 | -97% |
-| det(g) at neck | 4.69 | 2.031 | locked at target |
-| phi drift | 13.4% | 0% | controlled |
-
-The `g2_self` and V₇ projection scores are training diagnostics of the companion code, and their definition is not stated here. The table records how the scores evolved; it does not measure holonomy (curvature valued in g₂ would give Hol ⊆ G₂, not Hol = G₂).
-
-An error in the g₂ basis construction was corrected between training protocols 9 and 10: the Fano-plane heuristic does not produce correct g₂ generators. The correct g₂ subalgebra is the kernel of the Lie derivative map (Section 6.2). The scores improved in all subsequent protocols.
-
-The normalization det(g) = 65/32 is imposed (R2, §10.3): a target that the optimization is constrained to cannot be validated by the optimization's output.
-
-### 11.4 Lean 4 Formalization
+### 11.3 Lean 4 Formalization
 
 **Scope of verification**: The Lean formalization (Arithmon/K7-Lean; fourteen axioms, no `sorry`) verifies:
 1. Arithmetic identities and algebraic relations between the framework's constants, including the 33 relations (`relations_v36_certified`, standard axioms only; S3.7)
 2. Numerical enclosures (the ten interval certificates)
 3. G₂ linear algebra on ℝ⁷: exterior algebra, Hodge star, ψ = ⋆φ (`Geometry` module)
-4. Spectral modules (§7.3), which no relation uses
+4. Spectral modules (arithmetic of a first-eigenvalue formula), which no relation uses
 
 **The axioms** (see main §8): four axioms import literature results (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`), and ten interval certificates import numerical enclosures (`det_g_at_half`, `K3_eigenvalue_0…3` and their `_bracketed` forms). They carry content that cannot be checked by `decide` alone because it involves real arithmetic [ERR, §7.1].
 
@@ -658,7 +596,7 @@ theorem det_g_equals_target :
 
 Both statements are true as written and say less than their names. `torsion_satisfies_joyce` compares two integers, one of them a fixed threshold (288) that is not Joyce's constant, which has not been computed for this structure (§11.2); it is not an existence argument. `det_g_equals_target` is a definitional equality of the rational 65/32 with the target (§12.5).
 
-### 11.5 The Chain of Choices
+### 11.4 The Chain of Choices
 
 The logical structure from algebra to the reference metric, and where the framework's choices enter:
 
@@ -726,7 +664,7 @@ The contraction g_ij = (1/6) Σ_{k,l} φ_ikl φ_jkl raises indices with a backgr
 | **Fano lines** | (0,1,3), (1,2,4), (2,3,5), (3,4,6), (4,5,0), (5,6,1), (6,0,2) | G₂ cross-product ε_{ijk} |
 | **G₂ form** | (0,1,2), (0,3,4), (0,5,6), (1,3,5), (1,4,6), (2,3,6), (2,4,5) | Associative 3-form |
 
-Both have 7 terms because both are Fano-plane patterns: the associative calibration is φ(x, y, z) = ⟨x × y, z⟩ on Im(𝕆), and the two tables differ by a relabelling of the seven points. The training error of §11.3 came from penalising the wrong labelling, not from a difference in kind between the two objects.
+Both have 7 terms because both are Fano-plane patterns: the associative calibration is φ(x, y, z) = ⟨x × y, z⟩ on Im(𝕆), and the two tables differ by a relabelling of the seven points.
 
 ### 12.5 Verification Summary
 
@@ -734,7 +672,6 @@ Both have 7 terms because both are Fano-plane patterns: the associative calibrat
 |--------|--------|-----------|
 | Algebraic | φ_ref = (65/32)^{3/14} φ₀, g_ref = (65/32)^{1/7} g_{φ₀} | §11.1 |
 | Lean 4 | `det_g_equals_target : rfl` (a definitional equality of the rational 65/32 with the target; it does not check the scaling law) | AnalyticalMetric.lean |
-| Neural-network experiments | small torsion, training scores improved; not a torsion-free metric | §11.3 |
 | Joyce theorem | applies under a smallness hypothesis whose constant is not computed here | [20]; main §9 |
 
 None of these methods establishes a torsion-free metric on a compact K₇ (main §9).
@@ -752,7 +689,7 @@ The sections above state the present position. This section lists, once, what ve
 | a "triple geometric origin" of p₂; p₂ as a Pontryagin class | occurrences of the number 2; the binary ratio dim(G₂)/dim(K₇) [ERR, §6] | §4.3 |
 | τ established as "a geometric constant rather than a free parameter" | a chosen ratio | §5.4 |
 | κ_T = 1/61 as a "topological capacity for torsion"; 61 as "effective matter degrees of freedom"; physical interactions "emerge from the geometry of K₇"; κ_T = 1/61 places K₇ within Joyce's perturbative regime | an integer combination without a physical name [ERR, §7.6] | §6.4, §10.2, §11.2 |
-| the near-identity dim(G₂)/√2 ≈ π² (0.30%) "resolved" by the closed form for λ₁; a Lean module `Spectral.SelbergBridge` connecting the spectral gap to a Dirichlet polynomial through the Selberg trace formula; the Pell identity combined with a "selection principle" κ = π²/14 (Lean module `Spectral.SelectionPrinciple`) into a link with the spectral gap | none of these bears on the framework | §7.3, §7.5 |
+| the near-identity dim(G₂)/√2 ≈ π² (0.30%) "resolved" by the closed form for λ₁; a Lean module `Spectral.SelbergBridge` connecting the spectral gap to a Dirichlet polynomial through the Selberg trace formula; the Pell identity combined with a "selection principle" κ = π²/14 (Lean module `Spectral.SelectionPrinciple`) into a link with the spectral gap | none of these bears on the framework; the section on spectral geometry is removed | §7.4 |
 | a building-block scan showing that b₂ = 21 > 20 = max ρ(K3) forces a semi-Fano building block | b₂ is not bounded by the Picard rank of the fibre | §8.3 |
 | sublattices of ranks 11 and 10 "consistent with a TCS construction" | the split 11 + 10 is not available | §8.3 |
 | a Joyce–Karigiannis ℤ₂³ orbifold [43] realises (21, 77), by a four-phase computer-assisted audit (a symplectic V4 screen on a complete-intersection K3, an anti-symplectic obstruction for P⁵-linear maps, the abstract lattice action, a fixed-locus table) and a quotient cohomology (0, 22) on a K3 of Picard rank 1; the Lean module `JoyceKarigiannisConstruction.lean` (K7-Lean commit `6acbf49`, since removed; theorem `jk_z23_construction_realizes_gift_betti`) as evidence | the route does not realise the pair; the module verified the arithmetic of the Betti formula on an erroneous input | §8.4 |
@@ -760,9 +697,8 @@ The sections above state the present position. This section lists, once, what ve
 | H³(K₇) = H³_local ⊕ H³_global with dimensions 35 + 42 | no such splitting | §9.3 |
 | φ_ref = c φ₀ with c = D^{1/14} and g_ref = c² I₇, from the law g_{cφ} = c² g_φ and the contraction formula for the metric | φ_ref = D^{3/14} φ₀, from the law g_{cφ} = c^{2/3} g_φ; the metric D^{1/7} I₇ is unchanged | §11.1, §12.3 |
 | a neural-network torsion value compared with a fixed threshold ε₀ = 0.1, a "224× safety margin" | no universal threshold; Joyce's constant is not computed | §11.2 |
-| `g2_score` described as a normalized projection of the Riemann curvature onto the complement of g₂, equal to 0 for G₂ holonomy and about 3.5 for the flat metric (a flat metric has R = 0, so both cannot hold) | training diagnostics; no measure of holonomy | §11.3 |
-| det(g) = 65/32 "passes 8/8 independent consistency tests" (permutation, bootstrap, a Bayesian posterior, a joint p-value) | imposed normalization | §11.3 |
-| four "external data-package" axioms | fourteen axioms: four literature imports and ten interval certificates [ERR, §7.1] | §11.4 |
+| a section of numerical experiments with neural networks: torsion values, a `g2_score` described as a measure of holonomy, and det(g) = 65/32 "passing 8/8 independent consistency tests" | the section is removed: the scores were training diagnostics, not a measure of holonomy, and det(g) is an imposed normalization (R2) | §10.3 |
+| four "external data-package" axioms | fourteen axioms: four literature imports and ten interval certificates [ERR, §7.1] | §11.3 |
 
 ---
 

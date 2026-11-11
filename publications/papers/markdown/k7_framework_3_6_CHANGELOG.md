@@ -10,7 +10,9 @@
 - **DESI.** §11.1 reports the DESI DR2 results beside the classes [61]: DESI alone, Ω_m = 0.2975 ± 0.0086 (1.9σ to 2.0σ from the three density relations); DESI with the CMB, Ω_m = 0.3027 ± 0.0036 and H₀ = 68.17 ± 0.28 (3.1σ to 3.4σ on the density relations, 3.0σ on h). The FCC-ee row leaves the timeline, the relation it would have tested being already rejected.
 - **Vocabulary.** Dataset identifiers, rule labels and internal names of tests and verdicts leave the prose of the main paper and of S1 to S4; they remain as row labels in tables and as field names where a file is cited. Section titles say what the section contains.
 - **Supplements.** S1 to S4 are written in the present tense; each gathers what changed in one section, "Changes since version 3.5".
-- PDFs rebuilt (main 39 pp., S1 28, S2 15, S3 17, S4 11).
+- **S1 loses two sections**: the spectral-geometry section (a closed form for a first eigenvalue, conditional on a decomposition that is not available, used by no relation) and the section of neural-network experiments (training diagnostics, not a measure of holonomy). The following sections are renumbered (7.3, 7.4; 11.3, 11.4).
+- R7: the MS-bar quartic coupling at the top-mass scale is given with its uncertainty, 0.1260 ± 0.0003 [60].
+- PDFs rebuilt (page counts in the repository README).
 
 **Batch 13 (2026-11-11): the main paper states the present position; out-of-sample tests.**
 - The body is written in the present tense. What versions up to 3.5 said and version 3.6 no longer says is listed once, in the new Appendix D, with pointers to the erratum; the corresponding passages leave §1.1, §2.3, §2.4, §3.1, §3.2, §4.2, §4.3, §4.5, §5.3, §5.4, §6.1, §7.1, §7.2, §9, §10.3, §11 and §12.1. No number, class or verdict changes.
