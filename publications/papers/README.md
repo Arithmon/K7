@@ -11,7 +11,7 @@ The K₇ Framework (formerly GIFT): Standard Model parameters from G₂ holonomy
 ```
 publications/
 ├── papers/
-│   ├── markdown/                    # Canonical sources (v3.5)
+│   ├── markdown/                    # Canonical sources (v3.6 and v3.5; v3.5 listed below)
 │   │   ├── k7_framework_3_5_main.md             # Main paper
 │   │   ├── k7_framework_3_5_S1_foundations.md   # E₈, G₂, K₇ foundations
 │   │   ├── k7_framework_3_5_S2_derivations.md   # Type I derivations
@@ -19,7 +19,7 @@ publications/
 │   │   ├── k7_framework_3_5_S4_sieve_diagnostics.md # Sieve diagnostics
 │   │   ├── g2_certified_neck.md         # Paper A — certified G₂
 │   │   └── g2_spectral.md               # Paper B — spectral
-│   ├── pdf/                         # Compiled PDFs (all published)
+│   ├── pdf/                         # Compiled PDFs (v3.6 files: k7_framework_3_6_*.pdf)
 │   │   ├── k7_framework_3_5_main.pdf              # Framework main (Zenodo 21296168)
 │   │   ├── k7_framework_3_5_S1_foundations.pdf    # Framework S1  (Zenodo 21296168)
 │   │   ├── k7_framework_3_5_S2_derivations.pdf    # Framework S2  (Zenodo 21296168)
@@ -30,7 +30,7 @@ publications/
 │   │   ├── K3_NK_Certificate.pdf        # Paper C (Zenodo 19708916)
 │   │   ├── donaldson_analytic.pdf       # Paper D (Zenodo 20039066)
 │   │   └── rank_one_branched_adiabatic.pdf # Paper E (Zenodo 21215956)
-│   ├── tex/                         # LaTeX sources (v3.5)
+│   ├── tex/                         # LaTeX sources (v3.6, v3.5)
 │   ├── figures/                     # Publication figures
 │   ├── notebooks/                   # Companion Jupyter notebooks
 │   ├── legacy/v3.3/                 # v3.3 framework PDFs + markdown + tex (archived)
@@ -53,14 +53,16 @@ publications/
 
 ## Framework v3.6 (draft, branch `v3.6-draft`)
 
-| Document | Markdown |
-|----------|----------|
-| Main paper | [k7_framework_3_6_main.md](markdown/k7_framework_3_6_main.md) |
-| S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.md](markdown/k7_framework_3_6_S1_foundations.md) |
-| S2: The 33 relations | [k7_framework_3_6_S2_derivations.md](markdown/k7_framework_3_6_S2_derivations.md) |
-| S3: Observable dataset | [k7_framework_3_6_S3_observables.md](markdown/k7_framework_3_6_S3_observables.md) |
-| S4: Look-elsewhere test | [k7_framework_3_6_S4_sieve_diagnostics.md](markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
-| Changes from v3.5 | [k7_framework_3_6_CHANGELOG.md](markdown/k7_framework_3_6_CHANGELOG.md) |
+| Document | PDF | Markdown |
+|----------|-----|----------|
+| Main paper | [k7_framework_3_6_main.pdf](pdf/k7_framework_3_6_main.pdf) (40 pp.) | [k7_framework_3_6_main.md](markdown/k7_framework_3_6_main.md) |
+| S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.pdf](pdf/k7_framework_3_6_S1_foundations.pdf) (26 pp.) | [k7_framework_3_6_S1_foundations.md](markdown/k7_framework_3_6_S1_foundations.md) |
+| S2: The 33 relations | [k7_framework_3_6_S2_derivations.pdf](pdf/k7_framework_3_6_S2_derivations.pdf) (14 pp.) | [k7_framework_3_6_S2_derivations.md](markdown/k7_framework_3_6_S2_derivations.md) |
+| S3: Observable dataset | [k7_framework_3_6_S3_observables.pdf](pdf/k7_framework_3_6_S3_observables.pdf) (15 pp.) | [k7_framework_3_6_S3_observables.md](markdown/k7_framework_3_6_S3_observables.md) |
+| S4: Look-elsewhere test | [k7_framework_3_6_S4_sieve_diagnostics.pdf](pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) (10 pp.) | [k7_framework_3_6_S4_sieve_diagnostics.md](markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
+| Changes from v3.5 | | [k7_framework_3_6_CHANGELOG.md](markdown/k7_framework_3_6_CHANGELOG.md) |
+
+LaTeX sources: [`tex/`](tex/) (`k7_framework_3_6_*.tex`, `gift_3.6_bib.tex`). These are the files prepared for the Zenodo deposit; until the deposit, the published version is 3.5.
 
 The v3.5 files below are unchanged, and are read together with the [erratum](../ERRATUM_v3.5.md).
 

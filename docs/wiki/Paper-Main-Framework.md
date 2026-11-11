@@ -3,68 +3,70 @@ title: "Paper Main Framework"
 layout: default
 ---
 
-# Paper: Main Framework
+# Paper: Main
 
-**The K₇ Framework: Conditional Topological Relations for Standard-Model Parameters from G₂ Holonomy and E₈×E₈ Structure** (v3.5)
+**The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology** (The K₇ Framework, v3.6)
 
 *Brieuc de La Fournière (2026)*
 
-[**PDF (main, 47 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_main.pdf) | [**DOI: 10.5281/zenodo.21296168**](https://doi.org/10.5281/zenodo.21296168) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_5_main.md)
+[**PDF (40 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md)
 
-> **Companion papers (Zenodo):** [A: certified G₂](https://doi.org/10.5281/zenodo.19892350) · [B: spectral](https://doi.org/10.5281/zenodo.19893371) · [C: K3 NK](https://doi.org/10.5281/zenodo.19708916) · [D: Donaldson analytic](https://doi.org/10.5281/zenodo.20039066) · [E: rank-1 branched](https://doi.org/10.5281/zenodo.21215956) · [v3.4 archive](https://doi.org/10.5281/zenodo.20070101) · [v3.3 archive](https://doi.org/10.5281/zenodo.18837071)
-
----
-
-## Abstract
-
-Framework proposing that Standard Model dimensionless parameters emerge as topological invariants of a 7D G₂ holonomy manifold K₇ with Betti numbers (b₂=21, b₃=77) coupled to E₈×E₈ gauge structure. v3.5 catalogues 95 observables (33 Type I exact-target relations) with 0.99% mean deviation on Type I from experiment (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022); 213 conjuncts certified in Lean 4 with 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates). DUNE will test δ_CP = 197° falsification criterion.
+Supplements: [S1](Paper-S1-Foundations.html) (foundations, 26 pp.) · [S2](Paper-S2-Derivations.html) (the 33 relations, 14 pp.) · [S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md) (dataset, 15 pp.) · [S4](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) (look-elsewhere, 10 pp.) · [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md)
 
 ---
 
-## Key Results
+## What the paper states
 
-| Observable | K₇ Formula | Value | Exp. | Dev. |
-|------------|-------------|-------|------|------|
-| sin²θ_W | b₂/(b₃+dim(G₂)) | 3/13 | 0.2312 | 0.19% |
-| N_gen | rank(E₈)−Weyl | 3 | 3 | exact |
-| Q_Koide | dim(G₂)/b₂ | 2/3 | 0.6667 | 0.001% |
-| α_s(M_Z) | √2/12 | 0.1179 | 0.1179 | 0.04% |
-| δ_CP | 7×14+99 | 197° | 207°-212° (NuFIT 6.1) | ~1σ |
-| m_τ/m_e | 7+10×248+10×99 | 3477 | 3477.2 | 0.004% |
-| n_s | ζ(11)/ζ(5) | 0.9649 | 0.9649 | 0.004% |
+A **declared correspondence**. The topological and Lie-theoretic invariants of a compact seven-manifold K₇ with G₂ holonomy and Betti numbers (b₂, b₃) = (21, 77), together with E₈×E₈, are assigned to 33 dimensionless Standard-Model and cosmological parameters by explicit closed forms. The paper presents the correspondence as a privileged candidate, not as a derivation: no geometric map is known that sends the invariants to the observables, and no rule fixes which formula is assigned to which observable.
 
-**Global** (v3.5): 95 observables in 4 types (33 Type I + 19 II + 21 III + 22 IV); 66 with experimental comparison; mean deviations 0.99% (Type I), 0.17% (Type II), 3.44% (Type III); 11 exact matches (<0.01%), 53 within 1%
+What the paper does is make the correspondence auditable. It gives the full **dictionary** (twenty structural constants and a grammar), a **residue register** of everything that was set by choice (R1 to R12), and a **decision rule** with no repair clause.
 
 ---
 
-## Section Structure
+## The 33 relations against the most recent data
 
-1. **Introduction**: Parameter problem, contemporary context, framework overview
-2. **Mathematical Framework**: Octonions, E₈×E₈, K₇ hypothesis, G₂ structure
-3. **Methodology & Epistemic Status**: Derivation principle, claims vs non-claims
-4. **Derivation of 33 Predictions**: Gauge, lepton, quark, neutrino, Higgs, cosmological sectors
-5. **Formal Verification & Statistics**: Lean 4 (290+ theorems), uniqueness among 192,349 alternatives
-6. **G₂ Metric Program**: PINN atlas construction, metric quality results
-7. **Falsifiable Predictions**, δ_CP via DUNE, fourth generation bounds
-8. **Discussion**: M-theory connections, comparison with other approaches, limitations
-9. **Conclusion**
+Generated from the dataset (main §4.1; PDG 2026, NuFIT 6.1, Planck 2018; 1σ uncertainties).
+
+| Class | Count | Relations |
+|-------|-------|-----------|
+| within 2σ | 23 | the remaining relations |
+| tension (2σ < \|pull\| ≤ 3σ) | 3 | m_τ/m_e (−2.1σ), m_W/m_Z (−2.7σ), Ω_c/Ω_m (+2.5σ) |
+| proximity (\|pull\| > 3σ) | 5 | α⁻¹, sin²θ_W (−7.5σ), m_μ/m_e, m_μ/m_τ (+20.8σ), m_b/m_t (−10.2σ, scheme of R7) |
+| inside the PDG range (no uncertainty) | 1 | m_s/m_d |
+| non-Gaussian profile | 1 | sin²θ₂₃ (§4.3) |
+
+The 33 are not 33 independent tests: three sectors are overdetermined, with relations that disagree as exact equalities (main §4.2). The other 62 entries of the dataset are conditional extractions and diagnostics and are not counted. The full table is on the [Observable Reference](Observable-Reference.html) page.
 
 ---
 
-## Statistical Validation
+## Look-elsewhere
 
-- (21,77) unique optimal among 192,349 configurations (p < 5×10⁻⁶)
-- E₈×E₈ achieves 12.8× better agreement than next best gauge group
-- G₂ holonomy achieves 13× better than Calabi-Yau (SU(3))
-- Lean 4 verification: 290+ theorems, 0 sorry, 0 domain-specific axioms
+In a preregistered test, every competing Betti pair and every invented vocabulary searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets, and a sizeable share of the competitors do as well or better: closeness to the data is not distinctive (main §7.2, S4.2). Code, preregistration and results are in [`publications/validation/v3.6/`](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/); the numbers are on the [Statistical Evidence](Statistical-Evidence.html) page.
+
+---
+
+## Sections
+
+- 1. Introduction
+- 2. Mathematical Inputs
+- 3. The Correspondence and Its Dictionary
+- 4. The 33 Relations
+- 5. Gauge Sector: Consistency Checks on an Assumed Standard-Model Content
+- 6. Lepton Masses
+- 7. Look-Elsewhere
+- 8. Formal Verification
+- 9. Existence status (two-layer boundary)
+- 10. Selection Audit of (21, 77)
+- 11. Decision Rule and Refutation
+- 12. Discussion and Conclusion: Where the Necessity of K₇ Ends
 
 ---
 
 ## Related
 
-- [Paper S1 Foundations](Paper-S1-Foundations.html): Mathematical foundations
-- [Paper S2 Derivations](Paper-S2-Derivations.html): Complete derivations
-- [Paper Explicit G2 Metric](Paper-Explicit-G2-Metric.html): Numerical G₂ metric
-- [Paper Spectral Geometry](Paper-Spectral-Geometry.html): KK spectrum
-- [Observable Reference](Observable-Reference.html): Full prediction catalog
-- [Statistical Evidence](Statistical-Evidence.html), 7-component validation
+- [Paper S1 Foundations](Paper-S1-Foundations.html)
+- [Paper S2 Derivations](Paper-S2-Derivations.html)
+- [Observable Reference](Observable-Reference.html)
+- [Statistical Evidence](Statistical-Evidence.html)
+- [Validation Summary](Validation-Summary.html)
+- [Citation Guide](Citation-Guide.html)

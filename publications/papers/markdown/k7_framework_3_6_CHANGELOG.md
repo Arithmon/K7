@@ -1,6 +1,11 @@
 # Changelog: K₇ framework paper (formerly GIFT)
 
-## v3.6 (in progress; plan: `plan_v3_6_2026_10_17.md`)
+## v3.6 (November 2026)
+
+**Batch 12 (2026-11-11): release preparation.**
+- The "(draft)" stamp is removed from the title pages; `.tex` and PDF rebuilt. No statement or number changes.
+- The LaTeX sources and PDFs of version 3.6 enter the public repository (`publications/papers/tex/`, `pdf/`), with the current preamble.
+- Repository surfaces that depend on the deposit (citation files, structure, paper pages, changelog highlights, reference data) are regenerated for 3.6.
 
 **Batch 11 (2026-11-10): look-elsewhere test deposited.**
 - The producer of the look-elsewhere test, its closeout, the dataset as read by the run, the preregistration with its two amendments, the result and the results of the two earlier runs are deposited in the public repository, `publications/validation/v3.6/`, with their hashes. S4.5 and S3.8 say where; S3.8 no longer says "available on request pending public deposit" for the dataset. No figure changes.

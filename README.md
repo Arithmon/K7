@@ -85,16 +85,16 @@ That the relations are derived from the geometry; "no free parameters, no fittin
 
 ### Framework v3.6 (draft, this branch)
 
-| Document | Markdown |
-|----------|----------|
-| Main paper | [k7_framework_3_6_main.md](publications/papers/markdown/k7_framework_3_6_main.md) |
-| S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.md](publications/papers/markdown/k7_framework_3_6_S1_foundations.md) |
-| S2: The 33 relations (arithmetic, dictionary choices, status) | [k7_framework_3_6_S2_derivations.md](publications/papers/markdown/k7_framework_3_6_S2_derivations.md) |
-| S3: Observable dataset | [k7_framework_3_6_S3_observables.md](publications/papers/markdown/k7_framework_3_6_S3_observables.md) |
-| S4: Look-elsewhere test and descriptive diagnostics | [k7_framework_3_6_S4_sieve_diagnostics.md](publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
-| Changes from v3.5 | [k7_framework_3_6_CHANGELOG.md](publications/papers/markdown/k7_framework_3_6_CHANGELOG.md) |
+| Document | PDF | Markdown |
+|----------|-----|----------|
+| Main paper | [PDF (40 pp.)](publications/papers/pdf/k7_framework_3_6_main.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_main.md) |
+| S1: Mathematical foundations | [PDF (26 pp.)](publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S1_foundations.md) |
+| S2: The 33 relations (arithmetic, dictionary choices, status) | [PDF (14 pp.)](publications/papers/pdf/k7_framework_3_6_S2_derivations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S2_derivations.md) |
+| S3: Observable dataset | [PDF (15 pp.)](publications/papers/pdf/k7_framework_3_6_S3_observables.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S3_observables.md) |
+| S4: Look-elsewhere test and descriptive diagnostics | [PDF (10 pp.)](publications/papers/pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
+| Changes from v3.5 | | [Markdown](publications/papers/markdown/k7_framework_3_6_CHANGELOG.md) |
 
-PDF and LaTeX will be generated at release.
+LaTeX sources: [`publications/papers/tex/`](publications/papers/tex/). These are the files prepared for the Zenodo deposit of version 3.6; until the deposit, the published version is 3.5.
 
 ### Framework v3.5 (published: PDF, TeX and markdown, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
 

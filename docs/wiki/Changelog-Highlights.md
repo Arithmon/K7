@@ -5,104 +5,52 @@ layout: default
 
 # Changelog Highlights
 
-Abridged version history. For the full changelog, see [`CHANGELOG.md`](https://github.com/Arithmon/K7/blob/main/CHANGELOG.md).
+Abridged version history. The full record is in [`CHANGELOG.md`](https://github.com/Arithmon/K7/blob/main/CHANGELOG.md), and the changes of version 3.6, section by section, in the [paper changelog](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md). Statements withdrawn by version 3.6 are not repeated below.
 
 ---
 
-## v3.4.13, 2026-04-29
+## v3.6, in preparation
 
-**Triptyque published & axiom reduction milestone**
+**The K₇ Dictionary: a declared correspondence, with its residue and a decision rule**
 
-- **Papers A, B, C published on Zenodo** (DOIs 19892350, 19893371, 19708916): the peer-reviewable companion triptyque (certified G₂ structure, spectral geometry, K3 NK diagnostics)
-- **Lean axiom reduction**: 38 → 15 axioms (4 main-chain + 11 interval-arithmetic), 0 sorry, 140 conjuncts certified
-- **K3NewtonKantorovich v3.0 hardcore**: η ×2.4 tighter, Joyce margin ×17 below ε₀
-- **γ² = 24π²/7 derived** (T² Hodge Laplacian + H¹(K3)=0; was PSLQ artifact 135/4)
-- **95 observables**: 33 Type I + 19 Type II + 21 Type III + 22 Type IV; 0.99% mean deviation on Type I (NuFIT 6.1 / PDG 2024 / Planck 2018 / CODATA 2022)
-- **3 integer primitives**: N=3, r₈=8, r₂=2 (no continuous adjustable parameters)
+- **New title**: "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology". The series keeps the name "The K₇ Framework".
+- **Reframing**: the relations are presented as a correspondence chosen by the author, a privileged candidate, not as a derivation. No geometric map from the invariants to the observables is known, and no rule assigns formulas to observables.
+- **Dictionary, residue, decision rule**: twenty structural constants and a grammar; a residue register R1 to R12 of everything set by choice; a rule that rejects a relation with no repair clause.
+- **The 33 relations against the most recent data** (PDG 2026, NuFIT 6.1, Planck 2018): 23 within 2σ of measurement, 3 in tension, 5 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile. A single score over the 33 is no longer reported.
+- **Not 33 independent tests**: three sectors are overdetermined, with relations that disagree as exact equalities.
+- **The other 62 entries** of the dataset are conditional extractions and diagnostics, and are not counted as predictions.
+- **Look-elsewhere**: a preregistered test in which every competitor searches for its own formulas. K₇ reaches 31 of the 33 targets and is not distinctive on closeness. Code and results are public in `publications/validation/v3.6/`.
+- **Withdrawn**: the coincidence probabilities and uniqueness statements of versions 3.3 to 3.5, the reading of the relations as derived from the geometry, a primary lepton relation, and the Joyce–Karigiannis route to (21, 77).
+- **Formal verification**: 156 Lean 4 files, 14 axioms (4 literature imports, 10 interval certificates), no sorry; the arithmetic of the 33 relations is collected in `relations_v36_certified` (commit 34ce857).
 
-## v3.4.3, 2026-04
+## v3.5, 2026-07-10
 
-**G₂ Mathlib steps 1-5 promoted to theorems**
+- Renamed "The K₇ Framework" (GIFT remains the name of the founding phase).
+- Supplement S4 added; conditional framing throughout.
+- **Erratum** (2026-08 to 2026-10, sections 1 to 11): [`ERRATUM_v3.5.md`](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md). Version 3.6 integrates it.
 
-- φ₀ ordered 3-form on ℝ⁷, Bryant identity ∑φ₀² = 6δ, rank=35 → dim(g₂)=14, B = 144δ, det·gram theorem (Aristotle)
-- 8 → 4 axioms by promoting algebraic identities to native_decide proofs
-- MollifiedSum archived; G₂ThreeForm axiomized cleanly
+## v3.4, 2026-04 to 2026-06
 
-## v3.4.0, 2026-04
+- Companion papers A, B, C published on Zenodo (2026-04-29), D on 2026-05-05.
+- Computer-assisted Newton–Kantorovich certificate for a torsion-free G₂ structure on a seam (neck) model; it does not construct a compact K₇.
+- K3 Newton–Kantorovich certificates (Fermat quartic, CI(2,2,2)), formalized in Lean.
+- Lean axiom reduction; several fitted closed forms for metric coefficients dropped as artifacts.
 
-**Metric-first program complete · K3 CAP**
+## v3.3, 2026-01 to 2026-03
 
-- Computer-assisted proof of torsion-free G₂ metric existence on TCS neck model: h ≤ 8.95×10⁻⁹, ×56 million margin below Joyce ε₀
-- K3 NK certificates: Fermat quartic ×990, CI(2,2,2) ×6.4 (Lean-formalized)
-- Off-diagonal PSLQ verdict: L[4,2], L[5,3] formulas were PSLQ artifacts (dropped from claims)
+- The list of 33 dimensionless relations fixed.
+- Neutrino mixing formulas revised (θ₂₃ corrected in 3.3.17, θ₁₂ and θ₂₃ in 3.3.24).
+- Lean 4 as the sole proof system (Coq archived).
+- S1 construction claims made conditional.
 
-## v3.3.24, 2026-03-02
+## v3.0 to v3.1, 2025-12
 
-**NuFIT 6.0 Update & Publication Cleanup**
+- First Lean-certified arithmetic relations.
+- First explicit approximate G₂ metric with a Newton–Kantorovich check.
 
-- Updated to NuFIT 6.0 experimental values (δ_CP: 177°±20°)
-- New neutrino formulas: θ₁₂ = arctan(2/3), θ₂₃ = arctan(√(14/11))
-- Key insight: tan(θ₁₂) = Q_Koide = 2/3
-- Mean deviation: **0.24%** (32 well-measured) / 0.57% (all 33 incl. δ_CP)
-- S1 construction claims softened (conditional on Joyce existence theorem)
-- Weyl → w rename to avoid collision with Weyl curvature
+## v2.x, 2025-10 to 2025-11
 
-## v3.3.17, 2026-02-04
-
-**θ₂₃ Formula Correction**
-
-- Fixed atmospheric mixing angle: arcsin(25/33) = 49.25° (was 59.16°)
-- θ₂₃ deviation: 20% → **0.10%**
-- Mean deviation: 0.84% → **0.21%**
-
-## v3.3.14, 2026-01-28
-
-**Selection Principle & 290+ Relations**
-
-- Selection Principle formalized in Lean 4
-- TCS Spectral Bounds added
-- 290+ total certified relations
-- Lean 4 as sole verification system (Coq archived)
-
-## v3.3.0, 2026-01-12
-
-**33 Observables & PDG 2024**
-
-- Expanded to 33 dimensionless predictions
-- Updated to PDG 2024 experimental values
-- 192,349-configuration Monte Carlo validation
-
-## v3.1.0, 2025-12-17
-
-**Analytical G₂ Metric**
-
-- Explicit Chebyshev-Cholesky metric (169 parameters)
-- Newton-Kantorovich certification (h = 6.65×10⁻⁸)
-- 185 certified Lean relations
-
-## v3.0.0, 2025-12-09
-
-**Major Release**
-
-- 165+ certified relations in Lean 4
-- Exceptional group structure explorations
-
-## v2.3.x, 2025-12
-
-- Lean 4 verification introduced
-
-## v2.2.0, 2025-11-27
-
-- Zero-parameter paradigm established
-
-## v2.1.0, 2025-11-22
-
-- Torsional dynamics framework
-- Scale bridge (Λ_GIFT = 21×e⁸×248/(7×π⁴))
-
-## v2.0.0, 2025-10-24
-
-- Framework reorganization
+- Framework reorganization; first Lean verification.
 
 ---
 

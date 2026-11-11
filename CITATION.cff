@@ -11,11 +11,13 @@ authors:
 repository-code: "https://github.com/Arithmon/K7"
 url: "https://arithmon.github.io/K7/"
 abstract: >-
-  Standard-Model parameter relations derived from the geometry of a single
-  7-dimensional manifold: E8xE8 gauge theory compactified on a G2-holonomy
-  manifold K7 with Betti numbers (b2, b3) = (21, 77). Formerly published as
-  GIFT (Geometric Information Field Theory); GIFT remains the name of the
-  founding phase. Companion repository of certified Lean 4 identities:
+  A declared correspondence between the topological and Lie-theoretic
+  invariants of a G2-holonomy seven-manifold K7 with Betti numbers
+  (b2, b3) = (21, 77), together with E8xE8, and 33 dimensionless
+  Standard-Model and cosmological parameters, stated with its dictionary,
+  its residue register and a decision rule. It is presented as a candidate,
+  not as a derivation. Formerly published as GIFT (Geometric Information
+  Field Theory). Companion repository of Lean 4 arithmetic identities:
   https://github.com/Arithmon/K7-Lean (formerly gift-framework/core).
 identifiers:
   - type: doi
@@ -25,11 +27,12 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21296168
     description: >-
-      Version DOI for "The K7 Framework" v3.5 (2026).
+      Version DOI for "The K7 Framework" v3.5 (2026), the published version until 3.6 is deposited.
 keywords:
   - G2 holonomy
   - E8xE8
   - Standard Model
+  - look-elsewhere effect
   - Lean 4
   - formal verification
 license: MIT

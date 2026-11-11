@@ -1,0 +1,1072 @@
+\documentclass[11pt,a4paper]{article}
+\input{gift_preamble}
+% Glyphs new in 3.6, kept here rather than in the preamble shared with 3.4 and 3.5.
+\DeclareUnicodeCharacter{02E2}{\ensuremath{^{\mathrm{S}}}}
+\DeclareUnicodeCharacter{1D37}{\ensuremath{^{\mathrm{K}}}}
+\DeclareUnicodeCharacter{1D39}{\ensuremath{^{\mathrm{M}}}}
+\DeclareUnicodeCharacter{1D3A}{\ensuremath{^{\mathrm{N}}}}
+\DeclareUnicodeCharacter{1D3E}{\ensuremath{^{\mathrm{P}}}}
+\DeclareUnicodeCharacter{1D9C}{\ensuremath{^{\mathrm{C}}}}
+\DeclareUnicodeCharacter{211A}{\ensuremath{\mathbb{Q}}}
+\DeclareUnicodeCharacter{226B}{\ensuremath{\gg}}
+\DeclareUnicodeCharacter{22A5}{\ensuremath{\perp}}
+% pandoc >= 3.2.1 emits \pandocbounded around images; provide a fallback.
+% Also clamp all images to \linewidth (natural-size figures overflowed the
+% right margin -- the "truncated figures" flagged by the round-2 reviews).
+% Kept here rather than in gift_preamble.tex, shared with the 3.4 build.
+\providecommand{\pandocbounded}[1]{#1}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,keepaspectratio}
+% md headings carry their own literal numbering ("3.2 What ..."); suppress
+% the LaTeX section counters to avoid "0.2 1. Introduction" double numbering.
+\setcounter{secnumdepth}{0}
+% Loosen justification slightly: long technical identifiers (made breakable
+% at build time via \allowbreak) still need extra stretch to avoid overfulls.
+\emergencystretch=3em
+\fancyhead[L]{The $K_7$ Dictionary v3.6}
+\hypersetup{pdftitle={The K7 Dictionary: Testing G2 Topology against Particle Physics and Cosmology}}
+
+\graphicspath{{../../../figures/}}
+
+\title{%
+\LARGE\textbf{The $K_7$ Dictionary}\\[0.3em]
+\large Testing $\mathrm{G}_2$ Topology against Particle Physics and Cosmology%
+}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\noindent\rule{\textwidth}{0.2pt}
+
+\noindent\textbf{Author}: Brieuc de La Fourni\`ere
+
+\noindent Independent researcher, Beaune, France
+
+\noindent Contact: \href{mailto:brieuc@arithmon.com}{\texttt{brieuc@arithmon.com}} \quad | \quad \href{https://arithmon.com}{arithmon.com}
+
+\noindent\textbf{Date}: November 2026 \quad v3.6
+
+% Title page: allow one extra line so the (shortened) abstract + keywords
+% end exactly on page 1 (ToC follows on its own page).
+\enlargethispage{2\baselineskip}
+
+\section{Abstract}\label{abstract}
+
+The Standard Model leaves about nineteen parameters to measurement, and no theory explains its gauge group, its three generations or the values it measures. This paper states a \textbf{declared correspondence}. The topological and Lie-theoretic invariants of a compact seven-manifold K₇ with G₂ holonomy and Betti numbers (b₂, b₃) = (21, 77), together with an E₈×E₈ gauge structure, are assigned to dimensionless Standard-Model and cosmological parameters by explicit closed forms. The paper presents the correspondence as a privileged candidate, not as a derivation: no geometric map is known that sends the invariants to the observables, and no rule fixes which formula is assigned to which observable. What the paper does instead is make the correspondence auditable. It gives the full \textbf{dictionary} (twenty structural constants and the grammar in which formulas are written). It keeps a \textbf{residue register}, ranked with the results, of everything that was set rather than derived: the pair (21, 77), the imposed normalization det(g) = 65/32, the unit in which an integer is read as a CP phase, the scale at which each comparison is made, and the absence of an assignment rule. And it writes a \textbf{decision rule} with no repair clause. The core is 33 relations with no continuously adjustable parameter. They are not 33 independent tests: three sectors are overdetermined, with relations that disagree as exact equalities (four on two lepton mass ratios, three on two CKM parameters, seven on two cosmological densities), and a complete audit of the dependencies among the 33 has not been done. Against the most recent data (PDG 2026, NuFIT 6.1, Planck 2018), with one convention for all uncertainties (1σ; correlations neglected, except in the Planck density ratios, computed on the published chains), 23 lie within two standard deviations of measurement; three are in tension (m\textsubscript{τ}/m\textsubscript{e}, m\textsubscript{W}/m\textsubscript{Z}, Ω\textsubscript{c}/Ω\textsubscript{m}, between 2σ and 3σ); five are excluded as exact equalities at more than 3σ and are retained as proximities (α⁻¹, sin²θ\textsubscript{W}, m\textsubscript{μ}/m\textsubscript{e}, m\textsubscript{μ}/m\textsubscript{τ}, and m\textsubscript{b}/m\textsubscript{t} in the mass scheme the paper declares); m\textsubscript{s}/m\textsubscript{d} lies inside the range the PDG gives, which carries no uncertainty; and sin²θ₂₃ sits in the second octant while the global fit prefers the first, inside its 3σ range. The remaining 62 entries of the dataset are conditional extractions and diagnostics, and are not counted as predictions. A look-elsewhere test in which every competing Betti pair and invented vocabulary searches for its own formulas finds that K₇ reaches 31 of the 33 targets and that a quarter of the alternative Betti pairs and half of the invented vocabularies reach as many, none more (§7.2), so closeness to the measured values is not, by itself, evidence for K₇; the coincidence-probability figures of earlier versions are withdrawn. One test awaits a dedicated experiment, the leptonic CP phase: the structure produces the integer 197, the dictionary reads it as the phase 2π·197/360, and a measurement that excludes 197° at 3σ rejects that prediction together with the assignment that produced it, without rejecting the other relations. Existence of a compact torsion-free G₂ metric with these Betti numbers is open (§9).
+
+\textbf{Keywords}: G₂ holonomy, exceptional Lie algebras, Standard Model parameters, selection problem, falsifiability, look-elsewhere effect, formal verification
+
+\newpage
+\setcounter{tocdepth}{1}
+\tableofcontents
+\newpage
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\textbf{Framework status at a glance (version 3.6).}
+
+\emph{Formerly presented as the Geometric Information Field Theory (GIFT), versions 1.0--3.4 of this record.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{What is proposed.} A correspondence between invariants of (K₇, E₈×E₈) and 33 dimensionless parameters, written in a declared dictionary (§3). It is a privileged candidate, chosen by the author, not a selection that the requirements force (§3.5).
+\item
+  \textbf{What is set rather than derived.} The residue register of §3.3: the Betti pair, det(g) = 65/32, κ\textsubscript{T}⁻¹ = 61, the unit of δ\textsubscript{CP}, the comparison scales, the formula assignments.
+\item
+  \textbf{What is established.} The arithmetic identities stated for the relations, machine-checked in Lean 4 (§8, S3.7); a Newton--Kantorovich-certified seam metric {[}A{]}. These verify the stated arithmetic and a local metric, not physical content; the relations, each correctly computed, are mutually incompatible in the overdetermined sectors (§4.2). No construction of a compact G₂ manifold with (21, 77) is currently known; the topological route of version 3.5 does not realise it (§2.3).
+\item
+  \textbf{What is open.} A compact torsion-free G₂ manifold realising K₇ (§9); a physical mechanism from the smooth K₇ to the chiral non-abelian Standard Model (§2.3); the selection of (21, 77) (§10); a rule that assigns formulas to observables (§3.2).
+\item
+  \textbf{What would refute it.} The 33 equalities taken jointly are already incompatible, so that exact system cannot be true (§4.2). Individual relations remain testable, each under the decision rule of §11. The wider exploratory programme has, at present, no single criterion of refutation.
+\end{itemize}
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{1. Introduction}\label{introduction}
+
+\subsection{1.1 The parameter problem and the selection problem}\label{the-parameter-problem-and-the-selection-problem}
+
+The Standard Model describes the known interactions with great precision, yet leaves about nineteen parameters to experiment \cite{1}: gauge couplings, Yukawa couplings spanning five orders of magnitude, mixing angles and phases, and the Higgs sector. It does not explain its gauge group or the number of generations, and it leaves open the hierarchy problem \cite{2} and the flavour puzzle \cite{5}; cosmology adds a persistent tension between early- and late-universe determinations of H₀ \cite{3,4}. General relativity does not derive the dimension of spacetime, and string theory has of the order of 10⁵⁰⁰ vacua with no internal criterion for electing one. The question \emph{why this structure rather than another?} is the shape that explanatory regress takes in fundamental physics, and every framework that proposes structure inherits it.
+
+Two questions are easily run together, and this paper keeps them apart.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Does a family of structures deserve to be explored?} A good answer points to requirements, motivated independently of one another and of the Standard Model's values, that the family might satisfy together.
+\item
+  \textbf{Why this precise structure, and these precise assignments, rather than their competitors?} A good answer shows that the requirements eliminate the competitors, or make their differences physically indiscernible.
+\end{enumerate}
+
+For K₇ the first question has a positive answer, given in §2: the octonions, G₂ holonomy and E₈ are structures whose interest owes nothing to the Standard Model's constants. The second question is \textbf{not} answered here. The pair (21, 77) is not derived (§10), and the formulas are assigned rather than forced (§3.2). Earlier versions of this record blurred the two questions, in particular by writing ``derive'' where the operation is an assignment. Version 3.6 separates them throughout.
+
+\subsection{1.2 What the paper is}\label{what-the-paper-is}
+
+The paper states a correspondence, gives the means to audit it, and says what would reject it. It has three parts.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The correspondence and its dictionary (§2--§4).} The mathematical inputs; the twenty structural constants and the grammar of formulas; the 33 Type I relations, each with its measured deviation and its status.
+\item
+  \textbf{The audit (§5--§10).} Consistency checks on the gauge and lepton sectors; the look-elsewhere test; the formal verification; the existence status of K₇; the selection audit of (21, 77).
+\item
+  \textbf{The rule (§11).} A decision rule written in advance, with no repair clause.
+\end{itemize}
+
+Throughout, the residue register of §3.3 is given the same rank as the results. A relation is only as rigid as the pair (structure, dictionary) that produces it: when the structure is rigid but the dictionary is free (which integer, which operation, which unit, which scale), the freedom driven out of continuous parameters returns through the discrete assignments. The register is where those assignments are written down.
+
+\subsection{1.3 Paper organization}\label{paper-organization}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{§2} Mathematical inputs: octonions, E₈×E₈, the topological type of K₇, and what the Betti numbers constrain.
+\item
+  \textbf{§3} The correspondence and its dictionary: structural constants, grammar, residue register, claims, and the status of a privileged candidate.
+\item
+  \textbf{§4} The 33 Type I relations, and the conditional status of Types II--IV.
+\item
+  \textbf{§5} Gauge sector: consistency checks on an assumed Standard-Model content.
+\item
+  \textbf{§6} Lepton masses: four incompatible relations, none selected, and the conditional mechanisms.
+\item
+  \textbf{§7} Look-elsewhere: the Sieve reading and the null in which competitors search for their own formulas.
+\item
+  \textbf{§8} Formal verification (method).
+\item
+  \textbf{§9} Existence status of the compact K₇.
+\item
+  \textbf{§10} Selection audit of (21, 77).
+\item
+  \textbf{§11} Decision rule and refutation.
+\item
+  \textbf{§12} Discussion and conclusion: where the necessity of K₇ ends.
+\end{itemize}
+
+Four supplements give technical details: S1 (mathematical foundations), S2 (the arithmetic of the 33 relations and the dictionary choices each makes), S3 (the 95-entry dataset, with a status column), S4 (Sieve and look-elsewhere diagnostics).
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{2. Mathematical Inputs}\label{mathematical-inputs}
+
+\subsection{2.1 The octonionic foundation}\label{the-octonionic-foundation}
+
+The real normed division algebras are ℝ, ℂ, ℍ and \ensuremath{\mathbb{O}}, of dimensions 1, 2, 4 and 8 (Hurwitz). The octonions are the last of the four and the only non-associative one. Their automorphism group G₂ = Aut(\ensuremath{\mathbb{O}}) has dimension 14 and acts on Im(\ensuremath{\mathbb{O}}) ≅ ℝ⁷. The exceptional Lie algebras are tied to the octonions through a chain established in the literature \cite{17}:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Algebra & Dimension & Connection to \ensuremath{\mathbb{O}} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+G₂ & 14 & Aut(\ensuremath{\mathbb{O}}) \\
+F₄ & 52 & Aut(J₃(\ensuremath{\mathbb{O}})) \\
+E₆ & 78 & Collineations of \ensuremath{\mathbb{O}}P² \\
+E₈ & 248 & Contains the lower exceptional algebras \\
+\end{longtable}
+
+Octonionic approaches to Standard-Model structure form an independent line of research \cite{7,8,10,37}. A G₂-holonomy seven-manifold is the geometric setting in which this algebra acts on tangent spaces, which is the reason for exploring it here; it is a motivation, not a derivation.
+
+The G₂ structure is encoded in the standard 3-form on ℝ⁷ (Bryant--Joyce convention): \[\varphi_0 = e_{012} + e_{034} + e_{056} + e_{135} - e_{146} - e_{236} - e_{245}.\] G₂ is the stabilizer of φ₀ in GL(7, ℝ), and its Lie algebra is the kernel of \(X \mapsto \mathcal{L}_X \varphi_0\) on \ensuremath{\mathfrak{g}}\ensuremath{\mathfrak{l}}(7), of dimension 49 − 35 = 14. This is formalized in Lean (\texttt{G2Three\allowbreak{}Form.\allowbreak{}lean}).
+
+\subsection{2.2 E₈×E₈ structure}\label{eux2088eux2088-structure}
+
+E₈ is the largest exceptional simple Lie algebra, of dimension 248 and rank 8 \cite{18}. The product E₈×E₈, of total dimension 496, is one of the two gauge groups of ten-dimensional heterotic string theory \cite{19}; in heterotic M-theory it appears on the two boundaries of an eleven-dimensional spacetime \cite{32}. The framework uses E₈×E₈ as a source of group-theoretic data. It does not specify a compactification of either string theory or M-theory that realises it.
+
+The Standard-Model gauge algebra sits inside one E₈ through a chain of subgroup branchings, \[E_8 \supset E_6 \times SU(3) \supset SO(10) \times U(1) \supset SU(5) \times U(1) \supset SU(3)_c \times SU(2)_L \times U(1)_Y,\] compatible with the Standard-Model representations. This is a chain of embeddings, not a breaking mechanism: an actual breaking would specify the mechanism (Wilson lines, a gauge bundle, a singular locus) responsible for each step, and none is specified here. The intermediate SU(5) × U(1) step is of Georgi--Glashow type, not Pati--Salam. The second E₈ is a hidden sector whose physical role is not committed to. That E₈ can accommodate three generations with grand-unified structure has been argued independently \cite{9}.
+
+\subsection{2.3 The K₇ manifold}\label{the-kux2087-manifold}
+
+The framework posits a compact, simply connected seven-manifold K₇ with holonomy G₂ and Betti numbers (b₂, b₃) = (21, 77). A compact Riemannian seven-manifold with holonomy G₂ is Ricci-flat, and its compactification of M-theory preserves N = 1 supersymmetry in four dimensions \cite{11}. Whether a compact manifold of this kind exists with these Betti numbers is open (§9); the relations of §4 use only the integers, never the metric.
+
+\textbf{What is known about the geometry.}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Topology.} Among the catalogued compact G₂ examples (Joyce's orbifold constructions \cite{20} and the twisted connected sums of Corti--Haskins--Nordström--Pacini \cite{21,22}), the pair (21, 77) does not appear (see \cite{12,14,15} for the construction literature and census), and orthogonal twisted connected sums are excluded by parity (b₂ + b₃ = 98 is even; \cite{22}, Lemma 6.7). Version 3.5 presented a Joyce--Karigiannis ℤ₂³ orbifold route \cite{43} as realising (21, 77) at the topological level. \textbf{The proposed construction does not currently realise (21, 77)}: its historical computation of the quotient cohomology, (b₂, b₃) = (0, 22), is incompatible with the stated group action, whose character on H²(K3) forces b₂ ≥ 5 and b₃ ≤ 16 for every compatible torus action; the stated involution profile also requires a K3 of Picard rank at least 17, not 1 (S1 §8.4; the lattice inputs of the route come from \cite{44,45,51}). This invalidates that route, not every possible construction of a compact G₂ manifold with Betti numbers (21, 77). No such construction is currently known.
+\item
+  \emph{A local metric.} An explicit approximate G₂ metric on a seam region, g = g\textsubscript{seam}(s) ⊕ g\textsubscript{T²} ⊕ g\textsubscript{K3}(y), with 169 Chebyshev--Cholesky parameters, carries a Newton--Kantorovich certificate (h = 8.95 × 10⁻⁹) for a nearby torsion-free metric within a ball δg/g ≤ 4.86 × 10⁻⁶ {[}A{]}. Its spectral analysis {[}B{]} gives no independent evidence for (b₂, b₃) = (21, 77): the multiplicities it reports are built from decompositions withdrawn in S1 §8.3 and §9.3. The certificate is local: it does not construct a compact K₇ (§9).
+\item
+  \emph{A neck ansatz and a conditional analytic scheme.} An explicit closed-form positive G₂ ansatz on a K3-coassociative neck is certified in {[}D{]}. The conditional analytic scheme of {[}E{]} for a K₇ → S³ construction with 77 branch components is computed at a datum \ensuremath{\mathcal{D}}₀ that is not realisable as posed (§9).
+\item
+  \emph{The K3 fibre.} No certified bound on a Ricci-flat metric of the K3 fibre is claimed; the closed-form bound stated in version 3.5 concerns an auxiliary quantity {[}ERR, §1{]}. An explicit K3 surface has a publicly certified holomorphic atlas, with no metric claim {[}K3A{]}.
+\end{itemize}
+
+\textbf{Metric normalization.} The framework imposes det(g) = 65/32 on the metric. This value is a target, not a consequence of the topology: it has suggestive expressions in the structural constants (§3.3), none of which is a derivation. Six of the 33 relations depend on it.
+
+\textbf{The physical gap.} In the standard M-theory dictionary, a compactification on a \emph{smooth} G₂ manifold yields b₂ abelian vector multiplets and no chiral fermions; non-abelian gauge symmetry and chirality require codimension-four and codimension-seven singularities \cite{25,11}. The framework does not supply such singularities, a heterotic gauge bundle, or a duality that would turn its dictionary into a physical mechanism. Its gauge-sector statements (§5) are therefore consistency checks on an assumed Standard-Model content, not a derivation of it.
+
+\subsection{2.4 What the Betti numbers constrain}\label{what-the-betti-numbers-constrain}
+
+\textbf{Capacities.} In M-theory on a smooth G₂ manifold, b₂ counts abelian vector multiplets and b₃ counts neutral chiral multiplets \cite{11}. The framework reads b₂ = 21 and b₃ = 77 as capacities of the gauge and matter sectors. The non-abelian Standard-Model gauge group does not come from these multiplets.
+
+\textbf{An integer identity.} The integers satisfy \[(\mathrm{rank}(E_8) + N) \cdot b_2 = N \cdot b_3 \quad\Longleftrightarrow\quad (8 + N) \cdot 21 = 77\,N \quad\Longleftrightarrow\quad N = 3.\] Earlier versions called this a derivation of the number of generations and attributed it to index theory. It is neither. It is an identity among integers, and no index theorem has been exhibited that produces it; N\textsubscript{gen} = 3 is a measured input that the identity reproduces. Equivalently, N\textsubscript{gen} = b₂ / dim(K₇) = 21/7. The identity is a consistency check of the declared integers against a known fact, and it is counted as such, not as a prediction.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{3. The Correspondence and Its Dictionary}\label{the-correspondence-and-its-dictionary}
+
+A relation of the framework has the form \emph{observable ≈ closed form in the structural constants}. Whether such a relation is evidence depends on three things that the formula alone does not show: where the constants come from, how much freedom there was in writing the formula, and how the formula was matched to the observable. This section states all three.
+
+\subsection{3.1 The structural constants}\label{the-structural-constants}
+
+All 33 relations are written in twenty structural constants. Seven are primitive; thirteen are derived from them, and the derivation is part of the dictionary. Small integer coefficients also occur, and they are choices of formula: the integer 1 (S2) and the coefficient 10 of m\textsubscript{τ}/m\textsubscript{e} (A06). At K₇, 10 equals p₂ · Weyl; that rewriting is not a derivation of the coefficient, and the formula is not stated that way.
+
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0833}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2778}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1944}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2222}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2222}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Constant
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Origin
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & dim(E₈) & 248 & Lie algebra & Lie datum \\
+2 & rank(E₈) & 8 & Cartan subalgebra & Lie datum \\
+3 & dim(G₂) & 14 & Aut(\ensuremath{\mathbb{O}}) & Lie datum \\
+4 & dim(K₇) & 7 & Im(\ensuremath{\mathbb{O}}) & topological \\
+5 & b₂(K₇) & 21 & posited (§10) & input \\
+6 & b₃(K₇) & 77 & posited (§10) & input \\
+7 & dim(J₃(\ensuremath{\mathbb{O}})) & 27 & exceptional Jordan algebra & Lie datum \\
+8 & N\textsubscript{gen} & 3 & b₂/dim(K₇); the integer identity of §2.4 & measured, reproduced \\
+9 & p₂ & 2 & dim(G₂)/dim(K₇) (``binary ratio''; not a Pontryagin class) & combination \\
+10 & Weyl & 5 & factor of \textbar W(E₈)\textbar{} & combination \\
+11 & H* & 99 & b₂ + b₃ + 1 & combination \\
+12 & dim(E₆) & 78 & Lie algebra & Lie datum \\
+13 & dim(E₇) & 133 & Lie algebra & Lie datum \\
+14 & dim(F₄) & 52 & Aut(J₃(\ensuremath{\mathbb{O}})) & Lie datum \\
+15 & fund(E₇) & 56 & fundamental representation & Lie datum \\
+16 & \textbar PSL(2,7)\textbar{} & 168 & automorphisms of the Fano plane & Lie datum \\
+17 & D\textsubscript{bulk} & 11 & 4 + 7 & combination \\
+18 & α\textsubscript{sum} & 13 & rank(E₈) + Weyl & combination \\
+19 & det\textsubscript{den} & 32 & b₂ + dim(G₂) − N\textsubscript{gen} & combination; enters det(g) \\
+20 & det\textsubscript{num} & 65 & p₂ · det\textsubscript{den} + 1 (also Weyl × α\textsubscript{sum}) & combination; enters det(g) \\
+\end{longtable}}
+
+Two further quantities appear in the relations: κ\textsubscript{T}⁻¹ = b₃ − dim(G₂) − p₂ = 61, an integer combination with no established physical meaning (version 3.5 presented it as a torsion scale; that reading is withdrawn), and the golden ratio φ = (1 + √5)/2, which enters one relation through the McKay correspondence E₈ ↔ 2I (S2.1, R9).
+
+The \emph{status} column distinguishes constants that come from the mathematics independently of this framework (Lie data, topological dimension), inputs posited by the framework (b₂, b₃), and \emph{combinations}: integers built from the others by the framework's own choices. A combination is not an independent datum: choosing to name 32 or 61 is part of the dictionary.
+
+\subsection{3.2 The grammar, and the absence of an assignment rule}\label{the-grammar-and-the-absence-of-an-assignment-rule}
+
+\textbf{The grammar.} Formulas are rational expressions in the structural constants, with a small set of additional operations: square roots, integer powers, the exponent φ, the logarithm ln 2 and ratios of zeta values. This grammar was frozen with the observable list in a public release {[}S-frozen{]} on 12 June 2026, \emph{after} the formulas of the framework had been found. Freezing after discovery does not remove the look-elsewhere effect; it only prevents it from growing. §7 measures it.
+
+\textbf{No assignment rule.} There is no rule, internal to the framework, that says which formula is assigned to which observable. Each of the 33 relations was found by searching for a closed form in the structural constants close to a measured value, and was then retained. Version 3.4 said so; version 3.5 replaced this admission with statements that the assignments follow from ``metric uniqueness'' and that the observables are ``functionals of the metric''. Those statements are withdrawn: the metric enters none of the formulas, and no map from the geometry to the observables is known. The formula assignments are therefore \textbf{assignments}, declared in the residue register, and the question of why (21, 77) (§10) is distinct from the question of why these formulas.
+
+Structural redundancy does not repair this. That sin²θ\textsubscript{W} = 3/13 can be written in fourteen ways, and Q = 2/3 in twenty, in the structural constants (S2.7) measures the \emph{size of the vocabulary}, not the absence of choice: a richer vocabulary reaches a given value by more routes. Earlier versions cited these counts as evidence against cherry-picking; they are evidence of the freedom §7 prices.
+
+\subsection{3.3 The residue register}\label{the-residue-register}
+
+The residue is the part of the framework not fixed by its requirements: what was set rather than derived. It is written here with the same prominence as the results, because it indicates where a further requirement would have to bite, or where the framework's necessity ends.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3095}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3571}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1905}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What is set
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Where it acts
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+R1 & (b₂, b₃) = (21, 77) & every relation & input; five derivation routes audited and closed, one open identity (§10) \\
+R2 & det(g) = 65/32 & λ\textsubscript{H}, α⁻¹, Ω\textsubscript{c}/Ω\textsubscript{Λ}, Ω\textsubscript{b}/Ω\textsubscript{m}, Ω\textsubscript{c}/Ω\textsubscript{m}, σ₈ & \textbf{imposed} normalization; not derived from the topology. Results are given with and without these six relations (§4.4). Like κ\textsubscript{T}⁻¹, it has a second expression, Weyl · α\textsubscript{sum}/2\textsuperscript{Weyl}, that agrees with p₂ + 1/(b₂ + dim G₂ − N\textsubscript{gen}) on the line b₂ = 21 and differs elsewhere; the one used is the latter (App. B) \\
+R3 & κ\textsubscript{T}⁻¹ = 61 = b₃ − dim(G₂) − p₂ & α⁻¹, Y\textsubscript{p}, Ω\textsubscript{m}/Ω\textsubscript{Λ} & integer combination without a physical name; it also has a second expression in the structural constants that agrees with the first on the whole line b₂ = 21 and differs elsewhere, and the one used is declared here \\
+R4 & the formula assigned to each observable & all 33 & no assignment rule (§3.2) \\
+R5 & the grammar and vocabulary & all 33 & frozen after discovery; priced in §7 \\
+R6 & the unit in which 197 is read & δ\textsubscript{CP} & \textbf{unit assignment}: the structure gives the integer 197; reading it in degrees makes the prediction the phase 2π·197/360, and the 360 does not come from the structure (§4.3) \\
+R7 & the comparison scale and mass scheme & sin²θ\textsubscript{W}, α\textsubscript{s} (at M\textsubscript{Z}); α⁻¹ (at q² = 0); m\textsubscript{b}/m\textsubscript{t} & declared; the relations are not claimed to hold at a common scale (§5). m\textsubscript{b}/m\textsubscript{t} compares m\textsubscript{b} in MS-bar at m\textsubscript{b} with the directly measured m\textsubscript{t}: a ratio of masses in two schemes, with no scheme-independent meaning (0.0243 in this reading, about 0.026 with both masses in MS-bar). The scheme is fixed here, and the relation is tested in it: at −10σ it is rejected as an exact equality (§11); reading it in another scheme afterwards would be a repair, which §11 excludes \\
+R8 & the choice among the lepton relations & m\textsubscript{μ}/m\textsubscript{e}, m\textsubscript{τ}/m\textsubscript{e}, Q\textsubscript{Koide}, m\textsubscript{μ}/m\textsubscript{τ} & four relations on two ratios, mutually incompatible; the framework selects none, and none is declared primary: a selection made after the values are known would be a dictionary choice, not a result (§6.1) \\
+R9 & the exponent φ & m\textsubscript{μ}/m\textsubscript{e} & enters through the McKay correspondence, an additional step not shared by the integer relations \\
+R10 & the unit of Type II entries & absolute masses (MeV) & dimensionful numbers read in a chosen unit; not claimed (§4.5) \\
+R11 & the choice among the cosmological density relations & Ω\textsubscript{DE}, Ω\textsubscript{DM}/Ω\textsubscript{b}, Ω\textsubscript{c}/Ω\textsubscript{Λ}, Ω\textsubscript{Λ}/Ω\textsubscript{m}, Ω\textsubscript{b}/Ω\textsubscript{m}, Ω\textsubscript{c}/Ω\textsubscript{m}, Ω\textsubscript{m}/Ω\textsubscript{Λ} & seven relations on two independent densities (neutrino density neglected; flat ΛCDM for those that involve Ω\textsubscript{Λ}), mutually incompatible as exact equalities; Ω\textsubscript{Λ}/Ω\textsubscript{m} and Ω\textsubscript{m}/Ω\textsubscript{Λ} are the same quantity with two formulas; none is selected (§4.2) \\
+R12 & the choice among the CKM relations & sin θ₁₂, A, sin θ₂₃ (CKM) & three relations on two Wolfenstein parameters (sin θ₂₃ = Aλ²), mutually incompatible as exact equalities (2.6\% apart); none is selected (§4.2) \\
+\end{longtable}
+
+\subsection{3.4 What is claimed, and what is not}\label{what-is-claimed-and-what-is-not}
+
+\textbf{Claimed.} Given the declared constants and the declared assignments, the 33 relations hold as algebraic identities (machine-checked, §8), and they lie at the deviations from measurement listed in §4, with the statuses listed there. The decision rule of §11 applies to them.
+
+\textbf{Not claimed.}
+
+\begin{itemize}
+\tightlist
+\item
+  That the relations are derived from the geometry of K₇. No map from the geometry to the observables is known.
+\item
+  That (21, 77), the formulas, or det(g) = 65/32 are forced by any requirement.
+\item
+  That the relations hold at a common energy scale.
+\item
+  That closeness to the measured values is, by itself, evidence for K₇. The look-elsewhere test of §7 shows that it is not.
+\item
+  That a compact torsion-free G₂ manifold with these Betti numbers has been constructed (§9).
+\item
+  That the Standard Model's chiral non-abelian content follows from the smooth K₇ (§2.3).
+\end{itemize}
+
+\subsection{3.5 Why state a correspondence that is not derived}\label{why-state-a-correspondence-that-is-not-derived}
+
+A correspondence that is not derived can still be worth stating, provided its status is stated with it. Three states are open to a programme that asks why a structure is the one realised:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Demonstrated uniqueness.} The requirements leave one object, or one class whose members are physically equivalent.
+\item
+  \textbf{Residual family.} The requirements leave several physically distinct candidates, and the programme says what would tell them apart.
+\item
+  \textbf{Privileged candidate.} The requirements leave a family, and the author designates a member for reasons that are the author's own and are declared as such.
+\end{enumerate}
+
+All three are legitimate. What is not legitimate is to present the third as the first. The three states, and the condition of independence stated below, are developed in a companion paper in the philosophy of science {[}WNE{]}, which also audits version 3.5 of this framework against them. K₇ is in the third state. The requirements that motivate it (G₂ holonomy, compactness, the E₈ data) are justified independently of the Standard Model's values, which answers the first question of §1.1. They do not select (21, 77), the formulas, or the normalization: these are where the author's choice enters, and the register of §3.3 records them.
+
+Two points follow, and they set the posture of the paper.
+
+\textbf{Independence must hold where the selection happens.} A requirement such as ``G₂ holonomy'' has independent warrant: Berger's classification, the octonions and M-theory give reasons to study it that owe nothing to particle physics. But a requirement of the form ``G₂ holonomy \emph{together with} this realisation and these assignments'' inherits the warrant of G₂ holonomy without that warrant reaching the realisation. Whatever selects (21, 77) and the formulas would need a justification of its own that does not run through the values it produces. None is available yet, and the paper does not pretend otherwise.
+
+\textbf{Rigidity exposes a framework; it does not certify it.} The 33 relations have no continuous parameter: an integer ratio cannot be nudged. That makes each relation refutable by a single measurement, provided its dictionary is fixed in advance, which is what §11 does. It does not make the framework true, and it does not show that the structure was earned rather than picked: an exceptional structure is rigid whether it was derived or chosen for the values it gives. Rigidity is used here as a criterion of exposure, not as a guide to truth.
+
+\textbf{Posture.} The framework is read as a structural proposal, in the moderate structural-realist sense of Worrall \cite{40} and Ladyman and Ross \cite{41}: structure is asked to carry predictive weight, with no further ontological commitment. Readings in which geometry and information are aspects of one configuration, in the spirit of Wheeler's ``it from bit'' \cite{39}, historically motivated the work; they are neither required nor supported by the relations. A short essay discusses this posture for a general audience {[}essay{]}.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{4. The 33 Relations}\label{the-33-relations}
+
+\textbf{Dataset.} Experimental values and uncertainties are those of the framework's observable dataset (S3): PDG 2026 for particle data, NuFIT 6.1 for neutrino mixing (normal ordering, with the tabulated Super-Kamiokande and IceCube atmospheric data), Planck 2018 for cosmology (TT,TE,EE+lowE+lensing, one column for all entries; Y\textsubscript{p} is the PDG's observational helium abundance), CODATA 2022 for α and m\textsubscript{μ}/m\textsubscript{e}. Mass ratios are computed from the published masses, with error propagation that neglects correlations (an approximation, not a bound: the summary tables do not publish the covariances, and their sign matters). The Planck density ratios are computed sample by sample on the published chains \cite{3}, which keeps their correlations (S3). All uncertainties are brought to 1σ: entries the PDG quotes at 90\% confidence (the quark masses and m\textsubscript{u}/m\textsubscript{d} of its summary tables) are divided by 1.645. For asymmetric uncertainties the pull uses the side facing the K₇ value. m\textsubscript{s}/m\textsubscript{d} is given by the PDG as a range (17--22), without an uncertainty; no pull is computed for it. Quark masses and their ratios are MS-bar values at the PDG reference scales; sin²θ\textsubscript{W} and α\textsubscript{s} are at M\textsubscript{Z} in MS-bar; α⁻¹ is the Thomson-limit value at q² = 0. Each comparison therefore carries a (scheme, scale, dataset) tag \cite{1,3,27,50}. The column \emph{pull} is (K₇ − measured)/σ\textsubscript{exp} with the experimental uncertainty alone: the framework supplies no theoretical uncertainty.
+
+\subsection{4.1 Table}\label{table}
+
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0517}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1207}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.2241}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1034}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1724}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1034}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0862}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1379}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Observable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Formula
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+K₇ value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Measured
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Dev.
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pull
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A01 & sin²θ\textsubscript{W} (M\textsubscript{Z}) & b₂/(b₃ + dim G₂) = 3/13 & 0.230769 & 0.23122(6) & −0.19\% & −7.5σ & integer; \textbf{proximity} \\
+A02 & α\textsubscript{s}(M\textsubscript{Z}) & √2/(dim G₂ − p₂) = √2/12 & 0.117851 & 0.1180(9) & −0.13\% & −0.2σ & algebraic \\
+A03 & λ\textsubscript{H} & √(dim G₂ + N\textsubscript{gen})/det\textsubscript{den} = √17/32 & 0.128847 & 0.12914(23) & −0.22\% & −1.3σ & algebraic; det(g) \\
+A04 & α⁻¹(0) & 128 + 9 + det(g)·κ\textsubscript{T} & 137.0333 & 137.035999177(21) & −0.0020\% & ≫ 10σ & det(g), κ\textsubscript{T}; \textbf{proximity} \\
+A05 & Q\textsubscript{Koide} & dim G₂/b₂ = 2/3 & 0.666667 & 0.6666645(51) & +0.0003\% & +0.4σ & integer; approximate (R8) \\
+A06 & m\textsubscript{τ}/m\textsubscript{e} & 7 + 10·248 + 10·99 = 3477 & 3477 & 3477.37(18) & −0.011\% & −2.1σ & integer; approximate (R8); \textbf{tension} \\
+A07 & m\textsubscript{μ}/m\textsubscript{e} & 27\textsuperscript{φ} & 207.012 & 206.7682827(46) & +0.12\% & ≫ 10σ & φ; approximate (R8); \textbf{proximity} \\
+A08 & m\textsubscript{s}/m\textsubscript{d} & p₂² × Weyl = 20 & 20 & 17--22 (range) & n/a & n/a & integer; inside the PDG range \\
+A09 & m\textsubscript{c}/m\textsubscript{s} & (dim E₈ − p₂)/b₂ = 246/21 & 11.714 & 11.769(35) & −0.46\% & −1.6σ & integer \\
+A10 & m\textsubscript{b}/m\textsubscript{t} & 1/(2b₂) = 1/42 & 0.023810 & 0.024253(43) & −1.83\% & −10.2σ & integer; \textbf{proximity} (in the scheme declared in R7) \\
+A11 & m\textsubscript{u}/m\textsubscript{d} & (1 + dim E₆)/\textbar PSL(2,7)\textbar{} = 79/168 & 0.470238 & 0.462(12) & +1.78\% & +0.7σ & integer \\
+A12 & sin²θ₁₂ (PMNS) & (1 + N\textsubscript{gen})/α\textsubscript{sum} = 4/13 & 0.307692 & 0.3088(+67/−66) & −0.36\% & −0.2σ & integer \\
+A13 & sin²θ₂₃ (PMNS) & (D\textsubscript{bulk} − Weyl)/D\textsubscript{bulk} = 6/11 & 0.545455 & 0.470(+17/−14) & +16.05\% & +4.4σ* & integer; \textbf{tension} (octant; inside the NuFIT 3σ range, §4.3) \\
+A14 & sin²θ₁₃ (PMNS) & D\textsubscript{bulk}/dim(E₈×E₈) = 11/496 & 0.022177 & 0.02248(+55/−59) & −1.35\% & −0.5σ & integer \\
+A15 & δ\textsubscript{CP} & dim K₇ · dim G₂ + H* = 197 & 197 → phase 2π·197/360 & 212 (+26/−36)° & −7.08\% & −0.4σ & \textbf{unit assignment} (R6) \\
+A16 & sin θ₁₂ (CKM) & fund(E₇)/dim E₈ = 56/248 & 0.225806 & 0.22517(68) & +0.28\% & +0.9σ & integer; approximate (R12) \\
+A17 & A (Wolfenstein) & (Weyl + dim E₆)/H* = 83/99 & 0.838384 & 0.826(+17/−15) & +1.50\% & +0.7σ & integer; approximate (R12) \\
+A18 & sin θ₂₃ (CKM) & dim K₇/\textbar PSL(2,7)\textbar{} = 7/168 & 0.041667 & 0.04189(+81/−69) & −0.53\% & −0.3σ & integer; approximate (R12) \\
+A19 & m\textsubscript{H}/m\textsubscript{t} & fund(E₇)/b₃ = 56/77 & 0.727273 & 0.7250(13) & +0.32\% & +1.8σ & integer \\
+A20 & m\textsubscript{H}/m\textsubscript{W} & (N\textsubscript{gen} + dim E₆)/dim F₄ = 81/52 & 1.557692 & 1.5571(14) & +0.040\% & +0.5σ & integer \\
+A21 & m\textsubscript{W}/m\textsubscript{Z} & (2b₂ − Weyl)/(2b₂) = 37/42 & 0.880952 & 0.88136(15) & −0.046\% & −2.7σ & integer; \textbf{tension} \\
+A22 & m\textsubscript{μ}/m\textsubscript{τ} & (b₂ − D\textsubscript{bulk})/\textbar PSL(2,7)\textbar{} = 10/168 & 0.059524 & 0.0594612(30) & +0.11\% & +20.8σ & integer; approximate (R8); \textbf{proximity} \\
+A23 & Ω\textsubscript{DE} & ln 2 · (b₂ + b₃)/H* & 0.686146 & 0.6847(73) & +0.21\% & +0.2σ & ln 2; approximate (R11) \\
+A24 & n\textsubscript{s} & ζ(11)/ζ(5) & 0.964864 & 0.9649(42) & −0.0037\% & 0.0σ & ζ values \\
+A25 & Ω\textsubscript{DM}/Ω\textsubscript{b} & (1 + 2b₂)/rank E₈ = 43/8 & 5.375 & 5.364(77) & +0.21\% & +0.1σ & integer; approximate (R11) \\
+A26 & Ω\textsubscript{c}/Ω\textsubscript{Λ} & det\textsubscript{num}/\textbar PSL(2,7)\textbar{} = 65/168 & 0.386905 & 0.387(14) & +0.10\% & 0.0σ & integer; det(g); approximate (R11) \\
+A27 & Ω\textsubscript{Λ}/Ω\textsubscript{m} & (dim G₂ + H*)/dim F₄ = 113/52 & 2.173077 & 2.173(74) & −0.017\% & 0.0σ & integer; approximate (R11) \\
+A28 & h & (\textbar PSL(2,7)\textbar{} − 1)/dim E₈ = 167/248 & 0.673387 & 0.6736(54) & −0.032\% & 0.0σ & integer \\
+A29 & Ω\textsubscript{b}/Ω\textsubscript{m} & Weyl/det\textsubscript{den} = 5/32 & 0.15625 & 0.1565(19) & −0.13\% & −0.1σ & integer; det(g); approximate (R11) \\
+A30 & Ω\textsubscript{c}/Ω\textsubscript{m} & (det\textsubscript{den} − Weyl)/det\textsubscript{den} = 27/32 & 0.84375 & 0.8390(19) & +0.56\% & +2.5σ & integer; det(g); approximate (R11); \textbf{tension} \\
+A31 & σ₈ & (p₂ + det\textsubscript{den})/(2b₂) = 34/42 & 0.809524 & 0.8111(60) & −0.19\% & −0.3σ & integer; det(g) \\
+A32 & Y\textsubscript{p} & (1 + dim G₂)/κ\textsubscript{T}⁻¹ = 15/61 & 0.245902 & 0.245(3) & +0.37\% & +0.3σ & integer; κ\textsubscript{T} \\
+A33 & Ω\textsubscript{m}/Ω\textsubscript{Λ} & (1 + dim J₃(\ensuremath{\mathbb{O}}))/κ\textsubscript{T}⁻¹ = 28/61 & 0.459016 & 0.461(16) & −0.35\% & −0.1σ & integer; κ\textsubscript{T}; approximate (R11) \\
+\end{longtable}}
+
+\emph{Status vocabulary.} \textbf{integer}: a ratio of structural integers. \textbf{algebraic / φ / ln 2 / ζ values}: the formula uses the corresponding additional operation. \textbf{det(g)}, \textbf{κ\textsubscript{T}}: the formula uses the imposed normalization (R2) or the unnamed combination (R3). \textbf{pull}: a descriptive deviation, (K₇ − measured)/σ. \textbf{tension}: 2 \textless{} \textbar pull\textbar{} ≤ 3, or a deviation whose reading is itself ambiguous (θ₂₃, §4.3). \textbf{proximity}: \textbar pull\textbar{} \textgreater{} 3; the relation is excluded as an exact equality at 3σ and retained as a numerical proximity. Rejection of a relation is decided by the rule of §11, which uses 3σ. \textbf{inside the PDG range}: the reference is a range without an uncertainty; no pull is defined. \textbf{approximate}: one of several mutually incompatible relations in an overdetermined sector, none of which is selected (leptons, R8, §6.1; CKM, R12, and cosmological densities, R11, §4.2). \textbf{unit assignment}: the prediction depends on a unit chosen by the dictionary. For m\textsubscript{b}/m\textsubscript{t} the comparison is made in the mass scheme declared in R7. * the Δχ² profile is not Gaussian (§4.3), so the Gaussian pull overstates the tension.
+
+The arithmetic of each relation and the dictionary choices it makes are in S2; the reference data are in S3.
+
+\subsection{4.2 What the table shows}\label{what-the-table-shows}
+
+\textbf{The breakdown of the 33.} With one convention for all uncertainties (1σ; correlations neglected, except in the Planck density ratios; §4 dataset note), the 33 relations fall into five classes, which are not added into a single score:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4400}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Count
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relations
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+within 2σ & 23 & the remaining relations \\
+tension (2σ \textless{} \textbar pull\textbar{} ≤ 3σ) & 3 & m\textsubscript{τ}/m\textsubscript{e} (−2.1σ), m\textsubscript{W}/m\textsubscript{Z} (−2.7σ), Ω\textsubscript{c}/Ω\textsubscript{m} (+2.5σ) \\
+proximity (\textbar pull\textbar{} \textgreater{} 3σ) & 5 & α⁻¹, sin²θ\textsubscript{W} (−7.5σ), m\textsubscript{μ}/m\textsubscript{e}, m\textsubscript{μ}/m\textsubscript{τ} (+20.8σ), m\textsubscript{b}/m\textsubscript{t} (−10.2σ, scheme of R7) \\
+inside the PDG range (no uncertainty) & 1 & m\textsubscript{s}/m\textsubscript{d} \\
+non-Gaussian profile & 1 & sin²θ₂₃ (§4.3) \\
+\end{longtable}
+
+The counts are generated from the dataset (\texttt{k7\_\allowbreak{}v3\_\allowbreak{}6\_\allowbreak{}table\_\allowbreak{}sec4.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}counts}).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Proximities and tensions.} Four proximities compare with quantities measured to between 10⁻¹⁰ and a few 10⁻⁴, and their deviations (0.002\%, 0.19\%, 0.12\%, 0.11\%) are many times the experimental uncertainty; the fifth, m\textsubscript{b}/m\textsubscript{t}, lies 1.8\% (−10σ) from the ratio in the mass scheme declared in R7. Under the general rule G of §11, all five are rejected as exact equalities and kept only as numerical proximities; the paper does not claim more for them, and m\textsubscript{b}/m\textsubscript{t} is not rescued by reading it in another scheme. m\textsubscript{τ}/m\textsubscript{e}, m\textsubscript{W}/m\textsubscript{Z} and Ω\textsubscript{c}/Ω\textsubscript{m} lie between 2σ and 3σ: they are in tension, not rejected. sin²θ₂₃ is discussed in §4.3.
+\item
+  \textbf{The 33 relations are not 33 independent tests.} Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities. The four lepton relations bear on two mass ratios (§6.1, R8). The three CKM relations bear on two Wolfenstein parameters, since sin θ₂₃ = Aλ²: with λ = 7/31 and A = 83/99, Aλ² = 4067/95139 = 0.042748, while the relation for sin θ₂₃ gives 1/24 = 0.041667, 2.6\% apart (R12). The seven density relations bear on two independent densities, since in flat ΛCDM Ω\textsubscript{b} + Ω\textsubscript{c} + Ω\textsubscript{Λ} = 1 when the neutrino density (Ω\textsubscript{ν} h² ≈ 0.0006 in the Planck base model) is neglected (R11); Ω\textsubscript{Λ}/Ω\textsubscript{m} is 113/52 = 2.1731 by A27, 61/28 = 2.1786 by the inverse of A33 (the same quantity, written with another formula), and 2.1862 from Ω\textsubscript{DE} with flatness; Ω\textsubscript{c}/Ω\textsubscript{b} is 43/8 = 5.375 by A25 and 27/5 = 5.400 from A30/A29; Ω\textsubscript{c}/Ω\textsubscript{Λ} is 65/168 = 0.3869 by A26 and 0.3873 from A30 × A33. In the CKM and density sectors the disagreements lie mostly below the experimental uncertainties, which is why most of those relations pass individually. The relations of a sector cannot all hold together; some are redundant and some subsets are compatible (for the densities, A29 and A30 are equivalent when neutrinos are neglected, with or without flatness, and the largest compatible subsets have three relations: A29, A30 and one of A23, A26, A27, A33). None is selected, for the reason given for the leptons. Other dependencies are possible (sin²θ\textsubscript{W} in MS-bar and m\textsubscript{W}/m\textsubscript{Z} are related in the Standard Model through radiative corrections) and a complete audit of the dependencies among the 33 has not been done, so no count of independent quantities is given.
+\item
+  \textbf{Ω\textsubscript{c}/Ω\textsubscript{m} and the definition of Ω\textsubscript{m}.} Planck's Ω\textsubscript{m} includes neutrinos (Ω\textsubscript{ν}/Ω\textsubscript{m} = 0.0045 at Σm\textsubscript{ν} = 0.06 eV), so that Ω\textsubscript{b}/Ω\textsubscript{m} + Ω\textsubscript{c}/Ω\textsubscript{m} = 0.9955, while 5/32 + 27/32 = 1. The two formulas are therefore not compatible with that definition of total matter, whatever the measurement. With Ω\textsubscript{b} + Ω\textsubscript{c} in the denominator the pull of A30 would be +0.5σ; that is a different quantity, given for information. The class above uses the quantity as Planck defines it.
+\item
+  \textbf{Most of the 23 are tested only weakly.} For quark mass ratios, mixing parameters and cosmological ratios, the experimental uncertainties are at the percent level, and a percent-level agreement is what a rich vocabulary reaches easily (§7).
+\end{itemize}
+
+Earlier versions summarised this table as ``33 predictions with mean deviation 0.73\%''. That summary is withdrawn: the mean was computed against an earlier dataset, it hid the relations outside 2σ, and a mean deviation measures closeness, which §7 shows is not distinctive.
+
+\subsection{4.3 The neutrino sector: θ₂₃ and the CP phase}\label{the-neutrino-sector-ux3b8ux2082ux2083-and-the-cp-phase}
+
+\textbf{sin²θ₂₃ = 6/11 = 0.545.} NuFIT 6.1 (normal ordering, with atmospheric data) prefers the first octant, sin²θ₂₃ = 0.470 (+0.017/−0.014); a Gaussian reading of these errors would put 6/11 about 4σ away. The Δχ² profile is not Gaussian, however: the fit keeps a second-octant branch, and its 3σ range, 41.27° \textless{} θ₂₃ \textless{} 49.86° (0.435 \textless{} sin²θ₂₃ \textless{} 0.584), contains 6/11. The relation is therefore in tension with the preferred octant, and the tension depends on an ambiguity the experiments have not resolved. This is stated here as it stands; it is also the largest source of uncertainty in the Jarlskog invariant below.
+
+\textbf{The CP phase.} The structure produces an integer: \[\dim(K_7) \cdot \dim(G_2) + H^* = 7 \cdot 14 + 99 = 197.\] To compare an integer with a phase, the dictionary must say in which unit it is read. Versions up to 3.5 read 197 as degrees without saying that this was a choice. Read in degrees, the prediction is the phase \[e^{i\delta_{CP}}, \qquad \delta_{CP} = 2\pi \cdot \frac{197}{360},\] and the number 360 enters the prediction without coming from the structure. Read in radians, turns or grads, the same integer gives different phases. Version 3.6 therefore states the prediction as the phase above, records the unit as a dictionary assignment in the residue register (R6), and counts the choice of unit in the look-elsewhere test (§7). A confirmation would show that this assignment agrees with the world, not that the structure requires it.
+
+\textbf{The Jarlskog invariant as a derived observable.} The three PMNS relations are ratios with no convention in them: sin²θ₁₂ = 4/13, sin²θ₂₃ = 6/11, sin²θ₁₃ = 11/496. They give \[J_{\max} = s_{12}c_{12}s_{23}c_{23}s_{13}c_{13}^2 = 0.0335,\] against 0.0338 at the NuFIT 6.1 central values (0.3088, 0.470, 0.02248). The invariant J = J\textsubscript{max} · sin δ\textsubscript{CP} inherits the unit assignment through sin δ: with δ read in degrees, sin δ = −0.292 and J = −0.0098; in radians, J = +0.0266; in grads, J = +0.0016. J does not remove the assignment; it hides it. It is reported as a derived observable, with its angular part free of convention and its phase part conditional on R6.
+
+\textbf{Experimental status.} NuFIT 6.1 (normal ordering, with atmospheric data) gives δ\textsubscript{CP} = 212 (+26/−36)°, with a 3σ range of 125° to 365°; the reading-in-degrees prediction lies inside the 1σ band. NuFIT 6.0 gave 177 ± 20°, and NuFIT 5.2 about 197°. The central value has moved by tens of degrees between releases, driven mainly by the joint T2K--NOvA analysis \cite{26}, and the experimental uncertainty (several tens of degrees) remains large. The decision rule is in §11.
+
+\subsection{4.4 Results with and without the imposed normalization}\label{results-with-and-without-the-imposed-normalization}
+
+Six relations use det(g) = 65/32 (R2): λ\textsubscript{H}, α⁻¹, Ω\textsubscript{c}/Ω\textsubscript{Λ}, Ω\textsubscript{b}/Ω\textsubscript{m}, Ω\textsubscript{c}/Ω\textsubscript{m}, σ₈. Three use κ\textsubscript{T}⁻¹ = 61 (R3): α⁻¹, Y\textsubscript{p}, Ω\textsubscript{m}/Ω\textsubscript{Λ}. Without the six det(g) relations, 27 remain, of which 19 lie within 2σ; without the eight relations that use R2 or R3, 25 remain, of which 17 lie within 2σ. Of the relations outside the within-2σ class, only α⁻¹ and Ω\textsubscript{c}/Ω\textsubscript{m} use R2 or R3. A reader who regards the imposed normalization as an extra parameter should read the framework through the reduced counts.
+
+\subsection{4.5 Types II, III and IV: conditional extractions, not predictions}\label{types-ii-iii-and-iv-conditional-extractions-not-predictions}
+
+The dataset of S3 contains 62 further entries. Version 3.6 does not count them as predictions.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Type II (19 entries)} are dimensionful or composite quantities: absolute quark masses, the electroweak scale and boson masses, CKM magnitudes, and further quark-mass ratios. Several are numbers read in a chosen unit (for example m\textsubscript{u} = √(dim G₂/3) = 2.16 read in MeV, or m\textsubscript{t} = 415² read in MeV); reading a structural number in MeV is a unit assignment of the same kind as reading 197 in degrees, with a far larger space of alternatives (R10). Others are legacy values whose derivation is not documented in the current dataset (B10--B15, B18, B19); they are retained for traceability, not counted as predictions. Earlier versions described all nineteen as ``a Type I ratio times an experimental anchor''; that description does not match the dataset and is withdrawn.
+\item
+  \textbf{Type III (21 entries)} are outputs of mechanisms (Wilson-line eigenvalue splitting, associative-cycle volumes, spectral counts, gauge-bundle conditioning) that consume declared calibration choices (§6.2). They are conditional reconstructions. The four entries of the two-loop supersymmetric running from a grand-unification boundary condition are withdrawn with that reading (§5).
+\item
+  \textbf{Type IV (22 entries)} are structural diagnostics of the construction (Betti numbers, certificates, conditioning numbers) with no experimental counterpart. They are not observables. Three of them are taken from the black-hole-remnant analysis of \cite{42}; one of these depends on the scale identification τ₀ = v\textsubscript{EW}.
+\end{itemize}
+
+The count ``95 observables'' of earlier versions is therefore replaced by: \textbf{33 relations} in the five classes of §4.2, not all independent; and 62 conditional or diagnostic entries, kept in S3 for traceability.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{5. Gauge Sector: Consistency Checks on an Assumed Standard-Model Content}\label{gauge-sector-consistency-checks-on-an-assumed-standard-model-content}
+
+This section does not derive the Standard Model's gauge sector. As §2.3 states, the smooth K₇ supplies no mechanism for non-abelian gauge symmetry or chirality. What the section does is check that the declared integers are compatible with the Standard-Model content when that content is assumed.
+
+\subsection{5.1 Branching chain and generations}\label{branching-chain-and-generations}
+
+The adjoint of E₈ decomposes under E₆ × SU(3) as \[248 = (78, 1) + (1, 8) + (27, 3) + (\overline{27}, \overline{3}),\] with 78 + 8 + 81 + 81 = 248. The (27, 3) term carries three copies of the E₆ representation 27, which contains one Standard-Model generation. The factor 3 is the dimension of the fundamental of the SU(3) commutant; matching it to the three observed generations is a consistency check, as is the integer identity of §2.4. Neither is a derivation of N\textsubscript{gen}.
+
+The framework posits π₁(K₇) = \{1\} (b₁ = 0 constrains only the abelianisation). Wilson-line breaking through π₁ is therefore unavailable, and no other breaking mechanism is specified at the level of this paper (§6.2 records a ℤ₃ lattice action on the K3 fibre used by the lepton mechanisms).
+
+\subsection{5.2 Anomalies}\label{anomalies}
+
+The six gauge anomalies of one Standard-Model generation vanish (SU(3)³, SU(2)³, U(1)³, mixed gravitational--U(1), SU(3)²--U(1), SU(2)²--U(1)). This is a property of the Standard-Model representations, which the framework assumes; it is reproduced in Lean (\texttt{TCSGauge\allowbreak{}Breaking.\allowbreak{}lean}) as a check, not claimed as a prediction. The Euler characteristic χ(K₇) = 0 holds for any compact odd-dimensional manifold.
+
+\subsection{5.3 Scales}\label{scales}
+
+The three gauge-sector relations are read at the scales of their comparison data, declared in R7:
+
+\begin{itemize}
+\tightlist
+\item
+  sin²θ\textsubscript{W} = 3/13 and α\textsubscript{s} = √2/12 are compared with MS-bar values \textbf{at M\textsubscript{Z}};
+\item
+  α⁻¹ = 137.033 is compared with the Thomson-limit value \textbf{at q² = 0}.
+\end{itemize}
+
+The framework does not claim a triplet of couplings at a common scale. Version 3.5 also read sin²θ\textsubscript{W} = 3/13 as a grand-unification boundary condition and ran it to M\textsubscript{Z} with two-loop supersymmetric renormalization-group equations; the same value was thus labelled at M\textsubscript{Z} in the relation and at M\textsubscript{GUT} in its proof. That reading is withdrawn in version 3.6, together with the running chain, its threshold treatment and the supersymmetric spectrum computed from it (including the argument that a pure-Bino lightest neutralino escapes the LEP chargino bound \cite{46}).
+
+\subsection{5.4 An algebraic identity among the framework's couplings}\label{an-algebraic-identity-among-the-frameworks-couplings}
+
+The two relations sin²θ\textsubscript{W} = 3/13 and α\textsubscript{s} = √2/12, combined with the one-loop beta-function coefficients of the minimal supersymmetric Standard Model, (b₁, b₂, b₃) = (33/5, 1, −3), satisfy the following identity. With the GUT normalization factor 5/3 for hypercharge, sin²θ\textsubscript{W} = 3/13 gives α₁⁻¹ = 2α₂⁻¹. The ratio \[B = \frac{\alpha_1^{-1} - \alpha_2^{-1}}{\alpha_2^{-1} - \alpha_3^{-1}}\] equals the MSSM value (b₁ − b₂)/(b₂ − b₃) = 7/5 if and only if \[\alpha_{\rm em}^{-1} = (b_3 + \dim G_2)\sqrt{2} = 91\sqrt{2} = 128.69,\] and the three inverse couplings are then 42√2, 21√2 and 6√2, in the ratio dim(G₂) : dim(K₇) : p₂ = 14 : 7 : 2.
+
+This is an algebraic identity among the framework's own values. It is \textbf{not} a statement about the measured couplings at any scale: the value 128.69 is neither the measured α⁻¹(M\textsubscript{Z}) ≈ 127.9 nor the low-energy 137.036, and version 3.5's description of it as holding ``at M\textsubscript{Z}'' or at an ``exact scale'' is withdrawn. Whether the identity has physical content would require the running that §5.3 removes.
+
+\subsection{5.5 Gauge-kinetic diagnostics}\label{gauge-kinetic-diagnostics}
+
+Numerical diagnostics of the certified seam metric (eigenvalues of the gauge-kinetic matrix on the 22 harmonic 2-forms of the K3 fibre, conditioning of Gram matrices) are Type III and IV entries of the dataset (S3). They describe the approximate metric; they are not observables.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{6. Lepton Masses}\label{lepton-masses}
+
+\subsection{6.1 Four relations on two ratios}\label{four-relations-on-two-ratios}
+
+The charged-lepton sector has two independent mass ratios. The framework assigns four relations to them:
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Relation & K₇ value & Measured & Deviation \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+m\textsubscript{μ}/m\textsubscript{e} = 27\textsuperscript{φ} & 207.012 & 206.7682827(46) & +0.118\% (≫ 10σ) \\
+m\textsubscript{τ}/m\textsubscript{e} = 3477 & 3477 & 3477.37(18) & −0.011\% (−2.1σ) \\
+Q\textsubscript{Koide} = 2/3 & 0.666667 & 0.6666645(51) & +0.0003\% (+0.4σ) \\
+m\textsubscript{μ}/m\textsubscript{τ} = 10/168 & 0.059524 & 0.0594612(30) & +0.11\% (+20.8σ) \\
+\end{longtable}
+
+Any two of them fix the third and the fourth, and the four are mutually incompatible (the Koide relation itself dates from 1982 \cite{6}): with m\textsubscript{μ}/m\textsubscript{e} = 27\textsuperscript{φ} and m\textsubscript{τ}/m\textsubscript{e} = 3477, the Koide parameter is Q = 0.666546, not 2/3; with 27\textsuperscript{φ} and Q = 2/3, m\textsubscript{τ}/m\textsubscript{e} is not 3477. An overdetermined sector whose relations disagree cannot have all of them as exact equalities.
+
+\textbf{No primary relation (R8).} Version 3.6 declares none of the four primary. Nothing in the framework's requirements selects one, and selecting one after the values are known would be a choice of dictionary, of the kind §3.3 registers, not a result. The four are therefore stated as approximate relations, each with its deviation above. Two of them are proximities in the sense of §4.2: m\textsubscript{μ}/m\textsubscript{e} is measured to about 10⁻⁸ and 27\textsuperscript{φ} lies 0.12\% away; 10/168 lies 21σ from m\textsubscript{μ}/m\textsubscript{τ}. 3477 lies 2.1σ from m\textsubscript{τ}/m\textsubscript{e}, a tension. 27\textsuperscript{φ} is also the most expensive of the four, since φ enters only through the McKay correspondence (R9), an additional step that the integer relations do not need.
+
+The lepton sector therefore supplies no relation specific to K₇ that agrees with measurement at its precision. The relation closest to measurement, Q\textsubscript{Koide} = 2/3, predates the framework \cite{6}, and its value is reached by every invented vocabulary (§7). This changes the reading of the Sieve analysis: Koide's Q = 2/3 was presented there as a ``survivor''; in version 3.6 it is an approximate relation, isolated in the fixed vocabulary but with a value (2/3) that every invented vocabulary reaches.
+
+\textbf{The τ mass as a discriminator.} The relations predict different τ masses from the measured m\textsubscript{e} and m\textsubscript{μ}: m\textsubscript{τ} = 3477 m\textsubscript{e} = 1776.74 MeV, and Koide's relation gives 1776.97 MeV. The world average m\textsubscript{τ} = 1776.93 ± 0.09 MeV \cite{1} lies 2.1σ from the first; Belle II's measurement, 1777.09 ± 0.08 ± 0.11 MeV \cite{52}, lies further. Future τ-mass measurements discriminate between m\textsubscript{τ}/m\textsubscript{e} = 3477 and Q\textsubscript{Koide} = 2/3 under rule D3 (§11). No τ-mass measurement bears on 27\textsuperscript{φ}, whose test is the measurement of m\textsubscript{μ}/m\textsubscript{e} already in hand.
+
+\subsection{6.2 Mechanisms (Type III, conditional)}\label{mechanisms-type-iii-conditional}
+
+Two mechanisms on the approximate seam metric reproduce the hierarchy at the percent level: an eigenvalue splitting of a non-adiabatic Wilson-line operator on the K3 fibre, and the exponential of differences of associative 3-cycle volumes \cite{23}. Both consume declared calibration choices: a coupling c = 0.452 and three positions for the first, and an assignment of the three generations to three of the six self-dual cycles among the 57 associative cycles, selected by minimising the deviation from the measured ratios, for the second. Their combination, normalised by α = e\textsuperscript{K} computed from the Kähler potential of the approximate metric, gives m\textsubscript{τ}/m\textsubscript{e} = 3485, m\textsubscript{τ}/m\textsubscript{μ} = 16.69, m\textsubscript{μ}/m\textsubscript{e} = 208.8, within 1\% of measurement.
+
+Because the calibration choices are selected against the measured ratios, these are conditional reconstructions, not predictions; they are Type III entries (§4.5), with their calibration choices listed in S3. The SVD of the fibre Wilson-line operator has numerical rank 2; the count of three generations does not come from it.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{7. Look-Elsewhere}\label{look-elsewhere}
+
+A framework that matches 33 measured values with closed forms in a vocabulary of twenty constants must answer a prior question: how often would the same grammar, with a different vocabulary, have matched them just as well? This section reports two answers. Neither supports the claim, made in earlier versions, that the agreements are statistically exceptional.
+
+\subsection{7.1 The Sieve reading}\label{the-sieve-reading}
+
+The Sieve {[}M{]} is a public battery of four nulls with a frozen observable list and grammar {[}S-frozen{]}: N1 asks whether a relation is isolated in the fixed vocabulary; N2 prices the freedom to have chosen the vocabulary, by comparing with budget-matched invented vocabularies; N3 and N4 shuffle coefficients and targets. Its published scorecard for the K₇ relations {[}M, §4.3{]} reads:
+
+\begin{itemize}
+\tightlist
+\item
+  Two relations, n\textsubscript{s} and m\textsubscript{H}/m\textsubscript{W}, survive N1 on all three of its axes.
+\item
+  \textbf{Neither clears N2}: once the freedom to choose the vocabulary is priced, a budget-matched invented vocabulary matches them as well (for m\textsubscript{H}/m\textsubscript{W}, 22 of 24 invented vocabularies do).
+\item
+  Q\textsubscript{Koide} is isolated in the fixed vocabulary, but its value 2/3 is reached by every vocabulary; it is a tie, not a survivor.
+\item
+  Across the nine shallow relations tested by N2, the invented-vocabulary envelope is beaten 0 times out of 9.
+\end{itemize}
+
+Version 3.5 described m\textsubscript{H}/m\textsubscript{W} as ``the unique survivor'' and m\textsubscript{H}/m\textsubscript{W} and Koide as ``sieve-distinguished survivors''. Those descriptions omitted the N2 result of the same scorecard and are withdrawn. What N2 cannot price is where the vocabulary comes from: the K₇ constants are E₈ dimensions and ranks and the Betti numbers, not an invented list. That is a fact about the origin of the constants, not evidence that they were selected before the data were known: the grammar and the observable list were frozen after the formulas had been found (§3.2), and §10 has not justified the Betti pair at the selecting step.
+
+\subsection{7.2 A null in which every competitor searches for its own formulas}\label{a-null-in-which-every-competitor-searches-for-its-own-formulas}
+
+Version 3.5 reported that, among 192 349 alternative configurations, none outperformed the framework (P \textless{} 5 × 10⁻⁶). That figure came from a Monte Carlo in which the alternatives were scored with K₇'s own formulas; it did not let them search. It is withdrawn, together with the coincidence-probability exponents of version 3.4 (10⁻³⁴⁶, 10⁻¹³³), which no longer appear in the main text.
+
+In its place, version 3.6 reports a preregistered look-elsewhere test (S4) in which each competitor searches for its own formulas in the same grammar, with the same budget (at most five nodes per expression) and the same windows (2σ on each side of the measured value, asymmetric uncertainties kept asymmetric; for m\textsubscript{s}/m\textsubscript{d}, the range the PDG gives, which carries no uncertainty). Two families of competitors were used: 4 159 alternative Betti pairs, with H*, κ\textsubscript{T}⁻¹ and det(g) re-derived for each and the other constants held at K₇'s values (N\textsubscript{gen} = 3 included, although §3.1 writes N\textsubscript{gen} = b₂/dim K₇); and 2 000 invented vocabularies from the Sieve. The alphabet tested is not literally the register of §3.1: it is the nineteen integers of the version 3.5 Monte Carlo register, in which dim E₇ = 133 and α\textsubscript{sum} = 13 are absent and κ\textsubscript{T}⁻¹ = 61 is present (S4.2.1). At a fixed budget this matters, since 13 then costs two leaves (8 + 5). A test on the literal register of §3.1 would be a separate computation.
+
+On the current dataset (§4, S3):
+
+\begin{itemize}
+\tightlist
+\item
+  K₇ reaches 31 of the 33 targets. The two targets reached by no vocabulary at this budget are α⁻¹ and m\textsubscript{μ}/m\textsubscript{e}, both retained as proximities in §4. Of the 31 targets K₇ reaches, 30 are reached by every competitor; the 31st, m\textsubscript{τ}/m\textsubscript{e}, alone separates the vocabularies. A witness with no constant of K₇ reaches 30 of the 33 with the universal leaves of the grammar alone, all but α⁻¹, m\textsubscript{τ}/m\textsubscript{e} and m\textsubscript{μ}/m\textsubscript{e}: the score has little discriminating power in this protocol, and it must be kept apart from the published formulas, of which 24 lie inside their windows (the 23 within 2σ of §4, and m\textsubscript{s}/m\textsubscript{d} inside its PDG range). Ω\textsubscript{c}/Ω\textsubscript{m} is counted as reached although its published value 27/32 lies outside its window: another expression falls inside it, as it does for every competitor.
+\item
+  \textbf{1 085 of the 4 159 alternative Betti pairs reach as many} (P = 0.26, with P = (1 + n)/(1 + N)); \textbf{1 015 of the 2 000 invented vocabularies reach as many} (P = 0.51). No competitor reaches more than 31.
+\item
+  K₇ is not cheaper either: its description cost (408.1 bits) lies inside the range of the competitors (389.2 to 418.7 bits for the Betti pairs, 385.0 to 430.4 for the vocabularies); 1 163 of the Betti pairs and 698 of the vocabularies cost at most as much.
+\end{itemize}
+
+The preregistered verdict takes the larger of the two family values, P\textsubscript{global} = 0.51, against a threshold of 0.01: the look-elsewhere effect is not overcome (LEE-RETRAIT). On the dataset of version 3.5, with windows on one side only, the same test had found K₇ at 32 of 33 and every alternative Betti pair at as many (run of 2026-10-17); the refreshed data and the two-sided windows change the counts, not the verdict. With the same grammar, a five-node budget and 2σ windows, the top score therefore does not distinguish K₇ within these reference classes. These counts are descriptive. They are an observed absence of discrimination in these families and windows, not a measurement of statistical power; P\textsubscript{global} = 0.51 is not a probability that K₇ is right or wrong, and the counts are not a physical refutation of K₇. They say that closeness to the measured values is not, by itself, evidence. Not tested: changes of gauge group or holonomy beyond the Betti numbers, observables built from the CP phase other than δ\textsubscript{CP} itself (such as J; the test does include the four units in which the integer 197 can be read: degrees, radians, grads, turns), and budgets beyond five nodes; these freedoms belong to the residue register (R4, R5, R6).
+
+\subsection{7.3 What remains}\label{what-remains}
+
+Two things survive the look-elsewhere tests, and the paper rests on them rather than on closeness:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Rigidity under a fixed dictionary.} Each relation has no continuous parameter. With the dictionary fixed in advance, a single measurement can reject it (§11).
+\item
+  \textbf{The declared residue.} What was set is written down (§3.3), so that a reader can see where the framework's necessity ends.
+\end{enumerate}
+
+The origin of the vocabulary (E₈, G₂ and the Betti numbers rather than an invented list) is not on this list. No null of the kind above can price it, but it does not show a selection made before the data were known: the grammar was frozen after the formulas had been found (§3.2), and the selecting step is what §10 has not justified.
+
+The descriptive diagnostics of earlier versions (a random-forest regression of deviation on formula complexity, the singular values of the constant-usage matrix, the ``overdetermination ratio'' of 2.13, correlation networks) are kept in S4. They describe the formula set; they are not evidence against cherry-picking, and are no longer presented as such.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{8. Formal Verification}\label{formal-verification}
+
+The arithmetic of the framework is formalized in Lean 4 \cite{28} with Mathlib \cite{29} (code: Arithmon/K7-Lean). The formalization certifies the algebraic identities among the declared integers (for example b₂ · 13 = 3 · (b₃ + dim G₂) for sin²θ\textsubscript{W} = 3/13), the G₂ three-form and dim \ensuremath{\mathfrak{g}}₂ = 14, the E₈ root system, and the arithmetic of several numerical certificates. It rests on fourteen axioms in addition to the standard Mathlib foundations: four that import results from the literature (\texttt{cheeger\_\allowbreak{}inequality}, \texttt{literature\_\allowbreak{}package}, \texttt{spectral\_\allowbreak{}upper\_\allowbreak{}bound}, \texttt{neck\_\allowbreak{}dominates}) and ten interval certificates that import numerical enclosures {[}ERR, §7.1{]}; no \texttt{sorry} is used.
+
+What the formalization does is verify the arithmetic identities it states: given the declared integers, a stated closed form evaluates to the stated number. It does not establish internal consistency of the relations taken together (formulas each computed correctly are mutually incompatible in the overdetermined sectors of §4.2), the existence of K₇, the physical interpretation of any relation, or the choice of assignments; a formula that is machine-checked is not thereby the right formula. The 33 statements are collected in \texttt{relations\_\allowbreak{}v36\_\allowbreak{}certified}, which depends only on the standard axioms (\texttt{propext}, \texttt{Classical.\allowbreak{}choice}, \texttt{Quot.\allowbreak{}sound}); S3.7 gives, for each relation, the declaration, the commit and the form of the statement (exact rational equality for 27; closed forms in ℝ without numerical bounds for α\textsubscript{s}, λ\textsubscript{H}, Ω\textsubscript{DE} and n\textsubscript{s}; bounds for 27\textsuperscript{φ}; the integer 197 for δ\textsubscript{CP}).
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{9. Existence status (two-layer boundary)}\label{existence-status-two-layer-boundary}
+
+This section gathers in one place every claim about \emph{existence of the compact \(K_7\) manifold} (in the 3.4 version this language was distributed across §2.3, §5.5, §8.5, §9.3 and §9.4).
+
+\subsection{9.1 The two layers}\label{the-two-layers}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Topological layer (prior to both).} No compact G₂ manifold with Betti numbers (21, 77) is currently constructed; the Joyce--Karigiannis route of version 3.5 does not realise the pair (§2.3; S1 §8.4). Both layers below presuppose a manifold with this topology.
+\item
+  \textbf{Datum-level analytic layer.} A \emph{normalised datum} \(\mathcal D_0\) is fixed: a base \(S^3\), a coassociative fibration \(\pi: K_7 \to S^3\) with \(N = 77\) round-unlink branch components, a rank-one Picard--Lefschetz monodromy along each meridian, and a collar-affine period section \(h\). On \(\mathcal D_0\), the companion paper {[}E{]} proves a \emph{conditional branched lifting scheme} (a special case of \cite[Conjecture 1]{53}) via seven theorem-grade results. Source-side discharge constants (\(C_{\rm src} = 27/16\), \(C_{\rm nl} = 2/3\), \(C_{\rm link} \le 1\), \(\gamma = 2\)) carry structural provenance; the tail-contraction threshold \(R_0(\mathcal D_0) \le 4.9 \cdot 10^3\) is enclosed by outward-rounded interval arithmetic. \textbf{But \(\mathcal D_0\) is not realisable as posed}: a Stokes-type obstruction (2026-08-19) shows that the single-root global datum admits no period section {[}ERR, §2{]}. This layer is therefore \emph{conditional on a datum that is not currently instantiated}; it is not discharged.
+\item
+  \textbf{Global-analytic layer.} Passing to a smooth compact \(K_7\) carrying a genuine torsion-free \(G_2\)-structure requires, first, a \textbf{realisable datum} replacing \(\mathcal D_0\), and then closing, for that datum, two external structural slots (jointly the pack \(\mathsf H_{\rm global}\) of {[}E{]}) and one standalone hypothesis:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    \textbf{(L4) Hyperkähler K3-fibration with prescribed periods.} A hyperkähler K3-fibration on the topological \(K_7\) with rank-one Picard--Lefschetz monodromy along the 77-unlink and a period section \(h\) consistent with the datum \((A_2^{\rm collar})\)--\((A_5)\). The closest current template is Kovalev's Hopf-link coassociative K3 fibration \cite{13}.
+  \item
+    \textbf{(C.1) Smooth-topology classification.} Standard Voisin--Kovalev classification data \cite{21} (Dehn--Seidel twist + K3-family gluing) producing the smooth 7-manifold on which (L4) can live.
+  \item
+    \textbf{(J) Anisotropic three-scale perturbation.} An anisotropic refinement of Joyce's perturbation theorem in the three-scale collapsing geometry (base \(\sim 1\), fibre \(\sim \varepsilon\), EH core \(\sim \varepsilon^2\)) that deforms each closed positive \(3\)-form of \(G_2\)-type to a torsion-free \(G_2\)-structure. A long-term companion programme to {[}E{]}.
+  \end{enumerate}
+\end{itemize}
+
+\subsection{9.2 Chain-of-locks and certified constants (headline synthesis from {[}E{]})}\label{chain-of-locks-and-certified-constants-headline-synthesis-from-e}
+
+To make this section standalone (a reader interested only in the framework's headlines should not have to open {[}E{]} to gauge the status of the analytic layer), we transport here the four-lock status ledger and the source-side certified constants. Preambles, proofs, and the interval-arithmetic verification scripts remain in {[}E{]}.
+
+\textbf{Datum \(\mathcal D_0\).} Base \(S^3\); coassociative fibration \(\pi: K_7 \to S^3\); branch locus \(= N = 77\) round unlink components; rank-one Picard--Lefschetz monodromy along each meridian; collar-affine period section \(h\) satisfying gates \((A_2^{\rm collar})\)--\((A_5)\); source-side envelopes \(K_{F_1} = K_{g_1} = K_v = 2.31\), \(D_{\rm max} = 7/5\).
+
+\textbf{Chain-of-locks.} At the posed datum, the scheme rests on the following locks:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1875}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.5208}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Lock
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Content
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source-side certificate
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{L1.6} & \(K_{\rm Sch} \le 16/3\) (Schauder recollement) & CLOSED (theorem-grade) & \(q_{\rm coeff} \le 0.168\) headline / \(0.110\) sharp, slack 33--56\% of \(1/4\); independent checker gates O0--O5 all pass \\
+\textbf{L2 assembly} & Product-Banach reconstruction on \(X_{\rm AR} = X_\omega \times X_\lambda \times X_\mu \times X_\Theta\) & CLOSED (theorem-grade) & \(q_{\rm total} = q_{\rm AR} + q_{\rm comm} + q_{\rm proj} + q_{\rm hodge} + q_{\rm gauge} \le 8.20 \cdot 10^{-3} < 1/2\), contraction margin \(60.9\times\); gates A0--A5 pass; \(q_{\rm AR} = 1.035 \cdot 10^{-3}\) is an imported majorant, its provenance and hypotheses in {[}E{]} \\
+\textbf{(L4)} & Hyperkähler K3-fibration with prescribed periods, rank-1 PL monodromy along the 77-unlink & \textbf{OBSTRUCTED for \(\mathcal D_0\)} (no period section; {[}ERR, §2 and §7.4{]}); open for a future realisable datum & Closest template: Kovalev's Hopf-link coassociative K3 fibration \cite{13} \\
+\textbf{(C.1)} & Smooth-topology classification (7-manifold on which L4 lives) & OPEN & Voisin--Kovalev classification inputs \cite{21} \\
+\textbf{(J)} & Anisotropic three-scale perturbation theorem (base \(\sim 1\), fibre \(\sim \varepsilon\), EH core \(\sim \varepsilon^2\)) & OPEN & Companion long-term project of {[}E{]} \\
+\end{longtable}
+
+The two CLOSED locks are theorem-grade computations at the posed datum \(\mathcal D_0\), which is now known not to be realisable. The residual analytic content of the global-existence problem is therefore larger than the three slots: it starts with a realisable datum, for which (L4), (C.1) and (J) must then be discharged.
+
+\textbf{Source-side certified constants (all with structural provenance).}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3448}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2414}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4138}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Constant
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Provenance
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(C_{\rm src}\) & \(27/16\) & Cubic term + parity on Donaldson canonical gauge \\
+\(C_{\rm nl}\) & \(2/3\) & Simons identity + collinearity; strictly below power-counting envelope \(\sim 1\) \\
+\(\gamma\) & \(2\) & Proved (spectral order of the rank-1 branched Jacobi) \\
+\(C_{\rm link}\) & \(\le 1\) & Impedance match (\(\Lambda_{\rm in}^{\rm model} = -\Lambda_{\rm out}^{\rm model}\)) \(+\) parity \(\vert c_0\vert^2\) \(+\) type-IV sectional \(\vert K_{\rm sec}\vert \le 1\) \\
+\(C_{\rm FS}\) & \(\approx 0.29\) & Fredholm--Schauder outer coercivity \\
+\(\kappa_E\) & \(\le 1.02\) & KA1 rigidity (\(Df_0 = 0\), \(\Vert g'\Vert_\infty = 2\), compensation \((1/2) \cdot 2\)) \\
+\(\Vert\mathfrak M^{-1}\Vert_{\rm op}\) & \(\le 2.76\) (conservative), \(\le 1.076\) (normalised) & \(1/(\sigma_{\min}(A_{\rm loc})(1 - \delta_{\rm coker}))\), outward-rounded; Theorem 5.10 of {[}E{]} \\
+\(K_{\rm Sch}\) & \(\le 16/3\) & L1.6 recollement, \((4/3) \cdot 3 \cdot (4/3)\) \\
+\(q_{\rm total}\) & \(\le 8.20 \cdot 10^{-3}\) & L2 assembly (Banach product-max on \(X_{\rm AR}\)) \\
+\(R_0(\mathcal D_0)\) & \(\le 4.9 \cdot 10^3\) & Newton--Kantorovich tail-contraction threshold; outward-rounded interval arithmetic \\
+\end{longtable}
+
+\textbf{Operational meaning of \(R_0(\mathcal D_0) \le 4.9 \cdot 10^3\).} In the branched adiabatic scheme, \(R_0\) is the smallest scale beyond which the Newton--Kantorovich iteration converges uniformly at \(\mathcal D_0\). The certified bound \(R_0 \le 4.9 \cdot 10^3\) is enclosed by outward-rounded interval arithmetic (mpmath, 60 decimal digits, 4 verification scripts distributed with {[}E{]}) and sits \(\sim 9\%\) below the power-counting threshold; this headroom is a property of the computation at the posed datum, not of an instantiated one.
+
+\emph{What this section does not claim.} All quantities above are proved conditional on \(\mathcal D_0\) being an admissible datum, and \(\mathcal D_0\) is not: they are computations, not an instantiated layer. Passing to a smooth compact \(K_7\) requires a realisable datum and, for it, (L4), (C.1) and (J) (see §9.3). No proof is reproduced here; {[}E{]} is the citable source.
+
+\subsection{9.3 What version 3.6 claims and what it does not}\label{what-version-3.6-claims-and-what-it-does-not}
+
+The framework's claims (the 33 relations, the look-elsewhere tests, the Lean 4 ledger) \textbf{do not use the existence layers at all}: they do not consume \(\mathcal D_0\), \(\mathsf H_{\rm global}\) or \((\mathrm J)\). They rest on the declared topological invariants of a manifold with \((b_2, b_3) = (21, 77)\), on the E₈×E₈ group data, and on the assignments declared in §3. Whether such a compact torsion-free \(G_2\) manifold exists is open, and none of the relations depends on its metric.
+
+The framework does not claim to have constructed a smooth compact \(K_7\) carrying a globally torsion-free \(G_2\)-structure. That claim would require a realisable datum and, for it, (L4), (C.1) and (J) discharged as theorems. For the posed datum \(\mathcal D_0\), (L4) is obstructed; (C.1) and (J) are open.
+
+\subsection{9.4 Relation to earlier drafts and independent constructions}\label{relation-to-earlier-drafts-and-independent-constructions}
+
+The Chebyshev--Cholesky NK-certified metric of {[}A{]} is a \emph{seam-level} result: it certifies the seam that would appear in a TCS-style gluing, subject to that gluing being available. The {[}D{]} paper strengthens the neck-level ansatz with an explicit closed-form + five-layer Wirtinger certificate. The {[}E{]} paper replaces the TCS-style rectangular hypothesis with a rank-one branched Kovalev--Lefschetz hypothesis; the Crowley--Goette--Nordström invariant statement for a rectangular twisted connected sum \cite{16} is retained as an independent structural constraint. Since the datum of {[}E{]} is not realisable as posed, no existence argument for the compact \(K_7\) is currently load-bearing. The (b₂, b₃) = (21, 77) outlier position in the catalogued literature is a documentary observation, not an obstruction.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{10. Selection Audit of (21, 77)}\label{selection-audit-of-21-77}
+
+This section concerns one item of the residue register (R1): why the Betti pair is (21, 77). It is distinct from the question of why these formulas are assigned to these observables (R4), which has no answer at present (§3.2) and which a derivation of (21, 77) would not supply.
+
+\subsection{10.1 Five investigated routes}\label{five-investigated-routes}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Landscape density.} In the inverse-problem scan over candidate Betti pairs (b₂, b₃), (21, 77) is sub-median: convenient, not special. It is not a distinguished point of a natural density.
+\item
+  \textbf{Chamber structure.} The associated chamber analysis yields one chamber with three gauge orbits off 77; the ``77 side'' is not a distinguished wall.
+\item
+  \textbf{S₅ propagation.} The propagation S₅ → 77 closes negatively by mechanism: the induced flow on the moduli side does not favour 77 over its neighbours.
+\item
+  \textbf{Higher-hyperkähler distinguishedness.} Across several classifications, the fibre lattice (15, 7, 1) behind b₂ = 21 has distinguishing invariants, including its place as the single named exception of a mirror lemma (\cite{54}, Lemma 5.8); 77 has none, under any of the mechanisms specified so far.
+\item
+  \textbf{An independent construction.} The Zhou series \cite{55} produces (b₂, b₃) = 7 · (3, 11) as a reparametrisation rather than an alternative construction; a screening constraint b₂ ≥ 9 used there is refuted by the census.
+\end{itemize}
+
+Each route is closed as an investigation. The selection question itself is not closed.
+
+\subsection{10.2 The open identity}\label{the-open-identity}
+
+One structural observation survives: \[b_2 + b_3 = 98 = 7 \cdot 14 = \dim(K_7) \cdot \dim(G_2).\] It is held as a target, not a theorem. Until a mechanism is exhibited that forces b₂ + b₃ to equal dim(K₇) · dim(G₂) on structural grounds, the identity is a numerical observation, and it is flagged as such.
+
+\subsection{10.3 Status of (21, 77)}\label{status-of-21-77}
+
+Pending such a mechanism, (21, 77) is a \textbf{construction-level input}, on the same footing as the G₂-holonomy postulate. It is a discrete pair, fixed before the relations were frozen and consumed rigidly by all of them, but it is chosen, not selected. Version 3.5 wrote that the deeper question ``why G₂ holonomy?'' has the same status as ``why Lorentz invariance?'', and that G₂ is ``the unique compact exceptional holonomy admitting the stabilizer chain G₂ ⊃ SU(3) ⊃ SU(2) ⊃ U(1)''. Both statements are withdrawn. Lorentz invariance is an empirically established symmetry; G₂ holonomy is a hypothesis about an unobserved manifold. And Spin(7) contains the same chain, so G₂ is not unique in that sense.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{11. Decision Rule and Refutation}\label{decision-rule-and-refutation}
+
+A prediction is a receipt only if three things are fixed in advance: the quantity, the test, and what happens when the measurement fails it. Versions up to 3.5 quoted δ\textsubscript{CP} = 197° together with a band {[}182°, 212°{]} and wrote that a measurement outside it ``would create serious tension''. A point value and a band are two different hypotheses (a precise measurement at 205° would exclude 197° and stay inside the band), and serious tension is not a refutation. Version 3.6 chooses the point value and writes the rule in full.
+
+\subsection{11.1 The rule}\label{the-rule}
+
+The relations are stated as exact equalities with no theoretical uncertainty, and the rule treats them so. It is fixed in version 3.6, applies to the relations as stated in §4 with the dictionary of §3, and has no repair clause: a relation that fails is not rescued by changing its formula, its unit, its scale, or the dataset against which it is compared, and no theoretical tolerance is added afterwards.
+
+\textbf{Reference series.} The classes of §4.2 are computed uniformly with the reference series of S3 (PDG, NuFIT, Planck, CODATA) and their conventions. A new edition of a series, or a new analysis from the same collaboration on the same data class, replaces the current one when it is published, and all relations of that series are then recomputed at once. Replacing a series by another source must be declared, and applied to every relation that uses it.
+
+\textbf{General rule (G).} A relation is rejected as an exact equality when its reference series excludes its value at 3σ, using that series' own confidence interval (for a non-Gaussian likelihood, its published 3σ interval). After rejection it may be kept only as a numerical proximity, with no predictive claim. The five proximities of §4.2 are already rejected in this sense.
+
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0484}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1613}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1613}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3387}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2903}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Quantity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+K₇ value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rejection condition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What is rejected
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+D1 & the phase e\textsuperscript{iδ\textsubscript{CP}}, δ\textsubscript{CP} = 2π·197/360 & 197° & a global fit of the reference series, including DUNE or Hyper-Kamiokande, whose 3σ interval excludes 197° & the δ\textsubscript{CP} relation \textbf{and} the unit assignment R6 that produced it \\
+D2 & sin²θ₂₃ (PMNS) & 6/11 = 0.5455 & a global fit of the reference series whose 3σ interval excludes 6/11, in either octant & the θ₂₃ relation \\
+D3 & m\textsubscript{τ}/m\textsubscript{e} and Q\textsubscript{Koide} (approximate, R8) & 1776.74 MeV and 1776.97 MeV for m\textsubscript{τ} & a value of m\textsubscript{τ} in the reference series whose 3σ interval excludes the value & each excluded relation, separately \\
+D4 & N\textsubscript{gen} & 3 & a fourth sequential generation & the integer identity of §2.4 as a consistency check \\
+D5 & m\textsubscript{s}/m\textsubscript{d} & 20 & a lattice determination adopted by the reference series, with an uncertainty whose 3σ interval excludes 20 (the current PDG range carries none) & the m\textsubscript{s}/m\textsubscript{d} relation \\
+\end{longtable}}
+
+\textbf{Measurements outside the reference series.} A contradicting result outside the series does not change a class, and it is never left out: it is reported beside the class. Two stand today. h = 167/248 agrees with the Planck reference (0.0σ) and is excluded by the SH0ES distance ladder \cite{4} at 5.5σ. m\textsubscript{W}/m\textsubscript{Z} = 37/42 is at −2.7σ against the PDG and at −10.6σ against the CDF II W mass \cite{57}. If the reference series moves to such a result, the relation is rejected. While methods keep disagreeing, the status is stated both ways, and neither agreement counts as a confirmation.
+
+\textbf{When this wording was fixed.} Earlier drafts of this section read ``a measurement, or a global fit'', under which SH0ES alone would already reject h. The wording above is a clarification made in version 3.6 after that problem was identified, not a choice of arbiter made before seeing the results. It is frozen prospectively from version 3.6.
+
+\textbf{What survival does not do.} Rejecting incompatible relations separately is legitimate. A relation that survives in an overdetermined sector (R8, R11, R12) is not thereby a prediction selected by the geometry, nor a global confirmation: the selection that left it standing has to be counted. Under D3, for instance, A05 and A06 differ by 0.23 MeV on m\textsubscript{τ}, so a measurement with σ below 0.04 MeV must reject at least one of them.
+
+\textbf{What a rejection does not do.} A rejection under D1 rejects the stated prediction together with the dictionary assignment that produced it; it does not by itself reject the programme, whose other relations stand or fall on their own. The paper says so now, so that it cannot be said later as a repair.
+
+\textbf{What a confirmation would show.} A measurement of δ\textsubscript{CP} whose 3σ interval contains 197° would show that the assignment ``read 197 in degrees'' agrees with the world at that precision. It would not show that the structure requires that reading, which is why R6 stays in the residue register in either case.
+
+\subsection{11.2 Timeline}\label{timeline}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3750}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3125}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3125}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Experiment
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Quantity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Timeline
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+DUNE Phase I & δ\textsubscript{CP} & after first beam (targeted 2031 \cite{47}); resolution depends on exposure and true parameters \cite{30,31} \\
+DUNE Phase II, Hyper-Kamiokande & δ\textsubscript{CP}, octant of θ₂₃ & late 2030s--2040s \\
+Belle II, BES III & m\textsubscript{τ} & ongoing \cite{52} \\
+Lattice QCD & m\textsubscript{s}/m\textsubscript{d} & the PDG gives the range 17--22, with no uncertainty (§4.1); D5 needs a determination with one \\
+FCC-ee & sin²θ\textsubscript{W}, m\textsubscript{W}/m\textsubscript{Z} & 2040s \\
+\end{longtable}
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{12. Discussion and Conclusion: Where the Necessity of K₇ Ends}\label{discussion-and-conclusion-where-the-necessity-of-kux2087-ends}
+
+\subsection{12.1 What the framework is, and what it is not}\label{what-the-framework-is-and-what-it-is-not}
+
+The framework is a correspondence between invariants of (K₇, E₈×E₈) and 33 dimensionless parameters, stated with its dictionary, its residue and a decision rule. It is a privileged candidate in the sense of §3.5: its requirements are motivated independently of the Standard Model's values, but they do not select the Betti pair, the formulas or the normalization, and the author's choices are where those enter.
+
+Version 3.6 withdraws several things earlier versions said: that the relations are derived from the geometry; that they cannot be fitted; that 95 observables are predicted; that m\textsubscript{H}/m\textsubscript{W} and Koide survive the Sieve; that a coincidence probability of 10⁻³⁴⁶ or a P-value of 5 × 10⁻⁶ measures the framework's distinctiveness; that 197° is a ``pure geometry'' prediction; that the generation count comes from an index theorem. Each of these was stronger than what the work supports. What remains is smaller and can be checked.
+
+\subsection{12.2 Where its necessity ends}\label{where-its-necessity-ends}
+
+Necessity ends somewhere in every framework, and saying where is part of stating it {[}WNE{]}. For K₇ it ends in three places.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{At the requirements.} G₂ holonomy, compactness and the E₈ data are posited, not derived. They are well motivated, and they answer the question of whether the family deserves exploration; they do not answer why this member.
+\item
+  \textbf{At the residue.} The Betti pair (21, 77), the normalization det(g) = 65/32 and the combination κ\textsubscript{T}⁻¹ = 61 are set, not forced, and in the three overdetermined sectors (four lepton relations, three CKM relations, seven density relations) none of the incompatible relations is selected (§3.3). §10 closes five routes to deriving (21, 77) and leaves one identity open.
+\item
+  \textbf{At the dictionary.} No rule assigns formulas to observables, and two assignments carry units or scales that the structure does not supply: the degrees in which 197 is read, and the scales at which the couplings are compared. A confirmation of a relation would confirm the assignment, not a requirement of the structure.
+\end{itemize}
+
+\subsection{12.3 Relation to M-theory and to other proposals}\label{relation-to-m-theory-and-to-other-proposals}
+
+E₈×E₈ and G₂ holonomy both appear in M-theory: E₈×E₈ on the boundaries of heterotic M-theory \cite{32}, G₂ holonomy as the condition for N = 1 supersymmetry in a compactification on a seven-manifold \cite{24,34}. The framework does not supply a compactification of either kind. It differs from standard M-theory phenomenology \cite{35}, which works with moduli stabilization and specific singular compactifications. Its smooth K₇ does not yield the chiral non-abelian content of the Standard Model (§2.3), and its relations are not derived from a four-dimensional effective theory. The relation to the G₂-MSSM phenomenology of \cite{33} that version 3.5 drew through a supersymmetric spectrum is withdrawn with that spectrum (§5.3).
+
+Lisi's E₈ proposal attempted to place all Standard-Model fermions, chirality included, in a single E₈ representation, and Distler and Garibaldi showed that no such embedding exists \cite{36}. The framework does not attempt that embedding: it uses E₈ as a source of group-theoretic integers. This avoids the obstruction; it also means that the framework makes no claim about how the fermions arise.
+
+\subsection{12.4 Limitations and open questions}\label{limitations-and-open-questions}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2917}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3750}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Issue
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Section
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Existence of a compact torsion-free G₂ manifold with (21, 77) & open; requires a realisable datum, then (L4), (C.1), (J) & §9 \\
+Chiral non-abelian gauge sector from K₇ & not supplied; requires a UV bridge (singular locus, heterotic bundle or duality) & §2.3 \\
+Selection of (21, 77) & five routes closed; one identity open & §10 \\
+Formula assignment rule & absent & §3.2 \\
+det(g) = 65/32 & imposed & §3.3 \\
+Unit of δ\textsubscript{CP} & assigned & §4.3 \\
+Relations outside the within-2σ class & proximities (rejected as exact equalities), tensions, a range, an octant & §4.2 \\
+Overdetermined sectors (leptons, CKM, cosmological densities) & relations mutually incompatible as exact equalities; none selected; dependency audit not complete & §4.2, §6.1 \\
+Look-elsewhere & closeness not distinctive in the tested reference classes & §7 \\
+Quantum-gravity completion & not addressed & n/a \\
+\end{longtable}
+
+\subsection{12.5 Conclusion}\label{conclusion}
+
+This paper has stated a correspondence and the terms on which it can fail. Thirty-three dimensionless parameters are matched by closed forms in the invariants of a G₂-holonomy seven-manifold with Betti numbers (21, 77) and of E₈×E₈. Twenty-three lie within two standard deviations of the most recent measurements; five are excluded as exact equalities and kept as proximities; the others are in tension or depend on a range or an unresolved octant. In three sectors the relations are mutually incompatible as exact equalities. The correspondence is not derived: the Betti pair, the formulas, a metric normalization and a unit are set, and are written down as such. A test in which competing vocabularies search for their own formulas shows that closeness to the measured values does not distinguish the framework. What a measurement can do, against a rule fixed in advance, is reject an individual relation together with its assignment. The leptonic CP phase, which DUNE will measure, is one such test; it would not by itself decide the framework, in either direction.
+
+\textbf{We do not claim that the framework is correct.} It may be a genuine structural insight, an approximation to one, or an elaborate coincidence. The paper's aim is that whichever it is can be found out, and that the reader can see, at every step, what was derived, what was assumed, and what would bring it down.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{Author's note}\label{authors-note}
+
+This framework was developed through sustained collaboration between the author and several AI systems, primarily Claude (Anthropic), with substantial contributions from GPT and Codex (OpenAI), whose independent audit passes, certificate engineering, and adversarial review rounds shaped this version and the companion paper {[}E{]}, and with contributions from Gemini (Google), Grok (xAI), Kimi (Moonshot AI), DeepSeek, and GLM (Zhipu AI) for specific mathematical insights and review passes. The formal verification in Lean 4, architectural decisions, and many key derivations emerged from iterative dialogue sessions over several months; AI-derived mathematical content is either machine-verified (Lean 4, interval arithmetic) or cross-checked against primary sources. This collaboration follows a transparent crediting approach for AI-assisted research, consistent with publisher AI policies \cite{38}. Mathematical constants underlying these relationships represent timeless logical structures that preceded human discovery. The value of any theoretical proposal depends on mathematical coherence and empirical accuracy, not origin. Mathematics is evaluated on results, not résumés.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{Competing Interests}\label{competing-interests}
+
+The author declares no competing interests.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{Author's Related Works}\label{authors-related-works}
+
+\emph{Code and Lean proofs:} \href{https://github.com/Arithmon/K7-Lean}{github.com/Arithmon/K7-Lean} (formerly \texttt{gift-\allowbreak{}framework/\allowbreak{}core}).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{{[}A{]}} B. de La Fournière, ``A Certified Torsion-Free G₂ Structure on a TCS Neck Model via Computer-Assisted Proof,'' Zenodo \href{https://doi.org/10.5281/zenodo.18643069}{10.5281/zenodo.18643069} (2026).
+\item
+  \textbf{{[}B{]}} B. de La Fournière, ``Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms,'' Zenodo \href{https://doi.org/10.5281/zenodo.18920367}{10.5281/zenodo.18920367} (2026).
+\item
+  \textbf{{[}C{]}} B. de La Fournière, ``Newton--Kantorovich diagnostics on a Donaldson K3 metric: two β estimates, machine-checked inequalities,'' Zenodo \href{https://doi.org/10.5281/zenodo.19708915}{10.5281/zenodo.19708915} (2026).
+\item
+  \textbf{{[}D{]}} B. de La Fournière, ``An Explicit Closed-Form G₂ Ansatz on a K3-Coassociative Neck with Hyperkähler Rotation and Picard-Lefschetz Wirtinger Certificate,'' Zenodo \href{https://doi.org/10.5281/zenodo.20039065}{10.5281/zenodo.20039065} (2026).
+\item
+  \textbf{{[}E{]}} B. de La Fournière, ``A conditional analytic framework for rank-one branched Kovalev--Lefschetz adiabatic limits,'' Zenodo DOI \href{https://doi.org/10.5281/zenodo.21215956}{10.5281/zenodo.21215956} (2026), main paper 68 pp + supplement 25 pp; dataset and four \texttt{mpmath.\allowbreak{}iv} verification scripts at Zenodo \href{https://doi.org/10.5281/zenodo.21209412}{10.5281/zenodo.21209412} (CC BY 4.0). Conditional theorems for a \(K_7 \to S^3\) construction with \(N = 77\) round-unlink branch components; the single-root datum \(\mathcal D_0\) at which its constants are computed is not realisable as posed (§9).
+\item
+  \textbf{{[}M{]}} B. de La Fournière, ``A reproducible standard for arithmetic coincidence claims in fundamental physics,'' Zenodo \href{https://doi.org/10.5281/zenodo.20728964}{10.5281/zenodo.20728964} (2026). The Sieve methodology and its four-null scorecard for the K₇ relations.
+\item
+  \textbf{{[}ERR{]}} B. de La Fournière, ``Erratum: GIFT / K₇ framework v3.5'' (2026), repository Arithmon/K7, \texttt{publications/\allowbreak{}ERRATUM\_\allowbreak{}v3.\allowbreak{}5.\allowbreak{}md}, commit aed460315eecc17a20402b1f4d20ac310dd4f6c2, \href{https://github.com/Arithmon/K7/blob/aed460315eecc17a20402b1f4d20ac310dd4f6c2/publications/ERRATUM_v3.5.md}{github.com/Arithmon/K7/blob/aed4603/publications/ERRATUM\_\allowbreak{}v3.5.md}.
+\item
+  \textbf{{[}S-frozen{]}} B. de La Fournière, ``Counting Coincidences: frozen inputs'' (observable list and expression grammars), Zenodo dataset \href{https://doi.org/10.5281/zenodo.20666878}{10.5281/zenodo.20666878}, v1.0 of 12 June 2026.
+\item
+  \textbf{{[}K3A{]}} B. de La Fournière, ``Certified Analytic Geometry on an Explicit K3 Surface,'' Zenodo \href{https://doi.org/10.5281/zenodo.22047469}{10.5281/zenodo.22047469} (2026). A certified holomorphic atlas of an explicit K3 surface; no metric claim.
+\item
+  \textbf{{[}WNE{]}} B. de La Fournière, ``Where Necessity Ends: Selection by Joint Compatibility,'' preprint, PhilArchive (2026), \href{https://philpapers.org/rec/DELWNE}{philpapers.org/rec/DELWNE}. Selection by the joint compatibility of independently motivated requirements, the obligations it carries (independence, a fixed dictionary, a declared residue, refutation with no repair clause), and the three states of §3.5; its §13 audits version 3.5 of this framework.
+\item
+  \textbf{{[}essay{]}} B. de La Fournière, \emph{Orientation, not ontology} (companion essay), \url{https://arithmon.substack.com/p/orientation-not-ontology} (2026).
+\end{itemize}
+
+\emph{This is the founding-framework paper of the \href{https://arithmon.com}{Arithmon program}; the methodology of §7 is {[}M{]}.}
+
+\section{Appendix A: Primitive Constants}\label{appendix-a-primitive-constants}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Symbol & Definition & Value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+dim(E₈) & Lie algebra dimension & 248 \\
+rank(E₈) & Cartan subalgebra dimension & 8 \\
+dim(K₇) & Manifold dimension & 7 \\
+b₂(K₇) & Second Betti number (posited) & 21 \\
+b₃(K₇) & Third Betti number (posited) & 77 \\
+dim(G₂) & Holonomy group dimension & 14 \\
+dim(J₃(\ensuremath{\mathbb{O}})) & Exceptional Jordan algebra dimension & 27 \\
+\end{longtable}
+
+The complete set of twenty structural constants, with their status, is in §3.1.
+
+\section{Appendix B: Combinations and Imposed Values}\label{appendix-b-combinations-and-imposed-values}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2812}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Symbol
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Formula
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+p₂ & dim(G₂)/dim(K₇) (binary ratio; not a Pontryagin class) & 2 & combination \\
+Weyl & factor of \textbar W(E₈)\textbar{} & 5 & combination \\
+N\textsubscript{gen} & b₂/dim(K₇); integer identity of §2.4 & 3 & measured, reproduced \\
+H* & b₂ + b₃ + 1 & 99 & combination \\
+τ & (496 × 21)/(27 × 99) & 3472/891 & combination (used by Type II entries only) \\
+κ\textsubscript{T}⁻¹ & b₃ − dim(G₂) − p₂ & 61 & combination without physical name (R3) \\
+det(g) & p₂ + 1/(b₂ + dim(G₂) − N\textsubscript{gen}) & 65/32 & \textbf{imposed} normalization (R2); the formula is an expression, not a derivation \\
+\end{longtable}
+
+\section{Appendix C: Supplement Reference}\label{appendix-c-supplement-reference}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5714}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4286}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Supplement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Content
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+S1: Foundations & E₈, G₂, K₇ construction details \\
+S2: The 33 relations & Arithmetic, dictionary choices, alternative formulas, withdrawn readings \\
+S3: Observable Dataset & The 95-entry dataset, type classification and status column \\
+S4: Sieve and look-elsewhere diagnostics & The four-null scorecard, the look-elsewhere test of §7.2, archived diagnostics of earlier versions \\
+\end{longtable}
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\emph{The K₇ Framework (formerly GIFT)}
+
+
+\bigskip
+\input{gift_3.6_bib}
+
+\end{document}

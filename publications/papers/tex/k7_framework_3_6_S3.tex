@@ -1,0 +1,409 @@
+\documentclass[11pt,a4paper]{article}
+\input{gift_preamble}
+% Glyphs new in 3.6, kept here rather than in the preamble shared with 3.4 and 3.5.
+\DeclareUnicodeCharacter{02E2}{\ensuremath{^{\mathrm{S}}}}
+\DeclareUnicodeCharacter{1D37}{\ensuremath{^{\mathrm{K}}}}
+\DeclareUnicodeCharacter{1D39}{\ensuremath{^{\mathrm{M}}}}
+\DeclareUnicodeCharacter{1D3A}{\ensuremath{^{\mathrm{N}}}}
+\DeclareUnicodeCharacter{1D3E}{\ensuremath{^{\mathrm{P}}}}
+\DeclareUnicodeCharacter{1D9C}{\ensuremath{^{\mathrm{C}}}}
+\DeclareUnicodeCharacter{211A}{\ensuremath{\mathbb{Q}}}
+\DeclareUnicodeCharacter{226B}{\ensuremath{\gg}}
+\DeclareUnicodeCharacter{22A5}{\ensuremath{\perp}}
+% pandoc >= 3.2.1 emits \pandocbounded around images; provide a fallback.
+% Also clamp all images to \linewidth (natural-size figures overflowed the
+% right margin -- the "truncated figures" flagged by the round-2 reviews).
+% Kept here rather than in gift_preamble.tex, shared with the 3.4 build.
+\providecommand{\pandocbounded}[1]{#1}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,keepaspectratio}
+% md headings carry their own literal numbering ("3.2 What ..."); suppress
+% the LaTeX section counters to avoid "0.2 1. Introduction" double numbering.
+\setcounter{secnumdepth}{0}
+% Loosen justification slightly: long technical identifiers (made breakable
+% at build time via \allowbreak) still need extra stretch to avoid overfulls.
+\emergencystretch=3em
+\fancyhead[L]{The $K_7$ Dictionary v3.6: Supplement S3}
+\hypersetup{pdftitle={The K7 Dictionary v3.6 Supplement S3: Observable Dataset}}
+
+\graphicspath{{../../../figures/}}
+
+\title{%
+\LARGE\textbf{Supplement S3: Observable Dataset}\\[0.3em]
+\large 33 Relations Compared with Measurement; 62 Conditional and Diagnostic Entries%
+}
+\author{Brieuc de La Fourni\`ere \\ \textit{Independent researcher, Beaune, France}}
+\date{November 2026 \quad\textbar\quad v3.6}
+
+\begin{document}
+
+\maketitle
+\noindent\rule{\textwidth}{0.2pt}
+
+\thispagestyle{fancy}
+
+\section{S3.1 Introduction}\label{s3.1-introduction}
+
+This supplement documents the framework's observable dataset (\texttt{canonical/\allowbreak{}data/\allowbreak{}observables.\allowbreak{}json}, 95 entries) and the comparison data behind the main text. The dataset is a ledger, not a list of predictions. Version 3.6 counts \textbf{33 relations} (Type I) as the framework's claims, compared with measurement in main §4. The other \textbf{62 entries} (Types II--IV) are conditional extractions, outputs of mechanisms that consume calibration choices, or diagnostics of the approximate seam metric; they are kept here for traceability and are not counted (main §4.5).
+
+Earlier versions described the dataset as ``95 observables derived from a single G₂ metric, zero freely adjustable parameters''. That description is withdrawn. The 33 relations are closed forms in twenty declared constants, assigned to observables by the author (main §3); no geometric map sends the invariants to the observables, and the metric does not produce them. The entries below carry a status that says which of these they are.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{S3.2 Type classification}\label{s3.2-type-classification}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1364}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1591}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4545}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Count
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What it is
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Counted in main §4
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I & 33 & Dimensionless closed forms in the structural constants, assigned to measured parameters & yes \\
+II & 19 & Dimensionful numbers read in a chosen unit (R10), scale bridges, one mixed-scale ratio (B16) and its cascade (B17), and legacy values without a documented derivation & no \\
+III & 21 & Outputs of mechanisms on the approximate seam metric (Wilson-line splitting, associative volumes, spectral counts, bundle conditioning), with calibration choices; and the withdrawn supersymmetric running & no \\
+IV & 22 & Structural quantities and numerical diagnostics, with no experimental counterpart & no \\
+\end{longtable}
+
+\textbf{Type I.} Each relation is a ratio of structural integers or uses one further operation (√, φ, ln 2, ζ values), declared in its status. The status vocabulary is that of main §4.1: \emph{integer}, \emph{algebraic / φ / ln 2 / ζ values}, \emph{det(g)} (R2), \emph{κ\textsubscript{T}} (R3), \emph{proximity}, \emph{tension}, \emph{approximate} (R8, R11, R12), \emph{inside the PDG range}, \emph{unit assignment} (R6); m\textsubscript{b}/m\textsubscript{t} is compared in the mass scheme declared in R7.
+
+\textbf{Type II.} Several entries are numbers read in MeV or GeV, for example m\textsubscript{u} = √(dim G₂/3) = 2.16, m\textsubscript{d} = ln 107 = 4.673, m\textsubscript{c} = (dim G₂ − π)³ = 1280, m\textsubscript{t} = 415². Reading a structural number in a unit is an assignment of the same kind as reading 197 in degrees, with a far larger space of alternatives (R10). The CKM magnitudes (B10--B15) and the ratios m\textsubscript{b}/m\textsubscript{d} and m\textsubscript{t}/m\textsubscript{c} (B18, B19) are legacy values: their derivation is not documented in the current dataset, and they are retained for traceability, not counted as predictions. B18 and B19 are not fixed by the Type I quark ratios alone, which relate two separate groups, \{u, d, s, c\} and \{b, t\}. m\textsubscript{c}/m\textsubscript{d} (B17) combines B16, of Type II, with A08. Earlier versions described all nineteen as ``a Type I ratio times an experimental anchor''; that description did not match the dataset and is withdrawn.
+
+\textbf{Type III.} The Wilson-line and associative-volume entries reproduce lepton mass ratios at the percent level with declared calibration choices (a coupling c = 0.452 and a cycle assignment) selected against the measured ratios, and an exponent α = e\textsuperscript{K} = 0.002763 computed from the Kähler potential of the approximate metric; they are conditional reconstructions (main §6.2). The comparison of C18 is mismatched: its value is Vol\textsubscript{e} − Vol\textsubscript{μ} = 3.271, its reference is ln(m\textsubscript{τ}/m\textsubscript{μ}) = 2.823, and the instanton relation pairs that reference with Vol\textsubscript{μ} − Vol\textsubscript{τ} = 5.362 (the matching reference for Vol\textsubscript{e} − Vol\textsubscript{μ} is ln(m\textsubscript{μ}/m\textsubscript{e}) = 5.33), so its 15.9\% deviation carries no meaning. The cycle search scored this same pair. C20 uses the same difference and C21 is the ratio C19/C20; with Vol\textsubscript{μ} − Vol\textsubscript{τ} in C20 they would read 16.79 and 207.6, still within 1\%. The entries are kept as computed. The four entries of the two-loop supersymmetric running from a grand-unification boundary (C04--C07) are withdrawn with that reading (main §5). The remaining entries are diagnostics, some compared with a mathematical expectation (the Weyl exponent with d/2, the gauge-kinetic conditioning with 1), none with a measurement.
+
+\textbf{Type IV.} Topological inputs (b₂, b₃: R1), integer combinations (H*, N\textsubscript{gen}), the imposed normalization det(g) = 65/32 (R2), numerical diagnostics of the certified seam metric (Newton--Kantorovich quantities, Gram conditioning, spectral counts, metric block eigenvalues), and three entries taken from the black-hole-remnant analysis of main ref. \cite{42}, one of which depends on the scale identification τ₀ = v\textsubscript{EW}.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{S3.3 Experimental data and conventions}\label{s3.3-experimental-data-and-conventions}
+
+The comparison data were refreshed on 2026-10-22 to the most recent releases (\texttt{canonical/\allowbreak{}scripts/\allowbreak{}k7\_\allowbreak{}v3\_\allowbreak{}6\_\allowbreak{}exp\_\allowbreak{}refresh.\allowbreak{}py}, log \texttt{canonical/\allowbreak{}results/\allowbreak{}k7\_\allowbreak{}v3\_\allowbreak{}6\_\allowbreak{}exp\_\allowbreak{}refresh.\allowbreak{}json}):
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2759}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3448}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3793}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Used for
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Convention
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+PDG 2026 \cite{1} & particle masses, sin²θ\textsubscript{W} and α\textsubscript{s} at M\textsubscript{Z}, CKM parameters, quark mass ratios & MS-bar at the PDG reference scales; m\textsubscript{t} from direct measurements \\
+NuFIT 6.1 \cite{27} & neutrino mixing & normal ordering, with the tabulated Super-Kamiokande and IceCube atmospheric data; one variant for all four entries \\
+Planck 2018 \cite{3} & cosmology & base ΛCDM, TT,TE,EE+lowE+lensing; one column for all entries; the PR4 reanalysis \cite{49} is not used \\
+CODATA 2022 \cite{50} & α at q² = 0, m\textsubscript{μ}/m\textsubscript{e} & n/a \\
+\end{longtable}
+
+\textbf{Derived reference values.} Mass ratios are computed from the published masses, with error propagation that neglects correlations. This is an approximation, not a bound: the summary tables do not publish the covariances, and for a ratio R = x/y the term −2 Cov(x, y)/(xy) in Var(R)/R² can have either sign. The density ratios A25, A26, A27, A29, A30 and A33 are computed sample by sample on the published Planck chains \cite{3} (base\_\allowbreak{}plikHM\_\allowbreak{}TTTEEE\_\allowbreak{}lowl\_\allowbreak{}lowE\_\allowbreak{}lensing, 25 225 weighted samples, whose marginal statistics reproduce the published table), as weighted mean and standard deviation; \texttt{canonical/\allowbreak{}scripts/\allowbreak{}k7\_\allowbreak{}v3\_\allowbreak{}6\_\allowbreak{}planck\_\allowbreak{}ratios.\allowbreak{}py}. No first-order propagation or proposal covariance enters. Earlier drafts propagated them without correlations, which gave Ω\textsubscript{c}/Ω\textsubscript{m} = 0.839(11) at +0.4σ; ω\textsubscript{c} and ω\textsubscript{m} are correlated at about 0.99, and the chains give 0.8390(19), +2.5σ.
+
+\textbf{Total matter.} Planck's Ω\textsubscript{m} includes neutrinos (Ω\textsubscript{ν} h² = 0.00064 at Σm\textsubscript{ν} = 0.06 eV, Ω\textsubscript{ν}/Ω\textsubscript{m} = 0.0045). So Ω\textsubscript{b}/Ω\textsubscript{m} + Ω\textsubscript{c}/Ω\textsubscript{m} = 0.9955 in the reference, while the formulas 5/32 and 27/32 sum to 1. This is a defect of compatibility with the Planck definition; the denominator is not replaced by Ω\textsubscript{b} + Ω\textsubscript{c}, since that would change the quantities tested. For information, that other quantity gives 0.8428(19) for Ω\textsubscript{c}/(Ω\textsubscript{b} + Ω\textsubscript{c}), and pulls of ±0.5σ. The complementarity of baryons and cold dark matter, with neutrinos neglected, does not require flatness. λ\textsubscript{H} is the tree-level m\textsubscript{H}²/(2v²) with v = (√2 G\textsubscript{F})\textsuperscript{−1/2}, a definition that is itself a scheme choice. m\textsubscript{s}/m\textsubscript{d} is given by the PDG as the range 17--22, without an uncertainty; it is stored as a range, and no pull is defined (the relation's value 20 lies inside it).
+
+\textbf{Confidence levels.} All uncertainties are brought to 1σ. The PDG summary tables quote the light-quark masses, m\textsubscript{c}, m\textsubscript{b} and m\textsubscript{u}/m\textsubscript{d} at 90\% confidence; these are divided by 1.645. The lattice average of m\textsubscript{c}/m\textsubscript{s} (PDG quark-mass review, statistical and systematic errors in quadrature) is already a 1σ value.
+
+\textbf{Asymmetric uncertainties.} NuFIT and the CKM parameter A have asymmetric errors; both sides are kept in the dataset, and the pull uses the side facing the framework's value. The sin²θ₂₃ profile is not Gaussian: its 3σ range (0.435--0.584) contains 6/11 although the Gaussian pull exceeds 4σ (main §4.3).
+
+\textbf{Corrections made in the refresh.} The previous dataset gave m\textsubscript{μ}/m\textsubscript{τ} and m\textsubscript{τ}/m\textsubscript{e} with uncertainties larger than the PDG errors propagate (by factors 13 and 1.3); computed Q\textsubscript{Koide} from the PDG 2022 τ mass while m\textsubscript{τ}/m\textsubscript{e} used the later one; gave m\textsubscript{b}/m\textsubscript{t} an uncertainty with no source; quoted an h that matched no Planck column; mixed NuFIT variants with and without atmospheric data; gave m\textsubscript{μ}/m\textsubscript{e} an uncertainty of 0.02 where CODATA 2022 gives 4.6 × 10⁻⁶; and labelled the CKM entries A16 and A18 sin²θ although their values are sin θ₁₂ = λ and sin θ₂₃ = Aλ². With the corrected data and one convention for all uncertainties, the 33 relations fall into the five classes of main §4.2: 23 within 2σ, 3 in tension, 5 proximities beyond 3σ (m\textsubscript{b}/m\textsubscript{t} in the scheme of R7 among them), 1 inside the PDG range, 1 with a non-Gaussian profile. (The earlier count, 28 within 2σ, rested on the uncertainties listed above.)
+
+\textbf{Not refreshed.} Y\textsubscript{p} (0.245 ± 0.003) is the PDG's recommended observational helium abundance from HII regions (BBN review of the 2024 Review of Particle Physics \cite{56}, eq. 24.3; earlier versions of the dataset labelled it Planck 2018, which it is not), and was not re-checked against the 2026 edition; the Type II CKM magnitudes and mass cascades, and the entries C05, C17 and C18, keep their earlier reference values (PDG 2025), since they are not compared in the main text.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{S3.4 Structural constants}\label{s3.4-structural-constants}
+
+The twenty constants, their origin and their status are given in main §3.1. Two corrections to earlier versions of this supplement: N\textsubscript{gen} = 3 is an integer identity (b₂/dim K₇), not the output of an index theorem (main §2.4); and b₂, b₃ are inputs posited by the framework (R1), not quantities confirmed by the spectral analysis of {[}B{]}, which concerns an approximate metric.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{S3.5 The 33 relations: reference data}\label{s3.5-the-33-relations-reference-data}
+
+Formulas, framework values and deviations are in main §4.1. This table gives, for each relation, the reference value, its source and the convention under which it is compared. It is generated from the dataset (\texttt{canonical/\allowbreak{}scripts/\allowbreak{}k7\_\allowbreak{}v3\_\allowbreak{}6\_\allowbreak{}s3\_\allowbreak{}tables.\allowbreak{}py}); the status column is read from main §4.1.
+
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1143}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1714}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0571}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.2143}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Observable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Measured
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pull
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Convention / note
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A01 & sin²θ\textsubscript{W} (M\textsubscript{Z}) & 0.23122(6) & PDG 2026 & −7.5σ & MS-bar at M\textsubscript{Z} (PDG Table 1.1) & integer; \textbf{proximity} \\
+A02 & α\textsubscript{s}(M\textsubscript{Z}) & 0.1180(9) & PDG 2026 & −0.2σ & n/a & algebraic \\
+A03 & λ\textsubscript{H} & 0.12914(23) & PDG 2026 & −1.3σ & tree level m\textsubscript{H}²/(2v²), v = (√2 G\textsubscript{F})\textsuperscript{−1/2} = 246.220 GeV & algebraic; det(g) \\
+A04 & α⁻¹(0) & 137.035999177(21) & CODATA 2022 & ≫ 10σ & α⁻¹ at q² = 0 & det(g), κ\textsubscript{T}; \textbf{proximity} \\
+A05 & Q\textsubscript{Koide} & 0.6666645(51) & PDG 2026 & +0.4σ & computed from the PDG 2026 masses & integer; approximate (R8) \\
+A06 & m\textsubscript{τ}/m\textsubscript{e} & 3477.37(18) & PDG 2026 & −2.1σ & from the PDG 2026 masses & integer; approximate (R8); \textbf{tension} \\
+A07 & m\textsubscript{μ}/m\textsubscript{e} & 206.7682827(46) & CODATA 2022 & ≫ 10σ & n/a & φ; approximate (R8); \textbf{proximity} \\
+A08 & m\textsubscript{s}/m\textsubscript{d} & 17--22 (range) & PDG 2026 & n/a & PDG gives the range 17--22, not a measurement with an uncertainty & integer; inside the PDG range \\
+A09 & m\textsubscript{c}/m\textsubscript{s} & 11.769(35) & PDG 2026 & −1.6σ & lattice average (N\textsubscript{f} = 2+1+1), PDG quark-mass review & integer \\
+A10 & m\textsubscript{b}/m\textsubscript{t} & 0.024253(43) & PDG 2026 & −10.2σ & m\textsubscript{b} at 90\% CL converted to 1σ & integer; \textbf{proximity} (in the scheme declared in R7) \\
+A11 & m\textsubscript{u}/m\textsubscript{d} & 0.462(12) & PDG 2026 & +0.7σ & MS-bar at 2 GeV & integer \\
+A12 & sin²θ₁₂ (PMNS) & 0.3088(+67/−66) & NuFIT 6.1 (IC24+SK-atm, NO) & −0.2σ & n/a & integer \\
+A13 & sin²θ₂₃ (PMNS) & 0.470(+17/−14) & NuFIT 6.1 (IC24+SK-atm, NO) & +4.4σ* & 3σ range 41.27°--49.86°, i.e.~sin² 0.435--0.584, contains 6/11 & integer; \textbf{tension} (octant; inside the NuFIT 3σ range, main §4.3) \\
+A14 & sin²θ₁₃ (PMNS) & 0.02248(+55/−59) & NuFIT 6.1 (IC24+SK-atm, NO) & −0.5σ & n/a & integer \\
+A15 & δ\textsubscript{CP} & 212 (+26/−36)° & NuFIT 6.1 (IC24+SK-atm, NO) & −0.4σ & degrees & \textbf{unit assignment} (R6) \\
+A16 & sin θ₁₂ (CKM) & 0.22517(68) & PDG 2026 & +0.9σ & PDG CKM review: sin θ₁₂ = λ (not squared) & integer; approximate (R12) \\
+A17 & A (Wolfenstein) & 0.826(+17/−15) & PDG 2026 & +0.7σ & PDG CKM review, Wolfenstein fit & integer; approximate (R12) \\
+A18 & sin θ₂₃ (CKM) & 0.04189(+81/−69) & PDG 2026 & −0.3σ & PDG CKM review: sin θ₂₃ = Aλ² (not squared) & integer; approximate (R12) \\
+A19 & m\textsubscript{H}/m\textsubscript{t} & 0.7250(13) & PDG 2026 & +1.8σ & m\textsubscript{t} from direct measurements & integer \\
+A20 & m\textsubscript{H}/m\textsubscript{W} & 1.5571(14) & PDG 2026 & +0.5σ & n/a & integer \\
+A21 & m\textsubscript{W}/m\textsubscript{Z} & 0.88136(15) & PDG 2026 & −2.7σ & W/Z mass ratio of the PDG summary table & integer; \textbf{tension} \\
+A22 & m\textsubscript{μ}/m\textsubscript{τ} & 0.0594612(30) & PDG 2026 & +20.8σ & from the PDG 2026 masses & integer; approximate (R8); \textbf{proximity} \\
+A23 & Ω\textsubscript{DE} & 0.6847(73) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & +0.2σ & Ω\textsubscript{Λ} & ln 2; approximate (R11) \\
+A24 & n\textsubscript{s} & 0.9649(42) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & 0.0σ & n/a & ζ values \\
+A25 & Ω\textsubscript{DM}/Ω\textsubscript{b} & 5.364(77) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & +0.1σ & Ω\textsubscript{c} h² / Ω\textsubscript{b} h² & integer; approximate (R11) \\
+A26 & Ω\textsubscript{c}/Ω\textsubscript{Λ} & 0.387(14) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & 0.0σ & Ω\textsubscript{c} h² / h² / Ω\textsubscript{Λ} & integer; det(g); approximate (R11) \\
+A27 & Ω\textsubscript{Λ}/Ω\textsubscript{m} & 2.173(74) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & 0.0σ & Ω\textsubscript{Λ} / Ω\textsubscript{m}, Planck definitions & integer; approximate (R11) \\
+A28 & h & 0.6736(54) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & 0.0σ & n/a & integer \\
+A29 & Ω\textsubscript{b}/Ω\textsubscript{m} & 0.1565(19) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & −0.1σ & Ω\textsubscript{b} h² / Ω\textsubscript{m} h², Ω\textsubscript{m} includes neutrinos & integer; det(g); approximate (R11) \\
+A30 & Ω\textsubscript{c}/Ω\textsubscript{m} & 0.8390(19) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & +2.5σ & Ω\textsubscript{c} h² / Ω\textsubscript{m} h², Ω\textsubscript{m} includes neutrinos & integer; det(g); approximate (R11); \textbf{tension} \\
+A31 & σ₈ & 0.8111(60) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & −0.3σ & n/a & integer; det(g) \\
+A32 & Y\textsubscript{p} & 0.245(3) & PDG 2024 (BBN review, eq. 24.3) & +0.3σ & n/a & integer; κ\textsubscript{T} \\
+A33 & Ω\textsubscript{m}/Ω\textsubscript{Λ} & 0.461(16) & Planck 2018 (TT,TE,EE +\allowbreak{}lowE +\allowbreak{}lensing) & −0.1σ & Ω\textsubscript{m} / Ω\textsubscript{Λ}, Planck definitions & integer; κ\textsubscript{T}; approximate (R11) \\
+\end{longtable}}
+
+* Non-Gaussian profile (S3.3).
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{S3.6 The 62 conditional and diagnostic entries}\label{s3.6-the-62-conditional-and-diagnostic-entries}
+
+Generated from the dataset. ``Reference value'' is the measured value where one exists, otherwise the mathematical expectation the entry is compared with, otherwise n/a. None of these entries is counted as a prediction.
+
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1167}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.2167}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.3667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Quantity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Formula or mechanism
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Framework value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reference value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+B01 & II & m\textsubscript{u} & sqrt(dim(G₂)/3) & 2.16 & 2.16 & unit assignment (R10) \\
+B02 & II & m\textsubscript{d} & ln(107) & 4.673 & 4.7 & unit assignment (R10) \\
+B03 & II & m\textsubscript{s} & τ×24 & 93.52 & 92.9 & unit assignment (R10) \\
+B04 & II & m\textsubscript{c} & (dim(G₂)-π)³ & 1280 & 1272.9 & unit assignment (R10) \\
+B05 & II & m\textsubscript{b} & 2b₂×H* & 4158 & 4186 & unit assignment (R10) \\
+B06 & II & m\textsubscript{t} & 415² & 172225 & 172600 & unit assignment (R10) \\
+B07 & II & v\textsubscript{EW} & Scale bridge from the unit assignment (R10) & 246.87 & 246.22 & scale bridge; unit assignment (R10) \\
+B08 & II & M\textsubscript{W} & (g₂/2)×v\textsubscript{EW} & 80.4 & 80.3625 & scale bridge; unit assignment (R10) \\
+B09 & II & M\textsubscript{Z} & M\textsubscript{W}/cos(θ\textsubscript{W}) & 91.2 & 91.1879 & scale bridge; unit assignment (R10) \\
+B10 & II & \textbar V\textsubscript{us}\textbar{} & not documented (legacy label: Cabibbo from b₂) & 0.2245 & 0.2243 & Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction \\
+B11 & II & \textbar V\textsubscript{cb}\textbar{} & not documented (legacy label: 2nd gen mixing) & 0.04214 & 0.0422 & Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction \\
+B12 & II & \textbar V\textsubscript{ub}\textbar{} & not documented (legacy label: 3rd gen coupling) & 0.003947 & 0.00394 & Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction \\
+B13 & II & \textbar V\textsubscript{td}\textbar{} & not documented (legacy label: down-type mixing) & 0.008657 & 0.00867 & Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction \\
+B14 & II & \textbar V\textsubscript{ts}\textbar{} & not documented (legacy label: strange-top coupling) & 0.04154 & 0.0415 & Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction \\
+B15 & II & \textbar V\textsubscript{tb}\textbar{} & not documented (legacy label: unitarity) & 0.999106 & 0.999105 & Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction \\
+B16 & II & m\textsubscript{c}/m\textsubscript{s} (ext) & τ×3.49 & 13.6 & 13.6 & mixed scales (m\textsubscript{c} at m\textsubscript{c}, m\textsubscript{s} at 2 GeV); not comparable \\
+B17 & II & m\textsubscript{c}/m\textsubscript{d} & m\textsubscript{c}/m\textsubscript{s} (ext, B16) × m\textsubscript{s}/m\textsubscript{d} (A08) = τ×3.49×20 & 271.99 & 272 & cascade of B16 (Type II, not comparable) and A08; no independent content \\
+B18 & II & m\textsubscript{b}/m\textsubscript{d} & not documented (legacy label: cascade) & 891.97 & 893 & Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction \\
+B19 & II & m\textsubscript{t}/m\textsubscript{c} & not documented (legacy label: cascade) & 135.49 & 136 & Legacy value; derivation not documented in the current dataset; retained for traceability, not counted as a prediction \\
+C01 & III & m\textsubscript{τ}/m\textsubscript{e} (dyn) & Wilson line 3-gen optimization & 3403.1 & 3477.37 & conditional reconstruction (calibration choices, main §6.2) \\
+C02 & III & m\textsubscript{τ}/m\textsubscript{μ} (dyn) & Wilson line 3-gen optimization & 16.5441 & 16.8177 & conditional reconstruction (calibration choices, main §6.2) \\
+C03 & III & c* & Non-adiabatic threshold & 0.177828 & n/a & diagnostic of the approximate seam metric \\
+C04 & III & sin²θ\textsubscript{W} (RGE) & 2-loop MSSM RGE & 0.237655 & 0.23122 & withdrawn (supersymmetric running from a GUT boundary, main §5) \\
+C05 & III & α\textsubscript{s} (RGE) & 2-loop MSSM RGE & 0.103769 & 0.118 & withdrawn (supersymmetric running from a GUT boundary, main §5) \\
+C06 & III & M\textsubscript{GUT} & Gauge unification & 2e+16 & 2e+16 & withdrawn (supersymmetric running from a GUT boundary, main §5) \\
+C07 & III & α\textsubscript{GUT}⁻¹ & Gauge unification & 25.3 & 25.3 & withdrawn (supersymmetric running from a GUT boundary, main §5) \\
+C08 & III & λ₁ & Neumann FD + Richardson & 0.124607 & n/a & diagnostic of the approximate seam metric \\
+C09 & III & α\textsubscript{Weyl} & N(λ) \textasciitilde{} C λ\textsuperscript{d/2} & 3.46002 & 3.5 & diagnostic of the approximate seam metric (compared with d/2, not a measurement) \\
+C10 & III & N\textsubscript{KK} & Unified KK tower enumeration & 22671 & n/a & diagnostic of the approximate seam metric \\
+C11 & III & N\textsubscript{fiber} & Adiabatic + explicit fiber modes & 57578 & n/a & diagnostic of the approximate seam metric \\
+C12 & III & spacing & Level spacing statistics & 1.35838 & n/a & diagnostic of the approximate seam metric \\
+C13 & III & κ\textsubscript{gauge} & f\textsubscript{IJ} eigenvalue spread & 1.0471 & 1 & diagnostic of the approximate seam metric (compared with 1, not a measurement) \\
+C14 & III & n\textsubscript{SD} & Count of positive eigenvalues of the K3 intersection form & 3 & 3 & diagnostic of the approximate seam metric (compared with N\textsubscript{gen}) \\
+C15 & III & N\textsubscript{assoc} & Homology 3-cycles with φ-calibration & 57 & n/a & diagnostic of the approximate seam metric \\
+C16 & III & \textbar\textbar T\textbar\textbar\textsubscript{C}⁰ & G₂ torsion norm & 2.98e-05 & n/a & diagnostic of the approximate seam metric \\
+C17 & III & ΔV(e-τ) & Associative volume differences & 8.6331 & 8.15393 & conditional reconstruction (calibration choices, main §6.2) \\
+C18 & III & ΔV(e-μ) & Associative volume differences & 3.27125 & 2.82257 & conditional reconstruction (calibration choices, main §6.2); mismatched reference (see Type III above) \\
+C19 & III & m\textsubscript{τ}/m\textsubscript{e} (comb) & Wilson-line ratio × exp(e\textsuperscript{K} · ΔV) & 3485.3 & 3477.37 & conditional reconstruction (calibration choices, main §6.2) \\
+C20 & III & m\textsubscript{τ}/m\textsubscript{μ} (comb) & Wilson-line ratio × exp(e\textsuperscript{K} · ΔV) & 16.69 & 16.8177 & conditional reconstruction (calibration choices, main §6.2); inherits the C18 pairing \\
+C21 & III & m\textsubscript{μ}/m\textsubscript{e} (comb) & Wilson-line ratio × exp(e\textsuperscript{K} · ΔV) & 208.8 & 206.768 & conditional reconstruction (calibration choices, main §6.2); ratio C19/C20, inherits the C18 pairing \\
+D01 & IV & b₂ & TCS K₇ & 21 & n/a & input (R1) \\
+D02 & IV & b₃ & TCS K₇ & 77 & n/a & input (R1) \\
+D03 & IV & H* & b₂+b₃+1 & 99 & n/a & integer combination of R1 \\
+D04 & IV & N\textsubscript{gen} & b₂/dim(K₇) & 3 & n/a & integer identity (main §2.4) \\
+D05 & IV & det(g) & det(g₅) & 2.03125 & n/a & imposed normalization (R2) \\
+D06 & IV & h\textsubscript{NK} & β×η×γ & 8.95e-09 & n/a & diagnostic of the approximate seam metric \\
+D07 & IV & dist(g,g*) & NK contraction ball & 4.86e-06 & n/a & diagnostic of the approximate seam metric \\
+D08 & IV & \textbar\textbar T\textbar\textbar\textsubscript{C}⁰ (cert) & Chebyshev coefficient bound & 2.95e-05 & n/a & diagnostic of the approximate seam metric \\
+D09 & IV & κ(G\textsubscript{K3}) & L² Gram matrix K3 2-forms & 1.05232 & n/a & diagnostic of the approximate seam metric \\
+D10 & IV & N\textsubscript{levels} & Unified spectrum enumeration & 22671 & n/a & diagnostic of the approximate seam metric \\
+D11 & IV & \texttt{N\_\allowbreak{}states\_\allowbreak{}total} & Including degeneracies & 210060 & n/a & diagnostic of the approximate seam metric \\
+D12 & IV & V\textsubscript{eff} & Effective 7D volume from Weyl fit & 5.38e+05 & n/a & diagnostic of the approximate seam metric \\
+D13 & IV & n\textsubscript{homology} & b₃ = 77 & 77 & n/a & diagnostic of the approximate seam metric \\
+D14 & IV & N\textsubscript{assoc} & φ-calibrated cycles & 57 & n/a & diagnostic of the approximate seam metric \\
+D15 & IV & \textbar\textbar Y\textbar\textbar{} & Total Yukawa coupling norm & 8.96902 & n/a & diagnostic of the approximate seam metric \\
+D16 & IV & ΔV\textsubscript{range} & max(V) - min(V) & 8.91952 & n/a & diagnostic of the approximate seam metric \\
+D17 & IV & g\textsubscript{ss} & g\textsubscript{ss} = 19/6 (S¹ sector) & 3.16667 & n/a & diagnostic of the approximate seam metric \\
+D18 & IV & g\textsubscript{T2} & g\textsubscript{T2} = 7/6 (T² sector) & 1.16667 & n/a & diagnostic of the approximate seam metric \\
+D19 & IV & g\textsubscript{K3} & g\textsubscript{K3} \textasciitilde{} 64/77 (K3 sector mean) & 0.831169 & n/a & diagnostic of the approximate seam metric \\
+D20 & IV & N\textsubscript{QNM} & b2 + b3 = H* - 1 & 98 & n/a & from \cite{42}; topological count \\
+D21 & IV & \texttt{b3/\allowbreak{}b3\_\allowbreak{}S3S4} & b3(K7) = 77 vs b3(S3xS4) = 1 & 77 & n/a & from \cite{42}; topological count \\
+D22 & IV & M\textsubscript{res} & tau\textsubscript{0} = v\textsubscript{EW}, M\textsubscript{res} = v\textsubscript{EW}\textsuperscript{2} / M\textsubscript{Pl} & 4969.2 & n/a & from \cite{42}; conditional on the scale identification τ₀ = v\textsubscript{EW} \\
+\end{longtable}}
+
+\textbf{Withdrawn readings attached to these entries.} Earlier versions of this supplement listed ``exact matches'' (deviation below 0.01\%) and ranked sectors by mean deviation. Both are withdrawn: an exact match between a Type II number and a PDG mass rounded to two or three figures (m\textsubscript{u} = 2.16, m\textsubscript{c} = 1.27 GeV) measures the rounding, not the framework; M\textsubscript{GUT}, α\textsubscript{GUT}⁻¹ and rank(Y) were compared with values the same computation had set; and a mean deviation measures closeness, which main §7 shows is not distinctive. The description of Q\textsubscript{Koide} as ``the most precise agreement in the framework, with no fitting involved'' is withdrawn with the primary-relation reading (main §6.1): Q = 2/3 predates the framework and every invented vocabulary reaches it. An earlier table of neutrino angles in this supplement used formulas (θ₂₃ = arcsin(75/99), θ₁₂ from an auxiliary parameter) that are not the dataset's; the dataset's relations are those of main §4.1.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{S3.7 Lean cross-references}\label{s3.7-lean-cross-references}
+
+The Lean formalization (Arithmon/K7-Lean, main §8) verifies arithmetic identities. A verified identity says that a closed form evaluates to a number; it says nothing about the physical identification, the choice of formula, or the consistency of relations taken together. The table gives, for each of the 33 relations, the Lean declaration that ties the closed form to its value, and the scope of that proof. It is generated from \texttt{canonical/\allowbreak{}results/\allowbreak{}k7\_\allowbreak{}v3\_\allowbreak{}6\_\allowbreak{}lean\_\allowbreak{}map.\allowbreak{}json}; the library builds at the commit named, and the axioms are those reported by \texttt{\#print\ axioms}.
+
+Arithmon/K7-Lean, commit \texttt{34ce857} (merged into \texttt{main}, PR \#167); aggregate \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}relations\_\allowbreak{}v36\_\allowbreak{}certified}, which depends only on the axioms \texttt{propext}, \texttt{Classical.\allowbreak{}choice}, \texttt{Quot.\allowbreak{}sound}.
+
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0536}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1071}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3750}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2321}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2321}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Observable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Lean declaration (under \texttt{GIFT.\allowbreak{}})
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Location
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Scope
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A01 & sin²θ\textsubscript{W} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A01\_\allowbreak{}sin2\_\allowbreak{}theta\_\allowbreak{}W} & Certificate/\allowbreak{}RelationsV36.lean:50 & exact rational equality of the closed form \\
+A02 & α\textsubscript{s}(M\textsubscript{Z}) & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A02\_\allowbreak{}alpha\_\allowbreak{}s} & Certificate/\allowbreak{}RelationsV36.lean:55 & closed form in ℝ equal to the stated real value (no numerical bound) \\
+A03 & λ\textsubscript{H} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A03\_\allowbreak{}lambda\_\allowbreak{}H} & Certificate/\allowbreak{}RelationsV36.lean:59 & closed form in ℝ equal to the stated real value (no numerical bound) \\
+A04 & α⁻¹(0) & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A04\_\allowbreak{}alpha\_\allowbreak{}inv} & Certificate/\allowbreak{}RelationsV36.lean:65 & exact rational equality of the closed form \\
+A05 & Q\textsubscript{Koide} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A05\_\allowbreak{}Q\_\allowbreak{}Koide} & Certificate/\allowbreak{}RelationsV36.lean:73 & exact rational equality of the closed form \\
+A06 & m\textsubscript{τ}/m\textsubscript{e} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A06\_\allowbreak{}m\_\allowbreak{}tau\_\allowbreak{}m\_\allowbreak{}e} & Certificate/\allowbreak{}RelationsV36.lean:77 & exact rational equality of the closed form \\
+A07 & m\textsubscript{μ}/m\textsubscript{e} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A07\_\allowbreak{}m\_\allowbreak{}mu\_\allowbreak{}m\_\allowbreak{}e} & Certificate/\allowbreak{}RelationsV36.lean:81 & base 27 and interval bounds on 27\textsuperscript{φ} \\
+A08 & m\textsubscript{s}/m\textsubscript{d} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A08\_\allowbreak{}m\_\allowbreak{}s\_\allowbreak{}m\_\allowbreak{}d} & Certificate/\allowbreak{}RelationsV36.lean:91 & exact rational equality of the closed form \\
+A09 & m\textsubscript{c}/m\textsubscript{s} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A09\_\allowbreak{}m\_\allowbreak{}c\_\allowbreak{}m\_\allowbreak{}s} & Certificate/\allowbreak{}RelationsV36.lean:95 & exact rational equality of the closed form \\
+A10 & m\textsubscript{b}/m\textsubscript{t} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A10\_\allowbreak{}m\_\allowbreak{}b\_\allowbreak{}m\_\allowbreak{}t} & Certificate/\allowbreak{}RelationsV36.lean:100 & exact rational equality of the closed form \\
+A11 & m\textsubscript{u}/m\textsubscript{d} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A11\_\allowbreak{}m\_\allowbreak{}u\_\allowbreak{}m\_\allowbreak{}d} & Certificate/\allowbreak{}RelationsV36.lean:104 & exact rational equality of the closed form \\
+A12 & sin²θ₁₂ᴾᴹᴺˢ & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A12\_\allowbreak{}sin2\_\allowbreak{}theta12\_\allowbreak{}PMNS} & Certificate/\allowbreak{}RelationsV36.lean:109 & exact rational equality of the closed form \\
+A13 & sin²θ₂₃ᴾᴹᴺˢ & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A13\_\allowbreak{}sin2\_\allowbreak{}theta23\_\allowbreak{}PMNS} & Certificate/\allowbreak{}RelationsV36.lean:113 & exact rational equality of the closed form \\
+A14 & sin²θ₁₃ᴾᴹᴺˢ & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A14\_\allowbreak{}sin2\_\allowbreak{}theta13\_\allowbreak{}PMNS} & Certificate/\allowbreak{}RelationsV36.lean:117 & exact rational equality of the closed form \\
+A15 & δ\textsubscript{CP} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A15\_\allowbreak{}delta\_\allowbreak{}CP} & Certificate/\allowbreak{}RelationsV36.lean:122 & the integer 197 (the unit is not in Lean) \\
+A16 & sin θ₁₂ᶜᴷᴹ & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A16\_\allowbreak{}sin\_\allowbreak{}theta12\_\allowbreak{}CKM} & Certificate/\allowbreak{}RelationsV36.lean:126 & exact rational equality of the closed form \\
+A17 & A\textsubscript{Wolf} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A17\_\allowbreak{}A\_\allowbreak{}Wolf} & Certificate/\allowbreak{}RelationsV36.lean:131 & exact rational equality of the closed form \\
+A18 & sin θ₂₃ᶜᴷᴹ & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A18\_\allowbreak{}sin\_\allowbreak{}theta23\_\allowbreak{}CKM} & Certificate/\allowbreak{}RelationsV36.lean:135 & exact rational equality of the closed form \\
+A19 & m\textsubscript{H}/m\textsubscript{t} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A19\_\allowbreak{}m\_\allowbreak{}H\_\allowbreak{}m\_\allowbreak{}t} & Certificate/\allowbreak{}RelationsV36.lean:140 & exact rational equality of the closed form \\
+A20 & m\textsubscript{H}/m\textsubscript{W} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A20\_\allowbreak{}m\_\allowbreak{}H\_\allowbreak{}m\_\allowbreak{}W} & Certificate/\allowbreak{}RelationsV36.lean:145 & exact rational equality of the closed form \\
+A21 & m\textsubscript{W}/m\textsubscript{Z} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A21\_\allowbreak{}m\_\allowbreak{}W\_\allowbreak{}m\_\allowbreak{}Z} & Certificate/\allowbreak{}RelationsV36.lean:150 & exact rational equality of the closed form \\
+A22 & m\textsubscript{μ}/m\textsubscript{τ} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A22\_\allowbreak{}m\_\allowbreak{}mu\_\allowbreak{}m\_\allowbreak{}tau} & Certificate/\allowbreak{}RelationsV36.lean:155 & exact rational equality of the closed form \\
+A23 & Ω\textsubscript{DE} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A23\_\allowbreak{}Omega\_\allowbreak{}DE} & Certificate/\allowbreak{}RelationsV36.lean:159 & closed form in ℝ equal to the stated real value (no numerical bound) \\
+A24 & n\textsubscript{s} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A24\_\allowbreak{}n\_\allowbreak{}s} & Certificate/\allowbreak{}RelationsV36.lean:165 & indices (11, 5) and ζ(D\textsubscript{bulk})/ζ(Weyl) = ζ(11)/ζ(5) (no numerical bound) \\
+A25 & Ω\textsubscript{DM}/Ω\textsubscript{b} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A25\_\allowbreak{}Omega\_\allowbreak{}DM\_\allowbreak{}b} & Certificate/\allowbreak{}RelationsV36.lean:173 & exact rational equality of the closed form \\
+A26 & Ω\textsubscript{c}/Ω\textsubscript{Λ} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A26\_\allowbreak{}Omega\_\allowbreak{}c\_\allowbreak{}Lambda} & Certificate/\allowbreak{}RelationsV36.lean:177 & exact rational equality of the closed form \\
+A27 & Ω\textsubscript{Λ}/Ω\textsubscript{m} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A27\_\allowbreak{}Omega\_\allowbreak{}Lambda\_\allowbreak{}m} & Certificate/\allowbreak{}RelationsV36.lean:182 & exact rational equality of the closed form \\
+A28 & h & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A28\_\allowbreak{}hubble\_\allowbreak{}h} & Certificate/\allowbreak{}RelationsV36.lean:187 & exact rational equality of the closed form \\
+A29 & Ω\textsubscript{b}/Ω\textsubscript{m} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A29\_\allowbreak{}Omega\_\allowbreak{}b\_\allowbreak{}m} & Certificate/\allowbreak{}RelationsV36.lean:191 & exact rational equality of the closed form \\
+A30 & Ω\textsubscript{c}/Ω\textsubscript{m} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A30\_\allowbreak{}Omega\_\allowbreak{}c\_\allowbreak{}m} & Certificate/\allowbreak{}RelationsV36.lean:196 & exact rational equality of the closed form \\
+A31 & σ\textsubscript{8} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A31\_\allowbreak{}sigma\_\allowbreak{}8} & Certificate/\allowbreak{}RelationsV36.lean:200 & exact rational equality of the closed form \\
+A32 & Y\textsubscript{p} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A32\_\allowbreak{}Y\_\allowbreak{}p} & Certificate/\allowbreak{}RelationsV36.lean:204 & exact rational equality of the closed form \\
+A33 & Ω\textsubscript{m}/Ω\textsubscript{Λ} & \texttt{Certificate.\allowbreak{}Relations\allowbreak{}V36.\allowbreak{}A33\_\allowbreak{}Omega\_\allowbreak{}m\_\allowbreak{}Lambda} & Certificate/\allowbreak{}RelationsV36.lean:208 & exact rational equality of the closed form \\
+\end{longtable}}
+
+\textbf{Scope.} Every relation has a statement that ties its closed form, written in the structural constants, to its value: an exact rational equality for 27; a closed form in ℝ equal to the stated real value for α\textsubscript{s}, λ\textsubscript{H} and Ω\textsubscript{DE}, with no numerical bound; the indices and the ζ-quotient for n\textsubscript{s}, with no numerical bound; the base 27 and the bounds 206 \textless{} 27\textsuperscript{φ} \textless{} 209 for m\textsubscript{μ}/m\textsubscript{e}, an interval wider than the deviation it is compared with; and the integer 197 for δ\textsubscript{CP}, whose unit is a dictionary assignment outside Lean. The 33 statements are collected in \texttt{relations\_\allowbreak{}v36\_\allowbreak{}certified}.
+
+\textbf{What earlier versions cited.} Earlier versions cited the single theorem \texttt{observables\_\allowbreak{}certified} (\texttt{Certificate/\allowbreak{}Predictions.\allowbreak{}lean}) as certifying the relations. That theorem is a conjunction of statements of the form \texttt{X\ =\ v} where \texttt{X} is defined as the literal \texttt{v}; each holds by definition. Before the alignment of 2026-10-22 (commit \texttt{70dc589}), 24 relations had an exact statement elsewhere in the library, 5 had only their components, 1 had bounds and 3 (m\textsubscript{μ}/m\textsubscript{τ}, Ω\textsubscript{c}/Ω\textsubscript{m}, Ω\textsubscript{m}/Ω\textsubscript{Λ}) had none.
+
+\textbf{Names and withdrawn content.} The alignment renamed declarations whose names misdescribed them, keeping the old names as deprecated aliases: the CKM entries are now \texttt{sin\_\allowbreak{}theta12\_\allowbreak{}CKM} and \texttt{sin\_\allowbreak{}theta23\_\allowbreak{}CKM} (the quantities compared are sin θ, S2.4); 42 is \texttt{two\_\allowbreak{}b2\ :=\ 2\ *\ b2}, not \texttt{chi\_\allowbreak{}K7} (χ(K₇) = 0, S1 §9.3); identities giving other values for the paper's observables (4/7 and 8/14 for θ₂₃, 7/23 for θ₁₂, 85/99) carry neutral arithmetic names and are documented as instances of the vocabulary freedom of S2.7. The δ\textsubscript{CP} correction 197 × 62/69 = 12214/69 (S2.8) was removed from the aggregated certificate; its module is kept, marked withdrawn. A statement proves that the Koide parameter built from the framework's own m\textsubscript{μ}/m\textsubscript{e} = 27\textsuperscript{φ} and m\textsubscript{τ}/m\textsubscript{e} = 3477 lies strictly below 2/3 (\texttt{Relations/\allowbreak{}Koide\allowbreak{}Assembly.\allowbreak{}lean}), the incompatibility of main §6.1.
+
+\textbf{Axioms.} The formalization rests on fourteen axioms beyond Mathlib: four that import results from the literature (\texttt{cheeger\_\allowbreak{}inequality}, \texttt{literature\_\allowbreak{}package}, \texttt{spectral\_\allowbreak{}upper\_\allowbreak{}bound}, \texttt{neck\_\allowbreak{}dominates}) and ten interval certificates that import numerical enclosures {[}ERR, §7.1{]}; no \texttt{sorry} is used.
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{S3.8 Data availability}\label{s3.8-data-availability}
+
+The dataset is \texttt{canonical/\allowbreak{}data/\allowbreak{}observables.\allowbreak{}json} (95 entries; for each: formula, framework value, reference value and uncertainty, source, deviation, Lean theorem, provenance, and dated notes of every change). The refresh script and its log, and the generators of the main §4.1 table and of the S3 tables, are listed in S3.3 and S3.5. The dataset is deposited in the public repository (Arithmon/K7), as read by the look-elsewhere run in \texttt{publications/\allowbreak{}validation/\allowbreak{}v3.\allowbreak{}6/\allowbreak{}canonical/\allowbreak{}data/\allowbreak{}observables.\allowbreak{}json} and as a table in \texttt{publications/\allowbreak{}references/\allowbreak{}observables.\allowbreak{}csv}. The refresh script and the table generators are available from the author on request. The spectral companion artifacts of {[}B{]} are archived on Zenodo (DOI: \href{https://doi.org/10.5281/zenodo.18920367}{10.5281/zenodo.18920367}).
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\section{Author's Related Works}\label{authors-related-works}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{{[}B{]}} B. de La Fournière, ``Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms,'' Zenodo \href{https://doi.org/10.5281/zenodo.18920367}{10.5281/zenodo.18920367} (2026).
+\item
+  \textbf{{[}ERR{]}} B. de La Fournière, ``Erratum: GIFT / K₇ framework v3.5'' (2026), repository Arithmon/K7, \texttt{publications/\allowbreak{}ERRATUM\_\allowbreak{}v3.\allowbreak{}5.\allowbreak{}md}, commit aed460315eecc17a20402b1f4d20ac310dd4f6c2, \href{https://github.com/Arithmon/K7/blob/aed460315eecc17a20402b1f4d20ac310dd4f6c2/publications/ERRATUM_v3.5.md}{github.com/Arithmon/K7/blob/aed4603/publications/ERRATUM\_\allowbreak{}v3.5.md}.
+\end{itemize}
+
+\begin{center}\rule{\linewidth}{0.5pt}\end{center}
+
+\emph{The K₇ Framework (formerly GIFT): Supplement S3: Observable Dataset} \emph{33 relations compared with measurement; 62 conditional and diagnostic entries}
+
+
+\bigskip
+\input{gift_3.6_bib}
+
+\end{document}

@@ -1,280 +1,264 @@
 # Citation Guide
 
-Citation formats for The K₇ Framework v3.5 (formerly GIFT).
+Citation formats for the K₇ framework, version 3.6 (formerly GIFT).
 
-## Software Citation (Recommended)
+**Version 3.6 is not deposited yet.** Until it is, the published version is 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)), read together with its [erratum](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md). The entries below cite the concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489), which always resolves to the latest deposited version; the version DOI of 3.6 will be added at the deposit.
+
+## Framework (recommended)
 
 ### BibTeX
 
 ```bibtex
-@software{k7_framework_v35,
+@software{k7_framework,
   title   = {The K₇ Framework (formerly GIFT)},
   author  = {de La Fournière, Brieuc},
   year    = {2026},
   url     = {https://github.com/Arithmon/K7},
   doi     = {10.5281/zenodo.16891489},
-  version = {3.5},
+  version = {3.6},
   license = {MIT},
-  note    = {95 observables, 0.99\% mean deviation on 33 Type I relations (PDG 2024 / NuFIT 6.1), 213 conjuncts certified in Lean 4, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), Donaldson certificate pipeline scoped by docs/analytic_status.md}
+  note    = {A declared correspondence between invariants of a G₂-holonomy seven-manifold and 33 dimensionless parameters: 23 within 2σ of measurement, 3 in tension, 5 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile (PDG 2026, NuFIT 6.1, Planck 2018). 156 Lean 4 files, 14 axioms (4 literature imports, 10 interval certificates), no sorry; the arithmetic of the 33 relations is collected in relations\_v36\_certified (commit 34ce857).}
 }
 ```
 
-### APA Style
+### APA
 
 ```
-de La Fournière, B. (2026). The K₇ Framework (formerly GIFT) (Version 3.5) [Software]. Zenodo. https://doi.org/10.5281/zenodo.16891489
+de La Fournière, B. (2026). The K₇ Framework (formerly GIFT) (Version 3.6) [Software]. Zenodo. https://doi.org/10.5281/zenodo.16891489
 ```
 
-### Chicago Style
+### Chicago
 
 ```
-de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.5. Zenodo, 2026. https://doi.org/10.5281/zenodo.16891489.
+de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zenodo, 2026. https://doi.org/10.5281/zenodo.16891489.
 ```
 
 ---
 
-## Theoretical Framework Citation
+## Framework v3.6 papers
 
-### BibTeX
+### Main paper
 
 ```bibtex
-@article{k7_framework_theory_v35,
-  title  = {The K₇ Framework v3.5: Conditional Topological Relations for Standard-Model Parameters},
-  author = {de La Fournière, Brieuc},
-  year   = {2026},
-  note   = {Mean deviation 0.99\% on 33 Type I relations (PDG 2024 / NuFIT 6.1), zero continuous adjustable parameters, 3 integer primitives (N=3, r₈=8, r₂=2), 213 conjuncts in Lean 4},
-  url    = {https://github.com/Arithmon/K7}
+@misc{k7_main_v36,
+  title        = {The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology},
+  author       = {de La Fournière, Brieuc},
+  year         = {2026},
+  month        = {November},
+  howpublished = {The K₇ Framework v3.6, 40 pp.},
+  doi          = {10.5281/zenodo.16891489},
+  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf}
 }
 ```
+
+### S1
+
+```bibtex
+@misc{k7_s1_v36,
+  title        = {Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and K₇ Construction},
+  author       = {de La Fournière, Brieuc},
+  year         = {2026},
+  month        = {November},
+  howpublished = {The K₇ Framework v3.6, Supplement S1, 26 pp.},
+  doi          = {10.5281/zenodo.16891489},
+  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf}
+}
+```
+
+### S2
+
+```bibtex
+@misc{k7_s2_v36,
+  title        = {Supplement S2: The 33 Relations. Arithmetic, Dictionary Choices and Status},
+  author       = {de La Fournière, Brieuc},
+  year         = {2026},
+  month        = {November},
+  howpublished = {The K₇ Framework v3.6, Supplement S2, 14 pp.},
+  doi          = {10.5281/zenodo.16891489},
+  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S2_derivations.pdf}
+}
+```
+
+### S3
+
+```bibtex
+@misc{k7_s3_v36,
+  title        = {Supplement S3: Observable Dataset. 33 Relations Compared with Measurement; 62 Conditional and Diagnostic Entries},
+  author       = {de La Fournière, Brieuc},
+  year         = {2026},
+  month        = {November},
+  howpublished = {The K₇ Framework v3.6, Supplement S3, 15 pp.},
+  doi          = {10.5281/zenodo.16891489},
+  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S3_observables.pdf}
+}
+```
+
+### S4
+
+```bibtex
+@misc{k7_s4_v36,
+  title        = {Supplement S4: Sieve and Look-Elsewhere Diagnostics},
+  author       = {de La Fournière, Brieuc},
+  year         = {2026},
+  month        = {November},
+  howpublished = {The K₇ Framework v3.6, Supplement S4, 10 pp.},
+  doi          = {10.5281/zenodo.16891489},
+  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf}
+}
+```
+
+> Earlier versions: v3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168), with its [erratum](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md)); v3.4 (Zenodo [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101), files in [`publications/papers/legacy/v3.4/`](publications/papers/legacy/v3.4/)); v3.3 (Zenodo [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071), files in [`publications/papers/legacy/v3.3/`](publications/papers/legacy/v3.3/)). Version 3.6 withdraws a number of statements of these versions; see the [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md).
 
 ---
 
-## Framework v3.5 Papers (Zenodo, PDF)
+## Companion papers (Zenodo)
 
-### Main Paper
+Cited by their concept DOI, as in the paper's reference list.
 
-```bibtex
-@misc{k7_main_v35,
-  title        = {The K₇ Framework: Conditional Topological Relations for Standard-Model Parameters from G₂ Holonomy and E₈×E₈ Structure},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  month        = {July},
-  howpublished = {The K₇ Framework v3.5, 47 pp.},
-  doi          = {10.5281/zenodo.21296168},
-  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_main.pdf}
-}
-```
-
-### S1: Foundations
-
-```bibtex
-@misc{k7_s1_foundations_v35,
-  title        = {K₇ Framework S1: Mathematical Foundations — E₈, G₂, K₇},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  month        = {July},
-  howpublished = {The K₇ Framework v3.5, Supplement S1},
-  doi          = {10.5281/zenodo.21296168},
-  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_S1_foundations.pdf}
-}
-```
-
-### S2: Derivations
-
-```bibtex
-@misc{k7_s2_derivations_v35,
-  title        = {K₇ Framework S2: Complete Derivations — Type I Relations},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  month        = {July},
-  howpublished = {The K₇ Framework v3.5, Supplement S2},
-  doi          = {10.5281/zenodo.21296168},
-  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_S2_derivations.pdf}
-}
-```
-
-### S3: Observables
-
-```bibtex
-@misc{k7_s3_observables_v35,
-  title        = {K₇ Framework S3: Complete Observable Dataset},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  month        = {July},
-  howpublished = {The K₇ Framework v3.5, Supplement S3},
-  doi          = {10.5281/zenodo.21296168},
-  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_S3_observables.pdf}
-}
-```
-
-### S4: Sieve Diagnostics
-
-```bibtex
-@misc{k7_s4_sieve_diagnostics_v35,
-  title        = {K₇ Framework S4: Sieve Diagnostics},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  month        = {July},
-  howpublished = {The K₇ Framework v3.5, Supplement S4},
-  doi          = {10.5281/zenodo.21296168},
-  url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_S4_sieve_diagnostics.pdf}
-}
-```
-
-> Archived versions: v3.4 (Zenodo [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101), files in [`publications/papers/legacy/v3.4/`](publications/papers/legacy/v3.4/)); v3.3 (Zenodo [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071), files in [`publications/papers/legacy/v3.3/`](publications/papers/legacy/v3.3/)).
-
----
-
-## Companion Papers (peer-reviewable, Zenodo)
-
-### Paper A: Certified G₂ Structure
+### [A]
 
 ```bibtex
 @misc{k7_paper_a_certified_neck,
-  title        = {Certified Torsion-Free G₂ Structure on a TCS Neck Model via Computer-Assisted Proof},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  doi          = {10.5281/zenodo.19892350},
-  url          = {https://doi.org/10.5281/zenodo.19892350},
-  note         = {First computer-assisted existence proof for a metric with special holonomy; h ≤ 8.95×10⁻⁹, ×56 million margin below Joyce ε₀}
+  title  = {A Certified Torsion-Free G₂ Structure on a TCS Neck Model via Computer-Assisted Proof},
+  author = {de La Fournière, Brieuc},
+  year   = {2026},
+  doi    = {10.5281/zenodo.18643069},
+  url    = {https://doi.org/10.5281/zenodo.18643069},
+  note   = {Newton--Kantorovich certificate for a nearby torsion-free metric on a seam region; it does not construct a compact K₇}
 }
 ```
 
-### Paper B: Spectral Geometry
+### [B]
 
 ```bibtex
 @misc{k7_paper_b_spectral,
-  title        = {Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  doi          = {10.5281/zenodo.19893371},
-  url          = {https://doi.org/10.5281/zenodo.19893371},
-  note         = {Laplacian spectrum, harmonic forms, λ₁ ≈ 0.12461 (Richardson) ≈ 6π²/475}
+  title  = {Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms},
+  author = {de La Fournière, Brieuc},
+  year   = {2026},
+  doi    = {10.5281/zenodo.18920367},
+  url    = {https://doi.org/10.5281/zenodo.18920367},
+  note   = {Laplacian spectrum and harmonic forms of the approximate seam metric}
 }
 ```
 
-### Paper C: Newton-Kantorovich on K3
+### [C]
 
 ```bibtex
 @misc{k7_paper_c_k3_nk,
-  title        = {Newton--Kantorovich Diagnostics on a Donaldson K3 Metric},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  doi          = {10.5281/zenodo.19708916},
-  url          = {https://doi.org/10.5281/zenodo.19708916},
-  note         = {NK certificate on CI(2,2,2) K3 with Donaldson-balanced metric, β_Lap k=4 margin ×6.4}
+  title  = {Newton--Kantorovich diagnostics on a Donaldson K3 metric: two β estimates, machine-checked inequalities},
+  author = {de La Fournière, Brieuc},
+  year   = {2026},
+  doi    = {10.5281/zenodo.19708915},
+  url    = {https://doi.org/10.5281/zenodo.19708915},
+  note   = {NK diagnostics on a Donaldson-balanced metric on the K3 surface CI(2,2,2)}
 }
 ```
 
-### Paper D: Donaldson Analytic Note
+### [D]
 
 ```bibtex
 @misc{k7_paper_d_donaldson,
-  title        = {An Explicit Closed-Form G\textsubscript{2} Ansatz on a K3-Coassociative Neck with Hyperk\"{a}hler Rotation and Picard--Lefschetz Wirtinger Certificate},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  month        = {May},
-  doi          = {10.5281/zenodo.20039066},
-  url          = {https://doi.org/10.5281/zenodo.20039066},
-  note         = {Donaldson neck-level certificate at 5 levels: topological, ansatz, PL holonomy, spatial embedding, symbolic Wirtinger. Not a compact K7 torsion-free theorem. 15 pp.}
+  title  = {An Explicit Closed-Form G₂ Ansatz on a K3-Coassociative Neck with Hyperkähler Rotation and Picard-Lefschetz Wirtinger Certificate},
+  author = {de La Fournière, Brieuc},
+  year   = {2026},
+  doi    = {10.5281/zenodo.20039065},
+  url    = {https://doi.org/10.5281/zenodo.20039065},
+  note   = {Neck-level certificate; not a compact K₇ torsion-free theorem}
 }
 ```
 
-### Paper E: Rank-1 Branched Adiabatic
+### [E]
 
 ```bibtex
 @misc{k7_paper_e_rank_one_branched,
-  title        = {A conditional analytic framework for rank-one branched Kovalev--Lefschetz adiabatic limits},
-  author       = {de La Fournière, Brieuc},
-  year         = {2026},
-  month        = {July},
-  doi          = {10.5281/zenodo.21215956},
-  url          = {https://doi.org/10.5281/zenodo.21215956},
-  note         = {Conditional analytic framework; constants computed at the single-root datum D₀ (K_Sch ≤ 16/3, q_total = 8.2e-3, κ_E ≤ 1.02, R_0 ≤ 4.9e3), which is not realisable as posed (K₇ v3.5 erratum, §2 and §7.4). Open: a realisable datum, (J) and H_global. Main 68 pp. + supplement 25 pp.}
+  title  = {A conditional analytic framework for rank-one branched Kovalev--Lefschetz adiabatic limits},
+  author = {de La Fournière, Brieuc},
+  year   = {2026},
+  doi    = {10.5281/zenodo.21215956},
+  url    = {https://doi.org/10.5281/zenodo.21215956},
+  note   = {Conditional analytic framework; the datum-level instantiation at D₀ is not realisable as posed (v3.5 erratum, sections 2 and 7.4)}
 }
 ```
 
----
-
-## Formal Verification (K7-Lean)
+### [M]
 
 ```bibtex
-@software{k7_lean_v35,
-  title   = {K7-Lean (formerly GIFT Core): Formal Verification in Lean 4},
-  author  = {de La Fournière, Brieuc},
-  year    = {2026},
-  url     = {https://github.com/Arithmon/K7-Lean},
-  version = {3.5},
-  note    = {146 Lean 4 files, 213 conjuncts, 14 axioms at K7-Lean main (4 prediction-chain + 10 K3 interval certificates), 0 sorry, 8394 build jobs, Donaldson coassociative fibration formalized}
+@misc{sieve_methodology,
+  title  = {A reproducible standard for arithmetic coincidence claims in fundamental physics},
+  author = {de La Fournière, Brieuc},
+  year   = {2026},
+  doi    = {10.5281/zenodo.20728964},
+  url    = {https://doi.org/10.5281/zenodo.20728964},
+  note   = {The Sieve methodology and its four-null scorecard for the K₇ relations}
 }
 ```
 
 ---
 
-## DOI Information
+## Formal verification (K7-Lean)
 
-| Archive | Link |
-|---------|------|
-| Zenodo (framework v3.5, current) | [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168) |
-| Zenodo (framework concept DOI, always latest) | [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) |
-| Zenodo (framework v3.4 archive) | [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101) |
-| Zenodo (framework v3.3 archive) | [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071) |
-| Zenodo (Paper A, certified G₂) | [10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350) |
-| Zenodo (Paper B, spectral) | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
-| Zenodo (Paper C, K3 NK) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
-| Zenodo (Paper D, Donaldson analytic) | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
-| Zenodo (Paper E, rank-1 branched adiabatic) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
-| ResearchGate | [Author page](https://www.researchgate.net/profile/Brieuc-De-La-Fourniere) |
+```bibtex
+@software{k7_lean,
+  title  = {K7-Lean (formerly GIFT Core): Formal Verification in Lean 4},
+  author = {de La Fournière, Brieuc},
+  year   = {2026},
+  url    = {https://github.com/Arithmon/K7-Lean},
+  note   = {156 Lean 4 files, 14 axioms (4 literature imports, 10 interval certificates), no sorry; the arithmetic of the 33 relations is collected in relations\_v36\_certified (commit 34ce857). Formalization establishes the stated arithmetic, not the physical reading.}
+}
+```
 
 ---
 
-## Version History
+## DOI
 
-| Version | Date | Highlights |
-|---------|------|------------|
-| 3.5 | 2026-07-10 | Renamed "The K₇ Framework" (K₇ = founding-phase name); S4 sieve diagnostics supplement; three AI-review rounds discharged; conditional framing throughout |
-| 3.4.27 | 2026-06-03 | Numerology purge (competing κ_T modules removed); observables.json refreshed to NuFIT 6.1 (Type I 0.99%); 143 .lean files, 8391 jobs, 15 axioms (4+11), 140 conjuncts; giftpy 3.4.27 on PyPI |
-| 3.4.24 | 2026-06-01 | Academic terminology cleanup across K3 modules and papers |
-| 3.4.23 | 2026-05-19 | Closed-form K3 CY-residual witness, interval-certified (ε₃' < 10⁻³) |
-| 3.4.20 | 2026-05-10 | Independent-validations refresh; documentation sync |
-| 3.4.19 | 2026-05-05 | Donaldson neck-level 5-layer Wirtinger certificate; DAN [D] published Zenodo 20039066; framework v3.4 PDFs published |
-| 3.4.13 | 2026-04-29 | Triptyque published (Papers A, B, C on Zenodo); axiom reduction 38→4 main-chain; K3NK v3.0 hardcore (Joyce ×17); γ² = 24π²/7 derived |
-| 3.4.3 | 2026-04 | G₂ Mathlib steps 1-5 promoted to theorems (8→4 axioms); MollifiedSum archived |
-| 3.4.0 | 2026-04 | Metric-first program complete; K3 CAP (Fermat ×990, CI(2,2,2) ×6.4) |
-| 3.3.24 | 2026-03-02 | NuFIT 6.0 update, neutrino formulas, S1 softened |
-| 3.3.18 | 2026-02-21 | Bullet-proof validation: Westfall-Young maxT, 3M+ exhaustive |
-| 3.3.14 | 2026-01-28 | Selection Principle, TCS Spectral Bounds, 290+ relations |
-| 3.3.0 | 2026-01-12 | 33 observables, PDG 2024 values, Monte Carlo validation |
-| 3.1.0 | 2025-12-17 | Analytical G₂ metric, 185 certified relations |
-| 3.0.0 | 2025-12-09 | Major release: 165+ relations, Fibonacci/Monster/McKay |
-| 2.2.0 | 2025-11-27 | Zero-parameter paradigm |
-| 2.0.0 | 2025-10-24 | Framework reorganization |
+| Record | DOI |
+|--------|-----|
+| Framework, concept DOI (always the latest version) | [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) |
+| Framework v3.5 (published version) | [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168) |
+| Framework v3.4 | [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101) |
+| Framework v3.3 | [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071) |
+| [A] A Certified Torsion-Free G₂ Structure on a TCS Neck Model via Computer-Assisted Proof | [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) |
+| [B] Spectral Geometry of an Explicit G₂ Metric | [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) |
+| [C] Newton–Kantorovich diagnostics on a Donaldson K3 metric | [10.5281/zenodo.19708915](https://doi.org/10.5281/zenodo.19708915) |
+| [D] An Explicit Closed-Form G₂ Ansatz on a K3-Coassociative Neck with Hyperkähler Rotation and Picard-Lefschetz Wirtinger Certificate | [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) |
+| [E] A conditional analytic framework for rank-one branched Kovalev–Lefschetz adiabatic limits | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
+| [M] A reproducible standard for arithmetic coincidence claims in fundamental physics | [10.5281/zenodo.20728964](https://doi.org/10.5281/zenodo.20728964) |
 
 ---
 
-## Usage in Publications
+## Version history
 
-When using K₇ framework predictions:
+Statements withdrawn by version 3.6 are not repeated in this table; the full record is in the [changelog](https://github.com/Arithmon/K7/blob/main/CHANGELOG.md).
 
-1. **Cite framework**: Use software citation above
-2. **Cite specific results**: Use the relevant document or companion-paper entry
-3. **Specify version**: Always include version number (v3.5)
-4. **Link repository**: Include GitHub URL for reproducibility
+| Version | Date | What changed |
+|---------|------|--------------|
+| 3.6 | 2026-11 | New title; the framework is stated as a declared correspondence with its dictionary, residue register and decision rule; 33 relations compared with the most recent data in five classes; preregistered look-elsewhere test; several statistical and derivational claims of earlier versions withdrawn |
+| 3.5 | 2026-07-10 | Renamed "The K₇ Framework"; S4 supplement added; erratum of 2026-08 to 2026-10 |
+| 3.4 | 2026-05-07 | Companion papers A to D published; Lean axiom reduction; K3 certificates |
+| 3.3 | 2026-01-12 to 2026-03-02 | 33 relations; neutrino formulas revised; Lean 4 as sole proof system |
+| 3.0 to 3.1 | 2025-12 | First Lean-certified relations; first explicit approximate G₂ metric |
+| 2.x | 2025-10 to 2025-11 | Framework reorganization |
+
+---
+
+## Usage in publications
+
+1. Cite the framework by the software entry above (concept DOI).
+2. Cite a specific statement by the paper or supplement that makes it, with the version number.
+3. Quote a relation with its status in the paper's table (main §4.1), not as a prediction of a derivation: the paper states a correspondence and a decision rule (main §11).
 
 ### Example
 
-> "We compare our measurements with predictions from the K₇ framework (formerly GIFT) [1], which derives Standard Model parameters from E₈×E₈ topology. The K₇ framework prediction for the CP violation phase is δ_CP = 197° [2]."
+> "The K₇ dictionary [1] assigns the leptonic CP phase the value 2π · 197/360, that is 197°, by a declared unit assignment; its decision rule rejects the relation if a global fit of the reference series excludes 197° at 3σ."
 >
-> [1] de La Fournière, B. "The K₇ Framework v3.5," 2026, https://github.com/Arithmon/K7
->
-> [2] de La Fournière, B. "K₇ Framework S2: Complete Derivations," 2026.
+> [1] B. de La Fournière, "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology," The K₇ Framework v3.6 (2026), https://doi.org/10.5281/zenodo.16891489
 
 ---
 
 ## License
 
-MIT License: See [LICENSE](LICENSE)
+MIT License: see [LICENSE](LICENSE)
 
 ---
 
-**Version**: 3.5 (2026-07-10)
+**Version**: 3.6 (not yet deposited)

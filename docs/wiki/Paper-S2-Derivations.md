@@ -3,72 +3,45 @@ title: "Paper S2 Derivations"
 layout: default
 ---
 
-# Paper: S2: Complete Derivations
+# Paper: S2, The 33 Relations
 
-**Supplement S2: Complete Derivations (Dimensionless): All 33 Dimensionless Predictions**
+**Supplement S2: The 33 Relations. Arithmetic, Dictionary Choices and Status** (The K₇ Framework, v3.6)
 
 *Brieuc de La Fournière (2026)*
-[Full text (markdown, v3.5)](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_5_S2_derivations.md) | [v3.3 archive on Zenodo: 10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071)
 
-> **v3.5.** [PDF](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_5_S2_derivations.pdf) · [DOI: 10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168) · canonical markdown [`k7_framework_3_5_S2_derivations.md`](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_5_S2_derivations.md).
-
----
-
-## Abstract
-
-Provides complete algebraic derivations for all 33 dimensionless predictions from topological invariants (b₂, b₃, dim(G₂), etc.). 18 core relations VERIFIED in Lean 4; 15 extended predictions use topological formulas. Includes expression counts showing structural redundancy.
+[**PDF (14 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S2_derivations.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S2_derivations.md)
 
 ---
 
-## Key Results
+## What the supplement establishes
 
-### Deviation Distribution
+Earlier versions of this supplement were titled "Complete Derivations" and presented each relation as a theorem with a proof. Version 3.6 withdraws that framing. For each of the 33 relations the supplement establishes three things, and no more:
 
-| Range | Count | % |
-|-------|-------|---|
-| Exact (0%) | 4 | 22% |
-| < 0.01% | 3 | 17% |
-| < 0.1% | 4 | 22% |
-| < 0.5% | 7 | 39% |
+1. **The arithmetic.** Given the declared constants, the closed form evaluates to the stated number. Each relation has a Lean statement tying its closed form to its value (`relations_v36_certified`, [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean)).
+2. **The dictionary choices.** Which constants the formula uses, which operations beyond integer ratios, and which entries of the residue register (R1 to R12) it depends on.
+3. **The status** against the most recent data, generated from the dataset: 23 within 2σ of measurement, 3 in tension, 5 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile.
 
-### Expression Counts (Top Observables)
-
-| Observable | # Expressions | Status |
-|------------|--------------|--------|
-| Q_Koide = 2/3 | 27 | CANONICAL |
-| N_gen = 3 | 24+ | CANONICAL |
-| sin²θ₁₂ᴾᴹᴺˢ = 4/13 | 21 | CANONICAL |
-| sin²θ_W = 3/13 | 19 | ROBUST |
-| m_H/m_t = 56/77 | 16 | ROBUST |
-
-### Gauge/Holonomy Comparison
-
-| Config | Mean Dev. | Factor |
-|--------|-----------|--------|
-| E₈×E₈ | 0.26% | 1× (optimal) |
-| E₇×E₈ | 8.80% | 34× worse |
-| SU(3)/CY holonomy | 4.43% | 17× worse |
+What the arithmetic does not establish: that the formula is the right one for the observable, that the structure requires it, or that agreement with measurement is evidence for the framework (main §7). Section S2.7 records the alternative formulas found for the same observables; their number measures the freedom of the vocabulary, not robustness.
 
 ---
 
-## Section Structure
+## Sections
 
-- **Part 0**: Derivation Philosophy: Inputs vs outputs, claims vs non-claims
-- **Part I**: Foundations: Status classification, notation
-- **Part II**: Foundational Theorems: N_gen=3, τ=3472/891, κ_T=1/61, det(g)=65/32
-- **Part III**: Gauge Sector, sin²θ_W=3/13, α_s=√2/12
-- **Part IV**: Lepton Sector: Q_Koide=2/3, m_τ/m_e=3477, m_μ/m_e=27^φ
-- **Part V**: Quark Sector, m_s/m_d=20, m_b/m_t=1/42, CKM angles
-- **Part VI**: Neutrino Sector, δ_CP=197°, mixing angles
-- **Part VII**: Higgs & Cosmology, λ_H=√17/32, Ω_DE, n_s, h, σ₈
-- **Part VIII**: Summary (18 VERIFIED + 15 extended)
-- **Part IX**: Observable Catalog
+- S2.0 What this supplement establishes
+- S2.1 Notation
+- S2.2 Gauge sector and Higgs
+- S2.3 Leptons (overdetermined: R8)
+- S2.4 Quarks, CKM and boson masses
+- S2.5 Neutrino mixing
+- S2.6 Cosmology (overdetermined: R11)
+- S2.7 Vocabulary freedom: alternative formulas in the corpus
+- S2.8 Withdrawn readings
 
 ---
 
 ## Related
 
-- [Paper Main Framework](Paper-Main-Framework.html): Main paper
-- [Paper S1 Foundations](Paper-S1-Foundations.html): Mathematical foundations
-- [Observable Reference](Observable-Reference.html): Complete observable catalog
-- [Lean Formalization](Lean-Formalization.html): Machine-checked proofs
+- [Paper Main](Paper-Main-Framework.html)
+- [Paper S1 Foundations](Paper-S1-Foundations.html)
+- [Observable Reference](Observable-Reference.html)
+- [Lean Formalization](Lean-Formalization.html)
