@@ -97,7 +97,8 @@ the local `D0` constants. Through commit `767727b0`, it records:
 - `C_src = 27/16` for the fixed-discriminant sigma-odd cubic source channel.
 - `C_nl = 2/3` for the symmetric-space second-variation bound.
 - `K_H^{K3} <= 0.45` after reducing the exact-2-form Hodge gap to the scalar
-  K3 gap.
+  K3 gap. This value is numerical: it uses the Zhong-Yang inequality with an
+  estimated diameter (`diam <= 1.4` at unit volume), not a certified one.
 - `C_FS <= 0.3`, inter-tube `gamma = 2`, `C_link <= 1`, and `C_outer <= 1`
   for the exterior `(E)` package.
 

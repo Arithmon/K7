@@ -37,8 +37,10 @@ Latest cross-repo update from `private` through the 2026-07-09 read window:
 - L1.6 is closed: raw 77-collar outward-rounded intervals promote
   `K_Sch <= 16/3`; headline `q_coeff ~= 0.16811`, sharp `~= 0.10959`.
 - `(AR)` fibrewise Hodge constant: theorem-grade reduction to the scalar K3
-  gap, with working certified bound `K_H^{K3} <= 0.45` and margin
-  approximately `49x` at `D0`.
+  gap, with working numerical bound `K_H^{K3} <= 0.45` and margin
+  approximately `49x` at `D0`. The bound applies the Zhong-Yang inequality
+  with a numerical diameter estimate (`diam <= 1.4` at unit volume); no
+  certified upper bound on the diameter is available.
 - `(E)` exterior constants: `C_FS <= 0.3`, inter-tube exponent `gamma = 2`,
   `C_link <= 1`, `C_outer <= 1`, giving `delta_E(D0) ~= 0.0206` and margin
   approximately `24x`.
