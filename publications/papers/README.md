@@ -1,8 +1,8 @@
 # The K₇ Framework: Publications (v3.5 published, v3.6 in preparation)
 
-[![Lean 4 Verified](https://img.shields.io/badge/Lean_4-Verified-blue)](https://github.com/Arithmon/K7-Lean/tree/main/Lean)
+[![Lean 4 Verified](https://img.shields.io/badge/Lean_4-Verified-blue)](https://github.com/Arithmon/K7-Lean)
 
-The K₇ Framework (formerly GIFT): Standard Model parameters from G₂ holonomy geometry coupled to E₈×E₈.
+The K₇ Framework (formerly GIFT): a declared correspondence between the invariants of a posited G₂-holonomy geometry, together with E₈×E₈, and dimensionless Standard-Model and cosmological parameters.
 
 ---
 
@@ -17,8 +17,8 @@ publications/
 │   │   ├── k7_framework_3_5_S2_derivations.md   # Type I derivations
 │   │   ├── k7_framework_3_5_S3_observables.md   # Observable catalog
 │   │   ├── k7_framework_3_5_S4_sieve_diagnostics.md # Sieve diagnostics
-│   │   ├── g2_certified_neck.md         # Paper A — certified G₂
-│   │   └── g2_spectral.md               # Paper B — spectral
+│   │   ├── g2_certified_neck.md         # Paper A: certified G₂
+│   │   └── g2_spectral.md               # Paper B: spectral
 │   ├── pdf/                         # Compiled PDFs (v3.6 files: k7_framework_3_6_*.pdf)
 │   │   ├── k7_framework_3_5_main.pdf              # Framework main (Zenodo 21296168)
 │   │   ├── k7_framework_3_5_S1_foundations.pdf    # Framework S1  (Zenodo 21296168)
@@ -45,7 +45,9 @@ publications/
 │   └── Bibliography.md
 │
 └── validation/
-    ├── README.md                    # v3.4 headline + pointer to legacy v3.3
+    ├── README.md
+    ├── v3.6/                        # Look-elsewhere test of v3.6 (code, data, results)
+    ├── v3.6_generators/             # Generators of the tables and of the generated pages
     └── legacy/v3.3/                 # v3.3 validation pipeline (archived)
 ```
 
@@ -56,7 +58,7 @@ publications/
 | Document | PDF | Markdown |
 |----------|-----|----------|
 | Main paper | [k7_framework_3_6_main.pdf](pdf/k7_framework_3_6_main.pdf) (39 pp.) | [k7_framework_3_6_main.md](markdown/k7_framework_3_6_main.md) |
-| S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.pdf](pdf/k7_framework_3_6_S1_foundations.pdf) (25 pp.) | [k7_framework_3_6_S1_foundations.md](markdown/k7_framework_3_6_S1_foundations.md) |
+| S1: Mathematical foundations | [k7_framework_3_6_S1_foundations.pdf](pdf/k7_framework_3_6_S1_foundations.pdf) (26 pp.) | [k7_framework_3_6_S1_foundations.md](markdown/k7_framework_3_6_S1_foundations.md) |
 | S2: The 33 relations | [k7_framework_3_6_S2_derivations.pdf](pdf/k7_framework_3_6_S2_derivations.pdf) (15 pp.) | [k7_framework_3_6_S2_derivations.md](markdown/k7_framework_3_6_S2_derivations.md) |
 | S3: Observable dataset | [k7_framework_3_6_S3_observables.pdf](pdf/k7_framework_3_6_S3_observables.pdf) (17 pp.) | [k7_framework_3_6_S3_observables.md](markdown/k7_framework_3_6_S3_observables.md) |
 | S4: Look-elsewhere test | [k7_framework_3_6_S4_sieve_diagnostics.pdf](pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) (11 pp.) | [k7_framework_3_6_S4_sieve_diagnostics.md](markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
@@ -84,11 +86,11 @@ The v3.5 files below are unchanged, and are read together with the [erratum](../
 
 | Paper | Description | DOI |
 |-------|-------------|-----|
-| [A — Certified G₂ Structure](pdf/g2_certified_neck.pdf) | Newton–Kantorovich certificate for a torsion-free G₂ structure near an explicit metric on a neck model; a local result, which does not construct a compact K₇ | [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) |
-| [B — Spectral Geometry](pdf/g2_spectral.pdf) | Numerical Laplacian spectrum and harmonic forms of the explicit metric of paper A | [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) |
-| [C — K3 Newton-Kantorovich](pdf/K3_NK_Certificate.pdf) | NK diagnostics on Donaldson K3 (CI(2,2,2)) | [10.5281/zenodo.19708915](https://doi.org/10.5281/zenodo.19708915) |
-| [D — Donaldson Analytic Note](pdf/donaldson_analytic.pdf) | Closed-form G₂ ansatz on K3-coassociative neck, 5-layer Wirtinger cert | [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) |
-| [E — Rank-1 Branched Adiabatic](pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for rank-one branched adiabatic limits, computed at a datum D₀ that is not realisable as posed (erratum to v3.5); its global hypotheses are open | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
+| [A: Certified G₂ Structure](pdf/g2_certified_neck.pdf) | Newton–Kantorovich certificate for a torsion-free G₂ structure near an explicit metric on a neck model; a local result, which does not construct a compact K₇ | [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) |
+| [B: Spectral Geometry](pdf/g2_spectral.pdf) | Numerical Laplacian spectrum and harmonic forms of the explicit metric of paper A | [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) |
+| [C: K3 Newton-Kantorovich](pdf/K3_NK_Certificate.pdf) | NK diagnostics on Donaldson K3 (CI(2,2,2)) | [10.5281/zenodo.19708915](https://doi.org/10.5281/zenodo.19708915) |
+| [D: Donaldson Analytic Note](pdf/donaldson_analytic.pdf) | Closed-form G₂ ansatz on K3-coassociative neck, 5-layer Wirtinger cert | [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) |
+| [E: Rank-1 Branched Adiabatic](pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for rank-one branched adiabatic limits, computed at a datum D₀ that is not realisable as posed (erratum to v3.5); its global hypotheses are open | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
 
 ---
 
@@ -108,9 +110,9 @@ See [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) for the proofs.
 
 ## Legacy
 
-- `legacy/v3.3/` — v3.3 framework PDFs, markdown and tex (archived 2026-05-02)
-- `legacy/v3.4/` — v3.4 framework PDFs, markdown and tex (archived 2026-07-14, Zenodo [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101))
-- `../validation/legacy/v3.3/` — v3.3 validation pipeline + Pareto formula selection
+- `legacy/v3.3/`: v3.3 framework PDFs, markdown and tex (archived 2026-05-02)
+- `legacy/v3.4/`: v3.4 framework PDFs, markdown and tex (archived 2026-07-14, Zenodo [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101))
+- `../validation/legacy/v3.3/`: v3.3 validation pipeline + Pareto formula selection
 
 ---
 

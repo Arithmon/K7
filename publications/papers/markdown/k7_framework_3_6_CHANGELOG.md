@@ -6,9 +6,10 @@
 - **Twisted connected sums.** Every ordinary twisted connected sum has b₂ + b₃ odd [14], not only those with orthogonal gluing; with b₂ + b₃ = 98, the whole family is excluded by parity and only the extra-twisted connected sums of [14] remain open within it (main §2.3, S1 §8.3). Earlier text of 3.6 excluded the orthogonal case alone.
 - **Look-elsewhere test: the preregistered outcome is applied to the text.** The preregistration states that, if the threshold is not met, no p-value is reported and the two proportions are given descriptively. The main paper, S4 and the public pages now give the counts and the proportions (26% of the alternative Betti pairs, 51% of the invented vocabularies) and the outcome; the values of the decision statistic remain in the deposited result file. No count changes.
 - **Preregistration.** "Before any run" becomes "before any full run": a pilot of nine vocabularies, declared in the preregistration, ran before it was committed (S4.2.1).
-- **A third measurement outside the reference series** is reported in §11.1: the Atacama Cosmology Telescope combination gives n_s = 0.974 ± 0.003 [62], 3.0σ above ζ(11)/ζ(5).
+- **A third measurement outside the reference series** is reported in §11.1: the Atacama Cosmology Telescope combination gives n_s = 0.974 ± 0.003 [62], about 3σ above ζ(11)/ζ(5).
 - **References.** [14] is J. Nordström, *Ann. Global Anal. Geom.* 64 (2023) (it was attributed to two authors); [12] and [16] are completed; [58] is cited as published (*Nature* 654, 343–348); [62] is added.
 - **Wording.** dim(E₇) = 133 is listed among the twenty constants and used by no relation, which §3.1 now says; [C] is cited in §9.3; the 27 exact equalities are between rationals for 25 and between natural numbers for m_τ/m_e and m_s/m_d (§8, S3.7); sin²θ₂₃ is described in §4.3 as counted apart, not as a tension; "singular value" in S1 §6.2; "local metric of [A]" in S3.
+- **Consistency of the supplements.** S2.7 says of the alternative formulas built on b₂ = 11 and 10 that the construction they refer to is not available; the table of S3.7 marks m_τ/m_e and m_s/m_d as equalities between natural numbers; the earlier entries of this changelog no longer quote the decision statistic of the look-elsewhere test.
 - **Reproducibility.** The refresh script, the Planck-ratio script and the generators of the tables and of the public pages are deposited in `publications/validation/v3.6_generators/` (S3.8).
 
 **Batch 15 (2026-11-26): pre-release consistency pass. No number changes.**
@@ -19,7 +20,7 @@
 **Batch 14 (2026-11-11): m_W/m_Z by the mass-ratio rule; supplements in the present tense; plain vocabulary.**
 - **A number changes.** m_W/m_Z is computed from the published masses, as every other mass ratio: 80.3625(77)/91.1879(20) = 0.881285(87), correlations neglected, in place of the ratio line of the PDG summary, 0.88136(15). The published value 37/42 moves from −2.7σ to −3.8σ and from "tension" to "proximity". The classes are now 23 within 2σ, 2 tensions (m_τ/m_e, Ω_c/Ω_m), 6 proximities, 1 in range, 1 non-Gaussian. Main §4, S2, S3 and the public pages are regenerated.
 - **Dataset.** `observables.json` carries version 3.6; the field `n_exact` is removed; two conditional entries are set to the value of their formula (B01 = 2.160247, B04 = (14 − π)³ = 1280.26).
-- **Look-elsewhere test, revision 3.** The preregistration receives a third amendment before the run (window of m_W/m_Z alone). Result: nothing in the verdict changes. K₇ reaches 31 of 33; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many; global p-value 0.51. m_W/m_Z is still reached by every competitor. The number of competitors that cost at most as much as K₇ moves (1 163 to 1 038 and 698 to 628). The revision-2 result joins the history of the public deposit.
+- **Look-elsewhere test, revision 3.** The preregistration receives a third amendment before the run (window of m_W/m_Z alone). Result: nothing in the verdict changes. K₇ reaches 31 of 33; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many; the preregistered outcome is unchanged (look-elsewhere effect not overcome). m_W/m_Z is still reached by every competitor. The number of competitors that cost at most as much as K₇ moves (1 163 to 1 038 and 698 to 628). The revision-2 result joins the history of the public deposit.
 - **§9.2 (the chain of locks) is removed**; §9 is renumbered (9.1 what an existence proof would need, 9.2 what depends on existence, 9.3 relation to the companion papers).
 - **DESI.** §11.1 reports the DESI DR2 results beside the classes [61]: DESI alone, Ω_m = 0.2975 ± 0.0086 (1.9σ to 2.0σ from the three density relations); DESI with the CMB, Ω_m = 0.3027 ± 0.0036 and H₀ = 68.17 ± 0.28 (3.1σ to 3.4σ on the density relations, 3.0σ on h). The FCC-ee row leaves the timeline, the relation it would have tested being already rejected.
 - **Vocabulary.** Dataset identifiers, rule labels and internal names of tests and verdicts leave the prose of the main paper and of S1 to S4; they remain as row labels in tables and as field names where a file is cited. Section titles say what the section contains.
@@ -54,7 +55,7 @@
 - §2.3 and S1 §9.2: the spectral analysis of [B] is no longer called consistent with (21, 77); its multiplicities rest on decompositions withdrawn in S1.
 - §11: the rule is anchored on the reference series, with an update procedure; contradicting measurements (SH0ES on h, CDF II on m_W) are reported beside the class. This is a clarification made after the problem was identified, frozen prospectively. Survivors of overdetermined sectors are not selected predictions. The abstract and §12.5 no longer call δ_CP the sharpest test.
 - Status box: joint system, individual relations and wider programme are kept apart. The coefficient 10 of A06 is declared a choice of formula.
-- Look-elsewhere test rerun on the corrected windows (amendment 2), with a witness that has no K₇ constant: it reaches 30 of the 33 targets. K₇ stays at 31/33, the counts of competitors and P_global = 0.51 are those of revision 1 (the six windows changed do not discriminate), LEE-RETRAIT; K₇'s cost moves from 409.2 to 408.1 bits, and the costs of the competitors with it. S2.7 corrected accordingly.
+- Look-elsewhere test rerun on the corrected windows (amendment 2), with a witness that has no K₇ constant: it reaches 30 of the 33 targets. K₇ stays at 31/33, the counts of competitors and the preregistered outcome (look-elsewhere effect not overcome) are those of revision 1 (the six windows changed do not discriminate); K₇'s cost moves from 409.2 to 408.1 bits, and the costs of the competitors with it. S2.7 corrected accordingly.
 - §10.1 and S1 §12.4: transcription and Fano-plane statements corrected; imported q_AR declared in §9.2.
 
 **Batch 8 (2026-11-03): NuFIT 6.1 checked against the official table.**
@@ -91,7 +92,7 @@
   dim E₇ = 133 and α_sum = 13 and with κ_T⁻¹ = 61, not literally the
   register of §3.1; F-BETTI re-derives only H*, κ_T⁻¹ and det(g) and holds
   N_gen = 3 (author's decision: declared, not rerun). The 30 / 2 / 1
-  structure of the targets stated in §7.2; P_global = 0.51 is not a
+  structure of the targets stated in §7.2; the proportions are not a
   probability about K₇.
 - "At most as many relations can be exact as the sector has parameters"
   withdrawn (§4.2, S2.6): A23, A29 and A30 hold together; the largest
@@ -121,8 +122,8 @@
 - The preregistered look-elsewhere null rerun on the refreshed dataset with
   two-sided windows (amendment 1): K₇ reaches 31/33 by blind search on its
   own vocabulary; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000
-  invented vocabularies reach as many, none more; P_global = 0.51,
-  LEE-RETRAIT (unchanged). α⁻¹ and m_μ/m_e are reached by nobody; the only
+  invented vocabularies reach as many, none more; the preregistered outcome
+  is unchanged (look-elsewhere effect not overcome). α⁻¹ and m_μ/m_e are reached by nobody; the only
   target that separates competitors is m_τ/m_e. Abstract and §7.2 report
   this run; the first run (3.5 dataset) is kept as a comparison.
 - S4 rewritten: the Sieve scorecard with its N2 result (the 3.5 "unique
@@ -292,10 +293,10 @@ without citing the companion philosophy paper (under anonymous review).
   separated; N_gen = 3 an integer identity, not an index theorem.
 - §7: Sieve scorecard reported with its N2 result (m_H/m_W and n_s do not clear
   N2; Koide a tie); "unique survivor" withdrawn; P < 5·10⁻⁶ withdrawn and
-  replaced by the preregistered look-elsewhere null (LEE-RETRAIT; on the
+  replaced by the preregistered look-elsewhere null (not overcome; on the
   refreshed data with two-sided windows, K₇ reaches 31/33, as do 1 085 of
   4 159 Betti alternatives and 1 015 of 2 000 invented vocabularies,
-  P_global = 0.51; the first run, on the 3.5 dataset, had 32/33 reached by
+  with no p-value reported; the first run, on the 3.5 dataset, had 32/33 reached by
   all Betti alternatives); 10⁻³⁴⁶ / 10⁻¹³³ out of the main text; the "14 derivations"
   argument reversed; SVD / random forest / 2.13× moved to S4 as descriptive.
 - §8: formal verification reduced to one method paragraph.

@@ -6,8 +6,9 @@ This directory contains interactive visualization assets.
 
 | File | Description |
 |------|-------------|
-| `k7_blueprint.html` | K₇ manifold blueprint (interactive) |
-| `archive/gift_blueprint.html` | Former K₇ framework blueprint (interactive D3.js, superseded by `k7_blueprint.html`) |
+| `fig1_fano_plane.png` | The Fano plane (used by K₇ for Everyone) |
+| `archive/k7_blueprint.html` | Former construction graph of K₇ as a twisted connected sum of two building blocks (11 + 10). Archived: version 3.6 withdraws that construction, and no compact G₂ manifold with Betti numbers (21, 77) is known |
+| `archive/gift_blueprint.html` | Former framework blueprint (interactive D3.js), archived earlier |
 
 ## Live Versions
 
@@ -16,4 +17,4 @@ This directory contains interactive visualization assets.
 
 ---
 
-Part of K₇ Framework v3.3
+Part of the K₇ Framework

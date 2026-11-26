@@ -211,9 +211,9 @@ L'arithmétique de chacune des 33 relations est vérifiée par machine en Lean 4
 | A03 | λ_H | `Certificate.RelationsV36.A03_lambda_H` | Certificate/RelationsV36.lean:59 | closed form in ℝ equal to the stated real value (no numerical bound) |
 | A04 | α⁻¹(0) | `Certificate.RelationsV36.A04_alpha_inv` | Certificate/RelationsV36.lean:65 | exact rational equality of the closed form |
 | A05 | Q_Koide | `Certificate.RelationsV36.A05_Q_Koide` | Certificate/RelationsV36.lean:73 | exact rational equality of the closed form |
-| A06 | m_τ/m_e | `Certificate.RelationsV36.A06_m_tau_m_e` | Certificate/RelationsV36.lean:77 | exact rational equality of the closed form |
+| A06 | m_τ/m_e | `Certificate.RelationsV36.A06_m_tau_m_e` | Certificate/RelationsV36.lean:77 | exact equality of the closed form, between natural numbers |
 | A07 | m_μ/m_e | `Certificate.RelationsV36.A07_m_mu_m_e` | Certificate/RelationsV36.lean:81 | base 27 and interval bounds on 27^φ |
-| A08 | m_s/m_d | `Certificate.RelationsV36.A08_m_s_m_d` | Certificate/RelationsV36.lean:91 | exact rational equality of the closed form |
+| A08 | m_s/m_d | `Certificate.RelationsV36.A08_m_s_m_d` | Certificate/RelationsV36.lean:91 | exact equality of the closed form, between natural numbers |
 | A09 | m_c/m_s | `Certificate.RelationsV36.A09_m_c_m_s` | Certificate/RelationsV36.lean:95 | exact rational equality of the closed form |
 | A10 | m_b/m_t | `Certificate.RelationsV36.A10_m_b_m_t` | Certificate/RelationsV36.lean:100 | exact rational equality of the closed form |
 | A11 | m_u/m_d | `Certificate.RelationsV36.A11_m_u_m_d` | Certificate/RelationsV36.lean:104 | exact rational equality of the closed form |

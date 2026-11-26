@@ -78,7 +78,7 @@ DONE = [
     "docs/wiki/GIFT-for-Everyone.md", "docs/wiki/GIFT-for-Everyone.fr.md",
     "docs/wiki/For-Physicists.md", "docs/INFO_GEO_FOR_PHYSICISTS.md",
     "publications/references/Bibliography.md", "publications/papers/README.md",
-    "docs/wiki/Glossary.md", "docs/wiki/External-Resources.md", "docs/figures/k7_blueprint.html", "docs/README.md",
+    "docs/wiki/Glossary.md", "docs/wiki/External-Resources.md", "docs/figures/README.md", "docs/README.md",
     "docs/wiki/Getting-Started.md", "docs/wiki/Getting-Started.fr.md",
     "docs/wiki/Site-Map.md", "docs/wiki/Site-Map.fr.md",
     # générées par k7_v3_6_deposit_pages.py (lot du dépôt)

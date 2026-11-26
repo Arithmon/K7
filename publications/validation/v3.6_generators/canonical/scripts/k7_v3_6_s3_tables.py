@@ -127,7 +127,9 @@ def table_lean():
     for r in m['relations']:
         decl = (r['lean_declaration'] or 'n/a').removeprefix('GIFT.')
         loc = (r['location'] or 'n/a').removeprefix('GIFT/')
-        sc = SCOPE[r['scope']] + ('; Lean name differs (see text)' if r.get('naming_note') else '')
+        # A06 et A08 sont des identités dans ℕ (RelationsV36.lean : A06_m_tau_m_e, A08_m_s_m_d), les 25 autres dans ℚ
+        sc = ('exact equality of the closed form, between natural numbers' if r['scope'] == 'exact' and r['id'] in ('A06', 'A08')
+              else SCOPE[r['scope']]) + ('; Lean name differs (see text)' if r.get('naming_note') else '')
         rows.append(f"| {r['id']} | {r['symbol']} | `{decl}` | {loc} | {sc} |"
                     .replace('`n/a`', 'n/a'))
     return '\n'.join(rows)

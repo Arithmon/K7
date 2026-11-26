@@ -16,7 +16,7 @@ The files are verbatim copies from the author's working repository and keep its 
 | `canonical/results/k7_v3_6_lean_map.json` | 13 901 | `cb7d8f9e9b165fa1ae1ae362c243a91c4656f97855990fe63bc7b28117c5d44f` | the map from each relation to its Lean declaration |
 | `canonical/scripts/k7_v3_6_table_sec4.py` | 6 130 | `a4c87966d27ec3aa4a674c9ee166f42690505cfd295c152d2195248c9e703a6b` | generates the table of main §4.1 and the five classes from the dataset |
 | `canonical/scripts/k7_v3_6_s2_status.py` | 2 956 | `aea4a8ec33bf1af34fe999cde7c48c06e506bb07087721d636add516ac9174a2` | status column of the tables of S2 |
-| `canonical/scripts/k7_v3_6_s3_tables.py` | 7 684 | `f78950c5d8bdc83be7811de2fb8af69ba3d4b2841c57a8007f6f14465fce5e28` | tables of S3 |
+| `canonical/scripts/k7_v3_6_s3_tables.py` | 7 944 | `df5b10330d117732ad21e3c97b34b610d102ac6863095185b4f5c2f08af6064d` | tables of S3 |
 | `canonical/scripts/k7_v3_6_s4_tables.py` | 12 529 | `c62c4fde39dffc3a6569f60c0323073e2d9b72a87e13ae8e538cf8b7e66e421d` | tables of S4.2 and the figures of main §7.2, from the look-elsewhere results |
 | `canonical/papers/framework/latex/gen_bib_3_6.py` | 1 087 | `160929ca588d9c5a92decab5ab91c16ed993b20e8ffd2702da4abe651a0c574a` | bibliography of the LaTeX sources, from the reference list of the main paper |
 | `canonical/papers/framework/latex/build_3.6.sh` | 16 779 | `3a1c71a4f85e47c10fd61e957a990b7e0d58f1848210fe7cdeee3f9018c94126` | Markdown to LaTeX to PDF build of the five documents |
@@ -25,7 +25,7 @@ The files are verbatim copies from the author's working repository and keep its 
 | `canonical/scripts/k7_v3_6_reader_pages.py` | 11 282 | `20b56dd8e2e1d66e84f5444b74c8421ef90e78de3adf04fcb4895e40c071d62b` | Lean formalization and geometers' pages |
 | `canonical/scripts/k7_v3_6_landing_pages.py` | 22 852 | `73387b913bcb7a6928ed539baf44518eabf0675e162e9f362d39e8b58a1c7818` | results, papers and falsification sections of the landing pages |
 | `canonical/scripts/k7_v3_6_deposit_pages.py` | 43 332 | `deb509e081e1ab900847471b9aa5f63993f9dfca89937ce25ba60e7334d975e6` | citation files, structure pages, paper pages, changelog highlights, atlas; copies the papers |
-| `canonical/scripts/k7_v3_6_surfaces_lint.py` | 16 813 | `d169c24190e1784be02dd8e6378d405c7ca310468b7237ed7bf5edc27e926ed2` | checks the public pages for statements that version 3.6 withdraws |
+| `canonical/scripts/k7_v3_6_surfaces_lint.py` | 16 805 | `2027475eea0a93dc8e8c3feba89282205b75c023932bd920da3a20481e6b48ad` | checks the public pages for statements that version 3.6 withdraws |
 | `canonical/scripts/k7_v3_6_for_everyone_patch.py` | 17 444 | `f88c446aaa2c328124da270f20afc9a288d86901494d5f9eba2291b173dae185` | one-off targeted edits of the plain-language guide (2026-11-10) |
 | `canonical/scripts/k7_v3_6_publish_generators.py` | 6 942 | `67f773e6473a2587e3e03433c11f04e6d778fb3a3ce586d165a4b9aedb893992` | this deposit |
 

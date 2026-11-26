@@ -28,7 +28,7 @@ These files are written by generators from the paper sources and the dataset. A 
 | Files | Generator |
 |---|---|
 | `publications/papers/markdown/k7_framework_3_6_*.md`, `tex/`, `pdf/` | copied from the author's sources by `k7_v3_6_deposit_pages.py` |
-| `CITATION.md`, `CITATION.cff`, `STRUCTURE.md`, `docs/wiki/Citation-Guide.md`, `Repository-Structure.md`, `Paper-Main-Framework.md`, `Paper-S1-Foundations.md`, `Paper-S2-Derivations.md`, `Changelog-Highlights.md`, `publications/references/README.md`, `GIFT_ATLAS.json` | `k7_v3_6_deposit_pages.py` |
+| `CITATION.md`, `CITATION.cff`, `STRUCTURE.md`, `docs/wiki/Citation-Guide.md`, `Repository-Structure.md`, `Paper-Main-Framework.md`, `Paper-S1-Foundations.md`, `Paper-S2-Derivations.md`, `Changelog-Highlights.md`, `publications/references/README.md`, `publications/references/GIFT_ATLAS.json` | `k7_v3_6_deposit_pages.py` |
 | `docs/wiki/Statistical-Evidence*.md`, `Validation-Summary*.md`, `Observable-Reference*.md`, `publications/references/STATISTICAL_EVIDENCE.md`, `OBSERVABLE_REFERENCE.md`, `observables.csv` | `k7_v3_6_surface_pages.py` |
 | `docs/FAQ*.md`, `docs/wiki/FAQ*.md`, `docs/GIFT_EXEC_SUMMARY*.md`, `docs/INFO_GEO_FOR_PHYSICISTS.md`, `docs/wiki/For-Physicists.md` | `k7_v3_6_surface_prose.py` |
 | `docs/LEAN_FOR_PHYSICS.md`, `docs/GIFTPY_FOR_GEOMETERS.md`, `docs/wiki/Lean-Formalization.md`, `For-Formalization-Experts.md`, `For-Geometers.md` | `k7_v3_6_reader_pages.py` |
@@ -143,4 +143,4 @@ Common conversions:
 
 ---
 
-*GIFT Documentation Repository*
+*K₇ documentation repository*
