@@ -156,3 +156,5 @@ En 2025, j'ajoutais : c'est suffisant. Aujourd'hui je dirais : c'est suffisant, 
 ---
 
 *Sur ce blog : [Ce qui vient avant](Blog-On-What-Comes-First.fr.html), le texte de 2025 que celui-ci reprend, reste en ligne tel quel. Pour le parcours qui mène de l'un à l'autre, voir [Brieuc's K₇](Blog-Brieucs-Gift.fr.html) ; les papiers du programme sont sur [Zenodo](https://zenodo.org/communities/arithmon/).*
+
+*Une version référencée de ce texte (résumé, bibliographie), en anglais, est déposée sur [PhilArchive](https://philpapers.org/rec/DELOWR).*
