@@ -22,20 +22,20 @@ Whether you're a curious student, a science enthusiast, or just someone who wond
 
 ## Table of Contents
 
-1. [Introduction: What is K₇?](#introduction-what-is-gift)
+1. [Introduction: What is K₇?](#introduction-what-is-k)
 2. [Part I: The Building Blocks](#part-i-the-building-blocks)
    - [Number Systems](#number-systems)
    - [Symmetry Groups](#symmetry-groups)
 3. [Part II: The Shape of the Universe](#part-ii-the-shape-of-the-universe)
    - [Manifolds and Dimensions](#manifolds-and-dimensions)
-   - [K₇: The Cosmic Diabolo](#k₇-the-cosmic-diabolo)
+   - [K₇: The Cosmic Diabolo](#k-the-cosmic-diabolo)
    - [Topology: The Play-Doh Mathematics](#topology-the-play-doh-mathematics)
 4. [Part III: The Particles](#part-iii-the-particles)
    - [Fermions and Bosons](#fermions-and-bosons)
    - [The Particle Zoo](#the-particle-zoo)
 5. [Part IV: The Forces](#part-iv-the-forces)
 6. [Part V: The Magic Numbers](#part-v-the-magic-numbers)
-7. [Part VI: Why K₇ is Different](#part-vi-why-gift-is-different)
+7. [Part VI: Why K₇ is Different](#part-vi-why-k-is-different)
 8. [Part VII: The Experiments](#part-vii-the-experiments)
 9. [Key Figures](#key-figures)
 10. [Summary Table](#summary-table)
@@ -45,7 +45,7 @@ Whether you're a curious student, a science enthusiast, or just someone who wond
 
 # Introduction: What is K₇?
 
-**K₇** (formerly Geometric Information Field Theory) proposes that the fundamental constants of physics (numbers like 1/137, the masses of particles, the strengths of forces) are not arbitrary. They emerge from the **shape** of hidden dimensions in the universe.
+**K₇** (formerly Geometric Information Field Theory) asks whether the fundamental constants of physics (numbers like 1/137, the masses of particles, the strengths of forces) can be written with the numbers that describe the **shape** of hidden dimensions in the universe.
 
 **The core idea in one sentence**: Suppose the universe has 7 hidden dimensions curled up in a specific shape called K₇. Then 33 of the numbers we measure can be written as simple formulas in the properties of that shape.
 
@@ -114,7 +114,7 @@ After octonions, **there's nothing more**. Mathematically proven (Hurwitz theore
 
 **The weirdness**: Octonions are not "associative." (a × b) × c ≠ a × (b × c). It's as if the order you assembled your Legos changed the final result!
 
-**In K₇**: The universe uses the most complete kit available. The 7 imaginary units of octonions give the 7 dimensions of K₇.
+**In K₇**: The framework bets on the most complete kit available. The 7 imaginary units of octonions match the 7 dimensions of K₇.
 
 ---
 
@@ -124,7 +124,7 @@ After octonions, **there's nothing more**. Mathematically proven (Hurwitz theore
 
 **The kitchen table version**: The defective Lego kit. You can keep doubling: 16, 32, 64... But starting at 16, the "Legos" no longer fit together properly. You can have pieces that, multiplied together, give zero even if neither is zero. It's broken.
 
-**In K₇**: This explains why nature stops at octonions. No choice, it's the last "proper" algebra.
+**In K₇**: This is why the framework stops at octonions: they are the last "proper" algebra.
 
 ---
 
@@ -143,11 +143,11 @@ It's the most "efficient" configuration possible. No redundancy, no gaps.
 
 ![The Fano plane: 7 points, 7 lines (the 3 sides of the triangle, the 3 medians, and the inscribed circle), each containing exactly 3 points.](../figures/fig1_fano_plane.png)
 
-**The magic trick**: This network has 168 ways to rearrange itself while keeping the same structure: the symmetry group called **PSL(2,7)**, of order 168. And here's the real twist: 168 ÷ 56 = **3**. Three particle families.
+**The magic trick**: This network has 168 ways to rearrange itself while keeping the same structure: the symmetry group called **PSL(2,7)**, of order 168. And here's a curious piece of arithmetic: 168 ÷ 56 = **3**, the same number as the families of particles.
 
-What's the 56? It's the dimension of E₇'s "fundamental representation" (the **smallest non-trivial way** the giant exceptional group E₇ can act on a vector space (we'll meet E₇ a few sections below). The Fano plane (small, finite, 7 points) and E₇ (huge, continuous, 133-dimensional) are linked across scales. Their ratio happens to be exactly the number of fermion generations we observe. K₇ says: that's not a coincidence) that's geometry talking to itself across dimensions.
+What's the 56? It's the dimension of E₇'s "fundamental representation", the **smallest non-trivial way** the giant exceptional group E₇ can act on a vector space (we'll meet E₇ a few sections below). The Fano plane is small and finite (7 points); E₇ is huge and continuous (133 dimensions). The ratio of the two numbers happens to be the number of particle families we observe. Earlier versions of K₇ called that more than a coincidence. Version 3.6 does not: it is a piece of arithmetic, and nothing shows that nature counts its families this way.
 
-**In K₇**: The Fano plane encodes octonion multiplication. It's the "times table" of the universe.
+**In K₇**: The Fano plane encodes octonion multiplication. It's the "times table" of the octonions.
 
 ---
 
@@ -177,7 +177,7 @@ A mathematical group is like a club where:
 
 **In physics**: It's the symmetry group of **electromagnetism**. Changing the "phase" of a charged particle (like rotating the hand) doesn't change observable physics.
 
-**In K₇**: U(1) naturally emerges from larger structures like E₈.
+**In K₇**: U(1) fits inside larger structures like E₈.
 
 ---
 
@@ -211,7 +211,7 @@ SU(3) describes all the ways to **mix these colors** together, like a sophistica
 
 **In physics**: It's the group of the **strong force** (the one that glues quarks together). The 8 "gluons" correspond to the 8 dimensions of SU(3).
 
-**In K₇**: dim(SU(3)) = 8 = dim(𝕆). Coincidence? K₇ says no.
+**In K₇**: dim(SU(3)) = 8 = dim(𝕆). A pleasing echo; the dictionary makes no claim about it.
 
 ---
 
@@ -237,7 +237,7 @@ Imagine a crystal ball with patterns inside. G₂ is the set of all transformati
 
 **The kitchen table version**: The architect of the halfway house. F₄ is related to the "octonion plane" (the octonionic projective plane).
 
-**In K₇**: dim(F₄) = 52 appears in scale bridge calculations.
+**In K₇**: dim(F₄) = 52 appears in two formulas of the dictionary, such as m_H/m_W = 81/52.
 
 ---
 
@@ -251,7 +251,7 @@ E₆ contains SO(10) which contains SU(5) which contains U(1)×SU(2)×SU(3). It'
 
 **Bonus**: E₆ has a 27-dimensional representation linked to the exceptional Jordan algebra.
 
-**In K₇**: The Jordan algebra (dim 27) appears in m_μ/m_e = 27^φ.
+**In K₇**: The Jordan algebra (dim 27) appears in m_μ/m_e = 27^φ, a formula that comes close to the measurement without matching it (see the Golden Ratio in Part V).
 
 ---
 
@@ -261,7 +261,7 @@ E₆ contains SO(10) which contains SU(5) which contains U(1)×SU(2)×SU(3). It'
 
 **The kitchen table version**: The mysterious older brother. E₇ has a fundamental representation of dimension **56**. And 168/56 = 3!
 
-**In K₇**: N_gen = |PSL(2,7)| / dim(fund(E₇)) = 168/56 = 3.
+**In K₇**: The number 56 appears in two formulas of the dictionary (56/248 and 56/77). The division 168/56 = 3 is true arithmetic, but the dictionary writes the number of families as 21/7 = 3.
 
 ---
 
@@ -278,7 +278,7 @@ E₈ is the most complex and beautiful symmetry group that exists. Its structure
 
 **Fun fact**: In 2007, a team of 18 mathematicians took 4 years to completely calculate E₈'s structure. The result is 60 gigabytes!
 
-**In K₇**: E₈ × E₈ (248 + 248 = 496 dimensions) is the fundamental symmetry group. 248 appears in m_τ/m_e = 7 + 10×248 + 10×99.
+**In K₇**: E₈ × E₈ (248 + 248 = 496 dimensions) is the symmetry group the framework starts from. 248 appears in m_τ/m_e = 7 + 10×248 + 10×99.
 
 ---
 
@@ -362,7 +362,7 @@ The universe might be the same:
 
 The 7 curled-up dimensions have the shape of K₇.
 
-**In K₇**: We don't "see" K₇, but its properties dictate the constants we measure.
+**In K₇**: We don't "see" K₇, but the dictionary writes the constants we measure with its numbers.
 
 ---
 
@@ -376,13 +376,13 @@ Calabi-Yau spaces are the "hidden shapes" used in traditional string theory. The
 
 **Problem**: There are BILLIONS of different ones (the famous 10^500 solution "landscape"). Which one to choose?
 
-**In K₇**: K₇ (G₂ holonomy, 7 dimensions) is more constrained than Calabi-Yau (SU(3) holonomy, 6 dimensions). G₂ achieves 13× better precision than Calabi-Yau approaches.
+**In K₇**: K₇ uses another family of shapes (G₂ holonomy, 7 dimensions) instead of Calabi-Yau (SU(3) holonomy, 6 dimensions). It does not escape the question: nothing yet explains why this shape, with these numbers, rather than another.
 
 ---
 
 ## K₇: The Cosmic Diabolo
 
-**The fancy word**: Compact 7-dimensional manifold with G₂ holonomy, constructed by "twisted connected sum."
+**The fancy word**: Compact 7-dimensional manifold with G₂ holonomy and Betti numbers (21, 77). No construction is known; the standard recipe, the "twisted connected sum," cannot produce these numbers.
 
 **The kitchen table version**: The cosmic diabolo.
 
@@ -418,7 +418,7 @@ At each point of the base, there's a "fiber" attached. The whole thing forms the
 
 **In physics**: Spacetime is the base, and at each point are attached "fibers" containing information about fields.
 
-**In K₇**: K₇ is "fibered" over spacetime in a specific way.
+**In K₇**: Picture a tiny copy of K₇ attached to every point of spacetime, like a bristle on the brush.
 
 ---
 
@@ -435,7 +435,7 @@ At each point of the base, there's a "fiber" attached. The whole thing forms the
 
 **The classic**: Coffee mug = donut. Both have exactly 1 hole (the mug handle = the donut hole). You can deform one into the other without cutting or gluing.
 
-**In K₇**: Physical constants are topological: they come from the "number of holes," not distances. That's why they're stable and universal.
+**In K₇**: The formulas of the dictionary use only the "number of holes," never distances. That's why they have no dial to turn.
 
 ---
 
@@ -449,7 +449,7 @@ You can change your hairstyle, clothes, gain or lose weight... but your DNA stay
 
 Topological invariants are shapes' DNA. You can deform K₇ in a thousand ways, b₂ will stay 21 and b₃ will stay 77.
 
-**In K₇**: Physical constants = the universe's DNA. They can't be different.
+**In K₇**: The numbers of the shape cannot be nudged. Which formula goes with which constant is a choice, and the framework writes it down as one.
 
 ---
 
@@ -472,11 +472,11 @@ Topological invariants are shapes' DNA. You can deform K₇ in a thousand ways, 
 - b₂ = 21 (21 independent 2D bubbles)
 - b₃ = 77 (77 independent 3D hyper-bubbles)
 
-**Why these specific numbers?**
+**Why these specific numbers?** Nobody knows: they are an input chosen by the author, not something derived. They do factor nicely:
 - 21 = 3 × 7 (three times the 7 points of the Fano plane)
 - 77 = 7 × 11 (seven times 11)
 
-**In K₇**: These two numbers are enough to calculate almost all physical constants! For example, sin²θ_W = 21/(77+14) = 3/13.
+**In K₇**: These two numbers appear in most formulas of the dictionary. For example, sin²θ_W = 21/(77+14) = 3/13 (close to the measured value, but not equal to it: see Part V).
 
 ---
 
@@ -527,7 +527,7 @@ A tetrahedron: 4 - 6 + 4 = 2 ✓
 
 This formula generalizes to all dimensions!
 
-**In K₇**: χ(K₇) is linked to the number of generations via the Atiyah-Singer index.
+**In K₇**: The dictionary does not use it. Earlier versions linked it to the number of particle families through a famous theorem (the Atiyah-Singer index theorem); that link is withdrawn.
 
 ---
 
@@ -541,12 +541,9 @@ Imagine you walk straight ahead, but space itself "twists" like a corkscrew. You
 
 Torsion measures this "twisting" of space.
 
-**In K₇**: Torsion must be very small (κ_T = 1/61) for physics to be consistent.
+**In K₇**: The number 61 (written κ_T = 1/61) appears in three formulas. Earlier versions called it a measure of torsion; in version 3.6 it is only a combination of whole numbers (77 − 14 − 2), with no physical meaning attached.
 
-**In K₇**: The current programme aims to prove a torsion-free metric on K₇.
-The usual Joyce theorem is not enough in the collapsing K3-fibred regime; the
-missing analytic step is the anisotropic perturbation theorem tracked in
-`docs/analytic_status.md`.
+**Where things stand**: No shape without torsion and with 21 and 77 holes has been built. Joyce's theorem is not applied here, and several mathematical steps remain open (section 9 of the main paper lists them).
 
 ---
 
@@ -586,7 +583,7 @@ That's why matter is solid! Electrons (fermions) repel each other and don't comp
 
 **The spin thing**: You need to rotate a fermion 720° (two turns) to return to the initial state!
 
-**In K₇**: Fermions are associated with H³(K₇), hence b₃ = 77.
+**In K₇**: The framework reads b₃ = 77 as the room available for matter. A caveat: on a smooth shape like this one, the known mathematics does not give the matter particles we observe; that step is missing.
 
 ---
 
@@ -602,7 +599,7 @@ That's what enables lasers (lots of identical photons) and Bose-Einstein condens
 
 **The family**: Photons, gluons, W, Z, Higgs, graviton (hypothetical)...
 
-**In K₇**: Bosons are associated with H²(K₇), hence b₂ = 21.
+**In K₇**: The framework reads b₂ = 21 as the room available for force carriers. A caveat: the forces of the Standard Model are not obtained this way; they are assumed.
 
 ---
 
@@ -618,7 +615,7 @@ The electron is the lightest charged lepton. It's the one that orbits atoms and 
 
 It has two heavier siblings: the muon (×207) and the tau (×3477).
 
-**In K₇**: The electron defines the fundamental scale λ_e = h/m_e c.
+**In K₇**: The dictionary only speaks of ratios, such as the muon mass divided by the electron mass. The electron is the yardstick.
 
 ---
 
@@ -632,11 +629,11 @@ Exactly like the electron, but heavier:
 - **Muon**: ×207 (lives ~2 microseconds)
 - **Tau**: ×3477 (lives ~0.3 picoseconds)
 
-Nobody knew why these precise ratios. K₇ says:
-- m_μ/m_e = 27^φ (golden ratio!)
-- m_τ/m_e = 7 + 10×248 + 10×99 = 3477
+Nobody knows why these precise ratios. K₇'s dictionary proposes:
+- m_μ/m_e = 27^φ = 207.01 (golden ratio!). The measured ratio is 206.77, known so precisely that this is a near miss, not a match
+- m_τ/m_e = 7 + 10×248 + 10×99 = 3477. The measured ratio is 3477.37, a small strain
 
-**In K₇**: The three sisters (Koide) = dim(G₂)/b₂ = 14/21 = 2/3.
+**In K₇**: The three sisters (Koide) = dim(G₂)/b₂ = 14/21 = 2/3. These lepton formulas cannot all be exactly true at once, and the framework does not pick a winner.
 
 ---
 
@@ -681,7 +678,7 @@ The Higgs field fills the entire universe like invisible molasses. Particles tha
 
 **Discovery**: 2012 at the LHC, 2013 Nobel Prize.
 
-**In K₇**: λ_H (Higgs coupling) = √17/32 = √(dim(G₂) + N_gen) / 2^Weyl.
+**In K₇**: λ_H (Higgs coupling) = √17/32, where 17 = 14 + 3 and 32 = 21 + 14 − 3.
 
 ---
 
@@ -693,7 +690,7 @@ The Higgs field fills the entire universe like invisible molasses. Particles tha
 
 The photon IS light. It carries the electromagnetic force between charged particles. It always travels at the speed of light and has no mass.
 
-**In K₇**: Vacuum impedance (377 ohms) is linked to α via E₈ structures.
+**In K₇**: How strongly photons couple to matter is the number α. The dictionary has a formula for it, a near miss (see Part V).
 
 ---
 
@@ -707,7 +704,7 @@ Gluons "glue" quarks together. But unlike photons, gluons **carry the charge the
 
 **Why 8?** That's the dimension of SU(3). And 8 = dim(𝕆), the dimension of octonions!
 
-**In K₇**: α_s = √2/12 (strong coupling) comes from dim(G₂) - 2 = 12.
+**In K₇**: α_s = √2/12 (strong coupling) is written with dim(G₂) - 2 = 12.
 
 ---
 
@@ -719,7 +716,7 @@ Gluons "glue" quarks together. But unlike photons, gluons **carry the charge the
 
 W⁺, W⁻ and Z⁰ carry the weak force (the one behind radioactivity). Unlike the photon, they're very heavy (~80-90 GeV), which is why the weak force has short range.
 
-**In K₇**: M_Z/M_W = √(13/10) comes from sin²θ_W = 3/13.
+**In K₇**: The dictionary writes m_W/m_Z = 37/42 = 0.8810. The measured ratio is 0.8813, known so precisely that the formula fails as an exact equality: a near miss.
 
 ---
 
@@ -737,7 +734,7 @@ Maxwell showed in 1865 that electricity and magnetism are two faces of the same 
 - **Carrier**: Photon
 - **Range**: Infinite
 
-**In K₇**: α = 1/137.033 determines the strength.
+**In K₇**: The dictionary's formula gives α = 1/137.033. The measured value is 1/137.036: a near miss (see Part V).
 
 ---
 
@@ -755,7 +752,7 @@ Imagine a magician who doesn't just move cards around the table: she actually tr
 - **Carriers**: W⁺, W⁻, Z⁰
 - **Range**: ~10⁻¹⁸ m (very short!)
 
-**In K₇**: sin²θ_W = 3/13 describes weak/EM mixing.
+**In K₇**: The dictionary writes the weak/EM mixing as sin²θ_W = 3/13, a near miss (see Part V).
 
 ---
 
@@ -788,7 +785,7 @@ Imagine spacetime as a trampoline. Masses "push down" on the trampoline, creatin
 - **Carrier (hypothetical)**: Graviton (spin 2)
 - **Range**: Infinite
 
-**In K₇**: Gravity potentially emerges from E₈ × E₈ structures at the Planck scale.
+**In K₇**: The framework says nothing new about gravity: none of its formulas gives the strength of gravity.
 
 ---
 
@@ -823,9 +820,9 @@ A gauge group is **the set of rules that define a force**.
 - U(1) → rules of electromagnetism
 - SU(2) → rules of the weak force
 - SU(3) → rules of the strong force
-- E₈ × E₈ → K₇'s meta-rules (where the others come from)
+- E₈ × E₈ → K₇'s big rulebook (the others fit inside it)
 
-**In K₇**: E₈ × E₈ is the "original card game" from which all others are simplifications.
+**In K₇**: E₈ × E₈ is a bigger card game that contains the others. How nature would get from the big game to the three smaller ones is not explained by the framework.
 
 ---
 
@@ -847,7 +844,7 @@ For 60+ years, physicists have measured this number to insane precision (10 deci
 
 Feynman, 1985 (*QED: The Strange Theory of Light and Matter*): *"It's one of the greatest damn mysteries of physics: a magic number that comes to us with no understanding by man. You might say the 'hand of God' wrote that number, and 'we don't know how He pushed His pencil.'"*
 
-**K₇'s formula**: `α⁻¹ = 137.033`, written as `128 + 9 + correction`, where `128 = 2⁷` and `9 = 99/11` (a ratio of the shape's numbers). It is close, and it is not right: α is measured to ten decimal places, and 137.033 is not 137.036. The framework keeps this formula as a *proximity*, a near miss, and no longer claims it as an exact result. Feynman's mystery stands.
+**K₇'s formula**: `α⁻¹ = 137.033`, written as `128 + 9 + correction`, where `128 = (248 + 8)/2` and `9 = 99/11` (both built from the dictionary's numbers). It is close, and it is not right: α is measured to ten decimal places, and 137.033 is not 137.036. The framework keeps this formula as a *proximity*, a near miss, and no longer claims it as an exact result. Feynman's mystery stands.
 
 ---
 
@@ -871,19 +868,19 @@ It's the number of "2D bubbles" (21) divided by the total (77 + 14 = 91).
 
 ### Koide Relation (Q = 2/3)
 
-**The fancy word**: (√m_e + √m_μ + √m_τ)² / (m_e + m_μ + m_τ) = 2/3
+**The fancy word**: (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 
 **The kitchen table version**: The cosmic chord.
 
 The three charged leptons (electron, muon, tau) have wildly different masses (the tau is ~3500× heavier than the electron). At first glance, they look like random numbers nature picked from a hat.
 
-In 1982, Japanese physicist Yoshio Koide noticed something strange. Take the **square roots** of the three masses. Add them. Square the result. Divide by the **sum** of the masses. You get... not approximately, not "close to", but **exactly** 2/3, to the precision of the best measurements available.
+In 1982, Japanese physicist Yoshio Koide noticed something strange. Add up the three masses. Then take the **square roots** of the three masses, add them, and square the result. Divide the first number by the second. You get **2/3**, to the precision of the best measurements available.
 
 It's as if three random pebbles, when struck together, produced a perfect musical chord.
 
-For 40 years, this stayed an unexplained "numerical curiosity", too precise to be coincidence, too specific to derive from anything known.
+For 40 years, this has stayed an unexplained "numerical curiosity": strikingly precise, and never derived from anything known.
 
-**K₇ says**: 2/3 = 14/21 = `dim(G₂) / b₂`. The chord isn't accidental: the three lepton masses are constrained by the same geometric structure (the 14-dimensional G₂ symmetry inside the 21-dimensional second cohomology of K₇). The "tuning" of the cosmic chord is dictated by the shape of hidden space.
+**K₇ says**: 2/3 = 14/21 = `dim(G₂) / b₂`. That is a way of writing 2/3 with two numbers of the shape. It is not an explanation: nothing in the framework shows why the three lepton masses should follow this ratio.
 
 **In K₇**: The dictionary writes 2/3 as a ratio of two numbers of the shape, and the measurement agrees. Honesty requires a footnote: 2/3 is such a simple fraction that almost any list of numbers can produce it, so this agreement is not evidence that the shape is right.
 
@@ -902,9 +899,9 @@ All particles come in 3 increasingly heavy "copies":
 
 Why not 2? Or 47?
 
-**Before K₇**: "We observe 3, we don't know why."
+**Today**: "We observe 3, we don't know why." That is still true.
 
-**K₇**: The Fano plane has 168 symmetries. 168 ÷ 56 = **3**.
+**K₇**: 21 ÷ 7 = **3** (the 21 bubbles divided by the 7 dimensions). And, as seen with the Fano plane, 168 ÷ 56 = 3 too.
 
 **In K₇**: The number 3 comes out as a division of two whole numbers of the dictionary. It is an arithmetic identity, a consistency check; it is not a proof that nature must have three families.
 
@@ -920,7 +917,7 @@ Why not 2? Or 47?
 
 Take any positive number `x`. Compute `1 + 1/x`. You get a new number. Repeat. Almost any starting point converges to one specific value: **φ**. It's the fixed point of self-reference: `φ² = φ + 1`. In other words, **φ is the value you get when something defines itself in terms of itself**. Self-similar growth, optimal packing, Fibonacci sequences, all variations on this single equation.
 
-**In K₇**: the muon-electron mass ratio is `m_μ / m_e = 27^φ ≈ 206.77`. The exponent is φ exactly (not a fitted parameter, but the fixed point of self-reference. The base 27 is the dimension of the exceptional Jordan algebra (E₆'s favorite playground). Mass ratios in K₇ aren't arbitrary numbers) they're what you get when geometry grows from itself.
+**In K₇**: the dictionary writes the muon-electron mass ratio as `m_μ / m_e = 27^φ ≈ 207.01`. The measured ratio is 206.77. The gap looks tiny, but this ratio is measured so precisely that the formula fails as an exact equality: the framework keeps it only as a near miss. The base 27 is the dimension of the exceptional Jordan algebra (E₆'s favorite playground). Using φ as an exponent also takes an extra step that the other formulas do not need.
 
 ---
 
@@ -932,7 +929,7 @@ Take any positive number `x`. Compute `1 + 1/x`. You get a new number. Repeat. A
 
 At the Planck scale (~10⁻³⁵ m), gravity and quantum mechanics become equally strong. That's where our current physics breaks down.
 
-**In K₇**: The "scale bridge" connects M_Pl to m_e via topological invariants.
+**In K₇**: None of the 33 formulas involves the Planck mass. The dictionary is about pure ratios, not about masses in kilograms.
 
 ---
 
@@ -964,7 +961,7 @@ A horoscope says: "You will meet someone interesting." Impossible to disprove.
 
 K₇ says: "The neutrino CP phase δ_CP = 197°, no more, no less."
 
-The DUNE experiment will measure this in 2034-2039.
+The DUNE experiment should start measuring this after its first beam, planned for 2031. The sharpest results are expected in the late 2030s and 2040s.
 
 - If the measurements end up excluding 197° (at the level physicists call 3 sigma) → this formula is dead, and so is the choice of reading 197 in degrees. No rescue, no adjusted version.
 - If they include 197° → the formula survives. That would show the choice agrees with nature; it would not prove the shape is right.
@@ -995,7 +992,7 @@ A theory is "natural" if it doesn't need parameters tuned to 0.0000001% precisio
 
 Individual atoms aren't wet. "Wetness" emerges when billions of atoms are together.
 
-**In K₇**: 4D physical constants "emerge" from 7D topology.
+**In K₇**: The original hope was that the constants we measure would "emerge" from the 7D shape. Today no such mechanism is known: the dictionary matches numbers, it does not show how one produces the other.
 
 ---
 
@@ -1069,19 +1066,19 @@ The Planck satellite took the most detailed "photo" of the Big Bang's fossil rad
 
 ### Dominic Joyce
 British mathematician, proved in 1996 the existence of compact manifolds with G₂ holonomy.
-**For K₇**: His theorem guarantees K₇ can exist.
+**For K₇**: His work shows that shapes of this family exist. It does not show that one exists with 21 and 77 holes: that is still open, and his theorem is not applied here.
 
 ### Yoshio Koide
 Japanese physicist, discovered in 1982 the Q = 2/3 relation for lepton masses.
-**For K₇**: K₇ explains Koide via 14/21 = dim(G₂)/b₂.
+**For K₇**: The dictionary writes his 2/3 as 14/21 = dim(G₂)/b₂. That restates Koide's relation; it does not explain it.
 
 ### Michael Atiyah & Isadore Singer
 Mathematicians, index theorem (1963), Fields Medals and Abel Prize.
-**For K₇**: Their theorem gives N_gen = 3.
+**For K₇**: Earlier versions said their theorem gave N_gen = 3. That claim is withdrawn: the 3 comes from a simple division (21/7), not from their theorem.
 
 ### Edward Witten
 Physicist and mathematician, M-theory, only physicist with a Fields Medal (1990).
-**For K₇**: M-theory (11D) is the natural framework where K₇ lives.
+**For K₇**: M-theory (11D) is the setting that inspired K₇. The framework does not build a complete M-theory model.
 
 ---
 
@@ -1109,7 +1106,7 @@ Physicist and mathematician, M-theory, only physicist with a Fields Medal (1990)
 | sin²θ_W | Cocktail recipe |
 | Koide = 2/3 | Three sisters' proportions |
 | N_gen = 3 | Why 3 Musketeers |
-| 0 parameters | IKEA vs custom furniture |
+| No dials to turn | Lego vs modelling clay |
 | Falsifiability | Science vs horoscopes |
 | Lean 4 | Ultra-strict teacher |
 | DUNE | Ghost hunter |
@@ -1124,23 +1121,23 @@ Physicist and mathematician, M-theory, only physicist with a Fields Medal (1990)
 | Atiyah-Singer | [Key Figures](#michael-atiyah--isadore-singer) |
 | Betti numbers | [Part II](#betti-numbers) |
 | Bosons | [Part III](#bosons) |
-| Calabi-Yau | [Part II](#calabi-yau-vs-g₂-manifolds) |
+| Calabi-Yau | [Part II](#calabi-yau-vs-g-manifolds) |
 | Cohomology | [Part II](#cohomology) |
 | Complex numbers | [Part I](#complex-numbers-ℂ) |
 | Dimension | [Part II](#dimension) |
 | DUNE | [Part VII](#dune) |
-| E₆ | [Part I](#e₆--the-grand-unification-group) |
-| E₇ | [Part I](#e₇--the-mystery-group) |
-| E₈ | [Part I](#e₈--the-titan-of-symmetries) |
+| E₆ | [Part I](#e-the-grand-unification-group) |
+| E₇ | [Part I](#e-the-mystery-group) |
+| E₈ | [Part I](#e-the-titan-of-symmetries) |
 | Electromagnetism | [Part IV](#electromagnetism) |
 | Electron | [Part III](#electron) |
 | Euler characteristic | [Part II](#euler-characteristic) |
-| F₄ | [Part I](#f₄--the-intermediate-group) |
+| F₄ | [Part I](#f-the-intermediate-group) |
 | Falsifiability | [Part VI](#falsifiability) |
 | Fano plane | [Part I](#the-fano-plane) |
 | Fermions | [Part III](#fermions) |
 | Fiber bundle | [Part II](#fiber-bundle) |
-| G₂ | [Part I](#g₂--the-guardian-of-octonions) |
+| G₂ | [Part I](#g-the-guardian-of-octonions) |
 | Gauge groups | [Part IV](#gauge-groups) |
 | Gluons | [Part III](#gluons) |
 | Golden ratio | [Part V](#golden-ratio-φ--1618) |
@@ -1149,7 +1146,7 @@ Physicist and mathematician, M-theory, only physicist with a Fields Medal (1990)
 | Higgs boson | [Part III](#higgs-boson) |
 | Holonomy | [Part II](#holonomy) |
 | Joyce | [Key Figures](#dominic-joyce) |
-| K₇ | [Part II](#k₇-the-cosmic-diabolo) |
+| K₇ | [Part II](#k-the-cosmic-diabolo) |
 | Koide | [Part V](#koide-relation-q--23) |
 | LHC | [Part VII](#lhc-large-hadron-collider) |
 | Manifold | [Part II](#what-is-a-manifold) |
@@ -1164,13 +1161,13 @@ Physicist and mathematician, M-theory, only physicist with a Fields Medal (1990)
 | Quaternions | [Part I](#quaternions-ℍ) |
 | Quarks | [Part III](#quarks) |
 | Real numbers | [Part I](#real-numbers-ℝ) |
-| sin²θ_W | [Part V](#weak-mixing-angle-sin²θ_w--0231) |
+| sin²θ_W | [Part V](#weak-mixing-angle-sinθ_w--0231) |
 | Strong force | [Part IV](#strong-force) |
-| SU(2) | [Part I](#su2--the-quantum-rotations-group) |
-| SU(3) | [Part I](#su3--the-color-group) |
+| SU(2) | [Part I](#su2-the-quantum-rotations-group) |
+| SU(3) | [Part I](#su3-the-color-group) |
 | Topology | [Part II](#topology-vs-geometry) |
 | Torsion | [Part II](#torsion) |
-| U(1) | [Part I](#u1--the-circle-group) |
+| U(1) | [Part I](#u1-the-circle-group) |
 | W/Z bosons | [Part III](#w-and-z-bosons) |
 | Weak force | [Part IV](#weak-force) |
 | Weyl group | [Part I](#the-weyl-group) |

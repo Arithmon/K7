@@ -22,21 +22,21 @@ Que vous soyez étudiant curieux, amateur de sciences, ou simplement quelqu'un q
 
 ## Table des matières
 
-1. [Introduction : qu'est-ce que K₇ ?](#introduction-quest-ce-que-gift-)
-2. [Partie I : Les briques de base](#partie-i-les-briques-de-base)
+1. [Introduction : qu'est-ce que K₇ ?](#introduction--quest-ce-que-k-)
+2. [Partie I : Les briques de base](#partie-i--les-briques-de-base)
    - [Les systèmes de nombres](#les-systèmes-de-nombres)
    - [Les groupes de symétrie](#les-groupes-de-symétrie)
-3. [Partie II : La forme de l'univers](#partie-ii-la-forme-de-lunivers)
+3. [Partie II : La forme de l'univers](#partie-ii--la-forme-de-lunivers)
    - [Variétés et dimensions](#variétés-et-dimensions)
-   - [K₇ : le diabolo cosmique](#k₇-le-diabolo-cosmique)
-   - [Topologie : la mathématique de la pâte à modeler](#topologie-la-mathématique-de-la-pâte-à-modeler)
-4. [Partie III : Les particules](#partie-iii-les-particules)
+   - [K₇ : le diabolo cosmique](#k--le-diabolo-cosmique)
+   - [Topologie : la mathématique de la pâte à modeler](#topologie--la-mathématique-de-la-pâte-à-modeler)
+4. [Partie III : Les particules](#partie-iii--les-particules)
    - [Fermions et bosons](#fermions-et-bosons)
    - [Le zoo des particules](#le-zoo-des-particules)
-5. [Partie IV : Les forces](#partie-iv-les-forces)
-6. [Partie V : Les nombres magiques](#partie-v-les-nombres-magiques)
-7. [Partie VI : Pourquoi K₇ est différent](#partie-vi-pourquoi-gift-est-différent)
-8. [Partie VII : Les expériences](#partie-vii-les-expériences)
+5. [Partie IV : Les forces](#partie-iv--les-forces)
+6. [Partie V : Les nombres magiques](#partie-v--les-nombres-magiques)
+7. [Partie VI : Pourquoi K₇ est différent](#partie-vi--pourquoi-k-est-différent)
+8. [Partie VII : Les expériences](#partie-vii--les-expériences)
 9. [Les personnages clés](#les-personnages-clés)
 10. [Tableau récapitulatif](#tableau-récapitulatif)
 11. [Index alphabétique](#index-alphabétique)
@@ -45,7 +45,7 @@ Que vous soyez étudiant curieux, amateur de sciences, ou simplement quelqu'un q
 
 # Introduction : qu'est-ce que K₇ ?
 
-**K₇** (*anciennement Geometric Information Field Theory*, ou « théorie géométrique des champs d'information ») propose que les constantes fondamentales de la physique (des nombres comme 1/137, les masses des particules, l'intensité des forces) ne sont pas arbitraires. Elles émergent de la **forme** des dimensions cachées de l'univers.
+**K₇** (*anciennement Geometric Information Field Theory*, ou « théorie géométrique des champs d'information ») se demande si les constantes fondamentales de la physique (des nombres comme 1/137, les masses des particules, l'intensité des forces) peuvent s'écrire avec les nombres qui décrivent la **forme** des dimensions cachées de l'univers.
 
 **L'idée centrale en une phrase** : supposons que l'univers possède 7 dimensions cachées repliées dans une forme particulière qu'on appelle **K₇**. Alors 33 des nombres que nous mesurons s'écrivent comme des formules simples en les propriétés de cette forme.
 
@@ -114,7 +114,7 @@ Après les octonions, **il n'y a plus rien**. Mathématiquement prouvé (théor�
 
 **La bizarrerie** : les octonions ne sont pas « associatifs ». (a × b) × c ≠ a × (b × c). C'est comme si l'ordre dans lequel vous assemblez vos Lego changeait le résultat final !
 
-**Et dans K₇** : l'univers utilise le kit le plus complet possible. Les 7 unités imaginaires des octonions donnent les 7 dimensions de K₇.
+**Et dans K₇** : le cadre parie sur le kit le plus complet possible. Les 7 unités imaginaires des octonions correspondent aux 7 dimensions de K₇.
 
 ---
 
@@ -124,7 +124,7 @@ Après les octonions, **il n'y a plus rien**. Mathématiquement prouvé (théor�
 
 **Version comptoir** : Le kit Lego défectueux. On peut continuer à doubler : 16, 32, 64... Mais à partir de 16, les « Lego » ne s'emboîtent plus correctement. Vous pouvez avoir des pièces qui, multipliées entre elles, donnent zéro alors qu'aucune des deux n'est nulle. C'est cassé.
 
-**Et dans K₇** : ça explique pourquoi la nature s'arrête aux octonions. Pas le choix, c'est la dernière algèbre « propre ».
+**Et dans K₇** : c'est pour ça que le cadre s'arrête aux octonions : c'est la dernière algèbre « propre ».
 
 ---
 
@@ -143,11 +143,11 @@ C'est la configuration la plus « efficace » possible. Pas de redondance, pas d
 
 ![Le plan de Fano : 7 points, 7 lignes (les 3 côtés du triangle, les 3 médianes, et le cercle inscrit), chacune contenant exactement 3 points.](../figures/fig1_fano_plane.png)
 
-**Le truc magique** : ce réseau possède 168 manières de se réarranger tout en gardant la même structure, c'est le groupe de symétrie qu'on appelle **PSL(2,7)**, d'ordre 168. Et là, tenez-vous bien : 168 ÷ 56 = **3**. Trois familles de particules.
+**Le truc magique** : ce réseau possède 168 manières de se réarranger tout en gardant la même structure, c'est le groupe de symétrie qu'on appelle **PSL(2,7)**, d'ordre 168. Et voici une curiosité arithmétique : 168 ÷ 56 = **3**, le même nombre que les familles de particules.
 
-D'où vient le 56 ? C'est la dimension de la « représentation fondamentale » de E₇ (la **plus petite manière non triviale** dont le gigantesque groupe exceptionnel E₇ peut agir sur un espace vectoriel (on rencontrera E₇ quelques sections plus bas). Le plan de Fano (petit, fini, 7 points) et E₇ (énorme, continu, 133 dimensions) sont liés à travers les échelles. Leur rapport tombe pile sur le nombre de générations de fermions qu'on observe. K₇ affirme : ce n'est pas une coïncidence) c'est la géométrie qui se parle à elle-même à travers les dimensions.
+D'où vient le 56 ? C'est la dimension de la « représentation fondamentale » de E₇, la **plus petite manière non triviale** dont le gigantesque groupe exceptionnel E₇ peut agir sur un espace vectoriel (on rencontrera E₇ quelques sections plus bas). Le plan de Fano est petit et fini (7 points) ; E₇ est énorme et continu (133 dimensions). Le rapport des deux nombres tombe sur le nombre de familles de particules qu'on observe. Les versions précédentes de K₇ y voyaient plus qu'une coïncidence. La version 3.6, non : c'est de l'arithmétique, et rien ne montre que la nature compte ses familles de cette façon.
 
-**Et dans K₇** : le plan de Fano encode la multiplication des octonions. C'est la « table de multiplication » de l'univers.
+**Et dans K₇** : le plan de Fano encode la multiplication des octonions. C'est la « table de multiplication » des octonions.
 
 ---
 
@@ -177,7 +177,7 @@ Un groupe mathématique, c'est comme un club où :
 
 **En physique** : c'est le groupe de symétrie de l'**électromagnétisme**. Changer la « phase » d'une particule chargée (comme faire tourner l'aiguille) ne change pas la physique observable.
 
-**Et dans K₇** : U(1) émerge naturellement de structures plus grandes comme E₈.
+**Et dans K₇** : U(1) se loge à l'intérieur de structures plus grandes comme E₈.
 
 ---
 
@@ -211,7 +211,7 @@ SU(3) décrit toutes les manières de **mélanger ces couleurs**, comme un méla
 
 **En physique** : c'est le groupe de la **force forte** (celle qui colle les quarks ensemble). Les 8 « gluons » correspondent aux 8 dimensions de SU(3).
 
-**Et dans K₇** : dim(SU(3)) = 8 = dim(𝕆). Coïncidence ? K₇ dit que non.
+**Et dans K₇** : dim(SU(3)) = 8 = dim(𝕆). Un joli écho ; le dictionnaire n'en tire aucune affirmation.
 
 ---
 
@@ -237,7 +237,7 @@ Imaginez une boule de cristal avec des motifs à l'intérieur. G₂ est l'ensemb
 
 **Version comptoir** : L'architecte de la maison à mi-chemin. F₄ est lié au « plan octonionique » (le plan projectif octonionique).
 
-**Et dans K₇** : dim(F₄) = 52 apparaît dans des calculs de pont d'échelle.
+**Et dans K₇** : dim(F₄) = 52 apparaît dans deux formules du dictionnaire, par exemple m_H/m_W = 81/52.
 
 ---
 
@@ -251,7 +251,7 @@ E₆ contient SO(10), qui contient SU(5), qui contient U(1)×SU(2)×SU(3). C'est
 
 **Bonus** : E₆ a une représentation de dimension 27 liée à l'algèbre de Jordan exceptionnelle.
 
-**Et dans K₇** : l'algèbre de Jordan (dim 27) apparaît dans m_μ/m_e = 27^φ.
+**Et dans K₇** : l'algèbre de Jordan (dim 27) apparaît dans m_μ/m_e = 27^φ, une formule qui approche la mesure sans tomber dessus (voir le nombre d'or, Partie V).
 
 ---
 
@@ -261,7 +261,7 @@ E₆ contient SO(10), qui contient SU(5), qui contient U(1)×SU(2)×SU(3). C'est
 
 **Version comptoir** : Le grand frère mystérieux. E₇ a une représentation fondamentale de dimension **56**. Et 168/56 = 3 !
 
-**Et dans K₇** : N_gen = |PSL(2,7)| / dim(fond(E₇)) = 168/56 = 3.
+**Et dans K₇** : le nombre 56 apparaît dans deux formules du dictionnaire (56/248 et 56/77). La division 168/56 = 3 est juste, mais le dictionnaire écrit le nombre de familles comme 21/7 = 3.
 
 ---
 
@@ -278,7 +278,7 @@ E₈ est le groupe de symétrie le plus complexe et le plus beau qui existe. Sa 
 
 **Anecdote** : en 2007, une équipe de 18 mathématiciens a mis 4 ans à calculer complètement la structure de E₈. Le résultat fait 60 gigaoctets !
 
-**Et dans K₇** : E₈ × E₈ (248 + 248 = 496 dimensions) est le groupe de symétrie fondamental. Le 248 apparaît dans m_τ/m_e = 7 + 10×248 + 10×99.
+**Et dans K₇** : E₈ × E₈ (248 + 248 = 496 dimensions) est le groupe de symétrie dont part le cadre. Le 248 apparaît dans m_τ/m_e = 7 + 10×248 + 10×99.
 
 ---
 
@@ -362,7 +362,7 @@ L'univers, c'est peut-être pareil :
 
 Les 7 dimensions enroulées ont la forme de K₇.
 
-**Et dans K₇** : nous ne « voyons » pas K₇, mais ses propriétés dictent les constantes que nous mesurons.
+**Et dans K₇** : nous ne « voyons » pas K₇, mais le dictionnaire écrit avec ses nombres les constantes que nous mesurons.
 
 ---
 
@@ -376,13 +376,13 @@ Les espaces de Calabi-Yau sont les « formes cachées » utilisées dans la thé
 
 **Le problème** : il en existe des MILLIARDS (le fameux « paysage » de 10⁵⁰⁰ solutions). Lequel choisir ?
 
-**Et dans K₇** : K₇ (holonomie G₂, 7 dimensions) est plus contraint que Calabi-Yau (holonomie SU(3), 6 dimensions). G₂ atteint une précision 13 fois meilleure que les approches Calabi-Yau.
+**Et dans K₇** : K₇ utilise une autre famille de formes (holonomie G₂, 7 dimensions) à la place des Calabi-Yau (holonomie SU(3), 6 dimensions). Il n'échappe pas à la question : rien n'explique encore pourquoi cette forme, avec ces nombres, plutôt qu'une autre.
 
 ---
 
 ## K₇ : le diabolo cosmique
 
-**En jargon** : Variété compacte de dimension 7 à holonomie G₂, construite par « somme connexe tordue ».
+**En jargon** : Variété compacte de dimension 7 à holonomie G₂ et de nombres de Betti (21, 77). Aucune construction n'est connue ; la recette habituelle, la « somme connexe tordue », ne peut pas produire ces nombres.
 
 **Version comptoir** : Le diabolo cosmique.
 
@@ -395,8 +395,8 @@ K₇ est un « diabolo à 7 dimensions » dont la forme est dictée par les octo
 
 **Ses caractéristiques** :
 - 7 dimensions (comme les 7 unités imaginaires des octonions)
-- 21 « bulles 2D » (b₂ = 21)
-- 77 « bulles 3D » (b₃ = 77)
+- 21 « trous 2D » (b₂ = 21)
+- 77 « trous 3D » (b₃ = 77)
 - Une courbure très particulière (holonomie G₂)
 
 **Et dans K₇** : toutes les formules du dictionnaire s'écrivent avec les nombres de cette forme. Savoir si une telle forme existe avec exactement 21 et 77 trous est une question mathématique ouverte : personne ne l'a encore construite.
@@ -418,7 +418,7 @@ Imaginez une brosse à cheveux :
 
 **En physique** : l'espace-temps est la base, et à chaque point sont attachées des « fibres » contenant l'information sur les champs.
 
-**Et dans K₇** : K₇ est « fibré » au-dessus de l'espace-temps d'une manière spécifique.
+**Et dans K₇** : imaginez une minuscule copie de K₇ attachée à chaque point de l'espace-temps, comme un poil sur la brosse.
 
 ---
 
@@ -435,7 +435,7 @@ Imaginez une brosse à cheveux :
 
 **Le classique** : tasse à café = donut. Les deux ont exactement 1 trou (l'anse de la tasse = le trou du donut). Vous pouvez déformer l'un en l'autre sans couper ni coller.
 
-**Et dans K₇** : les constantes physiques sont topologiques, elles viennent du « nombre de trous », pas des distances. C'est pour ça qu'elles sont stables et universelles.
+**Et dans K₇** : les formules du dictionnaire n'utilisent que le « nombre de trous », jamais les distances. C'est pour ça qu'elles n'ont pas de molette à tourner.
 
 ---
 
@@ -449,7 +449,7 @@ Vous pouvez changer de coiffure, de vêtements, prendre ou perdre du poids... vo
 
 Les invariants topologiques sont l'ADN des formes. Vous pouvez déformer K₇ de mille manières, b₂ restera 21 et b₃ restera 77.
 
-**Et dans K₇** : les constantes physiques = l'ADN de l'univers. Elles ne peuvent pas être différentes.
+**Et dans K₇** : les nombres de la forme ne se laissent pas pousser d'un cran. Quelle formule va avec quelle constante, en revanche, c'est un choix, et le cadre l'écrit comme tel.
 
 ---
 
@@ -472,11 +472,11 @@ Les invariants topologiques sont l'ADN des formes. Vous pouvez déformer K₇ de
 - b₂ = 21 (21 bulles 2D indépendantes)
 - b₃ = 77 (77 hyper-bulles 3D indépendantes)
 
-**Pourquoi ces nombres précis ?**
+**Pourquoi ces nombres précis ?** Personne ne le sait : c'est une entrée choisie par l'auteur, pas un résultat. Ils se factorisent joliment :
 - 21 = 3 × 7 (trois fois les 7 points du plan de Fano)
 - 77 = 7 × 11 (sept fois 11)
 
-**Et dans K₇** : ces deux nombres suffisent à calculer presque toutes les constantes physiques ! Par exemple, sin²θ_W = 21/(77+14) = 3/13.
+**Et dans K₇** : ces deux nombres apparaissent dans la plupart des formules du dictionnaire. Par exemple, sin²θ_W = 21/(77+14) = 3/13 (proche de la valeur mesurée, mais pas égal : voir la Partie V).
 
 ---
 
@@ -527,7 +527,7 @@ Un tétraèdre : 4 - 6 + 4 = 2 ✓
 
 Cette formule se généralise à toutes les dimensions !
 
-**Et dans K₇** : χ(K₇) est lié au nombre de générations via l'indice d'Atiyah-Singer.
+**Et dans K₇** : le dictionnaire ne s'en sert pas. Les versions précédentes la reliaient au nombre de familles de particules par un théorème célèbre (le théorème de l'indice d'Atiyah-Singer) ; ce lien est retiré.
 
 ---
 
@@ -541,12 +541,9 @@ Imaginez que vous marchez tout droit, mais que l'espace lui-même se « tord » 
 
 La torsion mesure cette « torsion » de l'espace.
 
-**Sur K₇** : la torsion doit être très petite (κ_T = 1/61) pour que la physique soit cohérente.
+**Et dans K₇** : le nombre 61 (écrit κ_T = 1/61) apparaît dans trois formules. Les versions précédentes en faisaient une mesure de la torsion ; dans la version 3.6, ce n'est qu'une combinaison de nombres entiers (77 − 14 − 2), sans signification physique attachée.
 
-**Et dans K₇** : le programme actuel vise à prouver une métrique sans torsion
-sur K₇. Le théorème de Joyce usuel ne suffit pas dans le régime K3 fibré
-effondré ; l'étape analytique manquante est le théorème de perturbation
-anisotrope suivi dans `docs/analytic_status.md`.
+**Où on en est** : aucune forme sans torsion avec 21 et 77 trous n'a été construite. Le théorème de Joyce n'est pas appliqué ici, et plusieurs étapes mathématiques restent ouvertes (la section 9 de l'article principal en donne la liste).
 
 ---
 
@@ -586,7 +583,7 @@ C'est pour ça que la matière est solide ! Les électrons (des fermions) se rep
 
 **Le truc bizarre du spin** : il faut faire tourner un fermion de 720° (deux tours) pour revenir à l'état initial !
 
-**Et dans K₇** : les fermions sont associés à H³(K₇), donc b₃ = 77.
+**Et dans K₇** : le cadre lit b₃ = 77 comme la place disponible pour la matière. Un bémol : sur une forme lisse comme celle-ci, les mathématiques connues ne donnent pas les particules de matière qu'on observe ; cette étape manque.
 
 ---
 
@@ -602,7 +599,7 @@ C'est ce qui rend possibles les lasers (plein de photons identiques) et les cond
 
 **La famille** : photons, gluons, W, Z, Higgs, graviton (hypothétique)...
 
-**Et dans K₇** : les bosons sont associés à H²(K₇), donc b₂ = 21.
+**Et dans K₇** : le cadre lit b₂ = 21 comme la place disponible pour les porteurs de forces. Un bémol : les forces du Modèle Standard ne s'obtiennent pas ainsi ; elles sont supposées.
 
 ---
 
@@ -618,7 +615,7 @@ L'électron est le lepton chargé le plus léger. C'est lui qui orbite autour de
 
 Il a deux frères et sœurs plus lourds : le muon (×207) et le tau (×3477).
 
-**Et dans K₇** : l'électron définit l'échelle fondamentale λ_e = h/(m_e c).
+**Et dans K₇** : le dictionnaire ne parle que de rapports, comme la masse du muon divisée par celle de l'électron. L'électron sert d'étalon.
 
 ---
 
@@ -632,11 +629,11 @@ Exactement comme l'électron, mais plus lourds :
 - **Muon** : ×207 (vit ~2 microsecondes)
 - **Tau** : ×3477 (vit ~0,3 picoseconde)
 
-Personne ne savait pourquoi ces rapports précis. K₇ répond :
-- m_μ/m_e = 27^φ (le nombre d'or !)
-- m_τ/m_e = 7 + 10×248 + 10×99 = 3477
+Personne ne sait pourquoi ces rapports précis. Le dictionnaire de K₇ propose :
+- m_μ/m_e = 27^φ = 207,01 (le nombre d'or !). Le rapport mesuré vaut 206,77, et il est connu si précisément que c'est un tir à côté de peu, pas un accord
+- m_τ/m_e = 7 + 10×248 + 10×99 = 3477. Le rapport mesuré vaut 3477,37 : une légère tension
 
-**Et dans K₇** : les trois sœurs (Koide) = dim(G₂)/b₂ = 14/21 = 2/3.
+**Et dans K₇** : les trois sœurs (Koide) = dim(G₂)/b₂ = 14/21 = 2/3. Ces formules des leptons ne peuvent pas être toutes exactement vraies à la fois, et le cadre ne désigne pas de gagnante.
 
 ---
 
@@ -681,7 +678,7 @@ Le champ de Higgs remplit l'univers entier comme une mélasse invisible. Les par
 
 **Découverte** : 2012 au LHC, prix Nobel 2013.
 
-**Et dans K₇** : λ_H (couplage du Higgs) = √17/32 = √(dim(G₂) + N_gen) / 2^Weyl.
+**Et dans K₇** : λ_H (couplage du Higgs) = √17/32, où 17 = 14 + 3 et 32 = 21 + 14 − 3.
 
 ---
 
@@ -693,7 +690,7 @@ Le champ de Higgs remplit l'univers entier comme une mélasse invisible. Les par
 
 Le photon EST la lumière. Il transporte la force électromagnétique entre les particules chargées. Il voyage toujours à la vitesse de la lumière et n'a pas de masse.
 
-**Et dans K₇** : l'impédance du vide (377 ohms) est liée à α via les structures de E₈.
+**Et dans K₇** : la force avec laquelle les photons se couplent à la matière, c'est le nombre α. Le dictionnaire a une formule pour lui, un tir à côté de peu (voir la Partie V).
 
 ---
 
@@ -707,7 +704,7 @@ Les gluons « collent » les quarks ensemble. Mais contrairement aux photons, le
 
 **Pourquoi 8 ?** C'est la dimension de SU(3). Et 8 = dim(𝕆), la dimension des octonions !
 
-**Et dans K₇** : α_s = √2/12 (couplage fort) vient de dim(G₂) - 2 = 12.
+**Et dans K₇** : α_s = √2/12 (couplage fort) s'écrit avec dim(G₂) - 2 = 12.
 
 ---
 
@@ -719,7 +716,7 @@ Les gluons « collent » les quarks ensemble. Mais contrairement aux photons, le
 
 W⁺, W⁻ et Z⁰ portent la force faible (celle qui est derrière la radioactivité). Contrairement au photon, ils sont très lourds (~80-90 GeV), ce qui explique pourquoi la force faible a une portée très courte.
 
-**Et dans K₇** : M_Z/M_W = √(13/10) vient de sin²θ_W = 3/13.
+**Et dans K₇** : le dictionnaire écrit m_W/m_Z = 37/42 = 0,8810. Le rapport mesuré vaut 0,8813, et il est connu si précisément que la formule échoue comme égalité exacte : un tir à côté de peu.
 
 ---
 
@@ -737,7 +734,7 @@ Maxwell a montré en 1865 que l'électricité et le magnétisme sont les deux fa
 - **Porteur** : photon
 - **Portée** : infinie
 
-**Et dans K₇** : α = 1/137,033 détermine son intensité.
+**Et dans K₇** : la formule du dictionnaire donne α = 1/137,033. La valeur mesurée est 1/137,036 : un tir à côté de peu (voir la Partie V).
 
 ---
 
@@ -755,7 +752,7 @@ Imaginez une magicienne qui ne se contente pas de déplacer les cartes sur la ta
 - **Porteurs** : W⁺, W⁻, Z⁰
 - **Portée** : ~10⁻¹⁸ m (très courte !)
 
-**Et dans K₇** : sin²θ_W = 3/13 décrit le mélange faible/EM.
+**Et dans K₇** : le dictionnaire écrit le mélange faible/EM comme sin²θ_W = 3/13, un tir à côté de peu (voir la Partie V).
 
 ---
 
@@ -788,7 +785,7 @@ Imaginez l'espace-temps comme un trampoline. Les masses « appuient » sur le tr
 - **Porteur (hypothétique)** : graviton (spin 2)
 - **Portée** : infinie
 
-**Et dans K₇** : la gravité émerge potentiellement des structures E₈ × E₈ à l'échelle de Planck.
+**Et dans K₇** : le cadre ne dit rien de nouveau sur la gravité : aucune de ses formules ne donne l'intensité de la gravité.
 
 ---
 
@@ -823,9 +820,9 @@ Un groupe de jauge, c'est **l'ensemble des règles qui définissent une force**.
 - U(1) → règles de l'électromagnétisme
 - SU(2) → règles de la force faible
 - SU(3) → règles de la force forte
-- E₈ × E₈ → les méta-règles de K₇ (d'où viennent toutes les autres)
+- E₈ × E₈ → le grand règlement de K₇ (les autres tiennent dedans)
 
-**Et dans K₇** : E₈ × E₈ est le « jeu de cartes original » dont tous les autres sont des simplifications.
+**Et dans K₇** : E₈ × E₈ est un jeu de cartes plus grand qui contient les autres. Comment la nature passerait du grand jeu aux trois petits, le cadre ne l'explique pas.
 
 ---
 
@@ -847,7 +844,7 @@ Pendant 60+ ans, les physiciens ont mesuré ce nombre avec une précision insens
 
 Feynman, 1985 (*QED: The Strange Theory of Light and Matter*) : *« C'est l'un des plus grands sacrés mystères de la physique : un nombre magique qui nous arrive sans que l'humain le comprenne. On pourrait dire que la "main de Dieu" a écrit ce nombre, et "on ne sait pas comment Il a poussé Son crayon". »*
 
-**La formule de K₇** : `α⁻¹ = 137,033`, écrit `128 + 9 + correction`, où `128 = 2⁷` et `9 = 99/11` (un rapport des nombres de la forme). C'est proche, et ce n'est pas juste : α est mesuré à dix décimales, et 137,033 n'est pas 137,036. Le cadre garde cette formule comme une *proximité*, un tir à côté de peu, et ne la présente plus comme un résultat exact. Le mystère de Feynman reste entier.
+**La formule de K₇** : `α⁻¹ = 137,033`, écrit `128 + 9 + correction`, où `128 = (248 + 8)/2` et `9 = 99/11` (tous deux construits avec les nombres du dictionnaire). C'est proche, et ce n'est pas juste : α est mesuré à dix décimales, et 137,033 n'est pas 137,036. Le cadre garde cette formule comme une *proximité*, un tir à côté de peu, et ne la présente plus comme un résultat exact. Le mystère de Feynman reste entier.
 
 ---
 
@@ -871,19 +868,19 @@ C'est le nombre de « bulles 2D » (21) divisé par le total (77 + 14 = 91).
 
 ### Relation de Koide (Q = 2/3)
 
-**En jargon** : (√m_e + √m_μ + √m_τ)² / (m_e + m_μ + m_τ) = 2/3
+**En jargon** : (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 
 **Version comptoir** : L'accord cosmique.
 
 Les trois leptons chargés (électron, muon, tau) ont des masses extrêmement différentes (le tau est ~3500 fois plus lourd que l'électron). À première vue, on dirait des nombres au hasard que la nature a tirés d'un chapeau.
 
-En 1982, le physicien japonais Yoshio Koide a remarqué quelque chose d'étrange. Prenez les **racines carrées** des trois masses. Additionnez-les. Élevez le résultat au carré. Divisez par la **somme** des masses. Vous obtenez... pas approximativement, pas « environ », mais **exactement** 2/3, à la précision des meilleures mesures disponibles.
+En 1982, le physicien japonais Yoshio Koide a remarqué quelque chose d'étrange. Additionnez les trois masses. Prenez ensuite les **racines carrées** des trois masses, additionnez-les, et élevez le résultat au carré. Divisez le premier nombre par le second. Vous obtenez **2/3**, à la précision des meilleures mesures disponibles.
 
 C'est comme si trois cailloux pris au hasard, en s'entrechoquant, produisaient un parfait accord musical.
 
-Pendant 40 ans, c'est resté une « curiosité numérique » inexpliquée, trop précise pour être une coïncidence, trop spécifique pour se déduire de quoi que ce soit de connu.
+Depuis 40 ans, cela reste une « curiosité numérique » inexpliquée : d'une précision frappante, et jamais déduite de quoi que ce soit de connu.
 
-**K₇ répond** : 2/3 = 14/21 = `dim(G₂) / b₂`. L'accord n'est pas accidentel, les trois masses leptoniques sont contraintes par la même structure géométrique (la symétrie G₂ de dimension 14, à l'intérieur de la deuxième cohomologie de K₇ de dimension 21). L'« accordage » de l'accord cosmique est dicté par la forme de l'espace caché.
+**K₇ dit** : 2/3 = 14/21 = `dim(G₂) / b₂`. C'est une manière d'écrire 2/3 avec deux nombres de la forme. Ce n'est pas une explication : rien dans le cadre ne montre pourquoi les trois masses des leptons devraient suivre ce rapport.
 
 **Et dans K₇** : le dictionnaire écrit 2/3 comme le rapport de deux nombres de la forme, et la mesure est d'accord. L'honnêteté demande une note : 2/3 est une fraction si simple que presque n'importe quelle liste de nombres peut la produire, donc cet accord n'est pas un indice que la forme est la bonne.
 
@@ -902,9 +899,9 @@ Toutes les particules existent en 3 « copies » de plus en plus lourdes :
 
 Pourquoi pas 2 ? Ou 47 ?
 
-**Avant K₇** : « On en observe 3, on ne sait pas pourquoi. »
+**Aujourd'hui** : « On en observe 3, on ne sait pas pourquoi. » C'est toujours vrai.
 
-**K₇** : le plan de Fano a 168 symétries. 168 ÷ 56 = **3**.
+**K₇** : 21 ÷ 7 = **3** (les 21 bulles divisées par les 7 dimensions). Et, comme on l'a vu avec le plan de Fano, 168 ÷ 56 = 3 aussi.
 
 **Et dans K₇** : le nombre 3 sort d'une division de deux entiers du dictionnaire. C'est une identité arithmétique, un contrôle de cohérence ; ce n'est pas la preuve que la nature doit avoir trois familles.
 
@@ -920,7 +917,7 @@ Pourquoi pas 2 ? Ou 47 ?
 
 Prenez n'importe quel nombre positif `x`. Calculez `1 + 1/x`. Vous obtenez un nouveau nombre. Recommencez. Presque tous les points de départ convergent vers une unique valeur : **φ**. C'est le point fixe de l'auto-référence : `φ² = φ + 1`. Autrement dit, **φ est la valeur que vous obtenez quand quelque chose se définit en fonction de soi-même**. Croissance auto-similaire, empilement optimal, suite de Fibonacci, autant de variations sur cette unique équation.
 
-**Et dans K₇** : le rapport de masse muon/électron est `m_μ / m_e = 27^φ ≈ 206,77`. L'exposant est exactement φ (pas un paramètre ajusté, mais le point fixe de l'auto-référence. La base 27 est la dimension de l'algèbre de Jordan exceptionnelle (le terrain de jeu favori de E₆). Les rapports de masse dans K₇ ne sont pas des nombres arbitraires) c'est ce qu'on obtient quand la géométrie pousse à partir d'elle-même.
+**Et dans K₇** : le dictionnaire écrit le rapport de masse muon/électron comme `m_μ / m_e = 27^φ ≈ 207,01`. Le rapport mesuré vaut 206,77. L'écart paraît minuscule, mais ce rapport est mesuré si précisément que la formule échoue comme égalité exacte : le cadre ne la garde que comme un tir à côté de peu. La base 27 est la dimension de l'algèbre de Jordan exceptionnelle (le terrain de jeu favori de E₆). Mettre φ en exposant demande en plus une étape dont les autres formules n'ont pas besoin.
 
 ---
 
@@ -932,7 +929,7 @@ Prenez n'importe quel nombre positif `x`. Calculez `1 + 1/x`. Vous obtenez un no
 
 À l'échelle de Planck (~10⁻³⁵ m), la gravité et la mécanique quantique deviennent aussi fortes l'une que l'autre. C'est là que notre physique actuelle se brise.
 
-**Et dans K₇** : le « pont d'échelle » relie M_Pl à m_e via les invariants topologiques.
+**Et dans K₇** : aucune des 33 formules ne fait intervenir la masse de Planck. Le dictionnaire parle de purs rapports, pas de masses en kilogrammes.
 
 ---
 
@@ -964,7 +961,7 @@ Un horoscope dit : « Vous allez rencontrer quelqu'un d'intéressant. » Impossi
 
 K₇ dit : « La phase CP des neutrinos δ_CP = 197°, ni plus, ni moins. »
 
-L'expérience DUNE le mesurera entre 2034 et 2039.
+L'expérience DUNE devrait commencer à le mesurer après son premier faisceau, prévu pour 2031. Les résultats les plus fins sont attendus à la fin des années 2030 et dans les années 2040.
 
 - Si les mesures finissent par exclure 197° (au niveau que les physiciens appellent 3 sigma) → cette formule est morte, et le choix de lire 197 en degrés avec elle. Pas de sauvetage, pas de version retouchée.
 - Si elles incluent 197° → la formule survit. Cela montrerait que le choix s'accorde avec la nature ; cela ne prouverait pas que la forme est la bonne.
@@ -995,7 +992,7 @@ Une théorie est « naturelle » si elle n'a pas besoin de paramètres réglés 
 
 Les atomes individuels ne sont pas mouillés. La « mouillure » émerge quand des milliards d'atomes sont ensemble.
 
-**Et dans K₇** : les constantes physiques 4D « émergent » de la topologie 7D.
+**Et dans K₇** : l'espoir de départ était que les constantes qu'on mesure « émergent » de la forme 7D. Aujourd'hui, on ne connaît aucun mécanisme de ce genre : le dictionnaire apparie des nombres, il ne montre pas comment l'un produit l'autre.
 
 ---
 
@@ -1069,19 +1066,19 @@ Le satellite Planck a pris la « photo » la plus détaillée du rayonnement fos
 
 ### Dominic Joyce
 Mathématicien britannique, qui a démontré en 1996 l'existence des variétés compactes à holonomie G₂.
-**Pour K₇** : son théorème garantit que K₇ peut exister.
+**Pour K₇** : ses travaux montrent que des formes de cette famille existent. Ils ne montrent pas qu'il en existe une avec 21 et 77 trous : la question reste ouverte, et son théorème n'est pas appliqué ici.
 
 ### Yoshio Koide
 Physicien japonais, qui a découvert en 1982 la relation Q = 2/3 pour les masses des leptons.
-**Pour K₇** : K₇ explique Koide via 14/21 = dim(G₂)/b₂.
+**Pour K₇** : le dictionnaire écrit son 2/3 comme 14/21 = dim(G₂)/b₂. Cela redit la relation de Koide ; cela ne l'explique pas.
 
 ### Michael Atiyah & Isadore Singer
 Mathématiciens, théorème de l'indice (1963), médailles Fields et prix Abel.
-**Pour K₇** : leur théorème donne N_gen = 3.
+**Pour K₇** : les versions précédentes disaient que leur théorème donnait N_gen = 3. Cette affirmation est retirée : le 3 vient d'une simple division (21/7), pas de leur théorème.
 
 ### Edward Witten
 Physicien et mathématicien, M-théorie, seul physicien à avoir reçu une médaille Fields (1990).
-**Pour K₇** : la M-théorie (11D) est le cadre naturel où K₇ vit.
+**Pour K₇** : la M-théorie (11D) est le décor qui a inspiré K₇. Le cadre ne construit pas un modèle complet de M-théorie.
 
 ---
 
@@ -1109,7 +1106,7 @@ Physicien et mathématicien, M-théorie, seul physicien à avoir reçu une méda
 | sin²θ_W | La recette du cocktail |
 | Koide = 2/3 | L'accord cosmique |
 | N_gen = 3 | Pourquoi 3 mousquetaires |
-| 0 paramètre | IKEA contre meuble sur mesure |
+| Pas de molette à tourner | Lego contre pâte à modeler |
 | Falsifiabilité | Science vs horoscope |
 | Lean 4 | Le prof ultra-strict |
 | DUNE | Le chasseur de fantômes |
@@ -1120,30 +1117,30 @@ Physicien et mathématicien, M-théorie, seul physicien à avoir reçu une méda
 
 | Terme | Section |
 |---|---|
-| α (constante de structure fine) | [Partie V](#constante-de-structure-fine-α-1137) |
-| Atiyah-Singer | [Personnages clés](#michael-atiyah-isadore-singer) |
+| α (constante de structure fine) | [Partie V](#constante-de-structure-fine-α--1137) |
+| Atiyah-Singer | [Personnages clés](#michael-atiyah--isadore-singer) |
 | Bosons | [Partie III](#bosons) |
 | Bosons W et Z | [Partie III](#bosons-w-et-z) |
-| Calabi-Yau | [Partie II](#variétés-de-calabi-yau-vs-g₂) |
+| Calabi-Yau | [Partie II](#variétés-de-calabi-yau-vs-g) |
 | Caractéristique d'Euler | [Partie II](#caractéristique-deuler) |
 | Cohomologie | [Partie II](#cohomologie) |
 | Dimension | [Partie II](#dimension) |
 | Dimensions supplémentaires | [Partie II](#dimensions-supplémentaires) |
 | DUNE | [Partie VII](#dune) |
-| E₆ | [Partie I](#e₆-le-groupe-de-la-grande-unification) |
-| E₇ | [Partie I](#e₇-le-groupe-mystérieux) |
-| E₈ | [Partie I](#e₈-le-titan-des-symétries) |
+| E₆ | [Partie I](#e--le-groupe-de-la-grande-unification) |
+| E₇ | [Partie I](#e--le-groupe-mystérieux) |
+| E₈ | [Partie I](#e--le-titan-des-symétries) |
 | Électromagnétisme | [Partie IV](#électromagnétisme) |
 | Électron | [Partie III](#électron) |
 | Émergence | [Partie VI](#émergence) |
-| F₄ | [Partie I](#f₄-le-groupe-intermédiaire) |
+| F₄ | [Partie I](#f--le-groupe-intermédiaire) |
 | Falsifiabilité | [Partie VI](#falsifiabilité) |
 | Fermions | [Partie III](#fermions) |
 | Fibré | [Partie II](#fibré) |
 | Force faible | [Partie IV](#force-faible) |
 | Force forte | [Partie IV](#force-forte) |
 | Formes différentielles | [Partie II](#formes-différentielles) |
-| G₂ | [Partie I](#g₂-le-gardien-des-octonions) |
+| G₂ | [Partie I](#g--le-gardien-des-octonions) |
 | Gluons | [Partie III](#gluons) |
 | Gravitation | [Partie IV](#gravitation) |
 | Groupe | [Partie I](#quest-ce-quun-groupe-) |
@@ -1152,15 +1149,15 @@ Physicien et mathématicien, M-théorie, seul physicien à avoir reçu une méda
 | Holonomie | [Partie II](#holonomie) |
 | Invariants topologiques | [Partie II](#invariants-topologiques) |
 | Joyce | [Personnages clés](#dominic-joyce) |
-| K₇ | [Partie II](#k₇-le-diabolo-cosmique) |
-| Koide | [Partie V](#relation-de-koide-q-23) |
+| K₇ | [Partie II](#k--le-diabolo-cosmique) |
+| Koide | [Partie V](#relation-de-koide-q--23) |
 | LHC | [Partie VII](#lhc-large-hadron-collider) |
 | Masse de Planck | [Partie V](#masse-de-planck) |
 | Muon / Tau | [Partie III](#muon-et-tau) |
 | Naturalité | [Partie VI](#naturalité) |
-| N_gen | [Partie V](#nombre-de-générations-n-3) |
+| N_gen | [Partie V](#nombre-de-générations-n--3) |
 | Neutrinos | [Partie III](#neutrinos) |
-| Nombre d'or | [Partie V](#nombre-dor-φ-1618) |
+| Nombre d'or | [Partie V](#nombre-dor-φ--1618) |
 | Nombres complexes | [Partie I](#les-nombres-complexes-ℂ) |
 | Nombres de Betti | [Partie II](#nombres-de-betti) |
 | Nombres réels | [Partie I](#les-nombres-réels-ℝ) |
@@ -1171,12 +1168,12 @@ Physicien et mathématicien, M-théorie, seul physicien à avoir reçu une méda
 | Planck (satellite) | [Partie VII](#planck-le-satellite) |
 | Quaternions | [Partie I](#les-quaternions-ℍ) |
 | Quarks | [Partie III](#quarks) |
-| sin²θ_W | [Partie V](#angle-de-mélange-faible-sin²θ_w-0231) |
-| SU(2) | [Partie I](#su2-le-groupe-des-rotations-quantiques) |
-| SU(3) | [Partie I](#su3-le-groupe-de-couleur) |
+| sin²θ_W | [Partie V](#angle-de-mélange-faible-sinθ_w--0231) |
+| SU(2) | [Partie I](#su2--le-groupe-des-rotations-quantiques) |
+| SU(3) | [Partie I](#su3--le-groupe-de-couleur) |
 | Topologie | [Partie II](#topologie-vs-géométrie) |
 | Torsion | [Partie II](#torsion) |
-| U(1) | [Partie I](#u1-le-groupe-du-cercle) |
+| U(1) | [Partie I](#u1--le-groupe-du-cercle) |
 | Unification électrofaible | [Partie IV](#unification-électrofaible) |
 | Variété | [Partie II](#quest-ce-quune-variété-) |
 | Variété compacte | [Partie II](#variété-compacte) |

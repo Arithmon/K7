@@ -9,21 +9,21 @@ Comprehensive definitions of technical terms, mathematical notation, and acronym
 
 ## Framework-Specific Terms
 
-### K₇
-**The K₇ framework** (formerly Geometric Information Field Theory). The framework proposing that fundamental physics parameters emerge as topological invariants from E₈×E₈ structure compactified on G₂ holonomy manifolds.
+### K₇ framework
+**The K₇ framework** (formerly Geometric Information Field Theory). A declared correspondence (a dictionary) that assigns closed forms in the topological and Lie-theoretic invariants of a G₂-holonomy seven-manifold K₇, together with E₈×E₈ group data, to 33 dimensionless parameters of particle physics and cosmology. The relations are assignments, not derivations: no geometric map from the invariants to the observables is known.
 
 ### K₇
-A compact 7-dimensional Riemannian manifold with G₂ holonomy. The subscript 7 indicates dimension. Specific topological properties: b₂(K₇) = 21, b₃(K₇) = 77.
+A posited compact 7-dimensional Riemannian manifold with G₂ holonomy. The subscript 7 indicates dimension. Its Betti numbers b₂(K₇) = 21, b₃(K₇) = 77 are inputs. No compact G₂ manifold with these Betti numbers is known; its existence is open.
 
 ### Status Classifications
-Framework uses hierarchical classification for results:
-- **VERIFIED (Lean 4)**: Formally verified by Lean 4 kernel with Mathlib (machine-checked proofs, zero domain axioms, zero sorry)
-- **VERIFIED**: Exact topological identity with rigorous mathematical proof
-- **TOPOLOGICAL**: Direct consequence of topological structure
-- **DERIVED**: Calculated from proven relations
-- **THEORETICAL**: Has theoretical justification, proof incomplete
-- **PHENOMENOLOGICAL**: Empirically accurate, derivation in progress
-- **EXPLORATORY**: Preliminary investigation, mechanism uncertain
+Version 3.6 sorts the 33 relations into five classes against current data (they are not added into a single score):
+- **within 2σ** (23 relations)
+- **tension** (2): between 2σ and 3σ from the measured value
+- **proximity** (6): excluded as an exact equality at more than 3σ and kept only as a numerical proximity (α⁻¹, sin²θ_W, m_μ/m_e, m_μ/m_τ, m_b/m_t, m_W/m_Z)
+- **inside the PDG range** (1): m_s/m_d, whose reference is a range without an uncertainty
+- **non-Gaussian profile** (1): sin²θ₂₃, in the octant the global fit disfavours, inside its 3σ range
+
+The Lean 4 formalization verifies the arithmetic of the relations, not their physical content. The earlier labels (VERIFIED, TOPOLOGICAL, DERIVED, THEORETICAL, PHENOMENOLOGICAL, EXPLORATORY) are withdrawn.
 
 ## Lie Algebras and Groups
 
@@ -71,20 +71,20 @@ Geometric property describing how vectors change when parallel-transported aroun
 
 ### Cohomology
 Mathematical tool measuring topological features. For K₇:
-- H²(K₇) = ℝ²¹: Related to gauge bosons
-- H³(K₇) = ℝ⁷⁷: Related to chiral fermions
+- H²(K₇) = ℝ²¹: read as the capacity of the gauge sector (in M-theory on a smooth G₂ manifold, b₂ counts abelian vector multiplets; the Standard-Model gauge group does not come from them)
+- H³(K₇) = ℝ⁷⁷: read as the capacity of the matter sector (b₃ counts neutral chiral multiplets; a smooth G₂ manifold yields no chiral fermions)
 
 ### Betti Numbers
 Topological invariants counting independent homology classes.
 - b₂: Second Betti number (2-dimensional holes)
 - b₃: Third Betti number (3-dimensional holes)
-For K₇: b₂ = 21, b₃ = 77
+For K₇: b₂ = 21, b₃ = 77 (posited inputs, not derived)
 
 ### AdS₄
-**Anti-de Sitter space in 4 dimensions**. Maximally symmetric spacetime with negative cosmological constant. Used in holographic models and K₇ compactification.
+**Anti-de Sitter space in 4 dimensions**. Maximally symmetric spacetime with negative cosmological constant. Used in holographic models. Not used by the K₇ relations.
 
 ### Compact Manifold
-Topological space that is closed (contains all limit points) and bounded. K₇ is compact, allowing consistent dimensional reduction.
+Topological space that is closed (contains all limit points) and bounded. K₇ is posited to be compact.
 
 ### Ricci-Flat
 Manifold with Ricci curvature tensor equal to zero. G₂ holonomy manifolds are automatically Ricci-flat, suitable for compactification.
@@ -142,26 +142,26 @@ Process by which gauge bosons acquire mass through spontaneous symmetry breaking
 ## Specific Observables
 
 ### N_gen
-Number of fermion generations. Experimentally: 3. K₇ predicts: rank(E₈) - rank(Weyl) = 3.
+Number of fermion generations. Experimentally: 3. K₇ reproduces it through the integer identity (rank(E₈) + N)·b₂ = N·b₃, equivalently N = b₂/dim(K₇) = 21/7 = 3. This is a consistency check, not a prediction: no index theorem is known that produces it.
 
 ### δ_CP
-CP-violating phase in neutrino mixing. K₇ predicts: 197° from formula dim(K₇)×dim(G₂) + H* = 7×14 + 99 = 197°.
+CP-violating phase in neutrino mixing. The structure gives the integer dim(K₇)×dim(G₂) + H* = 7×14 + 99 = 197; reading it in degrees (the phase 2π·197/360) is a declared unit assignment. Current global fit (NuFIT 6.1): 212 (+26/−36)°.
 
 ### θ₁₂, θ₁₃, θ₂₃
 Three neutrino mixing angles in PMNS matrix.
-- θ₁₂ ≈ 33.44° (solar mixing)
-- θ₁₃ ≈ 8.61° (reactor mixing)
-- θ₂₃ (atmospheric mixing): octant unresolved. The framework predicts the upper octant, 49.25°; the current global best fit is in the lower octant
+- θ₁₂ (solar mixing): measured sin²θ₁₂ = 0.3088; K₇ relation 4/13
+- θ₁₃ (reactor mixing): measured sin²θ₁₃ = 0.02248; K₇ relation 11/496
+- θ₂₃ (atmospheric mixing): octant unresolved. The K₇ relation is sin²θ₂₃ = 6/11 = 0.545 (θ₂₃ = 47.6°), in the upper octant; the current global fit prefers the lower octant (0.470), and 6/11 lies inside its 3σ range
 
 ### Q_Koide
 Parameter in Koide formula relating charged lepton masses:
 ```
-Q = (mₑ + mμ + mτ)² / (mₑ² + mμ² + mτ²)
+Q = (mₑ + mμ + mτ) / (√mₑ + √mμ + √mτ)²
 ```
-Experimental: Q ≈ 2/3. K₇: Q = 2/3 exactly.
+Experimental: Q = 0.6666645(51). K₇ relation: Q = dim(G₂)/b₂ = 14/21 = 2/3 (+0.4σ). The relation dates from Koide (1982); it is one of four mutually incompatible lepton relations, none of which is selected.
 
 ### Ω_DE
-Dark energy density as fraction of critical density. Experimental: Ω_DE ≈ 0.689. K₇: Ω_DE = ln(2) ≈ 0.693.
+Dark energy density as fraction of critical density. Experimental (Planck 2018): Ω_DE = 0.6847(73). K₇ relation: Ω_DE = ln 2 · (b₂ + b₃)/H* = ln 2 · 98/99 = 0.686146 (+0.2σ).
 
 ### H₀
 **Hubble constant**. Current expansion rate of universe. Local measurements: ~73 km/s/Mpc. CMB measurements: ~67 km/s/Mpc. "Hubble tension" refers to discrepancy.
@@ -180,27 +180,10 @@ Appears in E₈ via McKay correspondence.
 
 ### ζ(3)
 **Riemann zeta function at 3**. ζ(3) = 1 + 1/8 + 1/27 + ... ≈ 1.202.
-Appears in δ_CP formula.
+Not used by the 33 relations. The zeta values that appear are ζ(11) and ζ(5), in n_s = ζ(11)/ζ(5).
 
 ### ln(2)
-Natural logarithm of 2 ≈ 0.693. Related to dark energy density and information theory (bits vs nats).
-
-## Information Theory
-
-### Binary Architecture
-Structure based on powers of 2. E₈×E₈ dimension 496 ≈ 2⁴⁸ + 48, suggestive of binary encoding.
-
-### Quantum Error Correction
-Method of protecting quantum information from errors. E₈ lattice forms [248, 12, 56](248,-12,-56.html) code.
-
-### [n, k, d](n,-k,-d.html) Code
-Notation for quantum error correction code:
-- n: Number of physical qubits
-- k: Number of logical qubits encoded
-- d: Distance (number of errors correctable)
-
-### Compression Ratio
-Ratio of input to output dimensions. E₈×E₈: 496 → 99 gives ratio ≈ 5:1.
+Natural logarithm of 2 ≈ 0.693. Enters the Ω_DE relation as one of the operations of the formula grammar.
 
 ## Physics Experiments
 
@@ -268,26 +251,20 @@ Of the same order of magnitude, or equivalent to.
 ### α (alpha)
 Fine structure constant, α ≈ 1/137.
 
-### β₀ (beta)
-Base coupling parameter, β₀ = 1/(4π²).
 
 ### γ (gamma)
-Heat kernel coefficient or Euler-Mascheroni constant.
+Euler-Mascheroni constant.
 
 ### δ (delta)
 CP violation phase (δ_CP) or small deviation.
 
-### ε₀ (epsilon)
-Symmetry breaking parameter, ε₀ = 1/8.
 
 ### ζ (zeta)
-Riemann zeta function, ζ(3) appears in δ_CP.
+Riemann zeta function; ζ(11)/ζ(5) appears in n_s.
 
 ### θ (theta)
 Mixing angles (θ₁₂, θ₁₃, θ₂₃, θ_W).
 
-### ξ (xi)
-Correlation parameter, ξ = 5β₀/2.
 
 ### Ω (Omega)
 Density parameters (Ω_DE for dark energy).
@@ -297,8 +274,8 @@ Golden ratio or angle.
 
 ## Acronyms
 
-### K₇
-Geometric Information Field Theory
+### GIFT
+Geometric Information Field Theory, the former name of the K₇ framework (versions 1.0 to 3.4)
 
 ### SM
 Standard Model (of particle physics)
@@ -352,29 +329,17 @@ Mega-electron-volt, 10⁶ eV.
 - Electron mass: ~0.511 MeV
 - Quark masses: few MeV to few GeV
 
-## Status Indicators in Documentation
+## Formal Verification
 
-### [VERIFIED]
-Mathematical claim with rigorous proof provided.
-
-### [TOPOLOGICAL]
-Direct consequence of manifold topology.
-
-### [EXACT]
-Zero deviation by mathematical construction.
-
-### [HIGH-PRECISION]
-Experimental agreement <1% deviation.
-
-### [PRELIMINARY]
-Calculation or result pending refinement.
+### Lean 4
+Theorem prover used to verify the arithmetic of the K₇ relations. The [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) repository (156 Lean files, 14 axioms: 4 imported from the literature and 10 interval certificates; 0 sorry) collects the 33 relations in `relations_v36_certified` and also covers E₈ root system, G₂ cross product properties, spectral theory, TCS bounds, Yukawa mass ratios, and the K3 Newton-Kantorovich certificate. It verifies arithmetic, not physics.
 
 ## Cross-References
 
 For more detailed explanations:
 - **Mathematical foundations**: See [S1: Foundations](Paper-S1-Foundations.html)
 - **Particle physics background**: See [Main Paper](Paper-Main-Framework.html) Section 1
-- **Experimental values**: See [S2: Derivations](Paper-S2-Derivations.html)
+- **Experimental values**: See [Observable Reference](Observable-Reference.html)
 - **Common questions**: See [FAQ](FAQ.html)
 
 ## Contributing
@@ -384,15 +349,6 @@ This glossary is continuously updated. To suggest additions or corrections:
 2. Tag as "documentation"
 3. Specify term and proposed definition
 
-### Torsional Dynamics (v2.1)
-Framework introduced in v2.1 connecting non-zero torsion on K₇ to RG flow. Key parameters: |T_norm| = 0.0164, |T_costar| = 0.0141.
-
-### Scale Bridge (v2.1)
-Mathematical infrastructure linking dimensionless to dimensional observables: Λ_GIFT = 21×e⁸×248/(7×π⁴) ≈ 1.63×10⁶.
-
-### Lean 4
-Theorem prover used to verify the arithmetic of the K₇ relations. The [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) repository (156 Lean files, 14 axioms: 4 imported from the literature and 10 interval certificates; 0 sorry) collects the 33 relations in `relations_v36_certified` and also covers E₈ root system, G₂ cross product properties, spectral theory, TCS bounds, Yukawa mass ratios, and the K3 Newton-Kantorovich certificate. Key theorem: `K₇_framework_certified`.
-
 ---
 
-Last updated: v3.4.27 (2026-06-03)
+Last updated: v3.6
