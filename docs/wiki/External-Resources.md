@@ -19,8 +19,8 @@ layout: default
 | Paper | DOI |
 |-------|-----|
 | Framework (data + scripts) | [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071) |
-| Explicit G₂ Metric | [10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350) |
-| Spectral Geometry | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
+| Explicit G₂ Metric | [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) |
+| Spectral Geometry | [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) |
 
 ## Outreach
 
@@ -32,7 +32,7 @@ layout: default
 
 | Source | Description |
 |--------|-------------|
-| [PDG 2024](https://pdg.lbl.gov/) | Particle Data Group, masses, couplings, CKM |
+| [PDG](https://pdg.lbl.gov/) (2026 edition used by v3.6) | Particle Data Group, masses, couplings, CKM |
 | [NuFIT 6.1](http://www.nu-fit.org/) | Neutrino oscillation parameters |
 | [Planck PR4](https://www.cosmos.esa.int/web/planck) | Cosmological parameters (Tristram+ 2024) |
 | [CODATA 2022](https://physics.nist.gov/cuu/Constants/) | Fundamental physical constants |
@@ -42,3 +42,4 @@ layout: default
 | | |
 |---|---|
 | ResearchGate | [Brieuc de La Fournière](https://www.researchgate.net/profile/Brieuc-De-La-Fourniere) |
+| PhilPeople | [Brieuc de La Fournière](https://philpeople.org/profiles/brieuc-de-la-fourniere) |

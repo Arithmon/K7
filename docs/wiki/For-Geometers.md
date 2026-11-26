@@ -3,153 +3,62 @@ title: "For Geometers"
 layout: default
 ---
 
-# gift_core: Computational Tools for G₂ Geometry
+# For Geometers
 
-## Abstract
+What is known, and what is not, about the geometry the K₇ framework posits. This page follows §2.3
+and §9 of the [main paper](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) and §8 of [supplement S1](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S1_foundations.md), version 3.6. It replaces an earlier
+page that described a twisted-connected-sum construction of K₇; that construction is withdrawn.
 
-`gift_core` provides a validated computational pipeline for constructing and analyzing G₂ holonomy metrics on twisted connected sum (TCS) manifolds. The package implements numerical methods for approximating G₂ structures, computing topological invariants, and certifying existence via Joyce's perturbation theorem. Originally developed for a physics application (the K₇ framework), the geometric tools are general and may be of independent interest to researchers studying exceptional holonomy.
+## What the framework posits
 
-## 1. The Computational Challenge
+A compact, simply connected seven-manifold K₇ with holonomy G₂ and Betti numbers (b₂, b₃) = (21, 77).
+The 33 relations of the paper use only these integers and Lie-theoretic data, never a metric.
 
-G₂ holonomy metrics are notoriously difficult to compute explicitly. Joyce's foundational work established existence theorems for compact G₂ manifolds via resolution of orbifolds and perturbation methods, but these proofs are non-constructive. The twisted connected sum (TCS) construction of Kovalev and Corti-Haskins-Nordström-Pacini provides a more explicit path: glue two asymptotically cylindrical Calabi-Yau 3-folds along a common S¹ × K3 boundary. Yet even TCS methods yield existence rather than explicit metric coefficients.
+**No compact G₂ manifold with these Betti numbers is known.** Whether one exists is open.
 
-The challenge is threefold. First, the G₂ structure equations are a coupled system of nonlinear PDEs. Second, verifying torsion-freeness (dφ = 0, d*φ = 0) requires computing exterior derivatives of a 3-form defined over a 7-dimensional space. Third, extracting physical quantities such as Betti numbers, harmonic forms, and curvature tensors demands robust numerical methods with quantified error bounds.
+## What is excluded
 
-`gift_core` addresses these challenges through a combination of physics-informed neural networks (PINNs), spectral methods for harmonic form extraction, and formal verification bridges to proof assistants.
+- **Catalogued examples.** The pair (21, 77) does not appear among Joyce's orbifold constructions or
+  among the twisted connected sums of Corti, Haskins, Nordström and Pacini.
+- **Ordinary twisted connected sums, all of them.** For every ordinary twisted connected sum
+  b₂ + b₃ is odd (Nordström, *Extra-twisted connected sum G₂-manifolds*, Introduction, property (i));
+  here b₂ + b₃ = 98. Within this family only the extra-twisted connected sums, which carry no
+  parity constraint, remain open.
+- **The building-block decomposition 11 + 10.** The table that stood on this page (two blocks with
+  b₂ = 11 and b₂ = 10 glued into (21, 77)) is withdrawn: such sublattices of the K3 lattice do not
+  support a twisted-connected-sum realisation (S1 §8.3).
+- **A Joyce–Karigiannis ℤ₂³ orbifold route.** It does not realise (21, 77): the group action forces
+  b₂ ≥ 5 and b₃ ≤ 16 on the quotient for every compatible torus action (S1 §8.4).
 
-## 2. The Pipeline
+## What is established, locally
 
-### 2.1 TCS Construction
+- **A certified local metric** (companion paper A, [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069)).
+  An explicit approximate G₂ metric on a gluing region, with 169 Chebyshev–Cholesky parameters, carries
+  a Newton–Kantorovich certificate (h = 8.95 × 10⁻⁹) for a nearby torsion-free metric within a ball
+  δg/g ≤ 4.86 × 10⁻⁶. The certificate is local: it does not construct a compact K₇, and the
+  smallness constant of Joyce's perturbation theorem depends on geometric bounds that are not
+  established here (S1).
+- **Its numerical spectrum** (companion paper B, [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367)).
+  It gives no independent evidence for (21, 77): the multiplicities it reports are built from
+  decompositions that S1 withdraws.
+- **A closed-form neck ansatz** (companion paper D, [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065)):
+  a positive G₂ three-form on a neck region with K3 coassociative fibres, with its own certificate.
+- **A conditional analytic scheme** (companion paper E, [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956))
+  for a fibration K₇ → S³ with 77 branch components. It is computed at a datum that is not realisable
+  as posed, so no existence argument for the compact K₇ currently holds.
+- **The K3 fibre.** No certified bound on a Ricci-flat metric of the K3 fibre is available. An explicit
+  K3 surface has a publicly certified holomorphic atlas, with no metric claim
+  ([10.5281/zenodo.22047469](https://doi.org/10.5281/zenodo.22047469)).
 
-The package implements the twisted connected sum framework for G₂ manifolds. Starting from two asymptotically cylindrical (ACyl) Calabi-Yau 3-folds Y₁ and Y₂, each with cylindrical end diffeomorphic to (0, ∞) × S¹ × K3, the construction proceeds:
+## What an existence proof would need
 
-1. Truncate each ACyl manifold at neck length T, obtaining M₁ᵀ and M₂ᵀ
-2. Identify the S¹ × K3 boundaries via a hyper-Kähler rotation
-3. Smooth the gluing region to obtain a compact 7-manifold K₇ = M₁ᵀ ∪_φ M₂ᵀ
+Main §9.1 lists it: a realisable datum, and then the global analytic steps that are open problems.
+Until then the framework's geometric input is a posited topology, recorded as item R1 of its residue
+register.
 
-For the specific construction in K₇, the building blocks yield Betti numbers computed via Mayer-Vietoris:
+## Code
 
-| Block | Origin | b₂ | b₃ |
-|-------|--------|----|----|
-| M₁ | Quintic in P⁴ | 11 | 40 |
-| M₂ | CI(2,2,2) in P⁶ | 10 | 37 |
-| K₇ | TCS gluing | 21 | 77 |
-
-### 2.2 PINN Metric Approximation
-
-Explicit G₂ metrics are approximated using physics-informed neural networks. The network parameterizes a G₂ 3-form φ on a coordinate patch:
-
-```
-Input: x ∈ R⁷
-    ↓
-Fourier Features: 64 frequencies → 128 dimensions
-    ↓
-Hidden Layers: 4 × 256 neurons (SiLU activation)
-    ↓
-Output: 35 independent components of φ ∈ Λ³(R⁷)
-```
-
-Training minimizes a composite loss:
-
-L = w_T ||dφ||² + w_T ||d*φ||² + w_det |det(g) - target|² + w_pos ReLU(-λ_min(g))
-
-The torsion terms drive toward the torsion-free condition. The determinant constraint fixes the volume form to a specified target (65/32 in the K₇ application). The positivity term ensures the induced metric g(φ) remains positive definite.
-
-Training runs in 5-10 minutes on consumer hardware and achieves:
-- det(g) = 2.0312490 ± 0.0001 (target: 65/32 = 2.03125, deviation: 0.00005%)
-- ||T|| = 0.00286 (well below Joyce's threshold)
-- λ_min(g) = 1.078 (positive definite)
-
-### 2.3 Topological Extraction
-
-Given the trained metric, the pipeline extracts topological invariants:
-
-**Betti numbers via spectral analysis**: The Hodge Laplacian Δ_k = dd* + d*d is discretized on a mesh. Eigenvalue clustering identifies harmonic forms as zero-modes (up to numerical tolerance). For k=2, spectral analysis recovers b₂ = 21 exactly. For k=3, the spectral gap appears at position 76-77, indicating b₃ = 77 (with one mode at the numerical boundary).
-
-**Harmonic form basis**: Eigenvectors corresponding to near-zero eigenvalues provide a numerical basis for H^k(K₇). These forms are used downstream for computing integrals, Yukawa couplings, and other geometric quantities.
-
-**Curvature tensors**: Christoffel symbols, Riemann curvature, Ricci tensor, and scalar curvature are computed via automatic differentiation of the neural network.
-
-## 3. Formal Verification Bridge
-
-A distinctive feature of `gift_core` is its connection to formal proof assistants.
-Older numerical/TCS certificates feed into Lean 4 status checks, but they should
-not be read as the current compact `K_7` Level E theorem.
-
-**Current scope**: the current rank-one `D0` branch tracks compact torsion-free
-existence in `docs/analytic_status.md`. The anisotropic Joyce theorem `(J)` is
-still an open analytic input.
-
-Legacy numerical checks may certify small-torsion diagnostics or local/TCS-neck
-models, but they do not by themselves prove a compact torsion-free metric on the
-current `K_7` datum.
-
-**What remains numerical or conditional**: explicit metric coefficients in the
-legacy PINN pipeline are numerical, not closed form. The current compact theorem
-also requires the anisotropic perturbation theorem and compact datum/topology
-wrappers.
-
-## 4. Usage
-
-### Installation
-
-```bash
-pip install gift-core
-```
-
-Requirements: Python 3.10+, PyTorch 2.0+, NumPy, SciPy.
-
-### Key Modules
-
-```python
-import gift_core as gc
-
-# Run the full pipeline
-config = gc.PipelineConfig(neck_length=15.0, use_pinn=True)
-result = gc.run_pipeline(config)
-
-# Access results
-print(f"det(g) = {result.det_g}")           # 2.03125
-print(f"Torsion = {result.torsion_norm}")   # 0.00286
-print(f"b₂ = {result.b2}, b₃ = {result.b3}") # 21, 77
-
-# Export Lean certificate
-lean_proof = result.certificate.to_lean()
-```
-
-### Module Structure
-
-| Module | Content |
-|--------|---------|
-| `gift_core.geometry` | K3, ACyl CY3, TCS construction |
-| `gift_core.g2` | G₂ 3-form, holonomy, torsion computation |
-| `gift_core.harmonic` | Hodge Laplacian, spectral analysis |
-| `gift_core.nn` | PINN architecture and training |
-| `gift_core.verification` | Lean 4 certificate generation |
-
-## 5. Limitations and Open Problems
-
-**Specificity**: The current implementation is tuned for the K₇ construction with b₂ = 21, b₃ = 77. Generalizing to other TCS building blocks (different Fano 3-folds, different gluing diffeomorphisms) requires adapting the topological constraints.
-
-**Standard TCS bounds**: Note that typical TCS constructions yield b₂ ≤ 9. The K₇ manifold with b₂ = 21 either employs non-standard building blocks or should be understood via the variational characterization rather than explicit TCS gluing.
-
-**Explicit metric**: The PINN provides a numerical approximation, not a closed-form metric. For applications requiring analytic expressions, further work is needed.
-
-**Moduli space**: The uniqueness of the G₂ metric within its moduli class is not addressed. Multiple metrics with the same topological invariants may exist.
-
-**Open invitation**: Extending `gift_core` to other G₂ manifolds (Joyce orbifold resolutions, other TCS examples, or the newer constructions of Foscolo-Haskins-Nordström) would be valuable contributions to the field.
-
-## References
-
-- Joyce, D.D. (2000). *Compact Manifolds with Special Holonomy*. Oxford University Press.
-- Kovalev, A. (2003). "Twisted connected sums and special Riemannian holonomy." *J. Reine Angew. Math.* 565, 125-160.
-- Corti, A., Haskins, M., Nordström, J., Pacini, T. (2015). "G₂-manifolds and associative submanifolds via semi-Fano 3-folds." *Duke Math. J.* 164(10), 1971-2092.
-- Raissi, M., Perdikaris, P., Karniadakis, G.E. (2019). "Physics-informed neural networks." *J. Comp. Phys.* 378, 686-707.
-
-**Code repository**: [github.com/Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean)
-
-**Related documentation**: [S1: Foundations](Paper-S1-Foundations.html)
-
----
-
-*`gift_core` is part of the K₇ Framework v3.4. For the physics application, see the [main paper](Paper-Main-Framework.html).*
+The project's Python package is in [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean)
+(`contrib/python`); the numerical artefacts of the certificates are in the Zenodo deposits of the
+companion papers. Statements made by earlier versions of this page about Joyce's threshold,
+about Betti numbers read from spectra, and about typical bounds on b₂ are withdrawn.

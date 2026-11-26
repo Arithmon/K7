@@ -5,108 +5,78 @@ layout: default
 
 # Lean Formalization
 
-## Overview
+The arithmetic of the K₇ framework is formalized in Lean 4 with Mathlib, in the repository
+[Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean). This page says what the formalization
+establishes and what it does not. It follows §8 of the [main paper](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_main.md) and section S3.7 of
+[supplement S3](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S3_observables.md), version 3.6.
 
-The K₇ framework is formally verified in **Lean 4** with Mathlib. The formalization establishes that all claimed algebraic relations between topological inputs and physical predictions follow by pure computation.
+## What is formalized
 
-| Metric | Value |
-|--------|-------|
-| **Lean files** | 146 |
-| **Build jobs** | 8394 |
-| **Axioms** | 14 (4 main-chain + 10 K3 interval-arithmetic) |
-| **sorry statements** | 0 |
-| **Warnings** | 0 |
-| **Certificate conjuncts** | 213 (10 master certificates; the three pillars Foundations/Predictions/Spectral contribute 39+56+45 = 140) |
+| Item | Value |
+|---|---|
+| Lean 4 files | 156 |
+| Axioms beyond the Mathlib foundations | 14 (4 literature imports, 10 interval certificates) |
+| `sorry` | none |
+| The 33 relations | collected in `relations_v36_certified` (commit `34ce857`), which depends only on the standard axioms `propext`, `Classical.choice`, `Quot.sound` |
 
-## Repository
+The formalization certifies algebraic identities among the declared integers (for example
+b₂ · 13 = 3 · (b₃ + dim G₂) for sin²θ_W = 3/13), the G₂ three-form and dim 𝔤₂ = 14, the E₈ root
+system, and the arithmetic of several numerical certificates.
 
-**Code**: [github.com/Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean)
-**Blueprint**: [arithmon.github.io/K7-Lean](https://arithmon.github.io/K7-Lean/)
-**Lean version**: 4.29.0
-**Mathlib version**: 4.29.0
+## The form of the 33 statements
 
-## Architecture
+Each relation has a statement that ties its closed form, written in the structural constants, to its
+value. The forms differ, and S3.7 gives the declaration and the line for each:
 
-```
-K7-Lean/Lean/K₇/
-├── Core.lean              # Constants (dim_E8, b2, b3, H*, ...)
-├── Certificate.lean       # Master theorem (127 conjuncts)
-├── Foundations/            # E8 roots, G2 cross product
-├── Geometry/               # Differential geometry
-├── Spectral/               # Spectral theory, mass gap, Yukawa
-├── Relations/              # Physical predictions
-│   ├── GaugeSector.lean
-│   ├── NeutrinoSector.lean
-│   ├── LeptonSector.lean
-│   ├── YukawaDuality.lean
-│   └── ...
-├── ExplicitG2Metric.lean   # 400 lines
-├── NewtonKantorovich.lean   # 401 lines, 0 axioms
-├── K3Harmonic.lean          # 447 lines
-├── K7Orthonormality.lean    # 0 axioms, 13 theorems
-├── TCSGaugeBreaking.lean    # 0 axioms, 14 theorems
-├── GaugeBundleData.lean     # 0 axioms, 12 theorems
-├── AssociativeVolumes.lean  # 0 axioms, 19 theorems
-├── CompactificationCorrection.lean  # δ_CP = 12214/69
-└── ComputedWeylLaw.lean     # 0 axioms, 8 theorems
-```
+- an exact equality for 27 relations, between rationals for 25 of them and between natural numbers
+  for m_τ/m_e and m_s/m_d;
+- a closed form in ℝ, with no numerical bound, for α_s, λ_H, Ω_DE and n_s;
+- the base 27 and the bounds 206 < 27^φ < 209 for m_μ/m_e, an interval wider than the deviation it is
+  compared with;
+- the integer 197 for δ_CP, whose reading in degrees is an assignment of the dictionary.
 
-## Key Certificates
+## The fourteen axioms
 
-### Master Certificate (127 conjuncts)
+`relations_v36_certified` uses none of them. They are used elsewhere in the library.
 
-The `K₇_framework_certified` theorem verifies all relations in one compile:
+| Axiom | File | Kind |
+|---|---|---|
+| `spectral_upper_bound` | `GIFT/Spectral/TCSBounds.lean` | literature import |
+| `neck_dominates` | `GIFT/Spectral/TCSBounds.lean` | literature import |
+| `cheeger_inequality` | `GIFT/Spectral/CheegerInequality.lean` | literature import |
+| `literature_package` | `GIFT/Spectral/LiteratureAxioms.lean` | literature import |
+| `det_g_at_half` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `K3_eigenvalue_0` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `K3_eigenvalue_1` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `K3_eigenvalue_2` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `K3_eigenvalue_3` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `det_g_at_half_bracketed` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `K3_eigenvalue_0_bracketed` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `K3_eigenvalue_1_bracketed` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `K3_eigenvalue_2_bracketed` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
+| `K3_eigenvalue_3_bracketed` | `GIFT/Foundations/IntervalCertificates.lean` | interval certificate |
 
-- **Foundations** (34): E₈ dimensions, G₂ structure, K₇ topology, Weyl group
-- **Predictions** (56): Gauge, lepton, quark, neutrino, CKM, boson, cosmological
-- **Spectral** (37): Mass gap, Yukawa ratios, Weyl law, orthonormality
+The four literature imports state results taken from published work; the ten interval certificates
+import numerical enclosures computed outside Lean.
 
-### Zero-Axiom Modules
+## What the formalization does not establish
 
-Several modules prove their results with **zero domain-specific axioms**:
+- **Not the physics.** A machine-checked formula is a formula whose arithmetic is right. Which formula
+  is assigned to which observable is a choice of the author, recorded in the paper's dictionary.
+- **Not the consistency of the relations taken together.** Formulas that are each computed correctly
+  disagree with one another, as exact equalities, in the three overdetermined sectors (main §4.2).
+- **Not the existence of K₇.** No compact G₂ manifold with Betti numbers (21, 77) is known (main §9).
 
-| Module | Axioms | Theorems | Certificate |
-|--------|--------|----------|-------------|
-| NewtonKantorovich | 0 |, | NK convergence |
-| TCSGaugeBreaking | 0 | 14 | 10 conjuncts |
-| GaugeBundleData | 0 | 12 | 11 conjuncts |
-| AssociativeVolumes | 0 | 19 | 14 conjuncts |
-| CompactificationCorrection | 0 | 12 | 6 conjuncts |
-| ComputedWeylLaw | 0 | 8 | 7 conjuncts |
-| K7Orthonormality | 0 | 13 | Gram matrices |
-
-## Axiom Audit
-
-All 7 axioms are substantive (standard mathematical theorems or K₇ conjectures). Zero are placeholders. Categories:
-
-- **Topological inputs**: b₂ = 21, b₃ = 77, dim(G₂) = 14, etc.
-- **E₈ properties**: Root system, Weyl group factorization
-- **Joyce/anistropic existence input**: compact torsion-free `G_2` existence on
-  `K_7` is an analytic assumption/target, tracked in `docs/analytic_status.md`
-- **Spectral bounds**: Numerical results from certified computation
-
-## Verification
-
-To verify all proofs locally:
+## Checking it yourself
 
 ```bash
 git clone https://github.com/Arithmon/K7-Lean
-cd K7-Lean/Lean
+cd K7-Lean
 lake build
 ```
 
-Completes in ~30 seconds (warm cache). CI rebuilds on every commit.
+The statement to inspect is `GIFT.Certificate.RelationsV36.relations_v36_certified`;
+`#print axioms` on it lists the axioms it depends on.
 
-## What is Proven vs Not Proven
-
-**Proven**: Given topological inputs (b₂, b₃, dim(G₂), etc.), all 127 algebraic relations follow by pure computation. Zero domain-specific axioms for the arithmetic.
-
-**Not proven**: (1) Existence of K₇ with these specific Betti numbers is axiomatized, not constructed from scratch. (2) Physical interpretation of the relations. (3) Uniqueness of the construction.
-
----
-
-## Related
-
-- [For Formalization Experts](For-Formalization-Experts.html): Methodology and context
-- [Paper Main Framework](Paper-Main-Framework.html): Physics predictions these proofs certify
-- [Paper S2 Derivations](Paper-S2-Derivations.html): The derivations being formalized
+Counts and statements of earlier versions of this page (numbers of relations, "zero domain-specific
+axioms", earlier certificate names) described earlier states of the library and are withdrawn.

@@ -1,0 +1,742 @@
+# Supplement S1: Mathematical Foundations
+
+## E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and K₇ Construction
+
+*Mathematical background for the K₇ framework: the E₈ and G₂ data the dictionary uses, the topological status of K₇, and the algebraic reference form.*
+
+**Lean**: the arithmetic statements of this supplement are formalized in Arithmon/K7-Lean (the library rests on fourteen axioms beyond Mathlib's foundations, four literature imports and ten interval certificates, and uses no `sorry`; the 33 relations themselves depend only on the standard axioms; main §8, S3.7). Formalization establishes the arithmetic. Lean names are given as they appear in the repository at commit `34ce857` (S3.7).
+
+---
+
+## Abstract
+
+This supplement presents the mathematical architecture underlying the K₇ framework. Part I gives the E₈ data the dictionary uses, with arithmetic rewritings of these data in the structural constants and their status. Part II introduces G₂ holonomy manifolds, including the characterization of the g₂ subalgebra as the kernel of the Lie derivative map. Part III discusses the topology of K₇: the pair (b₂, b₃) = (21, 77) has no known construction. It does not appear among the catalogued compact G₂ manifolds, and a Joyce–Karigiannis ℤ₂³ route does not realise it, because the quotient cohomology it needs is incompatible with the group action (§8.4). Part IV describes the algebraic reference form, whose scale is fixed by the imposed normalization det(g) = 65/32 (item R2 of the residue register, main §3.3, which lists what the framework sets rather than derives), and the status of Joyce's perturbation theorem for this setting: its smallness constant depends on geometric bounds that are not established here, and the existence of a compact torsion-free metric is open (main §9). The arithmetic statements are verified in Lean 4. Section 13 lists what changed since version 3.5.
+
+---
+
+# Part 0: The Octonionic Foundation
+
+## 0. Why This Framework Exists
+
+The K₇ framework is motivated by a single algebraic fact:
+
+**The octonions 𝕆 are the largest normed division algebra.**
+
+The chain of motivations, and where the framework's choices enter, is:
+
+```
+𝕆 (octonions, dim 8)
+    │
+    ▼
+Im(𝕆) = ℝ⁷ (imaginary octonions)
+    │
+    ▼
+G₂ = Aut(𝕆) (automorphism group, dim 14)
+    │
+    ▼
+K₇ with G₂ holonomy (posited; a local metric is certified in [A]; global existence open)
+    │
+    ▼
+Topological invariants (b₂, b₃) = (21, 77)   ← input (register item R1)
+    │
+    ▼
+33 relations assigned to observables   ← dictionary (main §3)
+```
+
+**Status**: the relations are assignments, written in the constants that the steps above supply, and no geometric map from the invariants to the observables is known (main §3.2). The dataset (95 entries, of which the 33 relations are counted; they are its Type I) is described in S3, and the arithmetic of each relation in S2.
+
+### 0.1 The Division Algebra Chain
+
+| Algebra | Dim | Physics Role | Stops? |
+|---------|-----|--------------|--------|
+| ℝ | 1 | Classical mechanics | No |
+| ℂ | 2 | Quantum mechanics | No |
+| ℍ | 4 | Spin, Lorentz group | No |
+| **𝕆** | **8** | **Exceptional structures** | **Yes** |
+
+The pattern terminates at 𝕆. There is no 16-dimensional normed division algebra. The octonions are *the end of the line*.
+
+### 0.2 G₂ as Octonionic Automorphisms
+
+**Definition**: G₂ = {g ∈ GL(𝕆) : g(xy) = g(x)g(y) for all x,y ∈ 𝕆}
+
+| Property | Value | Role |
+|----------|-------|-----------|
+| dim(G₂) | 14 = C(7,2) − C(7,1) = 21 − 7 | Q_Koide numerator |
+| Action | Transitive on S⁶ ⊂ Im(𝕆) | Connects all directions |
+| Embedding | G₂ ⊂ SO(7) | Preserves φ₀ |
+
+### 0.3 Why dim(K₇) = 7
+
+The dimension 7 is a consequence of the octonionic structure:
+- Im(𝕆) has dimension 7
+- G₂ acts naturally on ℝ⁷
+- G₂ occurs as a holonomy group only in dimension 7 (Berger, §6.3)
+
+The choice made by the framework is G₂ holonomy; dimension 7 then follows.
+
+### 0.4 The Fano Plane: Combinatorial Structure of Im(𝕆)
+
+The 7 imaginary octonion units form the **Fano plane** PG(2,2), the smallest projective plane:
+- 7 points (imaginary units e₁...e₇)
+- 7 lines (multiplication triples eᵢ × eⱼ = ±eₖ)
+- 3 points per line
+
+**Combinatorial counts**:
+- Point-line incidences: 7 × 3 = 21 = C(7,2) = b₂
+- Automorphism group: PSL(2,7) with |PSL(2,7)| = 168
+
+**Arithmetic identity**:
+$$(b_3 + \dim(G_2)) + b_3 = 91 + 77 = 168 = |{\rm PSL}(2,7)| = {\rm rank}(E_8) \times b_2$$
+
+It is an identity among the chosen integers of the kind recorded in S2.7; no geometric structure is attached to it.
+
+---
+
+# Part I: E₈ Exceptional Lie Algebra
+
+## 1. Root System and Dynkin Diagram
+
+### 1.1 Basic Data
+
+| Property | Value | Role |
+|----------|-------|-----------|
+| Dimension | dim(E₈) = 248 | Gauge DOF |
+| Rank | rank(E₈) = 8 | Cartan subalgebra |
+| Number of roots | \|Φ(E₈)\| = 240 | E₈ kissing number |
+| Root length | √2 | α_s numerator |
+| Coxeter number | h = 30 | Icosahedron edges |
+| Dual Coxeter number | h∨ = 30 | McKay correspondence |
+
+### 1.2 Root System Construction
+
+E₈ root system in ℝ⁸ has 240 roots:
+
+**Type I (112 roots)**: Permutations and sign changes of (±1, ±1, 0, 0, 0, 0, 0, 0)
+
+**Type II (128 roots)**: Half-integer coordinates with even minus signs:
+$$\frac{1}{2}(\pm 1, \pm 1, \pm 1, \pm 1, \pm 1, \pm 1, \pm 1, \pm 1)$$
+
+**Verification**: 112 + 128 = 240 roots, all length √2.
+
+**Lean**: the root-system statements are proved:
+- `D8_roots_card` = 112, `HalfInt_roots_card` = 128
+- `E8_roots_card` = 240, `E8_roots_decomposition`
+- `E8_inner_integral`, `E8_norm_sq_even`, `E8_sub_closed`
+- `E8_basis_generates`: Every lattice vector is integer combination of simple roots (theorem)
+
+### 1.3 Cartan Matrix
+
+$$A_{E_8} = \begin{pmatrix}
+2 & 0 & -1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 2 & 0 & -1 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 2 & -1 & 0 & 0 & 0 & 0 \\
+0 & -1 & -1 & 2 & -1 & 0 & 0 & 0 \\
+0 & 0 & 0 & -1 & 2 & -1 & 0 & 0 \\
+0 & 0 & 0 & 0 & -1 & 2 & -1 & 0 \\
+0 & 0 & 0 & 0 & 0 & -1 & 2 & -1 \\
+0 & 0 & 0 & 0 & 0 & 0 & -1 & 2
+\end{pmatrix}$$
+
+**Properties**: det(A) = 1 (unimodular), positive definite.
+
+---
+
+## 2. Weyl Group
+
+### 2.1 Order and Factorization
+
+$$|W(E_8)| = 696,729,600 = 2^{14} \times 3^5 \times 5^2 \times 7$$
+
+### 2.2 Factorization in the Structural Constants
+
+The Weyl group order can be written in the framework's structural constants:
+
+$$|W(E_8)| = p_2^{\dim(G_2)} \times N_{gen}^{Weyl} \times Weyl^{p_2} \times \dim(K_7)$$
+
+| Factor | Exponent | Value | Origin |
+|--------|----------|-------|-------------|
+| 2¹⁴ | dim(G₂) = 14 | 16384 | p₂^(holonomy dim) |
+| 3⁵ | Weyl = 5 | 243 | N_gen^(Weyl factor) |
+| 5² | p₂ = 2 | 25 | Weyl^(binary) |
+| 7¹ | 1 | 7 | dim(K₇) |
+
+This is an arithmetic rewriting of the prime factorization 2¹⁴ · 3⁵ · 5² · 7, with each prime and exponent matched to a constant; it is the source of the constant Weyl = 5. Lean: `E8_weyl_order_factored`, `E8_weyl_factored` (the prime factorization).
+
+---
+
+### 2.3 Three Expressions for Weyl = 5
+
+$$\frac{\dim(G_2) + 1}{N_{gen}} = \frac{b_2}{N_{gen}} - p_2 = \dim(G_2) - \text{rank}(E_8) - 1 = 5$$
+
+| Expression | Computation | Result |
+|------------|-------------|--------|
+| (dim(G₂) + 1)/N_gen | (14 + 1)/3 | 5 |
+| b₂/N_gen − p₂ | 21/3 − 2 | 5 |
+| dim(G₂) − rank(E₈) − 1 | 14 − 8 − 1 | 5 |
+
+Three expressions in small integers that evaluate to the same small integer are an arithmetic fact about the chosen integers; they fix no further quantity (S2.1). Weyl enters det(g) = 65/32 (R2) and the factorization of §2.2.
+
+---
+
+## 3. Exceptional Chain
+
+### 3.1 The Pattern
+
+A pattern connects exceptional algebra dimensions to primes:
+
+| Algebra | n | dim(E_n) | Prime | Index |
+|---------|---|----------|-------|-------|
+| E₆ | 6 | 78 | 13 | prime(6) |
+| E₇ | 7 | 133 | 19 | prime(8) = prime(rank(E₈)) |
+| E₈ | 8 | 248 | 31 | prime(11) = prime(D_bulk) |
+
+### 3.2 Three Factorizations
+
+For n ∈ {6, 7, 8}:
+$$\dim(E_n) = n \times prime(g(n))$$
+
+where g(6) = 6, g(7) = rank(E₈) = 8, g(8) = D_bulk = 11 (= dim(M₄) + dim(K₇) = 4 + 7, the total bulk dimension of M-theory).
+
+**Check** (Lean):
+- E₆: 6 × 13 = 78 ✓
+- E₇: 7 × 19 = 133 ✓
+- E₈: 8 × 31 = 248 ✓
+
+The index function g is chosen case by case (6, rank E₈, D_bulk), so the statement describes three factorizations and is not a structural theorem. Lean: `all_exceptional_chain_relations_certified`.
+
+---
+
+## 4. E₈×E₈ Product Structure
+
+### 4.1 Direct Sum
+
+| Property | Value |
+|----------|-------|
+| Dimension | 496 = 248 × 2 |
+| Rank | 16 = 8 × 2 |
+| Roots | 480 = 240 × 2 |
+
+### 4.2 τ Numerator Connection
+
+The hierarchy parameter numerator:
+$$\tau_{num} = 3472 = 7 \times 496 = \dim(K_7) \times \dim(E_8 \times E_8)$$
+
+Lean: `tau_num_factorization`. τ is used only by the dimensionful entries of the dataset (Type II, S3).
+
+### 4.3 The Binary Ratio p₂ = 2
+
+p₂ is defined as dim(G₂)/dim(K₇) = 14/7 = 2 and is called the binary ratio. It is not a Pontryagin class [ERR, §6]. The number 2 also occurs as 496/248 and in the √2 of the E₈ root length; these are different occurrences of the number 2, not derivations of one constant.
+
+---
+
+## 5. Exceptional Algebras from Octonions
+
+The foundational role of octonions is established in Part 0. This section details the exceptional algebraic structures that emerge from 𝕆.
+
+### 5.1 Exceptional Jordan Algebra J₃(𝕆)
+
+| Property | Value |
+|----------|-------|
+| dim(J₃(𝕆)) | 27 = 3³ |
+| dim(J₃(𝕆)₀) | 26 (traceless) |
+
+**E-series expression**: 27 can be written in E-series dimensions:
+
+$$\dim(J_3(\mathbb{O})) = \frac{\dim(E_8) - \dim(E_6) - \dim(SU_3)}{6} = \frac{248 - 78 - 8}{6} = \frac{162}{6} = 27$$
+
+This is an arithmetic expression for 27 in E-series dimensions; dim J₃(𝕆) = 27 is a Lie datum in its own right (main §3.1).
+
+Lean: `j3o_e_series_certificate`.
+
+### 5.2 F₄ Connection
+
+F₄ is the automorphism group of J₃(𝕆):
+$$\dim(F_4) = 52 = p_2^2 \times \alpha_{sum} = 4 \times 13$$
+
+### 5.3 Exceptional Differences
+
+| Difference | Value | Framework expression |
+|------------|-------|------|
+| dim(E₈) − dim(J₃(𝕆)) | 221 = 13 × 17 | α_sum × (dim G₂ + N_gen) |
+| dim(F₄) − dim(J₃(𝕆)) | 25 = 5² | Weyl² |
+| dim(E₆) − dim(F₄) | 26 | dim(J₃(𝕆)₀) |
+
+These are arithmetic rewritings (S2.7); they are not formalized as a group.
+
+### 5.4 Structural Derivation of τ
+
+The hierarchy parameter τ is defined as a ratio of framework constants:
+
+$$\tau = \frac{\dim(E_8 \times E_8) \times b_2}{\dim(J_3(\mathbb{O})) \times H^*} = \frac{496 \times 21}{27 \times 99} = \frac{10416}{2673} = \frac{3472}{891}$$
+
+**Prime factorization**:
+- Numerator: 3472 = 2⁴ × 7 × 31 = dim(K₇) × dim(E₈×E₈)
+- Denominator: 891 = 3⁴ × 11 = N_gen⁴ × D_bulk
+
+**Alternative form**: τ_num = 7 × 496 = dim(K₇) × dim(E₈×E₈) = 3472
+
+τ is a chosen ratio of the constants. It is used only by Type II entries (S3), which are not counted.
+
+Lean: `tau_structural_certificate`.
+
+---
+
+# Part II: G₂ Holonomy Manifolds
+
+## 6. Definition and Properties
+
+### 6.1 G₂ as Exceptional Holonomy
+
+| Property | Value | Role |
+|----------|-------|-----------|
+| dim(G₂) | 14 | Q_Koide numerator |
+| rank(G₂) | 2 | Lie rank |
+| Definition | Aut(𝕆) | Octonion automorphisms |
+
+**Lean**: the G₂ cross-product statements are proved:
+- `epsilon_antisymm`, `epsilon_diag`, `cross_apply` ✓
+- `G2_cross_bilinear`, `G2_cross_antisymm`, `cross_self` ✓
+- `G2_cross_norm` (Lagrange identity ‖u×v‖² = ‖u‖²‖v‖² − ⟨u,v⟩²) ✓
+- `reflect_preserves_lattice` (Weyl reflection) ✓
+- `cross_is_octonion_structure` (case check over the 343 index triples) ✓
+- `G2_equiv_characterizations` ✓ (by `rfl`: the two predicates are defined to coincide, so this is not a theorem about two characterizations)
+
+### 6.2 G₂ as Kernel of the Lie Derivative
+
+The G₂ subalgebra of so(7) admits a precise characterization as the stabilizer of the associative 3-form φ₀. For any antisymmetric matrix A in so(7), the Lie derivative of φ₀ is:
+
+$$L_A(\varphi_0)_{ijk} = A_{ia}\varphi_{ajk} + A_{ja}\varphi_{iak} + A_{ka}\varphi_{ija}$$
+
+The g₂ subalgebra consists of all A for which L_A(φ₀) = 0:
+
+$$\mathfrak{g}_2 = \ker(L) = \{A \in \mathfrak{so}(7) : L_A(\varphi_0) = 0\}$$
+
+This yields the decomposition so(7) = g₂ + V₇, where dim(g₂) = 14 and dim(V₇) = 7. The complement V₇ carries the standard 7-dimensional representation of G₂.
+
+In practice, the kernel is computed via singular value decomposition (SVD) of the linear map L: so(7) --> Λ³(ℝ⁷). The 14 singular vectors with singular value zero span g₂; the 7 singular vectors with nonzero singular value span V₇.
+
+**Note**: A heuristic construction based on Fano-plane indices does not produce correct g₂ generators (each such generator is approximately 67% in g₂ and 33% in V₇). The kernel-based construction is the correct definition and must be used in all numerical computations involving g₂/V₇ decomposition.
+
+### 6.3 Holonomy Classification (Berger)
+
+| Dimension | Holonomy | Geometry |
+|-----------|----------|----------|
+| **7** | **G₂** | **Exceptional** |
+| 8 | Spin(7) | Exceptional |
+
+### 6.4 Torsion: Definition and Framework Interpretation
+
+**Mathematical definition**: Torsion measures failure of G₂ structure to be parallel:
+$$T = \nabla\phi \neq 0$$
+
+For a G₂ structure φ, the intrinsic torsion decomposes into four irreducible G₂-modules:
+
+$$T \in W_1 \oplus W_7 \oplus W_{14} \oplus W_{27}$$
+
+| Class | Dimension | Characterization |
+|-------|-----------|------------------|
+| W₁ | 1 | Scalar: dφ = τ₀ ⋆φ |
+| W₇ | 7 | Vector: dφ = 3τ₁ ∧ φ |
+| W₁₄ | 14 | Co-closed part of d⋆φ |
+| W₂₇ | 27 | Traceless symmetric |
+
+**Total dimension**: 1 + 7 + 14 + 27 = 49 = 7² = dim(K₇)²
+
+The torsion-free condition requires all four classes to vanish simultaneously, a highly constrained state with 49 conditions.
+
+**Torsion-free condition**:
+$$\nabla\phi = 0 \Leftrightarrow d\phi = 0 \text{ and } d*\phi = 0$$
+
+**What the framework uses.** None of the 33 relations uses a torsion value. The integer κ_T⁻¹ = 61 = b₃ − dim(G₂) − p₂ enters three relations (α⁻¹, Y_p, Ω_m/Ω_Λ). No computation connects 61 to torsion: it is an integer combination without a physical name (register item R3).
+
+---
+
+## 7. Topological Invariants
+
+### 7.1 Combinations Used by the Dictionary
+
+| Constant | Formula | Value | Status |
+|----------|---------|-------|--------|
+| det(g) | p₂ + 1/(b₂ + dim(G₂) − N_gen) | 65/32 | imposed normalization (R2) |
+| κ_T | 1/(b₃ − dim(G₂) − p₂) | 1/61 | integer combination (R3) |
+| sin²θ_W | b₂/(b₃ + dim(G₂)) | 3/13 | the sin²θ_W relation (S2.2) |
+
+det(g) and κ_T⁻¹ each have a second expression in the constants that agrees with the one above on the line b₂ = 21 and differs elsewhere (R2, R3; S2.1).
+
+### 7.2 The 61 Decomposition
+
+$$\kappa_T^{-1} = 61 = \dim(F_4) + N_{gen}^2 = 52 + 9$$
+
+Alternative:
+$$61 = p_2 \times \text{Weyl} \times (\text{Weyl} + 1) + 1 = 2 \times 5 \times 6 + 1$$
+
+Further expressions for 61 are arithmetic facts of the kind recorded in S2.7; they do not give 61 a physical meaning (R3). Lean: `kappa_T_from_F4_generations`.
+
+### 7.3 Continued Fraction Structure
+
+The ratio dim(G₂)/H* has the continued fraction
+
+$$\frac{14}{99} = [0; 7, 14] = \cfrac{1}{7 + \cfrac{1}{14}}$$
+
+whose partial quotients are 7 = dim(K₇) and 14 = dim(G₂). This is a property of the ratio 14/99: an arithmetic fact, with no physical consequence.
+
+### 7.4 Pell Equation Structure
+
+H* and dim(G₂) satisfy a Pell equation:
+
+$$\boxed{H^{*2} - 50 \times \dim(G_2)^2 = 1}$$
+
+Explicitly:
+$$99^2 - 50 \times 14^2 = 9801 - 9800 = 1$$
+
+where $50 = \dim(K_7)^2 + 1 = 49 + 1$.
+
+**Fundamental solution**: $(99, 14)$ is the fundamental solution of $x^2 - 50y^2 = 1$. It is the square of $\varepsilon = 7 + \sqrt{50}$, which solves $x^2 - 50y^2 = -1$:
+
+$$\varepsilon^2 = (7 + \sqrt{50})^2 = 99 + 14\sqrt{50}$$
+
+**Continued fraction**: $\sqrt{50} = [7; \overline{14}]$, with period 1, which is why the same two integers appear in §7.3.
+
+**Status**: arithmetic identity, verified in Lean, with no physical consequence.
+
+---
+
+# Part III: K₇ Manifold Construction
+
+## 8. Twisted Connected Sum Framework
+
+### 8.1 TCS Construction
+
+The twisted connected sum (TCS) construction provides the primary method for constructing compact G₂ manifolds from asymptotically cylindrical building blocks.
+
+Compact G₂ manifolds can be built by gluing two asymptotically cylindrical (ACyl) G₂ manifolds along their cylindrical ends, with the topology controlled by a twist diffeomorphism φ.
+
+### 8.2 Asymptotically Cylindrical G₂ Manifolds
+
+**Definition**: A complete Riemannian 7-manifold (M, g) with G₂ holonomy is asymptotically cylindrical (ACyl) if there exists a compact subset K ⊂ M such that M \ K is diffeomorphic to (T₀, ∞) × N for some compact 6-manifold N.
+
+### 8.3 Topological Status of (21, 77)
+
+K₇ is posited with (b₂, b₃) = (21, 77) (R1). **No construction of a compact G₂ manifold with these Betti numbers is currently known.** The Newton–Kantorovich certificate of [A] concerns a metric on the neck region; it does not certify the Betti numbers, and no global torsion-free G₂ structure has been constructed (main §9).
+
+**Catalogued constructions.** The pair does not appear among the catalogued compact G₂ manifolds (Joyce's orbifold constructions; the twisted connected sums of Corti–Haskins–Nordström–Pacini). Every ordinary twisted connected sum is excluded by parity: b₂(M) + b₃(M) is odd for all of them (Nordström, main ref. [14], Introduction, property (i), after Kovalev; for orthogonal gluing the sum is b₃(Z₊) + b₃(Z₋) + 2 rk K₊ + 2 rk K₋ + 23, CHNP Lemma 6.7), and here b₂ + b₃ = 98 is even. In a twisted connected sum, b₂(M) = rk K₊ + rk K₋ + rk(N₊ ∩ N₋), where K± are the kernels of the restriction maps H²(Z±) → H²(K3) and N± their images (CHNP); b₂ is therefore not bounded by the Picard rank of the K3 fibre, and b₂ = 21 > 20 does not by itself force a semi-Fano building block. The formula for b₂ alone therefore does not exclude b₂ = 21; the parity does. Within this family only the extra-twisted connected sums of main ref. [14], which carry no parity constraint, remain open.
+
+**No lattice decomposition 11 + 10.** Sublattices N₁, N₂ of the K3 lattice U³ ⊕ E₈(−1)², of ranks 11 and 10, with N₁ ⊕ N₂ ⊕ ⟨2⟩ of full rank, do not support a TCS realisation. N₁ ⊕ N₂ ⊕ ⟨2⟩ cannot be an orthogonal decomposition of the unimodular K3 lattice (⟨2⟩ is not unimodular), only a sublattice of finite index; and two building-block lattices N₁ ⊥ N₂ describe an orthogonal gluing, one of the ordinary twisted connected sums excluded by parity above. No embedding conditions are verified and no matching data is constructed. The split 11 + 10 is therefore not available.
+
+A Joyce–Karigiannis route does not realise (21, 77) either (§8.4).
+
+**Global properties assumed, not established**:
+- Compact 7-manifold (no boundary)
+- Simply connected: π₁(K₇) = {1}, b₁ = 0
+- If a torsion-free G₂ structure g\* exists on K₇, then Hol(g\*) = G₂ [20, Prop. 11.2.3] and Ric(g\*) = 0. Its existence is open (main §9; [ERR, §7.5]).
+- (Euler characteristic χ(K₇) = 0 is automatic for a closed odd-dimensional manifold; §9.1.)
+
+**Arithmetic.** b₂ = 21 = C(7,2) and b₃ = 77 = C(7,3) + 2b₂ = 35 + 42 are arithmetic facts about the posited integers; they define no geometric decomposition (§9.3).
+
+### 8.4 The Joyce–Karigiannis ℤ₂³ Route Does Not Realise (21, 77)
+
+The Joyce–Karigiannis framework [43] resolves orbifolds (T³ × K3)/G, with G ⊂ Aut(T³) × Aut(K3) acting with A₁-type singularities, by gluing families of Eguchi–Hanson spaces, and yields compact torsion-free G₂ manifolds. For a resolution of this type the Betti numbers are
+
+$$b_2(N) = b_2\big((T^3 \times K3)/G\big) + b_0(\text{fixed loci}), \qquad b_3(N) = b_3\big((T^3 \times K3)/G\big) + b_1(\text{fixed loci}).$$
+
+**The route.** Take G = ℤ₂³ with a mixed-parity action, on a K3 whose lattice action exists abstractly by Mukai [44], Garbagnati–Sarti [45] and Nikulin [51], with a fixed-locus table contributing (b₀, b₁) = (21, 55). The route reaches b₂ = 0 + 21 = 21 and b₃ = 22 + 55 = 77 only if the quotient cohomology is (b₂, b₃) = (0, 22), on a K3 of Picard rank 1.
+
+**Why it fails.** The quotient cohomology is incompatible with the action (audit of 2026-09-16 in the repository Arithmon/K7, `docs/openwave-candidate/K7_P2_JK_postfreeze_cohomology_audit_2026_09_16.md`, with the checker `check_k3_jk_quotient_cohomology.py`):
+
+- G acts diagonally on T³ × K3, so the rational cohomology of the quotient is the G-invariant part of the cohomology of T³ × K3. The trace of G on H²(K3) gives character multiplicities (5, 5, 2, 2, 2, 2, 2, 2), so dim H²(K3; ℚ)^G = 5.
+- With W = H¹(T³; ℚ) a sum of three characters and H¹(K3) = H³(K3) = 0, the Künneth formula gives b₂((T³ × K3)/G) = 5 + #{i < j : χ_i = χ_j} ≥ 5 and b₃((T³ × K3)/G) ≤ 16. The checker enumerates all 8³ = 512 ordered torus-character triples and confirms both bounds; the product action compatible with the G₂ form gives (b₁, b₂, b₃) = (1, 6, 16).
+- The pair (0, 22) is therefore impossible for this action. Keeping the fixed-locus contributions (21, 55) and the same resolution formula would give b₂ ≥ 26 and b₃ ≤ 71, not (21, 77).
+- The involution profile also requires a K3 of Picard rank at least 17 (`check_k3_jk_character_gate.py`; `K7_P2_neutrino_JK_character_obstruction.md`), not Picard rank 1.
+
+**Scope.** This closes the route as stated. It does not show that every Joyce–Karigiannis construction, or every construction of a compact G₂ manifold with Betti numbers (21, 77), is impossible. Repairing the route would require a fully specified product action, its quotient Betti numbers computed directly, and an independent audit of the singular components and of the resolution formula.
+
+**The neck.** The Newton–Kantorovich-certified neck metric of [A] and the closed-form neck ansatz of [D] operate at the neck level of a putative compact extension and do not depend on which global construction, if any, completes it. They are evidence about a neck, not about the existence of K₇.
+
+**Intermediate-curvature splitting (Chen–Hong 2026).** Chen and Hong [48] prove that, for certain (n, m), a noncompact manifold with nonnegative m-intermediate curvature admitting a smooth proper map of nonzero degree to M^{n−m} × T^{m−1} × ℝ splits isometrically; outside that range they construct non-split examples on S^{n−m} × T^{m−1} × ℝ. For the neck topology K3 × T² × ℝ (n = 7, m = 3) the splitting theorem does not apply. Nothing follows about the neck: being outside the range of a rigidity theorem does not show that non-split metrics with this curvature condition exist on K3 × T² × ℝ (the examples are on S⁴ × T² × ℝ). In particular it does not follow that the Chebyshev corrections of the neck metric [A] are free of a forced splitting.
+
+---
+
+## 9. Cohomological Structure (Conditional on Existence)
+
+### 9.1 Betti Spectrum, Poincaré Duality and Euler Characteristic
+
+If a compact, simply connected K₇ with holonomy G₂ and (b₂, b₃) = (21, 77) exists, Poincaré duality fixes its full Betti spectrum:
+
+| k | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|---|
+| b_k(K₇) | 1 | 0 | 21 | 77 | 77 | 21 | 0 | 1 |
+
+with b₁ = 0 from simple connectivity, b₂ and b₃ posited (R1), and b₄ to b₇ by duality. The Euler characteristic of any compact oriented odd-dimensional manifold vanishes: χ(K₇) = 0. Lean: `euler_char_K7_is_zero`, `poincare_duality_K7`. The combination H* = b₂ + b₃ + 1 = 99 is used by the dictionary.
+
+A Mayer–Vietoris computation of (b₂, b₃) would require a decomposition of K₇, for example the two halves of a twisted connected sum; none is available (§8.3).
+
+### 9.2 Numerical Consistency
+
+The spectral analysis of the approximate neck metric ([B]) reports 21 near-zero eigenvalues of the Laplacian on 2-forms and 77 on 3-forms, separated from the rest of the spectrum. These multiplicities are not independent evidence for the posited Betti numbers: [B] constructs the 2-forms from the split 11 + 10, which is not available (§8.3), and the 3-forms from the split 35 + 21 + 21, whose block of 35 is not a subspace of the cohomology (§9.3). Nor are they a certificate, since the metric is approximate and is not a metric on a compact K₇.
+
+### 9.3 The Integer 42
+
+The number 42 appears in several relations as a combination of framework constants:
+
+| Expression | Value |
+|-----------|-------|
+| p₂ × N_gen × dim(K₇) | 2 × 3 × 7 = 42 |
+| 2 × b₂ | 2 × 21 = 42 |
+| b₃ − C(7,3) | 77 − 35 = 42 |
+
+It is not the Euler characteristic (χ(K₇) = 0). Lean: `magic_42_gift_form`; at commit `34ce857` 42 is `two_b2 := 2 * b2`, and the earlier name `chi_K7` is kept only as a deprecated alias (S3.7).
+
+**No "local ⊕ global" splitting of H³.** The identity 35 + 42 = 77 does not give a splitting H³(K₇) = H³_local ⊕ H³_global with the 35 identified with Λ³(ℝ⁷). The 35 is the rank of the bundle Λ³T*K₇, a pointwise dimension; it does not provide a 35-dimensional subspace of the global cohomology H³(K₇). The identity is arithmetic.
+
+---
+
+# Part IV: Metric Structure and Verification
+
+## 10. Structural Metric Invariants
+
+### 10.1 Structural Metric Invariants and Normalizations
+
+Two quantities that the dictionary uses are written as properties of a metric. Neither is computed from a metric: κ_T⁻¹ is an integer combination and det(g) is a normalization imposed on the metric.
+
+| Invariant | Formula | Value | Status |
+|-----------|---------|-------|--------|
+| κ_T | 1/(b₃ - dim(G₂) - p₂) | 1/61 | integer combination (R3) |
+| det(g) | p₂ + 1/(b₂ + dim(G₂) − N_gen) | 65/32 | imposed normalization (R2; §10.3) |
+
+### 10.2 The Combination κ_T = 1/61
+
+**Arithmetic**:
+$$\kappa_T = \frac{1}{b_3 - \dim(G_2) - p_2} = \frac{1}{77 - 14 - 2} = \frac{1}{61}$$
+
+Nothing in the framework identifies b₃ with fermion modes or dim(G₂) with gauge constraints in this subtraction.
+
+**Status**: integer combination (R3)
+
+### 10.3 Metric Determinant det(g) = 65/32
+
+The value 65/32 can be written in several ways in the framework constants; three are:
+
+**Expression 1**:
+$$\det(g) = \frac{\text{Weyl} \times (\text{rank}(E_8) + \text{Weyl})}{2^{\text{Weyl}}} = \frac{5 \times 13}{32} = \frac{65}{32}$$
+
+**Expression 2** (the one used, main App. B):
+$$\det(g) = p_2 + \frac{1}{b_2 + \dim(G_2) - N_{\text{gen}}} = 2 + \frac{1}{21+14-3} = 2 + \frac{1}{32} = \frac{65}{32}$$
+
+**Expression 3**:
+$$\det(g) = \frac{H^* - b_2 - 13}{32} = \frac{99 - 21 - 13}{32} = \frac{65}{32}$$
+
+Expressions 1 and 2 agree on the line b₂ = 21 and differ elsewhere (R2); expression 3 uses only b₃. The order of events is this: the metric optimization was constrained to det(g) = 65/32 (a normalization target chosen to be compatible with the metric components g_ss = 19/6 and g_T² = 7/6 of [A]), and the formulas above were identified afterwards. Any rational number with a small numerator and denominator can be written as combinations of a few integers.
+
+**Numerical value**: 65/32 = 2.03125 (exact rational)
+
+**Status**: imposed normalization (R2), exact by construction. Six of the 33 relations use det_num or det_den and depend on this choice (main §4.4).
+
+---
+
+## 11. Reference Form and Formalization
+
+### 11.1 The Algebraic Reference Form
+
+**Scaling law.** A positive 3-form φ determines its metric g_φ through
+$$(\iota_x\varphi)\wedge(\iota_y\varphi)\wedge\varphi = 6\, g_\varphi(x,y)\,\mathrm{vol}_{g_\varphi}.$$
+Under φ ↦ cφ (c > 0) the left side scales by c³, and if g ↦ λg the volume form scales by λ^{7/2}; hence c³ = λ^{9/2}, that is
+$$g_{c\varphi} = c^{2/3}\, g_\varphi, \qquad \det g_{c\varphi} = c^{14/3}\,\det g_\varphi .$$
+
+**The reference form.** Fix a coframe (e¹, …, e⁷) and let φ₀ be the standard form in it (§12.1); in that coframe the matrix of g_{φ₀} is I₇. To impose det g = D = 65/32 in this fixed coframe,
+$$\boxed{\varphi_{\text{ref}} = D^{3/14}\,\varphi_0, \qquad g_{\text{ref}} = D^{1/7}\, g_{\varphi_0}, \qquad \det g_{\text{ref}} = D.}$$
+
+**Check.** The exponent is 3/14, not 1/14: by the scaling law, D^{1/14} φ₀ would induce det g = D^{1/3} ≈ 1.26645, not 65/32.
+
+**Which metric the coframe is orthonormal for.** The coframe is orthonormal for g_{φ₀}. For g_ref it is not: the matrix of g_ref in it is D^{1/7} I₇. In a coframe orthonormal for g_ref itself, the matrix of g_ref is I₇ and the form reads φ₀ again; the normalization det g = 65/32 is a statement relative to the fixed coframe, not an invariant of the G₂ structure. "I₇" reflects this frame choice, not global flatness. The Newton–Kantorovich-certified model of [A] is a conditional statement about a neck region; it does not construct a compact K₇ (main §9).
+
+| Property | Value | Status |
+|----------|-------|--------|
+| det(g) | 65/32 | exact by imposed normalization (§10.3) |
+| φ_ref components | 7 of 35 non-zero | standard form (§12.2) |
+| Joyce smallness hypothesis | depends on geometric bounds not established here | not verified (§11.2) |
+
+### 11.2 Joyce Existence Theorem and Global Solutions
+
+**Clarification**: The reference form φ_ref = D^{3/14} φ₀ is the standard form written in the fixed coframe of §11.1 (orthonormal for g_{φ₀}, not for g_ref), not a globally constant form on K₇. On a compact G₂ manifold, the coframe 1-forms {eⁱ} satisfy deⁱ ≠ 0 in general, so "constant components" does not imply dφ = 0 globally.
+
+**Actual solution structure**: The topology and geometry of K₇ impose a deformation:
+$$\varphi = \varphi_{\text{ref}} + \delta\varphi$$
+
+The torsion-free condition (dφ = 0, d*φ = 0) is a **global constraint**. Joyce's perturbation theorem gives a nearby torsion-free G₂ metric when the torsion of a closed G₂ structure is small compared with a constant that depends on the injectivity radius and curvature bounds of that structure ([20], Thm. 11.6.1). There is no universal threshold: the constant has not been computed for this structure, so a small numerical torsion value is not an existence argument (main §9). Nor does the number κ_T = 1/61 bear on Joyce's smallness hypothesis [ERR, §7.6].
+
+### 11.3 Lean 4 Formalization
+
+**Scope of verification**: The Lean formalization (Arithmon/K7-Lean; fourteen axioms, no `sorry`) verifies:
+1. Arithmetic identities and algebraic relations between the framework's constants, including the 33 relations (`relations_v36_certified`, standard axioms only; S3.7)
+2. Numerical enclosures (the ten interval certificates)
+3. G₂ linear algebra on ℝ⁷: exterior algebra, Hodge star, ψ = ⋆φ (`Geometry` module)
+4. Spectral modules (arithmetic of a first-eigenvalue formula), which no relation uses
+
+**The axioms** (see main §8): four axioms import literature results (`cheeger_inequality`, `literature_package`, `spectral_upper_bound`, `neck_dominates`), and ten interval certificates import numerical enclosures (`det_g_at_half`, `K3_eigenvalue_0…3` and their `_bracketed` forms). They carry content that cannot be checked by `decide` alone because it involves real arithmetic [ERR, §7.1].
+
+Outside its scope: the existence of K₇ as a smooth G₂ manifold, and any physical interpretation of the invariants.
+
+```lean
+-- GIFT.Foundations.AnalyticalMetric
+
+def phi0_indices : List (Fin 7 × Fin 7 × Fin 7) :=
+  [(0,1,2), (0,3,4), (0,5,6), (1,3,5), (1,4,6), (2,3,6), (2,4,5)]
+
+def phi0_signs : List Int := [1, 1, 1, 1, -1, -1, -1]
+
+def scale_factor_power_14 : Rat := 65 / 32
+
+theorem torsion_satisfies_joyce :
+  torsion_norm_constant_form < joyce_threshold_num := by native_decide
+
+theorem det_g_equals_target :
+  scale_factor_power_14 = det_g_target := rfl
+```
+
+Both statements are true as written and say less than their names. `torsion_satisfies_joyce` compares two integers, one of them a fixed threshold (288) that is not Joyce's constant, which has not been computed for this structure (§11.2); it is not an existence argument. `det_g_equals_target` is a definitional equality of the rational 65/32 with the target (§12.5).
+
+### 11.4 The Chain of Choices
+
+The logical structure from algebra to the reference metric, and where the framework's choices enter:
+
+```
+Octonions (𝕆)
+     │
+     ▼
+G₂ = Aut(𝕆), dim = 14
+     │
+     ▼
+Standard form φ₀ (Harvey-Lawson 1982)
+     │
+     ▼
+φ_ref = D^{3/14} φ₀, D = 65/32  ← imposed normalization (R2)
+     │
+     ▼
+Metric g_ref = D^{1/7} g_{φ₀}    (law g_{cφ} = c^{2/3} g_φ)
+     │
+     ▼
+det(g) = 65/32               ← imposed (§10.3)
+     │
+     ▼
+sin²θ_W = 3/13, Q = 2/3, ...  ← assigned (main §3); the metric enters none of them
+```
+
+---
+
+## 12. Analytical G₂ Metric Details
+
+### 12.1 The Standard Form φ₀
+
+The associative 3-form preserved by G₂ ⊂ SO(7), introduced by Harvey and Lawson (1982) in their foundational work on calibrated geometries:
+
+$$\varphi_0 = \sum_{(i,j,k) \in \mathcal{I}} \sigma_{ijk} \, e^{ijk}$$
+
+where:
+- 𝓘 = {(0,1,2), (0,3,4), (0,5,6), (1,3,5), (1,4,6), (2,3,6), (2,4,5)}
+- σ = (+1, +1, +1, +1, -1, -1, -1)
+
+### 12.2 Linear Index Representation
+
+In the C(7,3) = 35 basis:
+
+| Index | Triple | Sign | Index | Triple | Sign |
+|-------|--------|------|-------|--------|------|
+| 0 | (0,1,2) | +1 | 23 | (1,4,6) | -1 |
+| 9 | (0,3,4) | +1 | 27 | (2,3,6) | -1 |
+| 14 | (0,5,6) | +1 | 28 | (2,4,5) | -1 |
+| 20 | (1,3,5) | +1 | -- | -- | -- |
+
+All other 28 components are exactly 0.
+
+### 12.3 Metric Derivation
+
+The metric of a positive 3-form is defined intrinsically by the identity of §11.1. Equivalently, with
+$$B_\varphi(x,y) = \tfrac{1}{6}\,(\iota_x\varphi)\wedge(\iota_y\varphi)\wedge\varphi \in \Lambda^7,$$
+written in the fixed coframe as B_{ij} e^{1…7}, one has g_φ = (det B)^{-1/9} B. For the standard φ₀, B = I₇ and g = I₇, det g = 1; for cφ₀, B = c³ I₇ and g = c^{2/3} I₇, recovering the scaling law.
+
+The contraction g_ij = (1/6) Σ_{k,l} φ_ikl φ_jkl raises indices with a background Euclidean metric, so it is not a general reconstruction of g_φ: it agrees with g_φ only when φ is already standard for that background metric, and for cφ₀ it gives c² I₇ instead of c^{2/3} I₇. Setting c^{14/3} = 65/32, i.e. c = (65/32)^{3/14}, yields the framework's reference metric.
+
+### 12.4 Comparison: Fano Plane vs G₂ Form
+
+| Structure | 7 Triples | Role |
+|-----------|-----------|------|
+| **Fano lines** | (0,1,3), (1,2,4), (2,3,5), (3,4,6), (4,5,0), (5,6,1), (6,0,2) | G₂ cross-product ε_{ijk} |
+| **G₂ form** | (0,1,2), (0,3,4), (0,5,6), (1,3,5), (1,4,6), (2,3,6), (2,4,5) | Associative 3-form |
+
+Both have 7 terms because both are Fano-plane patterns: the associative calibration is φ(x, y, z) = ⟨x × y, z⟩ on Im(𝕆), and the two tables differ by a relabelling of the seven points.
+
+### 12.5 Verification Summary
+
+| Method | Result | Reference |
+|--------|--------|-----------|
+| Algebraic | φ_ref = (65/32)^{3/14} φ₀, g_ref = (65/32)^{1/7} g_{φ₀} | §11.1 |
+| Lean 4 | `det_g_equals_target : rfl` (a definitional equality of the rational 65/32 with the target; it does not check the scaling law) | AnalyticalMetric.lean |
+| Joyce theorem | applies under a smallness hypothesis whose constant is not computed here | [20]; main §9 |
+
+None of these methods establishes a torsion-free metric on a compact K₇ (main §9).
+
+---
+
+## 13. Changes since Version 3.5
+
+The sections above state the present position. This section lists, once, what versions up to 3.5 of this supplement said that version 3.6 no longer says. The corrections of record are in the erratum [ERR].
+
+| Earlier statement | Present position | Section |
+|-------------------|------------------|---------|
+| the "Weyl Triple Identity", evidence that Weyl = 5 is "structurally constrained"; a "cosmological ratio √Weyl" (from the relation Ω_m = Ω_DE/√5) | an arithmetic fact; the relation is not among the 33 (S2.6) | §2.3 |
+| the "Exceptional Chain Theorem" | three factorizations with an index chosen case by case | §3.2 |
+| a "triple geometric origin" of p₂; p₂ as a Pontryagin class | occurrences of the number 2; the binary ratio dim(G₂)/dim(K₇) [ERR, §6] | §4.3 |
+| τ established as "a geometric constant rather than a free parameter" | a chosen ratio | §5.4 |
+| κ_T = 1/61 as a "topological capacity for torsion"; 61 as "effective matter degrees of freedom"; physical interactions "emerge from the geometry of K₇"; κ_T = 1/61 places K₇ within Joyce's perturbative regime | an integer combination without a physical name [ERR, §7.6] | §6.4, §10.2, §11.2 |
+| the near-identity dim(G₂)/√2 ≈ π² (0.30%) "resolved" by the closed form for λ₁; a Lean module `Spectral.SelbergBridge` connecting the spectral gap to a Dirichlet polynomial through the Selberg trace formula; the Pell identity combined with a "selection principle" κ = π²/14 (Lean module `Spectral.SelectionPrinciple`) into a link with the spectral gap | none of these bears on the framework; the section on spectral geometry is removed | §7.4 |
+| a building-block scan showing that b₂ = 21 > 20 = max ρ(K3) forces a semi-Fano building block | b₂ is not bounded by the Picard rank of the fibre | §8.3 |
+| sublattices of ranks 11 and 10 "consistent with a TCS construction" | the split 11 + 10 is not available | §8.3 |
+| a Joyce–Karigiannis ℤ₂³ orbifold [43] realises (21, 77), by a four-phase computer-assisted audit (a symplectic V4 screen on a complete-intersection K3, an anti-symplectic obstruction for P⁵-linear maps, the abstract lattice action, a fixed-locus table) and a quotient cohomology (0, 22) on a K3 of Picard rank 1; the Lean module `JoyceKarigiannisConstruction.lean` (K7-Lean commit `6acbf49`, since removed; theorem `jk_z23_construction_realizes_gift_betti`) as evidence | the route does not realise the pair; the module verified the arithmetic of the Betti formula on an erroneous input | §8.4 |
+| by Chen–Hong [48], the corrections of the neck metric are "not obstructed by a forced splitting" | nothing follows about the neck | §8.4 |
+| H³(K₇) = H³_local ⊕ H³_global with dimensions 35 + 42 | no such splitting | §9.3 |
+| φ_ref = c φ₀ with c = D^{1/14} and g_ref = c² I₇, from the law g_{cφ} = c² g_φ and the contraction formula for the metric | φ_ref = D^{3/14} φ₀, from the law g_{cφ} = c^{2/3} g_φ; the metric D^{1/7} I₇ is unchanged | §11.1, §12.3 |
+| a neural-network torsion value compared with a fixed threshold ε₀ = 0.1, a "224× safety margin" | no universal threshold; Joyce's constant is not computed | §11.2 |
+| a section of numerical experiments with neural networks: torsion values, a `g2_score` described as a measure of holonomy, and det(g) = 65/32 "passing 8/8 independent consistency tests" | the section is removed: the scores were training diagnostics, not a measure of holonomy, and det(g) is an imposed normalization (R2) | §10.3 |
+| four "external data-package" axioms | fourteen axioms: four literature imports and ten interval certificates [ERR, §7.1] | §11.3 |
+
+---
+
+## References
+
+*Cited by number, with the shared numbering of the main paper:*
+
+[43] Joyce, D., Karigiannis, S. "A new construction of compact torsion-free G₂-manifolds by gluing families of Eguchi-Hanson spaces." *J. Differential Geom.* (2021), arXiv:1707.09325 (2017).
+
+[44] Mukai, S. "Finite groups of automorphisms of K3 surfaces and the Mathieu group." *Invent. Math.* **94**, 183–221 (1988).
+
+[45] Garbagnati, A., Sarti, A. "Symplectic automorphisms of prime order on K3 surfaces." *J. Algebra* **318**, 323–350 (2007), arXiv:math/0603742.
+
+[20] D.D. Joyce, *Compact Manifolds with Special Holonomy*, Oxford U. Press (2000)
+
+[48] Chen, J., Hong, H. "Intermediate curvature and splitting theorem," arXiv:2604.26529 (2026).
+
+[51] V. V. Nikulin, "Integer symmetric bilinear forms and some of their geometric applications," Izv. Akad. Nauk SSSR Ser. Mat. 43 (1979); English transl. Math. USSR Izv. 14 (1980).
+
+## Background (not cited by number)
+
+- Adams, J.F. *Lectures on Exceptional Lie Groups*
+- Harvey, R., Lawson, H.B. "Calibrated geometries." *Acta Math.* 148, 47-157 (1982)
+- Bryant, R.L. "Metrics with exceptional holonomy." *Ann. of Math.* 126, 525-576 (1987)
+- Corti, Haskins, Nordström, Pacini. *G₂-manifolds and associative submanifolds*
+- Kovalev, A. *Twisted connected sums and special Riemannian holonomy*
+- Conway, J.H., Sloane, N.J.A. *Sphere Packings, Lattices and Groups*
+
+---
+
+## Author's Related Works
+
+- **[A]** B. de La Fournière, "A Certified Torsion-Free G₂ Structure on a TCS Neck Model via Computer-Assisted Proof," Zenodo [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) (2026).
+- **[B]** B. de La Fournière, "Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms," Zenodo [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) (2026).
+- **[D]** B. de La Fournière, "An Explicit Closed-Form G₂ Ansatz on a K3-Coassociative Neck with Hyperkähler Rotation and Picard-Lefschetz Wirtinger Certificate," Zenodo [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) (2026).
+- **[ERR]** B. de La Fournière, "Erratum: GIFT / K₇ framework v3.5" (2026), repository Arithmon/K7, `publications/ERRATUM_v3.5.md`, commit aed460315eecc17a20402b1f4d20ac310dd4f6c2, [github.com/Arithmon/K7/blob/aed4603/publications/ERRATUM_v3.5.md](https://github.com/Arithmon/K7/blob/aed460315eecc17a20402b1f4d20ac310dd4f6c2/publications/ERRATUM_v3.5.md).
+
+---
+
+*The K₇ Framework (formerly GIFT): Supplement S1*
+*Mathematical Foundations: E₈ + G₂ + K₇*
