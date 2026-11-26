@@ -18,7 +18,7 @@ Le cadre K₇ associe 33 paramètres sans dimension du Modèle Standard et de la
 | **Ce qui est proposé** | 33 relations sans paramètre continûment ajustable, écrites avec vingt constantes structurelles déclarées |
 | **Ce qui est posé, non dérivé** | le registre des résidus R1–R12 : la paire de Betti (21, 77), la normalisation imposée det(g) = 65/32, κ_T⁻¹ = 61, l'unité dans laquelle 197 est lu comme phase CP, les échelles de comparaison, l'attribution des formules |
 | **Face aux données actuelles** | 23 à moins de 2σ, 2 en tension, 6 rejetées comme égalités exactes et gardées comme proximités, 1 dans un intervalle du PDG, 1 dont l'octant n'est pas tranché (PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022) |
-| **Effet look-elsewhere** | non surmonté : quand chaque concurrent cherche ses propres formules, 1 085 paires de Betti sur 4 159 et 1 015 vocabulaires inventés sur 2 000 atteignent autant de cibles que K₇ (valeur p globale de 0,51) |
+| **Effet look-elsewhere** | non surmonté : quand chaque concurrent cherche ses propres formules, 1 085 paires de Betti sur 4 159 et 1 015 vocabulaires inventés sur 2 000 atteignent autant de cibles que K₇ ; comme préenregistré, aucune valeur p n'est rapportée |
 | **Vérification Lean 4** | l'arithmétique des 33 relations (`relations_v36_certified`), 156 fichiers, 14 axiomes, aucun `sorry` ; elle vérifie l'arithmétique énoncée, pas le contenu physique |
 | **Existence de K₇** | ouverte : aucune variété G₂ compacte sans torsion de nombres (21, 77) n'est construite à ce jour |
 | **Autres entrées du jeu de données** | 62 extractions conditionnelles et diagnostics, gardés pour la traçabilité et non comptés comme prédictions |
@@ -105,4 +105,4 @@ Parcourez la barre latérale pour la navigation complète, ou consultez le [plan
 
 ---
 
-*K₇ Framework v3.6 | [GitHub](https://github.com/Arithmon/K7) | [Core](https://github.com/Arithmon/K7-Lean) | [Blueprint](https://arithmon.github.io/K7-Lean/) | [Zenodo (Article A)](https://doi.org/10.5281/zenodo.19892350) · [Article B](https://doi.org/10.5281/zenodo.19893371) · [Article C](https://doi.org/10.5281/zenodo.19708916) | Licence MIT*
+*K₇ Framework v3.6 | [GitHub](https://github.com/Arithmon/K7) | [Core](https://github.com/Arithmon/K7-Lean) | [Blueprint](https://arithmon.github.io/K7-Lean/) | [Zenodo (Article A)](https://doi.org/10.5281/zenodo.18643069) · [Article B](https://doi.org/10.5281/zenodo.18920367) · [Article C](https://doi.org/10.5281/zenodo.19708915) | Licence MIT*

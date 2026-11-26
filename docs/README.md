@@ -37,8 +37,8 @@ Static visualizations are available in the [`figures/`](figures/) directory:
 
 ## Legacy
 
-Historical supplements (v2.3/v3.0 drafts) archived in [`legacy/`](legacy/).
+Earlier versions of the papers are archived in [`publications/papers/legacy/`](../publications/papers/legacy/).
 
 ---
 
-Part of The K₇ Framework v3.5 - MIT License
+Part of The K₇ Framework - MIT License

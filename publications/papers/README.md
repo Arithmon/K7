@@ -84,11 +84,11 @@ The v3.5 files below are unchanged, and are read together with the [erratum](../
 
 | Paper | Description | DOI |
 |-------|-------------|-----|
-| [A — Certified G₂ Structure](pdf/g2_certified_neck.pdf) | First computer-assisted existence proof for a metric with special holonomy | [10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350) |
-| [B — Spectral Geometry](pdf/g2_spectral.pdf) | Laplacian spectrum, harmonic forms, λ₁ ≈ 6π²/475 | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
-| [C — K3 Newton-Kantorovich](pdf/K3_NK_Certificate.pdf) | NK diagnostics on Donaldson K3 (CI(2,2,2)) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
-| [D — Donaldson Analytic Note](pdf/donaldson_analytic.pdf) | Closed-form G₂ ansatz on K3-coassociative neck, 5-layer Wirtinger cert | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
-| [E — Rank-1 Branched Adiabatic](pdf/rank_one_branched_adiabatic.pdf) | Neck-level analytic machinery closed at D₀ (open: (J) + H_global) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
+| [A — Certified G₂ Structure](pdf/g2_certified_neck.pdf) | Newton–Kantorovich certificate for a torsion-free G₂ structure near an explicit metric on a neck model; a local result, which does not construct a compact K₇ | [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) |
+| [B — Spectral Geometry](pdf/g2_spectral.pdf) | Numerical Laplacian spectrum and harmonic forms of the explicit metric of paper A | [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) |
+| [C — K3 Newton-Kantorovich](pdf/K3_NK_Certificate.pdf) | NK diagnostics on Donaldson K3 (CI(2,2,2)) | [10.5281/zenodo.19708915](https://doi.org/10.5281/zenodo.19708915) |
+| [D — Donaldson Analytic Note](pdf/donaldson_analytic.pdf) | Closed-form G₂ ansatz on K3-coassociative neck, 5-layer Wirtinger cert | [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) |
+| [E — Rank-1 Branched Adiabatic](pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for rank-one branched adiabatic limits, computed at a datum D₀ that is not realisable as posed (erratum to v3.5); its global hypotheses are open | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
 
 ---
 
@@ -102,7 +102,7 @@ The tables that stood here in version 3.5 gave the relations the status **PROVEN
 
 156 Lean 4 files, 14 axioms at K7-Lean main (4 imported from the literature, 10 interval certificates), 0 sorry; the arithmetic of the 33 relations is collected in `relations_v36_certified`.
 
-See [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) for proofs (v3.5).
+See [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) for the proofs.
 
 ---
 

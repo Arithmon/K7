@@ -16,14 +16,14 @@ A framework that matches 33 measured values with closed forms in a vocabulary of
 | | |
 |---|---|
 | **Question** | Does K₇ remain exceptional when each competitor searches for its own formulas, in the same grammar, at the same budget, with the same freedom of assignment and of unit? |
-| **Preregistered** | 2026-10-17, before any run, with two outcomes only: a calibrated global P-value, or withdrawal of the P-value from the text |
+| **Preregistered** | 2026-10-17, before any full run (a pilot of nine vocabularies, declared in the preregistration, had run first), with two outcomes only: a calibrated global p-value, or no p-value in the text |
 | **K₇** | reaches 31 of the 33 targets |
-| **Alternative Betti pairs** | 1 085 of 4 159 reach as many (P = 0.26); none reaches more |
-| **Invented vocabularies** | 1 015 of 2 000 reach as many (P = 0.51); none reaches more |
+| **Alternative Betti pairs** | 1 085 of 4 159 reach as many (26%); none reaches more |
+| **Invented vocabularies** | 1 015 of 2 000 reach as many (51%); none reaches more |
 | **Control with no K₇ constant** | reaches 30 of the 33 with the universal leaves of the grammar alone |
-| **Verdict** | global p-value 0.51 against a threshold of 0.01: the look-elsewhere effect is not overcome, and the P-value is withdrawn from the text |
+| **Outcome** | the preregistered threshold is not met: the look-elsewhere effect is not overcome, and no p-value is reported; the proportions above are descriptive |
 
-The value 0.51 is not a probability that K₇ is right or wrong, and the counts are not a physical refutation. They say that the top score has little discriminating power in this protocol: 30 targets are reached by everyone, two by no one, and one separates the competitors.
+The proportions are not a probability that K₇ is right or wrong, and the counts are not a physical refutation. They say that the top score has little discriminating power in this protocol: 30 targets are reached by everyone, two by no one, and one separates the competitors.
 
 ## 2. The test
 
@@ -32,20 +32,20 @@ The value 0.51 is not a probability that K₇ is right or wrong, and the counts 
 - **Concordance.** A target is reached if one expression of the vocabulary falls within 2σ of the measured value on either side, asymmetric uncertainties being kept asymmetric. For m_s/m_d, which the PDG gives as a range, the window is that range. For δ_CP, the phase may be read in degrees, radians, grads or turns.
 - **Assignment.** The search is blind: each target takes the cheapest concordant expression. The freedom to assign formulas to observables is granted to everyone, K₇ included, which is scored by the same search on its own vocabulary and not by its published formulas.
 - **Competitors.** Every Betti pair with b₂ in [1, 40] and b₃ in [17, 120] other than (21, 77), with H*, κ_T⁻¹ and det(g) re-derived and the other constants held at K₇'s values; and 2 000 vocabularies of 19 integers drawn by the Sieve's frozen generator.
-- **Verdict rule.** For a family of size N in which n competitors reach at least as many targets as K₇, P = (1 + n)/(1 + N), ties counting against K₇. The global p-value is the larger of the two family values, and the effect is overcome only if it is at most 0.01.
+- **Verdict rule.** For a family of size N in which n competitors reach at least as many targets as K₇, the decision statistic is (1 + n)/(1 + N), ties counting against K₇. The larger of the two family values is compared with 0.01: at or below it, a calibrated global p-value is reported; above it, none is, and the proportions are given as descriptions. The values of the statistic are in the deposited result file.
 
 The alphabet tested for K₇ is the nineteen integers of the version 3.5 Monte Carlo register, not literally the twenty constants of the main paper (§3.1): dim E₇ = 133 and α_sum = 13 are absent and κ_T⁻¹ = 61 is present. A test on the literal register would be a separate computation.
 
 ## 3. Result
 
-| Family | N | reach ≥ 31/33 (as many as K₇) | P = (1 + n)/(1 + N) | best coverage | description cost, range (bits) | cost ≤ K₇ |
+| Family | N | reach ≥ 31/33 (as many as K₇) | share | best coverage | description cost, range (bits) | cost ≤ K₇ |
 |---|---:|---:|---:|---:|---:|---:|
 | K₇ (21, 77), blind search on its own vocabulary | 1 | 31/33 | n/a | 31 | 408.1 | n/a |
-| alternative Betti pairs (published derivations) | 4 159 | 1 085 | 0.261 | 31 | 389.2 to 418.7 | 1 038 |
-| invented vocabularies (generator of [M]) | 2 000 | 1 015 | 0.508 | 31 | 385.0 to 430.4 | 628 |
-| alternative Betti pairs, variant derivations (outside the rule) | 4 160 | 723 | 0.174 | 31 | 391.3 to 417.6 | 548 |
+| alternative Betti pairs (published derivations) | 4 159 | 1 085 | 26.1% | 31 | 389.2 to 418.7 | 1 038 |
+| invented vocabularies (generator of [M]) | 2 000 | 1 015 | 50.8% | 31 | 385.0 to 430.4 | 628 |
+| alternative Betti pairs, variant derivations (outside the rule) | 4 160 | 723 | 17.4% | 31 | 391.3 to 417.6 | 548 |
 
-The global p-value, the larger of the first two rows, is **0.508**; threshold 0.01. The variant row does not enter the verdict. K₇ is not cheaper either: its description cost lies inside the range of both families.
+The threshold is not met in either of the first two rows. The variant row does not enter the verdict. K₇ is not cheaper either: its description cost lies inside the range of both families.
 
 Per target:
 
@@ -108,10 +108,10 @@ The preregistration was amended three times, each time after an external review 
 |---|---|---|---|---|
 | K₇ coverage | 32/33 | 31/33 | 31/33 | 31/33 |
 | K₇ description cost (bits) | 395.6 | 409.2 | 408.1 | 408.1 |
-| alternative Betti pairs (published derivations): reach as many as K₇ | 4 159 of 4 159 (P = 1.000) | 1 085 of 4 159 (P = 0.261) | 1 085 of 4 159 (P = 0.261) | 1 085 of 4 159 (P = 0.261) |
-| invented vocabularies (generator of [M]): reach as many as K₇ | 1 635 of 2 000 (P = 0.818) | 1 015 of 2 000 (P = 0.508) | 1 015 of 2 000 (P = 0.508) | 1 015 of 2 000 (P = 0.508) |
-| alternative Betti pairs, variant derivations (outside the rule): reach as many as K₇ | 4 160 of 4 160 (P = 1.000) | 723 of 4 160 (P = 0.174) | 723 of 4 160 (P = 0.174) | 723 of 4 160 (P = 0.174) |
-| global p-value, outcome | 1.000, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome |
+| alternative Betti pairs (published derivations): reach as many as K₇ | 4 159 of 4 159 (100.0%) | 1 085 of 4 159 (26.1%) | 1 085 of 4 159 (26.1%) | 1 085 of 4 159 (26.1%) |
+| invented vocabularies (generator of [M]): reach as many as K₇ | 1 635 of 2 000 (81.8%) | 1 015 of 2 000 (50.8%) | 1 015 of 2 000 (50.8%) | 1 015 of 2 000 (50.8%) |
+| alternative Betti pairs, variant derivations (outside the rule): reach as many as K₇ | 4 160 of 4 160 (100.0%) | 723 of 4 160 (17.4%) | 723 of 4 160 (17.4%) | 723 of 4 160 (17.4%) |
+| preregistered outcome | look-elsewhere effect not overcome | look-elsewhere effect not overcome | look-elsewhere effect not overcome | look-elsewhere effect not overcome |
 | targets reached by nobody | α⁻¹(0) | α⁻¹(0), m_μ/m_e | α⁻¹(0), m_μ/m_e | α⁻¹(0), m_μ/m_e |
 
 ## 6. What earlier versions of this page reported

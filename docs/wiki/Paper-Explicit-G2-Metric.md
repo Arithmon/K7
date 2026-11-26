@@ -5,10 +5,12 @@ layout: default
 
 # Paper: Explicit G₂ Metric
 
+> **Status under version 3.6 of the framework paper.** This page summarises companion paper A as first published. Read it with the following: the certificate is local (a neck model), it does not construct a compact K₇, and no compact G₂ manifold with Betti numbers (21, 77) is known. The current statement is in [For Geometers](For-Geometers.html).
+
 **An Explicit Approximate G₂ Metric on a Compact TCS 7-Manifold with Certified Torsion-Free Completion**
 
 *Brieuc de La Fournière (2026)*
-[Full text (markdown)](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/g2_certified_neck.md) | [Zenodo DOI: 10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350)
+[Full text (markdown)](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/g2_certified_neck.md) | [Zenodo DOI: 10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069)
 
 ---
 

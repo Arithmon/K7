@@ -28,7 +28,7 @@ The framework papers are in [`../papers/markdown/`](../papers/markdown/):
 - [S3: Observable dataset](../papers/markdown/k7_framework_3_6_S3_observables.md)
 - [S4: Sieve and look-elsewhere diagnostics](../papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md)
 
-The look-elsewhere test (code, preregistration, results) is in [`../validation/v3.6/`](../validation/v3.6/).
+The look-elsewhere test (code, preregistration, results) is in [`../validation/v3.6/`](../validation/v3.6/); the generators of the tables and of the generated pages are in [`../validation/v3.6_generators/`](../validation/v3.6_generators/).
 
 ---
 

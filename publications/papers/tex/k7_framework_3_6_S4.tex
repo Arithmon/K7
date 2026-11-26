@@ -72,7 +72,7 @@ What the vocabulary-freedom test cannot price is where the vocabulary comes from
 
 \subsection{S4.2.1 Question and design}\label{s4.2.1-question-and-design}
 
-The test asks: \textbf{does K₇ remain exceptional when each competitor searches for its own formulas, in the same grammar, at the same budget, with the same freedom of assignment and of unit?} A null in which the alternatives are scored with K₇'s own formulas cannot answer it, since those formulas were chosen for (21, 77) (S4.4). The test was preregistered on 2026-10-17, before any run, with two outcomes only: a calibrated global p-value, or no p-value in the text.
+The test asks: \textbf{does K₇ remain exceptional when each competitor searches for its own formulas, in the same grammar, at the same budget, with the same freedom of assignment and of unit?} A null in which the alternatives are scored with K₇'s own formulas cannot answer it, since those formulas were chosen for (21, 77) (S4.4). The test was preregistered on 2026-10-17, before any full run, with two outcomes only: a calibrated global p-value, or no p-value in the text. A pilot of nine vocabularies had run before the preregistration was committed; the preregistration declares it and what it showed (the coverage score saturates), so that the reading could not be chosen afterwards.
 
 \begin{itemize}
 \tightlist
@@ -121,7 +121,7 @@ N
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
 reach ≥ 31/33 (as many as K₇)
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-P = (1 + n)/(1 + N)
+share
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
 best coverage
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
@@ -134,12 +134,12 @@ cost ≤ K₇
 \bottomrule\noalign{}
 \endlastfoot
 K₇ (21, 77), blind search on its own vocabulary & 1 & 31/33 & n/a & 31 & 408.1 & n/a \\
-alternative Betti pairs (published derivations) & 4 159 & 1 085 & 0.261 & 31 & 389.2 to 418.7 & 1 038 \\
-invented vocabularies (generator of {[}M{]}) & 2 000 & 1 015 & 0.508 & 31 & 385.0 to 430.4 & 628 \\
-alternative Betti pairs, variant derivations (outside the rule) & 4 160 & 723 & 0.174 & 31 & 391.3 to 417.6 & 548 \\
+alternative Betti pairs (published derivations) & 4 159 & 1 085 & 26.1\% & 31 & 389.2 to 418.7 & 1 038 \\
+invented vocabularies (generator of {[}M{]}) & 2 000 & 1 015 & 50.8\% & 31 & 385.0 to 430.4 & 628 \\
+alternative Betti pairs, variant derivations (outside the rule) & 4 160 & 723 & 17.4\% & 31 & 391.3 to 417.6 & 548 \\
 \end{longtable}}
 
-Global p-value (the larger of the first two rows): \textbf{0.508}; threshold 0.01; preregistered outcome: \textbf{look-elsewhere effect not overcome}. The variant row does not enter the verdict. ``Cost ≤ K₇'' counts floating-point ties as ties (\textbar ΔS\textsubscript{cost}\textbar{} ≤ 1e-09 bit; every tie is at the same (length, operations) pair as K₇).
+Preregistered outcome: \textbf{look-elsewhere effect not overcome} (the decision statistic of the less favourable of the first two rows is above the threshold 0.01), so no p-value is reported; the shares are descriptive, and the exact values are in the result file (S4.5). The variant row does not enter the verdict. ``Cost ≤ K₇'' counts floating-point ties as ties (\textbar ΔS\textsubscript{cost}\textbar{} ≤ 1e-09 bit; every tie is at the same (length, operations) pair as K₇).
 
 Per target, the blind search of K₇ and the frequency with which each family reaches the target:
 
@@ -236,10 +236,10 @@ revision 3 (2026-11-11, current dataset: m\textsubscript{W}/m\textsubscript{Z} f
 \endlastfoot
 K₇ coverage & 32/33 & 31/33 & 31/33 & 31/33 \\
 K₇ description cost (bits) & 395.6 & 409.2 & 408.1 & 408.1 \\
-alternative Betti pairs (published derivations): reach as many as K₇ & 4 159 of 4 159 (P = 1.000) & 1 085 of 4 159 (P = 0.261) & 1 085 of 4 159 (P = 0.261) & 1 085 of 4 159 (P = 0.261) \\
-invented vocabularies (generator of {[}M{]}): reach as many as K₇ & 1 635 of 2 000 (P = 0.818) & 1 015 of 2 000 (P = 0.508) & 1 015 of 2 000 (P = 0.508) & 1 015 of 2 000 (P = 0.508) \\
-alternative Betti pairs, variant derivations (outside the rule): reach as many as K₇ & 4 160 of 4 160 (P = 1.000) & 723 of 4 160 (P = 0.174) & 723 of 4 160 (P = 0.174) & 723 of 4 160 (P = 0.174) \\
-global p-value, outcome & 1.000, look-elsewhere effect not overcome & 0.508, look-elsewhere effect not overcome & 0.508, look-elsewhere effect not overcome & 0.508, look-elsewhere effect not overcome \\
+alternative Betti pairs (published derivations): reach as many as K₇ & 4 159 of 4 159 (100.0\%) & 1 085 of 4 159 (26.1\%) & 1 085 of 4 159 (26.1\%) & 1 085 of 4 159 (26.1\%) \\
+invented vocabularies (generator of {[}M{]}): reach as many as K₇ & 1 635 of 2 000 (81.8\%) & 1 015 of 2 000 (50.8\%) & 1 015 of 2 000 (50.8\%) & 1 015 of 2 000 (50.8\%) \\
+alternative Betti pairs, variant derivations (outside the rule): reach as many as K₇ & 4 160 of 4 160 (100.0\%) & 723 of 4 160 (17.4\%) & 723 of 4 160 (17.4\%) & 723 of 4 160 (17.4\%) \\
+preregistered outcome & look-elsewhere effect not overcome & look-elsewhere effect not overcome & look-elsewhere effect not overcome & look-elsewhere effect not overcome \\
 targets reached by nobody & α⁻¹(0) & α⁻¹(0), m\textsubscript{μ}/m\textsubscript{e} & α⁻¹(0), m\textsubscript{μ}/m\textsubscript{e} & α⁻¹(0), m\textsubscript{μ}/m\textsubscript{e} \\
 \end{longtable}}
 
@@ -247,7 +247,7 @@ The first run, on the dataset of version 3.5 with one-sided windows, had every a
 
 \subsection{S4.2.4 What the test does not cover}\label{s4.2.4-what-the-test-does-not-cover}
 
-The counts are descriptive. They record an absence of discrimination in these families and windows, not a measurement of statistical power. The global p-value of 0.51 is not a probability that K₇ is right or wrong: with 30 targets reached by everyone, two by no one and one that separates, the coverage score has little discriminating power in this protocol. The test does not vary the gauge group or the holonomy beyond the Betti numbers (there is no public rule for re-deriving the register in that case), does not consider other forms of an observable (an angle against its sine squared) except for the unit of δ\textsubscript{CP}, and does not look beyond five nodes, where several of K₇'s formulas lie. These freedoms remain in the residue register of main §3.3 (the formula assignments, R4; the grammar and vocabulary, R5; the unit of δ\textsubscript{CP}, R6). Nor does the test use the literal register of main §3.1 (S4.2.1).
+The counts are descriptive. They record an absence of discrimination in these families and windows, not a measurement of statistical power. The proportions are not a probability that K₇ is right or wrong: with 30 targets reached by everyone, two by no one and one that separates, the coverage score has little discriminating power in this protocol. The test does not vary the gauge group or the holonomy beyond the Betti numbers (there is no public rule for re-deriving the register in that case), does not consider other forms of an observable (an angle against its sine squared) except for the unit of δ\textsubscript{CP}, and does not look beyond five nodes, where several of K₇'s formulas lie. These freedoms remain in the residue register of main §3.3 (the formula assignments, R4; the grammar and vocabulary, R5; the unit of δ\textsubscript{CP}, R6). Nor does the test use the literal register of main §3.1 (S4.2.1).
 
 \section{S4.3 Descriptive diagnostics of version 3.5 (archived)}\label{s4.3-descriptive-diagnostics-of-version-3.5-archived}
 

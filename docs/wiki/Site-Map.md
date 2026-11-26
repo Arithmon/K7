@@ -20,8 +20,8 @@ Complete index of all wiki pages.
 | Page | Description |
 |------|-------------|
 | [For Physicists](For-Physicists.html) | E₈×E₈ architecture, K₇ compactification, predictions |
-| [For Geometers](For-Geometers.html) | Computational pipeline: TCS, PINNs, spectral methods |
-| [For Formalization Experts](For-Formalization-Experts.html) | Lean 4 formalization: architecture, methodology, access |
+| [For Geometers](For-Geometers.html) | What is known about the geometry of K₇, what is excluded, what is open |
+| [For Formalization Experts](For-Formalization-Experts.html) | Lean 4 formalization: what it establishes and what it does not |
 
 ## Papers
 | Page | Description |

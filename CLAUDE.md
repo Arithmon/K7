@@ -1,239 +1,74 @@
-# CLAUDE.md - Development Guide for GIFT Documentation
+# CLAUDE.md - Development Guide for the K₇ Documentation Repository
 
-This file provides development conventions for the GIFT theoretical documentation repository.
+Conventions for editing this repository. It describes the state of version 3.6 of the framework paper.
 
 ## Repository Purpose
 
-This repository contains the **theoretical documentation** for GIFT (Geometric Information Field Theory). For formal proofs and computational code, see [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean).
+This repository holds the **papers, datasets and public pages** of the K₇ framework (formerly GIFT). The Lean 4 formalization and the Python package are in [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean). The layout is described in [`STRUCTURE.md`](STRUCTURE.md), which is generated.
 
-## Project Structure
+## What version 3.6 says, and what it withdrew
 
-```
-GIFT/
-├── publications/
-│   ├── papers/
-│   │   ├── markdown/       # Core documents (v3.4)
-│   │   │   ├── GIFT_v3.4_main.md             # Main paper
-│   │   │   ├── GIFT_v3.4_S1_foundations.md   # E₈, G₂, K₇ foundations
-│   │   │   ├── GIFT_v3.4_S2_derivations.md   # All 33 Type I derivations
-│   │   │   ├── GIFT_v3.4_S3_observables.md   # Full 95-observable dataset
-│   │   │   ├── g2_certified_neck.md          # Companion Paper A (certified G₂ metric)
-│   │   │   ├── g2_spectral.md                # Companion Paper B (spectral geometry)
-│   │   └── tex/            # LaTeX sources
-│   ├── references/         # Data & reference catalogs
-│   ├── outreach/           # Vulgarization & blog posts
-│   └── validation/         # Monte Carlo validation code
-│
-├── docs/
-│   ├── FAQ.md             # Common questions
-│   ├── GLOSSARY.md        # Technical terms
-│   ├── GIFT_FOR_EVERYONE.md  # Complete guide with everyday analogies
-│   ├── GIFTPY_FOR_GEOMETERS.md
-│   ├── INFO_GEO_FOR_PHYSICISTS.md
-│   ├── LEAN_FOR_PHYSICS.md
-│   └── figures/           # Lean blueprints, diagrams
-│
-├── README.md              # Repository overview
-├── STRUCTURE.md           # Directory layout
-├── CHANGELOG.md           # Version history
-└── CITATION.md            # How to cite
-```
+Every page must agree with the main paper, `publications/papers/markdown/k7_framework_3_6_main.md`.
 
----
+- The framework is a **declared correspondence**: 33 closed-form relations assigned by the author to dimensionless parameters. It is a candidate, not a derivation. No geometric map from the invariants to the observables is known, and no rule assigns a formula to an observable.
+- **No compact G₂ manifold with Betti numbers (21, 77) is known.** Existence is open; the pair is posited.
+- The 33 relations are compared with data in five classes (within 2σ, tension, excluded as exact equalities at more than 3σ and kept as proximities, inside a PDG range, non-Gaussian profile). The counts come from the dataset, never from memory.
+- The other 62 entries of the dataset are conditional extractions and diagnostics, and are not counted as predictions.
+- The preregistered look-elsewhere test finds that closeness to the measured values does not single out K₇. As preregistered, **no p-value is reported**; counts and proportions are.
+- The Lean formalization verifies arithmetic, not physics.
 
-## Document Hierarchy
+**Withdrawn wordings, do not write**: "zero parameters", "no free parameters", "derives", "predicts" or "explains" for a relation; "proven" for a physical statement; "K₇ exists" or "a theorem guarantees K₇"; any coincidence probability, p-value, Bayes factor or "unique among N alternatives"; "95 observables" as a count of predictions; a tolerance band around δ_CP.
 
-### Main Paper
-- **Accessible** to physicists and mathematicians
-- **Quasi-autonomous**: readable without supplements
-- Contains: framework overview, representative derivations, predictions catalog, falsification tests
-- References supplements for technical details
+**Write instead**: "the relation assigns", "the closed form evaluates to", "reproduced" (for N_gen = 3), "posited" (for the Betti pair), "within 2σ of measurement", "excluded as an exact equality, kept as a proximity".
 
-### Supplements
-- **S1 Foundations**: Complete mathematical construction (E₈ lattice, G₂ holonomy, K₇ topology)
-- **S2 Derivations**: All 33 dimensionless predictions with full derivations
-- **Numerical G₂ Metric**: PINN-based G₂ metric construction (companion numerical paper)
+## Generated files: do not edit by hand
 
----
+These files are written by generators from the paper sources and the dataset. A hand edit is overwritten at the next run, and the generators' `--check` mode reports it.
 
-## Terminology Standards
+| Files | Generator |
+|---|---|
+| `publications/papers/markdown/k7_framework_3_6_*.md`, `tex/`, `pdf/` | copied from the author's sources by `k7_v3_6_deposit_pages.py` |
+| `CITATION.md`, `CITATION.cff`, `STRUCTURE.md`, `docs/wiki/Citation-Guide.md`, `Repository-Structure.md`, `Paper-Main-Framework.md`, `Paper-S1-Foundations.md`, `Paper-S2-Derivations.md`, `Changelog-Highlights.md`, `publications/references/README.md`, `GIFT_ATLAS.json` | `k7_v3_6_deposit_pages.py` |
+| `docs/wiki/Statistical-Evidence*.md`, `Validation-Summary*.md`, `Observable-Reference*.md`, `publications/references/STATISTICAL_EVIDENCE.md`, `OBSERVABLE_REFERENCE.md`, `observables.csv` | `k7_v3_6_surface_pages.py` |
+| `docs/FAQ*.md`, `docs/wiki/FAQ*.md`, `docs/GIFT_EXEC_SUMMARY*.md`, `docs/INFO_GEO_FOR_PHYSICISTS.md`, `docs/wiki/For-Physicists.md` | `k7_v3_6_surface_prose.py` |
+| `docs/LEAN_FOR_PHYSICS.md`, `docs/GIFTPY_FOR_GEOMETERS.md`, `docs/wiki/Lean-Formalization.md`, `For-Formalization-Experts.md`, `For-Geometers.md` | `k7_v3_6_reader_pages.py` |
+| the results, papers and falsification sections of `docs/index.html` and `docs/index.fr.html` | `k7_v3_6_landing_pages.py` |
 
-### Use Standard Academic Terms
+The generators are published in `publications/validation/v3.6_generators/`.
 
-| Internal Code | Standard Academic Term |
-|---------------|------------------------|
-| ε_ijk | G₂ structure constants / associative 3-form coefficients |
-| φ₀ | Standard associative 3-form |
-| ψ_ijkl | Coassociative 4-form |
-| "Lagrange identity" | ‖u × v‖² = ‖u‖²‖v‖² − ⟨u,v⟩² for G₂-invariant cross product |
-| "Fano structure" | Octonion multiplication from Fano plane |
+## Frozen files: never edit
 
-### Avoid Internal Jargon
+- `publications/validation/v3.6/canonical/`: the deposit of the look-elsewhere test. Its files are listed with their sha256 and are kept byte for byte.
+- `publications/papers/legacy/` and the 3.4 and 3.5 files: published versions. Version 3.5 is read with `publications/ERRATUM_v3.5.md`.
+- Blog pages (`docs/wiki/Blog-*.md`) are dated texts: they say what was held at their date and are not rewritten.
 
-```markdown
-# Incorrect (internal reference)
-"The B4 axiom is now proven via epsilon contraction"
+## Languages
 
-# Correct (academic standard)
-"The Lagrange identity ‖u × v‖² = ‖u‖²‖v‖² − ⟨u,v⟩² for the
-G₂-invariant cross product in ℝ⁷ is formally verified in Lean 4"
-```
-
-### State Current Results Only
-
-```markdown
-# Incorrect (evolutionary language)
-"In v3.1, we improved the axiom resolution from 6/10 to 9/10"
-
-# Correct (current state)
-"The E₈ root system properties are fully verified (12 theorems).
-The G₂ cross product satisfies the Lagrange identity (verified)
-and antisymmetry properties (verified)."
-```
-
----
-
-## Mathematical Notation
-
-### Topological Constants
-
-| Symbol | Value | Definition |
-|--------|-------|------------|
-| dim(E₈) | 248 | E₈ Lie algebra dimension |
-| rank(E₈) | 8 | E₈ Cartan subalgebra dimension |
-| dim(G₂) | 14 | G₂ holonomy group dimension |
-| b₂ | 21 | Second Betti number of K₇ |
-| b₃ | 77 | Third Betti number of K₇ |
-| H* | 99 | b₂ + b₃ + 1 |
-| p₂ | 2 | Dimensional ratio dim(G₂)/dim(K₇) |
-| dim(J₃(O)) | 27 | Exceptional Jordan algebra dimension |
-
-### Physical Predictions
-
-| Symbol | Value | Topological Origin |
-|--------|-------|-------------------|
-| sin²θ_W | 3/13 | b₂/(b₃ + dim(G₂)) |
-| κ_T | 1/61 | 1/(b₃ − dim(G₂) − p₂) |
-| det(g) | 65/32 | G₂ metric determinant |
-| τ | 3472/891 | (dim(E₈×E₈) × b₂)/(dim(J₃(O)) × H*) |
-| N_gen | 3 | rank(E₈) − w = b₂/dim(K₇) |
-
----
-
-## Blueprint Workflow
-
-The Lean formalization uses **blueprint documentation** linking mathematical statements to code.
-
-### Blueprint Structure (in gift-core)
-
-```
-blueprint/
-├── src/
-│   └── content.tex     # LaTeX with \lean{} references
-├── home_page/
-└── lakefile.toml
-```
-
-### Key Commands
-
-```latex
-\begin{theorem}[Theorem Name]\label{thm:name}
-    \lean{GIFT.Module.theorem_name}
-    \leanok                           % Marks as proven
-    \uses{def:dependency}             % Declares dependencies
-    Mathematical statement here.
-\end{theorem}
-```
-
-### Status Indicators
-
-- `\leanok`: Fully proven in Lean
-- No marker: Statement only (axiom or pending)
-- `\uses{}`: Dependency tracking
-
-### Viewing Blueprint
-
-Generated at: https://arithmon.github.io/K7-Lean/
-
----
+French pages exist only for the landing page, Home, Getting-Started, Site-Map, Observable-Reference, Validation-Summary, Statistical-Evidence, the FAQ, K₇ for Everyone, the executive summary and the blog. Do not create other `.fr` pages.
 
 ## Writing Guidelines
 
-### Tone
+- **State the present position.** No evolutionary narrative in the body of a page ("in v3.1 we improved"); what changed goes in a changelog.
+- **Standard academic terms**, no internal identifiers of tests, rules or batches in prose.
+- **No em dash** in Markdown: the documentation linter refuses it.
+- **A count is derived**, from `publications/references/observables.csv` or from the Lean repository, never recalled.
 
-- **Humble and scientific**: "The framework proposes..." not "We prove..."
-- **Precise claims**: "Formally verified in Lean 4" vs "proven"
-- **Acknowledge limitations**: Distinguish topological derivation from physical truth
+## Checks before committing
 
-### Recommended Formulations
-
-```markdown
-# Avoid
-"This proves the framework is correct"
-"Revolutionary discovery"
-"Zero torsion solves everything"
-
-# Prefer
-"This elevates the framework from numerical agreement to algebraic derivation"
-"The G₂ metric admits an exact analytical form"
-"The classical solution has T = 0; physical interactions require mechanisms
-for effective torsion that remain under investigation"
+```bash
+python .github/scripts/docs_linter.py
+python .github/scripts/fix_em_dashes.py --check
+python .github/scripts/observable_calculator.py
+python .github/scripts/cross_repo_check.py --core-path ../K7-Lean
 ```
-
-### Status Classifications
-
-| Status | Meaning |
-|--------|---------|
-| **PROVEN** | Formally verified in Lean 4 |
-| **TOPOLOGICAL** | Derived from topology, not fitted |
-| **THEORETICAL** | Proposed mechanism, not yet verified |
-| **SPECULATIVE** | Exploratory extension |
-
----
-
-## Cross-Repository Coordination
-
-### This Repository (GIFT)
-- Theoretical documentation
-- Publications (markdown, LaTeX, PDF)
-- Statistical validation
-- Guides for different audiences
-
-### Arithmon/K7-Lean
-- Formal proofs (Lean 4)
-- Python package `giftpy`
-- Blueprint documentation
-- CI/CD workflows
-
-### Synchronization
-
-When updating:
-1. Verify claim matches Lean theorem in core
-2. Use theorem name from blueprint, not internal identifiers
-3. Update version references consistently
-
----
-
-## Editing Checklist
-
-Before committing documentation changes:
-
-- [ ] Academic terminology (no internal codes)
-- [ ] Current state only (no evolutionary history)
-- [ ] Lean theorem references match blueprint
-- [ ] Cross-references between Main and Supplements work
-- [ ] Version numbers consistent
-- [ ] Claims match formal verification status
-
----
 
 ## Links
 
 | Resource | URL |
 |----------|-----|
-| Core Repository | https://github.com/Arithmon/K7-Lean |
-| Blueprint | https://arithmon.github.io/K7-Lean/ |
-| PyPI Package | https://pypi.org/project/gift-core/ |
+| Lean repository | https://github.com/Arithmon/K7-Lean |
+| Program | https://github.com/Arithmon/Program |
+| Site | https://arithmon.github.io/K7/ |
 
 ---
 

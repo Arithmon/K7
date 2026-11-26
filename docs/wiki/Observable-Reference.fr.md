@@ -19,7 +19,7 @@ Les tables des sections 1, 2, 4 et 5 et la table des données de référence son
 |------|-------|-----------|--------------------|
 | I | 33 | Dimensionless closed forms in the structural constants, assigned to measured parameters | yes |
 | II | 19 | Dimensionful numbers read in a chosen unit (register item R10, the unit of dimensionful entries), scale bridges, one ratio of masses taken at different scales and its product with m_s/m_d, and legacy values without a documented derivation | no |
-| III | 21 | Outputs of mechanisms on the approximate seam metric (Wilson-line splitting, associative volumes, spectral counts, bundle conditioning), with calibration choices; and four retired entries of a supersymmetric running | no |
+| III | 21 | Outputs of mechanisms on the approximate local metric of [A] (Wilson-line splitting, associative volumes, spectral counts, bundle conditioning), with calibration choices; and four retired entries of a supersymmetric running | no |
 | IV | 22 | Structural quantities and numerical diagnostics, with no experimental counterpart | no |
 
 ## 2. Les constantes structurelles

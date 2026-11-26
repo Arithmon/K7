@@ -1,0 +1,199 @@
+{
+ "lot": "K7-V36-PLANCK-RATIOS",
+ "source_url": "https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/cosmoparams/COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip",
+ "source_zip_sha256": "52cf6793f14e250ffc1436ce7f6fe6d92f6a066c433ec9efc66e4178f3d45a1f",
+ "chains": "base_plikHM_TTTEEE_lowl_lowE_lensing",
+ "n_rows": 25225,
+ "sum_weights": 57848.0,
+ "self_sha256": "7acc74714ed6034f93933d6640c61178dc37d3fb9e1e40b54e873f3c21e4354d",
+ "G1_chain_vs_margestats": {
+  "omegabh2": {
+   "chain": [
+    0.022373199185278664,
+    0.00014574571998722462
+   ],
+   "margestats": [
+    0.022373192,
+    0.00014573441
+   ],
+   "ok": true
+  },
+  "omegach2": {
+   "chain": [
+    0.11999376894966118,
+    0.0011781796523743903
+   ],
+   "margestats": [
+    0.11999387,
+    0.0011781098
+   ],
+   "ok": true
+  },
+  "H0": {
+   "chain": [
+    67.35987729255982,
+    0.5354068777257774
+   ],
+   "margestats": [
+    67.359828,
+    0.53535939
+   ],
+   "ok": true
+  },
+  "omegal": {
+   "chain": [
+    0.6847160028989766,
+    0.00732925961599139
+   ],
+   "margestats": [
+    0.68471535,
+    0.007328737
+   ],
+   "ok": true
+  },
+  "omegam": {
+   "chain": [
+    0.3152839971010234,
+    0.007329259615991391
+   ],
+   "margestats": [
+    0.31528465,
+    0.007328737
+   ],
+   "ok": true
+  },
+  "omegamh2": {
+   "chain": [
+    0.1430121115682478,
+    0.0011084711561109423
+   ],
+   "margestats": [
+    0.14301221,
+    0.0011084169
+   ],
+   "ok": true
+  }
+ },
+ "G2_max_relative_residual_matter_budget": 7.200367018178611e-07,
+ "omega_nu_over_omega_m": {
+  "mean": 0.004511384728130473,
+  "sd": 3.496562815933355e-05
+ },
+ "A29_plus_A30_mean": 0.9954886185378786,
+ "ratios": {
+  "A25": {
+   "quantity": "Ω_c h²/Ω_b h²",
+   "mean": 5.363689596234108,
+   "sd": 0.07699416635612857,
+   "q2sigma_low": 5.211059788155322,
+   "median": 5.36327593025732,
+   "q2sigma_high": 5.5202041692058605,
+   "chain_means_spread_over_sd": 0.14256246499169098,
+   "gift_value": 5.375,
+   "pull": 0.14689948993767474,
+   "gift_inside_2sigma_quantiles": true,
+   "previous": {
+    "exp_value": 5.364327223960661,
+    "exp_error": 0.06458670255552207,
+    "pull": 0.16524726634192474
+   }
+  },
+  "A26": {
+   "quantity": "Ω_c/Ω_Λ",
+   "mean": 0.3865101511382174,
+   "sd": 0.013985811424420859,
+   "q2sigma_low": 0.3596622534245453,
+   "median": 0.38622500436697077,
+   "q2sigma_high": 0.415938006869288,
+   "chain_means_spread_over_sd": 0.13697381374486237,
+   "gift_value": 0.3869047619047619,
+   "pull": 0.02821507845125636,
+   "gift_inside_2sigma_quantiles": true,
+   "previous": {
+    "exp_value": 0.3862573540897271,
+    "exp_error": 0.00838040525247517,
+    "pull": 0.07725256661586777
+   }
+  },
+  "A27": {
+   "quantity": "Ω_Λ/Ω_m",
+   "mean": 2.17345702247242,
+   "sd": 0.07374617892916398,
+   "q2sigma_low": 2.0259328497085725,
+   "median": 2.172411692748121,
+   "q2sigma_high": 2.32303303859138,
+   "chain_means_spread_over_sd": 0.13636100784384658,
+   "gift_value": 2.173076923076923,
+   "pull": -0.005154157151139873,
+   "gift_inside_2sigma_quantiles": true,
+   "previous": {
+    "exp_value": 2.1715826197272436,
+    "exp_error": 0.07343023509041827,
+    "pull": 0.020349973656481567
+   }
+  },
+  "A29": {
+   "quantity": "Ω_b h²/Ω_m h²",
+   "mean": 0.15645546364545757,
+   "sd": 0.001888572678941002,
+   "q2sigma_low": 0.15268752080004463,
+   "median": 0.1564422643580722,
+   "q2sigma_high": 0.16026293771282532,
+   "chain_means_spread_over_sd": 0.14229315769365233,
+   "gift_value": 0.15625,
+   "pull": -0.10879308365975993,
+   "gift_inside_2sigma_quantiles": true,
+   "previous": {
+    "exp_value": 0.15643356643356646,
+    "exp_error": 0.0015963438631925798,
+    "pull": -0.11499178704476376
+   }
+  },
+  "A30": {
+   "quantity": "Ω_c h²/Ω_m h²",
+   "mean": 0.839033154892421,
+   "sd": 0.0019191660574896026,
+   "q2sigma_low": 0.83516893151242,
+   "median": 0.8390466342299813,
+   "q2sigma_high": 0.8428707866991975,
+   "chain_means_spread_over_sd": 0.14210754353322547,
+   "gift_value": 0.84375,
+   "pull": 2.457757675096088,
+   "gift_inside_2sigma_quantiles": false,
+   "previous": {
+    "exp_value": 0.8391608391608392,
+    "exp_error": 0.0105871239162066,
+    "pull": 0.4334662440415776
+   }
+  },
+  "A33": {
+   "quantity": "Ω_m/Ω_Λ",
+   "mean": 0.4606270570885577,
+   "sd": 0.015654151955919873,
+   "q2sigma_low": 0.43047170805903434,
+   "median": 0.4603179053667267,
+   "q2sigma_high": 0.49359977560156976,
+   "chain_means_spread_over_sd": 0.1362562473804888,
+   "gift_value": 0.45901639344262296,
+   "pull": -0.10289050792851565,
+   "gift_inside_2sigma_quantiles": true,
+   "previous": {
+    "exp_value": 0.4604936468526362,
+    "exp_error": 0.015571204355227465,
+    "pull": -0.09487085111161124
+   }
+  }
+ },
+ "sans_neutrinos_informatif_pas_la_reference": {
+  "A29": {
+   "mean": 0.15716455097595594,
+   "sd": 0.001901953332074393,
+   "pull": -0.48084827347392
+  },
+  "A30": {
+   "mean": 0.8428354490240441,
+   "sd": 0.0019019533320743934,
+   "pull": 0.4808482734739199
+  }
+ }
+}

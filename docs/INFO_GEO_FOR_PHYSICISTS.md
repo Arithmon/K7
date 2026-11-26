@@ -58,7 +58,7 @@ Six relations use det(g) = 65/32 and three use κ_T⁻¹ = 61. A reader who rega
 
 ## 5. Look-elsewhere
 
-In a preregistered test, every competitor searches for its own formulas in the same grammar, at the same budget (five nodes) and with the same windows (2σ). K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more. The global p-value is 0.51 against a threshold of 0.01: the effect is not overcome. A control with no K₇ constant reaches 30. In the public Sieve battery, no K₇ relation clears the null that prices the choice of vocabulary.
+In a preregistered test, every competitor searches for its own formulas in the same grammar, at the same budget (five nodes) and with the same windows (2σ). K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more. The preregistered threshold is not met: the effect is not overcome, and no p-value is reported. A control with no K₇ constant reaches 30. In the public Sieve battery, no K₇ relation clears the null that prices the choice of vocabulary.
 
 Closeness to the measured values is therefore not, by itself, evidence. The coincidence probabilities and P-values of earlier versions are withdrawn. Details and code: [Statistical Evidence](wiki/Statistical-Evidence.html).
 

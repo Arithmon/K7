@@ -2,6 +2,15 @@
 
 ## v3.6 (November 2026)
 
+**Batch 16 (2026-11-26): corrections from two independent reviews. No number of the 33 relations changes.**
+- **Twisted connected sums.** Every ordinary twisted connected sum has b₂ + b₃ odd [14], not only those with orthogonal gluing; with b₂ + b₃ = 98, the whole family is excluded by parity and only the extra-twisted connected sums of [14] remain open within it (main §2.3, S1 §8.3). Earlier text of 3.6 excluded the orthogonal case alone.
+- **Look-elsewhere test: the preregistered outcome is applied to the text.** The preregistration states that, if the threshold is not met, no p-value is reported and the two proportions are given descriptively. The main paper, S4 and the public pages now give the counts and the proportions (26% of the alternative Betti pairs, 51% of the invented vocabularies) and the outcome; the values of the decision statistic remain in the deposited result file. No count changes.
+- **Preregistration.** "Before any run" becomes "before any full run": a pilot of nine vocabularies, declared in the preregistration, ran before it was committed (S4.2.1).
+- **A third measurement outside the reference series** is reported in §11.1: the Atacama Cosmology Telescope combination gives n_s = 0.974 ± 0.003 [62], 3.0σ above ζ(11)/ζ(5).
+- **References.** [14] is J. Nordström, *Ann. Global Anal. Geom.* 64 (2023) (it was attributed to two authors); [12] and [16] are completed; [58] is cited as published (*Nature* 654, 343–348); [62] is added.
+- **Wording.** dim(E₇) = 133 is listed among the twenty constants and used by no relation, which §3.1 now says; [C] is cited in §9.3; the 27 exact equalities are between rationals for 25 and between natural numbers for m_τ/m_e and m_s/m_d (§8, S3.7); sin²θ₂₃ is described in §4.3 as counted apart, not as a tension; "singular value" in S1 §6.2; "local metric of [A]" in S3.
+- **Reproducibility.** The refresh script, the Planck-ratio script and the generators of the tables and of the public pages are deposited in `publications/validation/v3.6_generators/` (S3.8).
+
 **Batch 15 (2026-11-26): pre-release consistency pass. No number changes.**
 - **sin²θ₂₃ is labelled by the class it is counted in.** The status column of the table of §4.1, and of S2 and S3, reads "non-Gaussian profile" for sin²θ₂₃ instead of "tension"; the breakdown of §4.2 already counted it apart (23/2/6/1/1). The status vocabulary reserves "tension" for 2 < |pull| ≤ 3.
 - **S4.** The remaining internal labels of tests, families and verdicts leave the prose of S4.1 and S4.5.

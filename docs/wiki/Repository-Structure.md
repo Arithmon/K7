@@ -38,6 +38,7 @@ K7/
 │   │   └── Bibliography.md
 │   └── validation/
 │       ├── v3.6/                      # Look-elsewhere test of v3.6 (code, data, results)
+│       ├── v3.6_generators/           # Generators of the tables and of the generated pages
 │       └── legacy/                    # Earlier validation scripts (archived)
 │
 ├── docs/                              # Guides and the Jekyll site
@@ -68,6 +69,7 @@ K7/
 | Dataset description | `publications/papers/markdown/k7_framework_3_6_S3_observables.md` |
 | Dataset (machine-readable) | `publications/references/observables.csv` |
 | Look-elsewhere test (code, preregistration, results) | `publications/validation/v3.6/` |
+| Generators of the tables and of the generated pages | `publications/validation/v3.6_generators/` |
 | Changes from v3.5 | `publications/papers/markdown/k7_framework_3_6_CHANGELOG.md` |
 | Erratum to v3.5 | `publications/ERRATUM_v3.5.md` |
 | Paper A (certified seam metric) | `publications/papers/pdf/g2_certified_neck.pdf` |
@@ -84,7 +86,7 @@ K7/
 | File (`publications/papers/markdown/`) | Title | Pages (PDF) |
 |----------------------------------------|-------|-------------|
 | `k7_framework_3_6_main.md` | The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology | 39 |
-| `k7_framework_3_6_S1_foundations.md` | Supplement S1: Mathematical Foundations | 25 |
+| `k7_framework_3_6_S1_foundations.md` | Supplement S1: Mathematical Foundations | 26 |
 | `k7_framework_3_6_S2_derivations.md` | Supplement S2: The 33 Relations | 15 |
 | `k7_framework_3_6_S3_observables.md` | Supplement S3: Observable Dataset | 17 |
 | `k7_framework_3_6_S4_sieve_diagnostics.md` | Supplement S4: Sieve and Look-Elsewhere Diagnostics | 11 |

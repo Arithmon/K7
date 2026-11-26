@@ -5,10 +5,12 @@ layout: default
 
 # Paper: Spectral Geometry
 
+> **Status under version 3.6 of the framework paper.** This page summarises companion paper B as first published. Read it with the following: the spectral multiplicities reported below are built from decompositions that supplement S1 withdraws (§8.3, §9.3); they give no independent evidence for (b₂, b₃) = (21, 77), and the mass ratios read from the spectrum are not relations of the framework. The current statement is in [For Geometers](For-Geometers.html).
+
 **Spectral Geometry of an Explicit G₂ Metric on a Compact 7-Manifold**
 
 *Brieuc de La Fournière (2026)*
-[Full text (markdown)](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/g2_spectral.md) | [Zenodo DOI: 10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371)
+[Full text (markdown)](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/g2_spectral.md) | [Zenodo DOI: 10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367)
 
 ---
 

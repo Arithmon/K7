@@ -69,19 +69,26 @@ def at_most_cost(close, fam):
     return f['strictement_moins_cher'] + f['egalites']
 
 
+def share(f):
+    """proportion descriptive n/N (l'issue LEE-RETRAIT retire la P-value du texte, pas les proportions)."""
+    return f"{100 * f['n_ge_K7'] / f['n']:.1f}%"
+
+
 def families(new, close):
     k = new['K7']
-    out = ['| Family | N | reach ≥ ' + f"{k['S_cover']}/33" + ' (as many as K₇) | P = (1 + n)/(1 + N) | best coverage | '
+    out = ['| Family | N | reach ≥ ' + f"{k['S_cover']}/33" + ' (as many as K₇) | share | best coverage | '
            'description cost, range (bits) | cost ≤ K₇ |',
            '|---|---:|---:|---:|---:|---:|---:|',
            f"| K₇ (21, 77), blind search on its own vocabulary | 1 | {k['S_cover']}/33 | n/a | {k['S_cover']} | {k['S_cost']:.1f} | n/a |"]
     for fam, label in FAMS:
         f = new['familles'][fam]; lo, hi = cost_range(new, fam)
-        out.append(f"| {label} | {n(f['n'])} | {n(f['n_ge_K7'])} | {f['P']:.3f} | {f['max_S_cover']} | "
+        out.append(f"| {label} | {n(f['n'])} | {n(f['n_ge_K7'])} | {share(f)} | {f['max_S_cover']} | "
                    f"{lo:.1f} to {hi:.1f} | {n(at_most_cost(close, fam))} |")
     out.append('')
-    out.append(f"Global p-value (the larger of the first two rows): **{new['P_global']:.3f}**; threshold 0.01; "
-               f"preregistered outcome: **{OUTCOME[new['verdict']]}**. The variant row does not enter the verdict. \"Cost ≤ K₇\" counts "
+    assert new['verdict'] == 'LEE-RETRAIT' and new['P_global'] > 0.01   # l'issue qui retire la P-value du texte
+    out.append(f"Preregistered outcome: **{OUTCOME[new['verdict']]}** (the decision statistic of the less favourable of the "
+               f"first two rows is above the threshold 0.01), so no p-value is reported; the shares are descriptive, and the "
+               f"exact values are in the result file (S4.5). The variant row does not enter the verdict. \"Cost ≤ K₇\" counts "
                f"floating-point ties as ties (|ΔS_cost| ≤ {close['tolerance_bits']:g} bit; every tie is at the "
                f"same (length, operations) pair as K₇).")
     return '\n'.join(out)
@@ -114,9 +121,9 @@ def history(new, rev2, rev1, old):
             ('K₇ description cost (bits)', [f"{r['K7']['S_cost']:.1f}" for r in runs])]
     for fam, _ in FAMS:
         rows.append((f'{_}: reach as many as K₇',
-                     [f"{n(r['familles'][fam]['n_ge_K7'])} of {n(r['familles'][fam]['n'])} (P = {r['familles'][fam]['P']:.3f})"
+                     [f"{n(r['familles'][fam]['n_ge_K7'])} of {n(r['familles'][fam]['n'])} ({share(r['familles'][fam])})"
                       for r in runs]))
-    rows.append(('global p-value, outcome', [f"{r['P_global']:.3f}, {OUTCOME[r['verdict']]}" for r in runs]))
+    rows.append(('preregistered outcome', [OUTCOME[r['verdict']] for r in runs]))
     unr = lambda r: ', '.join(sym[k] for k in sorted(k for k, v in r['frequence_atteinte_par_cible'].items() if v == 0))  # noqa: E731
     rows.append(('targets reached by nobody', [unr(r) for r in runs]))
     out = ['| Quantity | first run (2026-10-17, dataset of v3.5, one-sided windows) | revision 1 (2026-10-24, refreshed dataset, '
@@ -153,14 +160,14 @@ def main_claims(new, old, close):
     assert len(sep) == 1, sep                            # la prose parle d'UNE cible qui départage
     assert old["familles"]["F-BETTI"]["n_ge_K7"] == old["familles"]["F-BETTI"]["n"]   # « every alternative Betti pair »
     return [f"K₇ reaches {new['K7']['S_cover']} of the 33 targets",
-            f"**{n(fb['n_ge_K7'])} of the {n(fb['n'])} alternative Betti pairs reach as many** (P = {fb['P']:.2f},",
-            f"**{n(fv['n_ge_K7'])} of the {n(fv['n'])} invented vocabularies reach as many** (P = {fv['P']:.2f})",
+            f"**{n(fb['n_ge_K7'])} of the {n(fb['n'])} alternative Betti pairs reach as many** ({100 * fb['n_ge_K7'] / fb['n']:.0f}%);",
+            f"**{n(fv['n_ge_K7'])} of the {n(fv['n'])} invented vocabularies reach as many** ({100 * fv['n_ge_K7'] / fv['n']:.0f}%)",
             f"No competitor reaches more than {max(fb['max_S_cover'], fv['max_S_cover'])}.",
             f"its description cost ({new['K7']['S_cost']:.1f} bits)",
             f"({blo:.1f} to {bhi:.1f} bits for the Betti pairs, {vlo:.1f} to {vhi:.1f} for the vocabularies)",
             f"{n(at_most_cost(close, 'F-BETTI'))} of the Betti pairs and {n(at_most_cost(close, 'F-VOCAB'))} of the "
             f"vocabularies cost at most as much",
-            f"the larger of the two family p-values, {new['P_global']:.2f}, against a threshold of 0.01",
+            "half of the invented vocabularies do as well",
             f"had found K₇ at {old['K7']['S_cover']} of 33 and every alternative Betti pair at as many",
             f"A control with no constant of K₇ reaches {new['temoin_sans_constantes']['S_cover']} of the 33",
             "two targets reached by no vocabulary at this budget are α⁻¹ and m_μ/m_e",

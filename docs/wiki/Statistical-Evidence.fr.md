@@ -16,14 +16,14 @@ Un cadre qui retrouve 33 valeurs mesurées par des formes closes, avec un vocabu
 | | |
 |---|---|
 | **Question** | K₇ reste-t-il exceptionnel quand chaque concurrent cherche ses propres formules, dans la même grammaire, avec le même budget et la même liberté d'attribution et d'unité ? |
-| **Préenregistré** | le 2026-10-17, avant tout passage, avec deux issues seulement : une valeur P globale calibrée, ou le retrait de la valeur P du texte |
+| **Préenregistré** | le 2026-10-17, avant tout passage complet (un pilote de neuf vocabulaires, déclaré dans la préinscription, avait tourné d'abord), avec deux issues seulement : une valeur p globale calibrée, ou aucune valeur p dans le texte |
 | **K₇** | atteint 31 des 33 cibles |
-| **Paires de Betti alternatives** | 1 085 sur 4 159 en atteignent autant (P = 0,26) ; aucune n'en atteint plus |
-| **Vocabulaires inventés** | 1 015 sur 2 000 en atteignent autant (P = 0,51) ; aucun n'en atteint plus |
+| **Paires de Betti alternatives** | 1 085 sur 4 159 en atteignent autant (26 %) ; aucune n'en atteint plus |
+| **Vocabulaires inventés** | 1 015 sur 2 000 en atteignent autant (51 %) ; aucun n'en atteint plus |
 | **Contrôle sans constante de K₇** | atteint 30 des 33 avec les seules feuilles universelles de la grammaire |
-| **Verdict** | valeur p globale de 0,51 pour un seuil de 0,01 : l'effet look-elsewhere n'est pas surmonté, et la valeur P est retirée du texte |
+| **Issue** | le seuil préenregistré n'est pas atteint : l'effet look-elsewhere n'est pas surmonté, et aucune valeur p n'est rapportée ; les proportions ci-dessus sont descriptives |
 
-La valeur 0,51 n'est pas la probabilité que K₇ soit juste ou faux, et ces comptes ne sont pas une réfutation physique. Ils disent que le meilleur score discrimine peu dans ce protocole : 30 cibles sont atteintes par tous, deux par personne, et une seule sépare les concurrents.
+Ces proportions ne sont pas la probabilité que K₇ soit juste ou faux, et ces comptes ne sont pas une réfutation physique. Ils disent que le meilleur score discrimine peu dans ce protocole : 30 cibles sont atteintes par tous, deux par personne, et une seule sépare les concurrents.
 
 ## 2. Le test
 
@@ -32,20 +32,20 @@ La valeur 0,51 n'est pas la probabilité que K₇ soit juste ou faux, et ces com
 - **Concordance.** Une cible est atteinte si une expression du vocabulaire tombe à moins de 2σ de la valeur mesurée, de part et d'autre, les incertitudes asymétriques restant asymétriques. Pour m_s/m_d, que le PDG donne comme un intervalle, la fenêtre est cet intervalle. Pour δ_CP, la phase peut être lue en degrés, radians, grades ou tours.
 - **Attribution.** La recherche est aveugle : chaque cible reçoit l'expression concordante la moins coûteuse. La liberté d'attribuer les formules aux observables est donnée à tous, K₇ compris, qui est noté par la même recherche sur son propre vocabulaire et non par ses formules publiées.
 - **Concurrents.** Toute paire de Betti avec b₂ dans [1, 40] et b₃ dans [17, 120] autre que (21, 77), avec H*, κ_T⁻¹ et det(g) re-dérivés et les autres constantes gardées aux valeurs de K₇ ; et 2 000 vocabulaires de 19 entiers tirés par le générateur gelé du Sieve.
-- **Règle de verdict.** Pour une famille de taille N où n concurrents atteignent au moins autant de cibles que K₇, P = (1 + n)/(1 + N), les égalités comptant contre K₇. La valeur p globale est la plus grande des deux valeurs, et l'effet n'est surmonté que si elle vaut au plus 0,01.
+- **Règle de verdict.** Pour une famille de taille N où n concurrents atteignent au moins autant de cibles que K₇, la statistique de décision est (1 + n)/(1 + N), les égalités comptant contre K₇. La plus grande des deux valeurs est comparée à 0,01 : à ce seuil ou en dessous, une valeur p globale calibrée est rapportée ; au-dessus, aucune ne l'est, et les proportions sont données à titre descriptif. Les valeurs de la statistique sont dans le fichier de résultat déposé.
 
 L'alphabet testé pour K₇ est celui des dix-neuf entiers du registre Monte Carlo de la version 3.5, et non littéralement les vingt constantes de l'article principal (§3.1) : dim E₇ = 133 et α_sum = 13 en sont absents, κ_T⁻¹ = 61 y figure. Un test sur le registre littéral serait un autre calcul.
 
 ## 3. Résultat
 
-| Famille | N | atteignent ≥ 31/33 (autant que K₇) | P = (1 + n)/(1 + N) | meilleure couverture | coût de description, étendue (bits) | coût ≤ K₇ |
+| Famille | N | atteignent ≥ 31/33 (autant que K₇) | part | meilleure couverture | coût de description, étendue (bits) | coût ≤ K₇ |
 |---|---:|---:|---:|---:|---:|---:|
 | K₇ (21, 77), recherche aveugle sur son propre vocabulaire | 1 | 31/33 | s.o. | 31 | 408,1 | s.o. |
-| paires de Betti alternatives (dérivations publiées) | 4 159 | 1 085 | 0,261 | 31 | 389,2 à 418,7 | 1 038 |
-| vocabulaires inventés (générateur de [M]) | 2 000 | 1 015 | 0,508 | 31 | 385,0 à 430,4 | 628 |
-| paires de Betti alternatives, dérivations variantes (hors règle) | 4 160 | 723 | 0,174 | 31 | 391,3 à 417,6 | 548 |
+| paires de Betti alternatives (dérivations publiées) | 4 159 | 1 085 | 26,1% | 31 | 389,2 à 418,7 | 1 038 |
+| vocabulaires inventés (générateur de [M]) | 2 000 | 1 015 | 50,8% | 31 | 385,0 à 430,4 | 628 |
+| paires de Betti alternatives, dérivations variantes (hors règle) | 4 160 | 723 | 17,4% | 31 | 391,3 à 417,6 | 548 |
 
-La valeur p globale, la plus grande des deux premières lignes, vaut **0,508** ; seuil 0,01. La ligne de la variante n'entre pas dans le verdict. K₇ n'est pas moins coûteux non plus : son coût de description se situe dans l'étendue des deux familles.
+Le seuil n'est atteint dans aucune des deux premières lignes. La ligne de la variante n'entre pas dans le verdict. K₇ n'est pas moins coûteux non plus : son coût de description se situe dans l'étendue des deux familles.
 
 Par cible :
 
@@ -108,10 +108,10 @@ Le préenregistrement a été amendé trois fois, chaque fois après une revue e
 |---|---|---|---|---|
 | couverture de K₇ | 32/33 | 31/33 | 31/33 | 31/33 |
 | coût de description de K₇ (bits) | 395,6 | 409,2 | 408,1 | 408,1 |
-| paires de Betti alternatives (dérivations publiées) : atteignent autant que K₇ | 4 159 sur 4 159 (P = 1,000) | 1 085 sur 4 159 (P = 0,261) | 1 085 sur 4 159 (P = 0,261) | 1 085 sur 4 159 (P = 0,261) |
-| vocabulaires inventés (générateur de [M]) : atteignent autant que K₇ | 1 635 sur 2 000 (P = 0,818) | 1 015 sur 2 000 (P = 0,508) | 1 015 sur 2 000 (P = 0,508) | 1 015 sur 2 000 (P = 0,508) |
-| paires de Betti alternatives, dérivations variantes (hors règle) : atteignent autant que K₇ | 4 160 sur 4 160 (P = 1,000) | 723 sur 4 160 (P = 0,174) | 723 sur 4 160 (P = 0,174) | 723 sur 4 160 (P = 0,174) |
-| valeur p globale, issue | 1,000, effet look-elsewhere non surmonté | 0,508, effet look-elsewhere non surmonté | 0,508, effet look-elsewhere non surmonté | 0,508, effet look-elsewhere non surmonté |
+| paires de Betti alternatives (dérivations publiées) : atteignent autant que K₇ | 4 159 sur 4 159 (100,0%) | 1 085 sur 4 159 (26,1%) | 1 085 sur 4 159 (26,1%) | 1 085 sur 4 159 (26,1%) |
+| vocabulaires inventés (générateur de [M]) : atteignent autant que K₇ | 1 635 sur 2 000 (81,8%) | 1 015 sur 2 000 (50,8%) | 1 015 sur 2 000 (50,8%) | 1 015 sur 2 000 (50,8%) |
+| paires de Betti alternatives, dérivations variantes (hors règle) : atteignent autant que K₇ | 4 160 sur 4 160 (100,0%) | 723 sur 4 160 (17,4%) | 723 sur 4 160 (17,4%) | 723 sur 4 160 (17,4%) |
+| issue préenregistrée | effet look-elsewhere non surmonté | effet look-elsewhere non surmonté | effet look-elsewhere non surmonté | effet look-elsewhere non surmonté |
 | cibles atteintes par personne | α⁻¹(0) | α⁻¹(0), m_μ/m_e | α⁻¹(0), m_μ/m_e | α⁻¹(0), m_μ/m_e |
 
 ## 6. Ce que disaient les versions précédentes de cette page

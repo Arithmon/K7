@@ -63,7 +63,7 @@ Non. Trois secteurs sont surdéterminés : quatre relations leptoniques portent 
 
 ### L'accord est-il statistiquement significatif ?
 
-Non. Dans un test look-elsewhere préenregistré, chaque concurrent cherche ses propres formules, dans la même grammaire et avec le même budget. K₇ atteint 31 des 33 cibles ; 1 085 paires de Betti alternatives sur 4 159 et 1 015 vocabulaires inventés sur 2 000 en atteignent autant, et aucun n'en atteint plus (valeur p globale de 0,51 pour un seuil de 0,01). Un contrôle sans aucune constante de K₇ en atteint 30. La proximité avec les valeurs mesurées n'est donc pas, à elle seule, un indice en faveur de K₇.
+Non. Dans un test look-elsewhere préenregistré, chaque concurrent cherche ses propres formules, dans la même grammaire et avec le même budget. K₇ atteint 31 des 33 cibles ; 1 085 paires de Betti alternatives sur 4 159 et 1 015 vocabulaires inventés sur 2 000 en atteignent autant, et aucun n'en atteint plus (le seuil préenregistré n'est pas atteint, donc aucune valeur p n'est rapportée). Un contrôle sans aucune constante de K₇ en atteint 30. La proximité avec les valeurs mesurées n'est donc pas, à elle seule, un indice en faveur de K₇.
 
 Les probabilités de coïncidence, valeurs P et facteurs de Bayes des versions précédentes sont retirés : ils venaient de tests où les alternatives étaient notées avec les formules de K₇. Voir les [éléments statistiques](Statistical-Evidence.fr.html) ; le code et les résultats du test sont [publics](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/).
 

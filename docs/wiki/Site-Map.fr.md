@@ -20,8 +20,8 @@ Index complet de toutes les pages du wiki. Les pages avec une version française
 | Page | Description |
 |------|-------------|
 | [Pour les physiciens](For-Physicists.html) | Architecture E₈×E₈, compactification K₇, prédictions (en anglais) |
-| [Pour les géomètres](For-Geometers.html) | Pipeline computationnel : TCS, PINNs, méthodes spectrales (en anglais) |
-| [Pour les experts en formalisation](For-Formalization-Experts.html) | Formalisation Lean 4 : architecture, méthodologie, accès (en anglais) |
+| [Pour les géomètres](For-Geometers.html) | Ce qu'on sait de la géométrie de K₇, ce qui est exclu, ce qui reste ouvert (en anglais) |
+| [Pour les experts en formalisation](For-Formalization-Experts.html) | Formalisation Lean 4 : ce qu'elle établit et ce qu'elle n'établit pas (en anglais) |
 
 ## Articles
 | Page | Description |

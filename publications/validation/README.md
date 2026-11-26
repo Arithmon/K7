@@ -3,11 +3,12 @@
 | Directory | What it holds | Status |
 |---|---|---|
 | [`v3.6/`](v3.6/) | The preregistered look-elsewhere test of version 3.6: producer, dataset, preregistration, results, hashes, and the command to rerun it | current |
+| [`v3.6_generators/`](v3.6_generators/) | The scripts that generate the tables of the version 3.6 paper, its LaTeX sources and the generated pages of this repository, with their result files and hashes | current |
 | [`legacy/v3.3/`](legacy/v3.3/) | The validation pipeline of version 3.3 (fixed-formula configuration search, null models, Bayesian comparison) | archived, not maintained |
 
 ## Version 3.6
 
-In the test of version 3.6, each competitor searches for its own formulas in the same grammar, at the same budget, with the same freedom of assignment and of unit. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more. P_global = 0.51 against a preregistered threshold of 0.01: the look-elsewhere effect is not overcome. See [`v3.6/README.md`](v3.6/README.md), the main paper (§7) and supplement S4.
+In the test of version 3.6, each competitor searches for its own formulas in the same grammar, at the same budget, with the same freedom of assignment and of unit. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more. The preregistered threshold is not met: the look-elsewhere effect is not overcome and, as preregistered, no p-value is reported. See [`v3.6/README.md`](v3.6/README.md), the main paper (§7) and supplement S4.
 
 ## Earlier versions
 

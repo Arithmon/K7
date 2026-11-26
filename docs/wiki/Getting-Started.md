@@ -16,7 +16,7 @@ Start with **[K₇ for Everyone](GIFT-for-Everyone.html)**: a complete guide usi
 Read **[For Physicists](For-Physicists.html)** for a concise technical overview: the E₈×E₈ and G₂ inputs, the dictionary, and the 33 relations with their status. Then dive into the **[Main Paper](Paper-Main-Framework.html)**.
 
 ### I'm a geometer / mathematician
-Read **[For Geometers](For-Geometers.html)** for the computational pipeline: TCS construction, PINN metrics, spectral extraction, and Lean 4 bridges. The **[Explicit G₂ Metric](Paper-Explicit-G2-Metric.html)** paper is your entry point.
+Read **[For Geometers](For-Geometers.html)** for what is known about the geometry: the excluded constructions, the certified local metric, and what an existence proof would need. The **[Explicit G₂ Metric](Paper-Explicit-G2-Metric.html)** paper is your entry point.
 
 ### I'm interested in formal verification
 Read **[For Formalization Experts](For-Formalization-Experts.html)** for the Lean 4 architecture: 156 .lean files, 14 axioms (4 imported from the literature, 10 interval certificates), no `sorry`; the 33 relations are collected in `relations_v36_certified`. See **[Lean Formalization](Lean-Formalization.html)** for the full picture.

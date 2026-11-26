@@ -55,7 +55,7 @@ Data: PDG 2026, NuFIT 6.1 (normal ordering, with atmospheric data), Planck 2018 
 
 **They are not 33 independent tests.** Three sectors are overdetermined, and in each the relations disagree with one another as exact equalities: four lepton relations on two mass ratios, three CKM relations on two Wolfenstein parameters (sin θ₂₃ = Aλ², 2.6% apart), seven density relations on two independent densities. The relations of a sector cannot all hold together, though some subsets can; none is selected after the fact.
 
-**Closeness is not distinctive.** In a preregistered look-elsewhere test, each competitor searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (global p-value 0.51, S4). A control with no K₇ constant reaches 30 of the 33: the score has little discriminating power. The coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
+**Closeness is not distinctive.** In a preregistered look-elsewhere test, each competitor searches for its own formulas in the same grammar and budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (the preregistered threshold is not met, so no p-value is reported; S4). A control with no K₇ constant reaches 30 of the 33: the score has little discriminating power. The coincidence probabilities of earlier versions (10⁻³⁴⁶, 10⁻¹³³, P < 5 × 10⁻⁶) are withdrawn.
 
 ---
 
@@ -114,10 +114,10 @@ Read with the [erratum](publications/ERRATUM_v3.5.md) (sections 1–11).
 
 | Paper | Description | DOI |
 |-------|-------------|-----|
-| [A: Certified G₂ Structure (PDF)](publications/papers/pdf/g2_certified_neck.pdf) | Newton–Kantorovich certificate for a nearby torsion-free metric on a seam region; it does not construct a compact K₇ | [10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350) |
-| [B: Spectral Geometry (PDF)](publications/papers/pdf/g2_spectral.pdf) | Laplacian spectrum and harmonic forms of the approximate seam metric | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
-| [C: Newton-Kantorovich on K3 (PDF)](publications/papers/pdf/K3_NK_Certificate.pdf) | NK diagnostics on a Donaldson K3 metric (CI(2,2,2)) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
-| [D: Donaldson Analytic Note (PDF)](publications/papers/pdf/donaldson_analytic.pdf) | Explicit closed-form G₂ ansatz on a K3-coassociative neck with 5-layer Wirtinger certificate | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
+| [A: Certified G₂ Structure (PDF)](publications/papers/pdf/g2_certified_neck.pdf) | Newton–Kantorovich certificate for a nearby torsion-free metric on a seam region; it does not construct a compact K₇ | [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) |
+| [B: Spectral Geometry (PDF)](publications/papers/pdf/g2_spectral.pdf) | Laplacian spectrum and harmonic forms of the approximate seam metric | [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) |
+| [C: Newton-Kantorovich on K3 (PDF)](publications/papers/pdf/K3_NK_Certificate.pdf) | NK diagnostics on a Donaldson K3 metric (CI(2,2,2)) | [10.5281/zenodo.19708915](https://doi.org/10.5281/zenodo.19708915) |
+| [D: Donaldson Analytic Note (PDF)](publications/papers/pdf/donaldson_analytic.pdf) | Explicit closed-form G₂ ansatz on a K3-coassociative neck with 5-layer Wirtinger certificate | [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) |
 | [E: Rank-1 Branched Adiabatic (PDF)](publications/papers/pdf/rank_one_branched_adiabatic.pdf) | Conditional analytic framework for the neck; the datum-level instantiation at D₀ is not realisable as posed ([erratum](publications/ERRATUM_v3.5.md), section 2) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
 
 ---
@@ -182,10 +182,10 @@ records what a neighbouring work claims and where it differs, in both directions
 | Zenodo (framework v3.4 archive) | [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101) |
 | Zenodo (framework v3.3 archive) | [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071) |
 | Zenodo (Paper E, rank-1 branched adiabatic) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
-| Zenodo (Paper A, certified G₂) | [10.5281/zenodo.19892350](https://doi.org/10.5281/zenodo.19892350) |
-| Zenodo (Paper B, spectral) | [10.5281/zenodo.19893371](https://doi.org/10.5281/zenodo.19893371) |
-| Zenodo (Paper C, K3 NK) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
-| Zenodo (Paper D, Donaldson analytic) | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
+| Zenodo (Paper A, certified G₂) | [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) |
+| Zenodo (Paper B, spectral) | [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367) |
+| Zenodo (Paper C, K3 NK) | [10.5281/zenodo.19708915](https://doi.org/10.5281/zenodo.19708915) |
+| Zenodo (Paper D, Donaldson analytic) | [10.5281/zenodo.20039065](https://doi.org/10.5281/zenodo.20039065) |
 | ResearchGate | [Author page](https://www.researchgate.net/profile/Brieuc-De-La-Fourniere) |
 | PhilPeople | [Author page](https://philpeople.org/profiles/brieuc-de-la-fourniere) |
 

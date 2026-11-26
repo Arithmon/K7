@@ -17,7 +17,7 @@ What the vocabulary-freedom test cannot price is where the vocabulary comes from
 
 ### S4.2.1 Question and design
 
-The test asks: **does K₇ remain exceptional when each competitor searches for its own formulas, in the same grammar, at the same budget, with the same freedom of assignment and of unit?** A null in which the alternatives are scored with K₇'s own formulas cannot answer it, since those formulas were chosen for (21, 77) (S4.4). The test was preregistered on 2026-10-17, before any run, with two outcomes only: a calibrated global p-value, or no p-value in the text.
+The test asks: **does K₇ remain exceptional when each competitor searches for its own formulas, in the same grammar, at the same budget, with the same freedom of assignment and of unit?** A null in which the alternatives are scored with K₇'s own formulas cannot answer it, since those formulas were chosen for (21, 77) (S4.4). The test was preregistered on 2026-10-17, before any full run, with two outcomes only: a calibrated global p-value, or no p-value in the text. A pilot of nine vocabularies had run before the preregistration was committed; the preregistration declares it and what it showed (the coverage score saturates), so that the reading could not be chosen afterwards.
 
 - **Targets.** The 33 relations of the dataset (S3), with their measured values and uncertainties.
 - **Grammar.** The frozen Sieve engine [M]: the leaves of its transcendental grammar (1 to 9, π, e, φ, γ, ln 2, ζ(3), ζ(5), ζ(7), ζ(9), ζ(11)) plus the 19 integer constants of the competitor's register, so that every competitor has 38 leaves (a constant alphabet size, which keeps a larger vocabulary from winning by size alone); the operations + − × / ^, square root, inverse, square and logarithm, with the engine's guards; **at most five nodes** per expression.
@@ -37,14 +37,14 @@ The preregistration has three amendments, each written before the run it governs
 Both checks pass: the first reproduces the 28 rows of the earlier scan with no disagreement, and the second check finds 28 of K₇'s 33 published values among its own expressions of at most five nodes, every one of them within its window being reached. A further diagnostic (24 of the 33 published formulas lie within their windows: the 23 within 2σ of main §4, and m_s/m_d inside its PDG range) is not a statistic, since these formulas were chosen for (21, 77).
 
 <!-- BEGIN S4-LEE-FAMILIES -->
-| Family | N | reach ≥ 31/33 (as many as K₇) | P = (1 + n)/(1 + N) | best coverage | description cost, range (bits) | cost ≤ K₇ |
+| Family | N | reach ≥ 31/33 (as many as K₇) | share | best coverage | description cost, range (bits) | cost ≤ K₇ |
 |---|---:|---:|---:|---:|---:|---:|
 | K₇ (21, 77), blind search on its own vocabulary | 1 | 31/33 | n/a | 31 | 408.1 | n/a |
-| alternative Betti pairs (published derivations) | 4 159 | 1 085 | 0.261 | 31 | 389.2 to 418.7 | 1 038 |
-| invented vocabularies (generator of [M]) | 2 000 | 1 015 | 0.508 | 31 | 385.0 to 430.4 | 628 |
-| alternative Betti pairs, variant derivations (outside the rule) | 4 160 | 723 | 0.174 | 31 | 391.3 to 417.6 | 548 |
+| alternative Betti pairs (published derivations) | 4 159 | 1 085 | 26.1% | 31 | 389.2 to 418.7 | 1 038 |
+| invented vocabularies (generator of [M]) | 2 000 | 1 015 | 50.8% | 31 | 385.0 to 430.4 | 628 |
+| alternative Betti pairs, variant derivations (outside the rule) | 4 160 | 723 | 17.4% | 31 | 391.3 to 417.6 | 548 |
 
-Global p-value (the larger of the first two rows): **0.508**; threshold 0.01; preregistered outcome: **look-elsewhere effect not overcome**. The variant row does not enter the verdict. "Cost ≤ K₇" counts floating-point ties as ties (|ΔS_cost| ≤ 1e-09 bit; every tie is at the same (length, operations) pair as K₇).
+Preregistered outcome: **look-elsewhere effect not overcome** (the decision statistic of the less favourable of the first two rows is above the threshold 0.01), so no p-value is reported; the shares are descriptive, and the exact values are in the result file (S4.5). The variant row does not enter the verdict. "Cost ≤ K₇" counts floating-point ties as ties (|ΔS_cost| ≤ 1e-09 bit; every tie is at the same (length, operations) pair as K₇).
 <!-- END S4-LEE-FAMILIES -->
 
 Per target, the blind search of K₇ and the frequency with which each family reaches the target:
@@ -96,10 +96,10 @@ Most targets are reached by every competitor: at five nodes and 2σ, the grammar
 |---|---|---|---|---|
 | K₇ coverage | 32/33 | 31/33 | 31/33 | 31/33 |
 | K₇ description cost (bits) | 395.6 | 409.2 | 408.1 | 408.1 |
-| alternative Betti pairs (published derivations): reach as many as K₇ | 4 159 of 4 159 (P = 1.000) | 1 085 of 4 159 (P = 0.261) | 1 085 of 4 159 (P = 0.261) | 1 085 of 4 159 (P = 0.261) |
-| invented vocabularies (generator of [M]): reach as many as K₇ | 1 635 of 2 000 (P = 0.818) | 1 015 of 2 000 (P = 0.508) | 1 015 of 2 000 (P = 0.508) | 1 015 of 2 000 (P = 0.508) |
-| alternative Betti pairs, variant derivations (outside the rule): reach as many as K₇ | 4 160 of 4 160 (P = 1.000) | 723 of 4 160 (P = 0.174) | 723 of 4 160 (P = 0.174) | 723 of 4 160 (P = 0.174) |
-| global p-value, outcome | 1.000, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome | 0.508, look-elsewhere effect not overcome |
+| alternative Betti pairs (published derivations): reach as many as K₇ | 4 159 of 4 159 (100.0%) | 1 085 of 4 159 (26.1%) | 1 085 of 4 159 (26.1%) | 1 085 of 4 159 (26.1%) |
+| invented vocabularies (generator of [M]): reach as many as K₇ | 1 635 of 2 000 (81.8%) | 1 015 of 2 000 (50.8%) | 1 015 of 2 000 (50.8%) | 1 015 of 2 000 (50.8%) |
+| alternative Betti pairs, variant derivations (outside the rule): reach as many as K₇ | 4 160 of 4 160 (100.0%) | 723 of 4 160 (17.4%) | 723 of 4 160 (17.4%) | 723 of 4 160 (17.4%) |
+| preregistered outcome | look-elsewhere effect not overcome | look-elsewhere effect not overcome | look-elsewhere effect not overcome | look-elsewhere effect not overcome |
 | targets reached by nobody | α⁻¹(0) | α⁻¹(0), m_μ/m_e | α⁻¹(0), m_μ/m_e | α⁻¹(0), m_μ/m_e |
 <!-- END S4-LEE-HISTORY -->
 
@@ -107,7 +107,7 @@ The first run, on the dataset of version 3.5 with one-sided windows, had every a
 
 ### S4.2.4 What the test does not cover
 
-The counts are descriptive. They record an absence of discrimination in these families and windows, not a measurement of statistical power. The global p-value of 0.51 is not a probability that K₇ is right or wrong: with 30 targets reached by everyone, two by no one and one that separates, the coverage score has little discriminating power in this protocol. The test does not vary the gauge group or the holonomy beyond the Betti numbers (there is no public rule for re-deriving the register in that case), does not consider other forms of an observable (an angle against its sine squared) except for the unit of δ_CP, and does not look beyond five nodes, where several of K₇'s formulas lie. These freedoms remain in the residue register of main §3.3 (the formula assignments, R4; the grammar and vocabulary, R5; the unit of δ_CP, R6). Nor does the test use the literal register of main §3.1 (S4.2.1).
+The counts are descriptive. They record an absence of discrimination in these families and windows, not a measurement of statistical power. The proportions are not a probability that K₇ is right or wrong: with 30 targets reached by everyone, two by no one and one that separates, the coverage score has little discriminating power in this protocol. The test does not vary the gauge group or the holonomy beyond the Betti numbers (there is no public rule for re-deriving the register in that case), does not consider other forms of an observable (an angle against its sine squared) except for the unit of δ_CP, and does not look beyond five nodes, where several of K₇'s formulas lie. These freedoms remain in the residue register of main §3.3 (the formula assignments, R4; the grammar and vocabulary, R5; the unit of δ_CP, R6). Nor does the test use the literal register of main §3.1 (S4.2.1).
 
 ## S4.3 Descriptive diagnostics of version 3.5 (archived)
 

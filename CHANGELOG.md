@@ -1,9 +1,28 @@
 # Changelog
 
-All notable changes to the GIFT framework are documented in this file.
+All notable changes to the K₇ framework (formerly GIFT) are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [3.6.0] - November 2026
+
+### The K₇ Dictionary: a declared correspondence, with its residue and a decision rule
+
+Version 3.6 of the framework paper, "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology". It integrates the erratum to v3.5 recorded below and restates the framework as a correspondence chosen by the author, not a derivation. The section-by-section record is in [`publications/papers/markdown/k7_framework_3_6_CHANGELOG.md`](publications/papers/markdown/k7_framework_3_6_CHANGELOG.md).
+
+#### Changed
+- The 33 relations are compared with the most recent data (PDG 2026, NuFIT 6.1, Planck 2018) in five classes: 23 within 2σ, 2 in tension, 6 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile. No single score over the 33 is reported.
+- The other 62 entries of the dataset are conditional extractions and diagnostics, and are not counted as predictions.
+- A dictionary (twenty structural constants and a grammar), a residue register (R1 to R12) of everything set by choice, and a decision rule with no repair clause.
+
+#### Added
+- A preregistered look-elsewhere test in which every competitor searches for its own formulas. K₇ reaches 31 of the 33 targets and is not distinctive on closeness; as preregistered, no p-value is reported. Code, inputs and results: [`publications/validation/v3.6/`](publications/validation/v3.6/).
+- The generators of the tables and of the public pages: [`publications/validation/v3.6_generators/`](publications/validation/v3.6_generators/).
+- Supplement S4 rewritten around that test.
+
+#### Withdrawn
+- The coincidence probabilities and uniqueness statements of versions 3.3 to 3.5, the reading of the relations as derived from the geometry, a primary lepton relation, the Joyce–Karigiannis route to (21, 77), and the statement that twisted connected sums with non-orthogonal gluing remain open (every ordinary twisted connected sum is excluded by parity).
 
 ## Erratum to v3.5, §9–§11 (2026-10-22)
 
@@ -74,6 +93,14 @@ Two corrections to the v3.5 release are recorded in
 The v3.5 deposit stands as published and the sources under
 `publications/papers/` are **left unregenerated**, so that the erratum can be
 read against them. Both corrections are to be integrated into **v3.6**.
+
+## [3.5.0] - 2026-07-10
+
+### The K₇ Framework
+
+- The framework formerly called GIFT is published as "The K₇ Framework" (Zenodo version record [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)); GIFT remains the name of its founding phase.
+- Supplement S4 added; conditional framing throughout.
+- Read together with its erratum, sections 1 to 11, recorded above and in [`publications/ERRATUM_v3.5.md`](publications/ERRATUM_v3.5.md).
 
 ## [3.4.0] - 2026-05-07
 

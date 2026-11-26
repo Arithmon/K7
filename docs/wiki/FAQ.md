@@ -63,7 +63,7 @@ No. Three sectors are overdetermined: four lepton relations bear on two mass rat
 
 ### Is the agreement statistically significant?
 
-No. In a preregistered look-elsewhere test, every competitor searches for its own formulas in the same grammar and with the same budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (global p-value 0.51 against a threshold of 0.01). A control with no K₇ constant reaches 30. Closeness to the measured values is therefore not, by itself, evidence for K₇.
+No. In a preregistered look-elsewhere test, every competitor searches for its own formulas in the same grammar and with the same budget. K₇ reaches 31 of the 33 targets; 1 085 of 4 159 alternative Betti pairs and 1 015 of 2 000 invented vocabularies reach as many, and none reaches more (the preregistered threshold is not met, so no p-value is reported). A control with no K₇ constant reaches 30. Closeness to the measured values is therefore not, by itself, evidence for K₇.
 
 The coincidence probabilities, P-values and Bayes factors of earlier versions are withdrawn: they came from tests in which the alternatives were scored with K₇'s own formulas. See [Statistical Evidence](Statistical-Evidence.html); the code and results of the test are [public](https://github.com/Arithmon/K7/blob/main/publications/validation/v3.6/).
 
