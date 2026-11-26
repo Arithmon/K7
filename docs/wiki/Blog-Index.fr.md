@@ -5,7 +5,7 @@ layout: default
 
 # Index du blog
 
-Trente textes, en trois pistes. Les originaux anglais paraissent sur
+Trente et un textes, en trois pistes. Les originaux anglais paraissent sur
 [arithmon.substack.com](https://arithmon.substack.com/) ; le lien du titre ouvre
 la traduction française hébergée dans ce wiki, et le lien 🇬🇧 la version originale.
 
@@ -45,6 +45,7 @@ pour avoir la thèse et sa date de mort sur une page.
 
 | Texte | Ce qu'il dit | Date |
 |-------|--------------|------|
+| [Ce qui reste](Blog-On-What-Remains.fr.html) · [🇬🇧](https://arithmon.substack.com/p/on-what-remains) | Sept thèses, un an après le premier texte : est premier ce qui reste, non ce qui est arrivé plus tôt | 26 novembre 2026 |
 | [Peut-on entendre la forme d'un ballon ?](Blog-Can-You-Hear-The-Shape-Of-A-Balloon.fr.html) · [🇬🇧](https://arithmon.substack.com/p/can-you-hear-the-shape-of-a-balloon) | Une formule de collège, ce qu'on peut en entendre, et la symétrie comme information économisée | 10 octobre 2026 |
 | [Le jumeau étoilé](Blog-The-Star-Twin.fr.html) · [🇬🇧](https://arithmon.substack.com/p/the-star-twin) | Deux polyèdres que l'arithmétique ne sait pas distinguer, et la seule question qui les sépare | 25 septembre 2026 |
 | [Les constantes de la Nature sont des comptes](Blog-Constants-Are-Counts.fr.html) · [🇬🇧](https://arithmon.substack.com/p/the-constants-of-nature-are-counts) | La thèse, la date de réfutation, et les trois questions ouvertes | 1er août 2026 |
