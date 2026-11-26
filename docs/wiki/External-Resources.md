@@ -42,3 +42,4 @@ layout: default
 | | |
 |---|---|
 | ResearchGate | [Brieuc de La Fournière](https://www.researchgate.net/profile/Brieuc-De-La-Fourniere) |
+| PhilPeople | [Brieuc de La Fournière](https://philpeople.org/profiles/brieuc-de-la-fourniere) |

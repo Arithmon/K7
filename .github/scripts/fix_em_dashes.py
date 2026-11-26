@@ -46,7 +46,11 @@ def find_markdown_files(repo_root: Path) -> list[Path]:
     ]
     # docs/openwave-candidate/ is a frozen candidate dossier (merged in #287,
     # 2026-09-17) kept verbatim as recorded; it is excluded rather than rewritten.
-    excluded = [repo_root / 'docs' / 'openwave-candidate']
+    # publications/validation/v3.6/canonical/ is the deposit of the preregistered
+    # look-elsewhere test: its files are listed with their sha256 in the README
+    # of that directory and are kept byte for byte.
+    excluded = [repo_root / 'docs' / 'openwave-candidate',
+                repo_root / 'publications' / 'validation' / 'v3.6' / 'canonical']
     files = []
     for d in dirs:
         if d.exists():

@@ -187,6 +187,7 @@ records what a neighbouring work claims and where it differs, in both directions
 | Zenodo (Paper C, K3 NK) | [10.5281/zenodo.19708916](https://doi.org/10.5281/zenodo.19708916) |
 | Zenodo (Paper D, Donaldson analytic) | [10.5281/zenodo.20039066](https://doi.org/10.5281/zenodo.20039066) |
 | ResearchGate | [Author page](https://www.researchgate.net/profile/Brieuc-De-La-Fourniere) |
+| PhilPeople | [Author page](https://philpeople.org/profiles/brieuc-de-la-fourniere) |
 
 ---
 
