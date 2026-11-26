@@ -91,7 +91,7 @@ Four relations bear on two independent mass ratios, and they are mutually incomp
 | ID | Relation | Arithmetic | Choices declared | Status (main §4.1) |
 |----|----------|-----------|------------------|---|
 | A12 | sin²θ₁₂ (PMNS) | (1 + N_gen)/α_sum = **4/13** = 0.307692 | additive 1 | integer; pull −0.2σ |
-| A13 | sin²θ₂₃ (PMNS) | (D_bulk − Weyl)/D_bulk = **6/11** = 0.545455 | octant (main §4.3) | integer; **tension** (octant; inside the NuFIT 3σ range, main §4.3); pull +4.4σ, not Gaussian (main §4.3) |
+| A13 | sin²θ₂₃ (PMNS) | (D_bulk − Weyl)/D_bulk = **6/11** = 0.545455 | octant (main §4.3) | integer; **non-Gaussian profile** (octant; inside the NuFIT 3σ range, main §4.3); pull +4.4σ, not Gaussian (main §4.3) |
 | A14 | sin²θ₁₃ (PMNS) | D_bulk/dim(E₈×E₈) = **11/496** = 0.022177 | n/a | integer; pull −0.5σ |
 | A15 | δ_CP | dim K₇ · dim G₂ + H* = 98 + 99 = **197**, read as the phase 2π · 197/360 | **unit** (R6) | **unit assignment** (R6); pull −0.4σ |
 

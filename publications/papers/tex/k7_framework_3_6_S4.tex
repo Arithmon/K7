@@ -26,7 +26,7 @@
 % at build time via \allowbreak) still need extra stretch to avoid overfulls.
 \emergencystretch=3em
 \fancyhead[L]{The $K_7$ Dictionary v3.6: Supplement S4}
-\hypersetup{pdftitle={The K7 Dictionary v3.6 Supplement S4: Sieve and Look-Elsewhere Diagnostics}}
+\hypersetup{pdftitle={The K7 Dictionary v3.6 Supplement S4: Sieve and Look-Elsewhere Diagnostics},pdfauthor={Brieuc de La Fournière}}
 
 \graphicspath{{../../../figures/}}
 
@@ -34,13 +34,17 @@
 \LARGE\textbf{Supplement S4: Sieve and Look-Elsewhere Diagnostics}\\[0.3em]
 \large The Look-Elsewhere Null and Descriptive Diagnostics%
 }
-\author{Brieuc de La Fourni\`ere \\ \textit{Independent researcher, Beaune, France}}
-\date{November 2026 \quad\textbar\quad v3.6}
+\author{}
+\date{}
 
 \begin{document}
 
 \maketitle
 \noindent\rule{\textwidth}{0.2pt}
+
+\noindent\textbf{Author}: Brieuc de La Fourni\`ere \quad | \quad Independent researcher, Beaune, France
+
+\noindent\textbf{Date}: November 2026 \quad v3.6 \quad | \quad DOI (all versions): \href{https://doi.org/10.5281/zenodo.16891489}{10.5281/zenodo.16891489}
 
 \thispagestyle{fancy}
 
@@ -48,7 +52,7 @@
 
 \section{S4.1 The Sieve scorecard}\label{s4.1-the-sieve-scorecard}
 
-The Sieve {[}M{]} is a public protocol of four null tests with a frozen observable list and grammar {[}S-frozen{]}. The isolation test (N1) asks whether a relation is isolated in the fixed vocabulary; the vocabulary-freedom test (N2) prices the freedom to have chosen the vocabulary, by comparing with invented vocabularies of the same size; the coefficient and target shuffles (N3, N4) permute coefficients and targets. Its published scorecard for the K₇ relations {[}M, §4.3{]} reads:
+The Sieve {[}M{]} is a public protocol of four null tests with a frozen observable list and grammar {[}S-frozen{]}. The isolation test asks whether a relation is isolated in the fixed vocabulary; the vocabulary-freedom test prices the freedom to have chosen the vocabulary, by comparing with invented vocabularies of the same size; the coefficient and target shuffles permute coefficients and targets. Its published scorecard for the K₇ relations {[}M, §4.3{]} reads:
 
 \begin{itemize}
 \tightlist
@@ -85,13 +89,13 @@ The test asks: \textbf{does K₇ remain exceptional when each competitor searche
 \item
   \textbf{K₇'s register as tested.} The nineteen integers 2, 3, 5, 7, 8, 11, 14, 21, 27, 32, 52, 56, 61, 65, 77, 78, 99, 168, 248, plus φ: the register of the version 3.5 Monte Carlo (\texttt{algebraic\_\allowbreak{}montecarlo.\allowbreak{}py}), not literally the twenty constants of main §3.1. Relative to §3.1, dim E₇ = 133 and α\textsubscript{sum} = 13 are absent, and κ\textsubscript{T}⁻¹ = 61 is present. At a fixed budget the difference matters (13 costs two leaves, 8 + 5); a test on the literal register of §3.1 is a separate computation, not done here.
 \item
-  \textbf{Competitors.} The Betti-pair family (\texttt{F-\allowbreak{}BETTI}): every pair b₂ ∈ {[}1, 40{]}, b₃ ∈ {[}17, 120{]} other than (21, 77), 4 159 pairs. Only H*, κ\textsubscript{T}⁻¹, det\textsubscript{den} and det\textsubscript{num} are re-derived, by the published definitions (main App. B): H* = b₂ + b₃ + 1, κ\textsubscript{T}⁻¹ = b₃ − dim(G₂) − p₂, det(g) = p₂ + 1/(b₂ + dim(G₂) − N\textsubscript{gen}). Every other constant is held at K₇'s value, N\textsubscript{gen} = 3 included, although main §3.1 writes N\textsubscript{gen} = b₂/dim K₇: the family is conditional on that choice. The invented-vocabulary family (\texttt{F-\allowbreak{}VOCAB}): 2 000 vocabularies of 19 integers drawn by the Sieve's frozen generator (without replacement in 3 to 248, seed 20261017), plus φ.
+  \textbf{Competitors.} The Betti-pair family: every pair b₂ ∈ {[}1, 40{]}, b₃ ∈ {[}17, 120{]} other than (21, 77), 4 159 pairs. Only H*, κ\textsubscript{T}⁻¹, det\textsubscript{den} and det\textsubscript{num} are re-derived, by the published definitions (main App. B): H* = b₂ + b₃ + 1, κ\textsubscript{T}⁻¹ = b₃ − dim(G₂) − p₂, det(g) = p₂ + 1/(b₂ + dim(G₂) − N\textsubscript{gen}). Every other constant is held at K₇'s value, N\textsubscript{gen} = 3 included, although main §3.1 writes N\textsubscript{gen} = b₂/dim K₇: the family is conditional on that choice. The invented-vocabulary family: 2 000 vocabularies of 19 integers drawn by the Sieve's frozen generator (without replacement in 3 to 248, seed 20261017), plus φ.
 \item
-  \textbf{Decision rule.} For each family F of size N, P\textsubscript{F} = (1 + n)/(1 + N), where n is the number of competitors whose coverage score is at least that of K₇ (ties count against K₇). The global p-value (\texttt{P\_\allowbreak{}global}) is the larger of the two family values: K₇ must beat both reference classes. The look-elsewhere effect is overcome if the global p-value is at most 0.01; otherwise the preregistered outcome is that the look-elsewhere effect is not overcome and no p-value is reported (\texttt{LEE-\allowbreak{}RETRAIT} in the tables). Neither the description cost nor the variant below can change the outcome.
+  \textbf{Decision rule.} For each family F of size N, P\textsubscript{F} = (1 + n)/(1 + N), where n is the number of competitors whose coverage score is at least that of K₇ (ties count against K₇). The global p-value is the larger of the two family values: K₇ must beat both reference classes. The look-elsewhere effect is overcome if the global p-value is at most 0.01; otherwise the preregistered outcome is that the look-elsewhere effect is not overcome and no p-value is reported. Neither the description cost nor the variant below can change the outcome.
 \item
   \textbf{Checks.} The first check (G1) replays the engine on the (21, 77) row of an earlier scan of Betti pairs, target by target, to 10⁻⁹. The second (G2) computes for each target whether K₇'s published value is in the set of its own expressions of at most five nodes, and requires that every such value within its window be reached by the blind search. If either fails, no result is read.
 \item
-  \textbf{Variant, outside the decision rule.} κ\textsubscript{T}⁻¹ and det(g) have two expressions: the published one above, and a second one (κ\textsubscript{T}⁻¹ = b₃ − b₂ + Weyl, det(g) = Weyl·(N\textsubscript{gen} + rank(E₈) + p₂)/2\textsuperscript{Weyl}) that agrees with it on the line b₂ = 21 and differs elsewhere. Which one is used off that line is itself a freedom of the dictionary (main §3.3, R2 and R3); the variant family (\texttt{F-\allowbreak{}BETTI-\allowbreak{}FICHE}; 4 160 pairs, (21, 77) included) reports its effect.
+  \textbf{Variant, outside the decision rule.} κ\textsubscript{T}⁻¹ and det(g) have two expressions: the published one above, and a second one (κ\textsubscript{T}⁻¹ = b₃ − b₂ + Weyl, det(g) = Weyl·(N\textsubscript{gen} + rank(E₈) + p₂)/2\textsuperscript{Weyl}) that agrees with it on the line b₂ = 21 and differs elsewhere. Which one is used off that line is itself a freedom of the dictionary (main §3.3, R2 and R3); the variant family (4 160 pairs, (21, 77) included) reports its effect.
 \end{itemize}
 
 The preregistration has three amendments, each written before the run it governs. The first (2026-10-22) follows an external review: the dataset is refreshed (S3) with all uncertainties brought to 1σ, the windows are two-sided (the first run used only the side of each measurement that faces K₇'s value, which biased the search of the competitors towards that value), and the PDG range is the window of m\textsubscript{s}/m\textsubscript{d}.~The second (2026-11-03), after a further external review, takes the windows of the six Planck ratios from the official chains (S3; the window of Ω\textsubscript{c}/Ω\textsubscript{m} narrows by a factor of six), and adds the control with no K₇ constant. The third (2026-11-11) takes the window of m\textsubscript{W}/m\textsubscript{Z} from the published masses, as for every other mass ratio (S3.3). None of them changes the question, the families, the grammar, the budget, the seed, τ\textsubscript{z} or the decision rule.

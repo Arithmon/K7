@@ -67,7 +67,7 @@ Formulas, values and status. Data: PDG 2026, NuFIT 6.1, Planck 2018, CODATA 2022
 | A10 | m_b/m_t | 1/(2b₂) = 1/42 | 0.023810 | 0.024253(43) | −1.83% | −10.2σ | integer; **proximity** (in the scheme declared in R7) |
 | A11 | m_u/m_d | (1 + dim E₆)/\|PSL(2,7)\| = 79/168 | 0.470238 | 0.462(12) | +1.78% | +0.7σ | integer |
 | A12 | sin²θ₁₂ (PMNS) | (1 + N_gen)/α_sum = 4/13 | 0.307692 | 0.3088(+67/−66) | −0.36% | −0.2σ | integer |
-| A13 | sin²θ₂₃ (PMNS) | (D_bulk − Weyl)/D_bulk = 6/11 | 0.545455 | 0.470(+17/−14) | +16.05% | +4.4σ* | integer; **tension** (octant; inside the NuFIT 3σ range, §4.3) |
+| A13 | sin²θ₂₃ (PMNS) | (D_bulk − Weyl)/D_bulk = 6/11 | 0.545455 | 0.470(+17/−14) | +16.05% | +4.4σ* | integer; **non-Gaussian profile** (octant; inside the NuFIT 3σ range, §4.3) |
 | A14 | sin²θ₁₃ (PMNS) | D_bulk/dim(E₈×E₈) = 11/496 | 0.022177 | 0.02248(+55/−59) | −1.35% | −0.5σ | integer |
 | A15 | δ_CP | dim K₇ · dim G₂ + H* = 197 | 197 → phase 2π·197/360 | 212 (+26/−36)° | −7.08% | −0.4σ | **unit assignment** (R6) |
 | A16 | sin θ₁₂ (CKM) | fund(E₇)/dim E₈ = 56/248 | 0.225806 | 0.22517(68) | +0.28% | +0.9σ | integer; approximate (R12) |
@@ -107,7 +107,7 @@ The classes, the overdetermined sectors and the decision rule are on the [Valida
 | A10 | m_b/m_t | 0.024253(43) | PDG 2026 | −10.2σ | m_b at 90% CL converted to 1σ | integer; **proximity** (in the scheme declared in R7) |
 | A11 | m_u/m_d | 0.462(12) | PDG 2026 | +0.7σ | MS-bar at 2 GeV | integer |
 | A12 | sin²θ₁₂ (PMNS) | 0.3088(+67/−66) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.2σ | n/a | integer |
-| A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.584, contains 6/11 | integer; **tension** (octant; inside the NuFIT 3σ range, main §4.3) |
+| A13 | sin²θ₂₃ (PMNS) | 0.470(+17/−14) | NuFIT 6.1 (IC24+SK-atm, NO) | +4.4σ* | 3σ range 41.27°–49.86°, i.e. sin² 0.435–0.584, contains 6/11 | integer; **non-Gaussian profile** (octant; inside the NuFIT 3σ range, main §4.3) |
 | A14 | sin²θ₁₃ (PMNS) | 0.02248(+55/−59) | NuFIT 6.1 (IC24+SK-atm, NO) | −0.5σ | n/a | integer |
 | A15 | δ_CP | 212 (+26/−36)° | NuFIT 6.1 (IC24+SK-atm, NO) | −0.4σ | degrees | **unit assignment** (R6) |
 | A16 | sin θ₁₂ (CKM) | 0.22517(68) | PDG 2026 | +0.9σ | PDG CKM review: sin θ₁₂ = λ (not squared) | integer; approximate (R12) |

@@ -2,6 +2,11 @@
 
 ## v3.6 (November 2026)
 
+**Batch 15 (2026-11-26): pre-release consistency pass. No number changes.**
+- **sin²θ₂₃ is labelled by the class it is counted in.** The status column of the table of §4.1, and of S2 and S3, reads "non-Gaussian profile" for sin²θ₂₃ instead of "tension"; the breakdown of §4.2 already counted it apart (23/2/6/1/1). The status vocabulary reserves "tension" for 2 < |pull| ≤ 3.
+- **S4.** The remaining internal labels of tests, families and verdicts leave the prose of S4.1 and S4.5.
+- **PDFs.** The concept DOI of the series is printed in the title block of the five documents; the author's name carries its accent in the PDF metadata; the supplements carry the same author and date block as the main paper, and the subtitle of S1 is no longer printed twice on its first page.
+
 **Batch 14 (2026-11-11): m_W/m_Z by the mass-ratio rule; supplements in the present tense; plain vocabulary.**
 - **A number changes.** m_W/m_Z is computed from the published masses, as every other mass ratio: 80.3625(77)/91.1879(20) = 0.881285(87), correlations neglected, in place of the ratio line of the PDG summary, 0.88136(15). The published value 37/42 moves from −2.7σ to −3.8σ and from "tension" to "proximity". The classes are now 23 within 2σ, 2 tensions (m_τ/m_e, Ω_c/Ω_m), 6 proximities, 1 in range, 1 non-Gaussian. Main §4, S2, S3 and the public pages are regenerated.
 - **Dataset.** `observables.json` carries version 3.6; the field `n_exact` is removed; two conditional entries are set to the value of their formula (B01 = 2.160247, B04 = (14 − π)³ = 1280.26).
