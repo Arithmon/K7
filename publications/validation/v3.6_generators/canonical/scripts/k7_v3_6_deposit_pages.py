@@ -57,7 +57,7 @@ TITLE = "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and
 DOCS = [  # (clé, nom de fichier K7 sans extension, titre, source md)
     ("main", "k7_framework_3_6_main", TITLE, "physics_main.md"),
     ("S1", "k7_framework_3_6_S1_foundations",
-     "Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and K₇ Construction",
+     "Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and the Topological Status of K₇",
      "supplement_foundations.md"),
     ("S2", "k7_framework_3_6_S2_derivations",
      "Supplement S2: The 33 Relations. Arithmetic, Dictionary Choices and Status", "supplement_derivations.md"),
@@ -473,7 +473,7 @@ In a preregistered test, every competing Betti pair and every invented vocabular
 def paper_s1(f, vdoi):
     return """# Paper: S1, Mathematical Foundations
 
-**Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and K₇ Construction** (The K₇ Framework, v3.6)
+**Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and the Topological Status of K₇** (The K₇ Framework, v3.6)
 
 *Brieuc de La Fournière (2026)*
 

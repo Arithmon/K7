@@ -5,7 +5,7 @@ layout: default
 
 # Paper: S1, Mathematical Foundations
 
-**Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and K₇ Construction** (The K₇ Framework, v3.6)
+**Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and the Topological Status of K₇** (The K₇ Framework, v3.6)
 
 *Brieuc de La Fournière (2026)*
 
@@ -64,7 +64,7 @@ From main §3.1; the *status* column separates Lie data, posited inputs and comb
 - 5. Exceptional Algebras from Octonions
 - 6. Definition and Properties
 - 7. Topological Invariants
-- 8. Twisted Connected Sum Framework
+- 8. Twisted Connected Sums and Other Construction Routes
 - 9. Cohomological Structure (Conditional on Existence)
 - 10. Structural Metric Invariants
 - 11. Reference Form and Formalization

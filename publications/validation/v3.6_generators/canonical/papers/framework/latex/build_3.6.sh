@@ -342,7 +342,7 @@ declare -A SUPP_TITLE=(
     [S4]='Sieve and Look-Elsewhere Diagnostics'
 )
 declare -A SUPP_SUB=(
-    [S1]='$E_8$ Exceptional Lie Algebra, $G_2$ Holonomy Manifolds, and $K_7$ Construction'
+    [S1]='$E_8$ Exceptional Lie Algebra, $G_2$ Holonomy Manifolds, and the Topological Status of $K_7$'
     [S2]='Arithmetic, Dictionary Choices and Status'
     [S3]='33 Relations Compared with Measurement; 62 Conditional and Diagnostic Entries'
     [S4]='The Look-Elsewhere Null and Descriptive Diagnostics'

@@ -1,6 +1,6 @@
 # Supplement S1: Mathematical Foundations
 
-## E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and K₇ Construction
+## E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and the Topological Status of K₇
 
 *Mathematical background for the K₇ framework: the E₈ and G₂ data the dictionary uses, the topological status of K₇, and the algebraic reference form.*
 
@@ -404,9 +404,9 @@ $$\varepsilon^2 = (7 + \sqrt{50})^2 = 99 + 14\sqrt{50}$$
 
 # Part III: Construction Routes and Topological Status of K₇
 
-## 8. Twisted Connected Sum Framework
+## 8. Twisted Connected Sums and Other Construction Routes
 
-### 8.1 TCS Construction
+### 8.1 The Twisted Connected Sum Construction
 
 The twisted connected sum (TCS) construction is the main known method for constructing compact G₂ manifolds from asymptotically cylindrical building blocks. It is recalled here as background: for (b₂, b₃) = (21, 77), every ordinary twisted connected sum is excluded (§8.3).
 

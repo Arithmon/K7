@@ -55,7 +55,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
 
 ```bibtex
 @misc{k7_s1_v36,
-  title        = {Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and K₇ Construction},
+  title        = {Supplement S1: Mathematical Foundations. E₈ Exceptional Lie Algebra, G₂ Holonomy Manifolds, and the Topological Status of K₇},
   author       = {de La Fournière, Brieuc},
   year         = {2026},
   month        = {November},
