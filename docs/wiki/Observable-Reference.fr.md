@@ -200,6 +200,8 @@ Les classes, les secteurs surdéterminés et la règle de décision sont dans le
 | D21 | IV | `b3/b3_S3S4` | b3(K7) = 77 vs b3(S3xS4) = 1 | 77 | n/a | from [42]; topological count |
 | D22 | IV | M_res | tau_0 = v_EW, M_res = v_EW^2 / M_Pl | 4969.2 | n/a | from [42]; conditional on the scale identification τ₀ = v_EW |
 
+Quatre libellés du jeu de données sont hérités des versions antérieures, et sont gardés pour que le jeu de données reste identique, octet pour octet, au fichier lu par le test look-elsewhere (S4). D01 et D02 portent le libellé de formule « TCS K₇ » : la version 3.6 pose (21, 77) et ne suppose aucune construction en somme connexe tordue, et toute somme connexe tordue ordinaire est exclue (main §2.3). D06 écrit le paramètre de contraction β×η×γ ; le certificat publié l'écrit h = βηω, et 8.95 × 10⁻⁹ en est la valeur analytique. D07 est la boule de contraction d'un calcul de certification antérieur (`g9_certification_results.json`) ; le certificat publié donne δg/g ≤ 1.35 × 10⁻⁷, avec la valeur numérique h = 1.43 × 10⁻⁹ (papier compagnon A, proposition 1.1 et §5.6).
+
 ## 5. Renvois Lean
 
 L'arithmétique de chacune des 33 relations est vérifiée par machine en Lean 4 (Arithmon/K7-Lean, agrégat `relations_v36_certified`). La formalisation vérifie que chaque forme close s'évalue au nombre annoncé ; elle n'établit ni le contenu physique d'une relation ni le choix des attributions.

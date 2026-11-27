@@ -20,10 +20,7 @@ Supporting documentation for The K₇ Framework v3.6 (formerly GIFT).
 
 ## Figures
 
-Static visualizations are available in the [`figures/`](figures/) directory:
-- E₈ root system projections
-- K₇ TCS construction diagrams
-- Lean blueprints (interactive)
+The [`figures/`](figures/) directory holds the Fano plane figure used by K₇ for Everyone. The interactive blueprints of earlier versions are in [`figures/archive/`](figures/archive/); the Lean blueprint is published by [K7-Lean](https://arithmon.github.io/K7-Lean/blueprint/).
 
 ## Main Documentation
 

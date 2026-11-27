@@ -402,13 +402,13 @@ $$\varepsilon^2 = (7 + \sqrt{50})^2 = 99 + 14\sqrt{50}$$
 
 ---
 
-# Part III: K₇ Manifold Construction
+# Part III: Construction Routes and Topological Status of K₇
 
 ## 8. Twisted Connected Sum Framework
 
 ### 8.1 TCS Construction
 
-The twisted connected sum (TCS) construction provides the primary method for constructing compact G₂ manifolds from asymptotically cylindrical building blocks.
+The twisted connected sum (TCS) construction is the main known method for constructing compact G₂ manifolds from asymptotically cylindrical building blocks. It is recalled here as background: for (b₂, b₃) = (21, 77), every ordinary twisted connected sum is excluded (§8.3).
 
 Compact G₂ manifolds can be built by gluing two asymptotically cylindrical (ACyl) G₂ manifolds along their cylindrical ends, with the topology controlled by a twist diffeomorphism φ.
 

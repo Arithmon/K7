@@ -1,8 +1,10 @@
-# The K₇ Framework: Publications (v3.5 published, v3.6 in preparation)
+# The K₇ Framework: Publications
 
 [![Lean 4 Verified](https://img.shields.io/badge/Lean_4-Verified-blue)](https://github.com/Arithmon/K7-Lean)
 
 The K₇ Framework (formerly GIFT): a declared correspondence between the invariants of a posited G₂-holonomy geometry, together with E₈×E₈, and dimensionless Standard-Model and cosmological parameters.
+
+Version 3.6 is in this repository and its Zenodo deposit is pending; until the deposit, the published version is 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)).
 
 ---
 
@@ -11,49 +13,51 @@ The K₇ Framework (formerly GIFT): a declared correspondence between the invari
 ```
 publications/
 ├── papers/
-│   ├── markdown/                    # Canonical sources (v3.6 and v3.5; v3.5 listed below)
-│   │   ├── k7_framework_3_5_main.md             # Main paper
-│   │   ├── k7_framework_3_5_S1_foundations.md   # E₈, G₂, K₇ foundations
-│   │   ├── k7_framework_3_5_S2_derivations.md   # Type I derivations
-│   │   ├── k7_framework_3_5_S3_observables.md   # Observable catalog
-│   │   ├── k7_framework_3_5_S4_sieve_diagnostics.md # Sieve diagnostics
-│   │   ├── g2_certified_neck.md         # Paper A: certified G₂
-│   │   └── g2_spectral.md               # Paper B: spectral
-│   ├── pdf/                         # Compiled PDFs (v3.6 files: k7_framework_3_6_*.pdf)
-│   │   ├── k7_framework_3_5_main.pdf              # Framework main (Zenodo 21296168)
-│   │   ├── k7_framework_3_5_S1_foundations.pdf    # Framework S1  (Zenodo 21296168)
-│   │   ├── k7_framework_3_5_S2_derivations.pdf    # Framework S2  (Zenodo 21296168)
-│   │   ├── k7_framework_3_5_S3_observables.pdf    # Framework S3  (Zenodo 21296168)
-│   │   ├── k7_framework_3_5_S4_sieve_diagnostics.pdf # Framework S4 (Zenodo 21296168)
-│   │   ├── g2_certified_neck.pdf        # Paper A (Zenodo 19892350)
-│   │   ├── g2_spectral.pdf              # Paper B (Zenodo 19893371)
-│   │   ├── K3_NK_Certificate.pdf        # Paper C (Zenodo 19708916)
-│   │   ├── donaldson_analytic.pdf       # Paper D (Zenodo 20039066)
-│   │   └── rank_one_branched_adiabatic.pdf # Paper E (Zenodo 21215956)
-│   ├── tex/                         # LaTeX sources (v3.6, v3.5)
+│   ├── markdown/                    # Canonical sources
+│   │   ├── k7_framework_3_6_main.md                 # Main paper (v3.6)
+│   │   ├── k7_framework_3_6_S1_foundations.md       # E₈, G₂, K₇ foundations
+│   │   ├── k7_framework_3_6_S2_derivations.md       # The 33 relations
+│   │   ├── k7_framework_3_6_S3_observables.md       # Observable dataset
+│   │   ├── k7_framework_3_6_S4_sieve_diagnostics.md # Look-elsewhere test
+│   │   ├── k7_framework_3_6_CHANGELOG.md            # Changes from v3.5
+│   │   ├── k7_framework_3_5_*.md                    # v3.5, unchanged
+│   │   ├── g2_certified_neck.md                     # Paper A
+│   │   └── g2_spectral.md                           # Paper B
+│   ├── pdf/                         # Compiled PDFs
+│   │   ├── k7_framework_3_6_*.pdf                   # Framework v3.6 (main, S1 to S4)
+│   │   ├── k7_framework_3_5_*.pdf                   # Framework v3.5 (main, S1 to S4)
+│   │   ├── g2_certified_neck.pdf                    # Paper A
+│   │   ├── g2_spectral.pdf                          # Paper B
+│   │   ├── K3_NK_Certificate.pdf                    # Paper C
+│   │   ├── donaldson_analytic.pdf                   # Paper D
+│   │   ├── rank_one_branched_adiabatic.pdf          # Paper E
+│   │   └── k7_one_page.pdf                          # One-page summary
+│   ├── tex/                         # LaTeX sources (v3.6, v3.5, companions)
 │   ├── figures/                     # Publication figures
-│   ├── notebooks/                   # Companion Jupyter notebooks
+│   ├── notebooks/                   # Companion Jupyter notebooks (papers A and B)
 │   ├── legacy/v3.3/                 # v3.3 framework PDFs + markdown + tex (archived)
 │   └── legacy/v3.4/                 # v3.4 framework PDFs + markdown + tex (archived)
 │
-├── outreach/                        # Substack mirror (essays archive)
+├── outreach/                        # Essay sources and the one-page summary
 │
 ├── references/
 │   ├── observables.csv              # Machine-readable data
+│   ├── GIFT_ATLAS.json
 │   ├── OBSERVABLE_REFERENCE.md
 │   ├── STATISTICAL_EVIDENCE.md
 │   └── Bibliography.md
 │
-└── validation/
-    ├── README.md
-    ├── v3.6/                        # Look-elsewhere test of v3.6 (code, data, results)
-    ├── v3.6_generators/             # Generators of the tables and of the generated pages
-    └── legacy/v3.3/                 # v3.3 validation pipeline (archived)
+├── validation/
+│   ├── v3.6/                        # Look-elsewhere test of v3.6 (code, data, results)
+│   ├── v3.6_generators/             # Generators of the tables and of the generated pages
+│   └── legacy/v3.3/                 # v3.3 validation pipeline (archived)
+│
+└── ERRATUM_v3.5.md                  # Erratum to version 3.5
 ```
 
 ---
 
-## Framework v3.6 (draft, branch `v3.6-draft`)
+## Framework v3.6 (Zenodo deposit pending)
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
@@ -64,13 +68,13 @@ publications/
 | S4: Look-elsewhere test | [k7_framework_3_6_S4_sieve_diagnostics.pdf](pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) (11 pp.) | [k7_framework_3_6_S4_sieve_diagnostics.md](markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
 | Changes from v3.5 | | [k7_framework_3_6_CHANGELOG.md](markdown/k7_framework_3_6_CHANGELOG.md) |
 
-LaTeX sources: [`tex/`](tex/) (`k7_framework_3_6_*.tex`, `gift_3.6_bib.tex`). These are the files prepared for the Zenodo deposit; until the deposit, the published version is 3.5.
-
-The v3.5 files below are unchanged, and are read together with the [erratum](../ERRATUM_v3.5.md).
+LaTeX sources: [`tex/`](tex/) (`k7_framework_3_6_*.tex`, `gift_3.6_bib.tex`). These are the files prepared for the Zenodo deposit; until the deposit, the published version is 3.5. Concept DOI (always the latest version): [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489).
 
 ---
 
-## Framework v3.5 (PDF + TeX + markdown, published Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
+## Framework v3.5 (published, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
+
+The v3.5 files are unchanged, and are read together with the [erratum](../ERRATUM_v3.5.md). Version 3.6 withdraws a number of their statements ([changes from v3.5](markdown/k7_framework_3_6_CHANGELOG.md)).
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
@@ -80,9 +84,9 @@ The v3.5 files below are unchanged, and are read together with the [erratum](../
 | S3: Observables | [k7_framework_3_5_S3_observables.pdf](pdf/k7_framework_3_5_S3_observables.pdf) | [k7_framework_3_5_S3_observables.md](markdown/k7_framework_3_5_S3_observables.md) |
 | S4: Sieve Diagnostics | [k7_framework_3_5_S4_sieve_diagnostics.pdf](pdf/k7_framework_3_5_S4_sieve_diagnostics.pdf) | [k7_framework_3_5_S4_sieve_diagnostics.md](markdown/k7_framework_3_5_S4_sieve_diagnostics.md) |
 
-> LaTeX sources: [`tex/`](tex/). Concept DOI (always latest version): [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489).
+## Companion Papers (Zenodo)
 
-## Companion Papers (peer-reviewable, Zenodo)
+Cited by their concept DOI, as in the paper's reference list.
 
 | Paper | Description | DOI |
 |-------|-------------|-----|
@@ -110,11 +114,11 @@ See [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) for the proofs.
 
 ## Legacy
 
-- `legacy/v3.3/`: v3.3 framework PDFs, markdown and tex (archived 2026-05-02)
+- `legacy/v3.3/`: v3.3 framework PDFs, markdown and tex (archived 2026-05-02, Zenodo [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071))
 - `legacy/v3.4/`: v3.4 framework PDFs, markdown and tex (archived 2026-07-14, Zenodo [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101))
 - `../validation/legacy/v3.3/`: v3.3 validation pipeline + Pareto formula selection
 
 ---
 
-**Version**: 3.5 (2026-07-10)
+**Version**: 3.6 (not yet deposited; published version 3.5, 2026-07-10)
 **Repository**: https://github.com/Arithmon/K7

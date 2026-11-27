@@ -3,95 +3,57 @@ title: "Paper Spectral Geometry"
 layout: default
 ---
 
-# Paper: Spectral Geometry
+# Paper B: Spectral Geometry of the Neck-Model Metric
 
-> **Status under version 3.6 of the framework paper.** This page summarises companion paper B as first published. Read it with the following: the spectral multiplicities reported below are built from decompositions that supplement S1 withdraws (§8.3, §9.3); they give no independent evidence for (b₂, b₃) = (21, 77), and the mass ratios read from the spectrum are not relations of the framework. The current statement is in [For Geometers](For-Geometers.html).
-
-**Spectral Geometry of an Explicit G₂ Metric on a Compact 7-Manifold**
+**Spectral Geometry of an Explicit G₂ Metric: Laplacian Spectrum and Harmonic Forms**
 
 *Brieuc de La Fournière (2026)*
-[Full text (markdown)](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/g2_spectral.md) | [Zenodo DOI: 10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367)
+
+[PDF](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/g2_spectral.pdf) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/g2_spectral.md) | [DOI: 10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367)
+
+> **Scope.** Every spectral result of this paper is a property of the explicit neck-model metric of [paper A](Paper-Explicit-G2-Metric.html), on K3 × T² × [0,1]. The paper states that their reading on a closed manifold is conditional on a compact G₂ manifold with (b₂, b₃) = (21, 77), and none is known. Version 3.6 of the framework paper adds that the multiplicities 21 and 77 found here are built from decompositions that supplement S1 withdraws (§8.3, §9.3): they give no independent evidence for the pair (main §2.3).
 
 ---
 
-## Abstract
+## What the paper does
 
-First explicit numerical computation of Kaluza-Klein spectrum on compact G₂ manifold. Adiabatic decomposition K₇ ≈ K3 × T² × I reduces 7D PDEs to 1D Sturm-Liouville ODEs. All Betti numbers confirmed spectrally: b₀=1, b₁=0, b₂=21, b₃=77. SD/ASD gap in K3 intersection matrix: 2210×.
+It computes the spectrum of the scalar Laplacian and of the Hodge Laplacians on the metric of paper A, and the harmonic forms that go with it.
 
----
-
-## Key Results
-
-### Scalar Spectrum
+## Reported figures
 
 | Quantity | Value |
 |----------|-------|
-| Zero mode λ₀ | 3.47×10⁻¹³ (machine zero) |
-| Spectral gap λ₁ | 0.1244 ± 0.0001 |
-| Weyl law | λₙ = 0.125n², α = 1.998 (exact: 2.0) |
+| Scalar spectral gap | λ₁ = 0.12461 ± 0.00016 (Richardson extrapolation across six grids) |
+| Analytical formula, written after the fact from the certified seam parameters | λ₁ = π²/(L² g_ss) = 6π²/475 ≈ 0.12467, within 0.05% |
+| Weyl exponent | α = 1.998 (adiabatic value: 2) |
+| Near-zero eigenvalues of Δ₂ | 21, with a gap ratio of 14,635 |
+| Near-zero eigenvalues of Δ₃ | 77 |
+| Intersection form of the 21 two-forms on the K3 fiber | signature (3, 18), a rank-21 restriction of the K3 lattice (3, 19) |
+| Self-dual to anti-self-dual eigenvalue gap | 2,210 |
+| Spectral democracy of paper A | checked numerically to 10⁻⁵ |
+| Kaluza–Klein tower | 22,671 levels, Poisson level-spacing statistics |
 
-### Betti Number Confirmation
+The counts 21 and 77 are multiplicities of the model, chosen to match the pair the framework posits; they are not a computation of the Betti numbers of a compact manifold.
 
-| Betti | Spectral | Gap ratio |
-|-------|----------|-----------|
-| b₀ = 1 | 1 zero mode |, |
-| b₁ = 0 | no zero 1-forms |, |
-| b₂ = 21 | 21 near-zero eigenvalues | 14,635× |
-| b₃ = 77 | 77 near-zero eigenvalues |, |
+## Sections
 
-### Mass Hierarchy (from SD/ASD gap)
+1. Introduction
+2. The Certified Metric (Summary)
+3. Laplacian Spectrum
+4. Harmonic Forms and Intersection Theory
+5. Spectral Democracy (Numerical Verification)
+6. Discussion
 
-| Ratio | Spectral | Exp. | Dev. |
-|-------|----------|------|------|
-| m₁/m₂ (τ/μ) | 16.5 | 16.82 | 1.9% |
-| m₁/m₃ (τ/e) | 3400 | 3477 | 2.2% |
-| SD/ASD gap | 2210× | (|) |
+Appendix A: convergence analysis. A companion notebook is in [`publications/papers/notebooks/`](https://github.com/Arithmon/K7/tree/main/publications/papers/notebooks).
 
-### Adiabatic Validation (5 tests)
+## How the framework paper uses it
 
-| Test | Result |
-|------|--------|
-| Fiber flatness | < 0.002% max s-variation |
-| Additivity error | 0.003–0.023% |
-| Weyl law exponent | α = 1.998 (exact: 2.0) |
-| T² isotropy | \|g^θθ − g^ψψ\| = 3×10⁻⁷ |
-| K3 roundness | spread < 0.1% |
-
-### KK Tower
-
-- 1744 distinct eigenvalues (λ < 20)
-- 4460 states with multiplicities
-- Three-scale hierarchy: neck, T², K3
-
----
-
-## Section Structure
-
-1. **Introduction**: Context, adiabatic ansatz validation
-2. **The Metric**: Chebyshev-Cholesky summary, certification
-3. **Scalar Laplacian**: Spectral gap, Weyl law, KK tower
-4. **Hodge Laplacian on 2-Forms**, b₂=21 confirmation, SD/ASD structure
-5. **Harmonic Forms & Betti Numbers**: K3 forms, K₇ assembly, b₃=77
-6. **1-Form Hodge Laplacian**: Spectral democracy to 10⁻⁴, b₁=0
-7. **Singular Limits**: ADE singularity model, spectral stability
-8. **Discussion**: G₂-MSSM, F-theory, string landscape
-9. **Conclusion**
-
----
-
-## Figures
-
-1. Metric profiles: neck transition and ACyl decay
-2. Scalar eigenvalue staircase (Weyl law)
-3. First 5 scalar eigenfunctions
-4. T² channel spectra (adiabatic additivity)
-5. 2-form spectrum with 14,635× gap
+The framework paper cites this analysis with the statement that it gives no independent evidence for (b₂, b₃) = (21, 77) (main §2.3). No mass ratio read from this spectrum is one of the 33 relations.
 
 ---
 
 ## Related
 
-- [Paper Explicit G2 Metric](Paper-Explicit-G2-Metric.html): The metric this paper analyzes
-- [Paper Main Framework](Paper-Main-Framework.html): Physics predictions from this geometry
-- [Paper S1 Foundations](Paper-S1-Foundations.html): TCS construction theory
-- [Observable Reference](Observable-Reference.html): Predictions catalog
+- [Paper Explicit G2 Metric](Paper-Explicit-G2-Metric.html): the metric this paper analyzes
+- [Paper S1 Foundations](Paper-S1-Foundations.html): what is and is not constructed
+- [For Geometers](For-Geometers.html)

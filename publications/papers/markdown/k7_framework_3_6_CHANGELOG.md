@@ -2,6 +2,15 @@
 
 ## v3.6 (November 2026)
 
+**Batch 20 (2026-11-27): corrections from the final independent review. No number of the 33 relations changes.**
+- **A figure quoted from [A] is corrected.** §2.3 gave the contraction ball of the certified local metric as δg/g ≤ 4.86 × 10⁻⁶, the value of an earlier certification run; the published [A] gives δg/g ≤ 1.35 × 10⁻⁷, stated with the numerical contraction parameter h = 1.43 × 10⁻⁹ (its Proposition 1.1), the analytical bound being h = 8.95 × 10⁻⁹; §2.3 now quotes the three figures together.
+- **§9.3 agrees with §2.3.** The certified metric of [A] is said to certify a neck region of twisted-connected-sum type, with no gluing available for (21, 77); the absence of the pair from Joyce's examples is a documentary observation, and for ordinary twisted connected sums the exclusion is an obstruction (parity).
+- **S1.** §8.1 says that the twisted connected sum is recalled as background and is excluded for (21, 77); Part III is titled "Construction Routes and Topological Status of K₇".
+- **S3.6.** A note under the table says that four dataset labels are inherited (D01 and D02, "TCS K₇"; D06, the notation of the contraction parameter; D07, the contraction ball of an earlier run) and kept so that the dataset stays identical to the file read by the look-elsewhere run.
+- **§3.1.** Of the thirteen constants that are not primitive, seven are combinations, five are Lie-theoretic data and one is N_gen; the text said all thirteen were derived from the seven.
+- **§4.1.** A sentence says that Dev. and Pull are computed from the unrounded values of the dataset.
+- **References.** [12] is cited for the noncompact case, not for the census of compact examples; [62] is cited by its arXiv number.
+
 **Batch 16 (2026-11-26): corrections from two independent reviews. No number of the 33 relations changes.**
 - **Twisted connected sums.** Every ordinary twisted connected sum has b₂ + b₃ odd [14], not only those with orthogonal gluing; with b₂ + b₃ = 98, the whole family is excluded by parity and only the extra-twisted connected sums of [14] remain open within it (main §2.3, S1 §8.3). Earlier text of 3.6 excluded the orthogonal case alone.
 - **Look-elsewhere test: the preregistered outcome is applied to the text.** The preregistration states that, if the threshold is not met, no p-value is reported and the two proportions are given descriptively. The main paper, S4 and the public pages now give the counts and the proportions (26% of the alternative Betti pairs, 51% of the invented vocabularies) and the outcome; the values of the decision statistic remain in the deposited result file. No count changes.

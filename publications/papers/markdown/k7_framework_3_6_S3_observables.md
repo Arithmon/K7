@@ -175,6 +175,8 @@ Generated from the dataset. "Reference value" is the measured value where one ex
 | D22 | IV | M_res | tau_0 = v_EW, M_res = v_EW^2 / M_Pl | 4969.2 | n/a | from [42]; conditional on the scale identification τ₀ = v_EW |
 <!-- END S3-TYPE-II-IV -->
 
+Four labels of the dataset are inherited from earlier versions, and are kept so that the dataset stays identical, byte for byte, to the file read by the look-elsewhere run (S4). D01 and D02 carry the formula label "TCS K₇": version 3.6 posits (21, 77) and assumes no twisted-connected-sum construction, and every ordinary one is excluded (main §2.3). D06 writes the contraction parameter as β×η×γ; the published certificate writes it h = βηω, and 8.95 × 10⁻⁹ is its analytical value. D07 is the contraction ball of an earlier certification run (`g9_certification_results.json`); the published certificate gives δg/g ≤ 1.35 × 10⁻⁷, with the numerical value h = 1.43 × 10⁻⁹ (main ref. [A], Proposition 1.1 and §5.6).
+
 No entry is ranked by its deviation. An agreement between a Type II number and a PDG mass quoted to two or three figures measures the rounding, and a mean deviation measures closeness, which main §7 shows is not distinctive.
 
 ---

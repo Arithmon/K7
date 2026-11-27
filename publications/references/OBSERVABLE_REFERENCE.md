@@ -193,6 +193,8 @@ The classes, the overdetermined sectors and the decision rule are on the [Valida
 | D21 | IV | `b3/b3_S3S4` | b3(K7) = 77 vs b3(S3xS4) = 1 | 77 | n/a | from [42]; topological count |
 | D22 | IV | M_res | tau_0 = v_EW, M_res = v_EW^2 / M_Pl | 4969.2 | n/a | from [42]; conditional on the scale identification τ₀ = v_EW |
 
+Four labels of the dataset are inherited from earlier versions, and are kept so that the dataset stays identical, byte for byte, to the file read by the look-elsewhere run (S4). D01 and D02 carry the formula label "TCS K₇": version 3.6 posits (21, 77) and assumes no twisted-connected-sum construction, and every ordinary one is excluded (main §2.3). D06 writes the contraction parameter as β×η×γ; the published certificate writes it h = βηω, and 8.95 × 10⁻⁹ is its analytical value. D07 is the contraction ball of an earlier certification run (`g9_certification_results.json`); the published certificate gives δg/g ≤ 1.35 × 10⁻⁷, with the numerical value h = 1.43 × 10⁻⁹ (companion paper A, Proposition 1.1 and §5.6).
+
 ## 5. Lean cross-references
 
 The arithmetic of each of the 33 relations is machine-checked in Lean 4 (Arithmon/K7-Lean, aggregate `relations_v36_certified`). The formalization verifies that each closed form evaluates to the stated number; it does not establish the physical content of a relation or the choice of assignments.

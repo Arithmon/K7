@@ -48,7 +48,7 @@ def facts(k7):
     names = [a for a, _ in axioms]
     assert len(axioms) == 14 and all(a in names for a in lit), names
     for claim in ("It rests on fourteen axioms", "every ordinary twisted connected sum is excluded by parity",
-                  "does not realise (21, 77)", "h = 8.95 × 10⁻⁹", "δg/g ≤ 4.86 × 10⁻⁶",
+                  "does not realise (21, 77)", "h = 8.95 × 10⁻⁹", "δg/g ≤ 1.35 × 10⁻⁷",
                   "is not realisable as posed", "depends only on the standard axioms",
                   "exact equality for 27", "No such construction is currently known"):
         assert claim in main, "le main a changé : " + claim
@@ -158,9 +158,9 @@ The 33 relations of the paper use only these integers and Lie-theoretic data, ne
 ## What is established, locally
 
 - **A certified local metric** (companion paper A, [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069)).
-  An explicit approximate G₂ metric on a gluing region, with 169 Chebyshev–Cholesky parameters, carries
-  a Newton–Kantorovich certificate (h = 8.95 × 10⁻⁹) for a nearby torsion-free metric within a ball
-  δg/g ≤ 4.86 × 10⁻⁶. The certificate is local: it does not construct a compact K₇, and the
+  An explicit approximate G₂ metric on a neck region, with 169 Chebyshev–Cholesky parameters, carries
+  a Newton–Kantorovich certificate (h = 8.95 × 10⁻⁹ by the analytical bound, 1.43 × 10⁻⁹ by the sharper
+  numerical one) for a nearby torsion-free metric within a ball δg/g ≤ 1.35 × 10⁻⁷. The certificate is local: it does not construct a compact K₇, and the
   smallness constant of Joyce's perturbation theorem depends on geometric bounds that are not
   established here (S1).
 - **Its numerical spectrum** (companion paper B, [10.5281/zenodo.18920367](https://doi.org/10.5281/zenodo.18920367)).

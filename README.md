@@ -25,7 +25,9 @@
 
 Part of the **[Arithmon program](https://github.com/arithmon)**.
 
-> **Branch `v3.6-draft`.** This README describes version 3.6 of the framework paper, in preparation. The published version is 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)), read together with its [erratum](publications/ERRATUM_v3.5.md).
+<!-- v36:banner -->
+> **Version 3.6.** This README describes version 3.6 of the framework paper, whose files are in this repository; its Zenodo deposit is pending. Until the deposit, the published version is 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)), read together with its [erratum](publications/ERRATUM_v3.5.md).
+<!-- /v36:banner -->
 
 **A declared correspondence, stated with its dictionary, its residue and a decision rule.**
 
@@ -35,7 +37,7 @@ The K₇ framework assigns 33 dimensionless Standard-Model and cosmological para
 |---|---|
 | **What is proposed** | 33 relations with no continuously adjustable parameter, written in twenty declared structural constants (main §3) |
 | **What is set, not derived** | the residue register R1–R12: the Betti pair, the imposed normalization det(g) = 65/32, κ_T⁻¹ = 61, the unit in which 197 is read as a CP phase, comparison scales and mass schemes, the formula assignments, and the choice among incompatible relations in three overdetermined sectors (main §3.3) |
-| **What is established** | the arithmetic identities stated for the relations, machine-checked in Lean 4 (an exact rational equality for 27 of the 33; see S3.7); a Newton–Kantorovich-certified seam metric ([A]) |
+| **What is established** | the arithmetic identities stated for the relations, machine-checked in Lean 4 (an exact equality for 27 of the 33, between rationals for 25 and between natural numbers for 2; see S3.7); a Newton–Kantorovich-certified seam metric ([A]) |
 | **What is open** | a compact torsion-free G₂ manifold with (21, 77): **no construction is currently known**, and the Joyce–Karigiannis route of v3.5 does not realize the pair ([erratum](publications/ERRATUM_v3.5.md) §9); a physical mechanism to the chiral Standard Model; the selection of (21, 77); an assignment rule |
 | **What would refute it** | the decision rule of main §11, written in advance with no repair clause |
 
@@ -83,7 +85,9 @@ That the relations are derived from the geometry; "no free parameters, no fittin
 
 ## Papers
 
-### Framework v3.6 (draft, this branch)
+<!-- v36:head36 -->
+### Framework v3.6 (Zenodo deposit pending)
+<!-- /v36:head36 -->
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
@@ -94,9 +98,13 @@ That the relations are derived from the geometry; "no free parameters, no fittin
 | S4: Look-elsewhere test and descriptive diagnostics | [PDF (11 pp.)](publications/papers/pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
 | Changes from v3.5 | | [Markdown](publications/papers/markdown/k7_framework_3_6_CHANGELOG.md) |
 
+<!-- v36:tex36 -->
 LaTeX sources: [`publications/papers/tex/`](publications/papers/tex/). These are the files prepared for the Zenodo deposit of version 3.6; until the deposit, the published version is 3.5.
+<!-- /v36:tex36 -->
 
+<!-- v36:head35 -->
 ### Framework v3.5 (published: PDF, TeX and markdown, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
+<!-- /v36:head35 -->
 
 Read with the [erratum](publications/ERRATUM_v3.5.md) (sections 1–11).
 
@@ -135,7 +143,7 @@ The compact K₇ torsion-free existence theorem is not a result of this reposito
 | [**Watch** (8 min)](https://www.youtube.com/watch?v=6DVck30Q6XM) | [**Read the blog**](https://arithmon.substack.com/) |
 | [**K₇ for Everyone**](docs/GIFT_FOR_EVERYONE.md) | [**FAQ**](docs/FAQ.md) |
 
-The guides under `docs/` were written for earlier versions and will be revised for v3.6; where they differ from the paper, the paper and the erratum hold.
+The guides under `docs/` follow version 3.6; where a guide and the paper differ, the paper holds.
 
 ---
 
@@ -175,6 +183,7 @@ records what a neighbouring work claims and where it differs, in both directions
 | YouTube | [@arithmon](https://youtube.com/@arithmon) |
 | X | [@ArithmonProgram](https://x.com/ArithmonProgram) |
 
+<!-- v36:archive -->
 | Archive | |
 |---------|---|
 | Zenodo (framework v3.5, current) | [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168) |
@@ -189,10 +198,13 @@ records what a neighbouring work claims and where it differs, in both directions
 | ResearchGate | [Author page](https://www.researchgate.net/profile/Brieuc-De-La-Fourniere) |
 | PhilPeople | [Author page](https://philpeople.org/profiles/brieuc-de-la-fourniere) |
 
+<!-- /v36:archive -->
+
 ---
 
 ## Citation
 
+<!-- v36:cite -->
 ```bibtex
 @software{k7_framework,
   title   = {The K₇ Framework (formerly GIFT)},
@@ -205,6 +217,7 @@ records what a neighbouring work claims and where it differs, in both directions
 ```
 
 Cite the published version (3.5) until 3.6 is deposited.
+<!-- /v36:cite -->
 
 See [CITATION.md](CITATION.md) for additional formats.
 

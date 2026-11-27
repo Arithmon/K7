@@ -1,6 +1,6 @@
 # K₇ Framework - Figures
 
-This directory contains interactive visualization assets.
+This directory holds the figures of the documentation pages. The interactive graphs of earlier versions are kept in `archive/`.
 
 ## Contents
 

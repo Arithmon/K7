@@ -4,7 +4,7 @@ Vulgarization writing about the K₇ framework, founding framework of the Arithm
 program. English originals are published on
 [arithmon.substack.com](https://arithmon.substack.com/).
 
-**The canonical index of all twenty-eight posts, with dates, tracks and French
+**The canonical index of all thirty-one posts, with dates, tracks and French
 translations, is the [Blog Index](../../docs/wiki/Blog-Index.md).** This directory
 is not that index: it holds only the English markdown sources that were drafted
 here, and it is deliberately partial.
@@ -26,4 +26,4 @@ here, and it is deliberately partial.
 
 | File | What it is |
 |------|-----------|
-| [k7_one_page.md](k7_one_page.md) | The one-page A4 summary: the thesis, the date it can die, and the three open questions. TeX and PDF in `../papers/`. |
+| [k7_one_page.md](k7_one_page.md) | The one-page A4 summary: the thesis, the date it can die, and the three open questions. TeX in `../papers/tex/`, PDF in `../papers/pdf/`. |

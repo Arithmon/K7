@@ -475,6 +475,8 @@ The classes, the overdetermined sectors and the decision rule are on the [Valida
 
 {type24}
 
+{inherited}
+
 ## 5. Lean cross-references
 
 The arithmetic of each of the 33 relations is machine-checked in Lean 4 (Arithmon/K7-Lean, aggregate `relations_v36_certified`). The formalization verifies that each closed form evaluates to the stated number; it does not establish the physical content of a relation or the choice of assignments.
@@ -524,6 +526,8 @@ Les classes, les secteurs surdéterminés et la règle de décision sont dans le
 
 {type24}
 
+{inherited_fr}
+
 ## 5. Renvois Lean
 
 L'arithmétique de chacune des 33 relations est vérifiée par machine en Lean 4 (Arithmon/K7-Lean, agrégat `relations_v36_certified`). La formalisation vérifie que chaque forme close s'évalue au nombre annoncé ; elle n'établit ni le contenu physique d'une relation ni le choix des attributions.
@@ -561,6 +565,19 @@ def main():
                type1=only_table(block(s3, "S3-TYPE-I")),
                type24=only_table(block(s3, "S3-TYPE-II-IV")),
                lean=only_table(block(s3, "S3-LEAN")))
+    # la note de S3.6 sur les quatre libellés hérités (D01, D02, D06, D07) : lue dans S3, jamais recopiée
+    inh = [l for l in s3.splitlines() if l.startswith("Four labels of the dataset are inherited")]
+    assert len(inh) == 1 and "TCS K₇" in inh[0] and "1.35 × 10⁻⁷" in inh[0] and "1.43 × 10⁻⁹" in inh[0], "S3.6 : note des libellés hérités absente"
+    obs["inherited"] = inh[0].replace("main ref. [A]", "companion paper A")
+    obs["inherited_fr"] = (
+        "Quatre libellés du jeu de données sont hérités des versions antérieures, et sont gardés pour que le jeu de "
+        "données reste identique, octet pour octet, au fichier lu par le test look-elsewhere (S4). D01 et D02 portent "
+        "le libellé de formule « TCS K₇ » : la version 3.6 pose (21, 77) et ne suppose aucune construction en somme "
+        "connexe tordue, et toute somme connexe tordue ordinaire est exclue (main §2.3). D06 écrit le paramètre de "
+        "contraction β×η×γ ; le certificat publié l'écrit h = βηω, et 8.95 × 10⁻⁹ en est la valeur analytique. D07 est "
+        "la boule de contraction d'un calcul de certification antérieur (`g9_certification_results.json`) ; le "
+        "certificat publié donne δg/g ≤ 1.35 × 10⁻⁷, avec la valeur numérique h = 1.43 × 10⁻⁹ (papier compagnon A, "
+        "proposition 1.1 et §5.6).")
 
     pages = {
         "docs/wiki/Statistical-Evidence.md": front("Statistical Evidence") + stat_en(en) + FOOT_EN,
