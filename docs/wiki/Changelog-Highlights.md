@@ -9,7 +9,7 @@ Abridged version history. The full record is in [`CHANGELOG.md`](https://github.
 
 ---
 
-## v3.6, in preparation
+## v3.6, 2026-11-27
 
 **The K₇ Dictionary: a declared correspondence, with its residue and a decision rule**
 
@@ -22,6 +22,7 @@ Abridged version history. The full record is in [`CHANGELOG.md`](https://github.
 - **Look-elsewhere**: a preregistered test in which every competitor searches for its own formulas. K₇ reaches 31 of the 33 targets and is not distinctive on closeness. Code and results are public in `publications/validation/v3.6/`.
 - **Withdrawn**: the coincidence probabilities and uniqueness statements of versions 3.3 to 3.5, the reading of the relations as derived from the geometry, a primary lepton relation, and the Joyce–Karigiannis route to (21, 77).
 - **Formal verification**: 156 Lean 4 files, 14 axioms (4 literature imports, 10 interval certificates), no sorry; the arithmetic of the 33 relations is collected in `relations_v36_certified` (commit 34ce857).
+- **Zenodo**: [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099).
 
 ## v3.5, 2026-07-10
 

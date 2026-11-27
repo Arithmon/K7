@@ -188,12 +188,13 @@ def citation(f, vdoi, date, wiki):
                 "  url          = {%spublications/papers/pdf/%s.pdf}" % (RAW, name),
                 "}", "```", ""]
     pre = "" if not wiki else "https://github.com/Arithmon/K7/tree/main/"
-    out += ["> Earlier versions: v3.5 (Zenodo %s, with its [erratum](%spublications/ERRATUM_v3.5.md)); "
+    out += ["> Earlier versions: v3.5 (Zenodo %s, with its [erratum](%spublications/ERRATUM_v3.5.md), files in "
+            "[`publications/papers/legacy/v3.5/`](%spublications/papers/legacy/v3.5/)); "
             "v3.4 (Zenodo %s, files in [`publications/papers/legacy/v3.4/`](%spublications/papers/legacy/v3.4/)); "
             "v3.3 (Zenodo %s, files in [`publications/papers/legacy/v3.3/`](%spublications/papers/legacy/v3.3/)). "
             "Version 3.6 withdraws a number of statements of these versions; see the "
             "[changes from v3.5](%spublications/papers/markdown/k7_framework_3_6_CHANGELOG.md)."
-            % (doi_link(f["doi35"]), GH, doi_link(f["doi34"]), pre, doi_link(f["doi33"]), pre, GH),
+            % (doi_link(f["doi35"]), GH, pre, doi_link(f["doi34"]), pre, doi_link(f["doi33"]), pre, GH),
             "", "---", "", "## Companion papers (Zenodo)", "",
             "Cited by their concept DOI, as in the paper's reference list.", ""]
     for letter, _k, bib, title, note in COMPANIONS:
@@ -305,12 +306,11 @@ TREE = """K7/
 │   │   │   ├── k7_framework_3_6_S3_observables.md       # S3: the dataset
 │   │   │   ├── k7_framework_3_6_S4_sieve_diagnostics.md # S4: look-elsewhere
 │   │   │   ├── k7_framework_3_6_CHANGELOG.md            # Changes from v3.5
-│   │   │   ├── k7_framework_3_5_*.md                    # v3.5 (read with the erratum)
 │   │   │   ├── g2_certified_neck.md                     # Paper A
 │   │   │   └── g2_spectral.md                           # Paper B
-│   │   ├── tex/                       # LaTeX sources (v3.6, v3.5, A, B)
-│   │   ├── pdf/                       # PDFs (v3.6, v3.5, companion papers A to E)
-│   │   ├── legacy/                    # v3.3 and v3.4 (archived)
+│   │   ├── tex/                       # LaTeX sources (v3.6, A, B)
+│   │   ├── pdf/                       # PDFs (v3.6, companion papers A to E)
+│   │   ├── legacy/                    # v3.3, v3.4 and v3.5 (archived; v3.5 is read with the erratum)
 │   │   ├── figures/
 │   │   └── notebooks/                 # Companion notebooks (A, B)
 │   ├── ERRATUM_v3.5.md                # Erratum to the published v3.5
@@ -343,7 +343,7 @@ TREE = """K7/
 └── LICENSE                            # MIT
 """
 TREE_PATHS = ["publications/papers/tex", "publications/papers/pdf", "publications/papers/legacy/v3.3",
-              "publications/papers/legacy/v3.4", "publications/papers/figures", "publications/papers/notebooks",
+              "publications/papers/legacy/v3.4", "publications/papers/legacy/v3.5", "publications/papers/figures", "publications/papers/notebooks",
               "publications/papers/markdown/g2_certified_neck.md", "publications/papers/markdown/g2_spectral.md",
               "publications/references/Bibliography.md", "publications/references/OBSERVABLE_REFERENCE.md",
               "publications/references/STATISTICAL_EVIDENCE.md", "publications/validation/legacy",
@@ -738,8 +738,8 @@ def readme_regions(f, vdoi, date):
                    else "### Framework v3.6 (Zenodo deposit pending)"),
         "tex36": (tex if dep else tex + " These are the files prepared for the Zenodo deposit of version 3.6; "
                   "until the deposit, the published version is 3.5."),
-        "head35": ("### Framework v3.5 (%s: PDF, TeX and markdown, Zenodo %s)"
-                   % ("previous version" if dep else "published", doi_link(f["doi35"]))),
+        "head35": ("### Framework v3.5 (%s: PDF, TeX and markdown in `publications/papers/legacy/v3.5/`, Zenodo %s)"
+                   % ("previous version, archived" if dep else "published", doi_link(f["doi35"]))),
         "archive": "\n".join(rows),
         "cite": "\n".join(cite),
     }
@@ -782,14 +782,14 @@ def papers_readme(f, vdoi, date, k7):
     tree_paths = (["markdown/%s.md" % n for n in names] + ["pdf/%s.pdf" % n for n in names]
                   + ["markdown/k7_framework_3_6_CHANGELOG.md", "markdown/g2_certified_neck.md",
                      "markdown/g2_spectral.md", "tex/gift_3.6_bib.tex", "tex/gift_preamble.tex", "figures",
-                     "notebooks", "legacy/v3.3", "legacy/v3.4", "pdf/k7_one_page.pdf", "tex/k7_one_page.tex",
+                     "notebooks", "legacy/v3.3", "legacy/v3.4", "legacy/v3.5/tex", "pdf/k7_one_page.pdf", "tex/k7_one_page.tex",
                      "../outreach", "../references/observables.csv", "../references/OBSERVABLE_REFERENCE.md",
                      "../references/STATISTICAL_EVIDENCE.md", "../references/Bibliography.md",
                      "../references/GIFT_ATLAS.json", "../validation/v3.6", "../validation/v3.6_generators",
                      "../validation/legacy/v3.3", "../ERRATUM_v3.5.md"]
                   + ["pdf/" + pdf for _t, pdf in COMP_PDF.values()]
-                  + ["markdown/k7_framework_3_5_%s.md" % n for _l, n in OLD35]
-                  + ["pdf/k7_framework_3_5_%s.pdf" % n for _l, n in OLD35])
+                  + ["legacy/v3.5/markdown/k7_framework_3_5_%s.md" % n for _l, n in OLD35]
+                  + ["legacy/v3.5/pdf/k7_framework_3_5_%s.pdf" % n for _l, n in OLD35])
     for p in tree_paths:
         assert os.path.exists(os.path.join(base, p)), "papers/README nomme un chemin absent de K7 : " + p
     status = ("Version 3.6 is the current version (Zenodo %s, %s)." % (doi_link(vdoi), date) if dep else
@@ -809,23 +809,22 @@ def papers_readme(f, vdoi, date, k7):
            "│   │   ├── k7_framework_3_6_S3_observables.md       # Observable dataset",
            "│   │   ├── k7_framework_3_6_S4_sieve_diagnostics.md # Look-elsewhere test",
            "│   │   ├── k7_framework_3_6_CHANGELOG.md            # Changes from v3.5",
-           "│   │   ├── k7_framework_3_5_*.md                    # v3.5, unchanged",
            "│   │   ├── g2_certified_neck.md                     # Paper A",
            "│   │   └── g2_spectral.md                           # Paper B",
            "│   ├── pdf/                         # Compiled PDFs",
            "│   │   ├── k7_framework_3_6_*.pdf                   # Framework v3.6 (main, S1 to S4)",
-           "│   │   ├── k7_framework_3_5_*.pdf                   # Framework v3.5 (main, S1 to S4)",
            "│   │   ├── g2_certified_neck.pdf                    # Paper A",
            "│   │   ├── g2_spectral.pdf                          # Paper B",
            "│   │   ├── K3_NK_Certificate.pdf                    # Paper C",
            "│   │   ├── donaldson_analytic.pdf                   # Paper D",
            "│   │   ├── rank_one_branched_adiabatic.pdf          # Paper E",
            "│   │   └── k7_one_page.pdf                          # One-page summary",
-           "│   ├── tex/                         # LaTeX sources (v3.6, v3.5, companions)",
+           "│   ├── tex/                         # LaTeX sources (v3.6, companions)",
            "│   ├── figures/                     # Publication figures",
            "│   ├── notebooks/                   # Companion Jupyter notebooks (papers A and B)",
            "│   ├── legacy/v3.3/                 # v3.3 framework PDFs + markdown + tex (archived)",
-           "│   └── legacy/v3.4/                 # v3.4 framework PDFs + markdown + tex (archived)",
+           "│   ├── legacy/v3.4/                 # v3.4 framework PDFs + markdown + tex (archived)",
+           "│   └── legacy/v3.5/                 # v3.5 framework PDFs + markdown + tex (archived)",
            "│", "├── outreach/                        # Essay sources and the one-page summary",
            "│", "├── references/",
            "│   ├── observables.csv              # Machine-readable data",
@@ -852,13 +851,14 @@ def papers_readme(f, vdoi, date, k7):
             "---", "",
             "## Framework v3.5 (%s, Zenodo %s)" % ("previous version" if dep else "published", doi_link(f["doi35"])),
             "",
-            "The v3.5 files are unchanged, and are read together with the [erratum](../ERRATUM_v3.5.md). "
+            "The v3.5 files are archived unchanged in [`legacy/v3.5/`](legacy/v3.5/), and are read together with the "
+            "[erratum](../ERRATUM_v3.5.md). "
             "Version 3.6 withdraws a number of their statements "
             "([changes from v3.5](markdown/k7_framework_3_6_CHANGELOG.md)).", "",
             "| Document | PDF | Markdown |", "|----------|-----|----------|"]
     for label, n in OLD35:
-        out.append("| %s | [k7_framework_3_5_%s.pdf](pdf/k7_framework_3_5_%s.pdf) | "
-                   "[k7_framework_3_5_%s.md](markdown/k7_framework_3_5_%s.md) |" % (label, n, n, n, n))
+        out.append("| %s | [k7_framework_3_5_%s.pdf](legacy/v3.5/pdf/k7_framework_3_5_%s.pdf) | "
+                   "[k7_framework_3_5_%s.md](legacy/v3.5/markdown/k7_framework_3_5_%s.md) |" % (label, n, n, n, n))
     out += ["", "## Companion Papers (Zenodo)", "", "Cited by their concept DOI, as in the paper's reference list.",
             "", "| Paper | Description | DOI |", "|-------|-------------|-----|"]
     for x in "ABCDE":
@@ -881,6 +881,8 @@ def papers_readme(f, vdoi, date, k7):
             % doi_link(f["doi33"]),
             "- `legacy/v3.4/`: v3.4 framework PDFs, markdown and tex (archived 2026-07-14, Zenodo %s)"
             % doi_link(f["doi34"]),
+            "- `legacy/v3.5/`: v3.5 framework PDFs, markdown and tex (archived 2026-11-27, Zenodo %s)"
+            % doi_link(f["doi35"]),
             "- `../validation/legacy/v3.3/`: v3.3 validation pipeline + Pareto formula selection", "", "---", "",
             "**Version**: 3.6%s" % (" (%s)" % date if dep else " (not yet deposited; published version 3.5, 2026-07-10)"),
             "**Repository**: https://github.com/Arithmon/K7", ""]

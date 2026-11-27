@@ -7,7 +7,7 @@ layout: default
 
 Citation formats for the K₇ framework, version 3.6 (formerly GIFT).
 
-**Version 3.6 is not deposited yet.** Until it is, the published version is 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)), read together with its [erratum](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md). The entries below cite the concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489), which always resolves to the latest deposited version; the version DOI of 3.6 will be added at the deposit.
+Version 3.6 is the current version (Zenodo [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099)). The concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) always resolves to the latest version.
 
 ## Framework (recommended)
 
@@ -51,7 +51,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   year         = {2026},
   month        = {November},
   howpublished = {The K₇ Framework v3.6, 39 pp.},
-  doi          = {10.5281/zenodo.16891489},
+  doi          = {10.5281/zenodo.24584099},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_main.pdf}
 }
 ```
@@ -65,7 +65,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   year         = {2026},
   month        = {November},
   howpublished = {The K₇ Framework v3.6, Supplement S1, 26 pp.},
-  doi          = {10.5281/zenodo.16891489},
+  doi          = {10.5281/zenodo.24584099},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf}
 }
 ```
@@ -79,7 +79,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   year         = {2026},
   month        = {November},
   howpublished = {The K₇ Framework v3.6, Supplement S2, 15 pp.},
-  doi          = {10.5281/zenodo.16891489},
+  doi          = {10.5281/zenodo.24584099},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S2_derivations.pdf}
 }
 ```
@@ -93,7 +93,7 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   year         = {2026},
   month        = {November},
   howpublished = {The K₇ Framework v3.6, Supplement S3, 17 pp.},
-  doi          = {10.5281/zenodo.16891489},
+  doi          = {10.5281/zenodo.24584099},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S3_observables.pdf}
 }
 ```
@@ -107,12 +107,12 @@ de La Fournière, Brieuc. "The K₇ Framework (formerly GIFT)." Version 3.6. Zen
   year         = {2026},
   month        = {November},
   howpublished = {The K₇ Framework v3.6, Supplement S4, 11 pp.},
-  doi          = {10.5281/zenodo.16891489},
+  doi          = {10.5281/zenodo.24584099},
   url          = {https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf}
 }
 ```
 
-> Earlier versions: v3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168), with its [erratum](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md)); v3.4 (Zenodo [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101), files in [`publications/papers/legacy/v3.4/`](https://github.com/Arithmon/K7/tree/main/publications/papers/legacy/v3.4/)); v3.3 (Zenodo [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071), files in [`publications/papers/legacy/v3.3/`](https://github.com/Arithmon/K7/tree/main/publications/papers/legacy/v3.3/)). Version 3.6 withdraws a number of statements of these versions; see the [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md).
+> Earlier versions: v3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168), with its [erratum](https://github.com/Arithmon/K7/blob/main/publications/ERRATUM_v3.5.md), files in [`publications/papers/legacy/v3.5/`](https://github.com/Arithmon/K7/tree/main/publications/papers/legacy/v3.5/)); v3.4 (Zenodo [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101), files in [`publications/papers/legacy/v3.4/`](https://github.com/Arithmon/K7/tree/main/publications/papers/legacy/v3.4/)); v3.3 (Zenodo [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071), files in [`publications/papers/legacy/v3.3/`](https://github.com/Arithmon/K7/tree/main/publications/papers/legacy/v3.3/)). Version 3.6 withdraws a number of statements of these versions; see the [changes from v3.5](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_CHANGELOG.md).
 
 ---
 
@@ -218,8 +218,9 @@ Cited by their concept DOI, as in the paper's reference list.
 
 | Record | DOI |
 |--------|-----|
+| Framework v3.6 (current) | [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099) |
 | Framework, concept DOI (always the latest version) | [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) |
-| Framework v3.5 (published version) | [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168) |
+| Framework v3.5 | [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168) |
 | Framework v3.4 | [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101) |
 | Framework v3.3 | [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071) |
 | [A] A Certified Torsion-Free G₂ Structure on a TCS Neck Model via Computer-Assisted Proof | [10.5281/zenodo.18643069](https://doi.org/10.5281/zenodo.18643069) |
@@ -237,7 +238,7 @@ Statements withdrawn by version 3.6 are not repeated in this table; the full rec
 
 | Version | Date | What changed |
 |---------|------|--------------|
-| 3.6 | 2026-11 | New title; the framework is stated as a declared correspondence with its dictionary, residue register and decision rule; 33 relations compared with the most recent data in five classes; preregistered look-elsewhere test; several statistical and derivational claims of earlier versions withdrawn |
+| 3.6 | 2026-11-27 | New title; the framework is stated as a declared correspondence with its dictionary, residue register and decision rule; 33 relations compared with the most recent data in five classes; preregistered look-elsewhere test; several statistical and derivational claims of earlier versions withdrawn |
 | 3.5 | 2026-07-10 | Renamed "The K₇ Framework"; S4 supplement added; erratum of 2026-08 to 2026-10 |
 | 3.4 | 2026-05-07 | Companion papers A to D published; Lean axiom reduction; K3 certificates |
 | 3.3 | 2026-01-12 to 2026-03-02 | 33 relations; neutrino formulas revised; Lean 4 as sole proof system |
@@ -256,7 +257,7 @@ Statements withdrawn by version 3.6 are not repeated in this table; the full rec
 
 > "The K₇ dictionary [1] assigns the leptonic CP phase the value 2π · 197/360, that is 197°, by a declared unit assignment; its decision rule rejects the relation if a global fit of the reference series excludes 197° at 3σ."
 >
-> [1] B. de La Fournière, "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology," The K₇ Framework v3.6 (2026), https://doi.org/10.5281/zenodo.16891489
+> [1] B. de La Fournière, "The K₇ Dictionary: Testing G₂ Topology against Particle Physics and Cosmology," The K₇ Framework v3.6 (2026), https://doi.org/10.5281/zenodo.24584099
 
 ---
 
@@ -266,4 +267,4 @@ MIT License: see [LICENSE](https://github.com/Arithmon/K7/blob/main/LICENSE)
 
 ---
 
-**Version**: 3.6 (not yet deposited)
+**Version**: 3.6 (2026-11-27)

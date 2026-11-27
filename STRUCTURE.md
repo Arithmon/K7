@@ -15,12 +15,11 @@ K7/
 │   │   │   ├── k7_framework_3_6_S3_observables.md       # S3: the dataset
 │   │   │   ├── k7_framework_3_6_S4_sieve_diagnostics.md # S4: look-elsewhere
 │   │   │   ├── k7_framework_3_6_CHANGELOG.md            # Changes from v3.5
-│   │   │   ├── k7_framework_3_5_*.md                    # v3.5 (read with the erratum)
 │   │   │   ├── g2_certified_neck.md                     # Paper A
 │   │   │   └── g2_spectral.md                           # Paper B
-│   │   ├── tex/                       # LaTeX sources (v3.6, v3.5, A, B)
-│   │   ├── pdf/                       # PDFs (v3.6, v3.5, companion papers A to E)
-│   │   ├── legacy/                    # v3.3 and v3.4 (archived)
+│   │   ├── tex/                       # LaTeX sources (v3.6, A, B)
+│   │   ├── pdf/                       # PDFs (v3.6, companion papers A to E)
+│   │   ├── legacy/                    # v3.3, v3.4 and v3.5 (archived; v3.5 is read with the erratum)
 │   │   ├── figures/
 │   │   └── notebooks/                 # Companion notebooks (A, B)
 │   ├── ERRATUM_v3.5.md                # Erratum to the published v3.5
@@ -95,10 +94,10 @@ K7/
 
 ## Version
 
-**Current**: v3.6 (in preparation)
+**Current**: v3.6 (2026-11-27)
 
 **Relations**: 33, compared with measurement in five classes: 23 within 2σ of measurement, 2 in tension, 6 excluded as exact equalities at more than 3σ and kept as proximities, 1 inside a PDG range, 1 with a non-Gaussian profile (main §4.1; PDG 2026, NuFIT 6.1, Planck 2018). The other 62 entries of the dataset are conditional or diagnostic and are not counted.
 
 **Formal verification**: 156 Lean 4 files, 14 axioms (4 literature imports, 10 interval certificates), no sorry; the arithmetic of the 33 relations is collected in `relations_v36_certified` (commit 34ce857). It establishes the stated arithmetic, not the physical reading.
 
-**Papers**: Framework v3.6 (not yet deposited; concept DOI 10.5281/zenodo.16891489). Published version: v3.5 (Zenodo 10.5281/zenodo.21296168); companion papers A (10.5281/zenodo.18643069), B (10.5281/zenodo.18920367), C (10.5281/zenodo.19708915), D (10.5281/zenodo.20039065), E (10.5281/zenodo.21215956).
+**Papers**: Framework v3.6 (Zenodo 10.5281/zenodo.24584099; concept 10.5281/zenodo.16891489); companion papers A (10.5281/zenodo.18643069), B (10.5281/zenodo.18920367), C (10.5281/zenodo.19708915), D (10.5281/zenodo.20039065), E (10.5281/zenodo.21215956).

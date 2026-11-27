@@ -5,7 +5,9 @@ All notable changes to the K₇ framework (formerly GIFT) are documented in this
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [3.6.0] - November 2026
+## [3.6.0] - 2026-11-27
+
+Deposited on Zenodo: [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099) (concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489)). The files of version 3.5 are archived, unchanged, in [`publications/papers/legacy/v3.5/`](publications/papers/legacy/v3.5/).
 
 ### The K₇ Dictionary: a declared correspondence, with its residue and a decision rule
 

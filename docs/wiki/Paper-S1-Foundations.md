@@ -9,7 +9,7 @@ layout: default
 
 *Brieuc de La Fournière (2026)*
 
-[**PDF (26 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | concept DOI [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) (version 3.6 not yet deposited) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S1_foundations.md)
+[**PDF (26 pp.)**](https://github.com/Arithmon/K7/raw/main/publications/papers/pdf/k7_framework_3_6_S1_foundations.pdf) | [**DOI: 10.5281/zenodo.24584099**](https://doi.org/10.5281/zenodo.24584099) | [Markdown](https://github.com/Arithmon/K7/blob/main/publications/papers/markdown/k7_framework_3_6_S1_foundations.md)
 
 ---
 

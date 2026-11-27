@@ -4,7 +4,7 @@
 
 The K₇ Framework (formerly GIFT): a declared correspondence between the invariants of a posited G₂-holonomy geometry, together with E₈×E₈, and dimensionless Standard-Model and cosmological parameters.
 
-Version 3.6 is in this repository and its Zenodo deposit is pending; until the deposit, the published version is 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)).
+Version 3.6 is the current version (Zenodo [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099), 2026-11-27).
 
 ---
 
@@ -20,23 +20,22 @@ publications/
 │   │   ├── k7_framework_3_6_S3_observables.md       # Observable dataset
 │   │   ├── k7_framework_3_6_S4_sieve_diagnostics.md # Look-elsewhere test
 │   │   ├── k7_framework_3_6_CHANGELOG.md            # Changes from v3.5
-│   │   ├── k7_framework_3_5_*.md                    # v3.5, unchanged
 │   │   ├── g2_certified_neck.md                     # Paper A
 │   │   └── g2_spectral.md                           # Paper B
 │   ├── pdf/                         # Compiled PDFs
 │   │   ├── k7_framework_3_6_*.pdf                   # Framework v3.6 (main, S1 to S4)
-│   │   ├── k7_framework_3_5_*.pdf                   # Framework v3.5 (main, S1 to S4)
 │   │   ├── g2_certified_neck.pdf                    # Paper A
 │   │   ├── g2_spectral.pdf                          # Paper B
 │   │   ├── K3_NK_Certificate.pdf                    # Paper C
 │   │   ├── donaldson_analytic.pdf                   # Paper D
 │   │   ├── rank_one_branched_adiabatic.pdf          # Paper E
 │   │   └── k7_one_page.pdf                          # One-page summary
-│   ├── tex/                         # LaTeX sources (v3.6, v3.5, companions)
+│   ├── tex/                         # LaTeX sources (v3.6, companions)
 │   ├── figures/                     # Publication figures
 │   ├── notebooks/                   # Companion Jupyter notebooks (papers A and B)
 │   ├── legacy/v3.3/                 # v3.3 framework PDFs + markdown + tex (archived)
-│   └── legacy/v3.4/                 # v3.4 framework PDFs + markdown + tex (archived)
+│   ├── legacy/v3.4/                 # v3.4 framework PDFs + markdown + tex (archived)
+│   └── legacy/v3.5/                 # v3.5 framework PDFs + markdown + tex (archived)
 │
 ├── outreach/                        # Essay sources and the one-page summary
 │
@@ -57,7 +56,7 @@ publications/
 
 ---
 
-## Framework v3.6 (Zenodo deposit pending)
+## Framework v3.6 (published Zenodo [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099))
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
@@ -68,21 +67,21 @@ publications/
 | S4: Look-elsewhere test | [k7_framework_3_6_S4_sieve_diagnostics.pdf](pdf/k7_framework_3_6_S4_sieve_diagnostics.pdf) (11 pp.) | [k7_framework_3_6_S4_sieve_diagnostics.md](markdown/k7_framework_3_6_S4_sieve_diagnostics.md) |
 | Changes from v3.5 | | [k7_framework_3_6_CHANGELOG.md](markdown/k7_framework_3_6_CHANGELOG.md) |
 
-LaTeX sources: [`tex/`](tex/) (`k7_framework_3_6_*.tex`, `gift_3.6_bib.tex`). These are the files prepared for the Zenodo deposit; until the deposit, the published version is 3.5. Concept DOI (always the latest version): [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489).
+LaTeX sources: [`tex/`](tex/) (`k7_framework_3_6_*.tex`, `gift_3.6_bib.tex`). Concept DOI (always the latest version): [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489).
 
 ---
 
-## Framework v3.5 (published, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
+## Framework v3.5 (previous version, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
 
-The v3.5 files are unchanged, and are read together with the [erratum](../ERRATUM_v3.5.md). Version 3.6 withdraws a number of their statements ([changes from v3.5](markdown/k7_framework_3_6_CHANGELOG.md)).
+The v3.5 files are archived unchanged in [`legacy/v3.5/`](legacy/v3.5/), and are read together with the [erratum](../ERRATUM_v3.5.md). Version 3.6 withdraws a number of their statements ([changes from v3.5](markdown/k7_framework_3_6_CHANGELOG.md)).
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
-| Main Paper (47 pp.) | [k7_framework_3_5_main.pdf](pdf/k7_framework_3_5_main.pdf) | [k7_framework_3_5_main.md](markdown/k7_framework_3_5_main.md) |
-| S1: Foundations | [k7_framework_3_5_S1_foundations.pdf](pdf/k7_framework_3_5_S1_foundations.pdf) | [k7_framework_3_5_S1_foundations.md](markdown/k7_framework_3_5_S1_foundations.md) |
-| S2: Derivations | [k7_framework_3_5_S2_derivations.pdf](pdf/k7_framework_3_5_S2_derivations.pdf) | [k7_framework_3_5_S2_derivations.md](markdown/k7_framework_3_5_S2_derivations.md) |
-| S3: Observables | [k7_framework_3_5_S3_observables.pdf](pdf/k7_framework_3_5_S3_observables.pdf) | [k7_framework_3_5_S3_observables.md](markdown/k7_framework_3_5_S3_observables.md) |
-| S4: Sieve Diagnostics | [k7_framework_3_5_S4_sieve_diagnostics.pdf](pdf/k7_framework_3_5_S4_sieve_diagnostics.pdf) | [k7_framework_3_5_S4_sieve_diagnostics.md](markdown/k7_framework_3_5_S4_sieve_diagnostics.md) |
+| Main Paper (47 pp.) | [k7_framework_3_5_main.pdf](legacy/v3.5/pdf/k7_framework_3_5_main.pdf) | [k7_framework_3_5_main.md](legacy/v3.5/markdown/k7_framework_3_5_main.md) |
+| S1: Foundations | [k7_framework_3_5_S1_foundations.pdf](legacy/v3.5/pdf/k7_framework_3_5_S1_foundations.pdf) | [k7_framework_3_5_S1_foundations.md](legacy/v3.5/markdown/k7_framework_3_5_S1_foundations.md) |
+| S2: Derivations | [k7_framework_3_5_S2_derivations.pdf](legacy/v3.5/pdf/k7_framework_3_5_S2_derivations.pdf) | [k7_framework_3_5_S2_derivations.md](legacy/v3.5/markdown/k7_framework_3_5_S2_derivations.md) |
+| S3: Observables | [k7_framework_3_5_S3_observables.pdf](legacy/v3.5/pdf/k7_framework_3_5_S3_observables.pdf) | [k7_framework_3_5_S3_observables.md](legacy/v3.5/markdown/k7_framework_3_5_S3_observables.md) |
+| S4: Sieve Diagnostics | [k7_framework_3_5_S4_sieve_diagnostics.pdf](legacy/v3.5/pdf/k7_framework_3_5_S4_sieve_diagnostics.pdf) | [k7_framework_3_5_S4_sieve_diagnostics.md](legacy/v3.5/markdown/k7_framework_3_5_S4_sieve_diagnostics.md) |
 
 ## Companion Papers (Zenodo)
 
@@ -116,9 +115,10 @@ See [Arithmon/K7-Lean](https://github.com/Arithmon/K7-Lean) for the proofs.
 
 - `legacy/v3.3/`: v3.3 framework PDFs, markdown and tex (archived 2026-05-02, Zenodo [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071))
 - `legacy/v3.4/`: v3.4 framework PDFs, markdown and tex (archived 2026-07-14, Zenodo [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101))
+- `legacy/v3.5/`: v3.5 framework PDFs, markdown and tex (archived 2026-11-27, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
 - `../validation/legacy/v3.3/`: v3.3 validation pipeline + Pareto formula selection
 
 ---
 
-**Version**: 3.6 (not yet deposited; published version 3.5, 2026-07-10)
+**Version**: 3.6 (2026-11-27)
 **Repository**: https://github.com/Arithmon/K7

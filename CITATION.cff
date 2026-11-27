@@ -25,9 +25,13 @@ identifiers:
     description: >-
       Concept DOI. Resolves to the latest version. USE THIS ONE.
   - type: doi
+    value: 10.5281/zenodo.24584099
+    description: >-
+      Version DOI for "The K7 Dictionary", version 3.6 of the framework (2026).
+  - type: doi
     value: 10.5281/zenodo.21296168
     description: >-
-      Version DOI for "The K7 Framework" v3.5 (2026), the published version until 3.6 is deposited.
+      Version DOI for "The K7 Framework" v3.5 (2026).
 keywords:
   - G2 holonomy
   - E8xE8

@@ -24,7 +24,7 @@ The files are verbatim copies from the author's working repository and keep its 
 | `canonical/scripts/k7_v3_6_surface_prose.py` | 66 298 | `2a452f278d8d82f6c3b378725864513758a8efef302373a9258789e3de1315d0` | FAQ, executive summary and physicists' overview |
 | `canonical/scripts/k7_v3_6_reader_pages.py` | 11 351 | `82310d1565a7418aaba5bc926e33f3b389a84e37b3fed53cf8aec643c75a79cb` | Lean formalization and geometers' pages |
 | `canonical/scripts/k7_v3_6_landing_pages.py` | 22 852 | `73387b913bcb7a6928ed539baf44518eabf0675e162e9f362d39e8b58a1c7818` | results, papers and falsification sections of the landing pages |
-| `canonical/scripts/k7_v3_6_deposit_pages.py` | 58 076 | `fcb756a104e79bffc9f7bc5925d94f67dd2d0db458ab62a3fa0ca3d703d7e24f` | citation files, structure pages, paper pages, changelog highlights, atlas; copies the papers |
+| `canonical/scripts/k7_v3_6_deposit_pages.py` | 58 348 | `fdf6317d1066da5d465ee1c7f6da642acec9ff3eadd294b1c8177c6fecb2bbb8` | citation files, structure pages, paper pages, changelog highlights, atlas; copies the papers |
 | `canonical/scripts/k7_v3_6_surfaces_lint.py` | 16 805 | `2027475eea0a93dc8e8c3feba89282205b75c023932bd920da3a20481e6b48ad` | checks the public pages for statements that version 3.6 withdraws |
 | `canonical/scripts/k7_v3_6_for_everyone_patch.py` | 17 444 | `f88c446aaa2c328124da270f20afc9a288d86901494d5f9eba2291b173dae185` | one-off targeted edits of the plain-language guide (2026-11-10) |
 | `canonical/scripts/k7_v3_6_publish_generators.py` | 6 942 | `67f773e6473a2587e3e03433c11f04e6d778fb3a3ce586d165a4b9aedb893992` | this deposit |

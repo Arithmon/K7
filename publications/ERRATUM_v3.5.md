@@ -14,6 +14,11 @@ repointed to `Arithmon/K7-Lean` on 2026-07-17 (one line each in the main text
 and supplements S1, S2, markdown only), and the three [E] citations corrected
 on 2026-10-01 (section 4).
 
+**Location of the v3.5 files.** Since the deposit of version 3.6 (2026-11-27), the
+v3.5 sources are archived, unchanged, under `publications/papers/legacy/v3.5/`
+(`markdown/`, `tex/`, `pdf/`). The paths quoted below are those the files had when
+each section was written (`publications/papers/markdown/`, `tex/`, `pdf/`).
+
 ---
 
 ## 1. The closed-form Calabi–Yau residual bound does not bound what it says

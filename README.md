@@ -26,7 +26,7 @@
 Part of the **[Arithmon program](https://github.com/arithmon)**.
 
 <!-- v36:banner -->
-> **Version 3.6.** This README describes version 3.6 of the framework paper, whose files are in this repository; its Zenodo deposit is pending. Until the deposit, the published version is 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)), read together with its [erratum](publications/ERRATUM_v3.5.md).
+> **Version 3.6** (Zenodo [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099), 2026-11-27). This README describes version 3.6 of the framework paper. It replaces version 3.5 (Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168)) and its [erratum](publications/ERRATUM_v3.5.md).
 <!-- /v36:banner -->
 
 **A declared correspondence, stated with its dictionary, its residue and a decision rule.**
@@ -86,7 +86,7 @@ That the relations are derived from the geometry; "no free parameters, no fittin
 ## Papers
 
 <!-- v36:head36 -->
-### Framework v3.6 (Zenodo deposit pending)
+### Framework v3.6 (published: PDF, TeX and markdown, Zenodo [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099))
 <!-- /v36:head36 -->
 
 | Document | PDF | Markdown |
@@ -99,24 +99,24 @@ That the relations are derived from the geometry; "no free parameters, no fittin
 | Changes from v3.5 | | [Markdown](publications/papers/markdown/k7_framework_3_6_CHANGELOG.md) |
 
 <!-- v36:tex36 -->
-LaTeX sources: [`publications/papers/tex/`](publications/papers/tex/). These are the files prepared for the Zenodo deposit of version 3.6; until the deposit, the published version is 3.5.
+LaTeX sources: [`publications/papers/tex/`](publications/papers/tex/).
 <!-- /v36:tex36 -->
 
 <!-- v36:head35 -->
-### Framework v3.5 (published: PDF, TeX and markdown, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
+### Framework v3.5 (previous version, archived: PDF, TeX and markdown in `publications/papers/legacy/v3.5/`, Zenodo [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168))
 <!-- /v36:head35 -->
 
 Read with the [erratum](publications/ERRATUM_v3.5.md) (sections 1–11).
 
 | Document | PDF | Markdown |
 |----------|-----|----------|
-| Main Paper (47 pp.) | [PDF](publications/papers/pdf/k7_framework_3_5_main.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_5_main.md) |
-| S1: Foundations | [PDF](publications/papers/pdf/k7_framework_3_5_S1_foundations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_5_S1_foundations.md) |
-| S2: Derivations | [PDF](publications/papers/pdf/k7_framework_3_5_S2_derivations.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_5_S2_derivations.md) |
-| S3: Observables | [PDF](publications/papers/pdf/k7_framework_3_5_S3_observables.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_5_S3_observables.md) |
-| S4: Sieve Diagnostics | [PDF](publications/papers/pdf/k7_framework_3_5_S4_sieve_diagnostics.pdf) | [Markdown](publications/papers/markdown/k7_framework_3_5_S4_sieve_diagnostics.md) |
+| Main Paper (47 pp.) | [PDF](publications/papers/legacy/v3.5/pdf/k7_framework_3_5_main.pdf) | [Markdown](publications/papers/legacy/v3.5/markdown/k7_framework_3_5_main.md) |
+| S1: Foundations | [PDF](publications/papers/legacy/v3.5/pdf/k7_framework_3_5_S1_foundations.pdf) | [Markdown](publications/papers/legacy/v3.5/markdown/k7_framework_3_5_S1_foundations.md) |
+| S2: Derivations | [PDF](publications/papers/legacy/v3.5/pdf/k7_framework_3_5_S2_derivations.pdf) | [Markdown](publications/papers/legacy/v3.5/markdown/k7_framework_3_5_S2_derivations.md) |
+| S3: Observables | [PDF](publications/papers/legacy/v3.5/pdf/k7_framework_3_5_S3_observables.pdf) | [Markdown](publications/papers/legacy/v3.5/markdown/k7_framework_3_5_S3_observables.md) |
+| S4: Sieve Diagnostics | [PDF](publications/papers/legacy/v3.5/pdf/k7_framework_3_5_S4_sieve_diagnostics.pdf) | [Markdown](publications/papers/legacy/v3.5/markdown/k7_framework_3_5_S4_sieve_diagnostics.md) |
 
-> LaTeX sources: [`publications/papers/tex/`](publications/papers/tex/). Archives: [`legacy/v3.4/`](publications/papers/legacy/v3.4/), [`legacy/v3.3/`](publications/papers/legacy/v3.3/).
+> LaTeX sources: [`legacy/v3.5/tex/`](publications/papers/legacy/v3.5/tex/). Earlier archives: [`legacy/v3.4/`](publications/papers/legacy/v3.4/), [`legacy/v3.3/`](publications/papers/legacy/v3.3/).
 
 ### Companion papers (published on Zenodo)
 
@@ -186,8 +186,9 @@ records what a neighbouring work claims and where it differs, in both directions
 <!-- v36:archive -->
 | Archive | |
 |---------|---|
-| Zenodo (framework v3.5, current) | [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168) |
+| Zenodo (framework v3.6, current) | [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099) |
 | Zenodo (framework concept DOI, always latest) | [10.5281/zenodo.16891489](https://doi.org/10.5281/zenodo.16891489) |
+| Zenodo (framework v3.5 archive) | [10.5281/zenodo.21296168](https://doi.org/10.5281/zenodo.21296168) |
 | Zenodo (framework v3.4 archive) | [10.5281/zenodo.20070101](https://doi.org/10.5281/zenodo.20070101) |
 | Zenodo (framework v3.3 archive) | [10.5281/zenodo.18837071](https://doi.org/10.5281/zenodo.18837071) |
 | Zenodo (Paper E, rank-1 branched adiabatic) | [10.5281/zenodo.21215956](https://doi.org/10.5281/zenodo.21215956) |
@@ -212,11 +213,11 @@ records what a neighbouring work claims and where it differs, in both directions
   year    = {2026},
   url     = {https://github.com/Arithmon/K7},
   doi     = {10.5281/zenodo.16891489},
-  version = {3.5}
+  version = {3.6}
 }
 ```
 
-Cite the published version (3.5) until 3.6 is deposited.
+The concept DOI always resolves to the latest version; version 3.6 itself is [10.5281/zenodo.24584099](https://doi.org/10.5281/zenodo.24584099).
 <!-- /v36:cite -->
 
 See [CITATION.md](CITATION.md) for additional formats.
